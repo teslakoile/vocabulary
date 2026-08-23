@@ -1,0 +1,23 @@
+{
+  "headword": "bolster",
+  "senses": [
+    {
+      "term": "bolster",
+      "definition": "To strengthen something that is already there but is not strong enough on its own.",
+      "distractors": [
+        "To avoid something deliberately and on principle, having had the option to take it.",
+        "To make a bad situation worse than it already was.",
+        "To rely on someone else to carry part of the weight of the work.",
+        "To replace a running part of a system without stopping the system around it.",
+        "To put right something that was wrong, such as an error, an imbalance, or a debt you owe."
+      ],
+      "word_distractors": [
+        "eschew",
+        "fan-out",
+        "diaspora",
+        "idempotent",
+        "top brass"
+      ]
+    }
+  ]
+}

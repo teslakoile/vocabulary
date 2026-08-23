@@ -1,0 +1,23 @@
+{
+  "headword": "buy-in",
+  "senses": [
+    {
+      "term": "buy-in",
+      "definition": "Genuine agreement from the people whose help you need, not just their signature.",
+      "distractors": [
+        "A formal signature recorded so that a project may begin.",
+        "The money a partner puts in to take a share of a business.",
+        "The share of a market a product has taken from its competitors.",
+        "Written permission from a committee that has reviewed both the risks and the cost.",
+        "The quiet compliance of a team that has stopped arguing but has not changed its mind."
+      ],
+      "word_distractors": [
+        "serialize",
+        "panopticon",
+        "verbose",
+        "ephemeral",
+        "modality"
+      ]
+    }
+  ]
+}

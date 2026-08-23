@@ -1,0 +1,23 @@
+{
+  "headword": "tectonic shifts",
+  "senses": [
+    {
+      "term": "tectonic shift",
+      "definition": "A deep change in the underlying conditions, big enough to rearrange the landscape.",
+      "distractors": [
+        "Proceeding by small additions, each one small enough to stand and be judged on its own.",
+        "The one outcome a team steers by, held fixed while everything else stays negotiable.",
+        "A rig that exercises a system from outside to see how it behaves under conditions you pick.",
+        "Using far more words than the point needs.",
+        "Aware of something and visibly taking it into account."
+      ],
+      "word_distractors": [
+        "idempotent",
+        "pick your brain",
+        "rectify",
+        "despondent",
+        "wordsmith"
+      ]
+    }
+  ]
+}

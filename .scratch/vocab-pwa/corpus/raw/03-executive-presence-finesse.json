@@ -4,7 +4,7 @@
     {
       "term": "executive presence",
       "accepted": [],
-      "definition": "The quality of coming across as someone a decision can be handed to: composed under pressure, brief, and answering the question actually asked. It is judged in minutes, mostly on how you handle being challenged rather than on what you know.",
+      "definition": "Coming across as calm, clear and senior enough to be handed a decision.",
       "caution": "One of the few phrases you can only ever say about someone else. As feedback it is notoriously vague and is often heard as be more like us, so it lands as a coded judgement unless you attach a concrete behaviour to it: cut the preamble, lead with the recommendation, stop narrating your working. Do not use it as a polite cover for a decision you have already made about someone.",
       "example": "Her content is watertight; what we are coaching is executive presence, starting with not burying the ask on slide nine.",
       "cues": [
@@ -26,18 +26,25 @@
         }
       ],
       "distractors": [
-        "Formal authority handed down by a senior leader, so that you can commit the organisation to something without going back for permission.",
-        "Deep command of the technical detail in your own area, to the point where nobody in the room can correct you on it. It is expertise measured by depth rather than by bearing.",
-        "The visible backing of a senior figure, so that people read your request as carrying their weight rather than only your own. What it buys you belongs to whoever stands behind you and can be withdrawn the moment they change their mind.",
-        "Comfort in front of a large audience: the ability to hold a stage, keep a thousand people with you and land the last line on time without notes. It is a performing skill measured by the size of the room, and it says nothing about how you behave among six people deciding where the money goes.",
-        "A track record substantial enough that it argues for you before you open your mouth, so that a proposal with your name on it starts a step ahead of the same proposal from anyone else. It is accumulated evidence held in other people's memories, built over years rather than read off you in the first few minutes."
+        "A record of delivering what you promised, quarter after quarter.",
+        "The number of people who report to you, directly and indirectly.",
+        "The ability to speak a second language well enough to negotiate in it.",
+        "The set of decisions a leader is formally allowed to make without asking.",
+        "The rank a job sits at in a company's grading system, published for everyone to see."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "persist",
+        "broad",
+        "fan-out",
+        "daily driver",
+        "wordsmith"
+      ]
     },
     {
       "term": "finesse",
       "accepted": [],
-      "definition": "Handling something delicate so smoothly that the difficulty never shows. As a verb it also means getting past an obstacle by deftness rather than force.",
+      "definition": "Skill in handling something delicate so smoothly that the difficulty never shows.",
       "caution": "The verb has a second life that can bite you: we finessed the numbers sounds to a sceptical audience like the problem was smoothed over rather than solved. Aim it at how something was handled, never at the substance itself, and keep it well away from auditors, risk committees and anything that will be read later.",
       "example": "He finessed the headcount question without promising anything, and the MD moved on.",
       "cues": [
@@ -59,13 +66,20 @@
         }
       ],
       "distractors": [
-        "Brute persistence that simply wears the other side down until they stop objecting.",
-        "Blunt honesty that clears the air quickly, said of the person willing to name the awkward thing out loud while everyone else studies the table.",
-        "A formal process for settling a disagreement, with defined steps and somebody empowered to decide at the end of it. It is machinery the organisation supplies rather than anything the person running it brings.",
-        "Willingness to commit while the information is still incomplete, on the view that the cost of waiting exceeds the cost of being partly wrong. It is a stance towards risk, not a way of handling anything delicately.",
-        "The knack of remembering names, families and small details and producing them at the right moment, so that people feel known. It is warmth deployed on purpose, and it works on the relationship rather than on the difficulty in front of you."
+        "Brute force applied until an obstacle gives way.",
+        "Doing a job to a standard nobody asked for, at a cost nobody agreed to.",
+        "A rehearsed answer prepared in advance for a question you expect to be asked.",
+        "The willingness to say the uncomfortable thing in a room that does not want to hear it.",
+        "The care taken to record exactly how a decision was reached, so it can be audited later."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "nontrivial",
+        "squarely",
+        "first order effects",
+        "in pockets",
+        "deliberate"
+      ]
     }
   ]
 }

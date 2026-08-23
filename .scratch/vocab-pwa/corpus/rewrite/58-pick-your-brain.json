@@ -1,0 +1,23 @@
+{
+  "headword": "pick your brain",
+  "senses": [
+    {
+      "term": "pick your brain",
+      "definition": "To ask someone to share what they have learned, in an informal conversation.",
+      "distractors": [
+        "To make something deliberately hard to follow.",
+        "To put right something that was wrong.",
+        "To rework the exact phrasing of a draft without changing what it says.",
+        "To dig patiently through records for something nobody hid but nobody wrote up either.",
+        "To back a claim with evidence that somebody other than you can go and check it."
+      ],
+      "word_distractors": [
+        "disparage",
+        "obfuscate",
+        "wordsmith",
+        "serialize",
+        "exacerbate"
+      ]
+    }
+  ]
+}

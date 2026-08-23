@@ -1,0 +1,23 @@
+{
+  "headword": "semantic layer",
+  "senses": [
+    {
+      "term": "semantic layer",
+      "definition": "The layer that translates raw tables into the business terms everyone agrees on.",
+      "distractors": [
+        "The underlying layer everything above it runs on and takes for granted.",
+        "A basic building block a platform hands you and expects you to compose with.",
+        "An isolated environment where code runs without touching anything real.",
+        "A slice of the market defined by the industry it serves, such as banking or logistics.",
+        "One of the handful of cloud providers that runs compute and storage at planetary scale."
+      ],
+      "word_distractors": [
+        "despondent",
+        "eschew",
+        "gravitas",
+        "pick your brain",
+        "mold breaker"
+      ]
+    }
+  ]
+}

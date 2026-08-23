@@ -1,0 +1,23 @@
+{
+  "headword": "bespoke",
+  "senses": [
+    {
+      "term": "bespoke",
+      "definition": "Made for one customer or one case rather than bought off the shelf.",
+      "distractors": [
+        "Advancing in stages, with each stage going further than the one before it.",
+        "Safe to run more than once, because the second run leaves things exactly as the first did.",
+        "Big enough to matter, said of an amount, a change, or a piece of work.",
+        "Low in a way that has given up on improving.",
+        "The current edge of what these systems can do."
+      ],
+      "word_distractors": [
+        "gravitas",
+        "exacerbate",
+        "obfuscate",
+        "north star",
+        "pick your brain"
+      ]
+    }
+  ]
+}

@@ -31,8 +31,23 @@ const LOOKAHEAD = 24;
  */
 const SENSE_GAP = 8;
 
-/** Wrong options shown beside the right one on a recognition card. */
+/**
+ * Minimum cards between two presentations of the same prompt text.
+ *
+ * `identify` and `reverse` both show the definition and differ only in whether
+ * you pick the word or type it. Eight apart is enough for two different
+ * questions about one sense and nowhere near enough for the same question
+ * twice, so these get their own, wider gap.
+ */
+const PROMPT_GAP = 24;
+
+/** Wrong definitions shown beside the right one on a recognition card. */
 const WRONG_OPTIONS = 3;
+
+/** Wrong words shown beside the right one on an identify card. Five, not three:
+ *  a word is two seconds of reading, so more options cost nothing and a one in
+ *  six guess is worth more than a one in four. */
+const WRONG_WORDS = 5;
 
 export interface QueueItem {
   card: Card;
@@ -41,8 +56,12 @@ export interface QueueItem {
   /** True for due and new cards. False in free play, where answers are history
    *  rather than evidence about recall timing. */
   counts: boolean;
-  /** Recognition only: the correct definition plus three wrong ones, shuffled. */
+  /** The choices, shuffled. Definitions on a recognition card, words on an
+   *  identify card. Absent on the two card types you type into. */
   options?: string[];
+  /** What the screen actually shows, so the spacer can keep two cards asking
+   *  the same question apart. */
+  promptKey: string;
   /** Production only: which of the sense's cues this presentation uses. */
   cue?: Cue;
 }
@@ -125,7 +144,19 @@ function present(card: Card, { senses, entries }: Indexed, counts: boolean): Que
   const entry = entries.get(sense.entry_id);
   if (!entry) return null;
 
-  const item: QueueItem = { card, sense, entry, counts };
+  // Both definition-prompt cards share a key; everything else keys on the card
+  // itself, so the prompt rule only ever constrains the pair it was written for.
+  const promptKey =
+    card.type === 'identify' || card.type === 'reverse' ? `${sense.id}:definition` : card.id;
+
+  const item: QueueItem = { card, sense, entry, counts, promptKey };
+
+  if (card.type === 'identify') {
+    // Wrong words come from the corpus itself and were chosen per sense, because
+    // a word picked at random is often defensible: a short plain definition of
+    // `esoteric` can be argued to fit `obscure`.
+    item.options = shuffle([sense.term, ...sense.word_distractors.slice(0, WRONG_WORDS)]);
+  }
 
   if (card.type === 'recognition') {
     // Sibling senses make the sharpest distractors, which is the whole reason
@@ -145,38 +176,53 @@ function present(card: Card, { senses, entries }: Indexed, counts: boolean): Que
   return item;
 }
 
+/** What was actually put on screen, for the two spacing rules. */
+export interface Shown {
+  sense: string;
+  prompt: string;
+}
+
 /**
- * Pull cards forward past a card whose sense was seen too recently. Greedy and
- * order-preserving otherwise, so due cards keep their priority; a card only
- * moves when leaving it in place would stack two views of the same word.
+ * Pull cards forward past a card whose sense, or whose prompt, was seen too
+ * recently. Greedy and order-preserving otherwise, so due cards keep their
+ * priority; a card only moves when leaving it in place would stack two views of
+ * the same word or ask the same question twice.
+ *
+ * The two rules degrade rather than stall. A candidate satisfying both wins; if
+ * none does, the sense rule alone decides; if nothing at all qualifies, the next
+ * card goes out as it is, because a short gap beats an empty queue.
  */
-function space(items: QueueItem[], from: number, history: string[] = []): QueueItem[] {
+function space(items: QueueItem[], from: number, history: Shown[] = []): QueueItem[] {
   const head = items.slice(0, from);
   const pending = items.slice(from);
   const out: QueueItem[] = [...head];
   // Seeded with what was actually shown, so a rebuild mid-session cannot serve
   // a word again straight after you just answered it.
-  const recent: string[] = [...history, ...head.map((i) => i.sense.id)].slice(-SENSE_GAP);
+  const recent: Shown[] = [...history, ...head.map(shownOf)].slice(-PROMPT_GAP);
+
+  const sawSense = (id: string) => recent.slice(-SENSE_GAP).some((r) => r.sense === id);
+  const sawPrompt = (key: string) => recent.some((r) => r.prompt === key);
 
   while (pending.length) {
-    let at = pending.findIndex((i) => !recent.includes(i.sense.id));
-    // Everything left repeats a recent sense. Take the next one anyway rather
-    // than stalling: a short gap beats an empty queue.
+    let at = pending.findIndex((i) => !sawSense(i.sense.id) && !sawPrompt(i.promptKey));
+    if (at === -1) at = pending.findIndex((i) => !sawSense(i.sense.id));
     if (at === -1) at = 0;
     const [item] = pending.splice(at, 1);
     out.push(item!);
-    recent.push(item!.sense.id);
-    if (recent.length > SENSE_GAP) recent.shift();
+    recent.push(shownOf(item!));
+    if (recent.length > PROMPT_GAP) recent.shift();
   }
   return out;
 }
+
+const shownOf = (item: QueueItem): Shown => ({ sense: item.sense.id, prompt: item.promptKey });
 
 export class Queue {
   private upcoming: QueueItem[] = [];
   private indexed: Indexed;
   private pool: Card[] = [];
-  /** Senses actually shown, most recent last. Survives a rebuild. */
-  private history: string[] = [];
+  /** What was actually shown, most recent last. Survives a rebuild. */
+  private history: Shown[] = [];
 
   constructor(private snapshot: Snapshot) {
     this.indexed = index(snapshot);
@@ -285,7 +331,7 @@ export class Queue {
   advance(correct: boolean): void {
     const item = this.upcoming.shift();
     if (!item) return;
-    this.history = [...this.history, item.sense.id].slice(-SENSE_GAP);
+    this.history = [...this.history, shownOf(item)].slice(-PROMPT_GAP);
     if (!correct) {
       const at = Math.min(
         this.upcoming.length,

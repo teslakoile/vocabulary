@@ -1,0 +1,23 @@
+{
+  "headword": "ephemeral",
+  "senses": [
+    {
+      "term": "ephemeral",
+      "definition": "Lasting only a short time, and built that way on purpose.",
+      "distractors": [
+        "Safe to run more than once, because a second run changes nothing the first did not.",
+        "A basic building block a platform hands you and expects you to compose with.",
+        "Covering a wide range rather than a narrow one.",
+        "To put right something that was wrong.",
+        "The most senior people, taken as one group."
+      ],
+      "word_distractors": [
+        "persist",
+        "gravitas",
+        "semantic layer",
+        "wordsmith",
+        "advocate"
+      ]
+    }
+  ]
+}

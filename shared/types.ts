@@ -1,6 +1,11 @@
 /** Shapes shared by the Worker and the PWA. One definition, two consumers. */
 
-export const CARD_TYPES = ['recognition', 'reverse', 'production'] as const;
+/**
+ * Order matters: it is the order a sense's cards enter intake, easiest first.
+ * `recognition` shows the word and asks for the meaning, `identify` shows the
+ * meaning and asks for the word, and the last two ask you to produce it.
+ */
+export const CARD_TYPES = ['recognition', 'identify', 'reverse', 'production'] as const;
 export type CardType = (typeof CARD_TYPES)[number];
 
 /** FSRS ratings. Kyle never self-grades: the app answers right/wrong for him. */
@@ -21,7 +26,10 @@ export interface Sense {
   caution: string;
   example: string;
   cues: Cue[];
+  /** 5 wrong definitions, for the card that shows the word. */
   distractors: string[];
+  /** 5 wrong words taken from other entries, for the card that shows the definition. */
+  word_distractors: string[];
   prompt_version: number | null;
   updated_at: string;
 }

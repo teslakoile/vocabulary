@@ -6,7 +6,7 @@
       "accepted": [
         "substantiated"
       ],
-      "definition": "To back a claim with evidence someone else can check. It is about producing the proof, not about turning out to be right.",
+      "definition": "To back a claim with evidence that someone else can check.",
       "caution": "Asking someone to substantiate something is a challenge however gently you say it, and everyone in the room hears the doubt. Used about your own claims it reads as rigour; used about a colleague's in front of their boss it reads as an ambush, so if you must, ask for the source rather than for substantiation.",
       "example": "I can substantiate the thirty per cent figure from two quarters of tickets, it is not a vendor number.",
       "cues": [
@@ -28,18 +28,25 @@
         }
       ],
       "distractors": [
-        "To state a claim more forcefully than you did the first time.",
-        "To agree with a position in public, so that the person who made it is no longer standing alone.",
-        "To cut a claim back to its essential point, dropping everything that was not doing work in the sentence. What comes out is shorter, not better supported.",
-        "To confirm that the correct process was followed, checking each step against what the policy said should happen. The finding is about the procedure rather than about whether the claim is true.",
-        "To restate somebody's argument in your own words until they agree you have it right, which buys goodwill and settles nothing about whether it holds."
+        "To repeat a claim until people accept it.",
+        "To state something plainly and without hedging.",
+        "To write down what was decided so it can be found later.",
+        "To argue a case on behalf of somebody who is not in the room.",
+        "To take an existing figure and adjust it for inflation over time."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "panopticon",
+        "play it by ear",
+        "tectonic shift",
+        "disambiguate",
+        "harness"
+      ]
     },
     {
       "term": "substantial",
       "accepted": [],
-      "definition": "Big enough to matter, said of an amount, a change, or a piece of work. It claims weight while declining to give a number.",
+      "definition": "Large enough to matter, said of an amount or a change without giving a number.",
       "caution": "A hedge that sounds like a fact. In front of anyone numerate, substantial savings invites the immediate question of how much, and if you cannot answer you have lost more ground than the vague word ever bought you. Keep it for cases where the figure is genuinely not yours to give, and give the figure everywhere else.",
       "example": "There is a substantial gap between what the pilot proved and what the rollout is assuming.",
       "cues": [
@@ -61,13 +68,20 @@
         }
       ],
       "distractors": [
-        "Existing only in theory, with nothing built and nobody using it.",
-        "Just sufficient to clear the minimum somebody set, and not one unit more than that.",
-        "Growing steadily over time, at a rate you could have predicted a year ago from the same line. It describes the trend rather than the size.",
-        "Agreed by everyone involved, so that nobody in the room is still holding a private objection. It reports where the room has landed, not how big the thing is.",
-        "Difficult to measure precisely, so that any figure you put on it will be argued with. It is a statement about the instrument rather than about the quantity."
+        "Small enough to ignore for now.",
+        "Measured precisely and reported to two decimal places.",
+        "Growing steadily but from a very small starting point.",
+        "Set aside in a budget for costs that have not yet been identified in any detail.",
+        "Counted twice by mistake because two systems both reported the same transaction."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "bolster",
+        "long-horizon",
+        "finesse",
+        "north star",
+        "hyperscaler"
+      ]
     }
   ]
 }

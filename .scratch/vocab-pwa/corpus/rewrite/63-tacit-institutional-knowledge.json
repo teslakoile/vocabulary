@@ -1,0 +1,41 @@
+{
+  "headword": "tacit/institutional knowledge",
+  "senses": [
+    {
+      "term": "tacit knowledge",
+      "definition": "What someone can do well but cannot fully put into words.",
+      "distractors": [
+        "Deep structural change in the conditions everyone works under.",
+        "The most senior people in an organisation, spoken of as a single group.",
+        "A rule of thumb that usually works.",
+        "An isolated environment where code runs safely.",
+        "Progress won into territory that was closed to you before."
+      ],
+      "word_distractors": [
+        "scaffolding",
+        "panopticon",
+        "diaspora",
+        "north star",
+        "fan-out"
+      ]
+    },
+    {
+      "term": "institutional knowledge",
+      "definition": "The history an organisation holds about itself and never got around to writing down.",
+      "distractors": [
+        "A basic building block a platform hands you and expects you to compose with.",
+        "The one outcome you steer by while everything else stays negotiable.",
+        "A structure where everyone can be watched at any moment and nobody knows when.",
+        "One of the handful of cloud providers operating at a size where compute is effectively unlimited.",
+        "A voluntary group of people who do the same kind of work and meet to trade what they know."
+      ],
+      "word_distractors": [
+        "panopticon",
+        "fan-out",
+        "north star",
+        "sandbox",
+        "gravitas"
+      ]
+    }
+  ]
+}

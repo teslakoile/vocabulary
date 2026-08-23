@@ -1,0 +1,23 @@
+{
+  "headword": "sleuthing (out)",
+  "senses": [
+    {
+      "term": "sleuthing",
+      "definition": "Patient digging to piece together an answer nobody has written down.",
+      "distractors": [
+        "A funded, staffed team that concentrates a scarce capability in one place.",
+        "Permission given once and in advance to cover a whole class of decisions.",
+        "To avoid something deliberately and on principle.",
+        "The most senior people in a firm, spoken of as one.",
+        "Weight and seriousness in how a person carries themselves."
+      ],
+      "word_distractors": [
+        "despondent",
+        "idempotent",
+        "bolster",
+        "front and center",
+        "serialize"
+      ]
+    }
+  ]
+}

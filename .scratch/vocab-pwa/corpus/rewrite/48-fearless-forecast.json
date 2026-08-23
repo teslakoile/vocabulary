@@ -1,0 +1,23 @@
+{
+  "headword": "fearless forecast",
+  "senses": [
+    {
+      "term": "fearless forecast",
+      "definition": "A prediction given straight, with the caveats left out, usually because someone asked.",
+      "distractors": [
+        "A rule of thumb that gets you a good enough answer quickly.",
+        "The one outcome you steer by while everything else stays negotiable.",
+        "Permission given once and in advance to cover a whole class of decisions.",
+        "A voluntary group of people who do the same kind of work and meet to trade what they know.",
+        "One of the small handful of cloud providers operating at a size almost nobody else can reach."
+      ],
+      "word_distractors": [
+        "north star",
+        "panopticon",
+        "semantic layer",
+        "ducks in a row",
+        "top brass"
+      ]
+    }
+  ]
+}

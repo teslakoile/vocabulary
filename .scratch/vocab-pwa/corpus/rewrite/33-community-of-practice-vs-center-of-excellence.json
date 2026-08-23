@@ -1,0 +1,41 @@
+{
+  "headword": "community of practice vs center of excellence",
+  "senses": [
+    {
+      "term": "community of practice",
+      "definition": "A voluntary group of people doing the same work who meet to share what they learn.",
+      "distractors": [
+        "The most senior people in an organisation, spoken of as a single group.",
+        "A people scattered from a homeland who keep a tie to it.",
+        "A funded, staffed team that owns a standard and enforces it across other teams.",
+        "The history one organisation holds about why things were built the way that they were.",
+        "What someone can do but cannot fully explain, such as judgement, feel, or a sense of fit."
+      ],
+      "word_distractors": [
+        "diaspora",
+        "north star",
+        "exacerbate",
+        "failure mode",
+        "bespoke"
+      ]
+    },
+    {
+      "term": "center of excellence",
+      "definition": "A funded team that holds a scarce skill in one place and sets how it is done.",
+      "distractors": [
+        "A voluntary group of practitioners who meet to trade what they are learning.",
+        "The most senior people in an organisation, spoken of as one group.",
+        "A slice of the market defined by the industry it serves, such as banking or health.",
+        "One of the handful of cloud providers operating at planetary scale.",
+        "The person who argues your case in the rooms you are not in, without being asked."
+      ],
+      "word_distractors": [
+        "flywheel effect",
+        "ducks in a row",
+        "ephemeral",
+        "contrived",
+        "play it by ear"
+      ]
+    }
+  ]
+}

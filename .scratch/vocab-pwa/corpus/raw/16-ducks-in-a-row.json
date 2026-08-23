@@ -7,7 +7,7 @@
         "get your ducks in a row",
         "ducks lined up"
       ],
-      "definition": "The preparation done in advance of a moment where a gap would cost you: the approvals, the numbers and the people all settled beforehand. It is about readiness, not about the thing you are getting ready for.",
+      "definition": "All the preparation done in advance, so nothing is missing when the moment comes.",
       "caution": "It is homely and slightly folksy, which makes it warm between peers and patronising downward, and telling a senior stakeholder to get their ducks in a row implies they are disorganised. It belongs to speech: in a written paper it reads as though you could not be bothered to name which preparation you actually meant.",
       "example": "Before this goes to the committee let us get our ducks in a row on the cost model and the security sign-off.",
       "cues": [
@@ -29,13 +29,20 @@
         }
       ],
       "distractors": [
-        "A queue of tasks all waiting on the same person, moving only as fast as that one diary allows them to move.",
-        "Agreement reached quietly before a meeting starts, so that the discussion in the room only ratifies what was settled outside it.",
-        "A sequence of checks run automatically before a release, each one able to stop the thing going out on its own. It is machinery wired into the pipeline rather than anything a person has arranged by hand.",
-        "The order in which speakers will take an item, agreed beforehand so that nobody talks over anybody and the most senior view does not land first. It settles the choreography of the session rather than whether the material behind it holds.",
-        "A backlog cleared down before any new work is accepted, so that the team starts the next thing without carrying the last one on its back. The point is finishing what is already open, which is about closing things out rather than about being ready for a moment ahead of you."
+        "A list of everything that could go wrong, each with an owner.",
+        "Deciding as you go, taking your lead from how things actually develop.",
+        "The order in which tasks must run, drawn as a chain of dependencies.",
+        "A meeting held after the event to work out what went wrong and who should fix it.",
+        "The single person whose approval is needed before anything else is allowed to move."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "disambiguate",
+        "trivial",
+        "ephemeral",
+        "wordsmith",
+        "semantic layer"
+      ]
     }
   ]
 }

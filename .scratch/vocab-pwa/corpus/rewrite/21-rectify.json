@@ -1,0 +1,23 @@
+{
+  "headword": "rectify",
+  "senses": [
+    {
+      "term": "rectify",
+      "definition": "To put right something that went wrong, such as an error or an unmet obligation.",
+      "distractors": [
+        "To make a bad situation worse.",
+        "To work around a fault instead of removing it.",
+        "To agree that something is wrong and leave it as it is.",
+        "To record a fault in a register so that somebody else can decide what to do about it.",
+        "To change something that was already working, in the hope of making it a little better."
+      ],
+      "word_distractors": [
+        "exacerbate",
+        "ephemeral",
+        "wordsmith",
+        "frontrunner",
+        "diaspora"
+      ]
+    }
+  ]
+}

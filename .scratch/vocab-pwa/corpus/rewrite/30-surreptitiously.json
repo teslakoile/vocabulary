@@ -1,0 +1,23 @@
+{
+  "headword": "surreptitiously",
+  "senses": [
+    {
+      "term": "surreptitiously",
+      "definition": "Done quietly so that nobody sees it happening.",
+      "distractors": [
+        "In the most prominent position, where it cannot be missed.",
+        "Directly and without hedging.",
+        "Lasting only briefly, and meant to.",
+        "Done on purpose and after thought rather than by accident.",
+        "Present in scattered, isolated places rather than across the whole."
+      ],
+      "word_distractors": [
+        "panopticon",
+        "verbose",
+        "flywheel effect",
+        "front and center",
+        "broad"
+      ]
+    }
+  ]
+}

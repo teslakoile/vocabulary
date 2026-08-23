@@ -8,7 +8,7 @@
         "eschewed",
         "eschewing"
       ],
-      "definition": "To avoid something deliberately and on principle, having had the option to take it. The choice, rather than the circumstance, is the whole point of the word.",
+      "definition": "To deliberately avoid something you could have chosen, usually on principle.",
       "caution": "It is a written word. Said out loud in a standup it sounds like you have swallowed a style guide, and even on the page it carries a moral edge: saying the team eschewed managed services claims a principle where 'chose not to use' would have claimed only a decision. If the real reason was budget or timing, the word quietly overstates you, and anyone who knows the history will notice.",
       "example": "The paper eschews benchmark scores entirely and reports only task completion, which is either brave or very convenient.",
       "cues": [
@@ -30,13 +30,20 @@
         }
       ],
       "distractors": [
-        "To fail to notice something that was there for the taking until it had gone.",
-        "To go without something because it was never within reach, so the outcome looks the same but nothing about it was actually decided.",
-        "To put something off until conditions improve, with every intention of coming back to it once the reason for waiting has gone away.",
-        "To turn a proposal down after a formal review, with the grounds minuted so that anybody bringing it back knows what would have to change first. The refusal belongs to the body rather than to a person.",
-        "To criticise something publicly and at length, usually a practice rather than a person, and in terms that make it awkward for anyone in the room to defend it. Whether you carry on doing it yourself is a separate question entirely."
+        "To make a bad situation worse than it already was.",
+        "To put right something that was wrong, such as an error or an imbalance.",
+        "To back a claim with evidence that someone else can check for themselves.",
+        "To turn a structure that only exists in memory into something you can store or send.",
+        "To replace a running part of a system without stopping the system around it."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "exacerbate",
+        "despondent",
+        "broad",
+        "run it by you",
+        "incremental"
+      ]
     }
   ]
 }

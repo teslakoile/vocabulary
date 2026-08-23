@@ -1,0 +1,23 @@
+{
+  "headword": "run it by you",
+  "senses": [
+    {
+      "term": "run it by you",
+      "definition": "To show someone something before committing to it, to hear their reaction.",
+      "distractors": [
+        "To make something deliberately hard to understand so the plain version stays out of reach.",
+        "To settle which of two possible readings is the one that was meant.",
+        "To write something down somewhere it will outlive whatever made it.",
+        "To use your own product for real work before you ask anyone else to use it.",
+        "To speak about someone in a way that lowers them, usually in passing."
+      ],
+      "word_distractors": [
+        "dogfooding",
+        "hot-swap",
+        "disparage",
+        "sleuthing",
+        "substantiate"
+      ]
+    }
+  ]
+}

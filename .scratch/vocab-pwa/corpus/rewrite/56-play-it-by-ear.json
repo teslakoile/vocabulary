@@ -1,0 +1,23 @@
+{
+  "headword": "play it by ear",
+  "senses": [
+    {
+      "term": "play it by ear",
+      "definition": "To decide as you go, guided by what actually happens rather than by a set plan.",
+      "distractors": [
+        "To put right something that has gone wrong.",
+        "To avoid something on purpose, having had the option to take it.",
+        "A rule of thumb that gets you a good enough answer quickly, because it usually works.",
+        "The preparation you do in advance of a moment where any gap would cost you.",
+        "Temporary structure that holds the work up until the real thing can stand on its own."
+      ],
+      "word_distractors": [
+        "ducks in a row",
+        "dogfooding",
+        "disparage",
+        "sleuthing",
+        "serialize"
+      ]
+    }
+  ]
+}

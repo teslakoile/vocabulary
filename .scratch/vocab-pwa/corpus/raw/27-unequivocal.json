@@ -6,7 +6,7 @@
       "accepted": [
         "unequivocally"
       ],
-      "definition": "Admitting only one reading. Said of a statement, a decision, or evidence that has been put in a form nobody can walk back or interpret a second way.",
+      "definition": "Stated so clearly that it can only be read one way.",
       "caution": "It is as much a claim about your own certainty as about the thing, which is an invitation: call the results unequivocal and one awkward case takes the whole sentence down with it. It belongs to statements and evidence rather than to people, so support, instructions, and findings can be unequivocal and a sponsor cannot. Used about your own view it can also come across as shutting the discussion rather than winning it.",
       "prompt_version": 2,
       "example": "The board came back unequivocal on this: no client data leaves the tenancy, under any structure.",
@@ -29,11 +29,18 @@
         }
       ],
       "distractors": [
-        "Stated with great force or at great volume, so that nobody in the room misses it.",
-        "Agreed by everybody in the room, with no dissent left over to be recorded anywhere afterwards.",
-        "Supported by more than one independent line of evidence, so that every check points the same way. The strength sits in the corroboration rather than in the wording.",
-        "Given without any explanation or reasoning attached, so that the answer stands there on its own and the argument for it does not. It says what was withheld rather than how the words can be read.",
-        "Impossible to challenge on procedural grounds, because the right people were consulted and every step of it was properly minuted. The protection lies in the process behind the decision, and the words announcing it may still be read two ways."
+        "Made deliberately hard to understand.",
+        "Big enough to matter, said of an amount or a change.",
+        "Aware of something and taking it into account.",
+        "Covering a wide range of cases rather than a narrow one.",
+        "True on the whole, allowing for exceptions nobody is going to list."
+      ],
+      "word_distractors": [
+        "primitive",
+        "persist",
+        "fan-out",
+        "advocate for",
+        "verifiable rewards"
       ]
     }
   ]

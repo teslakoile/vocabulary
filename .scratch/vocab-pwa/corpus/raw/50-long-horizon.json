@@ -9,7 +9,7 @@
         "long horizon task",
         "long-horizon tasks"
       ],
-      "definition": "Describing work that runs for many steps before anyone can tell whether it worked. In AI it names the class of task that breaks agents: errors compound, feedback arrives only at the end, and the system has to hold the goal across a long stretch of its own output.",
+      "definition": "Running for many steps before anyone can tell whether it worked.",
       "caution": "It is about the number of steps and the delay before feedback, not about the calendar. Using it for a project that is merely slow - a two-year migration with a checkpoint every fortnight - borrows research vocabulary for ordinary scheduling, and the people who use the term precisely will hear that. In an investment room the second word already means holding period, so a mixed audience takes you to be talking about time frames rather than about what makes a task hard for an agent.",
       "example": "Single-shot extraction is basically solved. The long-horizon work - chase the filing, reconcile it, come back with a memo - is where it still falls over.",
       "cues": [
@@ -31,13 +31,20 @@
         }
       ],
       "distractors": [
-        "A request too large to fit inside a single context window, so the material has to be cut into pieces and the model shown one piece at a time.",
-        "Work deferred to a later phase of the roadmap because nothing about it is urgent yet, on the shared understanding that it gets picked up whenever capacity appears.",
-        "A process that runs continuously rather than being started and finished, so there is no moment at which it is done and the only real question is whether it is keeping up with what arrives.",
-        "A task that cannot be completed without somebody who knows the subject sitting alongside whoever is doing it, because the judgement it needs was never written down anywhere a system could read it. What makes it hard is access to that person, not the size of the job.",
-        "Work whose cost is spread across several budget years, so that the sponsor approving it is committing their successors as well as themselves and the case has to survive people leaving. The scrutiny it attracts comes from the size of the commitment rather than from any doubt about whether the thing can actually be built."
+        "Safe to run more than once, since the second run leaves things exactly as the first did.",
+        "Understood by only a small group, because it assumes background that most people lack.",
+        "Built for one customer rather than taken off the shelf.",
+        "Lasting only briefly, and meant to.",
+        "So small or so easy that it is not worth the time it would take to discuss."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "lean on",
+        "run it by you",
+        "exacerbate",
+        "diaspora",
+        "blanket approval"
+      ]
     }
   ]
 }

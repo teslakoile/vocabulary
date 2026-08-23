@@ -7,7 +7,7 @@
         "flywheel",
         "flywheels"
       ],
-      "definition": "A loop in which each turn makes the next one easier: more use produces more data, better data produces a better product, which brings more use. Slow to start and hard to stop once it is turning.",
+      "definition": "A cycle where each turn feeds the next, so growth gets easier the longer it runs.",
       "caution": "It claims a specific mechanism, so you should be able to say each step of the loop out loud before you use it - in an investment room someone will ask you to draw it, and growth that is merely fast has no loop in it at all. It also carries a built-in excuse for a flat early stretch, which is a very convenient thing to reach for when your numbers are flat. Bezos put the word in every strategy deck for a decade, so in some rooms it arrives pre-discounted as consultant language.",
       "example": "Every deployment hands us the failure cases the next model trains on. That's the flywheel, and honestly it's the only moat we have.",
       "cues": [
@@ -29,13 +29,20 @@
         }
       ],
       "distractors": [
-        "A single jump in usage following a launch, big enough to show in the numbers and gone again by the next quarter.",
-        "The point at which revenue finally covers the fixed costs, after which every further sale contributes instead of merely shrinking the hole.",
-        "An advantage competitors cannot copy because the law will not let them, whether that is a patent, an exclusive licence or a regulator's permission that is no longer being granted to anyone new.",
-        "The share of customers who come back the following month without being prompted to, tracked because it is the clearest single sign that a product is worth returning to rather than merely worth trying once.",
-        "The lag between putting the money in and seeing anything come back out, during which the numbers get worse before they get better and somebody senior has to keep the funding in place while they do. Most of the argument happens in that stretch."
+        "A rig that drives a system to see how it behaves under conditions you choose.",
+        "Progress won into territory that was previously closed to you.",
+        "A people scattered from a homeland who keep a tie to it.",
+        "A structure where everyone can be watched at any moment and nobody knows when they are.",
+        "The unwritten history an organisation holds about why its own systems were built that way."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "squarely",
+        "by and large",
+        "enmeshed",
+        "executive presence",
+        "semantic layer"
+      ]
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "headword": "enmeshed",
+  "senses": [
+    {
+      "term": "enmeshed",
+      "definition": "Tangled up with something so tightly that the two can no longer act separately.",
+      "distractors": [
+        "Present in scattered, isolated places rather than across the whole.",
+        "Open to something without having agreed to it yet.",
+        "Safe to run more than once, because repeat runs change nothing.",
+        "An isolated environment where something runs without being able to affect anything real.",
+        "A people scattered from a homeland who keep a tie to it, and the fact of that scattering."
+      ],
+      "word_distractors": [
+        "amenable",
+        "despondent",
+        "verbose",
+        "idempotent",
+        "in pockets"
+      ]
+    }
+  ]
+}

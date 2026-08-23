@@ -1,0 +1,41 @@
+{
+  "headword": "verifiability/verifiable rewards",
+  "senses": [
+    {
+      "term": "verifiability",
+      "definition": "Whether a claim can be checked by someone other than whoever made it.",
+      "distractors": [
+        "The property of work that runs for many steps before anyone can tell whether it worked.",
+        "A voluntary group of people who do the same work and meet to trade what they learn.",
+        "The words a business actually uses mapped onto the raw tables underneath them.",
+        "Weight and seriousness in how a person carries themselves.",
+        "To decide as you go, taking your lead from how things develop."
+      ],
+      "word_distractors": [
+        "despondent",
+        "diaspora",
+        "wordsmith",
+        "eschew",
+        "ducks in a row"
+      ]
+    },
+    {
+      "term": "verifiable rewards",
+      "definition": "Training signal a machine can check on its own, like a test passing or a proof compiling.",
+      "distractors": [
+        "The accumulated history an organisation holds about why its systems were built the way they were.",
+        "A voluntary group of people who do the same kind of work and meet to trade what they are learning.",
+        "The one outcome you steer by, held fixed while everything else stays negotiable.",
+        "A slice of the market defined by the industry it serves.",
+        "To work over the exact phrasing of something already written."
+      ],
+      "word_distractors": [
+        "gravitas",
+        "despondent",
+        "lay of the land",
+        "ducks in a row",
+        "play it by ear"
+      ]
+    }
+  ]
+}

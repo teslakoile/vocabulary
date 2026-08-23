@@ -6,7 +6,7 @@
       "accepted": [
         "incrementally"
       ],
-      "definition": "Proceeding by small additions, each one standing on its own. It describes both a way of delivering work and the size of a gain.",
+      "definition": "Proceeding by small additions, each one adding a little to what is already there.",
       "caution": "The word has two temperatures and the room picks which one. About delivery it is a virtue; about results it is faint praise, and applied to a benefits case it is how a committee says not worth the money without having to argue. Decide which one your audience will hear before you use it about your own work. In a finance conversation it means something different again, the extra amount on top of the baseline rather than a small one.",
       "example": "The gains are incremental per release, and it is the compounding across two quarters that the case actually rests on.",
       "cues": [
@@ -28,13 +28,20 @@
         }
       ],
       "distractors": [
-        "Happening all at once after a long build-up, with nothing usable before it.",
-        "Repeated identically each cycle, so that the tenth run looks exactly like the first one.",
-        "Growing faster the longer it runs, because every step makes the next one cheaper. The curve bends upward rather than climbing at an even rate.",
-        "Reversible at any point at no cost, so that you can undo a step and stand exactly where you started. It is a claim about the way back, not the way forward.",
-        "Delivered only once it is completely finished, on the view that a half-built thing is worth nothing to anybody. Nothing reaches a user in the meantime, however long the meantime turns out to be."
+        "Done all at once, with no way back.",
+        "Replaced entirely rather than repaired.",
+        "Growing by a fixed percentage each period rather than a fixed amount.",
+        "A change that removes a feature instead of adding one, to keep the product simple.",
+        "Work that cannot be split up, because none of it is any use until all of it is done."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "continuum",
+        "squarely",
+        "tectonic shift",
+        "serialize",
+        "build that muscle"
+      ]
     }
   ]
 }

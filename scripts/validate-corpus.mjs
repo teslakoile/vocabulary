@@ -5,7 +5,7 @@ import { join } from 'node:path';
 
 const RAW_DIR = '.scratch/vocab-pwa/corpus/raw';
 const SOURCE = '.scratch/vocab-pwa/source-list.md';
-const TYPES = ['recognition', 'reverse', 'production'];
+const TYPES = ['recognition', 'identify', 'reverse', 'production'];
 
 const STOPWORDS = new Set([
   'your', 'their', 'them', 'that', 'this', 'with', 'from', 'into', 'over', 'they',
@@ -26,7 +26,36 @@ const expected = readFileSync(SOURCE, 'utf8')
 
 if (expected.length !== 84) fail('source-list', `expected 84 headwords, found ${expected.length}`);
 
+
 const files = (existsSync(RAW_DIR) ? readdirSync(RAW_DIR) : []).filter((f) => f.endsWith('.json')).sort();
+// Every term in the corpus, so word distractors can be checked against it.
+// Built before the per-file pass because a distractor may name any entry.
+const MAX_DEFINITION = 90;
+const WORD_OVERLAP_LIMIT = 0.1;
+const allTerms = new Map();
+for (const f of files) {
+  try {
+    const e = JSON.parse(readFileSync(join(RAW_DIR, f), 'utf8'));
+    for (const s of e.senses ?? []) allTerms.set(s.term, { headword: e.headword, definition: s.definition || '' });
+  } catch { /* the per-file pass reports the parse failure properly */ }
+}
+const OVERLAP_STOP = new Set(
+  ('to a an the of and or in on for that with it is not something someone but by as be are you your ' +
+   'they their what which who this these those from into at than then rather over under about more ' +
+   'most less own way work thing things people them there here when where how why can will would ' +
+   'could no any one two both each its his her have has had does do done make made use used')
+    .split(' ')
+);
+const overlapBag = (t) =>
+  new Set((String(t).toLowerCase().match(/[a-z']+/g) ?? []).filter((x) => x.length > 3 && !OVERLAP_STOP.has(x)));
+function definitionOverlap(a, b) {
+  const x = overlapBag(a);
+  const y = overlapBag(b);
+  if (!x.size || !y.size) return 0;
+  let shared = 0;
+  for (const w of x) if (y.has(w)) shared++;
+  return shared / (x.size + y.size - shared);
+}
 const entries = [];
 const seenHeadwords = new Map();
 
@@ -89,6 +118,41 @@ for (const file of files) {
       const shorter = s.distractors.filter((d) => d.length < defLength).length;
       if (longer < 2 || shorter < 2) {
         fail(w, `length tell: ${longer} distractor(s) at or above the ${defLength}-char definition, ${shorter} below; needs at least 2 of each`);
+      }
+    }
+
+    // A definition is one plain sentence. The first corpus opened with an
+    // abstract paraphrase and explained itself in a second sentence, in 94% of
+    // senses, and read as more complicated than an ordinary dictionary line.
+    const definition = s.definition || '';
+    const sentences = (definition.match(/[.!?](\s|$)/g) || []).length;
+    if (sentences > 1 && !s.needs_two) {
+      fail(w, `definition runs to ${sentences} sentences and is not flagged needs_two`);
+    }
+    if (!s.needs_two && definition.length > MAX_DEFINITION) {
+      fail(w, `definition is ${definition.length} characters, over the ${MAX_DEFINITION} limit`);
+    }
+    const aside = definition.match(/[:;]|\s[-\u2013\u2014]\s/);
+    if (aside) fail(w, `definition contains "${aside[0].trim()}", which delays the meaning`);
+
+    // Wrong words for the card that shows the definition and asks for the word.
+    // The failure mode here is a distractor you can argue for: two short plain
+    // definitions collide far more easily than two long ones did.
+    if (!Array.isArray(s.word_distractors)) fail(w, 'word_distractors must be an array');
+    else {
+      if (s.word_distractors.length !== 5) fail(w, `${s.word_distractors.length} word_distractors, needs exactly 5`);
+      if (new Set(s.word_distractors).size !== s.word_distractors.length) fail(w, 'word_distractors are not unique');
+      for (const word of s.word_distractors) {
+        const other = allTerms.get(word);
+        if (!other) { fail(w, `word distractor "${word}" is not a term in the corpus`); continue; }
+        if (word === s.term) fail(w, `word distractor "${word}" is the answer`);
+        if (termsInEntry.has(word) || (entry.senses || []).some((x) => x.term === word)) {
+          fail(w, `word distractor "${word}" is a sibling sense of the same entry`);
+        }
+        const score = definitionOverlap(definition, other.definition);
+        if (score >= WORD_OVERLAP_LIMIT) {
+          fail(w, `word distractor "${word}" overlaps this definition at ${score.toFixed(2)}, so it is arguable`);
+        }
       }
     }
 

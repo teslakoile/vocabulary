@@ -7,7 +7,7 @@
         "disparaging",
         "disparagement"
       ],
-      "definition": "To speak about someone or something in a way that lowers it, usually by a passing remark or faint praise rather than open attack. It describes a manner of speaking, not a disagreement.",
+      "definition": "To speak of someone or something in a way that quietly lowers how others see it.",
       "caution": "It mostly appears as an accusation or a denial, and the denial never works: I don't want to disparage the previous team announces precisely what you are about to do. Its other trap is defensive — calling someone's honest criticism disparagement is a way of dodging the criticism, and senior people can see you do it.",
       "example": "I'm not trying to disparage the previous team — they were solving a different problem with a fifth of the budget.",
       "cues": [
@@ -33,13 +33,20 @@
         }
       ],
       "distractors": [
-        "To dispute a claim by putting contrary evidence in front of the room and letting the numbers do the work.",
-        "To overstate how important something is so that it gets attention it would not otherwise be given, which costs you credibility the second time.",
-        "To withdraw public support from a person or a project you previously backed. It is a change of position rather than a choice of words, and the absence of the endorsement is noticed more than any sentence would have been.",
-        "To circulate information you know to be untrue in order to damage someone, which is a question about the facts rather than about the tone. It is also the version of this that ends up involving a lawyer.",
-        "To pin responsibility for a collective failure on one named person so that the review can be closed and everyone else can get back to work. It is usually done without malice and it is almost always the wrong answer, because the conditions that produced the failure are still there for whoever fills the seat next."
+        "To make something already said finally make sense by laying the reasoning out in order.",
+        "To back a claim with evidence that somebody else is able to check for themselves.",
+        "To turn an object in memory into bytes that can be stored or sent.",
+        "To avoid something deliberately and on principle.",
+        "To rely on someone to carry part of the weight."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "play it by ear",
+        "daily driver",
+        "vertical",
+        "north star",
+        "finesse"
+      ]
     }
   ]
 }

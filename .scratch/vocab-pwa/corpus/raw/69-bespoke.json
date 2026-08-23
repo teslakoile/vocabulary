@@ -4,7 +4,7 @@
     {
       "term": "bespoke",
       "accepted": [],
-      "definition": "Built for one customer or one case rather than taken off the shelf. In a platform conversation the word carries the cost with it: bespoke things never amortise.",
+      "definition": "Made for one customer or one case rather than bought off the shelf.",
       "caution": "The same word flatters a client and condemns a design, so know which room you are in. In front of a buyer it means premium and tailored; in an architecture review it means unrepeatable, unsupported and expensive to keep breathing. Say it about a colleague's system and you have criticised it.",
       "example": "Every one of those dashboards is bespoke, which is exactly why nobody can maintain them.",
       "cues": [
@@ -30,13 +30,20 @@
         }
       ],
       "distractors": [
-        "Produced in volume to a single standard, so that every unit is interchangeable with every other.",
-        "Assembled out of standard parts in a new arrangement, which is a claim about the configuration rather than about the parts themselves.",
-        "Designed so the customer can extend it themselves after delivery, through settings and plug-in points the vendor deliberately left open. The work is done by whoever bought it.",
-        "Priced individually for each buyer according to what that buyer will bear, so two customers on identical contract terms can end up paying very different amounts and neither of them knows it.",
-        "Shipped before any formal specification exists, on the argument that requirements only become clear once somebody has something in front of them. It buys speed at the price of an argument later about what was actually agreed."
+        "Advancing in stages, with each stage going further than the one before it.",
+        "Safe to run more than once, because the second run leaves things exactly as the first did.",
+        "Big enough to matter, said of an amount, a change, or a piece of work.",
+        "Low in a way that has given up on improving.",
+        "The current edge of what these systems can do."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "obfuscate",
+        "verifiability",
+        "continuum",
+        "broad",
+        "asymmetric"
+      ]
     }
   ]
 }

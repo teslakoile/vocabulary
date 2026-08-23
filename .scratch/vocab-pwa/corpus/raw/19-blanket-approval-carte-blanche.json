@@ -6,7 +6,7 @@
       "accepted": [
         "carte blanche"
       ],
-      "definition": "Permission given once and in advance to cover a whole class of decisions, so that each one does not have to come back for review. The point is the scope of the freedom rather than the size of any single decision inside it.",
+      "definition": "Permission given once in advance to cover a whole class of decisions.",
       "caution": "Claiming it is far riskier than having it. Tell a committee you have blanket approval and you have invited someone to go and check, and permissions of this shape almost always turn out to have had conditions attached that nobody wrote down. Carte blanche carries a whiff of indulgence on top: about someone else it implies they are unsupervised, about yourself it sounds like a boast.",
       "example": "We do not have blanket approval for production data, it is per use case, and the last one took three weeks.",
       "cues": [
@@ -32,13 +32,20 @@
         }
       ],
       "distractors": [
-        "Permission granted for one specific case only, with the next one having to come back and ask again from the start.",
-        "A decision taken without consulting anybody who might have objected, on the view that asking would have cost more time than it was worth.",
-        "Provisional agreement pending a formal sign-off, enough to start work against but not enough to spend against. What it hands you is the nod, with the actual permission still sitting somewhere ahead of you.",
-        "A budget set aside for needs nobody has foreseen, drawn on when something turns up that the plan never contained. It is money held in reserve rather than permission held in advance, and each draw still has to be released case by case.",
-        "A time-limited exemption from a rule, granted because the rule would otherwise block something urgent, and expiring on a date written into the grant itself. The exception is narrow and the clock is the whole point of it, which is nearly the opposite of a freedom whose value lies in how wide it runs."
+        "Approval that expires if it is not used within a set period.",
+        "A decision taken by one person and announced without discussion.",
+        "A rule that applies to everyone except those who ask to be excused.",
+        "A requirement that every single case be reviewed on its own before it can proceed.",
+        "A standing instruction to stop work the moment a particular threshold is crossed."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "obscure",
+        "fearless forecast",
+        "failure mode",
+        "tacit knowledge",
+        "heuristic"
+      ]
     }
   ]
 }

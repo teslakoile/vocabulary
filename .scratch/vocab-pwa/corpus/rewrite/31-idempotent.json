@@ -1,0 +1,23 @@
+{
+  "headword": "idempotent",
+  "senses": [
+    {
+      "term": "idempotent",
+      "definition": "Safe to run more than once, because running it again leaves the same end state.",
+      "distractors": [
+        "Created for one use and thrown away straight after.",
+        "Able to be replaced while the system around it keeps running.",
+        "Splitting one piece of work into many parallel branches that all run at the same time.",
+        "Checkable by someone other than whoever produced it.",
+        "Describing work that runs for many steps before anyone can tell whether it worked."
+      ],
+      "word_distractors": [
+        "ephemeral",
+        "fan-out",
+        "verbose",
+        "disparage",
+        "lay of the land"
+      ]
+    }
+  ]
+}

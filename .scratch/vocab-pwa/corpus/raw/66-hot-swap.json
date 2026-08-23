@@ -8,7 +8,7 @@
         "hot-swapping",
         "hot-swappable"
       ],
-      "definition": "To replace a running component without stopping the system around it. Extended well past hardware now: models, vendors and people exchanged mid-flight with nothing going dark.",
+      "definition": "To replace a running part without stopping the system around it.",
       "caution": "The word promises no downtime, and that is a claim someone will hold you to on the day. Used about a person it is worse: hot-swap Priya onto that reads as people being interchangeable parts, which is fine between engineers and cold in front of her manager.",
       "example": "The provider sits behind an interface, so we can hot-swap the model without the application knowing.",
       "cues": [
@@ -30,13 +30,20 @@
         }
       ],
       "distractors": [
-        "To bring a system down cleanly inside a planned window, make the change, and then start it up again.",
-        "To run two versions side by side against the same traffic and compare what each produces before trusting either one of them in production.",
-        "To copy the state of a system at a point in time so that it can be put back exactly as it was if the change goes wrong. The copy is insurance, and it is taken before anything gets touched.",
-        "To keep a second machine idle and fully configured so that it takes over the moment the first one fails. It costs you the price of running two, and what it buys is the minutes between the failure and anyone noticing.",
-        "To move a task from whoever is stuck with it to whoever happens to have capacity, without changing anything about the task itself. It is a scheduling decision made about people rather than a change made to a system, and it gets announced in a standup rather than a change record."
+        "To turn a structure that only exists in memory into bytes that can be stored or sent.",
+        "To make something deliberately hard to understand so the plain version stays hidden.",
+        "An isolated environment where something runs without being able to affect anything real.",
+        "To put right something that was wrong.",
+        "Low in a way that has given up on things improving."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "gravitas",
+        "diaspora",
+        "persistence",
+        "persist",
+        "first principles"
+      ]
     }
   ]
 }

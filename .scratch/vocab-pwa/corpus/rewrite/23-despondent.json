@@ -1,0 +1,23 @@
+{
+  "headword": "despondent",
+  "senses": [
+    {
+      "term": "despondent",
+      "definition": "So low that you have given up expecting things to get better.",
+      "distractors": [
+        "Aware of something and visibly taking it into account.",
+        "Weight and seriousness in how a person carries themselves.",
+        "Tangled into something so completely that you can no longer act on your own.",
+        "Alert to something and picking up its signals early enough to adjust.",
+        "Done on purpose and after thought, rather than by accident or by drift."
+      ],
+      "word_distractors": [
+        "gravitas",
+        "cognizant",
+        "superset",
+        "modality",
+        "fan-out"
+      ]
+    }
+  ]
+}

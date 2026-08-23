@@ -6,7 +6,7 @@
       "accepted": [
         "from first principles"
       ],
-      "definition": "The small set of things you know to be true once precedent, analogy and how it is normally done have been stripped out. Working from first principles means rebuilding the answer out of those, rather than adapting somebody else's answer.",
+      "definition": "The basic truths you build an answer up from instead of copying how it is usually done.",
       "caution": "The phrase has become a status move. Announcing that you are going back to first principles tells the room that everything done so far was unexamined, so it only survives if you immediately name the assumptions you are throwing out. It also has a cost people gloss over: it is slow, and spending it on a decision where the standard industry answer would have been fine is how a quarter disappears.",
       "prompt_version": 2,
       "example": "Before we copy the vendor's architecture wholesale, give me one pass from first principles. What do we actually need to be true here?",
@@ -29,11 +29,18 @@
         }
       ],
       "distractors": [
-        "The order the work has to happen in, where each step stays blocked until the one before it is finished.",
-        "The founding values an organisation publishes and expects decisions to be weighed against. They are chosen rather than discovered, and they describe what the place would like to be.",
-        "The rules a system is never allowed to break, whatever else changes around it. They are written as constraints precisely so that any design violating one can be ruled out without a further argument about it.",
-        "The record of what went wrong on earlier projects, gathered so that the next team does not pay twice for the same mistake. Its whole authority comes from somebody having been through it before, which is also why it ages badly once the conditions change.",
-        "The earliest working version of a design, kept on file so that later arguments about why something is shaped the way it is can be settled by looking at what was originally intended. It carries weight in the room because it came first, not because anyone has since gone back and checked whether it still holds."
+        "A rule of thumb that gets you a good enough answer quickly.",
+        "The underlying layer everything above it runs on and takes for granted.",
+        "The direct consequences of a change, before anyone has adapted to it.",
+        "What someone can do but cannot fully explain, such as judgement, feel, or a sense of fit.",
+        "The approvals and preparation done in advance of a moment where a gap would cost you dearly."
+      ],
+      "word_distractors": [
+        "verifiable rewards",
+        "obfuscate",
+        "eschew",
+        "substantial",
+        "cognizant"
       ]
     }
   ]

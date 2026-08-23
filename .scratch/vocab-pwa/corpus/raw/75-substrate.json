@@ -4,7 +4,7 @@
     {
       "term": "substrate",
       "accepted": [],
-      "definition": "The underlying layer everything above it runs on and takes for granted. Not a component among others: the thing that has to be there before anything else is possible.",
+      "definition": "The base layer that everything built above it runs on and takes for granted.",
       "caution": "The word is borrowed from geology and biology and it arrives sounding grand, which is the trap. Calling your service a substrate claims other things genuinely depend on it, and someone in the room can check that; if two teams call your API, the honest word is shared service. It also flattens what it names, so describing another team's product that way can land as demoting them to plumbing.",
       "example": "Identity and audit are substrate. Nobody should be building either of them per product.",
       "cues": [
@@ -30,13 +30,20 @@
         }
       ],
       "distractors": [
-        "Scaffolding put up to get something built and taken away again once the thing stands on its own.",
-        "The outermost layer users actually touch, where a system's decisions turn into buttons and screens and everything underneath is hidden from view.",
-        "A shared vocabulary that lets separate teams describe the same data in the same words, so a number means one thing in every report it turns up in and the arguments about definitions stop.",
-        "A part that can be pulled out and replaced while the system around it keeps running, which is a property of how it is attached rather than of where it sits. What it buys you is the ability to change something without a window.",
-        "The smallest set of features that lets a product go in front of real users at all, chosen so that what comes back is a judgement about the idea rather than about the polish. Everything left out is a bet that nobody will miss it yet."
+        "A voluntary group of people doing the same work who meet to trade what they learn.",
+        "Temporary structure that holds work up until the real thing can stand on its own.",
+        "A number or a call given straight, with all the caveats stripped out of it.",
+        "To avoid something deliberately and on principle.",
+        "Low in a way that has given up on things improving."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "esoteric",
+        "superset",
+        "mold breaker",
+        "harness",
+        "broad"
+      ]
     }
   ]
 }

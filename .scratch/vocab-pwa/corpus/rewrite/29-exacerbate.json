@@ -1,0 +1,23 @@
+{
+  "headword": "exacerbate",
+  "senses": [
+    {
+      "term": "exacerbate",
+      "definition": "To make a bad situation worse.",
+      "distractors": [
+        "To put right what went wrong.",
+        "To avoid it on principle.",
+        "To back a claim with evidence someone else can check.",
+        "To keep at something long after most people would stop.",
+        "To make something deliberately hard to understand."
+      ],
+      "word_distractors": [
+        "rectify",
+        "wordsmith",
+        "idempotent",
+        "attuned",
+        "superset"
+      ]
+    }
+  ]
+}

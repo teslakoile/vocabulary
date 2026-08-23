@@ -1,0 +1,23 @@
+{
+  "headword": "superset",
+  "senses": [
+    {
+      "term": "superset",
+      "definition": "A set that holds everything another set holds, and more besides.",
+      "distractors": [
+        "A slice of the market defined by the industry it serves, such as banking or health.",
+        "An isolated environment where something runs without touching anything real.",
+        "A rule of thumb that gets you a good enough answer quickly.",
+        "To make a bad situation worse.",
+        "Alert and responsive to signals, adjusting early."
+      ],
+      "word_distractors": [
+        "despondent",
+        "wordsmith",
+        "obfuscate",
+        "lay of the land",
+        "gravitas"
+      ]
+    }
+  ]
+}

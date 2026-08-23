@@ -6,7 +6,7 @@
       "accepted": [
         "tacit"
       ],
-      "definition": "What someone can do but cannot fully explain: judgement, feel, the sense that something is off before the alert fires. It resists being written down, which is why it moves by working alongside people rather than by documentation.",
+      "definition": "What someone can do well but cannot fully put into words.",
       "caution": "The word says the gap is inherent, not lazy, so it only holds where writing the thing down is genuinely hard. Reach for it to excuse an undocumented deployment process and the excuse is transparent - steps are steps, and the room can tell the difference. It also puts the holder in an awkward position: declaring someone's expertise unwritable makes them simultaneously indispensable and impossible to replace, which is a compliment and a staffing risk in one sentence.",
       "example": "The runbook covers the steps. What Priya has is tacit - she can tell from the shape of the latency graph that it's the index, not the model.",
       "cues": [
@@ -28,20 +28,27 @@
         }
       ],
       "distractors": [
-        "Information a firm deliberately keeps from outsiders, protected by contract because its value depends on nobody else holding a copy.",
-        "Understanding a team has already captured in writing and keeps current, sitting in a runbook or a design note where anyone joining can find it without having to ask a person for it.",
-        "Expertise certified by an outside body and evidenced by an exam that a client or an auditor will accept as proof. What matters is that the standard was set by someone other than the employer, which is what makes it portable between firms.",
-        "Agreement given by saying nothing: nobody objected, the date passed, and the decision is now treated as made. It is a real mechanism in large organisations and a dangerous one, because the people who stayed quiet rarely think they agreed to anything.",
-        "Advice that travels sideways between peers, swapped over coffee or in a private channel because neither person wants it written down anywhere. It is often faster and more accurate than the official line, but it is withheld for reasons of exposure rather than difficulty, and nobody will repeat it in a room where it would have to be defended."
+        "Deep structural change in the conditions everyone works under.",
+        "The most senior people in an organisation, spoken of as a single group.",
+        "A rule of thumb that usually works.",
+        "An isolated environment where code runs safely.",
+        "Progress won into territory that was closed to you before."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "top brass",
+        "superset",
+        "bespoke",
+        "bolster",
+        "fearless forecast"
+      ]
     },
     {
       "term": "institutional knowledge",
       "accepted": [
         "institutional memory"
       ],
-      "definition": "The accumulated history one organisation holds about itself: why a system was built that way, what was tried in 2019, which client must never be called before ten. It is perfectly writable - it simply never got written - and it leaves when people do.",
+      "definition": "The history an organisation holds about itself and never got around to writing down.",
       "caution": "It is usually deployed as an argument for keeping somebody, so be careful whose leverage you are describing: telling a sponsor that a contractor holds it is either a case for retaining them or an admission that you allowed a single point of failure to form. And unlike judgement, this can be written down, so saying it is institutional is not an explanation of why it is undocumented - it is a description of the problem, and the obvious next question is what you are doing about it.",
       "example": "When Martin goes we lose the institutional knowledge of why the reconciliation runs at four in the morning, and not one line of it is written down.",
       "cues": [
@@ -63,13 +70,20 @@
         }
       ],
       "distractors": [
-        "Rules imposed on a firm from outside by its regulator, which it has to follow whether or not they suit the way it would prefer to work.",
-        "The standing an organisation has with its clients, built slowly across years of delivery and capable of being lost inside a single badly handled quarter. It lives in other people's heads rather than its own.",
-        "Training material written for new starters: the onboarding deck, the first-week checklist, the walkthrough of the tools. It is deliberately built for people who know nothing yet, which is exactly why it stops being any use in the second month.",
-        "A way of working that has spread across an entire industry until nobody remembers proposing it, so that two firms who have never spoken run the same process in the same order. It is why a hire from a competitor can be productive in a fortnight, and why nobody questions the parts that make no sense.",
-        "The record one firm has built up about its customers over the years: transactions, contact history, the fields somebody added in 2014 that nobody has cleaned since. It is an asset in that it sits on a server and can be queried, and a liability in that a regulator can ask what is in it, which is why the two arguments about it never quite meet."
+        "A basic building block a platform hands you and expects you to compose with.",
+        "The one outcome you steer by while everything else stays negotiable.",
+        "A structure where everyone can be watched at any moment and nobody knows when.",
+        "One of the handful of cloud providers operating at a size where compute is effectively unlimited.",
+        "A voluntary group of people who do the same kind of work and meet to trade what they know."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "contrived",
+        "flywheel effect",
+        "cognizant",
+        "nontrivial",
+        "deliberate"
+      ]
     }
   ]
 }

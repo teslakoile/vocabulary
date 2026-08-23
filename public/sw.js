@@ -10,7 +10,7 @@
 // iOS runs nothing while the app is closed: Background Sync is unimplemented
 // and Periodic Background Sync is WONTFIX. So this worker never syncs on its
 // own. Flushing happens in the page, on open / visibilitychange / reconnect.
-const SHELL = 'shell-v2';
+const SHELL = 'shell-v3';
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
@@ -97,10 +97,18 @@ function pickCard(snapshot) {
   const sense = senses.get(card.sense_id);
   if (!sense) return null;
 
+  // The notification shows the card's own question side, so tapping it lands on
+  // the same screen the body already put in your head. A recognition card asks
+  // about the word, both definition cards show the definition, and only a
+  // production card wants a cue.
   const cue = sense.cues && sense.cues.length
     ? sense.cues[Math.floor(Math.random() * sense.cues.length)]
     : null;
-  return { cardId: card.id, body: (cue && cue.text) || sense.definition };
+  let body;
+  if (card.type === 'recognition') body = sense.term;
+  else if (card.type === 'production') body = (cue && cue.text) || sense.definition;
+  else body = sense.definition;
+  return { cardId: card.id, body: body || sense.definition };
 }
 
 self.addEventListener('push', (e) => {

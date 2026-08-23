@@ -9,7 +9,7 @@
         "sleuthing out",
         "sleuthed out"
       ],
-      "definition": "Patient, curious digging for something that is not hidden on purpose but is written down nowhere either. It is piecing an answer together from scraps instead of asking someone for it.",
+      "definition": "Patient digging to piece together an answer nobody has written down.",
       "caution": "The word is light and slightly playful, which cuts both ways. It is generous about a colleague's persistence, and it lets people off when the real reason you had to dig is that someone would not tell you. Said about your own week to a sponsor, it can turn two days of genuine analysis into a hobby.",
       "example": "Nobody could tell me which system owned that field, so I spent Tuesday sleuthing it out of the commit history.",
       "cues": [
@@ -35,13 +35,20 @@
         }
       ],
       "distractors": [
-        "Following an established procedure step by step in order to confirm a result that was already expected.",
-        "Interviewing people one after another until somebody finally says what happened, where the work is in the pressure rather than in the reading.",
-        "Stripping the sensitive details out of a document before it is circulated more widely, so that the argument in it can travel without the names, the numbers and the client still attached to it.",
-        "Querying a system for the records that match a set of conditions you already know how to state, which is fast, repeatable, and exactly as good as the question you thought to ask in the first place.",
-        "Watching activity closely enough to catch somebody in the act, with the intention formed well before the looking starts. What separates it from ordinary curiosity is that the conclusion is already in place and the observation is only there to supply evidence for it."
+        "A funded, staffed team that concentrates a scarce capability in one place.",
+        "Permission given once and in advance to cover a whole class of decisions.",
+        "To avoid something deliberately and on principle.",
+        "The most senior people in a firm, spoken of as one.",
+        "Weight and seriousness in how a person carries themselves."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "incremental",
+        "fan-out",
+        "progressive",
+        "hyperscaler",
+        "contrived"
+      ]
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "headword": "hot-swap",
+  "senses": [
+    {
+      "term": "hot-swap",
+      "definition": "To replace a running part without stopping the system around it.",
+      "distractors": [
+        "To turn a structure that only exists in memory into bytes that can be stored or sent.",
+        "To make something deliberately hard to understand so the plain version stays hidden.",
+        "An isolated environment where something runs without being able to affect anything real.",
+        "To put right something that was wrong.",
+        "Low in a way that has given up on things improving."
+      ],
+      "word_distractors": [
+        "eschew",
+        "diaspora",
+        "wordsmith",
+        "gravitas",
+        "top brass"
+      ]
+    }
+  ]
+}

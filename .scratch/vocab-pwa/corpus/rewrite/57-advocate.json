@@ -1,0 +1,41 @@
+{
+  "headword": "advocate",
+  "senses": [
+    {
+      "term": "advocate",
+      "definition": "The person who argues your case in rooms you are not in.",
+      "distractors": [
+        "The most senior people in an organisation, spoken of as one group.",
+        "A voluntary group of people who do the same work and swap what they know.",
+        "A rule of thumb that usually works well enough.",
+        "An isolated environment where code runs safely.",
+        "The one you actually use every day."
+      ],
+      "word_distractors": [
+        "top brass",
+        "mold breaker",
+        "north star",
+        "panopticon",
+        "semantic layer"
+      ]
+    },
+    {
+      "term": "advocate for",
+      "definition": "To argue openly for a position or a person, putting your own standing behind it.",
+      "distractors": [
+        "To speak about someone in a way that lowers them, usually with a passing remark.",
+        "To make a bad situation worse.",
+        "To avoid something on purpose when you could have taken it.",
+        "To make something already written finally make sense by laying out the reasoning.",
+        "To turn a structure that only exists in memory into a form you can store or send on."
+      ],
+      "word_distractors": [
+        "disparage",
+        "obfuscate",
+        "exacerbate",
+        "serialize",
+        "hot-swap"
+      ]
+    }
+  ]
+}

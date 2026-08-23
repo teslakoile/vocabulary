@@ -1,0 +1,59 @@
+{
+  "headword": "scaffolding/harness/sandbox",
+  "senses": [
+    {
+      "term": "scaffolding",
+      "definition": "Temporary structure that holds work up until the real thing can stand alone.",
+      "distractors": [
+        "An isolated environment where code runs without touching anything real.",
+        "A rig that drives a system from outside to see how it behaves.",
+        "Lasting only briefly, and created for one use before being thrown away.",
+        "A basic building block a platform hands you and expects you to compose things out of.",
+        "The preparation done in advance of a moment where a gap would cost you dearly."
+      ],
+      "word_distractors": [
+        "despondent",
+        "diaspora",
+        "esoteric",
+        "disparage",
+        "run it by you"
+      ]
+    },
+    {
+      "term": "harness",
+      "definition": "A rig built to drive a system from outside and see how it behaves.",
+      "distractors": [
+        "Temporary structure that holds work up until the real thing can stand alone.",
+        "An isolated environment where something runs without affecting anything real.",
+        "Using your own product for real work before asking anyone else to.",
+        "A specific way a system goes wrong.",
+        "The underlying layer everything else runs on."
+      ],
+      "word_distractors": [
+        "dogfooding",
+        "blanket approval",
+        "eschew",
+        "frontier",
+        "by and large"
+      ]
+    },
+    {
+      "term": "sandbox",
+      "definition": "An isolated place to run something where it cannot affect anything real.",
+      "distractors": [
+        "Temporary structure that holds work up until the real thing can stand alone.",
+        "A rig that drives a system from outside to see how it behaves.",
+        "Present in scattered, isolated places rather than across the whole.",
+        "Using your own product for real work before you ask anyone else to.",
+        "One of the handful of cloud providers running compute and storage at planetary scale."
+      ],
+      "word_distractors": [
+        "wordsmith",
+        "superset",
+        "frontrunner",
+        "gravitas",
+        "inroads"
+      ]
+    }
+  ]
+}

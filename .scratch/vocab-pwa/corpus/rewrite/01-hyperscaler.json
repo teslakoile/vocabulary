@@ -1,0 +1,23 @@
+{
+  "headword": "hyperscaler",
+  "senses": [
+    {
+      "term": "hyperscaler",
+      "definition": "One of the few cloud providers running compute and storage at a scale you cannot exhaust.",
+      "distractors": [
+        "A data centre a company builds and runs purely for its own internal systems.",
+        "A vendor that resells another company's cloud capacity under its own brand.",
+        "The unit of computing you rent by the hour and give back when the job is finished.",
+        "A pricing model where you pay only for the computing you actually consume, billed by the second.",
+        "A company that keeps its servers in its own building rather than renting them from anyone."
+      ],
+      "word_distractors": [
+        "despondent",
+        "wordsmith",
+        "play it by ear",
+        "enmeshed",
+        "esoteric"
+      ]
+    }
+  ]
+}

@@ -6,7 +6,7 @@
       "accepted": [
         "failure modes"
       ],
-      "definition": "A specific way a system goes wrong: not the fact that it might, but the particular shape of the wrongness. Naming them turns this could break into a list you can design against.",
+      "definition": "A specific way a system goes wrong, rather than the fact that it might.",
       "caution": "The phrase invites a list, so raising failure modes without having any makes you sound anxious rather than rigorous. Said about a person it changes character entirely: his failure mode is going quiet is affectionate between peers and clinical the moment it is said upward, or about someone who is not in the room.",
       "example": "The failure mode I care about isn't a wrong answer, it's a confident wrong answer that nobody checks.",
       "cues": [
@@ -32,13 +32,20 @@
         }
       ],
       "distractors": [
-        "The likelihood that a system stops working inside a given window, expressed as a number you can plan against.",
-        "A reduced state a system drops into under stress, still answering but with the expensive parts switched off until the load falls back to something it can serve.",
-        "The point at which arriving load exceeds what a system can serve, after which every extra request makes the queue longer rather than the throughput higher. It is a single number, found by testing.",
-        "The written account produced after an incident, setting out what happened, in what order, and what will change so that it does not happen again. It is read mostly by people who were not there, which is what shapes how it gets written.",
-        "The average time a component runs before it breaks, measured across a large population of identical units and quoted by whoever manufactured them. It says nothing at all about the particular unit you happen to own, which is why it disappoints anyone who reads it as a promise about theirs."
+        "A basic building block a platform hands you and expects you to compose with.",
+        "The accumulated history one organisation holds about why it does things its way.",
+        "An isolated environment where something can run without touching anything real.",
+        "To put right something that was wrong.",
+        "Open to something without having agreed to it yet."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "obfuscate",
+        "cognizant",
+        "verbose",
+        "flywheel effect",
+        "heuristic"
+      ]
     }
   ]
 }

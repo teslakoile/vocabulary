@@ -1,0 +1,23 @@
+{
+  "headword": "attuned",
+  "senses": [
+    {
+      "term": "attuned",
+      "definition": "Alert to something and quick to pick up small signals from it and adjust.",
+      "distractors": [
+        "Low in a way that has given up on things getting better.",
+        "Admitting only one reading, so nobody can take it two ways.",
+        "Done quietly so that nobody sees it being done.",
+        "Understood by only a small group, because it assumes background that most people lack.",
+        "A rule of thumb that gets you a good enough answer quickly, because it usually works."
+      ],
+      "word_distractors": [
+        "despondent",
+        "verbose",
+        "esoteric",
+        "bespoke",
+        "ephemeral"
+      ]
+    }
+  ]
+}

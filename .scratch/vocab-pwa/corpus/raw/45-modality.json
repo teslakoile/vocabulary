@@ -6,7 +6,7 @@
       "accepted": [
         "modalities"
       ],
-      "definition": "A kind of input or output a system works in: text, images, audio, video. It names the channel the information arrives or leaves in, not the subject matter and not the file format.",
+      "definition": "A kind of input or output a system works in, such as text, images, audio or video.",
       "caution": "In an AI room it means the kind of data and nothing else. Reaching for it where 'format' or 'channel' would do - a delivery modality, a training modality - is the consulting usage, and to technical listeners it sounds like a plain word in a suit. Mixed rooms are the real risk: clinicians and consultants hear 'a way of doing something' and follow you somewhere you did not intend to go.",
       "example": "The hard part isn't the volume, it's that the filings arrive in three modalities and only one of them is clean text.",
       "cues": [
@@ -28,13 +28,20 @@
         }
       ],
       "distractors": [
-        "The tone something is written in, from clipped and factual through to warm, chosen to suit whoever is reading it.",
-        "A named mode that switches a system between two ways of behaving, so that the same product can be strict for one customer and permissive for another.",
-        "The file format a thing happens to be stored in, which decides what can open it and how much room it takes, and which can be changed without altering a word of what it holds.",
-        "A permission level governing what a given person is allowed to do, from reading only, through editing, up to changing what everybody else is allowed to do. It travels with the person rather than with the material.",
-        "A stage of a pipeline, from ingestion at one end through to serving at the other, each with its own failure modes and its own owner. Work is handed from one to the next, and a problem is usually named after whichever stage it first showed up in."
+        "A rule of thumb that gets you a good enough answer quickly.",
+        "The place where raw tables and columns are mapped onto words the business uses.",
+        "Temporary structure that holds work up until the real thing can stand on its own.",
+        "One of the handful of cloud providers running compute and storage at planetary scale.",
+        "A people scattered from a homeland who keep a tie to it, and that scattering itself."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "hyperscaler",
+        "nontrivial",
+        "buy-in",
+        "sleuthing",
+        "exacerbate"
+      ]
     }
   ]
 }

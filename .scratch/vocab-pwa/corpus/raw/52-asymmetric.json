@@ -8,7 +8,7 @@
         "asymmetrical",
         "asymmetries"
       ],
-      "definition": "Unequal in a way that changes the decision, usually about a bet where the downside is small and bounded and the upside is many times larger. It describes the shape of the payoff, not the odds.",
+      "definition": "Unequal on the two sides, usually a small downside against a much larger upside.",
       "caution": "It says nothing about likelihood, so calling something asymmetric is not calling it a good idea - a lottery ticket is asymmetric. It also only earns its place if you can say which side is bigger and roughly by how much; used bare it dresses a hunch as analysis, and an investment committee is precisely the room that asks for the two numbers. Technical listeners have the word already spoken for by encryption and by information asymmetry, so name what is uneven.",
       "example": "The pilot is asymmetric: worst case we lose a quarter of one team's time, best case we retire two vendors.",
       "cues": [
@@ -34,13 +34,20 @@
         }
       ],
       "distractors": [
-        "Reversible at any point and at no real cost, so the decision can be unwound the moment it stops looking right.",
-        "Weighted so that both sides carry the same exposure, and neither can be hurt by an outcome that leaves the other untouched.",
-        "Structured so that a gain on one side is offset by a loss on the other, leaving the position flat whichever way the market moves. What you are buying is the removal of the outcome rather than the outcome itself.",
-        "Uncertain in a way you cannot put a number on, because the probabilities themselves are unknown rather than merely unfavourable. It is the difference between a bet you can price and a situation you can only describe.",
-        "Spread across many small positions instead of concentrated in one, so that no single failure can take the whole book down with it. It gives up the chance of an outsized result in exchange for surviving long enough to place the next round of bets."
+        "Harder or larger than the person asking has assumed it would be.",
+        "Big enough to matter, said of an amount, a change, or a piece of work.",
+        "A range with no natural joints in it, where the cases shade into one another.",
+        "A structure where everyone can be watched at any moment and nobody knows when they are.",
+        "Training signal a machine can check for itself rather than a person having to judge it."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "front and center",
+        "amenable",
+        "fan-out",
+        "substantial",
+        "disparage"
+      ]
     }
   ]
 }

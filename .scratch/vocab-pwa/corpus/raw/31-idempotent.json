@@ -7,7 +7,7 @@
         "idempotency",
         "idempotence"
       ],
-      "definition": "Safe to run more than once: the second and third run leave the system in exactly the state the first one did. It is a claim about the end state, not a claim that the later runs do nothing.",
+      "definition": "Safe to run more than once, because running it again leaves the same end state.",
       "caution": "It is a promise other people design against. Say an endpoint is idempotent and someone will put a retry in front of it, so if a second call charges the card again or appends a second row, their outage is your sentence. Outside an engineering room it buys you nothing: with a sponsor say the job is safe to re-run, and keep the word for the people who will build on it.",
       "prompt_version": 2,
       "example": "The ingestion job has to be idempotent. The scheduler will retry it on failure and we cannot end up with last night's rows twice.",
@@ -26,11 +26,18 @@
         }
       ],
       "distractors": [
-        "Safe for several copies to run at the same moment, because no two of them ever touch the same record.",
-        "Able to be undone cleanly afterwards, leaving the system as it stood before anything started and leaving no sign that it ever did.",
-        "Either finishing in full or leaving nothing behind at all, so there is no condition in which half the work has landed and half has not. It is a claim about what a failure is allowed to leave.",
-        "Able to pick up from the last checkpoint after an interruption rather than starting again at the beginning, so that a long job survives a restart without losing the hours already spent on it. The saved position is the whole trick.",
-        "Carrying nothing between calls, so any instance can serve any request and it does not matter which machine handled the one before. This is what lets you add capacity by adding copies rather than by making a single copy bigger, and it is why the load balancer needs no memory."
+        "Created for one use and thrown away straight after.",
+        "Able to be replaced while the system around it keeps running.",
+        "Splitting one piece of work into many parallel branches that all run at the same time.",
+        "Checkable by someone other than whoever produced it.",
+        "Describing work that runs for many steps before anyone can tell whether it worked."
+      ],
+      "word_distractors": [
+        "ephemeral",
+        "elucidate",
+        "frontier",
+        "obscure",
+        "frontrunner"
       ]
     }
   ]

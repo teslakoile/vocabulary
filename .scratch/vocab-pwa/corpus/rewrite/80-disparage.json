@@ -1,0 +1,23 @@
+{
+  "headword": "disparage",
+  "senses": [
+    {
+      "term": "disparage",
+      "definition": "To speak of someone or something in a way that quietly lowers how others see it.",
+      "distractors": [
+        "To make something already said finally make sense by laying the reasoning out in order.",
+        "To back a claim with evidence that somebody else is able to check for themselves.",
+        "To turn an object in memory into bytes that can be stored or sent.",
+        "To avoid something deliberately and on principle.",
+        "To rely on someone to carry part of the weight."
+      ],
+      "word_distractors": [
+        "advocate for",
+        "idempotent",
+        "ducks in a row",
+        "north star",
+        "primitive"
+      ]
+    }
+  ]
+}

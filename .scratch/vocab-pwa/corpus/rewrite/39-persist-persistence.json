@@ -1,0 +1,41 @@
+{
+  "headword": "persist/persistence",
+  "senses": [
+    {
+      "term": "persist",
+      "definition": "To save data somewhere it will survive a restart or a refresh.",
+      "distractors": [
+        "To turn an object in memory into bytes that can be sent over a wire.",
+        "To replace a running component without stopping the system around it.",
+        "To make a bad situation worse.",
+        "To avoid something deliberately and on principle.",
+        "To settle which of two possible readings is the one meant."
+      ],
+      "word_distractors": [
+        "ephemeral",
+        "despondent",
+        "top brass",
+        "executive presence",
+        "nontrivial"
+      ]
+    },
+    {
+      "term": "persistence",
+      "definition": "Staying with something long after most people would have stopped.",
+      "distractors": [
+        "Weight and seriousness in how a person carries themselves.",
+        "Being aware of something and visibly taking it into account.",
+        "Tangled into something so completely that you can no longer act on your own.",
+        "Low in a way that has given up on things improving.",
+        "Alert and responsive to something, picking up its signals early and adjusting."
+      ],
+      "word_distractors": [
+        "fan-out",
+        "hot-swap",
+        "semantic layer",
+        "hyperscaler",
+        "trivial"
+      ]
+    }
+  ]
+}

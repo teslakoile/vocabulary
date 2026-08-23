@@ -1,0 +1,23 @@
+{
+  "headword": "front-and-center",
+  "senses": [
+    {
+      "term": "front and center",
+      "definition": "In the most prominent position, where nobody can miss it.",
+      "distractors": [
+        "Done quietly so as not to be seen doing it.",
+        "Lasting only briefly, and meant to.",
+        "Present in scattered, isolated places rather than across the whole.",
+        "Understood by only a small group, because it assumes background most people lack.",
+        "Big enough to matter, said of an amount or a change."
+      ],
+      "word_distractors": [
+        "obscure",
+        "in pockets",
+        "ephemeral",
+        "surreptitiously",
+        "idempotent"
+      ]
+    }
+  ]
+}

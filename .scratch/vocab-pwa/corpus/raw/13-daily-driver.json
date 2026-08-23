@@ -4,7 +4,7 @@
     {
       "term": "daily driver",
       "accepted": [],
-      "definition": "The one you actually use every day, as opposed to the one you keep for special cases or the one you are still evaluating.",
+      "definition": "The tool you actually use every day, rather than a backup or one you are still testing.",
       "caution": "It is a claim of real use, and that is the whole value of it: calling a tool your daily driver says you have hit its rough edges, so expect the follow-up question about what they are. Said of something you have opened twice it is exactly the kind of overclaim a sceptical engineer will test. It is also casual, so in a written recommendation or a vendor evaluation it reads as breezy where you wanted evidence. Borrowed from cars and now said of a laptop, an editor, a model.",
       "example": "Claude is my daily driver, I keep the others around for the one or two jobs they are better at.",
       "cues": [
@@ -26,13 +26,20 @@
         }
       ],
       "distractors": [
-        "The tool an organisation has standardised on, whether or not the people issued it ever open it.",
-        "A backup kept ready in case the main one fails, close enough to hand that switching costs you minutes rather than days.",
-        "The most capable option available regardless of what it costs, picked because the ceiling matters more than the price does. It ranks the options by power rather than by how often anybody reaches for one.",
-        "Software installed by default on every machine before anybody has logged in, so that a new starter finds it already sitting there. It describes what the estate ships with rather than what any one person has settled on.",
-        "The person responsible for running a process every morning, working the same checklist so that the rest of the organisation finds the numbers waiting when it arrives. It names a rota position held by a human being, not the thing somebody reaches for by preference."
+        "A tool bought and never installed.",
+        "A spare kept in a drawer in case the main one fails.",
+        "The version of a product given to reviewers before release.",
+        "The tool a company has standardised on and pays for, whether or not anyone enjoys using it.",
+        "A product used only for demonstrations, set up carefully so nothing goes wrong on stage."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "tectonic shift",
+        "inroads",
+        "hot-swap",
+        "asymmetric",
+        "elucidate"
+      ]
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "headword": "ducks in a row",
+  "senses": [
+    {
+      "term": "ducks in a row",
+      "definition": "All the preparation done in advance, so nothing is missing when the moment comes.",
+      "distractors": [
+        "A list of everything that could go wrong, each with an owner.",
+        "Deciding as you go, taking your lead from how things actually develop.",
+        "The order in which tasks must run, drawn as a chain of dependencies.",
+        "A meeting held after the event to work out what went wrong and who should fix it.",
+        "The single person whose approval is needed before anything else is allowed to move."
+      ],
+      "word_distractors": [
+        "verbose",
+        "disparage",
+        "hot-swap",
+        "frontier",
+        "modality"
+      ]
+    }
+  ]
+}

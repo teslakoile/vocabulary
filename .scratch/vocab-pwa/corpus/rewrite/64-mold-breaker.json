@@ -1,0 +1,23 @@
+{
+  "headword": "mold breaker",
+  "senses": [
+    {
+      "term": "mold breaker",
+      "definition": "Someone or something that does not fit the usual pattern and changes what people expect.",
+      "distractors": [
+        "A senior person who puts their own standing behind a piece of work and spends it to help.",
+        "A voluntary group of people doing the same kind of work who meet to trade what they learn.",
+        "The accumulated history an organisation holds about why its systems were built that way.",
+        "The most senior people in an organisation, spoken of as one group.",
+        "Someone who argues your case in rooms you are not in."
+      ],
+      "word_distractors": [
+        "idempotent",
+        "serialize",
+        "verbose",
+        "rectify",
+        "ducks in a row"
+      ]
+    }
+  ]
+}

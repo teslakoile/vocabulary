@@ -4,7 +4,7 @@
     {
       "term": "squarely",
       "accepted": [],
-      "definition": "Directly and without hedging, almost always about where something belongs or who owns it. It says the answer is not ambiguous.",
+      "definition": "Directly and without hedging, usually about where something belongs or who owns it.",
       "caution": "It works about accountability and category fit, and sounds odd about physical or genuinely uncertain things. If the thing really is contested, squarely overclaims and invites someone to push back on exactly that.",
       "example": "Cost governance sits squarely with the platform team, not with each product.",
       "cues": [
@@ -30,13 +30,20 @@
         }
       ],
       "distractors": [
-        "Gradually over time, so that no single moment is the one that changed things.",
-        "In a way that balances competing interests, giving each side just enough of what it asked for to keep everyone at the table for another round.",
-        "Reluctantly, and only once every other option has been tried and has failed in front of the people who mattered.",
-        "Fairly to everyone involved, so that nobody can say afterwards that the process favoured one party. It is a claim about the handling, not about the result.",
-        "Approximately, within a margin loose enough that the number should not be quoted back at you. It is a soft claim wearing the clothes of a precise one, and it belongs in a first pass rather than a board paper."
+        "Tangled into something so completely that you can no longer act or be understood alone.",
+        "A voluntary group of people doing the same kind of work who meet to trade what they learn.",
+        "Temporary structure that holds work up until the real thing can stand alone.",
+        "To make a bad situation worse.",
+        "Using far more words than the point needs."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "community of practice",
+        "trivial",
+        "continuum",
+        "attuned",
+        "idempotent"
+      ]
     }
   ]
 }

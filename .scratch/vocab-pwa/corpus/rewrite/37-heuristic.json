@@ -1,0 +1,23 @@
+{
+  "headword": "heuristic",
+  "senses": [
+    {
+      "term": "heuristic",
+      "definition": "A rule of thumb that is quick and usually right rather than always right.",
+      "distractors": [
+        "The basic truths you reason up from once precedent has been stripped away.",
+        "What someone can do but cannot fully explain, such as judgement or feel.",
+        "A specific way a system goes wrong, not just the fact that it might.",
+        "A number given straight, with the caveats stripped out.",
+        "Training signal a machine can check for itself rather than a person judging it."
+      ],
+      "word_distractors": [
+        "first principles",
+        "panopticon",
+        "hyperscaler",
+        "enmeshed",
+        "in pockets"
+      ]
+    }
+  ]
+}

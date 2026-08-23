@@ -1,0 +1,23 @@
+{
+  "headword": "inroads",
+  "senses": [
+    {
+      "term": "inroads",
+      "definition": "Progress made into a market, account or group that was closed to you before.",
+      "distractors": [
+        "Permission given once and in advance to cover a whole class of later decisions.",
+        "The preparation done in advance of a moment where any gap would cost you dearly.",
+        "Real agreement from the people whose cooperation the work needs, not just their nods.",
+        "A rule of thumb that is quick and usually good enough.",
+        "To avoid something on principle when you could have taken it."
+      ],
+      "word_distractors": [
+        "idempotent",
+        "verbose",
+        "despondent",
+        "serialize",
+        "wordsmith"
+      ]
+    }
+  ]
+}

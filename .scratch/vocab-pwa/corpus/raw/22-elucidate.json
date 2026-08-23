@@ -4,7 +4,7 @@
     {
       "term": "elucidate",
       "accepted": [],
-      "definition": "To make something already said or written finally make sense, by laying out the reasoning or the detail underneath it. You elucidate a thing that is present but opaque, not a thing that is missing.",
+      "definition": "To explain something already said or written by laying out the reasoning behind it.",
       "caution": "It is a formal word, and spoken it can sound like you are performing. Asking a person to elucidate is a half-step colder than asking them to explain, because it says they were not clear; it lands better in writing, and better aimed at a document than at the author. It also promises the thing gets clearer, not longer. More words that still do not land is the opposite move, and someone will say so.",
       "prompt_version": 2,
       "example": "The deck lands the recommendation but never elucidates how we got to that number, and that is the part the committee will push on.",
@@ -27,11 +27,18 @@
         }
       ],
       "distractors": [
-        "To restate something at greater length, on the assumption that more words will do what fewer of them did not.",
-        "To condense a long argument down to its essentials, so that somebody can carry the whole of it out of the room in one sentence.",
-        "To make something deliberately hard to follow, so that the plain version of it never quite surfaces. The direction of travel is away from understanding rather than towards it, and the effort is the giveaway.",
-        "To supply the evidence that backs up a claim, so that somebody else can check the working rather than simply take your word for it. What was missing was the proof, and the claim itself was perfectly clear all along.",
-        "To infer a conclusion from information that is plainly incomplete, filling the gaps with judgement and marking which parts were filled that way. You are producing something that was never on the page, which is a different job from making sense of what is."
+        "To make something deliberately hard to follow so the plain version stays out of reach.",
+        "To go back over a draft and tighten the phrasing without changing what it says.",
+        "To back a claim with evidence that someone else can go and check for themselves.",
+        "To put right something that was wrong, such as an error, an imbalance, or a missed duty.",
+        "To ask someone to talk through what they have learned, informally and without an agenda."
+      ],
+      "word_distractors": [
+        "flywheel effect",
+        "despondent",
+        "progressive",
+        "ephemeral",
+        "surreptitiously"
       ]
     }
   ]

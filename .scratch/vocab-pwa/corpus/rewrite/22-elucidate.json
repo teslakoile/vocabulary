@@ -1,0 +1,23 @@
+{
+  "headword": "elucidate",
+  "senses": [
+    {
+      "term": "elucidate",
+      "definition": "To explain something already said or written by laying out the reasoning behind it.",
+      "distractors": [
+        "To make something deliberately hard to follow so the plain version stays out of reach.",
+        "To go back over a draft and tighten the phrasing without changing what it says.",
+        "To back a claim with evidence that someone else can go and check for themselves.",
+        "To put right something that was wrong, such as an error, an imbalance, or a missed duty.",
+        "To ask someone to talk through what they have learned, informally and without an agenda."
+      ],
+      "word_distractors": [
+        "obfuscate",
+        "despondent",
+        "diaspora",
+        "hyperscaler",
+        "flywheel effect"
+      ]
+    }
+  ]
+}

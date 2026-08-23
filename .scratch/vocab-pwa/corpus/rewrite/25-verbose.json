@@ -1,0 +1,23 @@
+{
+  "headword": "verbose",
+  "senses": [
+    {
+      "term": "verbose",
+      "definition": "Using far more words than the point needs.",
+      "distractors": [
+        "So little known that most people would not follow it.",
+        "Deliberately hard to understand.",
+        "Big enough to matter.",
+        "Lasting only briefly, and meant to.",
+        "Advancing in stages, each going further than the last."
+      ],
+      "word_distractors": [
+        "asymmetric",
+        "panopticon",
+        "hot-swap",
+        "vertical",
+        "daily driver"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "headword": "fan-out",
+  "senses": [
+    {
+      "term": "fan-out",
+      "definition": "The splitting of one request into many parallel calls that must all come back.",
+      "distractors": [
+        "The property of a step that leaves things the same however many times it is run.",
+        "Temporary structure that holds the work up until the real thing can stand on its own.",
+        "To write something down where it will outlive whatever process made it.",
+        "The most senior people in a firm, spoken of as one group.",
+        "Understood by only a small group of insiders."
+      ],
+      "word_distractors": [
+        "despondent",
+        "gravitas",
+        "rectify",
+        "diaspora",
+        "exacerbate"
+      ]
+    }
+  ]
+}

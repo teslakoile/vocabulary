@@ -7,7 +7,7 @@
         "CoP",
         "communities of practice"
       ],
-      "definition": "A voluntary group of people who do the same kind of work and meet to trade what they are learning. It has no mandate, no budget and no authority over anyone; its only claim is that people keep turning up because it is useful.",
+      "definition": "A voluntary group of people doing the same work who meet to share what they learn.",
       "caution": "Because it is voluntary you cannot hold it to a deliverable, so promising a steering group that one will own the standards promises something it has no power to enforce. Give it a budget, headcount and sign-off rights and you have built the other thing, and should say so rather than keeping the friendlier name over it. It also fails quietly: naming one costs nothing, and an empty calendar invite six months on is visible to everybody.",
       "prompt_version": 2,
       "example": "The prompt engineering group is not a governance body. It is a community of practice, and it works precisely because nobody has to come.",
@@ -26,11 +26,18 @@
         }
       ],
       "distractors": [
-        "A rotating assignment where people spend a fixed spell embedded in another team and then come back with whatever they picked up.",
-        "A shared channel where anyone can put a question and whoever is on duty that week is expected to answer it. The rota is published, so nobody has to work out who to ask.",
-        "A standing committee that reviews proposals against a published bar and can send them back for rework. Attendance is part of the job for the people on it, and what it decides binds the teams that come to it.",
-        "A reporting line drawn by discipline, so that specialists sit inside product teams day to day but are managed, promoted and paid through their craft. Membership is not something anyone opts into; it is simply where your name appears on the chart.",
-        "An outside professional body that sets a syllabus and certifies whoever passes it, so the qualification belongs to the person rather than to the employer. Its authority comes from the fact that other firms recognise the same badge, which is also what makes it worth the fee."
+        "The most senior people in an organisation, spoken of as a single group.",
+        "A people scattered from a homeland who keep a tie to it.",
+        "A funded, staffed team that owns a standard and enforces it across other teams.",
+        "The history one organisation holds about why things were built the way that they were.",
+        "What someone can do but cannot fully explain, such as judgement, feel, or a sense of fit."
+      ],
+      "word_distractors": [
+        "gravitas",
+        "front and center",
+        "trivial",
+        "frontier",
+        "sandbox"
       ]
     },
     {
@@ -40,7 +47,7 @@
         "centre of excellence",
         "centers of excellence"
       ],
-      "definition": "A funded, staffed team that concentrates a scarce capability in one place and sets how it is done everywhere else. It owns the standards, and usually a queue of work from the teams it serves.",
+      "definition": "A funded team that holds a scarce skill in one place and sets how it is done.",
       "caution": "The name claims authority and quality at once, and both get tested. Stand one up and other teams hear that they now need your permission, so it concentrates resentment as fast as it concentrates skill; the credible version comes with a stated plan to hand the capability back. Used for a group of enthusiasts with no funding and no headcount, it is corporate inflation, and the senior people in the room can smell it.",
       "prompt_version": 2,
       "example": "If we stand this up as a center of excellence, every model deployment routes through eight people, and those eight people are the constraint by March.",
@@ -59,11 +66,18 @@
         }
       ],
       "distractors": [
-        "A service desk that takes routine requests from across the business and works them in the order they arrive.",
-        "A pilot team stood up to prove a technology works before anyone commits real money to it, and disbanded once that question has an answer.",
-        "A cross-functional squad assembled for one programme and dissolved the week it ships, so its people go back to the teams they were borrowed from. Nothing about it was meant to outlast the delivery.",
-        "The team whose numbers currently lead the scorecard, held up at the quarterly review so that everyone else can see what good looks like. The status is earned each quarter and moves to whoever is ahead in the next one.",
-        "An outside firm brought in on a statement of work because the skill is not worth hiring for permanently. It leaves when the contract ends, and everything it learned on the way leaves with it unless somebody insisted on writing it down first."
+        "A voluntary group of practitioners who meet to trade what they are learning.",
+        "The most senior people in an organisation, spoken of as one group.",
+        "A slice of the market defined by the industry it serves, such as banking or health.",
+        "One of the handful of cloud providers operating at planetary scale.",
+        "The person who argues your case in the rooms you are not in, without being asked."
+      ],
+      "word_distractors": [
+        "in pockets",
+        "bespoke",
+        "persistence",
+        "broad",
+        "primitive"
       ]
     }
   ]

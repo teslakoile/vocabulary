@@ -11,7 +11,7 @@
         "build that muscle up",
         "build muscle"
       ],
-      "definition": "To develop a capability by doing the thing repeatedly, on the view that it grows with practice rather than being something a team either has or lacks. The phrase promises reps, not a training course.",
+      "definition": "To build a skill through repeated practice instead of one-off training.",
       "caution": "It says the ability is missing today. Said about another team that is a criticism in gym clothes; said about your own it is an admission, which is fine only if the next sentence names the actual reps. To a team already at capacity it lands as more work with no more people. It is also coaching-deck language, so in a written board paper it reads as a slogan and invites the obvious question of what the exercise is and who is doing it.",
       "example": "We can buy the first three evaluations in. If we want this capability in-house, at some point we have to build that muscle ourselves.",
       "cues": [
@@ -33,13 +33,20 @@
         }
       ],
       "distractors": [
-        "To hire in people who already have the skill, on the view that buying a capability is always faster than growing one.",
-        "To write a process down in enough detail that anyone can follow it without asking, so the work stops depending on which particular person happens to be available.",
-        "To defend a budget line through a planning round so that a capability survives the cuts. It is a fight about money and about who has the sponsor's attention, and it is usually won before the meeting.",
-        "To add headcount to a team that is under pressure, on the assumption that what is short is hands rather than know-how. It is the most common answer to a delivery problem and often the one that makes the next quarter worse, because the new people need teaching.",
-        "To keep a capability in-house rather than hand it to a vendor, on the argument that anything genuinely core to the business should not be rented from someone else. The debate is about ownership and long-run dependency, and it tends to get settled on cost rather than on principle."
+        "To use your own product for real work before asking anyone else to.",
+        "To make a bad situation worse than it already was.",
+        "To dig patiently through records for something that was never hidden on purpose.",
+        "To replace a running part of a system without stopping the system around it.",
+        "To put right something that was wrong."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "nontrivial",
+        "attuned",
+        "mold breaker",
+        "persist",
+        "pick your brain"
+      ]
     }
   ]
 }

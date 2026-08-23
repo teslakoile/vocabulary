@@ -1,0 +1,23 @@
+{
+  "headword": "watch outs",
+  "senses": [
+    {
+      "term": "watch outs",
+      "definition": "A short list of things likely to go wrong, given in advance so nobody is surprised.",
+      "distractors": [
+        "The one thing that must go right for the plan to work at all.",
+        "A list of everything already agreed, kept so that nobody reopens it.",
+        "Problems discovered only after a release has gone out to customers.",
+        "A written summary of what a meeting decided, circulated afterwards to everyone who missed it.",
+        "The set of conditions that must hold true for an estimate to be worth anything at all."
+      ],
+      "word_distractors": [
+        "wordsmith",
+        "idempotent",
+        "panopticon",
+        "in pockets",
+        "diaspora"
+      ]
+    }
+  ]
+}

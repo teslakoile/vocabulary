@@ -9,7 +9,7 @@
         "frontier lab",
         "frontier labs"
       ],
-      "definition": "The current edge of what AI systems can do, and by extension the handful of labs and models operating there. Calling something frontier places it in the most capable tier available, not merely the most recent.",
+      "definition": "The current edge of what AI systems can do, and the labs and models working there.",
       "caution": "It is a claim, and a checkable one. Applied to your own stack - a fine-tuned open model, a well-built agent - someone in the room will correct you, and the correction costs more than the word gained. It is also a moving line, so anything you call frontier today dates fast in writing. With a non-technical audience the older sense does the hearing for them: unexplored territory, the edge of the map, which turns a precise claim about capability into a vague metaphor about adventure.",
       "example": "We aren't building at the frontier. We're building on top of it, and that's a completely different risk profile.",
       "cues": [
@@ -31,13 +31,20 @@
         }
       ],
       "distractors": [
-        "The furthest point a plan has been written out to, past which the work exists only as a heading and a rough number.",
-        "An early build handed to a small group before general release, so that the problems surface among people who have agreed to put up with them.",
-        "The boundary where two systems meet and hand data across, defined tightly enough that either side can be rebuilt without telling the other. It is a contract far more than it is a place.",
-        "A published limit on what a system is permitted to do, set by the people who carry the risk rather than by the people who built it, and written so that any breach shows up plainly afterwards instead of merely being suspected.",
-        "The set of capabilities promised in the next release, held out to customers as the reason to sign now rather than wait and see. It is a commitment about a date as much as about the work, and it gets quoted back at you the moment the date moves."
+        "A funded team that concentrates a scarce skill in one place and sets how it is used.",
+        "The most senior people in an organisation, spoken of as a single group.",
+        "Deep structural change in the conditions everyone is operating under.",
+        "An isolated environment where a system can run without being able to affect anything real.",
+        "The short list of things most likely to go wrong, handed to someone before they start."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "scaffolding",
+        "lend itself",
+        "persistence",
+        "rectify",
+        "idempotent"
+      ]
     }
   ]
 }

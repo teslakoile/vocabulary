@@ -1,0 +1,23 @@
+{
+  "headword": "lay of the land",
+  "senses": [
+    {
+      "term": "lay of the land",
+      "definition": "How things really work somewhere new, who decides and what has already been tried.",
+      "distractors": [
+        "The published organisation chart, showing who reports to whom.",
+        "A map of which systems talk to which, drawn before any change is made.",
+        "A list of every system a team owns, kept up to date for audit purposes.",
+        "A survey of what competitors are selling and at what price, refreshed every quarter.",
+        "The full list of everything a team has agreed to deliver this quarter, ranked in order."
+      ],
+      "word_distractors": [
+        "idempotent",
+        "ephemeral",
+        "verbose",
+        "disparage",
+        "fan-out"
+      ]
+    }
+  ]
+}

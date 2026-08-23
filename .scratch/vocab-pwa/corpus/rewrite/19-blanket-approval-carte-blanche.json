@@ -1,0 +1,23 @@
+{
+  "headword": "blanket approval/carte blanche",
+  "senses": [
+    {
+      "term": "blanket approval",
+      "definition": "Permission given once in advance to cover a whole class of decisions.",
+      "distractors": [
+        "Approval that expires if it is not used within a set period.",
+        "A decision taken by one person and announced without discussion.",
+        "A rule that applies to everyone except those who ask to be excused.",
+        "A requirement that every single case be reviewed on its own before it can proceed.",
+        "A standing instruction to stop work the moment a particular threshold is crossed."
+      ],
+      "word_distractors": [
+        "serialize",
+        "exacerbate",
+        "in pockets",
+        "sleuthing",
+        "diaspora"
+      ]
+    }
+  ]
+}

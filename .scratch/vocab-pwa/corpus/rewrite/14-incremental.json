@@ -1,0 +1,23 @@
+{
+  "headword": "incremental",
+  "senses": [
+    {
+      "term": "incremental",
+      "definition": "Proceeding by small additions, each one adding a little to what is already there.",
+      "distractors": [
+        "Done all at once, with no way back.",
+        "Replaced entirely rather than repaired.",
+        "Growing by a fixed percentage each period rather than a fixed amount.",
+        "A change that removes a feature instead of adding one, to keep the product simple.",
+        "Work that cannot be split up, because none of it is any use until all of it is done."
+      ],
+      "word_distractors": [
+        "panopticon",
+        "serialize",
+        "verbose",
+        "substrate",
+        "disparage"
+      ]
+    }
+  ]
+}

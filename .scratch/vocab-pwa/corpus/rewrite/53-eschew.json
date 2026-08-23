@@ -1,0 +1,23 @@
+{
+  "headword": "eschew",
+  "senses": [
+    {
+      "term": "eschew",
+      "definition": "To deliberately avoid something you could have chosen, usually on principle.",
+      "distractors": [
+        "To make a bad situation worse than it already was.",
+        "To put right something that was wrong, such as an error or an imbalance.",
+        "To back a claim with evidence that someone else can check for themselves.",
+        "To turn a structure that only exists in memory into something you can store or send.",
+        "To replace a running part of a system without stopping the system around it."
+      ],
+      "word_distractors": [
+        "disparage",
+        "exacerbate",
+        "substantiate",
+        "elucidate",
+        "hot-swap"
+      ]
+    }
+  ]
+}

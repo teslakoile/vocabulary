@@ -1,0 +1,23 @@
+{
+  "headword": "squarely",
+  "senses": [
+    {
+      "term": "squarely",
+      "definition": "Directly and without hedging, usually about where something belongs or who owns it.",
+      "distractors": [
+        "Tangled into something so completely that you can no longer act or be understood alone.",
+        "A voluntary group of people doing the same kind of work who meet to trade what they learn.",
+        "Temporary structure that holds work up until the real thing can stand alone.",
+        "To make a bad situation worse.",
+        "Using far more words than the point needs."
+      ],
+      "word_distractors": [
+        "diaspora",
+        "flywheel effect",
+        "long-horizon",
+        "idempotent",
+        "serialize"
+      ]
+    }
+  ]
+}

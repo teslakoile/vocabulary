@@ -7,7 +7,7 @@
         "north star metric",
         "northstar"
       ],
-      "definition": "The one outcome you steer by, fixed while everything else stays negotiable. Its job in a room is to settle priority arguments before they happen, because it was agreed in advance; as a north star metric it is that outcome written as a single number.",
+      "definition": "The single outcome you steer everything else by.",
       "caution": "The whole value is that there is exactly one. A deck with three north stars has none, and senior people read that as a team that has not chosen. It is also a direction rather than a commitment, so offering it as your quarterly goal hands someone a deadline for a thing you do not fully control. And it is common enough now that using it as decoration over an ordinary KPI is noticed; if the honest answer is a set of trade-offs, say that instead.",
       "prompt_version": 2,
       "example": "Time to a trustworthy answer is our north star for the year. If a feature does not move that, it waits.",
@@ -30,11 +30,18 @@
         }
       ],
       "distractors": [
-        "The person named as accountable for a decision, so that when it has to be taken there is no argument about whose call it was.",
-        "The measure a team's bonus is calculated from, which is why it quietly shapes what people do whether or not anybody intended it to.",
-        "The furthest milestone written into the roadmap today, understood by everyone in the room to be the point past which nothing has been planned in any detail yet and the dates are placeholders.",
-        "A benchmark lifted from whoever currently leads the market, used to set the bar for what counts as acceptable here. It moves whenever they move, which is both what makes it useful and the reason it can never settle an argument in the room for very long.",
-        "A published statement of what the organisation exists to do, written to survive any change of strategy and pitched broadly enough that nobody could ever be shown to have violated it. It gets repeated at all-hands and quoted back in interviews, and it decides nothing at all on a Tuesday afternoon."
+        "The one currently most likely to win, said while the outcome is still open.",
+        "A number given straight, with the caveats stripped out.",
+        "The underlying layer everything above it runs on.",
+        "Real agreement from the people you need.",
+        "The most senior people, as one group."
+      ],
+      "word_distractors": [
+        "exacerbate",
+        "bolster",
+        "failure mode",
+        "despondent",
+        "panopticon"
       ]
     }
   ]

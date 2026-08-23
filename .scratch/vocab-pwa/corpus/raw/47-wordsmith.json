@@ -8,7 +8,7 @@
         "wordsmithed",
         "wordsmiths"
       ],
-      "definition": "To work over the exact phrasing of something already drafted, tightening how it reads without changing what it says. As a noun, a person with a gift for that.",
+      "definition": "To reword a draft so it reads better without changing what it says.",
       "caution": "It draws a line between surface and substance, and whoever says it gets to decide which side something falls on. Offered about your own draft it is modest and useful. Said about a colleague's suggested change - 'that's just wordsmithing' - it rules the change cosmetic, and if their point was actually substantive you have dismissed it without answering it. In front of a sponsor, calling a session wordsmithing says out loud that the meeting has stopped making decisions.",
       "example": "The recommendation is agreed. Give me an hour to wordsmith it before it goes to the committee.",
       "cues": [
@@ -30,13 +30,20 @@
         }
       ],
       "distractors": [
-        "To check a text against the record and correct anything in it that turns out not to be true.",
-        "To cut a document down to an agreed length, deciding what has to go so that the rest fits the space available.",
-        "To turn a set of rough notes into a first draft, making the choices about structure and running order that nobody has yet made.",
-        "To rework a piece so that it argues a different position from the one it currently takes, usually because the decision it was written to support has changed underneath it.",
-        "To settle the vocabulary a group will use before anybody starts writing, so that two papers going to the same committee do not quietly use the same word for two different things. The work happens before the drafting rather than after it."
+        "To make something deliberately hard to understand.",
+        "To make a bad situation worse than it already was.",
+        "To turn a structure held in memory into a form that can be stored or sent.",
+        "To use your own product for real work before you ask anyone else to use it.",
+        "To speak about someone in a way that quietly lowers them."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "first order effects",
+        "continuum",
+        "play it by ear",
+        "top brass",
+        "watch outs"
+      ]
     }
   ]
 }

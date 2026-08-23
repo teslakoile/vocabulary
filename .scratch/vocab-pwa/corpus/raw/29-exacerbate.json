@@ -7,7 +7,7 @@
         "exacerbated",
         "exacerbating"
       ],
-      "definition": "To make a bad situation worse. It needs the problem to exist already: you can only exacerbate something that was going wrong on its own.",
+      "definition": "To make a bad situation worse.",
       "caution": "The word points a finger. Saying a decision exacerbated the outage assigns causation, and in a post-incident room that is heard as blame however evenly you say it, so name the mechanism unless blame is what you mean. It is also strictly about worsening something bad, so exacerbating demand or exacerbating growth is a mistake the careful listeners in the room will catch.",
       "prompt_version": 2,
       "example": "The retry logic did not cause the outage, but it exacerbated it. We hammered a service that was already on its knees.",
@@ -30,11 +30,18 @@
         }
       ],
       "distractors": [
-        "To raise an issue to a level above your own so that somebody senior decides it.",
-        "To overstate how bad something is, so that the response it attracts is larger than the situation ever needed.",
-        "To bring about a problem that was not there before. Everything was working until this landed, and the fault traces back to it alone.",
-        "To push something beyond the rate it can safely absorb, so that the strain shows up somewhere nobody was watching. The pace is the fault rather than the direction of travel.",
-        "To trace a problem back to the decision that produced it, usually after the fact and usually in front of the people who took it. The work is in the reconstruction, and the finding is a cause rather than a cure."
+        "To put right what went wrong.",
+        "To avoid it on principle.",
+        "To back a claim with evidence someone else can check.",
+        "To keep at something long after most people would stop.",
+        "To make something deliberately hard to understand."
+      ],
+      "word_distractors": [
+        "bespoke",
+        "substantiate",
+        "first order effects",
+        "tacit knowledge",
+        "progressive"
       ]
     }
   ]

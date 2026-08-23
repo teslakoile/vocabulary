@@ -1,0 +1,23 @@
+{
+  "headword": "flywheel effect",
+  "senses": [
+    {
+      "term": "flywheel effect",
+      "definition": "A cycle where each turn feeds the next, so growth gets easier the longer it runs.",
+      "distractors": [
+        "A rig that drives a system to see how it behaves under conditions you choose.",
+        "Progress won into territory that was previously closed to you.",
+        "A people scattered from a homeland who keep a tie to it.",
+        "A structure where everyone can be watched at any moment and nobody knows when they are.",
+        "The unwritten history an organisation holds about why its own systems were built that way."
+      ],
+      "word_distractors": [
+        "panopticon",
+        "gravitas",
+        "sandbox",
+        "lay of the land",
+        "verifiability"
+      ]
+    }
+  ]
+}

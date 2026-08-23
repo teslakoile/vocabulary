@@ -1,0 +1,41 @@
+{
+  "headword": "first/second order effects",
+  "senses": [
+    {
+      "term": "first order effects",
+      "definition": "The direct and immediate results of a change on the thing you changed.",
+      "distractors": [
+        "A loop in which each turn makes the next one easier and the whole thing speeds up.",
+        "The small set of things you know to be true once precedent has been stripped away.",
+        "A kind of input or output a system works in, such as text, images, audio or video.",
+        "Weight and seriousness in how a person carries themselves.",
+        "A slice of the market defined by the industry it serves."
+      ],
+      "word_distractors": [
+        "verbose",
+        "sandbox",
+        "diaspora",
+        "eschew",
+        "rectify"
+      ]
+    },
+    {
+      "term": "second order effects",
+      "definition": "The later results that follow once people and systems adapt to the first change.",
+      "distractors": [
+        "The place where raw tables and columns are mapped onto the words the business uses.",
+        "A funded, staffed team that concentrates a scarce skill in one place and sets how it works.",
+        "Temporary structure that holds work up until the real thing can stand without it.",
+        "To work over the exact phrasing of something already drafted.",
+        "The most senior people in a firm, spoken of as one group."
+      ],
+      "word_distractors": [
+        "obfuscate",
+        "despondent",
+        "rectify",
+        "gravitas",
+        "serialize"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "headword": "disambiguate",
+  "senses": [
+    {
+      "term": "disambiguate",
+      "definition": "To make clear which of two possible meanings is the one meant.",
+      "distractors": [
+        "To make something deliberately hard to understand.",
+        "To work over the phrasing of a draft so it reads better.",
+        "To back a claim with evidence that somebody else can check.",
+        "To put right something that was wrong, such as an error or an imbalance.",
+        "To show someone a piece of work before committing to it, seeking their reaction."
+      ],
+      "word_distractors": [
+        "obfuscate",
+        "gravitas",
+        "inroads",
+        "tectonic shift",
+        "buy-in"
+      ]
+    }
+  ]
+}

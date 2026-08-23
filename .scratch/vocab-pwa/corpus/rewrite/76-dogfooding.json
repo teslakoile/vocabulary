@@ -1,0 +1,23 @@
+{
+  "headword": "dogfooding",
+  "senses": [
+    {
+      "term": "dogfooding",
+      "definition": "Using your own product for real work before asking anyone else to use it.",
+      "distractors": [
+        "A loop in which each turn makes the next one easier, so the whole thing speeds up.",
+        "The accumulated history one organisation holds about why it works the way it does.",
+        "A slice of the market defined by the industry it serves.",
+        "Weight and seriousness in how a person carries themselves.",
+        "To make a bad situation worse."
+      ],
+      "word_distractors": [
+        "diaspora",
+        "elucidate",
+        "frontrunner",
+        "wordsmith",
+        "idempotent"
+      ]
+    }
+  ]
+}

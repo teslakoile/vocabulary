@@ -6,7 +6,7 @@
       "accepted": [
         "buy in"
       ],
-      "definition": "Real agreement from the people whose cooperation the work needs, to the point where they will defend it when you are not in the room. It is a state of the people, not a decision recorded anywhere.",
+      "definition": "Genuine agreement from the people whose help you need, not just their signature.",
       "caution": "Not a synonym for sign-off. Claiming you have it when what you actually have is a signature is the kind of statement that collapses at the first delivery slip, and the collapse is public. Said downward it can also sound like you plan to manage people into agreeing rather than ask them, so be careful announcing that you need to get it from your own team.",
       "example": "We have the funding, what we do not have is buy-in from the two teams who would have to change how they release.",
       "cues": [
@@ -32,13 +32,20 @@
         }
       ],
       "distractors": [
-        "Formal sign-off that unblocks the work, recorded somewhere anybody can point later at the date it was given.",
-        "A shared understanding of what the goal actually is, such that two teams describing it separately would describe the same thing.",
-        "Senior backing that spends real political capital on your behalf, so that an objection gets answered by somebody more powerful than the person raising it. It is one person's weight, not the willingness of the many.",
-        "A vote taken to settle a disagreement that discussion has failed to settle, where the count decides and the losing side is expected to live with the result. What it produces is a recorded outcome, which is exactly what it cannot produce in the people who lost.",
-        "The point at which a change stops being reversible, because enough has been migrated, announced or spent that turning back would now cost more than going on. It is a property of the work's own momentum, and it can be reached with everyone involved still privately unconvinced."
+        "A formal signature recorded so that a project may begin.",
+        "The money a partner puts in to take a share of a business.",
+        "The share of a market a product has taken from its competitors.",
+        "Written permission from a committee that has reviewed both the risks and the cost.",
+        "The quiet compliance of a team that has stopped arguing but has not changed its mind."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "serialize",
+        "eschew",
+        "long-horizon",
+        "esoteric",
+        "semantic layer"
+      ]
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "headword": "primitive",
+  "senses": [
+    {
+      "term": "primitive",
+      "definition": "A basic building block a platform gives you to build bigger things out of.",
+      "distractors": [
+        "The underlying layer everything above it runs on and takes for granted.",
+        "Built for one customer or one case rather than taken off the shelf.",
+        "A set that contains everything another one contains, and more.",
+        "The place where raw tables are mapped onto the words the business actually uses.",
+        "Temporary structure that holds work up until the real thing can stand on its own."
+      ],
+      "word_distractors": [
+        "bespoke",
+        "diaspora",
+        "disparage",
+        "watch outs",
+        "finesse"
+      ]
+    }
+  ]
+}

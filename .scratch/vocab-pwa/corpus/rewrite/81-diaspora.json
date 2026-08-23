@@ -1,0 +1,23 @@
+{
+  "headword": "diaspora",
+  "senses": [
+    {
+      "term": "diaspora",
+      "definition": "A people scattered far from a homeland they still keep ties to.",
+      "distractors": [
+        "The property of work that runs for many steps before anyone can tell if it worked.",
+        "A funded, staffed team that concentrates a scarce capability in one place.",
+        "A rule of thumb that gets a good enough answer quickly.",
+        "Using far more words than the point needs.",
+        "To make a bad situation worse."
+      ],
+      "word_distractors": [
+        "obfuscate",
+        "idempotent",
+        "rectify",
+        "wordsmith",
+        "harness"
+      ]
+    }
+  ]
+}

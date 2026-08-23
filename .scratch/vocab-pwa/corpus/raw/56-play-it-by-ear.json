@@ -10,7 +10,7 @@
         "play that by ear",
         "play the rest by ear"
       ],
-      "definition": "To decide as you go, taking your lead from how things actually develop rather than from a plan settled in advance. It claims responsiveness, not the absence of thought.",
+      "definition": "To decide as you go, guided by what actually happens rather than by a set plan.",
       "caution": "It tells the room there is no plan, and how that lands depends entirely on who is in it. With friends it sounds relaxed; to a sponsor or a steering committee it sounds unprepared, and the usual reply is a request for the very plan you have just admitted you do not have. It is only defensible when the information you need genuinely does not exist yet, so name what you are waiting on - otherwise people file it as improvisation dressed up as flexibility.",
       "example": "We'll fix the first two milestones and play the rest by ear until the vendor confirms their dates.",
       "cues": [
@@ -32,13 +32,20 @@
         }
       ],
       "distractors": [
-        "To carry on exactly as before, on the grounds that nothing has happened that would justify changing anything.",
-        "To follow an agreed process step by step, so that anybody auditing it afterwards can see each stage happened in the right order.",
-        "To copy what somebody else did in a situation that looked like this one, on the grounds that it worked for them and there is no time to design anything new.",
-        "To move quickly while the opportunity is still open, accepting that some of what you would normally check will have to be checked afterwards. The window closing is what sets the pace.",
-        "To make the call once and then defend it whatever happens next, so that everyone downstream can plan against it. Changing your mind later costs more than being wrong does, and that is the trade you are consciously making."
+        "To put right something that has gone wrong.",
+        "To avoid something on purpose, having had the option to take it.",
+        "A rule of thumb that gets you a good enough answer quickly, because it usually works.",
+        "The preparation you do in advance of a moment where any gap would cost you.",
+        "Temporary structure that holds the work up until the real thing can stand on its own."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "esoteric",
+        "idempotent",
+        "fan-out",
+        "lay of the land",
+        "by and large"
+      ]
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "headword": "long-horizon (task)",
+  "senses": [
+    {
+      "term": "long-horizon",
+      "definition": "Running for many steps before anyone can tell whether it worked.",
+      "distractors": [
+        "Safe to run more than once, since the second run leaves things exactly as the first did.",
+        "Understood by only a small group, because it assumes background that most people lack.",
+        "Built for one customer rather than taken off the shelf.",
+        "Lasting only briefly, and meant to.",
+        "So small or so easy that it is not worth the time it would take to discuss."
+      ],
+      "word_distractors": [
+        "ephemeral",
+        "idempotent",
+        "esoteric",
+        "bespoke",
+        "contrived"
+      ]
+    }
+  ]
+}

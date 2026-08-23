@@ -1,0 +1,23 @@
+{
+  "headword": "asymmetric",
+  "senses": [
+    {
+      "term": "asymmetric",
+      "definition": "Unequal on the two sides, usually a small downside against a much larger upside.",
+      "distractors": [
+        "Harder or larger than the person asking has assumed it would be.",
+        "Big enough to matter, said of an amount, a change, or a piece of work.",
+        "A range with no natural joints in it, where the cases shade into one another.",
+        "A structure where everyone can be watched at any moment and nobody knows when they are.",
+        "Training signal a machine can check for itself rather than a person having to judge it."
+      ],
+      "word_distractors": [
+        "esoteric",
+        "ephemeral",
+        "verbose",
+        "contrived",
+        "amenable"
+      ]
+    }
+  ]
+}

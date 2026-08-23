@@ -2,7 +2,7 @@
 
 A single-user progressive web app that drills an 84-word professional vocabulary list with spaced repetition, runs on Cloudflare's free tier, and works offline.
 
-The corpus holds 84 entries, 95 senses, and 285 cards. One Cloudflare Worker serves both the app and the API, backed by D1.
+The corpus holds 84 entries, 95 senses, and 380 cards across four card types. One Cloudflare Worker serves both the app and the API, backed by D1.
 
 This is a personal tool built for one person's word list. Read it as a worked example rather than a product you sign up for.
 
@@ -39,12 +39,12 @@ You need a Cloudflare account, Node.js 20 or later, and `npx`.
    npx wrangler d1 create vocabulary
    ```
 
-3. Apply the three migrations in order. They run through `d1 execute` because
+3. Apply the four migrations in order. They run through `d1 execute` because
    `wrangler d1 migrations` expects a `migrations/` directory and this project
    keeps its SQL in `db/`:
 
    ```bash
-   for f in db/0001_initial.sql db/0002_intake_order.sql db/0003_auth_failures.sql; do npx wrangler d1 execute vocabulary --remote --file "$f"; done
+   for f in db/000*.sql; do npx wrangler d1 execute vocabulary --remote --file "$f"; done
    ```
 
 4. Load the corpus. The seed is idempotent, and card rows use `ON CONFLICT DO NOTHING` so review history survives a reload:
@@ -93,8 +93,10 @@ The corpus is written by hand and by model, once, and checked into `.scratch/voc
 
 | Script | Input | Output |
 | --- | --- | --- |
-| `scripts/validate-corpus.mjs` | `corpus/raw/*.json` | Pass or fail against 9 rules |
+| `scripts/validate-corpus.mjs` | `corpus/raw/*.json` | Pass or fail against 14 rules |
 | `scripts/merge-distractors.mjs` | `corpus/raw/` and `corpus/distractors/` | Merged entries |
+| `scripts/merge-rewrite.mjs` | `corpus/raw/` and `corpus/rewrite/` | Merged entries |
+| `scripts/assign-word-distractors.mjs` | `corpus/raw/*.json` | Balanced wrong words, written in place |
 | `scripts/build-seed-sql.mjs` | Merged entries | `corpus/seed.sql` |
 
 Run the validator before you rebuild the seed:
@@ -103,19 +105,30 @@ Run the validator before you rebuild the seed:
 node scripts/validate-corpus.mjs --complete
 ```
 
-Rule 7 is the one that matters most. In a multiple-choice card, the correct answer must not stand out by shape. The first generated corpus failed it completely: definitions ran to two sentences while distractors were short fragments, so the correct answer was the longest of six options in 100% of 95 senses and you could score full marks without knowing a single word. The validator now requires at least two distractors at or above the definition's length and at least two below, which puts the answer in the middle of the pack. After the repair, the correct answer is longest 0% of the time and sits at median rank 4 of 6.
+Two rules matter most, and each exists because the corpus failed it once.
+
+Rule 7 is the length tell. In a multiple-choice card, the correct answer must not stand out by shape. The first generated corpus failed it completely: definitions ran to two sentences while distractors were short fragments, so the correct answer was the longest of six options in 100% of 95 senses and you could score full marks without knowing a single word. The validator now requires at least two distractors at or above the definition's length and at least two below, which puts the answer in the middle of the pack. After the repair, the correct answer is longest 0% of the time and sits at median rank 4 of 6.
+
+Rules 10 to 12 are the plain definition. The first corpus opened with an abstract paraphrase and explained its own nuance in a second sentence, in 89 of 95 senses, with a colon, semicolon, or dash aside in 41. It read as harder than an ordinary dictionary line while saying less. The rewrite caps a definition at one sentence and 90 characters, and the median dropped from 183 characters to 76. The connotation moved to `caution`, which already carried it.
+
+Rule 14 is the word-collision check for `identify` cards. A wrong word must not be arguable as the answer, and short definitions collide far more often than long ones did: once `esoteric` and `obscure` are one plain line each, either fits the other's definition. `scripts/assign-word-distractors.mjs` picks the wrong words for every sense at once rather than leaving it to a generation session, for two reasons. Sessions converge on the same safe words, and one measured batch used `wordsmith` as a wrong option in 12 of 23 senses, which teaches you that `wordsmith` is never the answer. Sessions also cannot see the whole corpus, so the script carries 99 pairs the agents reported as too close to use, alongside a mechanical overlap check. Every word now appears exactly 5 times.
 
 ## Data model
 
 An entry is a headword. An entry holds one or more senses, and each sense carries the content you practice: `definition`, `caution`, `example`, `accepted` forms, `cues`, and `distractors`. `caution` records when the word is the wrong choice, which is the field a dictionary leaves out and the one that matters for register.
 
-Each sense produces three cards:
+A definition is one plain sentence of 90 characters or fewer. The connotation, meaning when the word is the wrong choice, lives in `caution` instead, because a definition you have to parse twice is a worse prompt than a definition you read once.
 
-| Card type | Prompt | Answer |
-| --- | --- | --- |
-| `recognition` | The word | Pick the definition from 6 options |
-| `reverse` | The definition | Type the word |
-| `production` | A situational cue | Type the word |
+Each sense produces four cards, in the order they enter intake:
+
+| Card type | Prompt | Answer | Guess rate |
+| --- | --- | --- | --- |
+| `recognition` | The word | Pick 1 definition of 4 | 25% |
+| `identify` | The definition | Pick 1 word of 6 | 17% |
+| `reverse` | The definition | Type the word | 0% |
+| `production` | A situational cue | Type the word | 0% |
+
+`identify` offers six options where `recognition` offers four, because a word takes two seconds to read and a definition does not.
 
 Splitting on senses rather than entries means `trivial` and `nontrivial` are separate cards instead of one card with a harsh grading rule.
 
@@ -127,7 +140,7 @@ Review events are append-only and deduplicated by a client-generated UUID. The W
 
 Grades are binary. A correct answer maps to 3 (`Good`) and a wrong answer maps to 1 (`Again`). There is no self-grading.
 
-New cards enter at a rate of `new_cards_per_day`, which defaults to 6. Seeded cards start with `due_at` set to `NULL` and an `intake_order`, so nothing is due until you answer it and the 285 cards take 48 days to enter rotation.
+New cards enter at a rate of `new_cards_per_day`, which defaults to 6. Seeded cards start with `due_at` set to `NULL` and an `intake_order`, so nothing is due until you answer it and the 380 cards take 64 days to enter rotation.
 
 ## Queue order
 
@@ -139,9 +152,12 @@ New cards enter at a rate of `new_cards_per_day`, which defaults to 6. Seeded ca
 | `SENSE_GAP` | 8 | Keeps two cards of the same sense at least 8 apart |
 | `REQUEUE_MIN` | 8 | Returns a wrong card 8 to 10 cards later |
 | `REQUEUE_SPREAD` | 3 | Randomises that gap |
+| `PROMPT_GAP` | 24 | Keeps two cards with the same prompt at least 24 apart |
 | `LOOKAHEAD` | 24 | Bounds how far the spacer looks forward |
 
-`SENSE_GAP` exists because of what happened without it. A new word's three cards entered intake together and arrived back to back, so you answered the second and third from the screen you had read a moment earlier. The queue also keeps its history across rebuilds and rebuilds only when `snapshot.fetched_at` changes, because rebuilding after every answer threw the spacing away.
+`PROMPT_GAP` exists because `identify` and `reverse` both show the definition and differ only in whether you pick the word or type it. Eight apart is enough for two different questions about one sense and nowhere near enough for the same question twice.
+
+`SENSE_GAP` exists because of what happened without it. A new word's cards entered intake together and arrived back to back, so you answered the second and third from the screen you had read a moment earlier. The queue also keeps its history across rebuilds and rebuilds only when `snapshot.fetched_at` changes, because rebuilding after every answer threw the spacing away.
 
 Typed answers accept one edit distance on words of 8 characters or more, so a typo on `surreptitiously` does not count against you.
 
@@ -179,7 +195,7 @@ The effective ceiling is about 30 guesses per minute.
 | `src/` | The React app: review, browse, capture, and the secret gate |
 | `worker/` | The Worker: API routes, cron handler, and VAPID signing |
 | `shared/` | Types and the single FSRS configuration, imported by both sides |
-| `db/` | Three SQL migrations |
+| `db/` | Four SQL migrations |
 | `scripts/` | Corpus validation, distractor merging, and seed generation |
 | `public/` | Service worker, manifest, and icons |
 | `.scratch/vocab-pwa/` | The decision record: map, 16 tickets, research, and corpus |

@@ -1,0 +1,23 @@
+{
+  "headword": "cognizant",
+  "senses": [
+    {
+      "term": "cognizant",
+      "definition": "Aware of something and visibly taking it into account when a decision is made.",
+      "distractors": [
+        "Told about something after the decision has already been made.",
+        "Able to explain a subject clearly to someone who has never met it.",
+        "Responsible for a piece of work and answerable for how it turns out.",
+        "Kept informed of progress at regular intervals without being asked to approve anything.",
+        "Trained in a procedure well enough to carry it out without checking the manual first."
+      ],
+      "word_distractors": [
+        "verbose",
+        "fan-out",
+        "bespoke",
+        "diaspora",
+        "primitive"
+      ]
+    }
+  ]
+}

@@ -82,3 +82,66 @@ True concurrency still leaks a little, since requests already in flight have not
 Under sustained attack the app stops answering before it is broken into: the free tier's 100k daily requests and D1 writes run out. That is a denial of service, not a breach, and the cheap limiter is what keeps most of a flood away from the database.
 
 `GET /api/health` now reports `limiter` and `min_secret_length` so a deploy can be checked without guessing. It sits behind auth, so it tells an attacker nothing.
+
+## Amendment, 2026-08-23: plain definitions and a fourth card type
+
+Kyle read the recognition cards in real use and said the definitions sounded
+more complicated than a standard straightforward definition. He was right, and
+it was systematic rather than a few bad entries. 89 of 95 definitions carried a
+second sentence explaining their own nuance, and 41 used a colon, semicolon, or
+dash aside before the meaning landed. Ticket 12's rule was "never a dictionary
+gloss", because `gravitas` is not "seriousness". The rule was right and the
+execution overshot it into never stating the plain thing at all: `bolster`'s
+definition ran 178 characters and never said "strengthen".
+
+**The fix.** A definition is now one sentence of 90 characters or fewer, with no
+aside punctuation. Median length dropped from 183 characters to 76, and 0 of 95
+run to two sentences. Nothing was lost, because the connotation already lived in
+`caution` and reads better there. All 475 definition distractors were rewritten
+to match, since leaving them long would have inverted the length tell: measured,
+the correct answer would have sat at median rank 5 of 6 by shortness.
+
+**A fourth card type, `identify`.** Kyle asked for the mirror of recognition:
+the definition is the prompt and the choices are words. It sits second in intake
+order, after `recognition` and before the two that ask you to type, because
+choosing is easier than recalling. 95 senses now make 380 cards, about 2.9
+minutes a day, and intake stretches from 48 days to 64.
+
+`cards.type` carried a CHECK constraint naming the three original types, so
+`db/0004` rebuilds the table. **That migration cost a review log.**
+`review_events.card_id` is declared `ON DELETE CASCADE` and D1 does not honour a
+connection-level `PRAGMA foreign_keys = OFF` across the statements of a file, so
+dropping `cards` deleted all 7 events. Card state survived, because `fsrs_state`
+and `due_at` live on the card, so the schedule was never at risk. The migration
+now copies the log out and puts it back, and that is proven on a fresh database
+rather than asserted.
+
+**Two tells found by measuring, both in the new card.** Neither was visible by
+reading the code.
+
+1. Generation sessions cannot pick wrong words. Each agent sees its own slice,
+   reaches for words obviously far from its own senses, and the corpus converges:
+   one batch used `wordsmith` as a wrong option in 12 of 23 senses. An overused
+   word becomes learnable as never-the-answer, and by the time its own card comes
+   up you have seen it marked wrong forty times. `scripts/assign-word-distractors.mjs`
+   now assigns all 475 at once, most-constrained sense first, taking the least-used
+   eligible words. Every word appears exactly 5 times.
+2. The first version of that script broke ties alphabetically, which looked
+   harmless and was not. The picked words came out alphabetically clustered, so
+   the correct answer sat first or last among its six options on 89 of 95 cards,
+   and the five wrong words shared a median of 2 distinct first letters. Hashing
+   the pair instead put the answer at 15% first and 15% last against a 17%
+   uniform, with 5 distinct first letters.
+
+**What a mechanical check cannot do.** Word overlap compares vocabulary, so it
+catches two definitions built from the same words and misses two definitions that
+mean the same thing in different words. The four agents read every sense and
+reported 99 pairs that scored under the limit and were still arguable, such as
+`lend itself` against `amenable`. Those are a named blocklist in the assigner.
+
+**Verified by running it**, not by reading it: 380 cards served from the real
+corpus, 95 `identify` cards, every one with exactly 6 options containing the
+answer and no duplicates. Under the real setting of 6 new cards a day, `SENSE_GAP`
+and the new `PROMPT_GAP` of 24 hold with 0 violations across 200 cards. Forcing
+the whole corpus into one queue produces violations only at cards 363 to 380, when
+nothing but repeats remains, which is the documented fallback.

@@ -1,0 +1,23 @@
+{
+  "headword": "substrate",
+  "senses": [
+    {
+      "term": "substrate",
+      "definition": "The base layer that everything built above it runs on and takes for granted.",
+      "distractors": [
+        "A voluntary group of people doing the same work who meet to trade what they learn.",
+        "Temporary structure that holds work up until the real thing can stand on its own.",
+        "A number or a call given straight, with all the caveats stripped out of it.",
+        "To avoid something deliberately and on principle.",
+        "Low in a way that has given up on things improving."
+      ],
+      "word_distractors": [
+        "wordsmith",
+        "disparage",
+        "play it by ear",
+        "gravitas",
+        "exacerbate"
+      ]
+    }
+  ]
+}

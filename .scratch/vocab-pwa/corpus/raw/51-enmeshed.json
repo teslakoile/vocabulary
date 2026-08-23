@@ -8,7 +8,7 @@
         "enmeshment",
         "enmeshing"
       ],
-      "definition": "Tangled into something so completely that you can no longer act, or be understood, separately from it. Used about relationships and organisations where the entanglement has stopped being healthy.",
+      "definition": "Tangled up with something so tightly that the two can no longer act separately.",
       "caution": "It is not a neutral word for coupling. It comes out of family therapy and carries a judgement about lost boundaries, so calling two teams enmeshed says their relationship is unhealthy rather than close, and said about actual people it lands like a diagnosis you are not qualified to hand out. If all you mean is that two systems depend on each other, tightly coupled costs you nothing and starts no arguments.",
       "example": "Support and engineering aren't collaborating, they're enmeshed - neither one can plan a quarter without the other in the room.",
       "cues": [
@@ -30,13 +30,20 @@
         }
       ],
       "distractors": [
-        "Deeply committed to a cause or a group, in the way that shows up in what you give up rather than in what you say.",
-        "Placed inside another team for a stretch so that you work to their rhythm and their priorities, while your reporting line stays exactly where it was.",
-        "Absorbed in a task to the exclusion of everything else, to the point where hours go by without your noticing them and whatever else was due that day quietly does not happen.",
-        "Held back by rules and procedure written for a situation that no longer exists, so that the sensible course takes six approvals and the unhelpful one takes none. The obstruction is in the process rather than in anybody's intent.",
-        "Aligned closely enough with somebody that the two plans never come into conflict, because each side checks with the other before it moves. The coordination is deliberate, it is reviewed on a schedule, and either of them could stop doing it next month at very little cost."
+        "Present in scattered, isolated places rather than across the whole.",
+        "Open to something without having agreed to it yet.",
+        "Safe to run more than once, because repeat runs change nothing.",
+        "An isolated environment where something runs without being able to affect anything real.",
+        "A people scattered from a homeland who keep a tie to it, and the fact of that scattering."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "unequivocal",
+        "diaspora",
+        "institutional knowledge",
+        "attuned",
+        "contrived"
+      ]
     }
   ]
 }

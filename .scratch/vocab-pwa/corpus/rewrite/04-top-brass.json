@@ -1,0 +1,23 @@
+{
+  "headword": "top brass",
+  "senses": [
+    {
+      "term": "top brass",
+      "definition": "The most senior people in an organisation, talked about as one group from below.",
+      "distractors": [
+        "A committee formed to review one decision and then dissolved.",
+        "The people who actually do the work, as distinct from those who plan it.",
+        "The founders of a company, whether or not they still hold a formal role in it.",
+        "The layer of managers sitting between the front line and the people who set strategy.",
+        "Everyone in a company who is not part of the leadership team, spoken of as one body."
+      ],
+      "word_distractors": [
+        "continuum",
+        "ephemeral",
+        "wordsmith",
+        "idempotent",
+        "exacerbate"
+      ]
+    }
+  ]
+}

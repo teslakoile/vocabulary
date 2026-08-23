@@ -9,7 +9,7 @@
         "frontrunners",
         "front-runners"
       ],
-      "definition": "The one currently most likely to win, said while the outcome is still genuinely open. It reports a standing at a moment, not a result.",
+      "definition": "The one most likely to win right now, while the outcome is still open.",
       "caution": "Naming one changes the race. In a vendor evaluation, putting it in writing before scoring closes makes the process look decided, and that is precisely the sentence that resurfaces in a procurement challenge - keep it to conversation. It also paints a target on whoever you name, and if they lose, the room remembers that you called it early.",
       "example": "Off the record the Swiss vendor is the frontrunner, but nothing goes in writing until scoring closes.",
       "cues": [
@@ -31,13 +31,20 @@
         }
       ],
       "distractors": [
-        "The competitor holding the largest share of a market it has led for years.",
-        "The first product to reach a market, which gets to set the terms everyone arriving later has to argue against.",
-        "The candidate a panel has formally put forward for a post, whose name now goes to the board for sign-off. The contest is already over by then.",
-        "The option a team lands on once the evaluation is finished and the scoring is complete, written into the paper as the recommendation everyone is being asked to approve.",
-        "An early favourite that has since slipped behind, still discussed because of the position it used to hold rather than the one it holds now. The word carries the loss with it, and it is rarely said kindly."
+        "The one you actually use every day, as opposed to the one kept for special cases.",
+        "A funded team that concentrates a scarce skill in one place and sets how it is used.",
+        "Weight and seriousness in how a person carries themselves.",
+        "A rule of thumb that usually works.",
+        "The most senior people in an organisation."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "continuum",
+        "surreptitiously",
+        "elucidate",
+        "front and center",
+        "center of excellence"
+      ]
     }
   ]
 }

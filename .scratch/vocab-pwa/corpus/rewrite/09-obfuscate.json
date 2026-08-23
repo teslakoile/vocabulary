@@ -1,0 +1,23 @@
+{
+  "headword": "obfuscate",
+  "senses": [
+    {
+      "term": "obfuscate",
+      "definition": "To make something hard to understand on purpose.",
+      "distractors": [
+        "To check a claim against its source.",
+        "To repeat a point until it lands.",
+        "To explain something clearly enough for a beginner.",
+        "To shorten a document without losing its meaning.",
+        "To translate a technical answer into business terms."
+      ],
+      "word_distractors": [
+        "elucidate",
+        "dogfooding",
+        "frontrunner",
+        "diaspora",
+        "vertical"
+      ]
+    }
+  ]
+}

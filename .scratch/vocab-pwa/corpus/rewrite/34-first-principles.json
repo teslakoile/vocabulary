@@ -1,0 +1,23 @@
+{
+  "headword": "first principles",
+  "senses": [
+    {
+      "term": "first principles",
+      "definition": "The basic truths you build an answer up from instead of copying how it is usually done.",
+      "distractors": [
+        "A rule of thumb that gets you a good enough answer quickly.",
+        "The underlying layer everything above it runs on and takes for granted.",
+        "The direct consequences of a change, before anyone has adapted to it.",
+        "What someone can do but cannot fully explain, such as judgement, feel, or a sense of fit.",
+        "The approvals and preparation done in advance of a moment where a gap would cost you dearly."
+      ],
+      "word_distractors": [
+        "tectonic shift",
+        "gravitas",
+        "hot-swap",
+        "disparage",
+        "watch outs"
+      ]
+    }
+  ]
+}

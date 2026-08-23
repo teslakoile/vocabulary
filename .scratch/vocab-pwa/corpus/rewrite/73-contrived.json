@@ -1,0 +1,23 @@
+{
+  "headword": "contrived",
+  "senses": [
+    {
+      "term": "contrived",
+      "definition": "Obviously arranged to give a particular impression, and unconvincing because of it.",
+      "distractors": [
+        "Understood by only a small group, because it assumes background that most people lack.",
+        "Handling something delicate so smoothly that the difficulty never shows to anyone else.",
+        "Advancing in stages, with each stage reaching further than the one before it.",
+        "Using far more words than the point actually needs.",
+        "Alert and responsive to signals, picking them up early and adjusting."
+      ],
+      "word_distractors": [
+        "despondent",
+        "idempotent",
+        "diaspora",
+        "north star",
+        "lean on"
+      ]
+    }
+  ]
+}

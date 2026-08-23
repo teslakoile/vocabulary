@@ -1,0 +1,23 @@
+{
+  "headword": "continuum",
+  "senses": [
+    {
+      "term": "continuum",
+      "definition": "A smooth range with no natural breaks, where any line you draw is a choice.",
+      "distractors": [
+        "Advancing in stages, each stage going further than the last.",
+        "Unequal in a way that changes the decision, usually about a bet.",
+        "A kind of input or output a system works in, such as text, images, or audio.",
+        "Deep structural change in the conditions everyone is operating under.",
+        "One piece of work splitting into many parallel branches that all run at once."
+      ],
+      "word_distractors": [
+        "progressive",
+        "dogfooding",
+        "top brass",
+        "wordsmith",
+        "sponsorship"
+      ]
+    }
+  ]
+}

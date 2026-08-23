@@ -145,6 +145,7 @@ type SenseRow = {
   example: string | null;
   cues: string | null;
   distractors: string | null;
+  word_distractors: string | null;
   prompt_version: number | null;
   updated_at: string;
 };
@@ -205,7 +206,7 @@ async function corpus(request: Request, env: Env): Promise<Response> {
     ).all<EntryRow>(),
     env.DB.prepare(
       `SELECT id, entry_id, position, term, accepted, definition, caution, example,
-              cues, distractors, prompt_version, updated_at
+              cues, distractors, word_distractors, prompt_version, updated_at
          FROM senses ORDER BY entry_id, position`
     ).all<SenseRow>(),
   ]);
@@ -223,6 +224,7 @@ async function corpus(request: Request, env: Env): Promise<Response> {
       example: row.example ?? '',
       cues: parseJson<Sense['cues']>(row.cues, []),
       distractors: parseJson<string[]>(row.distractors, []),
+      word_distractors: parseJson<string[]>(row.word_distractors, []),
       prompt_version: row.prompt_version === null ? null : Number(row.prompt_version),
       updated_at: row.updated_at,
     };
@@ -449,7 +451,7 @@ async function updateEntry(id: string, request: Request, env: Env): Promise<Resp
     statements.push(
       env.DB.prepare(
         `UPDATE senses SET term = ?, accepted = ?, definition = ?, caution = ?, example = ?,
-                           cues = ?, distractors = ?, updated_at = ?
+                           cues = ?, distractors = ?, word_distractors = ?, updated_at = ?
            WHERE id = ? AND entry_id = ?`
       ).bind(
         sense.term,
@@ -459,6 +461,7 @@ async function updateEntry(id: string, request: Request, env: Env): Promise<Resp
         sense.example ?? '',
         JSON.stringify(sense.cues ?? []),
         JSON.stringify(sense.distractors ?? []),
+        JSON.stringify(sense.word_distractors ?? []),
         now,
         sense.id,
         id

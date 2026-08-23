@@ -1,0 +1,23 @@
+{
+  "headword": "by and large",
+  "senses": [
+    {
+      "term": "by and large",
+      "definition": "On the whole, allowing for exceptions that do not change the conclusion.",
+      "distractors": [
+        "Directly and without hedging, usually about where something belongs.",
+        "Done quietly so as not to be seen doing it.",
+        "Present in scattered places rather than across the whole of something.",
+        "Proceeding by small additions, with each one standing on its own without the rest.",
+        "So little known, or so unclear, that most people would not be able to follow it."
+      ],
+      "word_distractors": [
+        "squarely",
+        "front and center",
+        "ducks in a row",
+        "surreptitiously",
+        "hot-swap"
+      ]
+    }
+  ]
+}

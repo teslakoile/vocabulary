@@ -1,0 +1,23 @@
+{
+  "headword": "sponsorship",
+  "senses": [
+    {
+      "term": "sponsorship",
+      "definition": "A senior person putting their own standing behind a person or a piece of work.",
+      "distractors": [
+        "Advice given privately to someone earlier in their career.",
+        "The budget line that pays for a programme's staff and tools.",
+        "A written record of who is accountable for each deliverable in a plan.",
+        "The practice of pairing a new joiner with a colleague who answers their questions.",
+        "A senior person's public disagreement with a decision their own leadership has taken."
+      ],
+      "word_distractors": [
+        "semantic layer",
+        "by and large",
+        "panopticon",
+        "serialize",
+        "contrived"
+      ]
+    }
+  ]
+}

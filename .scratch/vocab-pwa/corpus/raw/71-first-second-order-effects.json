@@ -8,7 +8,7 @@
         "first order effect",
         "first-order effect"
       ],
-      "definition": "The direct consequences of a change: what it does to the thing you changed. They are the ones you can see, the ones you planned, and usually the ones in the business case.",
+      "definition": "The direct and immediate results of a change on the thing you changed.",
       "caution": "Naming something as first order is a promise that you have thought about what comes after it, and the next question in a senior room is always what comes after it. It also collides with first-order approximation, which means roughly, so in a mixed room say which you mean before someone hears you say the number is a guess.",
       "example": "The first order effect is that reviews get faster. What I actually care about is what happens to review quality once they do.",
       "cues": [
@@ -30,13 +30,20 @@
         }
       ],
       "distractors": [
-        "The highest-priority items on a plan of work, the ones that get finished before anything else is started.",
-        "Costs a change imposes on people who were never party to it and are not compensated for it, which is why they rarely show up in anyone's numbers.",
-        "Results large enough to be worth measuring at all, as against the ones that vanish into the noise. It is a threshold about size, and where you set it decides what gets reported and what does not.",
-        "The order in which dependent changes have to be made, so that nothing is switched on before the thing it relies on exists. It is a sequencing constraint, and getting it wrong is how a rollout stalls halfway through a weekend.",
-        "The group who receive a change before anyone else and whose experience decides whether it goes further: a floor, a region, a single desk. Who goes first is chosen deliberately, usually for tolerance rather than for how representative they are."
+        "A loop in which each turn makes the next one easier and the whole thing speeds up.",
+        "The small set of things you know to be true once precedent has been stripped away.",
+        "A kind of input or output a system works in, such as text, images, audio or video.",
+        "Weight and seriousness in how a person carries themselves.",
+        "A slice of the market defined by the industry it serves."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "asymmetric",
+        "amenable",
+        "pick your brain",
+        "disparage",
+        "advocate"
+      ]
     },
     {
       "term": "second order effects",
@@ -45,7 +52,7 @@
         "second order effect",
         "second-order effect"
       ],
-      "definition": "The consequences of the consequences: what happens once people and systems adapt to the first change. They arrive late, are rarely planned for, and are usually where the real result of a decision lives.",
+      "definition": "The later results that follow once people and systems adapt to the first change.",
       "caution": "It is the easiest phrase in the language to use as a veto. Raise it and you should be able to name one, or you have added doubt to someone else's proposal without paying anything for it. People notice when it only ever arrives on other people's ideas.",
       "example": "The second order effect is the one I'd watch: once reviewers trust the tool, they stop reading the diffs.",
       "cues": [
@@ -71,13 +78,20 @@
         }
       ],
       "distractors": [
-        "The phase of a rollout that comes after the pilot, when a change finally goes to everyone who was not in the trial.",
-        "Risks a team identifies in advance, writes down, and asks a sponsor to accept formally, so that if one of them lands nobody can claim they were not told.",
-        "The extra cost of running something at a larger size: more storage, more support, more licences, all of it arriving in proportion to the growth. It is arithmetic rather than surprise, and a competent team can forecast it a year out.",
-        "Outcomes that were foreseen and then judged too small to act on, which is a decision somebody actually made rather than something the analysis missed. They tend to resurface in a review a year later, where the argument is about whether the judgement was reasonable at the time.",
-        "A follow-on tranche of funding released only once the first has proved out, so that money arrives in stages tied to evidence rather than all at once on the strength of a plan. It is a control a board puts on a programme it believes in but does not yet trust, and it is negotiated at the outset."
+        "The place where raw tables and columns are mapped onto the words the business uses.",
+        "A funded, staffed team that concentrates a scarce skill in one place and sets how it works.",
+        "Temporary structure that holds work up until the real thing can stand without it.",
+        "To work over the exact phrasing of something already drafted.",
+        "The most senior people in a firm, spoken of as one group."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "deliberate",
+        "daily driver",
+        "tacit knowledge",
+        "hot-swap",
+        "disparage"
+      ]
     }
   ]
 }

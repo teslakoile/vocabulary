@@ -1,0 +1,23 @@
+{
+  "headword": "serialize",
+  "senses": [
+    {
+      "term": "serialize",
+      "definition": "To turn something in memory into bytes that can be stored or sent and read back.",
+      "distractors": [
+        "To replace a running component without stopping the system around it.",
+        "To split one request into many branches that run at the same time.",
+        "To avoid something deliberately and on principle.",
+        "A kind of input or output a system works in, such as text, images, audio, or video.",
+        "To make something deliberately hard to understand so the plain version stays hidden."
+      ],
+      "word_distractors": [
+        "modality",
+        "despondent",
+        "inroads",
+        "ducks in a row",
+        "lean on"
+      ]
+    }
+  ]
+}

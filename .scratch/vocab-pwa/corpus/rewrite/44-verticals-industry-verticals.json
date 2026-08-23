@@ -1,0 +1,23 @@
+{
+  "headword": "verticals/industry verticals",
+  "senses": [
+    {
+      "term": "vertical",
+      "definition": "A slice of the market made up of a single industry like banking or healthcare.",
+      "distractors": [
+        "The underlying layer that everything above it runs on and takes for granted.",
+        "A basic building block a platform gives you and expects you to combine with others.",
+        "A funded team that holds a scarce skill in one place and sets how it is used.",
+        "One request splitting into many parallel pieces of work that run at the same time.",
+        "An isolated environment where code runs without touching anything real."
+      ],
+      "word_distractors": [
+        "panopticon",
+        "diaspora",
+        "north star",
+        "fan-out",
+        "scaffolding"
+      ]
+    }
+  ]
+}

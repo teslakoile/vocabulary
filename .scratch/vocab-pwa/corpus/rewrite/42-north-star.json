@@ -1,0 +1,23 @@
+{
+  "headword": "north star",
+  "senses": [
+    {
+      "term": "north star",
+      "definition": "The single outcome you steer everything else by.",
+      "distractors": [
+        "The one currently most likely to win, said while the outcome is still open.",
+        "A number given straight, with the caveats stripped out.",
+        "The underlying layer everything above it runs on.",
+        "Real agreement from the people you need.",
+        "The most senior people, as one group."
+      ],
+      "word_distractors": [
+        "hot-swap",
+        "ephemeral",
+        "obfuscate",
+        "enmeshed",
+        "wordsmith"
+      ]
+    }
+  ]
+}

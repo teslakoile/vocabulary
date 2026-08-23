@@ -4,7 +4,7 @@
     {
       "term": "by and large",
       "accepted": [],
-      "definition": "On the whole, allowing for exceptions you are not going to list. It concedes counterexamples exist while saying they do not change the conclusion.",
+      "definition": "On the whole, allowing for exceptions that do not change the conclusion.",
       "caution": "It signals you have not checked the exceptions. Safe in conversation, risky in writing that will be scrutinised, because this is exactly where someone asks which cases you are excluding.",
       "example": "By and large the migration went clean. Two services needed manual work.",
       "cues": [
@@ -30,13 +30,20 @@
         }
       ],
       "distractors": [
-        "In every single case without exception, which is a much stronger claim than it sounds.",
-        "At a level of description kept deliberately free of detail, so the shape of a thing is visible and its mechanics are not.",
-        "According to the view most of the people in the room hold, offered as the reason a decision should go that way. It reports a headcount rather than a judgement.",
-        "Measured across a stretch of time long enough that short-term noise stops mattering, which is how a trend gets separated from a run of bad weeks. It is a claim about duration, not about coverage.",
-        "Taken across every part of an organisation rather than inside one team, which is what makes a number comparable between divisions. It widens the frame of a claim from local to enterprise-wide, and it usually raises the stakes of it."
+        "Directly and without hedging, usually about where something belongs.",
+        "Done quietly so as not to be seen doing it.",
+        "Present in scattered places rather than across the whole of something.",
+        "Proceeding by small additions, with each one standing on its own without the rest.",
+        "So little known, or so unclear, that most people would not be able to follow it."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "community of practice",
+        "harness",
+        "scaffolding",
+        "amenable",
+        "sponsorship"
+      ]
     }
   ]
 }

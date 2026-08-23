@@ -1,0 +1,23 @@
+{
+  "headword": "frontrunner",
+  "senses": [
+    {
+      "term": "frontrunner",
+      "definition": "The one most likely to win right now, while the outcome is still open.",
+      "distractors": [
+        "The one you actually use every day, as opposed to the one kept for special cases.",
+        "A funded team that concentrates a scarce skill in one place and sets how it is used.",
+        "Weight and seriousness in how a person carries themselves.",
+        "A rule of thumb that usually works.",
+        "The most senior people in an organisation."
+      ],
+      "word_distractors": [
+        "top brass",
+        "mold breaker",
+        "panopticon",
+        "scaffolding",
+        "diaspora"
+      ]
+    }
+  ]
+}

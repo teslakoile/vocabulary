@@ -1,0 +1,23 @@
+{
+  "headword": "modality",
+  "senses": [
+    {
+      "term": "modality",
+      "definition": "A kind of input or output a system works in, such as text, images, audio or video.",
+      "distractors": [
+        "A rule of thumb that gets you a good enough answer quickly.",
+        "The place where raw tables and columns are mapped onto words the business uses.",
+        "Temporary structure that holds work up until the real thing can stand on its own.",
+        "One of the handful of cloud providers running compute and storage at planetary scale.",
+        "A people scattered from a homeland who keep a tie to it, and that scattering itself."
+      ],
+      "word_distractors": [
+        "substrate",
+        "gravitas",
+        "diaspora",
+        "ducks in a row",
+        "first principles"
+      ]
+    }
+  ]
+}

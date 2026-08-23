@@ -1,0 +1,23 @@
+{
+  "headword": "build that muscle",
+  "senses": [
+    {
+      "term": "build that muscle",
+      "definition": "To build a skill through repeated practice instead of one-off training.",
+      "distractors": [
+        "To use your own product for real work before asking anyone else to.",
+        "To make a bad situation worse than it already was.",
+        "To dig patiently through records for something that was never hidden on purpose.",
+        "To replace a running part of a system without stopping the system around it.",
+        "To put right something that was wrong."
+      ],
+      "word_distractors": [
+        "dogfooding",
+        "sleuthing",
+        "obfuscate",
+        "serialize",
+        "hot-swap"
+      ]
+    }
+  ]
+}

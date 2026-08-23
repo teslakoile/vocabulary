@@ -1,0 +1,23 @@
+{
+  "headword": "amenable",
+  "senses": [
+    {
+      "term": "amenable",
+      "definition": "Open to something without having agreed to it, or well suited to a particular treatment.",
+      "distractors": [
+        "Handling something delicate so smoothly that the difficulty never shows.",
+        "Aware of something and visibly taking it into account when you decide.",
+        "Deciding as you go, taking your lead from how things actually develop.",
+        "A senior person putting their own standing behind a piece of work and spending it there.",
+        "Progress won into territory that was previously closed to you, such as an account or a market."
+      ],
+      "word_distractors": [
+        "despondent",
+        "tectonic shift",
+        "hyperscaler",
+        "sleuthing",
+        "modality"
+      ]
+    }
+  ]
+}

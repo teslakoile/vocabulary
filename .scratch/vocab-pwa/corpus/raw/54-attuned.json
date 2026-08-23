@@ -8,7 +8,7 @@
         "attuning",
         "attunement"
       ],
-      "definition": "Alert and responsive to something, picking up signals early and adjusting to them. It describes receptivity rather than knowledge: you can be attuned to a room's mood without anyone having told you anything.",
+      "definition": "Alert to something and quick to pick up small signals from it and adjust.",
       "caution": "Said about yourself it claims a sensitivity only other people can confirm, and it congratulates you in the same breath - 'I'm attuned to the board's concerns' is exactly the sentence that makes a board wonder whether you are. It is at its best as praise for someone else. In an AI room the shorter form is a technical word, so a system described this way gets heard as fine-tuned rather than perceptive.",
       "example": "She's attuned to when a sponsor has gone quiet for political reasons rather than practical ones.",
       "cues": [
@@ -30,13 +30,20 @@
         }
       ],
       "distractors": [
-        "Formally trained in a subject and able to produce the certificate, whatever you happen to notice in the room.",
-        "Kept informed through reports that arrive on a schedule, so that you know what happened and roughly when, some time after everyone in the room already did.",
-        "Adjusted so as to run at its best under known conditions, each setting moved until the numbers stop improving. It performs beautifully right up to the point where the conditions change and nobody notices they have.",
-        "Talked round to a position you did not start from, so that you now argue for it as though it had been yours all along. The shift happened in one conversation and could be reversed in a better one.",
-        "Committed to a group's interests ahead of your own, to the point of carrying a position you privately disagree with because the group has settled on it. It is a statement about loyalty, and it holds whether or not the group turns out to have been right."
+        "Low in a way that has given up on things getting better.",
+        "Admitting only one reading, so nobody can take it two ways.",
+        "Done quietly so that nobody sees it being done.",
+        "Understood by only a small group, because it assumes background that most people lack.",
+        "A rule of thumb that gets you a good enough answer quickly, because it usually works."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "superset",
+        "institutional knowledge",
+        "advocate for",
+        "substantiate",
+        "frontrunner"
+      ]
     }
   ]
 }

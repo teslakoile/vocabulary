@@ -6,7 +6,7 @@
       "accepted": [
         "progressively"
       ],
-      "definition": "Advancing in stages, each stage going further than the last: a rollout that widens from one team to ten to everyone, or an interface that reveals more of itself as you need it. The emphasis is on the steady advance rather than on the size of any one step.",
+      "definition": "Advancing in stages, each stage going further than the last.",
       "caution": "The word has a political life, so about people, policy or an organisation's values it will be read that way whatever you meant, and in that reading it is a label rather than a description. Say phased or staged there. In a pricing or tax conversation it means something different again, rates that rise with the amount. Keep it for delivery and design, where the technical reading is the only one available.",
       "example": "We will do a progressive rollout, one desk this week, the floor next week, and the region only after two clean weeks.",
       "cues": [
@@ -32,13 +32,20 @@
         }
       ],
       "distractors": [
-        "Applied to everyone at the same moment, so that the change either works for the whole population at once or fails for all of it at once.",
-        "Rolled back automatically the moment the numbers turn, without anybody having to be woken up to make the call. The cleverness sits in the retreat rather than in how the thing went out.",
-        "Made of independent parts that can be built and shipped separately, so that one piece changing does not drag the rest along with it. It describes how the thing is put together rather than the order in which it reaches people, and a set of parts can go out to everybody on the same morning.",
-        "Improving in quality while staying exactly the same in scope, so that the thing does what it always did and simply does it better each time you look. The gain is depth on a fixed footprint, which is a different axis altogether from reaching further with every step.",
-        "Repeated over and over until a target is finally met, each pass looking much like the last one and the stopping rule set by the number rather than by the stage. What defines it is the return to the same ground, so a run that never reaches the target simply goes round again, which is the opposite of arriving somewhere new each time."
+        "Released to everyone at the same moment.",
+        "Repeated identically each time it runs.",
+        "Held back until every part of it is finished and signed off.",
+        "Rolled back to the previous version the moment anything looks wrong.",
+        "Reversed one step at a time until the system is back where it started."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "second order effects",
+        "unequivocal",
+        "tacit knowledge",
+        "frontier",
+        "vertical"
+      ]
     }
   ]
 }

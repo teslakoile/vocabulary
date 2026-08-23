@@ -1,0 +1,41 @@
+{
+  "headword": "trivial/nontrivial",
+  "senses": [
+    {
+      "term": "trivial",
+      "definition": "So small or easy that it is not worth spending time on.",
+      "distractors": [
+        "Deferred to a later release on purpose.",
+        "Cheap to build and expensive to run.",
+        "Left undone because nobody ever owned it.",
+        "Small in size but serious in what it sets off downstream.",
+        "Difficult to explain but easy to do once you have seen it."
+      ],
+      "word_distractors": [
+        "verbose",
+        "panopticon",
+        "hot-swap",
+        "diaspora",
+        "frontier"
+      ]
+    },
+    {
+      "term": "nontrivial",
+      "definition": "Not simple, and harder or larger than the person asking has assumed.",
+      "distractors": [
+        "Simple to describe and simple to build.",
+        "Impossible with the tools currently available at any price.",
+        "Expensive in money but cheap in the time it takes to finish.",
+        "Well understood by the team that owns it and by nobody else in the building.",
+        "Held up by a dependency on another team rather than by the work itself."
+      ],
+      "word_distractors": [
+        "front and center",
+        "wordsmith",
+        "idempotent",
+        "surreptitiously",
+        "sandbox"
+      ]
+    }
+  ]
+}

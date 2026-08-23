@@ -1,0 +1,41 @@
+{
+  "headword": "substantiate/substantial",
+  "senses": [
+    {
+      "term": "substantiate",
+      "definition": "To back a claim with evidence that someone else can check.",
+      "distractors": [
+        "To repeat a claim until people accept it.",
+        "To state something plainly and without hedging.",
+        "To write down what was decided so it can be found later.",
+        "To argue a case on behalf of somebody who is not in the room.",
+        "To take an existing figure and adjust it for inflation over time."
+      ],
+      "word_distractors": [
+        "ephemeral",
+        "hot-swap",
+        "long-horizon",
+        "wordsmith",
+        "vertical"
+      ]
+    },
+    {
+      "term": "substantial",
+      "definition": "Large enough to matter, said of an amount or a change without giving a number.",
+      "distractors": [
+        "Small enough to ignore for now.",
+        "Measured precisely and reported to two decimal places.",
+        "Growing steadily but from a very small starting point.",
+        "Set aside in a budget for costs that have not yet been identified in any detail.",
+        "Counted twice by mistake because two systems both reported the same transaction."
+      ],
+      "word_distractors": [
+        "sleuthing",
+        "play it by ear",
+        "panopticon",
+        "serialize",
+        "scaffolding"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "headword": "lean on",
+  "senses": [
+    {
+      "term": "lean on",
+      "definition": "To rely on someone or something to carry part of the work for you.",
+      "distractors": [
+        "To ask someone to explain their reasoning before you decide.",
+        "To take a job over completely from the person who was doing it.",
+        "To hand a decision upwards so that somebody more senior owns it.",
+        "To spread one piece of work across many workers running at the same time.",
+        "To deliberately do without something you could easily have had, as a matter of principle."
+      ],
+      "word_distractors": [
+        "wordsmith",
+        "panopticon",
+        "frontrunner",
+        "contrived",
+        "ephemeral"
+      ]
+    }
+  ]
+}

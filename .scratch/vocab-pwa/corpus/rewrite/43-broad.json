@@ -1,0 +1,23 @@
+{
+  "headword": "broad",
+  "senses": [
+    {
+      "term": "broad",
+      "definition": "Covering a wide range of cases or topics rather than a narrow one.",
+      "distractors": [
+        "Built for one customer rather than taken off the shelf.",
+        "Lasting only a short time, and meant to.",
+        "Safe to run more than once, because a repeat run changes nothing.",
+        "Present only in scattered places instead of everywhere across the organisation.",
+        "Using far more words than the point actually needs, in speech or on the page."
+      ],
+      "word_distractors": [
+        "despondent",
+        "ephemeral",
+        "idempotent",
+        "verbose",
+        "bespoke"
+      ]
+    }
+  ]
+}

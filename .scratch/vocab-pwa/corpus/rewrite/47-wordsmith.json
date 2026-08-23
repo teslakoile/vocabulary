@@ -1,0 +1,23 @@
+{
+  "headword": "wordsmith",
+  "senses": [
+    {
+      "term": "wordsmith",
+      "definition": "To reword a draft so it reads better without changing what it says.",
+      "distractors": [
+        "To make something deliberately hard to understand.",
+        "To make a bad situation worse than it already was.",
+        "To turn a structure held in memory into a form that can be stored or sent.",
+        "To use your own product for real work before you ask anyone else to use it.",
+        "To speak about someone in a way that quietly lowers them."
+      ],
+      "word_distractors": [
+        "obfuscate",
+        "exacerbate",
+        "serialize",
+        "disparage",
+        "dogfooding"
+      ]
+    }
+  ]
+}

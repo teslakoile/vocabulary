@@ -6,7 +6,7 @@
       "accepted": [
         "ephemerality"
       ],
-      "definition": "Lasting only briefly, and meant to. In infrastructure it names things created for one use and destroyed after it — containers, tokens, workspaces — where the short life is the design, not a limitation.",
+      "definition": "Lasting only a short time, and built that way on purpose.",
       "caution": "In a technical room it is a claim rather than a description: say a workspace is ephemeral and the next questions are about the logs, the cache and whatever it wrote on its way out. Everywhere else it is a slightly literary word, elegant in writing and a little precious said out loud about a colleague's short tenure or a passing mood.",
       "example": "Every agent run gets an ephemeral workspace — it exists for the task and nothing survives it.",
       "cues": [
@@ -32,13 +32,20 @@
         }
       ],
       "distractors": [
-        "Happening at intervals nobody can predict, so you cannot plan around it and have to be ready for it at any hour.",
-        "Held only in memory and never written down to disk, which is what makes it quick to read and impossible to recover once the machine has restarted.",
-        "Recreated automatically after a failure without anyone being paged, so that the system returns to its intended shape on its own. What is promised is that the desired state is written down somewhere and continuously enforced.",
-        "Too small in scale or in consequence to be worth reporting, so it gets aggregated away well before the number reaches anyone senior. The threshold is set deliberately, and the argument in a review is nearly always about where it was set rather than about the events themselves.",
-        "Rebuilt from scratch on every change rather than edited in place, so that no server ever accumulates a history of adjustments nobody remembers making. It is a discipline about how change gets applied, and the benefit of it is that what is running always matches what is written in the repository."
+        "Safe to run more than once, because a second run changes nothing the first did not.",
+        "A basic building block a platform hands you and expects you to compose with.",
+        "Covering a wide range rather than a narrow one.",
+        "To put right something that was wrong.",
+        "The most senior people, taken as one group."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "rectify",
+        "first order effects",
+        "center of excellence",
+        "failure mode",
+        "serialize"
+      ]
     }
   ]
 }

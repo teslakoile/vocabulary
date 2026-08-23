@@ -1,0 +1,41 @@
+{
+  "headword": "executive presence/finesse",
+  "senses": [
+    {
+      "term": "executive presence",
+      "definition": "Coming across as calm, clear and senior enough to be handed a decision.",
+      "distractors": [
+        "A record of delivering what you promised, quarter after quarter.",
+        "The number of people who report to you, directly and indirectly.",
+        "The ability to speak a second language well enough to negotiate in it.",
+        "The set of decisions a leader is formally allowed to make without asking.",
+        "The rank a job sits at in a company's grading system, published for everyone to see."
+      ],
+      "word_distractors": [
+        "serialize",
+        "semantic layer",
+        "in pockets",
+        "exacerbate",
+        "diaspora"
+      ]
+    },
+    {
+      "term": "finesse",
+      "definition": "Skill in handling something delicate so smoothly that the difficulty never shows.",
+      "distractors": [
+        "Brute force applied until an obstacle gives way.",
+        "Doing a job to a standard nobody asked for, at a cost nobody agreed to.",
+        "A rehearsed answer prepared in advance for a question you expect to be asked.",
+        "The willingness to say the uncomfortable thing in a room that does not want to hear it.",
+        "The care taken to record exactly how a decision was reached, so it can be audited later."
+      ],
+      "word_distractors": [
+        "superset",
+        "first order effects",
+        "inroads",
+        "despondent",
+        "modality"
+      ]
+    }
+  ]
+}

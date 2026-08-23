@@ -7,7 +7,7 @@
         "lie of the land",
         "the lay of the land"
       ],
-      "definition": "How things actually stand somewhere you are new to: who decides, what has already been tried, where the sensitivities sit. It is the informal map you build before making a move.",
+      "definition": "How things really work somewhere new, who decides and what has already been tried.",
       "caution": "Saying you are still getting the lay of the land buys you time gracefully in a first month and sounds like stalling by the fourth. It also announces that you have not acted yet, so keep it away from any update where somebody is waiting on a decision from you, and never offer it as the answer to a question about results.",
       "example": "Give me two weeks with the delivery leads to get the lay of the land before I propose any changes.",
       "cues": [
@@ -29,13 +29,20 @@
         }
       ],
       "distractors": [
-        "A formal analysis of a market and the competitors in it, with figures somebody can be held to.",
-        "A plan for your first ninety days in a role, setting out what you intend to have done by the end of each month.",
-        "A summary of the decisions already taken, listed with dates so that nobody reopens something settled two quarters ago. It is a record of outcomes rather than a feel for how a place works.",
-        "Knowledge of how a system is built and what it depends on, down to the services that fall over when one of them does. It is a map of machinery rather than of people, and you can hold all of it and still not know who to ask.",
-        "An introduction to the people you will be working with, arranged for you in your first week so that names and faces get attached to each other early. Somebody else has done the arranging, and what you are handed is a set of first meetings rather than anything you worked out yourself."
+        "The published organisation chart, showing who reports to whom.",
+        "A map of which systems talk to which, drawn before any change is made.",
+        "A list of every system a team owns, kept up to date for audit purposes.",
+        "A survey of what competitors are selling and at what price, refreshed every quarter.",
+        "The full list of everything a team has agreed to deliver this quarter, ranked in order."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "lend itself",
+        "disambiguate",
+        "incremental",
+        "vertical",
+        "trivial"
+      ]
     }
   ]
 }

@@ -6,7 +6,7 @@
       "accepted": [
         "surreptitious"
       ],
-      "definition": "Done quietly so as not to be seen doing it, usually because being seen would stop it or embarrass you. The concealment is of the act, not necessarily of anything shameful in it.",
+      "definition": "Done quietly so that nobody sees it happening.",
       "caution": "It supplies a motive for the hiding, so aimed at a colleague it is an accusation wearing the clothes of an adverb. About systems it is heavier still: an agent that surreptitiously wrote to the database will be read as a security finding rather than a quirk, and the sentence outlives the meeting. About yourself it is usually light and self-deprecating, which is where most of its safe uses are.",
       "prompt_version": 2,
       "example": "Nobody signed anything off. A team had been surreptitiously pointing production traffic at the new index for a month.",
@@ -29,11 +29,18 @@
         }
       ],
       "distractors": [
-        "Done without asking anybody first, though in full view of everyone it affects.",
-        "Done by hint rather than by statement, so that the other person has to work out for themselves what was actually meant.",
-        "Done informally rather than through the proper channel, in the open but without the paperwork the process would normally demand. The shortcut is procedural, and everybody can see it being taken.",
-        "Done in a rush, with the usual checks skipped to make a date somebody else set. The corners cut are visible at the time, and they turn up again months later in whoever inherits the job of putting them right.",
-        "Done reluctantly and only because you were told to, with the disagreement left obvious to everyone in the room. The manner carries the objection that the words themselves are not permitted to carry, and it is meant to be read that way by the person who gave the instruction."
+        "In the most prominent position, where it cannot be missed.",
+        "Directly and without hedging.",
+        "Lasting only briefly, and meant to.",
+        "Done on purpose and after thought rather than by accident.",
+        "Present in scattered, isolated places rather than across the whole."
+      ],
+      "word_distractors": [
+        "amenable",
+        "inroads",
+        "wordsmith",
+        "watch outs",
+        "blanket approval"
       ]
     }
   ]

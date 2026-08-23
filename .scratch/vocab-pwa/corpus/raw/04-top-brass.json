@@ -6,7 +6,7 @@
       "accepted": [
         "the brass"
       ],
-      "definition": "The most senior people in an organisation, spoken of as a single group and almost always from below.",
+      "definition": "The most senior people in an organisation, talked about as one group from below.",
       "caution": "It always marks you as outside the group, which is the charm of it in a corridor or a team channel and the problem with it anywhere formal. In a paper write the executive committee; said to one of them directly it is either flippant or faintly insubordinate, and said with a sigh it tells everyone how you feel about a decision you are supposed to be carrying. Borrowed from the military, and informal to the point of being wry.",
       "example": "The brass are in the building on Thursday, so keep the demo to ten minutes and skip the architecture slide.",
       "cues": [
@@ -28,13 +28,20 @@
         }
       ],
       "distractors": [
-        "The layer of managers sitting between the floor and the executive, translating in both directions.",
-        "The founders of a company who are still in it day to day, running the place themselves.",
-        "Long-tenured staff who know how the place really works, and whose blessing a change quietly needs even though no chart says so. What they hold is knowledge of the plumbing rather than any rank.",
-        "The standing committee that signs off spending above a set threshold, meeting to a calendar and leaving a minute behind it. It names a decision-making body with a remit, not the people a place thinks of as senior.",
-        "The highest-performing team in a division, the one held up in the quarterly review as the example everyone else is meant to follow. It is a judgement about results over a period rather than a description of where anybody sits."
+        "A committee formed to review one decision and then dissolved.",
+        "The people who actually do the work, as distinct from those who plan it.",
+        "The founders of a company, whether or not they still hold a formal role in it.",
+        "The layer of managers sitting between the front line and the people who set strategy.",
+        "Everyone in a company who is not part of the leadership team, spoken of as one body."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "failure mode",
+        "sandbox",
+        "substantial",
+        "verifiable rewards",
+        "tectonic shift"
+      ]
     }
   ]
 }

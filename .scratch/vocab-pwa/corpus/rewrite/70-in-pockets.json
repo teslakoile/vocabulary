@@ -1,0 +1,23 @@
+{
+  "headword": "in pockets",
+  "senses": [
+    {
+      "term": "in pockets",
+      "definition": "Present only in scattered, separate places rather than across the whole.",
+      "distractors": [
+        "Covering a wide range of cases rather than a narrow one, said of scope or coverage.",
+        "Tangled into something so completely that you can no longer act independently of it.",
+        "A range with no natural joints in it, where the cases shade into one another.",
+        "On the whole, allowing for exceptions nobody is going to list.",
+        "To make a bad situation worse than it already was."
+      ],
+      "word_distractors": [
+        "serialize",
+        "idempotent",
+        "gravitas",
+        "rectify",
+        "wordsmith"
+      ]
+    }
+  ]
+}

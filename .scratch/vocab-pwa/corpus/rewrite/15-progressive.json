@@ -1,0 +1,23 @@
+{
+  "headword": "progressive",
+  "senses": [
+    {
+      "term": "progressive",
+      "definition": "Advancing in stages, each stage going further than the last.",
+      "distractors": [
+        "Released to everyone at the same moment.",
+        "Repeated identically each time it runs.",
+        "Held back until every part of it is finished and signed off.",
+        "Rolled back to the previous version the moment anything looks wrong.",
+        "Reversed one step at a time until the system is back where it started."
+      ],
+      "word_distractors": [
+        "wordsmith",
+        "idempotent",
+        "disparage",
+        "persistence",
+        "enmeshed"
+      ]
+    }
+  ]
+}

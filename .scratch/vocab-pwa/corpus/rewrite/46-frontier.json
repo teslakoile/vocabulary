@@ -1,0 +1,23 @@
+{
+  "headword": "frontier",
+  "senses": [
+    {
+      "term": "frontier",
+      "definition": "The current edge of what AI systems can do, and the labs and models working there.",
+      "distractors": [
+        "A funded team that concentrates a scarce skill in one place and sets how it is used.",
+        "The most senior people in an organisation, spoken of as a single group.",
+        "Deep structural change in the conditions everyone is operating under.",
+        "An isolated environment where a system can run without being able to affect anything real.",
+        "The short list of things most likely to go wrong, handed to someone before they start."
+      ],
+      "word_distractors": [
+        "semantic layer",
+        "top brass",
+        "sandbox",
+        "watch outs",
+        "gravitas"
+      ]
+    }
+  ]
+}

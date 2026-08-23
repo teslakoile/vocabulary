@@ -6,7 +6,7 @@
  * quiet gold rule marking a card whose answer moves the schedule.
  */
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { ArrowRight, Check, Eye, MessageSquareQuote, Pencil, ScrollText, X } from 'lucide-react';
+import { ArrowRight, Check, Eye, Keyboard, ListChecks, MessageSquareQuote, Pencil, ScrollText, X } from 'lucide-react';
 import { applyGrade, gradeFor } from '../shared/scheduler';
 import EditPanel from './EditPanel';
 import { answerMatches, type Queue, type QueueItem } from './queue';
@@ -26,9 +26,15 @@ type Answered = { correct: boolean; given?: string } | null;
 
 const KIND = {
   recognition: { label: 'recognition', icon: Eye },
-  reverse: { label: 'from the definition', icon: ScrollText },
+  identify: { label: 'pick the word', icon: ListChecks },
+  reverse: { label: 'type the word', icon: Keyboard },
   production: { label: 'from a situation', icon: MessageSquareQuote },
 } as const;
+
+/** What a card's options are checked against. Recognition offers definitions
+ *  and identify offers words, so the right answer is not always the same field. */
+const correctOption = (item: QueueItem): string =>
+  item.card.type === 'identify' ? item.sense.term : item.sense.definition;
 
 export default function Review({ queue, snapshot, onSnapshot }: Props) {
   const [item, setItem] = useState<QueueItem | undefined>(() => queue.peek());
@@ -38,7 +44,7 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
   const input = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    if (!answered && item && item.card.type !== 'recognition') input.current?.focus();
+    if (!answered && item && !item.options) input.current?.focus();
   }, [answered, item]);
 
   const reveal = useCallback(
@@ -74,13 +80,13 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
   // Number keys pick an option. On a laptop this is the difference between
   // practising and operating a mouse.
   useEffect(() => {
-    if (answered || !item || item.card.type !== 'recognition') return;
+    if (answered || !item?.options) return;
     const onKey = (e: KeyboardEvent) => {
       const n = Number(e.key);
       const options = item.options ?? [];
       if (!Number.isInteger(n) || n < 1 || n > options.length) return;
       e.preventDefault();
-      reveal(options[n - 1] === item.sense.definition);
+      reveal(options[n - 1] === correctOption(item));
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
@@ -235,6 +241,31 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
               >
                 {/* The option number, for keyboard use. Hidden where there is no keyboard. */}
                 <kbd className="mt-px hidden size-6 shrink-0 items-center justify-center rounded-md border border-border bg-muted font-sans text-xs text-muted-foreground pointer-fine:flex">
+                  {i + 1}
+                </kbd>
+                <span>{option}</span>
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+
+  if (card.type === 'identify') {
+    return (
+      <div data-slot="question" data-kind="identify" className="stagger flex flex-col gap-4">
+        <p data-slot="prompt" className="pt-1 text-[1.28rem] leading-[1.45]">{sense.definition}</p>
+        {/* Two columns where there is room. A word is short enough that six of
+         * them still read at a glance, which is the whole point of this card. */}
+        <ul data-slot="options" className="grid list-none gap-2.5 p-0 sm:grid-cols-2">
+          {(item.options ?? []).map((option, i) => (
+            <li key={option}>
+              <button
+                className="surface pressable flex w-full items-center gap-3 rounded-xl border border-border bg-card px-4 py-3.5 text-left font-serif text-[1.05rem] leading-snug hover:border-brand/40 hover:bg-accent/60"
+                onClick={() => onReveal(option === sense.term)}
+              >
+                <kbd className="hidden size-6 shrink-0 items-center justify-center rounded-md border border-border bg-muted font-sans text-xs text-muted-foreground pointer-fine:flex">
                   {i + 1}
                 </kbd>
                 <span>{option}</span>

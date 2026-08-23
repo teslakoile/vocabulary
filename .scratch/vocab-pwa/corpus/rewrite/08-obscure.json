@@ -1,0 +1,23 @@
+{
+  "headword": "obscure",
+  "senses": [
+    {
+      "term": "obscure",
+      "definition": "Little known or hard to make out, or to keep something from being seen or understood.",
+      "distractors": [
+        "Recognised instantly by almost everyone who sees it.",
+        "Repeated so often that it has lost whatever meaning it started with.",
+        "So familiar that people stop noticing it is there at all.",
+        "A claim that is easy to state and impossible for anyone outside the company to check.",
+        "A system that is still running long after the team that built it moved on to other work."
+      ],
+      "word_distractors": [
+        "frontrunner",
+        "north star",
+        "idempotent",
+        "fan-out",
+        "dogfooding"
+      ]
+    }
+  ]
+}

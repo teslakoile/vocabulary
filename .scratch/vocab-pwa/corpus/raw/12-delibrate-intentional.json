@@ -8,7 +8,7 @@
         "deliberately",
         "intentionally"
       ],
-      "definition": "Done on purpose and after thought, rather than by accident or by drift. Deliberate carries a note of unhurried care that intentional does not: a deliberate pace is measured, an intentional one is merely chosen.",
+      "definition": "Done on purpose and with thought, rather than by accident or drift.",
       "caution": "About someone else's action it converts a mistake into a choice, which is why it turns up in incident reviews, complaints and disciplinary letters. About your own plan it has become management shorthand for going slowly, so a sponsor who is already impatient hears we are being deliberate as a delay dressed up as a virtue. If all you mean is that the outcome was not an accident, on purpose is the plainer and safer phrase.",
       "example": "The gap in the rollout schedule is deliberate, we want a full month of production data before the next region goes live.",
       "cues": [
@@ -34,13 +34,20 @@
         }
       ],
       "distractors": [
-        "Done out of habit and without conscious thought, the way you take the same route home without ever deciding to.",
-        "Announced in advance to everybody it will affect, so that nobody has to learn about it from somewhere else. It is about the warning, not the thinking.",
-        "Agreed collectively before being carried out, with everyone who will be affected having had a chance to object first. What it describes is how many people signed up to the thing, not the quality of the thought behind it.",
-        "Carried out despite an explicit instruction not to, where the person doing it knew the rule perfectly well and went ahead regardless. The weight of the word would sit in the defiance, which is a claim about the instruction rather than about the care taken.",
-        "Repeated at regular intervals on a fixed cadence, so that everybody knows when the next one falls without having to ask. It describes the rhythm on which a thing happens rather than the state of mind of whoever set that rhythm up, and a badly chosen cadence is kept just as faithfully as a good one."
+        "Done quickly, before anyone has time to object.",
+        "Agreed by everyone in the room without a vote.",
+        "Left to whoever picks it up first, with no owner named anywhere.",
+        "Repeated so often that it has become a habit nobody questions any more.",
+        "Chosen because it was the only option anybody could think of at the time."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "bespoke",
+        "center of excellence",
+        "panopticon",
+        "idempotent",
+        "unequivocal"
+      ]
     }
   ]
 }

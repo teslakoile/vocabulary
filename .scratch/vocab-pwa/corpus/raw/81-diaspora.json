@@ -6,7 +6,7 @@
       "accepted": [
         "diasporic"
       ],
-      "definition": "A people scattered from a homeland who keep a tie to it, and the fact of that scattering. The word carries the history of why they left, which is usually not by choice.",
+      "definition": "A people scattered far from a homeland they still keep ties to.",
       "caution": "The weight is the whole risk. Stretched to any dispersed group — ex-colleagues of a firm, alumni of a team, people who left a project — it sounds glib to anyone whose family actually belongs to one, and that person is more often in the room than not. If you mean a network of former employees, say alumni network.",
       "example": "The growth story there is remittances — money moving back through the diaspora — not domestic demand.",
       "cues": [
@@ -28,13 +28,20 @@
         }
       ],
       "distractors": [
-        "The arrival of newcomers into one country, counted at the border and argued about in its politics.",
-        "The blending of two cultures into a third that belongs wholly to neither, visible first in the food and in the language.",
-        "A community that shares a trade rather than an origin, held together by the work itself and by the annual conference where its members recognise each other and then go home again.",
-        "A group that has withdrawn from the society around it on purpose and keeps its own rules inside a boundary it drew itself. What defines it is the choosing, and the boundary is maintained from the inside.",
-        "The movement of people out of the countryside and into cities inside one country, which reshapes both ends of it within a generation: labour arrives where the work is and the villages empty out behind it. It is measured by economists more often than it is remembered by families."
+        "The property of work that runs for many steps before anyone can tell if it worked.",
+        "A funded, staffed team that concentrates a scarce capability in one place.",
+        "A rule of thumb that gets a good enough answer quickly.",
+        "Using far more words than the point needs.",
+        "To make a bad situation worse."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "cognizant",
+        "first principles",
+        "second order effects",
+        "eschew",
+        "esoteric"
+      ]
     }
   ]
 }

@@ -6,7 +6,7 @@
       "accepted": [
         "continua"
       ],
-      "definition": "A range with no natural joints in it, where the cases shade into one another and any line you draw is a decision rather than a discovery. Reaching for it in a room says the two camps arguing are looking at the same gradient from opposite ends.",
+      "definition": "A smooth range with no natural breaks, where any line you draw is a choice.",
       "caution": "It is a move against somebody's categories, so it always lands as a challenge to whoever just proposed them. Used to avoid a call it is worse than useless: when the decision needs a threshold, saying the thing is a continuum without proposing where to cut reads as refusing to decide, and a sponsor will hear it that way. Do not use it where the steps are real either, because a pricing tier is not one.",
       "prompt_version": 2,
       "example": "Autonomy is not a switch, it is a continuum, and the real question is how far along it we are willing to be in the next release.",
@@ -29,11 +29,18 @@
         }
       ],
       "distractors": [
-        "A stretch of uninterrupted running with no outage in it, quoted as the number of days since the last one.",
-        "A borderline case picked deliberately to test where a rule stops applying, so that whoever wrote the rule has to say out loud which side of it this one falls.",
-        "The position halfway between two stated extremes, arrived at by splitting the difference so that both camps can leave the room claiming they were partly heard. It is a settlement between people rather than a description of anything.",
-        "A ladder of named stages a team climbs in order, each rung carrying criteria you either meet or do not, and nobody standing on two rungs at once. It exists to tell people how far along they are, what the next step is going to cost and who has already made it.",
-        "A set of options priced in tiers, each one adding capability over the one below so that buyers sort themselves by what they are willing to pay. The gaps between the tiers are the whole design, and moving a feature from one tier to the next is a commercial decision rather than a technical one."
+        "Advancing in stages, each stage going further than the last.",
+        "Unequal in a way that changes the decision, usually about a bet.",
+        "A kind of input or output a system works in, such as text, images, or audio.",
+        "Deep structural change in the conditions everyone is operating under.",
+        "One piece of work splitting into many parallel branches that all run at once."
+      ],
+      "word_distractors": [
+        "watch outs",
+        "by and large",
+        "substantiate",
+        "build that muscle",
+        "play it by ear"
       ]
     }
   ]

@@ -1,0 +1,23 @@
+{
+  "headword": "panopticon",
+  "senses": [
+    {
+      "term": "panopticon",
+      "definition": "A place where anyone could be watched at any time, so everyone acts as if they are.",
+      "distractors": [
+        "A funded, staffed team that concentrates a scarce capability and sets how it is used.",
+        "A voluntary group of people doing the same work who meet to trade what they are learning.",
+        "A rig that exercises a system to see how it behaves.",
+        "To put right something that was wrong.",
+        "Proceeding by small additions, each standing on its own."
+      ],
+      "word_distractors": [
+        "wordsmith",
+        "amenable",
+        "primitive",
+        "serialize",
+        "bolster"
+      ]
+    }
+  ]
+}

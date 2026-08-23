@@ -1,0 +1,23 @@
+{
+  "headword": "gravitas",
+  "senses": [
+    {
+      "term": "gravitas",
+      "definition": "A weight and seriousness in how someone carries themselves that makes a room listen.",
+      "distractors": [
+        "The habit of speaking far longer than the point needs.",
+        "The nerves that show when someone is asked a question they were not expecting.",
+        "A reputation for being right, built up over years of small correct calls.",
+        "The formal authority a role carries, written down in a job description and an org chart.",
+        "A speaking style that fills a room with energy and gets people excited about a plan."
+      ],
+      "word_distractors": [
+        "idempotent",
+        "fan-out",
+        "ephemeral",
+        "hot-swap",
+        "disambiguate"
+      ]
+    }
+  ]
+}

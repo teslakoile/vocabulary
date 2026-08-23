@@ -4,7 +4,7 @@
     {
       "term": "gravitas",
       "accepted": [],
-      "definition": "Weight and seriousness in how a person carries themselves, such that a room treats what they say as consequential. It comes from bearing under pressure rather than from rank or volume.",
+      "definition": "A weight and seriousness in how someone carries themselves that makes a room listen.",
       "caution": "Never said about yourself, and rarely to someone's face. As feedback it is close to unfalsifiable and often a proxy for resembling the people already in the senior seats, so if you use it in a development conversation you owe the person a concrete behaviour to work on. Said of a peer in a standup it sounds arch; keep it for rooms where the stakes are real.",
       "example": "He took the audit question with real gravitas, which is why the board stopped pushing on it.",
       "cues": [
@@ -30,13 +30,20 @@
         }
       ],
       "distractors": [
-        "Confidence in your own judgement, of the kind that lets you keep going when a room is plainly unconvinced.",
-        "The authority that arrives with a title: what a room concedes to whoever sits at the top of the chart before they have said anything.",
-        "Skill at reading a room as it moves and adjusting on the spot, so that what you say lands with the people actually in front of you. It is a sensitivity aimed outward at the audience rather than anything you carry in yourself.",
-        "A reputation built entirely out of past results, so that a room extends credit to your next claim on the strength of the last three. It is a ledger other people keep on you, and it survives a badly handled meeting intact.",
-        "A serious problem that has to be dealt with straight away, where the cost of leaving it another day is plainly higher than the cost of acting on incomplete information. It describes the weight of the thing in front of a group, not anything about the person raising it."
+        "The habit of speaking far longer than the point needs.",
+        "The nerves that show when someone is asked a question they were not expecting.",
+        "A reputation for being right, built up over years of small correct calls.",
+        "The formal authority a role carries, written down in a job description and an org chart.",
+        "A speaking style that fills a room with energy and gets people excited about a plan."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "primitive",
+        "by and large",
+        "lean on",
+        "dogfooding",
+        "squarely"
+      ]
     }
   ]
 }

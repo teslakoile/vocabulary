@@ -1,0 +1,23 @@
+{
+  "headword": "failure mode/s",
+  "senses": [
+    {
+      "term": "failure mode",
+      "definition": "A specific way a system goes wrong, rather than the fact that it might.",
+      "distractors": [
+        "A basic building block a platform hands you and expects you to compose with.",
+        "The accumulated history one organisation holds about why it does things its way.",
+        "An isolated environment where something can run without touching anything real.",
+        "To put right something that was wrong.",
+        "Open to something without having agreed to it yet."
+      ],
+      "word_distractors": [
+        "gravitas",
+        "wordsmith",
+        "north star",
+        "verbose",
+        "eschew"
+      ]
+    }
+  ]
+}

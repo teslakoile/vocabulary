@@ -1,0 +1,23 @@
+{
+  "headword": "esoteric",
+  "senses": [
+    {
+      "term": "esoteric",
+      "definition": "Understood by only a small group, because it assumes background that most people lack.",
+      "distractors": [
+        "So small or so easy that it does not deserve the time it would take to discuss it.",
+        "Harder or bigger than the person asking has assumed.",
+        "Made deliberately hard to follow so that the plain version stays out of reach.",
+        "What someone can do but cannot fully explain, such as judgement, feel, or a sense of fit.",
+        "The accumulated history one organisation holds about why its own systems were built that way."
+      ],
+      "word_distractors": [
+        "ducks in a row",
+        "frontrunner",
+        "fan-out",
+        "daily driver",
+        "rectify"
+      ]
+    }
+  ]
+}

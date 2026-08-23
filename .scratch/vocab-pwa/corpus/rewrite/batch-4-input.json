@@ -1,0 +1,266 @@
+[
+  {
+    "file": "64-mold-breaker.json",
+    "headword": "mold breaker",
+    "senses": [
+      {
+        "term": "mold breaker",
+        "current_definition": "Someone or something that does not fit the established pattern for its category, and changes what people think the pattern is. Almost always said as praise.",
+        "caution": "It is a compliment in a room that rewards novelty and a warning label in a room that rewards precedent. Say it about a proposal to a steering committee and half of them hear unproven. Said about yourself it is unusable.",
+        "example": "She's a mold breaker for that seat, and that's exactly the argument for hiring her."
+      }
+    ]
+  },
+  {
+    "file": "65-inroads.json",
+    "headword": "inroads",
+    "senses": [
+      {
+        "term": "inroads",
+        "current_definition": "Progress won into territory that was previously closed to you: an account, a market, a sceptical department. Nearly always plural and nearly always with make.",
+        "caution": "The word concedes you are not there yet. Tell a sponsor you have made inroads with the risk team and you have just told him the risk team still says no. It also frames the other side as ground to be taken, so it sounds faintly hostile about people who were never resisting you.",
+        "example": "We've made real inroads with the risk function, but nobody there is signing anything this quarter."
+      }
+    ]
+  },
+  {
+    "file": "66-hot-swap.json",
+    "headword": "hot-swap",
+    "senses": [
+      {
+        "term": "hot-swap",
+        "current_definition": "To replace a running component without stopping the system around it. Extended well past hardware now: models, vendors and people exchanged mid-flight with nothing going dark.",
+        "caution": "The word promises no downtime, and that is a claim someone will hold you to on the day. Used about a person it is worse: hot-swap Priya onto that reads as people being interchangeable parts, which is fine between engineers and cold in front of her manager.",
+        "example": "The provider sits behind an interface, so we can hot-swap the model without the application knowing."
+      }
+    ]
+  },
+  {
+    "file": "67-tectonic-shifts.json",
+    "headword": "tectonic shifts",
+    "senses": [
+      {
+        "term": "tectonic shift",
+        "current_definition": "Deep structural change in the conditions everyone is operating under, big enough to rearrange the landscape rather than move things around on it.",
+        "caution": "It is an enormous word and it inflates on contact with quarterly news. Senior people have heard it applied to five things that turned out to be nothing, so spend it only on change you could still point at in five years. It also implies slow and unstoppable, which makes it wrong for a shock.",
+        "example": "The interesting thing isn't this quarter's numbers, it's the tectonic shift in what clients now assume we'll automate."
+      }
+    ]
+  },
+  {
+    "file": "68-lend-itself.json",
+    "headword": "lend itself",
+    "senses": [
+      {
+        "term": "lend itself",
+        "current_definition": "To have properties that make a particular use easy or natural. The subject is always the thing, never the person: the problem lends itself to the method, not the other way round.",
+        "caution": "It is a deliberately weak claim that people hear as an endorsement. It says good fit, not it will work, and that gap is your escape route later, which a sharp sponsor will notice you leaving open. The same phrase turns critical when what follows is bad, so the object sets the temperature.",
+        "example": "Reconciliation lends itself to this — the rules are stable and every answer is checkable."
+      }
+    ]
+  },
+  {
+    "file": "69-bespoke.json",
+    "headword": "bespoke",
+    "senses": [
+      {
+        "term": "bespoke",
+        "current_definition": "Built for one customer or one case rather than taken off the shelf. In a platform conversation the word carries the cost with it: bespoke things never amortise.",
+        "caution": "The same word flatters a client and condemns a design, so know which room you are in. In front of a buyer it means premium and tailored; in an architecture review it means unrepeatable, unsupported and expensive to keep breathing. Say it about a colleague's system and you have criticised it.",
+        "example": "Every one of those dashboards is bespoke, which is exactly why nobody can maintain them."
+      }
+    ]
+  },
+  {
+    "file": "70-in-pockets.json",
+    "headword": "in pockets",
+    "senses": [
+      {
+        "term": "in pockets",
+        "current_definition": "Present in scattered, isolated places rather than across the whole. It says the thing is real, has not spread, and that the places it exists in are not connected to each other.",
+        "caution": "It is honest and quietly deflating: a sponsor who hears adoption is in pockets hears not adopted. That makes it the right word when you are asking to connect the pockets and the wrong one when you are asking for more money to keep going as you are.",
+        "example": "Adoption is real, but it's in pockets — three teams live in it and nobody else has logged in since March."
+      }
+    ]
+  },
+  {
+    "file": "71-first-second-order-effects.json",
+    "headword": "first/second order effects",
+    "senses": [
+      {
+        "term": "first order effects",
+        "current_definition": "The direct consequences of a change: what it does to the thing you changed. They are the ones you can see, the ones you planned, and usually the ones in the business case.",
+        "caution": "Naming something as first order is a promise that you have thought about what comes after it, and the next question in a senior room is always what comes after it. It also collides with first-order approximation, which means roughly, so in a mixed room say which you mean before someone hears you say the number is a guess.",
+        "example": "The first order effect is that reviews get faster. What I actually care about is what happens to review quality once they do."
+      },
+      {
+        "term": "second order effects",
+        "current_definition": "The consequences of the consequences: what happens once people and systems adapt to the first change. They arrive late, are rarely planned for, and are usually where the real result of a decision lives.",
+        "caution": "It is the easiest phrase in the language to use as a veto. Raise it and you should be able to name one, or you have added doubt to someone else's proposal without paying anything for it. People notice when it only ever arrives on other people's ideas.",
+        "example": "The second order effect is the one I'd watch: once reviewers trust the tool, they stop reading the diffs."
+      }
+    ]
+  },
+  {
+    "file": "72-failure-modes.json",
+    "headword": "failure mode/s",
+    "senses": [
+      {
+        "term": "failure mode",
+        "current_definition": "A specific way a system goes wrong: not the fact that it might, but the particular shape of the wrongness. Naming them turns this could break into a list you can design against.",
+        "caution": "The phrase invites a list, so raising failure modes without having any makes you sound anxious rather than rigorous. Said about a person it changes character entirely: his failure mode is going quiet is affectionate between peers and clinical the moment it is said upward, or about someone who is not in the room.",
+        "example": "The failure mode I care about isn't a wrong answer, it's a confident wrong answer that nobody checks."
+      }
+    ]
+  },
+  {
+    "file": "73-contrived.json",
+    "headword": "contrived",
+    "senses": [
+      {
+        "term": "contrived",
+        "current_definition": "Obviously engineered to produce a particular impression, and failing because the engineering shows. Used about demos, benchmarks and arguments that only work because they were built to work.",
+        "caution": "It is a verdict on motive, not on method. Say it about a colleague's demo in front of their sponsor and you have accused them of arranging the evidence, which is a much bigger charge than the one you probably meant. If you only mean the example is too clean to prove anything, say unrepresentative.",
+        "example": "That benchmark is contrived — the questions were written after we knew what the model was good at."
+      }
+    ]
+  },
+  {
+    "file": "74-verifiability-verifiable-rewards.json",
+    "headword": "verifiability/verifiable rewards",
+    "senses": [
+      {
+        "term": "verifiability",
+        "current_definition": "The property of a claim or an output being checkable by someone other than whoever produced it. It is about whether an independent check is possible at all, not about whether the claim happens to be true.",
+        "caution": "A room hears it as a synonym for trustworthy, and it is not: a number can be perfectly verifiable and wrong. Promise it only where you can name who does the checking and against what, or you have committed to an audit trail you have not built.",
+        "example": "Our advantage isn't that the model is right more often, it's the verifiability — every number traces back to a filing."
+      },
+      {
+        "term": "verifiable rewards",
+        "current_definition": "Training signal a machine can check rather than a person judge: the tests pass, the answer matches, the proof compiles. The appeal is that it scales without human raters and cannot be flattered.",
+        "caution": "The term quietly limits its own scope. Only tasks with a checkable answer qualify, and almost none of the work you are paid for — a memo, a client recommendation, a judgement call — has an answer key. Promising this on judgement-heavy work is the overclaim to avoid. In a non-technical room it also sounds like a bonus scheme, so unpack it or use plain words.",
+        "example": "Coding and maths get verifiable rewards for free. Nothing in our analyst workflow has an answer key like that."
+      }
+    ]
+  },
+  {
+    "file": "75-substrate.json",
+    "headword": "substrate",
+    "senses": [
+      {
+        "term": "substrate",
+        "current_definition": "The underlying layer everything above it runs on and takes for granted. Not a component among others: the thing that has to be there before anything else is possible.",
+        "caution": "The word is borrowed from geology and biology and it arrives sounding grand, which is the trap. Calling your service a substrate claims other things genuinely depend on it, and someone in the room can check that; if two teams call your API, the honest word is shared service. It also flattens what it names, so describing another team's product that way can land as demoting them to plumbing.",
+        "example": "Identity and audit are substrate. Nobody should be building either of them per product."
+      }
+    ]
+  },
+  {
+    "file": "76-dogfooding.json",
+    "headword": "dogfooding",
+    "senses": [
+      {
+        "term": "dogfooding",
+        "current_definition": "Using your own product for real work before asking anyone else to. The point is not that you tested it; the point is that you feel its defects the way a customer would, on work you are judged on.",
+        "caution": "The bar is higher than people claim. Installing your own tool is not dogfooding unless something you care about breaks when it breaks. It is also an internal word with a self-congratulatory edge, and said to a client it raises the question it was meant to settle: if you had to tell me you use it, who else does?",
+        "example": "We're not putting the assistant on anyone's desk until we've been dogfooding it for a month ourselves."
+      }
+    ]
+  },
+  {
+    "file": "77-squarely.json",
+    "headword": "squarely",
+    "senses": [
+      {
+        "term": "squarely",
+        "current_definition": "Directly and without hedging, almost always about where something belongs or who owns it. It says the answer is not ambiguous.",
+        "caution": "It works about accountability and category fit, and sounds odd about physical or genuinely uncertain things. If the thing really is contested, squarely overclaims and invites someone to push back on exactly that.",
+        "example": "Cost governance sits squarely with the platform team, not with each product."
+      }
+    ]
+  },
+  {
+    "file": "78-fan-out.json",
+    "headword": "fan-out",
+    "senses": [
+      {
+        "term": "fan-out",
+        "current_definition": "One piece of work splitting into many parallel branches: a single request becoming dozens of calls that all have to come back before there is an answer. The multiplier is the point.",
+        "caution": "In messaging and feed systems the same word means one write being delivered to many readers, so in a mixed room say which you mean before the conversation quietly forks. And whichever you mean, people hear the multiplier rather than the parallelism: say it to whoever pays the bill and the next question is cost, so arrive with the number.",
+        "example": "One question fans out to eight tool calls, so a thousand users an hour is not a thousand requests an hour."
+      }
+    ]
+  },
+  {
+    "file": "79-panopticon.json",
+    "headword": "panopticon",
+    "senses": [
+      {
+        "term": "panopticon",
+        "current_definition": "A structure where everyone can be watched at any moment and nobody knows when they are, so they behave as though always observed. Used about surveillance systems and the self-censorship they produce.",
+        "caution": "This is a criticism, not a description. It carries Foucault's argument about power. If you only mean thorough monitoring or good observability, panopticon reads as an accusation and changes the temperature of the room.",
+        "example": "If every prompt is logged and reviewed, we've built a panopticon and people will stop experimenting."
+      }
+    ]
+  },
+  {
+    "file": "80-disparage.json",
+    "headword": "disparage",
+    "senses": [
+      {
+        "term": "disparage",
+        "current_definition": "To speak about someone or something in a way that lowers it, usually by a passing remark or faint praise rather than open attack. It describes a manner of speaking, not a disagreement.",
+        "caution": "It mostly appears as an accusation or a denial, and the denial never works: I don't want to disparage the previous team announces precisely what you are about to do. Its other trap is defensive — calling someone's honest criticism disparagement is a way of dodging the criticism, and senior people can see you do it.",
+        "example": "I'm not trying to disparage the previous team — they were solving a different problem with a fifth of the budget."
+      }
+    ]
+  },
+  {
+    "file": "81-diaspora.json",
+    "headword": "diaspora",
+    "senses": [
+      {
+        "term": "diaspora",
+        "current_definition": "A people scattered from a homeland who keep a tie to it, and the fact of that scattering. The word carries the history of why they left, which is usually not by choice.",
+        "caution": "The weight is the whole risk. Stretched to any dispersed group — ex-colleagues of a firm, alumni of a team, people who left a project — it sounds glib to anyone whose family actually belongs to one, and that person is more often in the room than not. If you mean a network of former employees, say alumni network.",
+        "example": "The growth story there is remittances — money moving back through the diaspora — not domestic demand."
+      }
+    ]
+  },
+  {
+    "file": "82-sleuthing.json",
+    "headword": "sleuthing (out)",
+    "senses": [
+      {
+        "term": "sleuthing",
+        "current_definition": "Patient, curious digging for something that is not hidden on purpose but is written down nowhere either. It is piecing an answer together from scraps instead of asking someone for it.",
+        "caution": "The word is light and slightly playful, which cuts both ways. It is generous about a colleague's persistence, and it lets people off when the real reason you had to dig is that someone would not tell you. Said about your own week to a sponsor, it can turn two days of genuine analysis into a hobby.",
+        "example": "Nobody could tell me which system owned that field, so I spent Tuesday sleuthing it out of the commit history."
+      }
+    ]
+  },
+  {
+    "file": "83-ephemeral.json",
+    "headword": "ephemeral",
+    "senses": [
+      {
+        "term": "ephemeral",
+        "current_definition": "Lasting only briefly, and meant to. In infrastructure it names things created for one use and destroyed after it — containers, tokens, workspaces — where the short life is the design, not a limitation.",
+        "caution": "In a technical room it is a claim rather than a description: say a workspace is ephemeral and the next questions are about the logs, the cache and whatever it wrote on its way out. Everywhere else it is a slightly literary word, elegant in writing and a little precious said out loud about a colleague's short tenure or a passing mood.",
+        "example": "Every agent run gets an ephemeral workspace — it exists for the task and nothing survives it."
+      }
+    ]
+  },
+  {
+    "file": "84-superset.json",
+    "headword": "superset",
+    "senses": [
+      {
+        "term": "superset",
+        "current_definition": "A set containing everything another one contains, and more. Calling A a superset of B is a claim that you lose nothing at all by moving from B to A.",
+        "caution": "It is a precise claim and people check it. Ninety percent of the old thing plus some new things is not a superset, and the missing ten percent is exactly what the objection will be about — so either defend nothing is lost or say covers most of. Used loosely about a person's skills or a team's remit it stops being maths and starts sounding like a ranking.",
+        "example": "The new API is a strict superset of the old one, so nothing anybody has built stops working."
+      }
+    ]
+  }
+]

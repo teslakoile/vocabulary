@@ -7,7 +7,7 @@
         "bolstered",
         "bolstering"
       ],
-      "definition": "To add support to something that already stands but is not standing well enough on its own: a case, a claim, a balance, morale. What was there stays; you are putting weight behind it.",
+      "definition": "To strengthen something that is already there but is not strong enough on its own.",
       "caution": "It concedes the weakness. Say you want to bolster the business case and you have told the room the case is currently thin, which is fine when you mean it and expensive when you did not. It also wants abstract objects: you bolster an argument, reserves, or confidence, and you do not bolster a server or a deadline.",
       "prompt_version": 2,
       "example": "The numbers are directionally right, but one more independent source would bolster them before this goes to the board.",
@@ -34,11 +34,18 @@
         }
       ],
       "distractors": [
-        "To restate a claim more forcefully than before, without putting anything new behind it.",
-        "To replace something that is failing with a stronger alternative, so that what was there before is gone by the end of it.",
-        "To defend a position that is under direct challenge, answering the objection in front of the people who raised it. The work is done in the argument rather than on the thing being argued about.",
-        "To overstate how strong a case actually is, describing as settled something that is merely arguable and hoping nobody looks. Nothing about the case changes; only the account other people are given of it does.",
-        "To hold something up temporarily until it can stand on its own, with the support taken away by design once the thing is ready to do without it. What defines it is the intention to remove the prop, which is no part of putting weight behind something."
+        "To avoid something deliberately and on principle, having had the option to take it.",
+        "To make a bad situation worse than it already was.",
+        "To rely on someone else to carry part of the weight of the work.",
+        "To replace a running part of a system without stopping the system around it.",
+        "To put right something that was wrong, such as an error, an imbalance, or a debt you owe."
+      ],
+      "word_distractors": [
+        "progressive",
+        "gravitas",
+        "obscure",
+        "pick your brain",
+        "lend itself"
       ]
     }
   ]

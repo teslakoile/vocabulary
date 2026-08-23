@@ -7,7 +7,7 @@
         "persisted",
         "persisting"
       ],
-      "definition": "To write something down where it will outlive whatever made it: a process restart, a page refresh, the end of a session. The noun for this concern is persistence, and the persistence layer is wherever that durable copy is kept.",
+      "definition": "To save data somewhere it will survive a restart or a refresh.",
       "caution": "Engineers hear a specific promise in it, that the thing is on durable storage and will come back after a crash, so do not use it for a value you are holding in a variable or a cache. It is transitive here, and that is the tell: you persist the state. Ordinary English uses the same word intransitively for keeping at something, so the team persisted says nothing at all about data, and we persisted the results will simply not parse for anyone non-technical in the room.",
       "prompt_version": 2,
       "example": "Right now the session only lives in memory. If the pod restarts we lose the whole conversation, so we need to persist it.",
@@ -26,11 +26,18 @@
         }
       ],
       "distractors": [
-        "To hold a connection open between requests so that the next one does not pay again for setting it up.",
-        "To keep a copy close to whoever is asking so that repeat reads come back fast, on the understanding that the copy is disposable and can be rebuilt from source whenever it is wrong.",
-        "To take a copy to a second location on a schedule so that there is something to restore from if the first one is lost. Nobody reads from that copy while things are going well, which is why it is so often found broken.",
-        "To flatten a structure into a run of bytes so that it can cross a network and be rebuilt into the same shape at the other end. The concern is the format on the wire, and both sides have to agree on it before anything useful moves.",
-        "To keep two systems in agreement as records change on either side, applying an agreed rule to decide which version wins when both of them moved at the same moment. Almost all of the work is in the reconciliation rather than in the writing, and almost all of the bugs are there too."
+        "To turn an object in memory into bytes that can be sent over a wire.",
+        "To replace a running component without stopping the system around it.",
+        "To make a bad situation worse.",
+        "To avoid something deliberately and on principle.",
+        "To settle which of two possible readings is the one meant."
+      ],
+      "word_distractors": [
+        "hot-swap",
+        "enmeshed",
+        "run it by you",
+        "inroads",
+        "scaffolding"
       ]
     },
     {
@@ -38,7 +45,7 @@
       "accepted": [
         "persistent"
       ],
-      "definition": "Staying with something well past the point where most people stop. It names the trait rather than the result, and always implies something was pushing back.",
+      "definition": "Staying with something long after most people would have stopped.",
       "caution": "Praise for persistence quietly says the person got there by not stopping, which makes it a consolation prize when the work actually succeeded on merit: told to someone whose analysis was simply the best in the room, it damns them. Persistent about a person is worse again, because in most rooms that is the word for someone who will not take no for an answer.",
       "prompt_version": 2,
       "example": "That deal closed on persistence more than anything else. She went back to them four times after we had all written it off.",
@@ -61,11 +68,18 @@
         }
       ],
       "distractors": [
-        "The ability to come back quickly after a setback, more or less as you were before it.",
-        "A willingness to take on the work nobody else wants, usually because it is dull rather than because it is difficult.",
-        "Refusing to move from a position even once the evidence against it has been laid out, which reads as conviction from the inside and as obstinacy from anywhere else.",
-        "Care and attention to detail held at the same level over long stretches of work, so that the last page gets exactly the treatment the first one did, long after anybody would notice if it had not.",
-        "Confidence that a plan will come good in spite of what the people around you think, held firmly enough that you carry on funding it out of your own budget. It is a judgement about the odds, and it is either vindicated in the end or it is not."
+        "Weight and seriousness in how a person carries themselves.",
+        "Being aware of something and visibly taking it into account.",
+        "Tangled into something so completely that you can no longer act on your own.",
+        "Low in a way that has given up on things improving.",
+        "Alert and responsive to something, picking up its signals early and adjusting."
+      ],
+      "word_distractors": [
+        "blanket approval",
+        "asymmetric",
+        "enmeshed",
+        "surreptitiously",
+        "north star"
       ]
     }
   ]

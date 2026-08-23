@@ -8,7 +8,7 @@
         "industry vertical",
         "industry verticals"
       ],
-      "definition": "A slice of the market defined by the industry it serves - banking, healthcare, logistics - as opposed to a horizontal capability that is the same for everyone. Going vertical by vertical means building and selling differently for each one.",
+      "definition": "A slice of the market made up of a single industry like banking or healthcare.",
       "caution": "It is a go-to-market word, not an architecture one. Saying you will take the product one of these at a time commits you in public to per-industry work: separate data, separate regulators, separate sales motion, and the immediate follow-up is which one you are starting with and what the others are waiting for. Used for a team's internal domain it confuses anyone who hears it as a market segment.",
       "example": "The core platform stays horizontal. We only build vertical-specific pieces where the regulator forces us to.",
       "cues": [
@@ -30,13 +30,20 @@
         }
       ],
       "distractors": [
-        "A stage of the sales process, from first contact through to a signed contract, used to say where a given deal has got to.",
-        "A reporting line running from the most junior analyst up to the board, drawn so that everybody knows who signs off what and where an escalation finally stops.",
-        "A layer of the technology stack, from storage at the bottom up to the interface at the top, where each one only has to know about the layer directly beneath it and can be replaced without disturbing the rest.",
-        "A capability that arrives identical for every customer whatever business they happen to be in, built once and sold everywhere. The economics come from never having to change it, which is also the reason it will never be a perfect fit for anybody.",
-        "A market defined by where the customer sits rather than by what they do, each one carrying its own regulator, its own price list and its own rules about where the data is allowed to be held. Two customers in the very same trade can fall on opposite sides of one."
+        "The underlying layer that everything above it runs on and takes for granted.",
+        "A basic building block a platform gives you and expects you to combine with others.",
+        "A funded team that holds a scarce skill in one place and sets how it is used.",
+        "One request splitting into many parallel pieces of work that run at the same time.",
+        "An isolated environment where code runs without touching anything real."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "substrate",
+        "tectonic shift",
+        "pick your brain",
+        "panopticon",
+        "hot-swap"
+      ]
     }
   ]
 }

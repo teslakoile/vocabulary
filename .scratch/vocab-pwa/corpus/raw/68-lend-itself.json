@@ -8,7 +8,7 @@
         "lend themselves",
         "lends itself to"
       ],
-      "definition": "To have properties that make a particular use easy or natural. The subject is always the thing, never the person: the problem lends itself to the method, not the other way round.",
+      "definition": "To have qualities that make a particular use easy or natural.",
       "caution": "It is a deliberately weak claim that people hear as an endorsement. It says good fit, not it will work, and that gap is your escape route later, which a sharp sponsor will notice you leaving open. The same phrase turns critical when what follows is bad, so the object sets the temperature.",
       "example": "Reconciliation lends itself to this — the rules are stable and every answer is checkable.",
       "cues": [
@@ -34,13 +34,20 @@
         }
       ],
       "distractors": [
-        "To hand something over for a fixed period on the understanding that it comes back in the same condition.",
-        "To add credibility to something simply by being associated with it, so that one name on a page changes how the rest of it gets read.",
-        "To adjust automatically when the conditions change, so that nobody has to intervene to keep the thing working. The behaviour belongs to the system, and the change in conditions is what triggers it.",
-        "To be the condition that has to hold before anything else can happen, so that when it is missing nothing downstream is possible at all. It is a claim about what depends on what, and it is usually discovered late.",
-        "To make a claim on another team's people or budget on the grounds that the work is shared, which is the polite version of a fight about priorities. It is always addressed to whoever controls the resource rather than to the team that would do the work, and it gets settled well above both of them."
+        "To settle which of two possible readings was meant by adding the detail that rules one out.",
+        "To rely on someone or something to carry part of the weight for you.",
+        "To ask someone to talk through what they have learned, informally and off the record.",
+        "To make a bad situation worse.",
+        "Done quietly so as not to be seen doing it."
       ],
-      "prompt_version": 2
+      "prompt_version": 2,
+      "word_distractors": [
+        "advocate",
+        "ephemeral",
+        "unequivocal",
+        "sandbox",
+        "substrate"
+      ]
     }
   ]
 }
