@@ -7,7 +7,13 @@
  * nothing here blocks on that.
  */
 import { useEffect, useRef, useState } from 'react';
+import { ArrowLeft, Check, Plus, TriangleAlert } from 'lucide-react';
 import { captureEntry } from './store';
+import { Shell } from '@/components/shell';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
 interface Props {
   onClose: () => void;
@@ -44,47 +50,83 @@ export default function Capture({ onClose, onCaptured }: Props) {
   }
 
   return (
-    <main className="shell">
-      <button className="link" onClick={onClose}>Back to practice</button>
-      <h1>New word</h1>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          void save();
-        }}
-      >
-        <input
-          ref={input}
-          value={headword}
-          onChange={(e) => setHeadword(e.target.value)}
-          placeholder="the word or phrase"
-          autoCapitalize="none"
-          autoCorrect="off"
-          spellCheck={false}
-          enterKeyHint="done"
-        />
-        <input
-          value={note}
-          onChange={(e) => setNote(e.target.value)}
-          placeholder="why you wrote it down (optional)"
-        />
-        <button className="primary" type="submit" disabled={!headword.trim()}>
-          Save
-        </button>
-      </form>
+    <Shell>
+      <Button variant="ghost" size="sm" className="self-start text-muted-foreground" onClick={onClose}>
+        <ArrowLeft />
+        Back to practice
+      </Button>
 
-      {failed && <p className="failed">That did not reach the server. Try again once you have a connection.</p>}
+      <h1 className="font-serif text-[2.1rem] leading-[1.1] font-semibold tracking-tight">
+        New word
+      </h1>
+
+      <Card className="gap-4 px-4 py-5">
+        <form
+          className="grid gap-4"
+          onSubmit={(e) => {
+            e.preventDefault();
+            void save();
+          }}
+        >
+          <div className="grid gap-2">
+            <Label htmlFor="headword" className="text-muted-foreground">
+              The word or phrase
+            </Label>
+            <Input
+              id="headword"
+              ref={input}
+              value={headword}
+              onChange={(e) => setHeadword(e.target.value)}
+              placeholder="hyperscaler"
+              autoCapitalize="none"
+              autoCorrect="off"
+              spellCheck={false}
+              enterKeyHint="done"
+            />
+          </div>
+          <div className="grid gap-2">
+            <Label htmlFor="note" className="text-muted-foreground">
+              Why you wrote it down
+              <span className="font-normal text-muted-foreground/60">optional</span>
+            </Label>
+            <Input
+              id="note"
+              value={note}
+              onChange={(e) => setNote(e.target.value)}
+              placeholder="who said it, and what it landed on"
+            />
+          </div>
+          <Button size="xl" type="submit" className="w-full" disabled={!headword.trim()}>
+            <Plus />
+            Save
+          </Button>
+        </form>
+      </Card>
+
+      {failed && (
+        <Card className="flex-row items-start gap-3 border-destructive/40 bg-destructive/10 px-4 py-3.5">
+          <TriangleAlert className="mt-0.5 size-4 shrink-0 text-destructive" />
+          <p className="text-sm text-destructive">
+            That did not reach the server. Try again once you have a connection.
+          </p>
+        </Card>
+      )}
 
       {saved.length > 0 && (
-        <>
-          <p className="meta">saved just now</p>
-          <ul className="rows">
-            {saved.map((word) => (
-              <li key={word}><span className="justsaved">{word}</span></li>
-            ))}
-          </ul>
-        </>
+        <div className="flex flex-col gap-2">
+          <p className="text-xs tracking-wide text-muted-foreground/70 uppercase">saved just now</p>
+          <Card className="gap-0 overflow-hidden py-0">
+            <ul className="list-none divide-y divide-border/70 p-0">
+              {saved.map((word) => (
+                <li key={word} className="flex items-center gap-2.5 px-4 py-3">
+                  <Check className="size-4 shrink-0 text-brand" />
+                  <span className="break-words">{word}</span>
+                </li>
+              ))}
+            </ul>
+          </Card>
+        </div>
       )}
-    </main>
+    </Shell>
   );
 }
