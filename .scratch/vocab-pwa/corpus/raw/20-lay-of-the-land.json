@@ -1,0 +1,41 @@
+{
+  "headword": "lay of the land",
+  "senses": [
+    {
+      "term": "lay of the land",
+      "accepted": [
+        "lie of the land",
+        "the lay of the land"
+      ],
+      "definition": "How things actually stand somewhere you are new to: who decides, what has already been tried, where the sensitivities sit. It is the informal map you build before making a move.",
+      "caution": "Saying you are still getting the lay of the land buys you time gracefully in a first month and sounds like stalling by the fourth. It also announces that you have not acted yet, so keep it away from any update where somebody is waiting on a decision from you, and never offer it as the answer to a question about results.",
+      "example": "Give me two weeks with the delivery leads to get the lay of the land before I propose any changes.",
+      "cues": [
+        {
+          "text": "You have joined a new organisation and want to describe the first month as working out who decides what before you propose anything.",
+          "setting": "work"
+        },
+        {
+          "text": "Before a customer workshop you ask a colleague to brief you on the politics and the history you will be walking into.",
+          "setting": "work"
+        },
+        {
+          "text": "You have moved to a new neighbourhood and spend a fortnight finding which shops, which routes and which neighbours matter.",
+          "setting": "life"
+        },
+        {
+          "text": "A friend starting at a new school asks how long it takes before things stop feeling foreign.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "A formal analysis of a market and the competitors in it, with figures somebody can be held to.",
+        "A plan for your first ninety days in a role, setting out what you intend to have done by the end of each month.",
+        "A summary of the decisions already taken, listed with dates so that nobody reopens something settled two quarters ago. It is a record of outcomes rather than a feel for how a place works.",
+        "Knowledge of how a system is built and what it depends on, down to the services that fall over when one of them does. It is a map of machinery rather than of people, and you can hold all of it and still not know who to ask.",
+        "An introduction to the people you will be working with, arranged for you in your first week so that names and faces get attached to each other early. Somebody else has done the arranging, and what you are handed is a set of first meetings rather than anything you worked out yourself."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

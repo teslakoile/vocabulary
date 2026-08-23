@@ -1,0 +1,75 @@
+{
+  "headword": "tacit/institutional knowledge",
+  "senses": [
+    {
+      "term": "tacit knowledge",
+      "accepted": [
+        "tacit"
+      ],
+      "definition": "What someone can do but cannot fully explain: judgement, feel, the sense that something is off before the alert fires. It resists being written down, which is why it moves by working alongside people rather than by documentation.",
+      "caution": "The word says the gap is inherent, not lazy, so it only holds where writing the thing down is genuinely hard. Reach for it to excuse an undocumented deployment process and the excuse is transparent - steps are steps, and the room can tell the difference. It also puts the holder in an awkward position: declaring someone's expertise unwritable makes them simultaneously indispensable and impossible to replace, which is a compliment and a staffing risk in one sentence.",
+      "example": "The runbook covers the steps. What Priya has is tacit - she can tell from the shape of the latency graph that it's the index, not the model.",
+      "cues": [
+        {
+          "text": "Your best engineer can tell from the shape of a graph which layer is failing and cannot say how she does it. You are explaining to a director why more documentation will not transfer that.",
+          "setting": "work"
+        },
+        {
+          "text": "A consultant proposes capturing everything the team has in their heads into a wiki, and you want the term for the part that will not survive the transfer.",
+          "setting": "work"
+        },
+        {
+          "text": "You are describing how your mother cooks: no recipe, everything adjusted by feel, and no useful answer when you ask her for quantities.",
+          "setting": "life"
+        },
+        {
+          "text": "A friend has driven the same route for two decades and anticipates every junction on it, and you want a word for what they have that a map does not hold.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Information a firm deliberately keeps from outsiders, protected by contract because its value depends on nobody else holding a copy.",
+        "Understanding a team has already captured in writing and keeps current, sitting in a runbook or a design note where anyone joining can find it without having to ask a person for it.",
+        "Expertise certified by an outside body and evidenced by an exam that a client or an auditor will accept as proof. What matters is that the standard was set by someone other than the employer, which is what makes it portable between firms.",
+        "Agreement given by saying nothing: nobody objected, the date passed, and the decision is now treated as made. It is a real mechanism in large organisations and a dangerous one, because the people who stayed quiet rarely think they agreed to anything.",
+        "Advice that travels sideways between peers, swapped over coffee or in a private channel because neither person wants it written down anywhere. It is often faster and more accurate than the official line, but it is withheld for reasons of exposure rather than difficulty, and nobody will repeat it in a room where it would have to be defended."
+      ],
+      "prompt_version": 2
+    },
+    {
+      "term": "institutional knowledge",
+      "accepted": [
+        "institutional memory"
+      ],
+      "definition": "The accumulated history one organisation holds about itself: why a system was built that way, what was tried in 2019, which client must never be called before ten. It is perfectly writable - it simply never got written - and it leaves when people do.",
+      "caution": "It is usually deployed as an argument for keeping somebody, so be careful whose leverage you are describing: telling a sponsor that a contractor holds it is either a case for retaining them or an admission that you allowed a single point of failure to form. And unlike judgement, this can be written down, so saying it is institutional is not an explanation of why it is undocumented - it is a description of the problem, and the obvious next question is what you are doing about it.",
+      "example": "When Martin goes we lose the institutional knowledge of why the reconciliation runs at four in the morning, and not one line of it is written down.",
+      "cues": [
+        {
+          "text": "A colleague who has been here since before the merger retires in March, and nobody else can say why half the exceptions in the billing system exist.",
+          "setting": "work"
+        },
+        {
+          "text": "A new director asks why a job runs at four in the morning, and the reason is a decision taken in 2014 that only two people still remember.",
+          "setting": "work"
+        },
+        {
+          "text": "You are making the case for a proper handover budget, and the thing at risk is history held in people's heads rather than any skill you could hire for.",
+          "setting": "work"
+        },
+        {
+          "text": "The committee at your sports club has turned over completely and no one left can say why the fixtures are arranged the way they are.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Rules imposed on a firm from outside by its regulator, which it has to follow whether or not they suit the way it would prefer to work.",
+        "The standing an organisation has with its clients, built slowly across years of delivery and capable of being lost inside a single badly handled quarter. It lives in other people's heads rather than its own.",
+        "Training material written for new starters: the onboarding deck, the first-week checklist, the walkthrough of the tools. It is deliberately built for people who know nothing yet, which is exactly why it stops being any use in the second month.",
+        "A way of working that has spread across an entire industry until nobody remembers proposing it, so that two firms who have never spoken run the same process in the same order. It is why a hire from a competitor can be productive in a fortnight, and why nobody questions the parts that make no sense.",
+        "The record one firm has built up about its customers over the years: transactions, contact history, the fields somebody added in 2014 that nobody has cleaned since. It is an asset in that it sits on a server and can be queried, and a liability in that a regulator can ask what is in it, which is why the two arguments about it never quite meet."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

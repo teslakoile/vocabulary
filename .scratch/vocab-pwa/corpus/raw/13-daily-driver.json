@@ -1,0 +1,38 @@
+{
+  "headword": "daily driver",
+  "senses": [
+    {
+      "term": "daily driver",
+      "accepted": [],
+      "definition": "The one you actually use every day, as opposed to the one you keep for special cases or the one you are still evaluating.",
+      "caution": "It is a claim of real use, and that is the whole value of it: calling a tool your daily driver says you have hit its rough edges, so expect the follow-up question about what they are. Said of something you have opened twice it is exactly the kind of overclaim a sceptical engineer will test. It is also casual, so in a written recommendation or a vendor evaluation it reads as breezy where you wanted evidence. Borrowed from cars and now said of a laptop, an editor, a model.",
+      "example": "Claude is my daily driver, I keep the others around for the one or two jobs they are better at.",
+      "cues": [
+        {
+          "text": "A colleague asks which of the three coding assistants you actually reach for, not which ones you have tried.",
+          "setting": "work"
+        },
+        {
+          "text": "In a tooling review you want to separate the editor most engineers live in from the ones installed once and forgotten.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend with three bicycles is asked which one he rides to work and which he keeps for weekends.",
+          "setting": "life"
+        },
+        {
+          "text": "You keep a good camera for holidays and photograph everything else on your phone, and you want the term for the phone.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "The tool an organisation has standardised on, whether or not the people issued it ever open it.",
+        "A backup kept ready in case the main one fails, close enough to hand that switching costs you minutes rather than days.",
+        "The most capable option available regardless of what it costs, picked because the ceiling matters more than the price does. It ranks the options by power rather than by how often anybody reaches for one.",
+        "Software installed by default on every machine before anybody has logged in, so that a new starter finds it already sitting there. It describes what the estate ships with rather than what any one person has settled on.",
+        "The person responsible for running a process every morning, working the same checklist so that the rest of the organisation finds the numbers waiting when it arrives. It names a rota position held by a human being, not the thing somebody reaches for by preference."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

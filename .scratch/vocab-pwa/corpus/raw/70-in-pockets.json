@@ -1,0 +1,44 @@
+{
+  "headword": "in pockets",
+  "senses": [
+    {
+      "term": "in pockets",
+      "accepted": [
+        "in pockets of"
+      ],
+      "definition": "Present in scattered, isolated places rather than across the whole. It says the thing is real, has not spread, and that the places it exists in are not connected to each other.",
+      "caution": "It is honest and quietly deflating: a sponsor who hears adoption is in pockets hears not adopted. That makes it the right word when you are asking to connect the pockets and the wrong one when you are asking for more money to keep going as you are.",
+      "example": "Adoption is real, but it's in pockets — three teams live in it and nobody else has logged in since March.",
+      "cues": [
+        {
+          "text": "A sponsor asks whether the new tool has landed across the business. It has landed in four teams and nowhere else, and you want to be honest without sounding defeated.",
+          "setting": "work"
+        },
+        {
+          "text": "You are writing a status note about where the new engineering practice has actually taken hold.",
+          "setting": "work"
+        },
+        {
+          "text": "An MD asks whether data quality is a firm-wide problem. It is bad in a few specific places and fine everywhere else.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend asks whether a neighbourhood is safe. It mostly is, apart from a few isolated streets.",
+          "setting": "life"
+        },
+        {
+          "text": "You are describing how mobile signal behaves on a route you drive: fine in scattered places, gone in between.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Held back in reserve so that it can be released later, when the case for spending it is easier to make.",
+        "Spread thinly but evenly across the whole, so that everywhere has a little of it and nowhere has enough of it to matter to anyone.",
+        "Under one person's control or influence to the point where their view decides the outcome, whatever the process on paper happens to say. It is said about people, and it is never said kindly.",
+        "Set aside inside a budget as contingency against something that has not happened yet, and quietly defended all year by whoever holds it. It is money that exists on the plan and is not meant to be spent.",
+        "Growing steadily outward from a single starting point, so that the edge moves further out each quarter and everything behind the edge is already covered. The spread is continuous, which is exactly what makes the progress easy to forecast."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

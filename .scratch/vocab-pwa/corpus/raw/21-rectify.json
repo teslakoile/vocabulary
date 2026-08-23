@@ -1,0 +1,44 @@
+{
+  "headword": "rectify",
+  "senses": [
+    {
+      "term": "rectify",
+      "accepted": [
+        "rectified"
+      ],
+      "definition": "To put right something that was wrong: an error, an imbalance, an obligation you failed to meet. Unlike fix, it carries the admission that something was owed.",
+      "caution": "It concedes fault, which is precisely why it belongs in audit responses, complaints and regulatory letters and precisely why it is the wrong word for routine work. Telling an auditor you will rectify the pipeline says there was a defect; saying you will update it says nothing of the kind. Use it when the admission is the point, and never as a decorative synonym for change.",
+      "example": "The retention setting was wrong on two buckets, we rectified it on Tuesday and the evidence is on the ticket.",
+      "cues": [
+        {
+          "text": "An audit finds a control was misconfigured for three months, and your written reply has to promise to put it right.",
+          "setting": "work"
+        },
+        {
+          "text": "A customer was invoiced twice and you are writing the apology and the remedy in a single sentence.",
+          "setting": "work"
+        },
+        {
+          "text": "In a post-incident note you want a formal verb for undoing the damage the bad deploy caused.",
+          "setting": "work"
+        },
+        {
+          "text": "A council tax bill has you in the wrong band and you want a formal verb for what you are asking them to do.",
+          "setting": "life"
+        },
+        {
+          "text": "You gave a friend advice resting on an assumption that turned out to be wrong, and you want to set it straight properly.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "To adjust a plan in the light of new information, with nothing having gone wrong to prompt it.",
+        "To confirm that a problem has been resolved, checking the thing yourself before telling anyone it is closed.",
+        "To identify the underlying cause of a failure and write it down, so that the next person to meet it finds an explanation rather than a mystery. Nothing is repaired by the act itself.",
+        "To simplify something that has grown complicated over years, cutting it back until one person can hold all of it again. It is tidying rather than repair, and it can be done to something working perfectly well.",
+        "To apologise formally for an error, in writing and to everybody it touched, so that the acknowledgement sits on the record where anyone can find it. What it settles is the account of what happened, and the thing that went wrong stays exactly as wrong as it was."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

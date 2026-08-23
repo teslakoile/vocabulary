@@ -1,0 +1,15 @@
+{
+  "headword": "superset",
+  "senses": [
+    {
+      "term": "superset",
+      "distractors": [
+        "A group of items chosen out of a larger collection according to a rule you set yourself.",
+        "The overlap two collections share, which is everything they have in common and nothing that belongs to only one of them.",
+        "A newer release that takes the place of an older one, after which the old one stops being supported and anyone still running it is on their own until they move.",
+        "The full list of capabilities a product advertises, which is always longer than the list any single customer has managed to switch on. The gap between the two is where renewals get lost.",
+        "A template from which specific instances are made, so that everything created from it starts with the same shape and can then diverge. Changing it afterwards raises the awkward question of what happens to everything already built from it."
+      ]
+    }
+  ]
+}

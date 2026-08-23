@@ -1,0 +1,44 @@
+{
+  "headword": "despondent",
+  "senses": [
+    {
+      "term": "despondent",
+      "accepted": [
+        "despondency"
+      ],
+      "definition": "Low in a way that has given up on things improving. Not upset about one event but drained of the expectation that the next one will go better, usually after a run of them.",
+      "caution": "It is a heavy word about someone's inner state, close to a diagnosis, and it travels: said about a named colleague it will be repeated back to them. It is also about hopelessness, not disappointment, so after one bad quarter people are deflated, not despondent, and the stronger word makes a room stop and ask whether you are all right. About yourself in a professional setting it overshares.",
+      "prompt_version": 2,
+      "example": "I would not say the team is despondent, but a third slipped date has taken something out of them.",
+      "cues": [
+        {
+          "text": "A friend has failed the same exam twice and has stopped talking about a third attempt. Someone asks how they are doing.",
+          "setting": "life"
+        },
+        {
+          "text": "Your sister's dog died a fortnight ago and she has not been out of the house since. A neighbour asks after her and sad is too small a word.",
+          "setting": "life"
+        },
+        {
+          "text": "You are describing the week after a rejection, when nothing seemed worth beginning.",
+          "setting": "life"
+        },
+        {
+          "text": "In a private one-to-one you need to tell your manager what a year of cancelled projects has done to one person's outlook.",
+          "setting": "work"
+        },
+        {
+          "text": "A character in the novel you are reading has stopped expecting anything to change, and you are explaining the book to someone.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Angry in a way that is hard to keep off your face, however carefully you choose the words.",
+        "Physically exhausted after a long stretch of sustained effort, and needing a week off rather than a change of prospects.",
+        "Anxious about an outcome that has not been decided yet, running through the ways it could go while there is still everything to play for. The hope is entirely intact, which is what makes it a different state.",
+        "Resigned to a decision you argued hard against, going along with it because it has been made and not because anybody persuaded you. It is settled about one thing, and says nothing about what you expect from the next.",
+        "Bitter about having been passed over, in a way that colours how you read every later decision made about somebody else. It points at one specific injustice and goes on pointing there, rather than draining away the expectation that anything ahead will go better."
+      ]
+    }
+  ]
+}

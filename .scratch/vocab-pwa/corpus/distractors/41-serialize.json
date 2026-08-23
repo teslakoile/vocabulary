@@ -1,0 +1,15 @@
+{
+  "headword": "serialize",
+  "senses": [
+    {
+      "term": "serialize",
+      "distractors": [
+        "To split a large payload into chunks small enough to travel, then put them back in order once they have all arrived.",
+        "To squeeze data into fewer bytes by taking out whatever repeats in it, so that the same content costs less to hold and less to move between systems.",
+        "To scramble data with a key before it leaves the network, so that anyone intercepting it holds something they cannot read. Only whoever has the matching key gets anything back out of it.",
+        "To check an incoming payload against an agreed schema and turn it away when a required field is missing or arrives as the wrong type, so that bad data fails at the door rather than three systems further downstream.",
+        "To give every record a unique identifier drawn in order, so that two rows written in the same instant can still be told apart afterwards and the number itself says roughly when each of them arrived. It is cheap to assign and awkward to change later."
+      ]
+    }
+  ]
+}

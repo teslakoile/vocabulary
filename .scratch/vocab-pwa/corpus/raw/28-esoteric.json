@@ -1,0 +1,42 @@
+{
+  "headword": "esoteric",
+  "senses": [
+    {
+      "term": "esoteric",
+      "accepted": [],
+      "definition": "Understood by a small circle and effectively closed to everyone else. The barrier is being on the inside rather than being clever: the knowledge assumes a background most people have no reason to have.",
+      "caution": "It can flatter or dismiss and you rarely control which. Call a colleague's specialism esoteric and you may mean it is deep, but the room usually hears that it is irrelevant to anyone who matters. It is also not a synonym for difficult or technical: plenty of hard things are widely understood, and using it that way marks you as having found something merely unfamiliar.",
+      "prompt_version": 2,
+      "example": "Put the evaluation methodology in an appendix. It is esoteric for this audience and we will lose them in two slides.",
+      "cues": [
+        {
+          "text": "A friend's hobby has its own vocabulary and a worldwide forum of about two hundred people, and you are describing it to someone at a party.",
+          "setting": "life"
+        },
+        {
+          "text": "You bought a book on medieval music notation and could not get past the opening chapter without the background it assumes you have.",
+          "setting": "life"
+        },
+        {
+          "text": "Your uncle's argument over dinner rests entirely on a school of economics almost nobody outside it has heard of.",
+          "setting": "life"
+        },
+        {
+          "text": "You are cutting a section from a board deck because the only people who would enjoy it all sit on your own team.",
+          "setting": "work"
+        },
+        {
+          "text": "A film you loved turns out to have a following of a few thousand people who trade references you had to look up.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Kept confidential and shared only with the people cleared for it, with the list of names written down somewhere.",
+        "More complicated than the task in front of you actually requires, so that the machinery outlasts the problem it was built to solve.",
+        "Out of date and no longer taught anywhere, kept alive by the few people who learned it before it fell out of the syllabus. The barrier is when you trained rather than which circle you happen to sit in.",
+        "Theoretical, with no practical application anybody has found for it yet, interesting on its own terms and load-bearing for nothing. It is a judgement about what the knowledge is good for rather than about who can get at it.",
+        "Expressed in language chosen to confuse, so that a reader gives up before reaching the part that would have told them something. The difficulty was manufactured by whoever wrote it, which is a very different thing from a subject that is genuinely hard to reach without the right background."
+      ]
+    }
+  ]
+}

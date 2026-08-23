@@ -1,0 +1,45 @@
+{
+  "headword": "bolster",
+  "senses": [
+    {
+      "term": "bolster",
+      "accepted": [
+        "bolstered",
+        "bolstering"
+      ],
+      "definition": "To add support to something that already stands but is not standing well enough on its own: a case, a claim, a balance, morale. What was there stays; you are putting weight behind it.",
+      "caution": "It concedes the weakness. Say you want to bolster the business case and you have told the room the case is currently thin, which is fine when you mean it and expensive when you did not. It also wants abstract objects: you bolster an argument, reserves, or confidence, and you do not bolster a server or a deadline.",
+      "prompt_version": 2,
+      "example": "The numbers are directionally right, but one more independent source would bolster them before this goes to the board.",
+      "cues": [
+        {
+          "text": "Your recommendation rests entirely on a single vendor's figures, and you are proposing a second, independent source so it survives scrutiny.",
+          "setting": "work"
+        },
+        {
+          "text": "In a review a junior colleague makes a correct point that lands weakly, and you want to put your own evidence behind it without taking the point over.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend's visa application is complete but unconvincing on its own, and you are suggesting a letter from their employer go in alongside it.",
+          "setting": "life"
+        },
+        {
+          "text": "Your savings would just about cover six months without work, and your partner asks what you plan to do about the margin before you resign.",
+          "setting": "life"
+        },
+        {
+          "text": "A nervous friend ran their speech past three people the night before, and you are describing what that did for them.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "To restate a claim more forcefully than before, without putting anything new behind it.",
+        "To replace something that is failing with a stronger alternative, so that what was there before is gone by the end of it.",
+        "To defend a position that is under direct challenge, answering the objection in front of the people who raised it. The work is done in the argument rather than on the thing being argued about.",
+        "To overstate how strong a case actually is, describing as settled something that is merely arguable and hoping nobody looks. Nothing about the case changes; only the account other people are given of it does.",
+        "To hold something up temporarily until it can stand on its own, with the support taken away by design once the thing is ready to do without it. What defines it is the intention to remove the prop, which is no part of putting weight behind something."
+      ]
+    }
+  ]
+}

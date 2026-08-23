@@ -1,0 +1,40 @@
+{
+  "headword": "heuristic",
+  "senses": [
+    {
+      "term": "heuristic",
+      "accepted": [
+        "heuristics"
+      ],
+      "definition": "A rule of thumb that gets you a good enough answer quickly, adopted because it usually works rather than because it is right. The trade is accuracy for speed, and the trade is deliberate.",
+      "caution": "The word contains an admission that it can be wrong, which is exactly why it is disarming with a governance audience and exactly why it should not be used to dress up a rule you cannot defend. Once you have called a threshold a heuristic it no longer stands on its own, so if the number actually came from analysis do not soften it, and if it came from somebody's instinct, expect the follow-up question about which.",
+      "prompt_version": 2,
+      "example": "Triage runs on a heuristic today, anything over fifty thousand goes to a human, and we replace it the moment we have labelled data.",
+      "cues": [
+        {
+          "text": "You are shipping a triage rule that is really a threshold someone picked, and you want to be honest with the steering group about what it is without sinking the release.",
+          "setting": "work"
+        },
+        {
+          "text": "A director asks how the system decides what to escalate, and the truthful answer is a simple rule that catches most of the cases most of the time.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend asks how you choose which restaurant on an unfamiliar street to walk into, and your answer is a rule that works often enough.",
+          "setting": "life"
+        },
+        {
+          "text": "You always leave for the airport three hours ahead whatever the flight, and someone asks whether that is really necessary.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "A step-by-step procedure for a routine task, written out so that two different people following it end up with the same result.",
+        "A rule that has to hold without exception, where a single breach counts as a failure rather than as a cost somebody decided was worth paying.",
+        "A method guaranteed to find the best available answer if you let it run to the end, at whatever price in time and compute the search happens to demand. Correctness is the promise and the bill is the variable.",
+        "A number tracked over time to show whether something is moving the way you want it to, agreed in advance so that arguments about progress can be settled by looking at it rather than by who argues hardest.",
+        "An assumption written down at the start of the work so that it can be checked later, when the evidence finally arrives that either supports it or kills it. Its value is in being on the record: nobody can claim afterwards that the risk was never named out loud."
+      ]
+    }
+  ]
+}

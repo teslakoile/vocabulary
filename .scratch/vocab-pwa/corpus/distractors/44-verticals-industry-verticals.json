@@ -1,0 +1,15 @@
+{
+  "headword": "verticals/industry verticals",
+  "senses": [
+    {
+      "term": "vertical",
+      "distractors": [
+        "A stage of the sales process, from first contact through to a signed contract, used to say where a given deal has got to.",
+        "A reporting line running from the most junior analyst up to the board, drawn so that everybody knows who signs off what and where an escalation finally stops.",
+        "A layer of the technology stack, from storage at the bottom up to the interface at the top, where each one only has to know about the layer directly beneath it and can be replaced without disturbing the rest.",
+        "A capability that arrives identical for every customer whatever business they happen to be in, built once and sold everywhere. The economics come from never having to change it, which is also the reason it will never be a perfect fit for anybody.",
+        "A market defined by where the customer sits rather than by what they do, each one carrying its own regulator, its own price list and its own rules about where the data is allowed to be held. Two customers in the very same trade can fall on opposite sides of one."
+      ]
+    }
+  ]
+}

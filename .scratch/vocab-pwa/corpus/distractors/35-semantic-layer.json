@@ -1,0 +1,15 @@
+{
+  "headword": "semantic layer",
+  "senses": [
+    {
+      "term": "semantic layer",
+      "distractors": [
+        "A cache that keeps the answers to the questions people ask most often, so the second person to ask one waits far less than the first did.",
+        "A catalogue that lists every table in the estate with its owner and its refresh schedule, so that anyone can find out what exists and who to go to about it.",
+        "The stage where raw feeds are cleaned, deduplicated and typed before anything downstream is allowed to read them. It runs once per load, and what comes out of it is the trusted copy that everything else works from rather than going back to source.",
+        "A permissions model deciding which rows and columns each person may see, so that one report can go to the whole desk and still show each reader only their own book. It is enforced at query time, which is why nobody can get round it by exporting the file.",
+        "A translation service sitting between systems that speak different formats, converting each message from the one into the other so that neither side has to learn how the other represents a date, a currency or a client identifier. It holds no data of its own and remembers nothing once a message has passed through it."
+      ]
+    }
+  ]
+}

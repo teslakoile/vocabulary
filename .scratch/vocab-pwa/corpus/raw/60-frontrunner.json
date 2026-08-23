@@ -1,0 +1,43 @@
+{
+  "headword": "frontrunner",
+  "senses": [
+    {
+      "term": "frontrunner",
+      "accepted": [
+        "front-runner",
+        "front runner",
+        "frontrunners",
+        "front-runners"
+      ],
+      "definition": "The one currently most likely to win, said while the outcome is still genuinely open. It reports a standing at a moment, not a result.",
+      "caution": "Naming one changes the race. In a vendor evaluation, putting it in writing before scoring closes makes the process look decided, and that is precisely the sentence that resurfaces in a procurement challenge - keep it to conversation. It also paints a target on whoever you name, and if they lose, the room remembers that you called it early.",
+      "example": "Off the record the Swiss vendor is the frontrunner, but nothing goes in writing until scoring closes.",
+      "cues": [
+        {
+          "text": "Two candidates are left for a director role and one is clearly ahead. You are saying so to a peer over coffee, not putting it in an email.",
+          "setting": "work"
+        },
+        {
+          "text": "A sponsor asks which supplier is likely to win while the scoring is still open, and you want a word that reports a position without announcing a decision.",
+          "setting": "work"
+        },
+        {
+          "text": "Friends are arguing about who takes over as captain next season, and one name is obviously ahead of the others.",
+          "setting": "life"
+        },
+        {
+          "text": "You and your partner have seen six flats and one is well ahead of the rest, though nothing is decided and you may still see more.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "The competitor holding the largest share of a market it has led for years.",
+        "The first product to reach a market, which gets to set the terms everyone arriving later has to argue against.",
+        "The candidate a panel has formally put forward for a post, whose name now goes to the board for sign-off. The contest is already over by then.",
+        "The option a team lands on once the evaluation is finished and the scoring is complete, written into the paper as the recommendation everyone is being asked to approve.",
+        "An early favourite that has since slipped behind, still discussed because of the position it used to hold rather than the one it holds now. The word carries the loss with it, and it is rarely said kindly."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

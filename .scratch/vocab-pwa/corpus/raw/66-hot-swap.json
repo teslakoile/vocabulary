@@ -1,0 +1,42 @@
+{
+  "headword": "hot-swap",
+  "senses": [
+    {
+      "term": "hot-swap",
+      "accepted": [
+        "hot swap",
+        "hot-swapping",
+        "hot-swappable"
+      ],
+      "definition": "To replace a running component without stopping the system around it. Extended well past hardware now: models, vendors and people exchanged mid-flight with nothing going dark.",
+      "caution": "The word promises no downtime, and that is a claim someone will hold you to on the day. Used about a person it is worse: hot-swap Priya onto that reads as people being interchangeable parts, which is fine between engineers and cold in front of her manager.",
+      "example": "The provider sits behind an interface, so we can hot-swap the model without the application knowing.",
+      "cues": [
+        {
+          "text": "You are arguing the vendor contract is not a lock-in risk, because the provider sits behind an interface and can be exchanged without the application noticing.",
+          "setting": "work"
+        },
+        {
+          "text": "An architect asks how you plan to move to the new embedding model without a maintenance window.",
+          "setting": "work"
+        },
+        {
+          "text": "A sponsor asks what actually happens if the API you depend on doubles its price next quarter.",
+          "setting": "work"
+        },
+        {
+          "text": "Someone on-call asks whether replacing the failed node means taking the cluster down first.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "To bring a system down cleanly inside a planned window, make the change, and then start it up again.",
+        "To run two versions side by side against the same traffic and compare what each produces before trusting either one of them in production.",
+        "To copy the state of a system at a point in time so that it can be put back exactly as it was if the change goes wrong. The copy is insurance, and it is taken before anything gets touched.",
+        "To keep a second machine idle and fully configured so that it takes over the moment the first one fails. It costs you the price of running two, and what it buys is the minutes between the failure and anyone noticing.",
+        "To move a task from whoever is stuck with it to whoever happens to have capacity, without changing anything about the task itself. It is a scheduling decision made about people rather than a change made to a system, and it gets announced in a standup rather than a change record."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

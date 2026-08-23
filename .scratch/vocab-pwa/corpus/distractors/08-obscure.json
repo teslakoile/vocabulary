@@ -1,0 +1,15 @@
+{
+  "headword": "obscure",
+  "senses": [
+    {
+      "term": "obscure",
+      "distractors": [
+        "Widely known but badly understood, so that everybody can name the thing and few could tell you what it actually does.",
+        "Stated in needlessly technical language, so that a reader has to decode the sentence before they can work out whether they disagree with it.",
+        "Ambiguous between two specific readings, where both are plainly available on the page and nothing in the sentence tells you which was meant. The trouble is that there are exactly two, not that the meaning is out of reach.",
+        "Kept confidential on legal advice, with access restricted to a named list and the reason for the restriction often withheld as well. As a verb, to put something formally beyond reach on those grounds rather than by any side effect.",
+        "Out of date and no longer maintained, still sitting where it always sat while the thing it described has moved on without it. As a verb, to leave something running long after anybody was looking after it, so that people go on relying on an answer nobody has checked in years."
+      ]
+    }
+  ]
+}

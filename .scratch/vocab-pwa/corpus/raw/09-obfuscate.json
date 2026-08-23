@@ -1,0 +1,44 @@
+{
+  "headword": "obfuscate",
+  "senses": [
+    {
+      "term": "obfuscate",
+      "accepted": [
+        "obfuscation"
+      ],
+      "definition": "To make something deliberately hard to understand so the plain version stays out of reach. The intent is the whole of the word; without it you are only describing a mess.",
+      "caution": "This is an allegation of bad faith, not a comment on clarity. Aimed at a vendor's pricing page it is fair game; aimed at a colleague's slide it says they meant to mislead, and the room will hear that even if you did not mean it. If all you mean is that the explanation came out muddled, say obscure or unclear and keep the temperature down.",
+      "example": "Their per-token pricing obfuscates the real cost, so I have rebuilt it as one number per thousand queries.",
+      "cues": [
+        {
+          "text": "A vendor's pricing page looks designed so that you cannot work out what you would actually pay, and you want the word that says the confusion is the point.",
+          "setting": "work"
+        },
+        {
+          "text": "In a review you want to name what a paper is doing when it buries a bad number under three layers of terminology.",
+          "setting": "work"
+        },
+        {
+          "text": "You are arguing that adding yet more caveats to the report would hide the finding rather than qualify it.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend's phone contract seems written so the exit fee is impossible to find, and you want the accusing word for it.",
+          "setting": "life"
+        },
+        {
+          "text": "Talking about an interview where a politician used a great many words to avoid a plain yes or no.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "To make something hard to follow without meaning to, usually by writing it in a hurry.",
+        "To summarise at a level so high that the detail somebody needed drops out, leaving a true statement nobody can act on.",
+        "To encrypt data so that it cannot be read in transit, with the plain version recoverable by anyone holding the key. What it defends against is interception rather than understanding.",
+        "To refuse to answer the question at all, either by declining outright or by talking steadily until the time in the room runs out. The refusal is visible to everybody present, which is exactly what makes it a different move.",
+        "To restate somebody's argument in a weaker form and then attack the weaker version, so that the win is over a position they never actually held. The dishonesty sits in what you built for them, not in how clearly you built it."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

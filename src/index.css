@@ -1,0 +1,252 @@
+:root {
+  color-scheme: dark;
+  --bg: #111;
+  --fg: #eee;
+  --dim: #8a8a8a;
+  --line: #2a2a2a;
+  --raise: #1a1a1a;
+  --accent: #d8b978;
+  --right: #7fbf7f;
+  --wrong: #d98d8d;
+}
+
+* { box-sizing: border-box; margin: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.55 -apple-system, system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.shell {
+  padding: max(20px, env(safe-area-inset-top)) 20px calc(28px + env(safe-area-inset-bottom));
+  max-width: 34rem;
+  margin: 0 auto;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+h1 { font-size: 1.3rem; font-weight: 600; }
+p + p, p + ol, h1 + p { margin: 0; }
+ol { padding-left: 1.25rem; display: grid; gap: 0.5rem; }
+.placeholder { color: var(--dim); }
+
+/* ---- controls ---- */
+
+button {
+  font: inherit;
+  color: inherit;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: var(--fg);
+  color: var(--bg);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  font-weight: 600;
+  width: 100%;
+  min-height: 52px;
+}
+.primary:disabled { opacity: 0.35; }
+
+.link {
+  color: var(--dim);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  align-self: flex-start;
+  padding: 0.4rem 0;
+  min-height: 44px;
+}
+
+input, textarea {
+  font: inherit;
+  color: var(--fg);
+  background: var(--raise);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.8rem 0.9rem;
+  width: 100%;
+  min-height: 52px;
+}
+input:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+textarea { min-height: 0; resize: vertical; }
+
+form { display: grid; gap: 0.7rem; }
+
+/* ---- review ---- */
+
+.review { position: relative; }
+
+/*
+ * The only status the screen carries. A card whose answer moves the schedule
+ * gets this rule above it; free play gets nothing. Deliberately easy to ignore,
+ * because a visible counter would turn an endless queue back into a daily
+ * target. It sits in the flow rather than floating in the corner, where it read
+ * as a badge on the search button.
+ */
+.counts {
+  width: 26px;
+  height: 2px;
+  background: var(--accent);
+  opacity: 0.6;
+  margin-bottom: 0.1rem;
+}
+
+.term {
+  font-size: 2rem;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.prompt {
+  font-size: 1.25rem;
+  line-height: 1.45;
+  padding: 0.5rem 0 0.3rem;
+}
+
+.options { list-style: none; padding: 0; display: grid; gap: 0.55rem; }
+.options button {
+  width: 100%;
+  text-align: left;
+  background: var(--raise);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.85rem 0.95rem;
+  line-height: 1.4;
+}
+.options button:active { border-color: var(--accent); }
+
+.verdict { font-weight: 600; font-size: 0.95rem; letter-spacing: 0.02em; }
+.verdict.right { color: var(--right); }
+.verdict.wrong { color: var(--wrong); }
+.verdict em { color: var(--dim); font-style: normal; font-weight: 400; }
+
+.accepted { color: var(--dim); font-size: 0.9rem; margin-top: -0.6rem; }
+.definition { font-size: 1.05rem; }
+
+/* The field that stops a word being misused, so it gets the one accent on the
+ * screen. It is the reason this app is not a dictionary. */
+.caution {
+  border-left: 2px solid var(--accent);
+  padding-left: 0.85rem;
+  color: #ddd;
+}
+
+.example { color: var(--dim); font-style: italic; }
+.note { color: var(--dim); font-size: 0.9rem; }
+.meta { color: #555; font-size: 0.8rem; text-align: center; }
+
+.review .primary { margin-top: auto; }
+
+/* ---- inline edit ---- */
+
+.edit { display: grid; gap: 0.7rem; padding: 0.9rem 0; border-top: 1px solid var(--line); }
+.edit label { display: grid; gap: 0.35rem; font-size: 0.85rem; color: var(--dim); }
+.edit .row { display: flex; align-items: center; gap: 1rem; }
+.edit .row .primary { width: auto; padding-inline: 1.5rem; }
+.failed { color: var(--wrong); font-size: 0.85rem; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .review > * { animation: rise 160ms ease-out both; }
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ---- shell chrome ---- */
+
+.app { min-height: 100dvh; display: flex; flex-direction: column; }
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: max(14px, env(safe-area-inset-top)) 20px 0;
+}
+.bar button {
+  color: var(--dim);
+  padding: 8px;
+  margin: -8px;
+  display: flex;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+.app .shell { min-height: 0; flex: 1; padding-top: 14px; }
+
+/* ---- browse ---- */
+
+.filters { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.chip {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  color: var(--dim);
+  min-height: 40px;
+}
+.chip.on { border-color: var(--accent); color: var(--fg); }
+
+.rows { list-style: none; padding: 0; display: grid; gap: 0.15rem; }
+.rows button {
+  width: 100%;
+  text-align: left;
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.rows strong { font-weight: 600; }
+.rows span { color: var(--dim); font-size: 0.88rem; line-height: 1.35; }
+.justsaved { color: var(--dim); display: block; padding: 0.5rem 0; border-bottom: 1px solid var(--line); }
+
+.sense { display: grid; gap: 0.9rem; padding-bottom: 0.5rem; }
+.senseterm { font-size: 1.05rem; font-weight: 600; color: var(--accent); }
+
+.offer {
+  width: 100%; max-width: 34rem; margin: 0 auto;
+  padding: 0.9rem 20px 0;
+  display: grid; gap: 0.7rem;
+}
+.offer p { color: var(--dim); font-size: 0.9rem; }
+.offer .row { display: flex; align-items: center; gap: 1rem; }
+.offer .row .primary { width: auto; padding-inline: 1.4rem; min-height: 44px; }
+
+.install .steps { color: var(--dim); font-size: 0.85rem; }
+
+/* The option number, for keyboard use. Hidden where there is no keyboard. */
+.options button { display: flex; gap: 0.7rem; align-items: baseline; }
+.options kbd {
+  display: none;
+  font: inherit;
+  font-size: 0.8rem;
+  color: var(--dim);
+  min-width: 1ch;
+}
+@media (hover: hover) and (pointer: fine) {
+  .options kbd { display: block; }
+  .options button:hover { border-color: #444; }
+  .link:hover, .bar button:hover { color: var(--fg); }
+  .primary:hover:not(:disabled) { background: #fff; }
+  .rows button:hover strong { color: var(--accent); }
+}
+
+/* On a desktop window the shell should not stretch a card down a 1000px page. */
+@media (min-height: 720px) and (pointer: fine) {
+  .app, .shell { min-height: 0; }
+  .app { padding-bottom: 2rem; }
+  .review .primary { margin-top: 1rem; }
+}

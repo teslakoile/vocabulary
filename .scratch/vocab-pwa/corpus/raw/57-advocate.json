@@ -1,0 +1,79 @@
+{
+  "headword": "advocate",
+  "senses": [
+    {
+      "term": "advocate",
+      "accepted": [
+        "advocates"
+      ],
+      "definition": "The person who argues your case, typically in rooms you are not in. Not the same as a supporter: the word carries the expectation that they will actually speak.",
+      "caution": "Naming someone as yours assigns them work they may not have agreed to, and in a hierarchy it can expose them - a director who is quietly helpful may not want to be described that way in front of their peers. Said of yourself about a cause it is fine; said of yourself about your own interests it sounds like a job title you invented. With lawyers in the room the word means counsel and will be heard that way first.",
+      "example": "We don't need everyone convinced. We need one advocate on that committee who'll say it when we're not in the room.",
+      "cues": [
+        {
+          "text": "You are told the committee will decide without you present, and you want the word for the one person in there who will make your case.",
+          "setting": "work"
+        },
+        {
+          "text": "A mentor asks what you actually need from her, and the honest answer is someone who will speak for the work when you are not there to speak for it.",
+          "setting": "work"
+        },
+        {
+          "text": "Your grandmother's hospital appointments go badly when she attends alone, and you want the word for the role a family member plays by going with her.",
+          "setting": "life"
+        },
+        {
+          "text": "You are describing a teacher who fought the school on your son's behalf for two years, and you want the word for what she was to him.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "A neutral party brought in to settle a dispute between two sides who cannot resolve it themselves.",
+        "Someone senior who advises you in private, meeting you regularly to talk through your career and how to handle a difficult room.",
+        "A person appointed to test a proposal by arguing against it, so the weaknesses surface before a committee finds them. The opposition is assigned rather than sincerely held.",
+        "A colleague asked to give an account of your work to a panel deciding on a promotion, describing what they actually saw you do. What they contribute is evidence about the past, not pressure on the decision.",
+        "The senior person whose budget carries a piece of work and who answers to the board for whether it lands. It is a role defined by ownership of the money and the outcome, and it is usually written down somewhere on an org chart."
+      ],
+      "prompt_version": 2
+    },
+    {
+      "term": "advocate for",
+      "accepted": [
+        "advocate",
+        "advocating",
+        "advocating for",
+        "advocated for",
+        "advocacy"
+      ],
+      "definition": "To argue actively and in the open for a position or a person, putting your own standing behind it. Stronger than agreeing with something: it means you are the one making the case.",
+      "caution": "It spends credibility, and it spends it visibly. Claiming it ties you to the outcome, so keep it for the two or three things a year you would still defend after they went wrong. Used about a small preference it inflates the stakes, and in a written self-assessment it reads as claiming credit unless the thing worked. There is also a floor: if all you did was agree in a meeting, someone who was there will remember that.",
+      "example": "I advocated for keeping the evaluation in-house, and knowing what it cost us, I'd make the same call again.",
+      "cues": [
+        {
+          "text": "In a performance conversation you need a verb for the handful of times you put your own name behind an unpopular position rather than simply agreeing with it.",
+          "setting": "work"
+        },
+        {
+          "text": "A junior colleague's work was passed over and you intend to raise it with the panel yourself, at some cost to your own standing.",
+          "setting": "work"
+        },
+        {
+          "text": "You are pressing the council to fix a dangerous junction by the school, and it has turned into a campaign rather than a complaint.",
+          "setting": "life"
+        },
+        {
+          "text": "A relative needs a treatment the insurer keeps refusing, and somebody in the family has to make the case, loudly and repeatedly.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "To put a question to a formal vote so that the room goes on record, rather than settling it in conversation.",
+        "To set out both sides of a question evenly so a committee can choose, keeping your own preference deliberately out of it.",
+        "To carry out a decision you argued against once it has been taken, and to defend it outside the room as though it were your own. It is a discipline a committee expects, not a view you hold.",
+        "To sign off formally on something another team has proposed so that the work can proceed. The act is authority exercised at a gate, and it says nothing about whether you would have chosen it yourself.",
+        "To keep raising the same point in successive meetings until the objections stop being made, on the theory that persistence eventually reads as agreement. It describes a tactic for wearing a room down rather than the strength of anything actually said."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

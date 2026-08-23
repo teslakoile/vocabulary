@@ -1,0 +1,48 @@
+{
+  "headword": "run it by you",
+  "senses": [
+    {
+      "term": "run it by you",
+      "accepted": [
+        "run it past you",
+        "run this by you",
+        "run that by you",
+        "run something by you",
+        "run it by someone",
+        "running it by you",
+        "run it by him",
+        "run it by her",
+        "run it by them"
+      ],
+      "definition": "To show someone something before committing to it, seeking their reaction rather than their approval. Softer than asking permission.",
+      "caution": "It implies you could proceed without them, which is why it works upward as courtesy and sideways as consultation. Said to someone whose sign-off you genuinely need, it can sound like you are minimising their role.",
+      "example": "Before I send this to the MD, can I run it by you?",
+      "cues": [
+        {
+          "text": "You have drafted a recommendation and want your manager's reaction before it goes further, without making it a formal approval request.",
+          "setting": "work"
+        },
+        {
+          "text": "You are about to propose a change touching another team's system and want to show their lead first as a courtesy.",
+          "setting": "work"
+        },
+        {
+          "text": "You are planning a surprise for your partner and want to check the idea with their sibling before booking anything.",
+          "setting": "life"
+        },
+        {
+          "text": "You have chosen a restaurant for a group dinner and want to float it with one of them before committing everyone.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "To hand a task over to whoever is better placed to do it than you are.",
+        "To circulate a finished document to a list of people and gather whatever comes back before the deadline.",
+        "To submit something formally for approval, so that nothing can move any further until the named person has signed it off.",
+        "To brief somebody thoroughly enough that they can take the questions on your behalf, because you will not be in the room when they get asked.",
+        "To test an idea against the numbers before anybody sees it, so that the version people do see has already survived the obvious objection. Nobody else is involved until it has."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

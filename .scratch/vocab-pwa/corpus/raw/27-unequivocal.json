@@ -1,0 +1,40 @@
+{
+  "headword": "unequivocal",
+  "senses": [
+    {
+      "term": "unequivocal",
+      "accepted": [
+        "unequivocally"
+      ],
+      "definition": "Admitting only one reading. Said of a statement, a decision, or evidence that has been put in a form nobody can walk back or interpret a second way.",
+      "caution": "It is as much a claim about your own certainty as about the thing, which is an invitation: call the results unequivocal and one awkward case takes the whole sentence down with it. It belongs to statements and evidence rather than to people, so support, instructions, and findings can be unequivocal and a sponsor cannot. Used about your own view it can also come across as shutting the discussion rather than winning it.",
+      "prompt_version": 2,
+      "example": "The board came back unequivocal on this: no client data leaves the tenancy, under any structure.",
+      "cues": [
+        {
+          "text": "You are relaying a decision from the top that came with no conditions attached, and people keep asking where the wiggle room is.",
+          "setting": "work"
+        },
+        {
+          "text": "A regulator's letter allows exactly one reading, and you are summarising it for a team that would very much like it to allow two.",
+          "setting": "work"
+        },
+        {
+          "text": "Your doctor's advice about the medication came without a single hedge, and a relative keeps hunting for the loophole.",
+          "setting": "life"
+        },
+        {
+          "text": "A friend asks whether your partner is genuinely on board with the move. She said yes in a way that left nothing open.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Stated with great force or at great volume, so that nobody in the room misses it.",
+        "Agreed by everybody in the room, with no dissent left over to be recorded anywhere afterwards.",
+        "Supported by more than one independent line of evidence, so that every check points the same way. The strength sits in the corroboration rather than in the wording.",
+        "Given without any explanation or reasoning attached, so that the answer stands there on its own and the argument for it does not. It says what was withheld rather than how the words can be read.",
+        "Impossible to challenge on procedural grounds, because the right people were consulted and every step of it was properly minuted. The protection lies in the process behind the decision, and the words announcing it may still be read two ways."
+      ]
+    }
+  ]
+}

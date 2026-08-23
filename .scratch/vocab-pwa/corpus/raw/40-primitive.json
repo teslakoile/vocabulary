@@ -1,0 +1,36 @@
+{
+  "headword": "primitive",
+  "senses": [
+    {
+      "term": "primitive",
+      "accepted": [
+        "primitives"
+      ],
+      "definition": "A basic building block a platform hands you and expects you to compose with: small, general, and not meant to be taken apart any further at your level. A lock, a queue, an embedding call. The interesting behaviour comes from what people assemble out of them.",
+      "caution": "Outside a technical room the ordinary sense of the word wins, and that sense is crude, backward, unevolved. Say a partner team's tooling is primitive in front of a steering committee and you have insulted them by accident. Even among engineers it is a design claim rather than a description: it asserts the piece is the right size and shape to build on, so if it turns out to be three decisions welded together, someone will take that apart in review.",
+      "prompt_version": 2,
+      "example": "Give the teams three primitives, retrieval, evaluation and identity, and let them assemble the workflow they actually need.",
+      "cues": [
+        {
+          "text": "You are arguing against shipping ten finished workflows and for shipping a few small pieces that teams combine themselves, and you need the word for those pieces.",
+          "setting": "work"
+        },
+        {
+          "text": "A platform review asks what your team actually offers everyone else, and the honest answer is four small capabilities that everything else is assembled from.",
+          "setting": "work"
+        },
+        {
+          "text": "A colleague proposes one API call that authenticates, retrieves and logs, and you want to argue for three separate things a team can combine as they like.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "An early and crude version of something, still running only because replacing it has never been urgent enough to schedule.",
+        "A feature so ordinary that buyers assume it is already there and notice it only when it turns out not to be. It wins nothing on its own, and its absence loses the deal.",
+        "A component lifted out of an open-source project and copied into your own codebase, so that the version you run stops moving on the day you took it. Whatever gets fixed upstream afterwards is now your problem to find and bring across yourself.",
+        "A low-level detail deliberately kept out of sight, on the grounds that anybody who has to think about it has been failed by the layer above them. Platform teams are judged partly on how much of this they manage to take off their own users' hands, and it is thankless work.",
+        "A crude workaround left in place because it happens to work and nobody wants to be the person who touched it last. Everyone knows it is there, it appears on no diagram anywhere, and the cost of it only becomes visible when somebody new has to change the thing sitting next to it."
+      ]
+    }
+  ]
+}

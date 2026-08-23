@@ -1,0 +1,15 @@
+{
+  "headword": "hot-swap",
+  "senses": [
+    {
+      "term": "hot-swap",
+      "distractors": [
+        "To bring a system down cleanly inside a planned window, make the change, and then start it up again.",
+        "To run two versions side by side against the same traffic and compare what each produces before trusting either one of them in production.",
+        "To copy the state of a system at a point in time so that it can be put back exactly as it was if the change goes wrong. The copy is insurance, and it is taken before anything gets touched.",
+        "To keep a second machine idle and fully configured so that it takes over the moment the first one fails. It costs you the price of running two, and what it buys is the minutes between the failure and anyone noticing.",
+        "To move a task from whoever is stuck with it to whoever happens to have capacity, without changing anything about the task itself. It is a scheduling decision made about people rather than a change made to a system, and it gets announced in a standup rather than a change record."
+      ]
+    }
+  ]
+}

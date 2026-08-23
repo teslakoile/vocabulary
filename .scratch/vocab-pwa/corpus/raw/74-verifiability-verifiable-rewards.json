@@ -1,0 +1,79 @@
+{
+  "headword": "verifiability/verifiable rewards",
+  "senses": [
+    {
+      "term": "verifiability",
+      "accepted": [
+        "verifiable"
+      ],
+      "definition": "The property of a claim or an output being checkable by someone other than whoever produced it. It is about whether an independent check is possible at all, not about whether the claim happens to be true.",
+      "caution": "A room hears it as a synonym for trustworthy, and it is not: a number can be perfectly verifiable and wrong. Promise it only where you can name who does the checking and against what, or you have committed to an audit trail you have not built.",
+      "example": "Our advantage isn't that the model is right more often, it's the verifiability — every number traces back to a filing.",
+      "cues": [
+        {
+          "text": "A compliance officer asks what makes AI output acceptable inside a regulated process, and your answer is that every figure traces back to a document anyone can open.",
+          "setting": "work"
+        },
+        {
+          "text": "You are arguing for the design that shows its sources over the one that is more accurate but opaque.",
+          "setting": "work"
+        },
+        {
+          "text": "A board member asks why you trust one vendor's numbers more than another's.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend forwards you a health claim, and you want a word for exactly what it lacks: no way for anyone outside to check it.",
+          "setting": "life"
+        },
+        {
+          "text": "You are comparing two second-hand cars and one comes with a full documented service history.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "The chance that a given statement turns out to be true, which is a bet about the world rather than a property of the statement.",
+        "A durable record of who changed what and when, kept so that a sequence of events can be reconstructed months later without relying on anybody's memory.",
+        "How readily a system can be made to show the path it took to an answer, in terms a person can follow. It is a demand about the account a system gives of itself, and it is what regulators usually mean by transparency.",
+        "Agreement between two estimates arrived at independently, treated as evidence that neither one was an artefact of how it was produced. The comfort comes entirely from the fact that the two teams did not talk, and it evaporates the moment you learn that they did.",
+        "A status granted by a recognised outside authority after an assessment, entitling a firm to state publicly that it meets a standard. What it buys is the right to stop arguing the point with every client individually, which is why it gets renewed even when nobody believes the assessment was searching."
+      ],
+      "prompt_version": 2
+    },
+    {
+      "term": "verifiable rewards",
+      "accepted": [
+        "verifiable reward"
+      ],
+      "definition": "Training signal a machine can check rather than a person judge: the tests pass, the answer matches, the proof compiles. The appeal is that it scales without human raters and cannot be flattered.",
+      "caution": "The term quietly limits its own scope. Only tasks with a checkable answer qualify, and almost none of the work you are paid for — a memo, a client recommendation, a judgement call — has an answer key. Promising this on judgement-heavy work is the overclaim to avoid. In a non-technical room it also sounds like a bonus scheme, so unpack it or use plain words.",
+      "example": "Coding and maths get verifiable rewards for free. Nothing in our analyst workflow has an answer key like that.",
+      "cues": [
+        {
+          "text": "You are explaining why the newest models are so strong at code and so weak at the judgement work clients actually pay for, and the difference is whether a machine can mark the answer.",
+          "setting": "work"
+        },
+        {
+          "text": "An MD asks what it would take to train a model on your internal process, and your first question is whether anything in it has a checkable right answer.",
+          "setting": "work"
+        },
+        {
+          "text": "In a design session you want the term for the class of training signal that needs no human rater because correctness is mechanical.",
+          "setting": "work"
+        },
+        {
+          "text": "You are pushing back on a plan to fine-tune on senior analysts' opinions, where nothing can be marked automatically.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "Bonus payments tied to business outcomes that can be measured, so the argument about payout happens once a year over a number.",
+        "Ratings collected from people at scale, where the signal is which of two answers a human preferred and the cost rises with every comparison you need.",
+        "Scores produced by a second model asked to judge the first, which is cheap and fast and inherits every blind spot the judge already has. The catch is that nothing outside the two of them has looked at anything.",
+        "Public benchmarks that let one lab compare its results with another's on the same tasks, so a claim about progress can be argued in the open. What they measure drifts out of date faster than anyone updates them, and by then the numbers are already in every deck.",
+        "Money held back from a supplier until an agreed condition is met and independently evidenced, so that the incentive stays live through the stretch of a contract where attention usually wanders. It is negotiated at signing by people who will never see the work, and it is the clause both sides remember."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

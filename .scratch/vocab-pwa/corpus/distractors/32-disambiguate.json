@@ -1,0 +1,15 @@
+{
+  "headword": "disambiguate",
+  "senses": [
+    {
+      "term": "disambiguate",
+      "distractors": [
+        "To strip the jargon out of a document so that a reader from outside the field can follow it.",
+        "To break a problem into parts small enough to be worked separately, then hand each part to whoever sits closest to it.",
+        "To merge records that turn out to refer to the same real thing, so that one client held under three spellings finally becomes a single row in the book.",
+        "To settle an argument by finding the position both sides can live with, which usually means neither leaves with the thing they came in asking for. The outcome is agreement rather than accuracy.",
+        "To spell out reasoning that had been left implicit, so that somebody reading the paper a year later can see why the decision went the way it did instead of having to reconstruct it backwards from whatever happened next."
+      ]
+    }
+  ]
+}

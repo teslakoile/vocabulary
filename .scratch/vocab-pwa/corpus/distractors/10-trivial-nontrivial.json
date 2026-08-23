@@ -1,0 +1,25 @@
+{
+  "headword": "trivial/nontrivial",
+  "senses": [
+    {
+      "term": "trivial",
+      "distractors": [
+        "Hard to explain but easy to do, so that the demonstration takes a minute and the write-up takes a day.",
+        "Important but not urgent: the kind of thing that never wins an argument about this week and quietly costs you next quarter.",
+        "Small in cost but large in risk, cheap to carry out and quite capable of taking a system down if it goes wrong. The size of the change and the size of the blast radius come apart here.",
+        "Repeated so often that it has stopped carrying any force, so that people hear the phrase coming and stop listening before the sentence ends. It is worn out by use rather than small in itself.",
+        "Not yet prioritised by anybody, sitting in a list where it will go on sitting until someone with a budget decides otherwise. It says where the thing stands in a queue rather than anything about how hard or how consequential it is."
+      ]
+    },
+    {
+      "term": "nontrivial",
+      "distractors": [
+        "Impossible with the technology available today, whatever anybody is willing to spend on it.",
+        "Needing approval from more than one team before it can start, so that the delay sits in the diary rather than in the work.",
+        "Not yet specified in enough detail for anyone to begin, so that the first real task is deciding what the job actually is. The gap is in the description rather than in the difficulty.",
+        "Expensive but otherwise entirely straightforward, where you know exactly what to do and the only open question is whether anybody will pay for it. The difficulty has already been converted into a number.",
+        "Of interest only to specialists, so that a room of generalists will not follow why it matters and will move to the next item. It is a claim about the size of the audience rather than about the size of the work."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "headword": "community of practice vs center of excellence",
+  "senses": [
+    {
+      "term": "community of practice",
+      "distractors": [
+        "A rotating assignment where people spend a fixed spell embedded in another team and then come back with whatever they picked up.",
+        "A shared channel where anyone can put a question and whoever is on duty that week is expected to answer it. The rota is published, so nobody has to work out who to ask.",
+        "A standing committee that reviews proposals against a published bar and can send them back for rework. Attendance is part of the job for the people on it, and what it decides binds the teams that come to it.",
+        "A reporting line drawn by discipline, so that specialists sit inside product teams day to day but are managed, promoted and paid through their craft. Membership is not something anyone opts into; it is simply where your name appears on the chart.",
+        "An outside professional body that sets a syllabus and certifies whoever passes it, so the qualification belongs to the person rather than to the employer. Its authority comes from the fact that other firms recognise the same badge, which is also what makes it worth the fee."
+      ]
+    },
+    {
+      "term": "center of excellence",
+      "distractors": [
+        "A service desk that takes routine requests from across the business and works them in the order they arrive.",
+        "A pilot team stood up to prove a technology works before anyone commits real money to it, and disbanded once that question has an answer.",
+        "A cross-functional squad assembled for one programme and dissolved the week it ships, so its people go back to the teams they were borrowed from. Nothing about it was meant to outlast the delivery.",
+        "The team whose numbers currently lead the scorecard, held up at the quarterly review so that everyone else can see what good looks like. The status is earned each quarter and moves to whoever is ahead in the next one.",
+        "An outside firm brought in on a statement of work because the skill is not worth hiring for permanently. It leaves when the contract ends, and everything it learned on the way leaves with it unless somebody insisted on writing it down first."
+      ]
+    }
+  ]
+}

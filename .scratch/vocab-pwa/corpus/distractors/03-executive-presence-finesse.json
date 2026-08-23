@@ -1,0 +1,25 @@
+{
+  "headword": "executive presence/finesse",
+  "senses": [
+    {
+      "term": "executive presence",
+      "distractors": [
+        "Formal authority handed down by a senior leader, so that you can commit the organisation to something without going back for permission.",
+        "Deep command of the technical detail in your own area, to the point where nobody in the room can correct you on it. It is expertise measured by depth rather than by bearing.",
+        "The visible backing of a senior figure, so that people read your request as carrying their weight rather than only your own. What it buys you belongs to whoever stands behind you and can be withdrawn the moment they change their mind.",
+        "Comfort in front of a large audience: the ability to hold a stage, keep a thousand people with you and land the last line on time without notes. It is a performing skill measured by the size of the room, and it says nothing about how you behave among six people deciding where the money goes.",
+        "A track record substantial enough that it argues for you before you open your mouth, so that a proposal with your name on it starts a step ahead of the same proposal from anyone else. It is accumulated evidence held in other people's memories, built over years rather than read off you in the first few minutes."
+      ]
+    },
+    {
+      "term": "finesse",
+      "distractors": [
+        "Brute persistence that simply wears the other side down until they stop objecting.",
+        "Blunt honesty that clears the air quickly, said of the person willing to name the awkward thing out loud while everyone else studies the table.",
+        "A formal process for settling a disagreement, with defined steps and somebody empowered to decide at the end of it. It is machinery the organisation supplies rather than anything the person running it brings.",
+        "Willingness to commit while the information is still incomplete, on the view that the cost of waiting exceeds the cost of being partly wrong. It is a stance towards risk, not a way of handling anything delicately.",
+        "The knack of remembering names, families and small details and producing them at the right moment, so that people feel known. It is warmth deployed on purpose, and it works on the relationship rather than on the difficulty in front of you."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "headword": "squarely",
+  "senses": [
+    {
+      "term": "squarely",
+      "accepted": [],
+      "definition": "Directly and without hedging, almost always about where something belongs or who owns it. It says the answer is not ambiguous.",
+      "caution": "It works about accountability and category fit, and sounds odd about physical or genuinely uncertain things. If the thing really is contested, squarely overclaims and invites someone to push back on exactly that.",
+      "example": "Cost governance sits squarely with the platform team, not with each product.",
+      "cues": [
+        {
+          "text": "A director asks who owns model evaluation. It is the platform team, and you want to say so in a way that ends the question.",
+          "setting": "work"
+        },
+        {
+          "text": "Legal asks whether the new regulation covers your product. It does, entirely, and you want one adverb that removes the wiggle room.",
+          "setting": "work"
+        },
+        {
+          "text": "You are writing a post-incident memo and need to place accountability without softening it.",
+          "setting": "work"
+        },
+        {
+          "text": "You forgot a friend's birthday. You want to take the blame without excuses or explanation.",
+          "setting": "life"
+        },
+        {
+          "text": "Someone asks whether a film counts as science fiction. It does, unambiguously, and you want to say so without qualifying.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Gradually over time, so that no single moment is the one that changed things.",
+        "In a way that balances competing interests, giving each side just enough of what it asked for to keep everyone at the table for another round.",
+        "Reluctantly, and only once every other option has been tried and has failed in front of the people who mattered.",
+        "Fairly to everyone involved, so that nobody can say afterwards that the process favoured one party. It is a claim about the handling, not about the result.",
+        "Approximately, within a margin loose enough that the number should not be quoted back at you. It is a soft claim wearing the clothes of a precise one, and it belongs in a first pass rather than a board paper."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "headword": "serialize",
+  "senses": [
+    {
+      "term": "serialize",
+      "accepted": [
+        "serialization",
+        "serialized",
+        "serialise"
+      ],
+      "definition": "To turn a structure that only exists in memory, an object or a graph or a trained model, into a flat run of bytes or text that can be stored or sent and then read back into the same shape at the other end.",
+      "caution": "The word has a second life in performance conversations, where serializing means forcing things through one at a time, the opposite of running them in parallel. Two engineers can talk past each other for ten minutes on that, so name the format or name the bottleneck and the ambiguity goes away. With a non-technical audience it lands as noise: say we save it in a form we can send.",
+      "prompt_version": 2,
+      "example": "The agent state has to be serialized before it goes on the queue, and half of these objects have no clean way to do that.",
+      "cues": [
+        {
+          "text": "An object holding your agent's working state needs to go onto a message queue, and you are explaining what has to happen to it before it can.",
+          "setting": "work"
+        },
+        {
+          "text": "Two services written in different languages need to exchange the same structure, and you are choosing the format both of them will write and read.",
+          "setting": "work"
+        },
+        {
+          "text": "A trained model has to be written to a file so that another process can load it back in exactly the shape it was.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "To split a large payload into chunks small enough to travel, then put them back in order once they have all arrived.",
+        "To squeeze data into fewer bytes by taking out whatever repeats in it, so that the same content costs less to hold and less to move between systems.",
+        "To scramble data with a key before it leaves the network, so that anyone intercepting it holds something they cannot read. Only whoever has the matching key gets anything back out of it.",
+        "To check an incoming payload against an agreed schema and turn it away when a required field is missing or arrives as the wrong type, so that bad data fails at the door rather than three systems further downstream.",
+        "To give every record a unique identifier drawn in order, so that two rows written in the same instant can still be told apart afterwards and the number itself says roughly when each of them arrived. It is cheap to assign and awkward to change later."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "headword": "by and large",
+  "senses": [
+    {
+      "term": "by and large",
+      "accepted": [],
+      "definition": "On the whole, allowing for exceptions you are not going to list. It concedes counterexamples exist while saying they do not change the conclusion.",
+      "caution": "It signals you have not checked the exceptions. Safe in conversation, risky in writing that will be scrutinised, because this is exactly where someone asks which cases you are excluding.",
+      "example": "By and large the migration went clean. Two services needed manual work.",
+      "cues": [
+        {
+          "text": "Your sponsor asks how the rollout went. It went well, and there were two ugly cases you would rather not itemise right now.",
+          "setting": "work"
+        },
+        {
+          "text": "You are summarising six months of model performance to a board and do not want to caveat every quarter.",
+          "setting": "work"
+        },
+        {
+          "text": "Someone asks how your holiday was. Good, apart from one bad day you do not want to dwell on.",
+          "setting": "life"
+        },
+        {
+          "text": "A friend asks whether you liked a novel. You did, with reservations you are not going to list over dinner.",
+          "setting": "life"
+        },
+        {
+          "text": "A colleague asks whether the new review process is working. It is, for most teams, and you do not want to claim it is universal.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "In every single case without exception, which is a much stronger claim than it sounds.",
+        "At a level of description kept deliberately free of detail, so the shape of a thing is visible and its mechanics are not.",
+        "According to the view most of the people in the room hold, offered as the reason a decision should go that way. It reports a headcount rather than a judgement.",
+        "Measured across a stretch of time long enough that short-term noise stops mattering, which is how a trend gets separated from a run of bad weeks. It is a claim about duration, not about coverage.",
+        "Taken across every part of an organisation rather than inside one team, which is what makes a number comparable between divisions. It widens the frame of a claim from local to enterprise-wide, and it usually raises the stakes of it."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

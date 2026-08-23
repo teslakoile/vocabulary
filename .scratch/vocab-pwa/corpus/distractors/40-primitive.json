@@ -1,0 +1,15 @@
+{
+  "headword": "primitive",
+  "senses": [
+    {
+      "term": "primitive",
+      "distractors": [
+        "An early and crude version of something, still running only because replacing it has never been urgent enough to schedule.",
+        "A feature so ordinary that buyers assume it is already there and notice it only when it turns out not to be. It wins nothing on its own, and its absence loses the deal.",
+        "A component lifted out of an open-source project and copied into your own codebase, so that the version you run stops moving on the day you took it. Whatever gets fixed upstream afterwards is now your problem to find and bring across yourself.",
+        "A low-level detail deliberately kept out of sight, on the grounds that anybody who has to think about it has been failed by the layer above them. Platform teams are judged partly on how much of this they manage to take off their own users' hands, and it is thankless work.",
+        "A crude workaround left in place because it happens to work and nobody wants to be the person who touched it last. Everyone knows it is there, it appears on no diagram anywhere, and the cost of it only becomes visible when somebody new has to change the thing sitting next to it."
+      ]
+    }
+  ]
+}

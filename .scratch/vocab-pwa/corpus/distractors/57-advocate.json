@@ -1,0 +1,25 @@
+{
+  "headword": "advocate",
+  "senses": [
+    {
+      "term": "advocate",
+      "distractors": [
+        "A neutral party brought in to settle a dispute between two sides who cannot resolve it themselves.",
+        "Someone senior who advises you in private, meeting you regularly to talk through your career and how to handle a difficult room.",
+        "A person appointed to test a proposal by arguing against it, so the weaknesses surface before a committee finds them. The opposition is assigned rather than sincerely held.",
+        "A colleague asked to give an account of your work to a panel deciding on a promotion, describing what they actually saw you do. What they contribute is evidence about the past, not pressure on the decision.",
+        "The senior person whose budget carries a piece of work and who answers to the board for whether it lands. It is a role defined by ownership of the money and the outcome, and it is usually written down somewhere on an org chart."
+      ]
+    },
+    {
+      "term": "advocate for",
+      "distractors": [
+        "To put a question to a formal vote so that the room goes on record, rather than settling it in conversation.",
+        "To set out both sides of a question evenly so a committee can choose, keeping your own preference deliberately out of it.",
+        "To carry out a decision you argued against once it has been taken, and to defend it outside the room as though it were your own. It is a discipline a committee expects, not a view you hold.",
+        "To sign off formally on something another team has proposed so that the work can proceed. The act is authority exercised at a gate, and it says nothing about whether you would have chosen it yourself.",
+        "To keep raising the same point in successive meetings until the objections stop being made, on the theory that persistence eventually reads as agreement. It describes a tactic for wearing a room down rather than the strength of anything actually said."
+      ]
+    }
+  ]
+}

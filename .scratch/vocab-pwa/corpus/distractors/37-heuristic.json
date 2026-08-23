@@ -1,0 +1,15 @@
+{
+  "headword": "heuristic",
+  "senses": [
+    {
+      "term": "heuristic",
+      "distractors": [
+        "A step-by-step procedure for a routine task, written out so that two different people following it end up with the same result.",
+        "A rule that has to hold without exception, where a single breach counts as a failure rather than as a cost somebody decided was worth paying.",
+        "A method guaranteed to find the best available answer if you let it run to the end, at whatever price in time and compute the search happens to demand. Correctness is the promise and the bill is the variable.",
+        "A number tracked over time to show whether something is moving the way you want it to, agreed in advance so that arguments about progress can be settled by looking at it rather than by who argues hardest.",
+        "An assumption written down at the start of the work so that it can be checked later, when the evidence finally arrives that either supports it or kills it. Its value is in being on the record: nobody can claim afterwards that the risk was never named out loud."
+      ]
+    }
+  ]
+}

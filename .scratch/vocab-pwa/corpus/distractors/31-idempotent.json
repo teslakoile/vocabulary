@@ -1,0 +1,15 @@
+{
+  "headword": "idempotent",
+  "senses": [
+    {
+      "term": "idempotent",
+      "distractors": [
+        "Safe for several copies to run at the same moment, because no two of them ever touch the same record.",
+        "Able to be undone cleanly afterwards, leaving the system as it stood before anything started and leaving no sign that it ever did.",
+        "Either finishing in full or leaving nothing behind at all, so there is no condition in which half the work has landed and half has not. It is a claim about what a failure is allowed to leave.",
+        "Able to pick up from the last checkpoint after an interruption rather than starting again at the beginning, so that a long job survives a restart without losing the hours already spent on it. The saved position is the whole trick.",
+        "Carrying nothing between calls, so any instance can serve any request and it does not matter which machine handled the one before. This is what lets you add capacity by adding copies rather than by making a single copy bigger, and it is why the load balancer needs no memory."
+      ]
+    }
+  ]
+}

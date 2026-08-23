@@ -1,0 +1,14 @@
+# Secrets. Never commit these.
+.secrets.local
+.dev.vars
+
+# Dependencies and build output.
+node_modules
+dist
+tsconfig.tsbuildinfo
+
+# Wrangler's local state, including the local D1 database.
+.wrangler
+
+# The capture spike keeps its own git repository, so it stays out of this one.
+.scratch/vocab-pwa/prototypes/capture-spike/

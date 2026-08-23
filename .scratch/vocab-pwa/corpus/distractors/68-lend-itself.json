@@ -1,0 +1,15 @@
+{
+  "headword": "lend itself",
+  "senses": [
+    {
+      "term": "lend itself",
+      "distractors": [
+        "To hand something over for a fixed period on the understanding that it comes back in the same condition.",
+        "To add credibility to something simply by being associated with it, so that one name on a page changes how the rest of it gets read.",
+        "To adjust automatically when the conditions change, so that nobody has to intervene to keep the thing working. The behaviour belongs to the system, and the change in conditions is what triggers it.",
+        "To be the condition that has to hold before anything else can happen, so that when it is missing nothing downstream is possible at all. It is a claim about what depends on what, and it is usually discovered late.",
+        "To make a claim on another team's people or budget on the grounds that the work is shared, which is the polite version of a fight about priorities. It is always addressed to whoever controls the resource rather than to the team that would do the work, and it gets settled well above both of them."
+      ]
+    }
+  ]
+}

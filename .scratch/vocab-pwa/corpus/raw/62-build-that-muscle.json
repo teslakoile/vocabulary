@@ -1,0 +1,45 @@
+{
+  "headword": "build that muscle",
+  "senses": [
+    {
+      "term": "build that muscle",
+      "accepted": [
+        "build the muscle",
+        "building that muscle",
+        "build this muscle",
+        "built that muscle",
+        "build that muscle up",
+        "build muscle"
+      ],
+      "definition": "To develop a capability by doing the thing repeatedly, on the view that it grows with practice rather than being something a team either has or lacks. The phrase promises reps, not a training course.",
+      "caution": "It says the ability is missing today. Said about another team that is a criticism in gym clothes; said about your own it is an admission, which is fine only if the next sentence names the actual reps. To a team already at capacity it lands as more work with no more people. It is also coaching-deck language, so in a written board paper it reads as a slogan and invites the obvious question of what the exercise is and who is doing it.",
+      "example": "We can buy the first three evaluations in. If we want this capability in-house, at some point we have to build that muscle ourselves.",
+      "cues": [
+        {
+          "text": "Your team keeps handing evaluation work to a consultancy, and you want to argue for doing it in-house repeatedly until they are good at it.",
+          "setting": "work"
+        },
+        {
+          "text": "A director asks why you are giving juniors the client presentations when a senior would do a better job today, and your answer is about where the team is in a year.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend says they are simply hopeless at cooking, and you want to say the ability is not fixed and comes from doing it over and over.",
+          "setting": "life"
+        },
+        {
+          "text": "You have started running twice a week and are explaining to a sceptical relative why the first month feeling awful is the whole point.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "To hire in people who already have the skill, on the view that buying a capability is always faster than growing one.",
+        "To write a process down in enough detail that anyone can follow it without asking, so the work stops depending on which particular person happens to be available.",
+        "To defend a budget line through a planning round so that a capability survives the cuts. It is a fight about money and about who has the sponsor's attention, and it is usually won before the meeting.",
+        "To add headcount to a team that is under pressure, on the assumption that what is short is hands rather than know-how. It is the most common answer to a delivery problem and often the one that makes the next quarter worse, because the new people need teaching.",
+        "To keep a capability in-house rather than hand it to a vendor, on the argument that anything genuinely core to the business should not be rented from someone else. The debate is about ownership and long-run dependency, and it tends to get settled on cost rather than on principle."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

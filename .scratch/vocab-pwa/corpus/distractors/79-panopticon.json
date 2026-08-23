@@ -1,0 +1,15 @@
+{
+  "headword": "panopticon",
+  "senses": [
+    {
+      "term": "panopticon",
+      "distractors": [
+        "An organisation where information flows freely in every direction, so anyone can see what anyone else is working on.",
+        "A single point that all traffic has to pass through, which makes it the natural place to apply a rule and the one place a failure takes everything else down with it.",
+        "A record kept in full and retained for years because a regulator may one day ask for it, complete enough that a decision taken in 2019 can be reconstructed line by line. Nobody consults it in the meantime.",
+        "A room in which the decisions of one team are examined by another that had no hand in making them, on the argument that fresh eyes catch what familiar ones stop seeing. It costs a week, and it is defended as the price of not repeating an expensive mistake.",
+        "The room from which a plant or a network is actually operated: live telemetry on the wall, alarms that route to a named person, and the ability to intervene directly on the thing being displayed. What defines it is the hand on the switch rather than the eye on the screen."
+      ]
+    }
+  ]
+}

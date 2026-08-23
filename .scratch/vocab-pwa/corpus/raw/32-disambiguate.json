@@ -1,0 +1,40 @@
+{
+  "headword": "disambiguate",
+  "senses": [
+    {
+      "term": "disambiguate",
+      "accepted": [
+        "disambiguation"
+      ],
+      "definition": "To settle which of two possible readings is the one meant, by adding whatever detail rules the other out. The job is to remove the choice, not to explain the thing.",
+      "caution": "It is a technical-register word, and in a business room it can sound like procedural cover for the actual fight: reach for it when two people simply want different outcomes and you look like you are managing them rather than answering them. Keep it for cases where the confusion really is about which thing a word points at, and say we disagree when that is what is happening.",
+      "prompt_version": 2,
+      "example": "Both teams say the client and mean different entities. Before we go further can we disambiguate that one word?",
+      "cues": [
+        {
+          "text": "Two teams use the same word for different objects, and the argument in the room is really about that rather than about the design.",
+          "setting": "work"
+        },
+        {
+          "text": "A figure on a slide could be read as either a monthly or a rolling twelve-month number, and you want the author to make the wrong reading impossible.",
+          "setting": "work"
+        },
+        {
+          "text": "Two people in your friendship group have the same name and you are about to tell a long story about one of them.",
+          "setting": "life"
+        },
+        {
+          "text": "Someone suggests meeting next Friday and you genuinely cannot tell which Friday they mean.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "To strip the jargon out of a document so that a reader from outside the field can follow it.",
+        "To break a problem into parts small enough to be worked separately, then hand each part to whoever sits closest to it.",
+        "To merge records that turn out to refer to the same real thing, so that one client held under three spellings finally becomes a single row in the book.",
+        "To settle an argument by finding the position both sides can live with, which usually means neither leaves with the thing they came in asking for. The outcome is agreement rather than accuracy.",
+        "To spell out reasoning that had been left implicit, so that somebody reading the paper a year later can see why the decision went the way it did instead of having to reconstruct it backwards from whatever happened next."
+      ]
+    }
+  ]
+}

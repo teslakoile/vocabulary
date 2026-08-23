@@ -1,0 +1,42 @@
+{
+  "headword": "verticals/industry verticals",
+  "senses": [
+    {
+      "term": "vertical",
+      "accepted": [
+        "verticals",
+        "industry vertical",
+        "industry verticals"
+      ],
+      "definition": "A slice of the market defined by the industry it serves - banking, healthcare, logistics - as opposed to a horizontal capability that is the same for everyone. Going vertical by vertical means building and selling differently for each one.",
+      "caution": "It is a go-to-market word, not an architecture one. Saying you will take the product one of these at a time commits you in public to per-industry work: separate data, separate regulators, separate sales motion, and the immediate follow-up is which one you are starting with and what the others are waiting for. Used for a team's internal domain it confuses anyone who hears it as a market segment.",
+      "example": "The core platform stays horizontal. We only build vertical-specific pieces where the regulator forces us to.",
+      "cues": [
+        {
+          "text": "An MD asks how you plan to expand next year. The answer is one sector at a time rather than one capability at a time, and you need the word for those market slices.",
+          "setting": "work"
+        },
+        {
+          "text": "A sponsor wants to know why the healthcare build costs twice what the banking one did, and you need the term for the thing that makes them effectively different products.",
+          "setting": "work"
+        },
+        {
+          "text": "You are writing a strategy note that separates what every client gets from what only insurers get, and you need a heading for the second category.",
+          "setting": "work"
+        },
+        {
+          "text": "In a pipeline review someone asks why the same demo lands with logistics clients and falls flat with asset managers. You want the word for the split that explains it.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "A stage of the sales process, from first contact through to a signed contract, used to say where a given deal has got to.",
+        "A reporting line running from the most junior analyst up to the board, drawn so that everybody knows who signs off what and where an escalation finally stops.",
+        "A layer of the technology stack, from storage at the bottom up to the interface at the top, where each one only has to know about the layer directly beneath it and can be replaced without disturbing the rest.",
+        "A capability that arrives identical for every customer whatever business they happen to be in, built once and sold everywhere. The economics come from never having to change it, which is also the reason it will never be a perfect fit for anybody.",
+        "A market defined by where the customer sits rather than by what they do, each one carrying its own regulator, its own price list and its own rules about where the data is allowed to be held. Two customers in the very same trade can fall on opposite sides of one."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

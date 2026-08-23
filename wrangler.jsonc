@@ -1,0 +1,43 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "vocabulary",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-08-23",
+
+  // One Worker serves the built PWA and the API. Cloudflare Workers can serve
+  // static assets directly, so the separate Pages project ticket 13 assumed is
+  // not needed: fewer moving parts, one deploy, one origin.
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "vocabulary",
+      "database_id": "c111abf3-5f21-4bfc-ab65-6f6e6f335c1f"
+    }
+  ],
+
+  // Guessing defence, so the shared key does not have to carry it on length
+  // alone. Counted only on a failed attempt, keyed on the caller's IP, so a
+  // device holding the right key is never throttled. Free on Workers.
+  "unsafe": {
+    "bindings": [
+      {
+        "name": "LOGIN_LIMITER",
+        "type": "ratelimit",
+        "namespace_id": "1001",
+        "simple": { "limit": 10, "period": 60 }
+      }
+    ]
+  },
+
+  // Hourly, not daily. The Worker sends only when it is 13:00 in the timezone
+  // stored in `settings`, so travel and DST cannot break the nudge.
+  "triggers": { "crons": ["0 * * * *"] },
+
+  "observability": { "enabled": true }
+}

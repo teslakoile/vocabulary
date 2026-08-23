@@ -1,0 +1,45 @@
+{
+  "headword": "disparage",
+  "senses": [
+    {
+      "term": "disparage",
+      "accepted": [
+        "disparaging",
+        "disparagement"
+      ],
+      "definition": "To speak about someone or something in a way that lowers it, usually by a passing remark or faint praise rather than open attack. It describes a manner of speaking, not a disagreement.",
+      "caution": "It mostly appears as an accusation or a denial, and the denial never works: I don't want to disparage the previous team announces precisely what you are about to do. Its other trap is defensive — calling someone's honest criticism disparagement is a way of dodging the criticism, and senior people can see you do it.",
+      "example": "I'm not trying to disparage the previous team — they were solving a different problem with a fifth of the budget.",
+      "cues": [
+        {
+          "text": "You want to criticise a decision without it sounding like you are running down the people who made it.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend keeps making small remarks that quietly diminish his partner's job, and you are describing the pattern to someone else.",
+          "setting": "life"
+        },
+        {
+          "text": "A relative constantly talks down the town you moved to, and you want a precise word for what he is doing rather than just calling him rude.",
+          "setting": "life"
+        },
+        {
+          "text": "You are reading a review that never quite attacks the book but leaves it smaller than it found it.",
+          "setting": "life"
+        },
+        {
+          "text": "Someone asks why you left a group chat, and the honest answer is the constant belittling of one member.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "To dispute a claim by putting contrary evidence in front of the room and letting the numbers do the work.",
+        "To overstate how important something is so that it gets attention it would not otherwise be given, which costs you credibility the second time.",
+        "To withdraw public support from a person or a project you previously backed. It is a change of position rather than a choice of words, and the absence of the endorsement is noticed more than any sentence would have been.",
+        "To circulate information you know to be untrue in order to damage someone, which is a question about the facts rather than about the tone. It is also the version of this that ends up involving a lawyer.",
+        "To pin responsibility for a collective failure on one named person so that the review can be closed and everyone else can get back to work. It is usually done without malice and it is almost always the wrong answer, because the conditions that produced the failure are still there for whoever fills the seat next."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

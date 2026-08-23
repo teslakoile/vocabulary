@@ -1,0 +1,15 @@
+{
+  "headword": "watch outs",
+  "senses": [
+    {
+      "term": "watch outs",
+      "distractors": [
+        "Risks with a named owner and a mitigation plan, tracked in a register somebody reviews on a fixed cycle.",
+        "Metrics reviewed at the end of every week, so that a drift shows up while there is still time to do something about it.",
+        "Conditions that automatically halt a release the moment they are met, written down in advance precisely so that nobody has to make the call under pressure. They are a brake wired into the process, not a heads-up handed to an audience.",
+        "Lessons recorded after a piece of work has finished, gathered in a session where the team says what it would do differently next time. They face backwards over something already done, and their value depends on somebody reading them before the next one starts.",
+        "Items deliberately deferred to a later phase, listed so that nobody mistakes their absence for an oversight and quietly builds them anyway. The list draws the edge of what is in scope, which is a statement about what will not be delivered rather than about what might go wrong with what will."
+      ]
+    }
+  ]
+}

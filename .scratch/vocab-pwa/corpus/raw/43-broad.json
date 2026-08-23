@@ -1,0 +1,44 @@
+{
+  "headword": "broad",
+  "senses": [
+    {
+      "term": "broad",
+      "accepted": [
+        "broadly"
+      ],
+      "definition": "Covering a wide range rather than a narrow one. Said about coverage or scope it means wide; said about agreement it means widespread but not unanimous; said about a description it means the shape without the detail.",
+      "caution": "About agreement or support it is a hedge, and senior listeners hear the hedge before they hear the reassurance: 'broad support' says somebody dissented and you are not naming them, and the next question is who. About your own analysis it concedes there is no detail yet, which is fine if you meant to concede it. As a noun it is dated slang for a woman and is offensive, so keep it an adjective.",
+      "example": "There's broad support from the business, though procurement still has questions about the licensing.",
+      "cues": [
+        {
+          "text": "Your sponsor asks whether the other directors are behind the platform plan. Most are, one is not, and you want an adjective that is honest without opening that up in this meeting.",
+          "setting": "work"
+        },
+        {
+          "text": "A steering committee asks about the new team's remit. It reaches into every business unit rather than one specialism, and you want a word for how wide that is.",
+          "setting": "work"
+        },
+        {
+          "text": "A director catches you in the corridor and asks for the shape of next year's roadmap. You can give the outline but not the specifics, and you want to signal that as you start.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend asks what a mutual acquaintance is actually good at. She does many things capably rather than one thing brilliantly, and you mean that as praise.",
+          "setting": "life"
+        },
+        {
+          "text": "You are choosing a film for a group with very different tastes and want a word for something with wide appeal rather than something you personally love.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Deep in a single area at the expense of range, so the answers are strong inside a narrow band and thin everywhere outside it.",
+        "Applying only to a defined subset of cases, with the boundary written down so that anything falling outside it is plainly out of scope.",
+        "Agreed by everyone present with no dissent at all, and any objection formally minuted before the vote if there was one. The claim being made is unanimity, and a single hand going up disproves it.",
+        "Widening steadily over time to take in more ground than it started with, so that what was true of it last year understates it now. The word is about the direction of travel rather than the size at any one moment, which is why it is worth so little in a business case.",
+        "Stated so precisely that no reading other than the intended one is left open, which is exactly what makes it usable in a contract and useless in a conversation where the parties have not yet worked out what it is they actually want from each other."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

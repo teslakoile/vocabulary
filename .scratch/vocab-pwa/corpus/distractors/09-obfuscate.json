@@ -1,0 +1,15 @@
+{
+  "headword": "obfuscate",
+  "senses": [
+    {
+      "term": "obfuscate",
+      "distractors": [
+        "To make something hard to follow without meaning to, usually by writing it in a hurry.",
+        "To summarise at a level so high that the detail somebody needed drops out, leaving a true statement nobody can act on.",
+        "To encrypt data so that it cannot be read in transit, with the plain version recoverable by anyone holding the key. What it defends against is interception rather than understanding.",
+        "To refuse to answer the question at all, either by declining outright or by talking steadily until the time in the room runs out. The refusal is visible to everybody present, which is exactly what makes it a different move.",
+        "To restate somebody's argument in a weaker form and then attack the weaker version, so that the win is over a position they never actually held. The dishonesty sits in what you built for them, not in how clearly you built it."
+      ]
+    }
+  ]
+}

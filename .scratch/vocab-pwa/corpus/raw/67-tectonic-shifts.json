@@ -1,0 +1,44 @@
+{
+  "headword": "tectonic shifts",
+  "senses": [
+    {
+      "term": "tectonic shift",
+      "accepted": [
+        "tectonic shifts"
+      ],
+      "definition": "Deep structural change in the conditions everyone is operating under, big enough to rearrange the landscape rather than move things around on it.",
+      "caution": "It is an enormous word and it inflates on contact with quarterly news. Senior people have heard it applied to five things that turned out to be nothing, so spend it only on change you could still point at in five years. It also implies slow and unstoppable, which makes it wrong for a shock.",
+      "example": "The interesting thing isn't this quarter's numbers, it's the tectonic shift in what clients now assume we'll automate.",
+      "cues": [
+        {
+          "text": "You are opening a board update and want to frame three years of movement in client expectations as structural rather than a trend.",
+          "setting": "work"
+        },
+        {
+          "text": "A sponsor keeps reacting to competitor announcements and you want to redirect him to the slower change underneath them.",
+          "setting": "work"
+        },
+        {
+          "text": "You are writing a strategy memo about how the collapsing cost of inference has changed what is worth building at all.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend's industry has changed so much since he trained for it that the job is not the same job, and you want a word for that scale of change.",
+          "setting": "life"
+        },
+        {
+          "text": "You are describing to family how differently your city has come to feel over a decade.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "A sudden reversal that catches everyone unprepared and is over before anyone can respond.",
+        "A steady improvement in performance quarter after quarter, small each time and visible only when you look back across years.",
+        "A change of leadership that reorders who reports to whom while leaving the work itself exactly where it was. It moves boxes on a chart and not much else.",
+        "A rotating schedule that spreads coverage across time zones so somebody is always awake when a system breaks. It is an arrangement about people and hours rather than about markets.",
+        "Persistent friction between two parts of a business that keeps resurfacing in different forms: a missed handover this month, a disputed number the next. The cause never gets addressed, so the symptom keeps coming back."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

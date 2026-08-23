@@ -1,0 +1,42 @@
+{
+  "headword": "dogfooding",
+  "senses": [
+    {
+      "term": "dogfooding",
+      "accepted": [
+        "dogfood",
+        "eat your own dog food",
+        "eating our own dog food"
+      ],
+      "definition": "Using your own product for real work before asking anyone else to. The point is not that you tested it; the point is that you feel its defects the way a customer would, on work you are judged on.",
+      "caution": "The bar is higher than people claim. Installing your own tool is not dogfooding unless something you care about breaks when it breaks. It is also an internal word with a self-congratulatory edge, and said to a client it raises the question it was meant to settle: if you had to tell me you use it, who else does?",
+      "example": "We're not putting the assistant on anyone's desk until we've been dogfooding it for a month ourselves.",
+      "cues": [
+        {
+          "text": "You are arguing the team should run its own weekly reporting on the platform it wants to sell internally, before anyone outside is asked to touch it.",
+          "setting": "work"
+        },
+        {
+          "text": "A sponsor asks how you will find the rough edges before a client does.",
+          "setting": "work"
+        },
+        {
+          "text": "Someone proposes a launch date and you want the phrase for the month of real internal use you want in front of it.",
+          "setting": "work"
+        },
+        {
+          "text": "You are explaining why one team's tool has an unusually good workflow: they live inside it every single day.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "Running a limited release to a small group of friendly customers who have agreed to put up with rough edges.",
+        "Testing a system with synthetic traffic shaped to look like the real thing, so that load can be pushed well past anything a real day would ever produce.",
+        "Reviewing a competitor's product feature by feature and scoring it against your own, usually in a grid that ends up in front of a board. The exercise says more about what you fear than about what they built.",
+        "Trialling a change on a small share of live users while everyone else stays on the old path, so that any difference in behaviour between the two groups can be attributed to the change rather than to the week it happened in.",
+        "Giving influential outsiders early access in exchange for their feedback and, if it goes well, their public support. What is being bought is a set of names willing to be quoted on the day of launch, and the feedback is usually the smaller half of the deal."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

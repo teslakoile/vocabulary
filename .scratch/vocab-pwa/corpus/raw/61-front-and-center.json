@@ -1,0 +1,42 @@
+{
+  "headword": "front-and-center",
+  "senses": [
+    {
+      "term": "front and center",
+      "accepted": [
+        "front-and-center",
+        "front and centre",
+        "front-and-centre"
+      ],
+      "definition": "In the most prominent position, where it cannot be missed. Usually said about what you deliberately put at the center of a document, a meeting, or a strategy.",
+      "caution": "It is a claim about visibility, not about importance, and the two come apart: whatever you put there also takes the questions, so the phrase is really a decision about exposure. That is doubly true of a person - being put there is not purely a compliment, because whoever stands there answers for the thing. The register is spoken and distinctly American, so in a formal board paper it reads breezier than everything around it.",
+      "example": "Put the cost of doing nothing front and center. Everything else can go in the appendix.",
+      "cues": [
+        {
+          "text": "You are advising a colleague on a board deck, and the risk they buried on slide fourteen is the one thing the board most needs to see.",
+          "setting": "work"
+        },
+        {
+          "text": "A sponsor asks what actually changed in the new strategy, and the honest answer is that a topic which used to sit in the appendix is now the first thing anybody sees.",
+          "setting": "work"
+        },
+        {
+          "text": "You are hanging pictures and want one particular photograph in the most visible spot in the room rather than tucked off to the side.",
+          "setting": "life"
+        },
+        {
+          "text": "A friend asks what you are prioritising now that the children have left home, and the answer is something you used to squeeze in around everything else.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Placed first in a sequence of steps, so that everything after it depends on it being done.",
+        "Handled personally by the most senior person available rather than delegated down to whoever happens to have capacity that week.",
+        "Settled before any other item on the agenda can be discussed, because nothing that follows it makes sense until it is. It is a claim about sequence and about what blocks what.",
+        "Kept visible only to the people who actually need it and closed to everyone else, so that a sensitive number does not travel further than intended. The control is on the audience, and it is set deliberately.",
+        "Turned to face the customer rather than the back office, naming the part of a business a client actually touches: the people, the screens, the paperwork they sign. Everything behind that line is someone else's problem to run, and it is staffed and priced differently."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

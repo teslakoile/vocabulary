@@ -1,0 +1,42 @@
+{
+  "headword": "amenable",
+  "senses": [
+    {
+      "term": "amenable",
+      "accepted": [],
+      "definition": "Open to something without having agreed to it: willing to go along if it comes to that. Of a problem or a dataset rather than a person, it means well suited to a particular treatment.",
+      "caution": "Its softness is the whole point and it evaporates in the retelling. Tell a room the CFO was amenable and half of them will hear that he agreed, and when he objects three weeks later that gap is yours to explain. It also quietly grades the person, so it reads better about how an idea was received than about a senior colleague's temperament.",
+      "prompt_version": 2,
+      "example": "The MD was amenable to a phased rollout, though I want to be clear that nothing is signed.",
+      "cues": [
+        {
+          "text": "You sounded out a director in the corridor about moving the deadline and they did not push back. You are reporting that to your team without overstating what you have.",
+          "setting": "work"
+        },
+        {
+          "text": "A vendor has hinted they could flex on the licence terms, and your sponsor asks how the conversation went.",
+          "setting": "work"
+        },
+        {
+          "text": "A dataset turns out to be clean and regular enough that a simple model handles it, and you are explaining in review why nothing more elaborate is needed.",
+          "setting": "work"
+        },
+        {
+          "text": "You floated Christmas at your parents' rather than hers and your partner did not object. Her sister asks whether it is settled.",
+          "setting": "life"
+        },
+        {
+          "text": "You asked the landlord about getting a cat and got a shrug rather than a no.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Eager to take on additional responsibility, and saying so before anybody has offered it.",
+        "Easily talked out of a position you held, so that the last person to make a case tends to be the one who carries you.",
+        "Formally committed to a course of action, on the record and in a form other people will hold you to later. The question of willingness closed some time ago, which is the whole difference.",
+        "Able to be corrected or revised later without much cost, so that getting it wrong now turns out not to be expensive. It is a property of how easily a thing can be changed, said of the decision rather than of anybody making it.",
+        "Pleasant in manner but slow to act, agreeable in every conversation and reliably still exactly where you left them a fortnight later. The complaint is about the distance between how somebody sounds and what they actually do, which is a judgement rather than a state of being open to something."
+      ]
+    }
+  ]
+}

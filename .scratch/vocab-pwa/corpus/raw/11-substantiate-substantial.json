@@ -1,0 +1,73 @@
+{
+  "headword": "substantiate/substantial",
+  "senses": [
+    {
+      "term": "substantiate",
+      "accepted": [
+        "substantiated"
+      ],
+      "definition": "To back a claim with evidence someone else can check. It is about producing the proof, not about turning out to be right.",
+      "caution": "Asking someone to substantiate something is a challenge however gently you say it, and everyone in the room hears the doubt. Used about your own claims it reads as rigour; used about a colleague's in front of their boss it reads as an ambush, so if you must, ask for the source rather than for substantiation.",
+      "example": "I can substantiate the thirty per cent figure from two quarters of tickets, it is not a vendor number.",
+      "cues": [
+        {
+          "text": "A director accepts your recommendation and then asks where the number came from, and you want the verb for supplying that.",
+          "setting": "work"
+        },
+        {
+          "text": "You are reviewing a paper whose central claim rests on one unsourced statistic, and you want to name politely what it is missing.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend repeats a health claim they read online, and you want the word for what you would want before believing it.",
+          "setting": "life"
+        },
+        {
+          "text": "An insurer asks you to back the value of a lost item with something more than your word for it.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "To state a claim more forcefully than you did the first time.",
+        "To agree with a position in public, so that the person who made it is no longer standing alone.",
+        "To cut a claim back to its essential point, dropping everything that was not doing work in the sentence. What comes out is shorter, not better supported.",
+        "To confirm that the correct process was followed, checking each step against what the policy said should happen. The finding is about the procedure rather than about whether the claim is true.",
+        "To restate somebody's argument in your own words until they agree you have it right, which buys goodwill and settles nothing about whether it holds."
+      ],
+      "prompt_version": 2
+    },
+    {
+      "term": "substantial",
+      "accepted": [],
+      "definition": "Big enough to matter, said of an amount, a change, or a piece of work. It claims weight while declining to give a number.",
+      "caution": "A hedge that sounds like a fact. In front of anyone numerate, substantial savings invites the immediate question of how much, and if you cannot answer you have lost more ground than the vague word ever bought you. Keep it for cases where the figure is genuinely not yours to give, and give the figure everywhere else.",
+      "example": "There is a substantial gap between what the pilot proved and what the rollout is assuming.",
+      "cues": [
+        {
+          "text": "You want to call the cost reduction meaningful in a paper where you are not allowed to publish the exact figure.",
+          "setting": "work"
+        },
+        {
+          "text": "A colleague's contribution to the project went far beyond a review, and you want to credit it in writing.",
+          "setting": "work"
+        },
+        {
+          "text": "Describing a restaurant to a friend, you want a word for portions that genuinely fill you rather than decorate the plate.",
+          "setting": "life"
+        },
+        {
+          "text": "A neighbour asks what the roof repair cost, and you want to convey that it was a lot without naming the figure.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Existing only in theory, with nothing built and nobody using it.",
+        "Just sufficient to clear the minimum somebody set, and not one unit more than that.",
+        "Growing steadily over time, at a rate you could have predicted a year ago from the same line. It describes the trend rather than the size.",
+        "Agreed by everyone involved, so that nobody in the room is still holding a private objection. It reports where the room has landed, not how big the thing is.",
+        "Difficult to measure precisely, so that any figure you put on it will be argued with. It is a statement about the instrument rather than about the quantity."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

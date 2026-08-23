@@ -1,0 +1,46 @@
+{
+  "headword": "delibrate/intentional",
+  "senses": [
+    {
+      "term": "deliberate",
+      "accepted": [
+        "intentional",
+        "deliberately",
+        "intentionally"
+      ],
+      "definition": "Done on purpose and after thought, rather than by accident or by drift. Deliberate carries a note of unhurried care that intentional does not: a deliberate pace is measured, an intentional one is merely chosen.",
+      "caution": "About someone else's action it converts a mistake into a choice, which is why it turns up in incident reviews, complaints and disciplinary letters. About your own plan it has become management shorthand for going slowly, so a sponsor who is already impatient hears we are being deliberate as a delay dressed up as a virtue. If all you mean is that the outcome was not an accident, on purpose is the plainer and safer phrase.",
+      "example": "The gap in the rollout schedule is deliberate, we want a full month of production data before the next region goes live.",
+      "cues": [
+        {
+          "text": "A sponsor reads the gap in your roadmap as a slip, and you need to say the pause was chosen rather than accidental.",
+          "setting": "work"
+        },
+        {
+          "text": "In an incident review you have to state whether the configuration change was made knowingly, and it was.",
+          "setting": "work"
+        },
+        {
+          "text": "You are describing a hiring approach that moves slowly by design, because each early hire shapes the team.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend asks whether you left a name off the invitation by mistake, and you did not.",
+          "setting": "life"
+        },
+        {
+          "text": "Someone speaks in an unhurried way with every word chosen, and you want the adjective for that manner.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Done out of habit and without conscious thought, the way you take the same route home without ever deciding to.",
+        "Announced in advance to everybody it will affect, so that nobody has to learn about it from somewhere else. It is about the warning, not the thinking.",
+        "Agreed collectively before being carried out, with everyone who will be affected having had a chance to object first. What it describes is how many people signed up to the thing, not the quality of the thought behind it.",
+        "Carried out despite an explicit instruction not to, where the person doing it knew the rule perfectly well and went ahead regardless. The weight of the word would sit in the defiance, which is a claim about the instruction rather than about the care taken.",
+        "Repeated at regular intervals on a fixed cadence, so that everybody knows when the next one falls without having to ask. It describes the rhythm on which a thing happens rather than the state of mind of whoever set that rhythm up, and a badly chosen cadence is kept just as faithfully as a good one."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

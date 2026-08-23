@@ -1,0 +1,15 @@
+{
+  "headword": "continuum",
+  "senses": [
+    {
+      "term": "continuum",
+      "distractors": [
+        "A stretch of uninterrupted running with no outage in it, quoted as the number of days since the last one.",
+        "A borderline case picked deliberately to test where a rule stops applying, so that whoever wrote the rule has to say out loud which side of it this one falls.",
+        "The position halfway between two stated extremes, arrived at by splitting the difference so that both camps can leave the room claiming they were partly heard. It is a settlement between people rather than a description of anything.",
+        "A ladder of named stages a team climbs in order, each rung carrying criteria you either meet or do not, and nobody standing on two rungs at once. It exists to tell people how far along they are, what the next step is going to cost and who has already made it.",
+        "A set of options priced in tiers, each one adding capability over the one below so that buyers sort themselves by what they are willing to pay. The gaps between the tiers are the whole design, and moving a feature from one tier to the next is a commercial decision rather than a technical one."
+      ]
+    }
+  ]
+}

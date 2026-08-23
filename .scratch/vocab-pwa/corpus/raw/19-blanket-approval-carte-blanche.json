@@ -1,0 +1,44 @@
+{
+  "headword": "blanket approval/carte blanche",
+  "senses": [
+    {
+      "term": "blanket approval",
+      "accepted": [
+        "carte blanche"
+      ],
+      "definition": "Permission given once and in advance to cover a whole class of decisions, so that each one does not have to come back for review. The point is the scope of the freedom rather than the size of any single decision inside it.",
+      "caution": "Claiming it is far riskier than having it. Tell a committee you have blanket approval and you have invited someone to go and check, and permissions of this shape almost always turn out to have had conditions attached that nobody wrote down. Carte blanche carries a whiff of indulgence on top: about someone else it implies they are unsupervised, about yourself it sounds like a boast.",
+      "example": "We do not have blanket approval for production data, it is per use case, and the last one took three weeks.",
+      "cues": [
+        {
+          "text": "A team believes one sign-off last quarter covers every future use of customer data, and you need the phrase for what they think they have.",
+          "setting": "work"
+        },
+        {
+          "text": "A sponsor offers to let you make all the tooling decisions for the year without coming back to him each time.",
+          "setting": "work"
+        },
+        {
+          "text": "You are drafting a governance note about which decisions need a case-by-case review and which do not.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend's parents have told her to plan the anniversary party however she likes, with no limit on the budget.",
+          "setting": "life"
+        },
+        {
+          "text": "A neighbour is letting the builder choose every fitting in the new kitchen, with no say in it at all.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Permission granted for one specific case only, with the next one having to come back and ask again from the start.",
+        "A decision taken without consulting anybody who might have objected, on the view that asking would have cost more time than it was worth.",
+        "Provisional agreement pending a formal sign-off, enough to start work against but not enough to spend against. What it hands you is the nod, with the actual permission still sitting somewhere ahead of you.",
+        "A budget set aside for needs nobody has foreseen, drawn on when something turns up that the plan never contained. It is money held in reserve rather than permission held in advance, and each draw still has to be released case by case.",
+        "A time-limited exemption from a rule, granted because the rule would otherwise block something urgent, and expiring on a date written into the grant itself. The exception is narrow and the clock is the whole point of it, which is nearly the opposite of a freedom whose value lies in how wide it runs."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

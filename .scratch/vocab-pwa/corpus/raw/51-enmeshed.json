@@ -1,0 +1,42 @@
+{
+  "headword": "enmeshed",
+  "senses": [
+    {
+      "term": "enmeshed",
+      "accepted": [
+        "enmesh",
+        "enmeshment",
+        "enmeshing"
+      ],
+      "definition": "Tangled into something so completely that you can no longer act, or be understood, separately from it. Used about relationships and organisations where the entanglement has stopped being healthy.",
+      "caution": "It is not a neutral word for coupling. It comes out of family therapy and carries a judgement about lost boundaries, so calling two teams enmeshed says their relationship is unhealthy rather than close, and said about actual people it lands like a diagnosis you are not qualified to hand out. If all you mean is that two systems depend on each other, tightly coupled costs you nothing and starts no arguments.",
+      "example": "Support and engineering aren't collaborating, they're enmeshed - neither one can plan a quarter without the other in the room.",
+      "cues": [
+        {
+          "text": "You are describing a friend whose life has folded so completely into their partner's that they no longer seem to hold separate opinions about anything.",
+          "setting": "life"
+        },
+        {
+          "text": "A cousin's business and their marriage have grown into each other to the point that neither can be sorted out without the other, and you want one word that is honest about the trouble in it.",
+          "setting": "life"
+        },
+        {
+          "text": "Two teams can no longer plan a quarter, hire or ship without the other in the room, and you want a word that signals this has gone past healthy collaboration.",
+          "setting": "work"
+        },
+        {
+          "text": "You are writing about a supplier relationship where your processes and theirs have grown together so far that leaving would mean rebuilding the business, and you need something stronger than dependent.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "Deeply committed to a cause or a group, in the way that shows up in what you give up rather than in what you say.",
+        "Placed inside another team for a stretch so that you work to their rhythm and their priorities, while your reporting line stays exactly where it was.",
+        "Absorbed in a task to the exclusion of everything else, to the point where hours go by without your noticing them and whatever else was due that day quietly does not happen.",
+        "Held back by rules and procedure written for a situation that no longer exists, so that the sensible course takes six approvals and the unhelpful one takes none. The obstruction is in the process rather than in anybody's intent.",
+        "Aligned closely enough with somebody that the two plans never come into conflict, because each side checks with the other before it moves. The coordination is deliberate, it is reviewed on a schedule, and either of them could stop doing it next month at very little cost."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

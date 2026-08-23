@@ -1,0 +1,46 @@
+{
+  "headword": "asymmetric",
+  "senses": [
+    {
+      "term": "asymmetric",
+      "accepted": [
+        "asymmetry",
+        "asymmetrical",
+        "asymmetries"
+      ],
+      "definition": "Unequal in a way that changes the decision, usually about a bet where the downside is small and bounded and the upside is many times larger. It describes the shape of the payoff, not the odds.",
+      "caution": "It says nothing about likelihood, so calling something asymmetric is not calling it a good idea - a lottery ticket is asymmetric. It also only earns its place if you can say which side is bigger and roughly by how much; used bare it dresses a hunch as analysis, and an investment committee is precisely the room that asks for the two numbers. Technical listeners have the word already spoken for by encryption and by information asymmetry, so name what is uneven.",
+      "example": "The pilot is asymmetric: worst case we lose a quarter of one team's time, best case we retire two vendors.",
+      "cues": [
+        {
+          "text": "You are pitching a small pilot to a sponsor. The cost is capped at one quarter of a team's time and the payoff, if it lands, is retiring two suppliers, and you want the word for that shape.",
+          "setting": "work"
+        },
+        {
+          "text": "An investment committee asks why you would take a chance that will probably fail, and your answer is about the size of the two outcomes rather than the odds.",
+          "setting": "work"
+        },
+        {
+          "text": "You are arguing against a change that saves a modest amount of money and risks a regulatory finding, and you need the word for a bet whose shape runs the wrong way.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend asks whether to send a speculative application for a job they almost certainly will not get. It costs them an evening and it could change their decade.",
+          "setting": "life"
+        },
+        {
+          "text": "You are talking your partner out of skipping travel insurance to save forty pounds on a trip that has already cost thousands.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Reversible at any point and at no real cost, so the decision can be unwound the moment it stops looking right.",
+        "Weighted so that both sides carry the same exposure, and neither can be hurt by an outcome that leaves the other untouched.",
+        "Structured so that a gain on one side is offset by a loss on the other, leaving the position flat whichever way the market moves. What you are buying is the removal of the outcome rather than the outcome itself.",
+        "Uncertain in a way you cannot put a number on, because the probabilities themselves are unknown rather than merely unfavourable. It is the difference between a bet you can price and a situation you can only describe.",
+        "Spread across many small positions instead of concentrated in one, so that no single failure can take the whole book down with it. It gives up the chance of an outsized result in exchange for surviving long enough to place the next round of bets."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

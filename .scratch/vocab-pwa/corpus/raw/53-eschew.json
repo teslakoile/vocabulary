@@ -1,0 +1,42 @@
+{
+  "headword": "eschew",
+  "senses": [
+    {
+      "term": "eschew",
+      "accepted": [
+        "eschews",
+        "eschewed",
+        "eschewing"
+      ],
+      "definition": "To avoid something deliberately and on principle, having had the option to take it. The choice, rather than the circumstance, is the whole point of the word.",
+      "caution": "It is a written word. Said out loud in a standup it sounds like you have swallowed a style guide, and even on the page it carries a moral edge: saying the team eschewed managed services claims a principle where 'chose not to use' would have claimed only a decision. If the real reason was budget or timing, the word quietly overstates you, and anyone who knows the history will notice.",
+      "example": "The paper eschews benchmark scores entirely and reports only task completion, which is either brave or very convenient.",
+      "cues": [
+        {
+          "text": "You are writing about a research group that left benchmark numbers out of a paper on purpose, and you want a verb that makes clear it was a choice rather than an oversight.",
+          "setting": "work"
+        },
+        {
+          "text": "In an architecture note you want to record that the team turned down managed services as a matter of principle, not because of what they cost.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend has given up social media entirely and it is a stance rather than a lapse. You are writing about them and want the verb that honours the difference.",
+          "setting": "life"
+        },
+        {
+          "text": "You are describing a novelist who refuses to write any dialogue at all, and you want a word that treats the refusal as deliberate craft.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "To fail to notice something that was there for the taking until it had gone.",
+        "To go without something because it was never within reach, so the outcome looks the same but nothing about it was actually decided.",
+        "To put something off until conditions improve, with every intention of coming back to it once the reason for waiting has gone away.",
+        "To turn a proposal down after a formal review, with the grounds minuted so that anybody bringing it back knows what would have to change first. The refusal belongs to the body rather than to a person.",
+        "To criticise something publicly and at length, usually a practice rather than a person, and in terms that make it awkward for anyone in the room to defend it. Whether you carry on doing it yourself is a separate question entirely."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

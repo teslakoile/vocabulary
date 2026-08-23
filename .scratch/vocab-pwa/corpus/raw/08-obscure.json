@@ -1,0 +1,45 @@
+{
+  "headword": "obscure",
+  "senses": [
+    {
+      "term": "obscure",
+      "accepted": [
+        "obscures",
+        "obscured"
+      ],
+      "definition": "As an adjective, so little known or so unclear that most people would not follow it. As a verb, to put something out of view or out of reach of understanding, usually as a side effect rather than a plan.",
+      "caution": "The verb accuses nobody, which is the whole reason to reach for it. Saying the dashboard obscures the failure rate names a design problem; saying it obfuscates the failure rate says someone meant to mislead. Keep it pointed at the artefact rather than the person, because aimed at a colleague's explanation it is still a criticism, just a quieter one.",
+      "example": "The monthly average obscures the two days when latency tripled, so let us show the daily line instead.",
+      "cues": [
+        {
+          "text": "A monthly rollup is hiding the two bad days inside it, and you want a neutral verb for what the rollup is doing.",
+          "setting": "work"
+        },
+        {
+          "text": "You are pushing back on a reference to a library that almost nobody in the room will have heard of.",
+          "setting": "work"
+        },
+        {
+          "text": "A summary metric is correct but stops people seeing the variance underneath, and you want to say so without implying anyone did it on purpose.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend recommends a film that almost nobody has seen, and you want the word for how far off the beaten track it is.",
+          "setting": "life"
+        },
+        {
+          "text": "Fog has taken the mountains at the end of the valley out of view, and you want a slightly formal word for what it is doing.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Widely known but badly understood, so that everybody can name the thing and few could tell you what it actually does.",
+        "Stated in needlessly technical language, so that a reader has to decode the sentence before they can work out whether they disagree with it.",
+        "Ambiguous between two specific readings, where both are plainly available on the page and nothing in the sentence tells you which was meant. The trouble is that there are exactly two, not that the meaning is out of reach.",
+        "Kept confidential on legal advice, with access restricted to a named list and the reason for the restriction often withheld as well. As a verb, to put something formally beyond reach on those grounds rather than by any side effect.",
+        "Out of date and no longer maintained, still sitting where it always sat while the thing it described has moved on without it. As a verb, to leave something running long after anybody was looking after it, so that people go on relying on an answer nobody has checked in years."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

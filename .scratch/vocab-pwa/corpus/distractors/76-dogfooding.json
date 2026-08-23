@@ -1,0 +1,15 @@
+{
+  "headword": "dogfooding",
+  "senses": [
+    {
+      "term": "dogfooding",
+      "distractors": [
+        "Running a limited release to a small group of friendly customers who have agreed to put up with rough edges.",
+        "Testing a system with synthetic traffic shaped to look like the real thing, so that load can be pushed well past anything a real day would ever produce.",
+        "Reviewing a competitor's product feature by feature and scoring it against your own, usually in a grid that ends up in front of a board. The exercise says more about what you fear than about what they built.",
+        "Trialling a change on a small share of live users while everyone else stays on the old path, so that any difference in behaviour between the two groups can be attributed to the change rather than to the week it happened in.",
+        "Giving influential outsiders early access in exchange for their feedback and, if it goes well, their public support. What is being bought is a set of names willing to be quoted on the day of launch, and the feedback is usually the smaller half of the deal."
+      ]
+    }
+  ]
+}

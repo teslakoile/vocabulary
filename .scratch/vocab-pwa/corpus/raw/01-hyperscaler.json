@@ -1,0 +1,38 @@
+{
+  "headword": "hyperscaler",
+  "senses": [
+    {
+      "term": "hyperscaler",
+      "accepted": [],
+      "definition": "One of the handful of cloud providers operating at a size where compute, storage and networking are effectively unlimited to you. It names a class of vendor, not a company that happens to be growing fast.",
+      "caution": "It is a category, not a compliment. Applied to your own platform or to a fast-growing vendor it will get you corrected by anyone who knows the term, and in a room that does not know it, it reads as jargon for big cloud. The useful move is to say what follows from the category: pricing power, data residency, or the fact that you will never out-spend them.",
+      "example": "We are not going to beat a hyperscaler on inference cost, so the case has to rest on the data staying ours.",
+      "cues": [
+        {
+          "text": "A steering committee asks why the firm cannot simply build the same capacity in-house, and you need the collective noun for the three vendors that already have it.",
+          "setting": "work"
+        },
+        {
+          "text": "An MD wants to know why frontier model training happens at only a few companies in the world, and the answer is who owns the hardware.",
+          "setting": "work"
+        },
+        {
+          "text": "Procurement asks which suppliers count as strategic infrastructure rather than ordinary software vendors, and you want the term for that tier.",
+          "setting": "work"
+        },
+        {
+          "text": "Writing an architecture note, you need one word for AWS, Azure and Google Cloud as a class so you stop listing all three every time.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "A pricing model that bills for the highest capacity you touched in a month rather than for what you used on average.",
+        "An architecture that spreads a single workload across many regions at once, so that no one site becomes the ceiling on how far it can grow.",
+        "A system that adds and releases capacity on its own as demand moves, so that nobody has to forecast the peak by hand. It names a behaviour a platform has rather than the organisation that sells the platform to you.",
+        "A company whose revenue is growing faster than the market it sells into, usually because each additional customer costs it less to serve than the last one did. The label describes the shape of a growth curve, not the class of infrastructure a business runs on.",
+        "The central group that plans compute and storage across an organisation and holds the forecast that decides what gets bought and when. It sits firmly on the buying side of the relationship: its job is to size the estate rather than to operate the data centres the estate finally runs on."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

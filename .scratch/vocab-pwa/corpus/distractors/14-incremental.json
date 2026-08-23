@@ -1,0 +1,15 @@
+{
+  "headword": "incremental",
+  "senses": [
+    {
+      "term": "incremental",
+      "distractors": [
+        "Happening all at once after a long build-up, with nothing usable before it.",
+        "Repeated identically each cycle, so that the tenth run looks exactly like the first one.",
+        "Growing faster the longer it runs, because every step makes the next one cheaper. The curve bends upward rather than climbing at an even rate.",
+        "Reversible at any point at no cost, so that you can undo a step and stand exactly where you started. It is a claim about the way back, not the way forward.",
+        "Delivered only once it is completely finished, on the view that a half-built thing is worth nothing to anybody. Nothing reaches a user in the meantime, however long the meantime turns out to be."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "headword": "failure mode/s",
+  "senses": [
+    {
+      "term": "failure mode",
+      "accepted": [
+        "failure modes"
+      ],
+      "definition": "A specific way a system goes wrong: not the fact that it might, but the particular shape of the wrongness. Naming them turns this could break into a list you can design against.",
+      "caution": "The phrase invites a list, so raising failure modes without having any makes you sound anxious rather than rigorous. Said about a person it changes character entirely: his failure mode is going quiet is affectionate between peers and clinical the moment it is said upward, or about someone who is not in the room.",
+      "example": "The failure mode I care about isn't a wrong answer, it's a confident wrong answer that nobody checks.",
+      "cues": [
+        {
+          "text": "A sponsor asks whether the agent is safe to deploy, and you want to talk about the specific ways it goes wrong rather than quote him a percentage.",
+          "setting": "work"
+        },
+        {
+          "text": "In a design review you want the team to enumerate the particular shapes of breakage instead of saying the whole thing is risky.",
+          "setting": "work"
+        },
+        {
+          "text": "You are writing a post-incident memo and need a term for the one recurring pattern sitting behind three separate outages.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend always argues the same way when he is tired, and you want a term for that repeating pattern of going wrong.",
+          "setting": "life"
+        },
+        {
+          "text": "You are explaining to a relative why the cheap appliance you both bought always dies in exactly the same way.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "The likelihood that a system stops working inside a given window, expressed as a number you can plan against.",
+        "A reduced state a system drops into under stress, still answering but with the expensive parts switched off until the load falls back to something it can serve.",
+        "The point at which arriving load exceeds what a system can serve, after which every extra request makes the queue longer rather than the throughput higher. It is a single number, found by testing.",
+        "The written account produced after an incident, setting out what happened, in what order, and what will change so that it does not happen again. It is read mostly by people who were not there, which is what shapes how it gets written.",
+        "The average time a component runs before it breaks, measured across a large population of identical units and quoted by whoever manufactured them. It says nothing at all about the particular unit you happen to own, which is why it disappoints anyone who reads it as a promise about theirs."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

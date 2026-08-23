@@ -1,0 +1,73 @@
+{
+  "headword": "trivial/nontrivial",
+  "senses": [
+    {
+      "term": "trivial",
+      "accepted": [],
+      "definition": "So small or so easy that it does not deserve the time it would take to discuss. In engineering it also means a change whose consequences you can see all of at once.",
+      "caution": "Said about someone else's work it is dismissive whatever you intended, because it tells them their week was not worth much. It is safest about your own work, and it is a hostage to fortune even there: the trivial change that took production down is the one everybody remembers you calling trivial.",
+      "example": "The schema change is trivial; the migration for the three teams downstream is not.",
+      "cues": [
+        {
+          "text": "Your tech lead asks how big the config change is, and the honest answer is that reviewing it will take longer than making it.",
+          "setting": "work"
+        },
+        {
+          "text": "You are separating the half of the migration that takes an afternoon from the half that takes a month, and you need the dismissive adjective for the easy half.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend is agonising over two phone plans that differ by a pound a month, and you want a word for the size of that difference.",
+          "setting": "life"
+        },
+        {
+          "text": "Someone apologises at length for a favour that cost you nothing, and you want one adjective to wave it away.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Hard to explain but easy to do, so that the demonstration takes a minute and the write-up takes a day.",
+        "Important but not urgent: the kind of thing that never wins an argument about this week and quietly costs you next quarter.",
+        "Small in cost but large in risk, cheap to carry out and quite capable of taking a system down if it goes wrong. The size of the change and the size of the blast radius come apart here.",
+        "Repeated so often that it has stopped carrying any force, so that people hear the phrase coming and stop listening before the sentence ends. It is worn out by use rather than small in itself.",
+        "Not yet prioritised by anybody, sitting in a list where it will go on sitting until someone with a budget decides otherwise. It says where the thing stands in a queue rather than anything about how hard or how consequential it is."
+      ],
+      "prompt_version": 2
+    },
+    {
+      "term": "nontrivial",
+      "accepted": [
+        "non-trivial"
+      ],
+      "definition": "Harder or larger than the person asking has assumed. It is a pushback on someone else's framing of a job as simple, and its force comes from the understatement.",
+      "caution": "A technical audience's word, and it works because it is dry. In front of a board it can read as evasive, because they hear hard and immediately want a number, so put one straight after it. It also implies you have already looked, so it is a poor place to hide an estimate you have not actually made.",
+      "example": "Rewiring auth for the new tenant model is nontrivial, so call it three sprints rather than a fortnight.",
+      "cues": [
+        {
+          "text": "An MD asks whether adding a second language to the assistant is just a config change, and it is a month of work.",
+          "setting": "work"
+        },
+        {
+          "text": "You want to warn a project manager that a change she assumes is small reaches into three services, using understatement rather than alarm.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend asks whether getting the sofa up two flights of stairs is a job for two people, and it is a great deal more work than she thinks.",
+          "setting": "life"
+        },
+        {
+          "text": "You are telling someone that learning to drive a manual car is harder than they are assuming, without putting them off it.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Impossible with the technology available today, whatever anybody is willing to spend on it.",
+        "Needing approval from more than one team before it can start, so that the delay sits in the diary rather than in the work.",
+        "Not yet specified in enough detail for anyone to begin, so that the first real task is deciding what the job actually is. The gap is in the description rather than in the difficulty.",
+        "Expensive but otherwise entirely straightforward, where you know exactly what to do and the only open question is whether anybody will pay for it. The difficulty has already been converted into a number.",
+        "Of interest only to specialists, so that a room of generalists will not follow why it matters and will move to the next item. It is a claim about the size of the audience rather than about the size of the work."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

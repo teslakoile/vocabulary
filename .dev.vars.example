@@ -1,0 +1,9 @@
+# Copy to `.dev.vars` and fill in. `.dev.vars` is gitignored.
+# These are local development values. Never put the production secret here.
+
+# At least 8 characters. The Worker rejects every request if it is shorter.
+AUTH_SECRET=
+
+# Generate a throwaway pair with `npx web-push generate-vapid-keys`.
+VAPID_PUBLIC_KEY=
+VAPID_PRIVATE_KEY=

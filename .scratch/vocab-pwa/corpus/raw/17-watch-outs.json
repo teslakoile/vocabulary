@@ -1,0 +1,42 @@
+{
+  "headword": "watch outs",
+  "senses": [
+    {
+      "term": "watch outs",
+      "accepted": [
+        "watch-outs",
+        "watchouts",
+        "watch out"
+      ],
+      "definition": "The short list of things most likely to go wrong or catch people off guard, given to an audience in advance so that nobody is surprised. Lighter than risks: a risk needs an owner and a mitigation, a watch out needs only attention.",
+      "caution": "This is consultant and steering-committee register, natural on a slide and slightly odd said aloud anywhere else. The real trap is using it as a softer label for something that is actually a risk: relabelling it removes the owner and the mitigation, and a watch out is what an unmanaged problem is called right up until it fires. Flag it this way only when attention genuinely is the whole response.",
+      "example": "Two watch outs before we start: the data refresh lands mid-demo, and Legal has not seen the retention wording yet.",
+      "cues": [
+        {
+          "text": "You are opening a steering committee update and want to flag two things likely to trip the group up, short of raising them as formal risks.",
+          "setting": "work"
+        },
+        {
+          "text": "A colleague is taking over your demo next week and needs to know the two places it usually goes wrong.",
+          "setting": "work"
+        },
+        {
+          "text": "Writing a one-page handover, you need a heading for the short list of things that catch people by surprise.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend is renting a flat in a neighbourhood you know well, and you want to name two things she should keep an eye on before she signs.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Risks with a named owner and a mitigation plan, tracked in a register somebody reviews on a fixed cycle.",
+        "Metrics reviewed at the end of every week, so that a drift shows up while there is still time to do something about it.",
+        "Conditions that automatically halt a release the moment they are met, written down in advance precisely so that nobody has to make the call under pressure. They are a brake wired into the process, not a heads-up handed to an audience.",
+        "Lessons recorded after a piece of work has finished, gathered in a session where the team says what it would do differently next time. They face backwards over something already done, and their value depends on somebody reading them before the next one starts.",
+        "Items deliberately deferred to a later phase, listed so that nobody mistakes their absence for an oversight and quietly builds them anyway. The list draws the edge of what is in scope, which is a statement about what will not be delivered rather than about what might go wrong with what will."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

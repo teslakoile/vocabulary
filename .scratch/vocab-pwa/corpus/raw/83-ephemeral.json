@@ -1,0 +1,44 @@
+{
+  "headword": "ephemeral",
+  "senses": [
+    {
+      "term": "ephemeral",
+      "accepted": [
+        "ephemerality"
+      ],
+      "definition": "Lasting only briefly, and meant to. In infrastructure it names things created for one use and destroyed after it — containers, tokens, workspaces — where the short life is the design, not a limitation.",
+      "caution": "In a technical room it is a claim rather than a description: say a workspace is ephemeral and the next questions are about the logs, the cache and whatever it wrote on its way out. Everywhere else it is a slightly literary word, elegant in writing and a little precious said out loud about a colleague's short tenure or a passing mood.",
+      "example": "Every agent run gets an ephemeral workspace — it exists for the task and nothing survives it.",
+      "cues": [
+        {
+          "text": "You are describing a design where each run gets a fresh environment that is destroyed the moment it finishes.",
+          "setting": "work"
+        },
+        {
+          "text": "A security reviewer asks how long the credentials the agent uses stay valid, and the answer is nine minutes.",
+          "setting": "work"
+        },
+        {
+          "text": "You are justifying why you do not want a permanent copy of the intermediate data kept anywhere.",
+          "setting": "work"
+        },
+        {
+          "text": "You are telling a friend that the best thing about that festival is how the whole town it builds is gone by Monday.",
+          "setting": "life"
+        },
+        {
+          "text": "You want a word for how quickly a mood of collective optimism came and went.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Happening at intervals nobody can predict, so you cannot plan around it and have to be ready for it at any hour.",
+        "Held only in memory and never written down to disk, which is what makes it quick to read and impossible to recover once the machine has restarted.",
+        "Recreated automatically after a failure without anyone being paged, so that the system returns to its intended shape on its own. What is promised is that the desired state is written down somewhere and continuously enforced.",
+        "Too small in scale or in consequence to be worth reporting, so it gets aggregated away well before the number reaches anyone senior. The threshold is set deliberately, and the argument in a review is nearly always about where it was set rather than about the events themselves.",
+        "Rebuilt from scratch on every change rather than edited in place, so that no server ever accumulates a history of adjustments nobody remembers making. It is a discipline about how change gets applied, and the benefit of it is that what is running always matches what is written in the repository."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "headword": "scaffolding/harness/sandbox",
+  "senses": [
+    {
+      "term": "scaffolding",
+      "accepted": [
+        "scaffold"
+      ],
+      "definition": "Temporary structure that holds work up until the real thing can stand on its own. It is meant to come down.",
+      "caution": "The word commits you to removal. Call something scaffolding and people will remember that you said it was temporary, and will ask when it is coming out; if you have no intention of taking it out, you have handed someone a stick. It is also about supporting the real work, not being a rough version of it, so a quick first implementation is a draft, not this.",
+      "prompt_version": 2,
+      "example": "The manual review step is scaffolding. Once the classifier is calibrated it comes out.",
+      "cues": [
+        {
+          "text": "You hardcoded a lookup to unblock a demo and want your tech lead to know it is not meant to survive.",
+          "setting": "work"
+        },
+        {
+          "text": "A sponsor asks why an automated pipeline still has a person sitting in the middle of it.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend is propping up a bookshelf with a stack of magazines until the brackets arrive.",
+          "setting": "life"
+        },
+        {
+          "text": "You are running alongside your daughter's bike with a hand under the saddle, and someone asks how long you plan to keep doing that.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "A permanent supporting layer that everything above it is built on.",
+        "An outer shell that hides how untidy the thing underneath actually is.",
+        "A worked reference version others copy from, kept current so that the copies stay close to it.",
+        "A staged rollout that widens from a handful of users to everyone, with a gate at each step. Nothing is taken away; the reach simply grows.",
+        "A checklist worked through at every stage of a project, where each item has to be signed before the next stage may open. It stays in force for the life of the work."
+      ]
+    },
+    {
+      "term": "harness",
+      "accepted": [],
+      "definition": "A rig that exercises a system to see how it behaves. Not part of the system; it drives it from outside.",
+      "caution": "In an AI room this now usually means an evaluation harness, so people may hear eval when you meant test rig. Say which you mean if the room is mixed. It also implies you built the apparatus rather than bought the numbers, so do not use it for a public benchmark you merely ran.",
+      "prompt_version": 2,
+      "example": "We need a harness that replays last quarter's queries against the new model.",
+      "cues": [
+        {
+          "text": "You want something that fires realistic inputs at your agent and records what comes back, so you can compare two versions honestly.",
+          "setting": "work"
+        },
+        {
+          "text": "A director asks how you will know the new model is better, and you need a word for the apparatus that answers that.",
+          "setting": "work"
+        },
+        {
+          "text": "A vendor demo went well and you want to run your own inputs through their system under your own conditions before believing any of it.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "A wrapper that adapts one interface so it can be called as though it were another.",
+        "A set of recorded results kept as the baseline that later runs get compared against.",
+        "A monitoring layer that watches a live system and raises the alarm when a number moves outside its band. It reports; it never intervenes.",
+        "A gate in the release pipeline that holds a build back until every check on the list has come back green. It decides, and it measures nothing itself.",
+        "A masked copy of production data, refreshed on a schedule, so that people can work against something realistic without ever touching a real record."
+      ]
+    },
+    {
+      "term": "sandbox",
+      "accepted": [
+        "sandboxed"
+      ],
+      "definition": "An isolated environment where something runs without being able to affect anything real.",
+      "caution": "It promises containment. If the environment can actually reach production data or spend real money, calling it a sandbox is a claim someone will hold you to, and compliance will hold you to it in writing. It also says nothing about how faithful the environment is, so do not use it when what you are promising is a realistic rehearsal.",
+      "prompt_version": 2,
+      "example": "Let it run in a sandbox first. I do not want it touching the live index.",
+      "cues": [
+        {
+          "text": "You are letting an agent execute code it wrote itself and want somewhere it cannot do damage.",
+          "setting": "work"
+        },
+        {
+          "text": "Compliance asks what stops the new tool reading customer records during testing.",
+          "setting": "work"
+        },
+        {
+          "text": "A vendor wants their engineers to try your pipeline, and you need a word for the walled-off copy you are willing to give them.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "A flag that keeps unfinished work hidden from users.",
+        "A rehearsal of the release performed end to end beforehand.",
+        "A separate account opened so that one team's spend shows on its own bill rather than everyone else's.",
+        "A staging environment that mirrors production closely and reads from the same live data as production does.",
+        "A record of everything the system did and who asked for it, kept untouched so an auditor can reconstruct any decision later."
+      ]
+    }
+  ]
+}

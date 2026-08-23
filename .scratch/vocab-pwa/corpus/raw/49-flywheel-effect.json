@@ -1,0 +1,41 @@
+{
+  "headword": "flywheel effect",
+  "senses": [
+    {
+      "term": "flywheel effect",
+      "accepted": [
+        "flywheel",
+        "flywheels"
+      ],
+      "definition": "A loop in which each turn makes the next one easier: more use produces more data, better data produces a better product, which brings more use. Slow to start and hard to stop once it is turning.",
+      "caution": "It claims a specific mechanism, so you should be able to say each step of the loop out loud before you use it - in an investment room someone will ask you to draw it, and growth that is merely fast has no loop in it at all. It also carries a built-in excuse for a flat early stretch, which is a very convenient thing to reach for when your numbers are flat. Bezos put the word in every strategy deck for a decade, so in some rooms it arrives pre-discounted as consultant language.",
+      "example": "Every deployment hands us the failure cases the next model trains on. That's the flywheel, and honestly it's the only moat we have.",
+      "cues": [
+        {
+          "text": "You are explaining to an investor why the product improves the more it is used, and you want a single term for that loop instead of three sentences of mechanism.",
+          "setting": "work"
+        },
+        {
+          "text": "A sponsor asks why usage sat flat for two quarters and then bent sharply upward, and you want the term for growth that starts slowly and then compounds.",
+          "setting": "work"
+        },
+        {
+          "text": "In a strategy session someone claims the product has a moat. You want the word for the loop they would have to be able to draw for that claim to survive the next question.",
+          "setting": "work"
+        },
+        {
+          "text": "A bakery near you got busy because the queue outside made passers-by curious, and the queue got longer, and you want a word for what happened to it.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "A single jump in usage following a launch, big enough to show in the numbers and gone again by the next quarter.",
+        "The point at which revenue finally covers the fixed costs, after which every further sale contributes instead of merely shrinking the hole.",
+        "An advantage competitors cannot copy because the law will not let them, whether that is a patent, an exclusive licence or a regulator's permission that is no longer being granted to anyone new.",
+        "The share of customers who come back the following month without being prompted to, tracked because it is the clearest single sign that a product is worth returning to rather than merely worth trying once.",
+        "The lag between putting the money in and seeing anything come back out, during which the numbers get worse before they get better and somebody senior has to keep the funding in place while they do. Most of the argument happens in that stretch."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

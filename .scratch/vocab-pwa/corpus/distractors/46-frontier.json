@@ -1,0 +1,15 @@
+{
+  "headword": "frontier",
+  "senses": [
+    {
+      "term": "frontier",
+      "distractors": [
+        "The furthest point a plan has been written out to, past which the work exists only as a heading and a rough number.",
+        "An early build handed to a small group before general release, so that the problems surface among people who have agreed to put up with them.",
+        "The boundary where two systems meet and hand data across, defined tightly enough that either side can be rebuilt without telling the other. It is a contract far more than it is a place.",
+        "A published limit on what a system is permitted to do, set by the people who carry the risk rather than by the people who built it, and written so that any breach shows up plainly afterwards instead of merely being suspected.",
+        "The set of capabilities promised in the next release, held out to customers as the reason to sign now rather than wait and see. It is a commitment about a date as much as about the work, and it gets quoted back at you the moment the date moves."
+      ]
+    }
+  ]
+}

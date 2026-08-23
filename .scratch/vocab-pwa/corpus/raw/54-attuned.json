@@ -1,0 +1,42 @@
+{
+  "headword": "attuned",
+  "senses": [
+    {
+      "term": "attuned",
+      "accepted": [
+        "attune",
+        "attuning",
+        "attunement"
+      ],
+      "definition": "Alert and responsive to something, picking up signals early and adjusting to them. It describes receptivity rather than knowledge: you can be attuned to a room's mood without anyone having told you anything.",
+      "caution": "Said about yourself it claims a sensitivity only other people can confirm, and it congratulates you in the same breath - 'I'm attuned to the board's concerns' is exactly the sentence that makes a board wonder whether you are. It is at its best as praise for someone else. In an AI room the shorter form is a technical word, so a system described this way gets heard as fine-tuned rather than perceptive.",
+      "example": "She's attuned to when a sponsor has gone quiet for political reasons rather than practical ones.",
+      "cues": [
+        {
+          "text": "You are recommending someone for a client-facing role because they notice when a room has cooled before anybody has said a thing.",
+          "setting": "work"
+        },
+        {
+          "text": "A colleague keeps missing that the sponsor's silences are political rather than practical, and you want to name the quality they are short of without insulting them.",
+          "setting": "work"
+        },
+        {
+          "text": "You are describing a friend who can tell within a minute of sitting down that two people at the table have had an argument.",
+          "setting": "life"
+        },
+        {
+          "text": "Your partner rearranges the day around your mood before you have said anything about it, and you want the word for what they are doing.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Formally trained in a subject and able to produce the certificate, whatever you happen to notice in the room.",
+        "Kept informed through reports that arrive on a schedule, so that you know what happened and roughly when, some time after everyone in the room already did.",
+        "Adjusted so as to run at its best under known conditions, each setting moved until the numbers stop improving. It performs beautifully right up to the point where the conditions change and nobody notices they have.",
+        "Talked round to a position you did not start from, so that you now argue for it as though it had been yours all along. The shift happened in one conversation and could be reversed in a better one.",
+        "Committed to a group's interests ahead of your own, to the point of carrying a position you privately disagree with because the group has settled on it. It is a statement about loyalty, and it holds whether or not the group turns out to have been right."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

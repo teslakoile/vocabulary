@@ -1,0 +1,25 @@
+{
+  "headword": "first/second order effects",
+  "senses": [
+    {
+      "term": "first order effects",
+      "distractors": [
+        "The highest-priority items on a plan of work, the ones that get finished before anything else is started.",
+        "Costs a change imposes on people who were never party to it and are not compensated for it, which is why they rarely show up in anyone's numbers.",
+        "Results large enough to be worth measuring at all, as against the ones that vanish into the noise. It is a threshold about size, and where you set it decides what gets reported and what does not.",
+        "The order in which dependent changes have to be made, so that nothing is switched on before the thing it relies on exists. It is a sequencing constraint, and getting it wrong is how a rollout stalls halfway through a weekend.",
+        "The group who receive a change before anyone else and whose experience decides whether it goes further: a floor, a region, a single desk. Who goes first is chosen deliberately, usually for tolerance rather than for how representative they are."
+      ]
+    },
+    {
+      "term": "second order effects",
+      "distractors": [
+        "The phase of a rollout that comes after the pilot, when a change finally goes to everyone who was not in the trial.",
+        "Risks a team identifies in advance, writes down, and asks a sponsor to accept formally, so that if one of them lands nobody can claim they were not told.",
+        "The extra cost of running something at a larger size: more storage, more support, more licences, all of it arriving in proportion to the growth. It is arithmetic rather than surprise, and a competent team can forecast it a year out.",
+        "Outcomes that were foreseen and then judged too small to act on, which is a decision somebody actually made rather than something the analysis missed. They tend to resurface in a review a year later, where the argument is about whether the judgement was reasonable at the time.",
+        "A follow-on tranche of funding released only once the first has proved out, so that money arrives in stages tied to evidence rather than all at once on the strength of a plan. It is a control a board puts on a programme it believes in but does not yet trust, and it is negotiated at the outset."
+      ]
+    }
+  ]
+}

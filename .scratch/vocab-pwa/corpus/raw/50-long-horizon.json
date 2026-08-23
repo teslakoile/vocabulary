@@ -1,0 +1,43 @@
+{
+  "headword": "long-horizon (task)",
+  "senses": [
+    {
+      "term": "long-horizon",
+      "accepted": [
+        "long horizon",
+        "long-horizon task",
+        "long horizon task",
+        "long-horizon tasks"
+      ],
+      "definition": "Describing work that runs for many steps before anyone can tell whether it worked. In AI it names the class of task that breaks agents: errors compound, feedback arrives only at the end, and the system has to hold the goal across a long stretch of its own output.",
+      "caution": "It is about the number of steps and the delay before feedback, not about the calendar. Using it for a project that is merely slow - a two-year migration with a checkpoint every fortnight - borrows research vocabulary for ordinary scheduling, and the people who use the term precisely will hear that. In an investment room the second word already means holding period, so a mixed audience takes you to be talking about time frames rather than about what makes a task hard for an agent.",
+      "example": "Single-shot extraction is basically solved. The long-horizon work - chase the filing, reconcile it, come back with a memo - is where it still falls over.",
+      "cues": [
+        {
+          "text": "You are explaining to a director why an agent that answers questions well still cannot be trusted with a whole reconciliation end to end, and you need the term for the second kind of work.",
+          "setting": "work"
+        },
+        {
+          "text": "In an evaluation design meeting you need a name for the category of test where the system only discovers at the very end whether it got there.",
+          "setting": "work"
+        },
+        {
+          "text": "A supplier demos an agent completing a task in three steps and claims it generalises. You want the term for the class of work their demo never touched.",
+          "setting": "work"
+        },
+        {
+          "text": "A sponsor asks why one task of forty steps is harder for a system than forty tasks of one step, and you want the standard term for the first kind.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "A request too large to fit inside a single context window, so the material has to be cut into pieces and the model shown one piece at a time.",
+        "Work deferred to a later phase of the roadmap because nothing about it is urgent yet, on the shared understanding that it gets picked up whenever capacity appears.",
+        "A process that runs continuously rather than being started and finished, so there is no moment at which it is done and the only real question is whether it is keeping up with what arrives.",
+        "A task that cannot be completed without somebody who knows the subject sitting alongside whoever is doing it, because the judgement it needs was never written down anywhere a system could read it. What makes it hard is access to that person, not the size of the job.",
+        "Work whose cost is spread across several budget years, so that the sponsor approving it is committing their successors as well as themselves and the case has to survive people leaving. The scrutiny it attracts comes from the size of the commitment rather than from any doubt about whether the thing can actually be built."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "headword": "modality",
+  "senses": [
+    {
+      "term": "modality",
+      "distractors": [
+        "The tone something is written in, from clipped and factual through to warm, chosen to suit whoever is reading it.",
+        "A named mode that switches a system between two ways of behaving, so that the same product can be strict for one customer and permissive for another.",
+        "The file format a thing happens to be stored in, which decides what can open it and how much room it takes, and which can be changed without altering a word of what it holds.",
+        "A permission level governing what a given person is allowed to do, from reading only, through editing, up to changing what everybody else is allowed to do. It travels with the person rather than with the material.",
+        "A stage of a pipeline, from ingestion at one end through to serving at the other, each with its own failure modes and its own owner. Work is handed from one to the next, and a problem is usually named after whichever stage it first showed up in."
+      ]
+    }
+  ]
+}

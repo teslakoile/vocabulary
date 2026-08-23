@@ -1,0 +1,15 @@
+{
+  "headword": "substrate",
+  "senses": [
+    {
+      "term": "substrate",
+      "distractors": [
+        "Scaffolding put up to get something built and taken away again once the thing stands on its own.",
+        "The outermost layer users actually touch, where a system's decisions turn into buttons and screens and everything underneath is hidden from view.",
+        "A shared vocabulary that lets separate teams describe the same data in the same words, so a number means one thing in every report it turns up in and the arguments about definitions stop.",
+        "A part that can be pulled out and replaced while the system around it keeps running, which is a property of how it is attached rather than of where it sits. What it buys you is the ability to change something without a window.",
+        "The smallest set of features that lets a product go in front of real users at all, chosen so that what comes back is a judgement about the idea rather than about the polish. Everything left out is a bet that nobody will miss it yet."
+      ]
+    }
+  ]
+}

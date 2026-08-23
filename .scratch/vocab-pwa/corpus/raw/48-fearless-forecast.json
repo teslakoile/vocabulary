@@ -1,0 +1,41 @@
+{
+  "headword": "fearless forecast",
+  "senses": [
+    {
+      "term": "fearless forecast",
+      "accepted": [
+        "fearless forecasts",
+        "fearless prediction"
+      ],
+      "definition": "A number or a call given straight, with the caveats stripped out, usually because someone in the room asked for exactly that. The phrase is permission to be wrong, granted in advance.",
+      "caution": "It is almost always invited, and the invitation is the only thing that makes the missing hedges acceptable - offering one unprompted reads as bravado and puts you on the hook for a question nobody asked you. It also protects you far less than it sounds like it does, because people remember the number and forget the framing, so give one you would be willing to be held to. In writing it is worse: a board paper has no tone of voice to carry the disclaimer.",
+      "example": "Fearless forecast: two of the four business units are live by March and the other two slip to the summer.",
+      "cues": [
+        {
+          "text": "Your MD cuts off the caveats and asks what you actually think will happen to the rollout date, telling you outright that being wrong is fine.",
+          "setting": "work"
+        },
+        {
+          "text": "You are chairing a planning session where every person has hedged for an hour, and you want a phrase that gets a real number out of each of them.",
+          "setting": "work"
+        },
+        {
+          "text": "A steering committee asks how many business units will be live by March. You have a number in your head that you would never put in a written plan, and the room is asking for it out loud.",
+          "setting": "work"
+        },
+        {
+          "text": "Friends are arguing about who wins the league this season and one of them turns to you for a straight answer with no hedging.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "A number the team is formally measured against, agreed at the start of the period and not reopened inside it.",
+        "A projection produced from historical data by a model, so that nobody's judgement has to be defended and nobody's name sits on the answer.",
+        "A deliberately conservative number used for planning, pitched low enough that it can be beaten, so that whoever quotes it is never the person explaining a shortfall later on.",
+        "A range with an explicit confidence level attached, so that the reader can see how much of the spread is genuine uncertainty and how much of it is the modeller hedging. Precision about the doubt is the entire product.",
+        "A decision taken quickly on incomplete information because waiting for the rest of it would cost more than being wrong does. What is being praised is the timing, and whoever takes it is expected to revisit it as the rest of the picture arrives."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

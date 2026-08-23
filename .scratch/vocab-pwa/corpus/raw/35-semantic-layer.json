@@ -1,0 +1,36 @@
+{
+  "headword": "semantic layer",
+  "senses": [
+    {
+      "term": "semantic layer",
+      "accepted": [
+        "semantic model"
+      ],
+      "definition": "The place where raw tables and columns are mapped onto the words the business actually uses, so that revenue or active client resolves to one agreed calculation wherever it is asked for. It sits between the warehouse and everything that queries it.",
+      "caution": "It sounds like plumbing and is really governance. The build is the easy half; the hard half is getting three departments to agree what an active client is, so promising a sponsor one by Q3 is promising to win an argument you have not had yet. Do not stretch it to mean any abstraction or any API either: people who have built one hear a specific piece of the stack and will price and staff it accordingly.",
+      "prompt_version": 2,
+      "example": "Two dashboards disagree on churn because each defines it in its own SQL. That is exactly what a semantic layer is for.",
+      "cues": [
+        {
+          "text": "Finance and operations arrive at the same meeting with two different revenue numbers, and both are correct against their own queries.",
+          "setting": "work"
+        },
+        {
+          "text": "A director asks why self-service reporting keeps producing figures nobody trusts, and you want to name the missing piece between the warehouse and the dashboards.",
+          "setting": "work"
+        },
+        {
+          "text": "You are costing a data platform and need a line item for the component that holds the business definitions in one place instead of in every tool separately.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "A cache that keeps the answers to the questions people ask most often, so the second person to ask one waits far less than the first did.",
+        "A catalogue that lists every table in the estate with its owner and its refresh schedule, so that anyone can find out what exists and who to go to about it.",
+        "The stage where raw feeds are cleaned, deduplicated and typed before anything downstream is allowed to read them. It runs once per load, and what comes out of it is the trusted copy that everything else works from rather than going back to source.",
+        "A permissions model deciding which rows and columns each person may see, so that one report can go to the whole desk and still show each reader only their own book. It is enforced at query time, which is why nobody can get round it by exporting the file.",
+        "A translation service sitting between systems that speak different formats, converting each message from the one into the other so that neither side has to learn how the other represents a date, a currency or a client identifier. It holds no data of its own and remembers nothing once a message has passed through it."
+      ]
+    }
+  ]
+}

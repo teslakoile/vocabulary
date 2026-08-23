@@ -1,0 +1,15 @@
+{
+  "headword": "first principles",
+  "senses": [
+    {
+      "term": "first principles",
+      "distractors": [
+        "The order the work has to happen in, where each step stays blocked until the one before it is finished.",
+        "The founding values an organisation publishes and expects decisions to be weighed against. They are chosen rather than discovered, and they describe what the place would like to be.",
+        "The rules a system is never allowed to break, whatever else changes around it. They are written as constraints precisely so that any design violating one can be ruled out without a further argument about it.",
+        "The record of what went wrong on earlier projects, gathered so that the next team does not pay twice for the same mistake. Its whole authority comes from somebody having been through it before, which is also why it ages badly once the conditions change.",
+        "The earliest working version of a design, kept on file so that later arguments about why something is shaped the way it is can be settled by looking at what was originally intended. It carries weight in the room because it came first, not because anyone has since gone back and checked whether it still holds."
+      ]
+    }
+  ]
+}

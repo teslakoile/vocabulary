@@ -1,0 +1,25 @@
+{
+  "headword": "verifiability/verifiable rewards",
+  "senses": [
+    {
+      "term": "verifiability",
+      "distractors": [
+        "The chance that a given statement turns out to be true, which is a bet about the world rather than a property of the statement.",
+        "A durable record of who changed what and when, kept so that a sequence of events can be reconstructed months later without relying on anybody's memory.",
+        "How readily a system can be made to show the path it took to an answer, in terms a person can follow. It is a demand about the account a system gives of itself, and it is what regulators usually mean by transparency.",
+        "Agreement between two estimates arrived at independently, treated as evidence that neither one was an artefact of how it was produced. The comfort comes entirely from the fact that the two teams did not talk, and it evaporates the moment you learn that they did.",
+        "A status granted by a recognised outside authority after an assessment, entitling a firm to state publicly that it meets a standard. What it buys is the right to stop arguing the point with every client individually, which is why it gets renewed even when nobody believes the assessment was searching."
+      ]
+    },
+    {
+      "term": "verifiable rewards",
+      "distractors": [
+        "Bonus payments tied to business outcomes that can be measured, so the argument about payout happens once a year over a number.",
+        "Ratings collected from people at scale, where the signal is which of two answers a human preferred and the cost rises with every comparison you need.",
+        "Scores produced by a second model asked to judge the first, which is cheap and fast and inherits every blind spot the judge already has. The catch is that nothing outside the two of them has looked at anything.",
+        "Public benchmarks that let one lab compare its results with another's on the same tasks, so a claim about progress can be argued in the open. What they measure drifts out of date faster than anyone updates them, and by then the numbers are already in every deck.",
+        "Money held back from a supplier until an agreed condition is met and independently evidenced, so that the incentive stays live through the stretch of a contract where attention usually wanders. It is negotiated at signing by people who will never see the work, and it is the clause both sides remember."
+      ]
+    }
+  ]
+}

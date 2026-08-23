@@ -1,0 +1,15 @@
+{
+  "headword": "fan-out",
+  "senses": [
+    {
+      "term": "fan-out",
+      "distractors": [
+        "Many small requests gathered up and sent as a single call, so the cost of the round trip gets paid once.",
+        "The time a request spends waiting in a queue before anything starts working on it, which is usually most of what a user experiences as slowness.",
+        "Incoming traffic spread evenly across a row of identical servers so that none of them takes more than its share, which is what lets you add capacity by adding boxes rather than by making any one box bigger.",
+        "The share of calls that fail and are sent again automatically, invisible on a good day and the whole problem on a bad one, because the retries all arrive at exactly the moment the system has least room left for them.",
+        "Results arriving from several different sources and being folded into a single answer, where the hard part is deciding what to do when two of them disagree. It is the last step of a pipeline rather than the first, and it is where most of the arguments about correctness actually happen."
+      ]
+    }
+  ]
+}

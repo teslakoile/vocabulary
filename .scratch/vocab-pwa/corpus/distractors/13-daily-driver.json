@@ -1,0 +1,15 @@
+{
+  "headword": "daily driver",
+  "senses": [
+    {
+      "term": "daily driver",
+      "distractors": [
+        "The tool an organisation has standardised on, whether or not the people issued it ever open it.",
+        "A backup kept ready in case the main one fails, close enough to hand that switching costs you minutes rather than days.",
+        "The most capable option available regardless of what it costs, picked because the ceiling matters more than the price does. It ranks the options by power rather than by how often anybody reaches for one.",
+        "Software installed by default on every machine before anybody has logged in, so that a new starter finds it already sitting there. It describes what the estate ships with rather than what any one person has settled on.",
+        "The person responsible for running a process every morning, working the same checklist so that the rest of the organisation finds the numbers waiting when it arrives. It names a rota position held by a human being, not the thing somebody reaches for by preference."
+      ]
+    }
+  ]
+}

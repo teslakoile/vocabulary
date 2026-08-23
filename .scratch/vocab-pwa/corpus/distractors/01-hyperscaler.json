@@ -1,0 +1,15 @@
+{
+  "headword": "hyperscaler",
+  "senses": [
+    {
+      "term": "hyperscaler",
+      "distractors": [
+        "A pricing model that bills for the highest capacity you touched in a month rather than for what you used on average.",
+        "An architecture that spreads a single workload across many regions at once, so that no one site becomes the ceiling on how far it can grow.",
+        "A system that adds and releases capacity on its own as demand moves, so that nobody has to forecast the peak by hand. It names a behaviour a platform has rather than the organisation that sells the platform to you.",
+        "A company whose revenue is growing faster than the market it sells into, usually because each additional customer costs it less to serve than the last one did. The label describes the shape of a growth curve, not the class of infrastructure a business runs on.",
+        "The central group that plans compute and storage across an organisation and holds the forecast that decides what gets bought and when. It sits firmly on the buying side of the relationship: its job is to size the estate rather than to operate the data centres the estate finally runs on."
+      ]
+    }
+  ]
+}

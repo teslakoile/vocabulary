@@ -1,0 +1,15 @@
+{
+  "headword": "bespoke",
+  "senses": [
+    {
+      "term": "bespoke",
+      "distractors": [
+        "Produced in volume to a single standard, so that every unit is interchangeable with every other.",
+        "Assembled out of standard parts in a new arrangement, which is a claim about the configuration rather than about the parts themselves.",
+        "Designed so the customer can extend it themselves after delivery, through settings and plug-in points the vendor deliberately left open. The work is done by whoever bought it.",
+        "Priced individually for each buyer according to what that buyer will bear, so two customers on identical contract terms can end up paying very different amounts and neither of them knows it.",
+        "Shipped before any formal specification exists, on the argument that requirements only become clear once somebody has something in front of them. It buys speed at the price of an argument later about what was actually agreed."
+      ]
+    }
+  ]
+}

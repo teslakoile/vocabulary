@@ -1,0 +1,15 @@
+{
+  "headword": "failure mode/s",
+  "senses": [
+    {
+      "term": "failure mode",
+      "distractors": [
+        "The likelihood that a system stops working inside a given window, expressed as a number you can plan against.",
+        "A reduced state a system drops into under stress, still answering but with the expensive parts switched off until the load falls back to something it can serve.",
+        "The point at which arriving load exceeds what a system can serve, after which every extra request makes the queue longer rather than the throughput higher. It is a single number, found by testing.",
+        "The written account produced after an incident, setting out what happened, in what order, and what will change so that it does not happen again. It is read mostly by people who were not there, which is what shapes how it gets written.",
+        "The average time a component runs before it breaks, measured across a large population of identical units and quoted by whoever manufactured them. It says nothing at all about the particular unit you happen to own, which is why it disappoints anyone who reads it as a promise about theirs."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "headword": "asymmetric",
+  "senses": [
+    {
+      "term": "asymmetric",
+      "distractors": [
+        "Reversible at any point and at no real cost, so the decision can be unwound the moment it stops looking right.",
+        "Weighted so that both sides carry the same exposure, and neither can be hurt by an outcome that leaves the other untouched.",
+        "Structured so that a gain on one side is offset by a loss on the other, leaving the position flat whichever way the market moves. What you are buying is the removal of the outcome rather than the outcome itself.",
+        "Uncertain in a way you cannot put a number on, because the probabilities themselves are unknown rather than merely unfavourable. It is the difference between a bet you can price and a situation you can only describe.",
+        "Spread across many small positions instead of concentrated in one, so that no single failure can take the whole book down with it. It gives up the chance of an outsized result in exchange for surviving long enough to place the next round of bets."
+      ]
+    }
+  ]
+}

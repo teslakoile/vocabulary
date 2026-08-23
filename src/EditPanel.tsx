@@ -1,0 +1,115 @@
+/**
+ * Inline correction, opened from a card's answer side.
+ *
+ * Correction is the only editing path in the app: no review gate before content
+ * goes live, and no separate edit screen. When a definition reads wrong you fix
+ * it in the moment, and the queue keeps your place.
+ */
+import { useState } from 'react';
+import type { Entry, Sense, Snapshot } from './types';
+import { saveEntry } from './store';
+
+interface Props {
+  entry: Entry;
+  sense: Sense;
+  snapshot: Snapshot;
+  onSnapshot: (snapshot: Snapshot) => void;
+  onDone: () => void;
+}
+
+export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }: Props) {
+  const [draft, setDraft] = useState({
+    term: sense.term,
+    accepted: sense.accepted.join(', '),
+    definition: sense.definition,
+    caution: sense.caution,
+    example: sense.example,
+    capture_note: entry.capture_note ?? '',
+  });
+  const [saving, setSaving] = useState(false);
+  const [failed, setFailed] = useState(false);
+
+  const set = (field: keyof typeof draft) => (e: { target: { value: string } }) =>
+    setDraft((d) => ({ ...d, [field]: e.target.value }));
+
+  async function save() {
+    setSaving(true);
+    setFailed(false);
+
+    const updatedSense: Sense = {
+      ...sense,
+      term: draft.term.trim(),
+      accepted: draft.accepted.split(',').map((a) => a.trim()).filter(Boolean),
+      definition: draft.definition.trim(),
+      caution: draft.caution.trim(),
+      example: draft.example.trim(),
+    };
+    const updatedEntry: Entry = {
+      ...entry,
+      capture_note: draft.capture_note.trim() || null,
+      senses: entry.senses.map((s) => (s.id === sense.id ? updatedSense : s)),
+    };
+
+    // Update what is on screen first. A failed save is worth telling you about,
+    // but it is not worth throwing away what you typed.
+    onSnapshot({
+      ...snapshot,
+      entries: snapshot.entries.map((e) => (e.id === entry.id ? updatedEntry : e)),
+    });
+
+    try {
+      await saveEntry(updatedEntry);
+      onDone();
+    } catch {
+      setFailed(true);
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  return (
+    <div className="edit">
+      <label>
+        Word
+        <input value={draft.term} onChange={set('term')} autoCapitalize="none" spellCheck={false} />
+      </label>
+      <label>
+        Also accepted
+        <input
+          value={draft.accepted}
+          onChange={set('accepted')}
+          placeholder="comma separated"
+          autoCapitalize="none"
+          spellCheck={false}
+        />
+      </label>
+      <label>
+        Definition
+        <textarea value={draft.definition} onChange={set('definition')} rows={3} />
+      </label>
+      <label>
+        Caution
+        <textarea value={draft.caution} onChange={set('caution')} rows={3} />
+      </label>
+      <label>
+        Example
+        <textarea value={draft.example} onChange={set('example')} rows={2} />
+      </label>
+      <label>
+        Your note
+        <textarea value={draft.capture_note} onChange={set('capture_note')} rows={2} placeholder="why you wrote it down" />
+      </label>
+
+      {failed && <p className="failed">Saved on this device only. It will not reach the server until you are back online.</p>}
+
+      <div className="row">
+        <button className="primary" onClick={save} disabled={saving}>
+          {saving ? 'Saving' : 'Save'}
+        </button>
+        <button className="link" onClick={onDone}>
+          Cancel
+        </button>
+      </div>
+    </div>
+  );
+}

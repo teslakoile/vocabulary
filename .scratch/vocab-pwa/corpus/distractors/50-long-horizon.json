@@ -1,0 +1,15 @@
+{
+  "headword": "long-horizon (task)",
+  "senses": [
+    {
+      "term": "long-horizon",
+      "distractors": [
+        "A request too large to fit inside a single context window, so the material has to be cut into pieces and the model shown one piece at a time.",
+        "Work deferred to a later phase of the roadmap because nothing about it is urgent yet, on the shared understanding that it gets picked up whenever capacity appears.",
+        "A process that runs continuously rather than being started and finished, so there is no moment at which it is done and the only real question is whether it is keeping up with what arrives.",
+        "A task that cannot be completed without somebody who knows the subject sitting alongside whoever is doing it, because the judgement it needs was never written down anywhere a system could read it. What makes it hard is access to that person, not the size of the job.",
+        "Work whose cost is spread across several budget years, so that the sponsor approving it is committing their successors as well as themselves and the case has to survive people leaving. The scrutiny it attracts comes from the size of the commitment rather than from any doubt about whether the thing can actually be built."
+      ]
+    }
+  ]
+}

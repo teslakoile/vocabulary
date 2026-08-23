@@ -1,0 +1,41 @@
+{
+  "headword": "exacerbate",
+  "senses": [
+    {
+      "term": "exacerbate",
+      "accepted": [
+        "exacerbated",
+        "exacerbating"
+      ],
+      "definition": "To make a bad situation worse. It needs the problem to exist already: you can only exacerbate something that was going wrong on its own.",
+      "caution": "The word points a finger. Saying a decision exacerbated the outage assigns causation, and in a post-incident room that is heard as blame however evenly you say it, so name the mechanism unless blame is what you mean. It is also strictly about worsening something bad, so exacerbating demand or exacerbating growth is a mistake the careful listeners in the room will catch.",
+      "prompt_version": 2,
+      "example": "The retry logic did not cause the outage, but it exacerbated it. We hammered a service that was already on its knees.",
+      "cues": [
+        {
+          "text": "In a post-incident review you need to say that an automatic retry turned a small failure into a two-hour one, without putting it on the person who wrote it.",
+          "setting": "work"
+        },
+        {
+          "text": "A hiring freeze meant to save money has made the delivery backlog worse, and you are explaining that to the sponsor who ordered the freeze.",
+          "setting": "work"
+        },
+        {
+          "text": "Your neighbour's fix for the damp has trapped more water in the wall than there was before.",
+          "setting": "life"
+        },
+        {
+          "text": "A friend keeps looking at their ex's photos and cannot understand why each week is harder than the one before.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "To raise an issue to a level above your own so that somebody senior decides it.",
+        "To overstate how bad something is, so that the response it attracts is larger than the situation ever needed.",
+        "To bring about a problem that was not there before. Everything was working until this landed, and the fault traces back to it alone.",
+        "To push something beyond the rate it can safely absorb, so that the strain shows up somewhere nobody was watching. The pace is the fault rather than the direction of travel.",
+        "To trace a problem back to the decision that produced it, usually after the fact and usually in front of the people who took it. The work is in the reconstruction, and the finding is a cause rather than a cure."
+      ]
+    }
+  ]
+}

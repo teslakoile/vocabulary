@@ -1,0 +1,25 @@
+{
+  "headword": "tacit/institutional knowledge",
+  "senses": [
+    {
+      "term": "tacit knowledge",
+      "distractors": [
+        "Information a firm deliberately keeps from outsiders, protected by contract because its value depends on nobody else holding a copy.",
+        "Understanding a team has already captured in writing and keeps current, sitting in a runbook or a design note where anyone joining can find it without having to ask a person for it.",
+        "Expertise certified by an outside body and evidenced by an exam that a client or an auditor will accept as proof. What matters is that the standard was set by someone other than the employer, which is what makes it portable between firms.",
+        "Agreement given by saying nothing: nobody objected, the date passed, and the decision is now treated as made. It is a real mechanism in large organisations and a dangerous one, because the people who stayed quiet rarely think they agreed to anything.",
+        "Advice that travels sideways between peers, swapped over coffee or in a private channel because neither person wants it written down anywhere. It is often faster and more accurate than the official line, but it is withheld for reasons of exposure rather than difficulty, and nobody will repeat it in a room where it would have to be defended."
+      ]
+    },
+    {
+      "term": "institutional knowledge",
+      "distractors": [
+        "Rules imposed on a firm from outside by its regulator, which it has to follow whether or not they suit the way it would prefer to work.",
+        "The standing an organisation has with its clients, built slowly across years of delivery and capable of being lost inside a single badly handled quarter. It lives in other people's heads rather than its own.",
+        "Training material written for new starters: the onboarding deck, the first-week checklist, the walkthrough of the tools. It is deliberately built for people who know nothing yet, which is exactly why it stops being any use in the second month.",
+        "A way of working that has spread across an entire industry until nobody remembers proposing it, so that two firms who have never spoken run the same process in the same order. It is why a hire from a competitor can be productive in a fortnight, and why nobody questions the parts that make no sense.",
+        "The record one firm has built up about its customers over the years: transactions, contact history, the fields somebody added in 2014 that nobody has cleaned since. It is an asset in that it sits on a server and can be queried, and a liability in that a regulator can ask what is in it, which is why the two arguments about it never quite meet."
+      ]
+    }
+  ]
+}

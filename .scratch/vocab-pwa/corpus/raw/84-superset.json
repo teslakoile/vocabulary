@@ -1,0 +1,40 @@
+{
+  "headword": "superset",
+  "senses": [
+    {
+      "term": "superset",
+      "accepted": [
+        "strict superset"
+      ],
+      "definition": "A set containing everything another one contains, and more. Calling A a superset of B is a claim that you lose nothing at all by moving from B to A.",
+      "caution": "It is a precise claim and people check it. Ninety percent of the old thing plus some new things is not a superset, and the missing ten percent is exactly what the objection will be about — so either defend nothing is lost or say covers most of. Used loosely about a person's skills or a team's remit it stops being maths and starts sounding like a ranking.",
+      "example": "The new API is a strict superset of the old one, so nothing anybody has built stops working.",
+      "cues": [
+        {
+          "text": "You are reassuring a team that the replacement platform does everything the old one did and more, so nothing they rely on disappears.",
+          "setting": "work"
+        },
+        {
+          "text": "A sponsor asks whether consolidating three tools into one will cost anybody a capability they currently have.",
+          "setting": "work"
+        },
+        {
+          "text": "In an architecture review you want the exact word for a new interface that contains every method of the previous one.",
+          "setting": "work"
+        },
+        {
+          "text": "You are pushing back on a migration plan because the target covers only most of what the current system does, not all of it.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "A group of items chosen out of a larger collection according to a rule you set yourself.",
+        "The overlap two collections share, which is everything they have in common and nothing that belongs to only one of them.",
+        "A newer release that takes the place of an older one, after which the old one stops being supported and anyone still running it is on their own until they move.",
+        "The full list of capabilities a product advertises, which is always longer than the list any single customer has managed to switch on. The gap between the two is where renewals get lost.",
+        "A template from which specific instances are made, so that everything created from it starts with the same shape and can then diverge. Changing it afterwards raises the awkward question of what happens to everything already built from it."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

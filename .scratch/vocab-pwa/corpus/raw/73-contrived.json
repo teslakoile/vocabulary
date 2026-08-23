@@ -1,0 +1,44 @@
+{
+  "headword": "contrived",
+  "senses": [
+    {
+      "term": "contrived",
+      "accepted": [
+        "contrivance"
+      ],
+      "definition": "Obviously engineered to produce a particular impression, and failing because the engineering shows. Used about demos, benchmarks and arguments that only work because they were built to work.",
+      "caution": "It is a verdict on motive, not on method. Say it about a colleague's demo in front of their sponsor and you have accused them of arranging the evidence, which is a much bigger charge than the one you probably meant. If you only mean the example is too clean to prove anything, say unrepresentative.",
+      "example": "That benchmark is contrived — the questions were written after we knew what the model was good at.",
+      "cues": [
+        {
+          "text": "A vendor demo ran perfectly on inputs that were plainly chosen to make it run perfectly, and you are telling your own team why you are unconvinced.",
+          "setting": "work"
+        },
+        {
+          "text": "You are reviewing an evaluation set that was written after the fact to suit the system being measured.",
+          "setting": "work"
+        },
+        {
+          "text": "A business case rests on a scenario nobody believes will happen, assembled so the numbers land where they needed to.",
+          "setting": "work"
+        },
+        {
+          "text": "A film's ending only works because every character suddenly behaves unlike themselves, and you are explaining to a friend why it fell flat.",
+          "setting": "life"
+        },
+        {
+          "text": "A post about a spontaneous moment is very obviously staged, and you want the word for why it irritates you.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Made more complicated than the problem requires, usually by someone enjoying the design more than the outcome.",
+        "Put together quickly out of whatever was to hand, holding up well enough for now and never meant to survive contact with a second user.",
+        "Kept deliberately vague so that nobody can be held to it later, which is a choice about exposure rather than a failure of drafting. It shows up first in the dates and in the numbers that never quite appear.",
+        "Copied closely from an existing example without the reasoning behind it being carried across, so that the shape is right and the fit is wrong. It survives review because everyone recognises the pattern and nobody checks whether it applies here.",
+        "Technically correct and completely beside the point, answering a question nobody in the room had asked. It is the most frustrating kind of contribution precisely because there is nothing in it to argue with, and it costs ten minutes the meeting did not have to spend."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}

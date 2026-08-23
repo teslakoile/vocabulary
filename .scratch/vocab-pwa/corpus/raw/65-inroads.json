@@ -1,0 +1,46 @@
+{
+  "headword": "inroads",
+  "senses": [
+    {
+      "term": "inroads",
+      "accepted": [
+        "make inroads",
+        "making inroads",
+        "inroad"
+      ],
+      "definition": "Progress won into territory that was previously closed to you: an account, a market, a sceptical department. Nearly always plural and nearly always with make.",
+      "caution": "The word concedes you are not there yet. Tell a sponsor you have made inroads with the risk team and you have just told him the risk team still says no. It also frames the other side as ground to be taken, so it sounds faintly hostile about people who were never resisting you.",
+      "example": "We've made real inroads with the risk function, but nobody there is signing anything this quarter.",
+      "cues": [
+        {
+          "text": "A sponsor asks how the push into the private markets business is going. Two teams out of eleven are using the platform, and you want a word that is honestly partial.",
+          "setting": "work"
+        },
+        {
+          "text": "You are writing a quarterly update about a department that ignored you for a year and has finally started taking meetings.",
+          "setting": "work"
+        },
+        {
+          "text": "A director asks whether the backlog of data quality issues is shrinking. It is, slowly, and you do not want to claim victory.",
+          "setting": "work"
+        },
+        {
+          "text": "You have been learning to swim properly after years of avoiding it, and a friend asks how it is going.",
+          "setting": "life"
+        },
+        {
+          "text": "A relative who has been cold with you for years has started returning calls, and you are telling a friend where things stand.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "A complete takeover of a segment, after which there is no room left for anyone else to sell into it.",
+        "A route around an obstacle that lets you get past it without ever having to confront the person who put it there in the first place.",
+        "An introduction made on your behalf by someone the other side already trusts, which buys you a first meeting you could never have booked yourself. The credit belongs to them.",
+        "The early signs that a strategy is not working, visible in the numbers well before anyone is willing to say so out loud. They are read as a warning, and they are usually explained away for at least one more quarter.",
+        "Shortcuts taken now that buy speed today and are paid for later with interest, in rework and workarounds nobody has budgeted for. The debt is real and it accrues quietly, and whoever took it on is rarely still in the seat when it finally comes due."
+      ],
+      "prompt_version": 2
+    }
+  ]
+}
