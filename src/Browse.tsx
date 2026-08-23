@@ -10,9 +10,15 @@
  * screen never turns into a dashboard.
  */
 import { useMemo, useState } from 'react';
+import { Archive, ArrowLeft, ChevronRight, Pencil, RotateCcw, Search, SearchX } from 'lucide-react';
 import EditPanel from './EditPanel';
-import type { Card, Entry, Snapshot } from './types';
+import type { Card as CardRow, Entry, Snapshot } from './types';
 import { archiveEntry } from './store';
+import { Headword, Shell } from '@/components/shell';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
 
 const FILTERS = ['All', 'Recent', 'Struggling', 'Pending', 'Archived'] as const;
 type Filter = (typeof FILTERS)[number];
@@ -37,7 +43,7 @@ const haystack = (entry: Entry): string =>
     .toLowerCase();
 
 function strugglingEntryIds(snapshot: Snapshot): Set<string> {
-  const bySense = new Map<string, Card[]>();
+  const bySense = new Map<string, CardRow[]>();
   for (const card of snapshot.cards) {
     const list = bySense.get(card.sense_id);
     if (list) list.push(card);
@@ -96,17 +102,47 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
 
   if (open) {
     return (
-      <main className="shell">
-        <button className="link" onClick={() => { setOpenId(null); setEditingSense(null); }}>
+      <Shell>
+        <Button
+          variant="ghost"
+          size="sm"
+          className="self-start text-muted-foreground"
+          onClick={() => {
+            setOpenId(null);
+            setEditingSense(null);
+          }}
+        >
+          <ArrowLeft />
           Back to the list
-        </button>
-        <h1 className="term">{open.headword}</h1>
+        </Button>
+
+        <div className="flex flex-col gap-2">
+          <h1 className="font-serif text-[2.1rem] leading-[1.1] font-semibold tracking-tight break-words">
+            <Headword>{open.headword}</Headword>
+          </h1>
+          <div className="flex flex-wrap gap-1.5">
+            {open.archived_at && <Badge variant="secondary">archived</Badge>}
+            {open.status !== 'ready' && <Badge variant="outline">waiting for its meaning</Badge>}
+            {open.senses.length > 1 && (
+              <Badge variant="outline">{open.senses.length} senses</Badge>
+            )}
+          </div>
+        </div>
+
         {open.senses.map((sense) => (
-          <section key={sense.id} className="sense">
-            {open.senses.length > 1 && <h2 className="senseterm">{sense.term}</h2>}
-            <p className="definition">{sense.definition}</p>
-            <p className="caution">{sense.caution}</p>
-            <p className="example">&ldquo;{sense.example}&rdquo;</p>
+          <Card key={sense.id} data-slot="sense" className="gap-3 px-4 py-4">
+            {open.senses.length > 1 && (
+              <h2 className="font-serif text-[1.1rem] font-semibold text-brand break-words">
+                <Headword>{sense.term}</Headword>
+              </h2>
+            )}
+            <p className="leading-relaxed">{sense.definition}</p>
+            <p className="border-l-2 border-l-brand/70 pl-3 text-[0.95rem] leading-relaxed text-foreground/85">
+              {sense.caution}
+            </p>
+            <p className="font-serif leading-relaxed text-muted-foreground italic">
+              &ldquo;{sense.example}&rdquo;
+            </p>
             {editingSense === sense.id ? (
               <EditPanel
                 entry={open}
@@ -116,64 +152,110 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
                 onDone={() => setEditingSense(null)}
               />
             ) : (
-              <button className="link" onClick={() => setEditingSense(sense.id)}>Fix this</button>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="self-start text-muted-foreground"
+                onClick={() => setEditingSense(sense.id)}
+              >
+                <Pencil />
+                Fix this
+              </Button>
             )}
-          </section>
+          </Card>
         ))}
-        <button
-          className="link"
+
+        <Button
+          variant="ghost"
+          size="sm"
+          className="self-start text-muted-foreground"
           onClick={async () => {
             const archived = open.archived_at === null;
             // Archive, never delete: the review history stays attached.
             onSnapshot({
               ...snapshot,
               entries: snapshot.entries.map((e) =>
-                e.id === open.id ? { ...e, archived_at: archived ? new Date().toISOString() : null } : e
+                e.id === open.id
+                  ? { ...e, archived_at: archived ? new Date().toISOString() : null }
+                  : e
               ),
             });
             await archiveEntry(open.id, archived).catch(() => undefined);
           }}
         >
+          {open.archived_at ? <RotateCcw /> : <Archive />}
           {open.archived_at ? 'Bring this back' : 'Archive this word'}
-        </button>
-      </main>
+        </Button>
+      </Shell>
     );
   }
 
   return (
-    <main className="shell">
-      <button className="link" onClick={onClose}>Back to practice</button>
-      <input
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="search words, meanings, cautions"
-        type="search"
-        autoCapitalize="none"
-        autoCorrect="off"
-        spellCheck={false}
-      />
-      <div className="filters">
+    <Shell>
+      <Button variant="ghost" size="sm" className="self-start text-muted-foreground" onClick={onClose}>
+        <ArrowLeft />
+        Back to practice
+      </Button>
+
+      <div className="relative">
+        <Search className="pointer-events-none absolute top-1/2 left-4 size-4 -translate-y-1/2 text-muted-foreground" />
+        <Input
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="search words, meanings, cautions"
+          type="search"
+          className="pl-11"
+          autoCapitalize="none"
+          autoCorrect="off"
+          spellCheck={false}
+        />
+      </div>
+
+      <div className="flex flex-wrap gap-1.5">
         {FILTERS.map((name) => (
-          <button
+          <Button
             key={name}
-            className={name === filter ? 'chip on' : 'chip'}
+            size="sm"
+            variant={name === filter ? 'brand' : 'outline'}
+            className="h-9 rounded-full px-3.5"
             onClick={() => setFilter(name)}
           >
             {name}
-          </button>
+          </Button>
         ))}
       </div>
-      <ul className="rows">
-        {rows.map((entry) => (
-          <li key={entry.id}>
-            <button onClick={() => setOpenId(entry.id)}>
-              <strong>{entry.headword}</strong>
-              <span>{entry.status === 'ready' ? gloss(entry) : 'waiting for its meaning'}</span>
-            </button>
-          </li>
-        ))}
-      </ul>
-      {rows.length === 0 && <p className="placeholder">Nothing matches.</p>}
-    </main>
+
+      {rows.length > 0 && (
+        <Card className="gap-0 overflow-hidden py-0">
+          <ul data-slot="rows" className="list-none divide-y divide-border/70 p-0">
+            {rows.map((entry) => (
+              <li key={entry.id}>
+                <button
+                  className="pressable flex w-full items-center gap-3 px-4 py-3.5 text-left hover:bg-accent/50"
+                  onClick={() => setOpenId(entry.id)}
+                >
+                  <span className="flex min-w-0 flex-col gap-0.5">
+                    <strong className="font-semibold break-words">
+                      <Headword>{entry.headword}</Headword>
+                    </strong>
+                    <span className="text-[0.88rem] leading-snug text-muted-foreground">
+                      {entry.status === 'ready' ? gloss(entry) : 'waiting for its meaning'}
+                    </span>
+                  </span>
+                  <ChevronRight className="ml-auto size-4 shrink-0 text-muted-foreground/60" />
+                </button>
+              </li>
+            ))}
+          </ul>
+        </Card>
+      )}
+
+      {rows.length === 0 && (
+        <Card className="items-center gap-3 border-dashed px-6 py-10 text-center">
+          <SearchX className="size-6 text-muted-foreground" />
+          <p className="text-muted-foreground">Nothing matches.</p>
+        </Card>
+      )}
+    </Shell>
   );
 }

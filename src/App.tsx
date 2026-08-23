@@ -1,9 +1,13 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Bell, Plus, Search, Share } from 'lucide-react';
 import Browse from './Browse';
 import Capture from './Capture';
 import InstallCard, { shouldOfferInstall } from './InstallCard';
 import Review from './Review';
 import SecretGate from './SecretGate';
+import { Shell, TopBar, TopBarInner } from '@/components/shell';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 import { Queue } from './queue';
 import { dismissNudgeOffer, enableNudge, nudgeState } from './push';
 import { getSecret, readSnapshot, sync, UnauthorisedError, type Snapshot } from './store';
@@ -114,61 +118,84 @@ export default function App() {
     );
   }
 
-  if (loading) return <main className="shell" />;
+  if (loading) return <Shell />;
 
   if (!snapshot || !queue) {
     return (
-      <main className="shell">
-        <p className="placeholder">
-          Nothing cached yet, and the server is not reachable. Open this again once you have a
-          connection.
-        </p>
-      </main>
+      <Shell className="justify-center">
+        <Card className="items-center gap-3 px-6 py-10 text-center">
+          <Share className="size-6 text-muted-foreground" />
+          <p className="text-muted-foreground">
+            Nothing cached yet, and the server is not reachable. Open this again once you have a
+            connection.
+          </p>
+        </Card>
+      </Shell>
     );
   }
 
   return (
-    <div className="app">
+    <div className="flex min-h-dvh flex-col">
       {view === 'review' && (
         // Capture is one tap from practising rather than buried in a menu,
         // because it is competing with typing a line into Google Keep.
-        <nav className="bar">
-          <button onClick={() => setView('capture')} aria-label="Add a word">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
-              <path d="M12 5v14M5 12h14" />
-            </svg>
-          </button>
-          <button onClick={() => setView('browse')} aria-label="Search your words">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
-              <circle cx="11" cy="11" r="6.5" />
-              <path d="M16 16l4.5 4.5" />
-            </svg>
-          </button>
-        </nav>
+        <TopBar>
+          <TopBarInner>
+            <Button variant="ghost" size="icon-xl" onClick={() => setView('capture')} aria-label="Add a word">
+              <Plus />
+            </Button>
+            <span className="font-serif text-[0.7rem] tracking-[0.35em] text-muted-foreground uppercase">
+              Vocabulary
+            </span>
+            <Button variant="ghost" size="icon-xl" onClick={() => setView('browse')} aria-label="Search your words">
+              <Search />
+            </Button>
+          </TopBarInner>
+        </TopBar>
       )}
 
-      {view === 'review' && offerInstall && <InstallCard onDismiss={() => setOfferInstall(false)} />}
+      {view === 'review' && offerInstall && (
+        <div className="mx-auto w-full max-w-[34rem] px-5 pt-4">
+          <InstallCard onDismiss={() => setOfferInstall(false)} />
+        </div>
+      )}
 
       {view === 'review' && offerNudge && (
         // iOS ignores a permission request that is not tied to a tap, so the
         // ask has to be a button rather than something that fires on launch.
-        <aside className="offer">
-          <p>A word at 1pm each day on this device, so this stays a habit. Turning it on elsewhere too is fine.</p>
-          <div className="row">
-            <button
-              className="primary"
-              onClick={async () => {
-                setOfferNudge(false);
-                await enableNudge();
-              }}
-            >
-              Turn on
-            </button>
-            <button className="link" onClick={() => { dismissNudgeOffer(); setOfferNudge(false); }}>
-              Not now
-            </button>
-          </div>
-        </aside>
+        <div className="mx-auto w-full max-w-[34rem] px-5 pt-4">
+          <Card className="gap-3 border-brand/25 bg-brand-muted/40 px-4 py-4">
+            <div className="flex items-start gap-3">
+              <span className="mt-0.5 flex size-9 shrink-0 items-center justify-center rounded-lg bg-brand/15 text-brand">
+                <Bell className="size-4" />
+              </span>
+              <p className="text-sm text-muted-foreground">
+                A word at 1pm each day on this device, so this stays a habit. Turning it on
+                elsewhere too is fine.
+              </p>
+            </div>
+            <div className="flex items-center gap-2">
+              <Button
+                variant="brand"
+                onClick={async () => {
+                  setOfferNudge(false);
+                  await enableNudge();
+                }}
+              >
+                Turn on
+              </Button>
+              <Button
+                variant="ghost"
+                onClick={() => {
+                  dismissNudgeOffer();
+                  setOfferNudge(false);
+                }}
+              >
+                Not now
+              </Button>
+            </div>
+          </Card>
+        </div>
       )}
 
       {view === 'review' && <Review queue={queue} snapshot={snapshot} onSnapshot={setSnapshot} />}

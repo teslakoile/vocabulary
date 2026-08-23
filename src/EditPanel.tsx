@@ -6,8 +6,13 @@
  * it in the moment, and the queue keeps your place.
  */
 import { useState } from 'react';
+import { TriangleAlert } from 'lucide-react';
 import type { Entry, Sense, Snapshot } from './types';
 import { saveEntry } from './store';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
 
 interface Props {
   entry: Entry;
@@ -68,47 +73,65 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
   }
 
   return (
-    <div className="edit">
-      <label>
-        Word
-        <input value={draft.term} onChange={set('term')} autoCapitalize="none" spellCheck={false} />
-      </label>
-      <label>
-        Also accepted
-        <input
+    <div className="grid gap-3.5 border-t border-border pt-4">
+      <div className="grid gap-2">
+        <Label htmlFor={`term-${sense.id}`} className="text-muted-foreground">Word</Label>
+        <Input
+          id={`term-${sense.id}`}
+          value={draft.term}
+          onChange={set('term')}
+          autoCapitalize="none"
+          spellCheck={false}
+        />
+      </div>
+      <div className="grid gap-2">
+        <Label htmlFor={`accepted-${sense.id}`} className="text-muted-foreground">Also accepted</Label>
+        <Input
+          id={`accepted-${sense.id}`}
           value={draft.accepted}
           onChange={set('accepted')}
           placeholder="comma separated"
           autoCapitalize="none"
           spellCheck={false}
         />
-      </label>
-      <label>
-        Definition
-        <textarea value={draft.definition} onChange={set('definition')} rows={3} />
-      </label>
-      <label>
-        Caution
-        <textarea value={draft.caution} onChange={set('caution')} rows={3} />
-      </label>
-      <label>
-        Example
-        <textarea value={draft.example} onChange={set('example')} rows={2} />
-      </label>
-      <label>
-        Your note
-        <textarea value={draft.capture_note} onChange={set('capture_note')} rows={2} placeholder="why you wrote it down" />
-      </label>
+      </div>
+      <div className="grid gap-2">
+        <Label htmlFor={`definition-${sense.id}`} className="text-muted-foreground">Definition</Label>
+        <Textarea id={`definition-${sense.id}`} value={draft.definition} onChange={set('definition')} rows={3} />
+      </div>
+      <div className="grid gap-2">
+        <Label htmlFor={`caution-${sense.id}`} className="text-muted-foreground">Caution</Label>
+        <Textarea id={`caution-${sense.id}`} value={draft.caution} onChange={set('caution')} rows={3} />
+      </div>
+      <div className="grid gap-2">
+        <Label htmlFor={`example-${sense.id}`} className="text-muted-foreground">Example</Label>
+        <Textarea id={`example-${sense.id}`} value={draft.example} onChange={set('example')} rows={2} />
+      </div>
+      <div className="grid gap-2">
+        <Label htmlFor={`note-${sense.id}`} className="text-muted-foreground">Your note</Label>
+        <Textarea
+          id={`note-${sense.id}`}
+          value={draft.capture_note}
+          onChange={set('capture_note')}
+          rows={2}
+          placeholder="why you wrote it down"
+        />
+      </div>
 
-      {failed && <p className="failed">Saved on this device only. It will not reach the server until you are back online.</p>}
+      {failed && (
+        <p className="flex items-start gap-2 text-sm text-destructive">
+          <TriangleAlert className="mt-0.5 size-4 shrink-0" />
+          Saved on this device only. It will not reach the server until you are back online.
+        </p>
+      )}
 
-      <div className="row">
-        <button className="primary" onClick={save} disabled={saving}>
+      <div className="flex items-center gap-2">
+        <Button onClick={save} disabled={saving}>
           {saving ? 'Saving' : 'Save'}
-        </button>
-        <button className="link" onClick={onDone}>
+        </Button>
+        <Button variant="ghost" onClick={onDone}>
           Cancel
-        </button>
+        </Button>
       </div>
     </div>
   );

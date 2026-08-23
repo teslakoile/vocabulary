@@ -3,13 +3,18 @@
  *
  * There is no session, no daily count and no done state, so nothing here counts
  * anything up or congratulates you. The only status the screen carries is a
- * quiet dot marking a card whose answer moves the schedule.
+ * quiet gold rule marking a card whose answer moves the schedule.
  */
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { ArrowRight, Check, Eye, MessageSquareQuote, Pencil, ScrollText, X } from 'lucide-react';
 import { applyGrade, gradeFor } from '../shared/scheduler';
 import EditPanel from './EditPanel';
 import { answerMatches, type Queue, type QueueItem } from './queue';
 import { applyLocally, flush, recordEvent, type Snapshot } from './store';
+import { Headword, Shell } from '@/components/shell';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
 
 interface Props {
   queue: Queue;
@@ -18,6 +23,12 @@ interface Props {
 }
 
 type Answered = { correct: boolean; given?: string } | null;
+
+const KIND = {
+  recognition: { label: 'recognition', icon: Eye },
+  reverse: { label: 'from the definition', icon: ScrollText },
+  production: { label: 'from a situation', icon: MessageSquareQuote },
+} as const;
 
 export default function Review({ queue, snapshot, onSnapshot }: Props) {
   const [item, setItem] = useState<QueueItem | undefined>(() => queue.peek());
@@ -86,55 +97,115 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
 
   if (!item) {
     return (
-      <main className="shell">
-        <p className="placeholder">
-          Nothing to practise yet. Words appear here once they have been through generation.
-        </p>
-      </main>
+      <Shell className="justify-center">
+        <Card className="items-center gap-3 border-dashed px-6 py-10 text-center">
+          <ScrollText className="size-6 text-muted-foreground" />
+          <p className="text-muted-foreground">
+            Nothing to practise yet. Words appear here once they have been through generation.
+          </p>
+        </Card>
+      </Shell>
     );
   }
 
   const { sense, entry, card } = item;
+  const kind = KIND[card.type];
 
   return (
-    <main className="shell review">
-      {item.counts && <span className="counts" title="This answer moves the schedule" />}
+    <Shell>
+      {item.counts && (
+        <span
+          className="h-[3px] w-7 shrink-0 rounded-full bg-brand/70"
+          title="This answer moves the schedule"
+        />
+      )}
 
       {!answered ? (
         <Question item={item} typed={typed} setTyped={setTyped} onReveal={reveal} inputRef={input} />
       ) : (
-        <>
-          <div className={`verdict ${answered.correct ? 'right' : 'wrong'}`}>
+        <div data-slot="answer" className="stagger flex flex-1 flex-col gap-4">
+          <div
+            className={
+              answered.correct
+                ? 'flex items-center gap-2 text-sm font-semibold tracking-wide text-[var(--success)]'
+                : 'flex items-center gap-2 text-sm font-semibold tracking-wide text-destructive'
+            }
+          >
+            <span
+              className={
+                answered.correct
+                  ? 'flex size-6 items-center justify-center rounded-full bg-[var(--success)]/15'
+                  : 'flex size-6 items-center justify-center rounded-full bg-destructive/15'
+              }
+            >
+              {answered.correct ? <Check className="size-3.5" /> : <X className="size-3.5" />}
+            </span>
             {answered.correct ? 'Right' : 'Not this time'}
-            {answered.given && !answered.correct && <em> you wrote &ldquo;{answered.given}&rdquo;</em>}
+            {answered.given && !answered.correct && (
+              <span className="font-normal text-muted-foreground">
+                you wrote &ldquo;{answered.given}&rdquo;
+              </span>
+            )}
           </div>
 
-          <h1 className="term">{sense.term}</h1>
-          {sense.accepted.length > 0 && <p className="accepted">also {sense.accepted.join(', ')}</p>}
+          <div className="flex flex-col gap-1">
+            <h1 className="font-serif text-[2.1rem] leading-[1.1] font-semibold tracking-tight">
+              <Headword>{sense.term}</Headword>
+            </h1>
+            {sense.accepted.length > 0 && (
+              <p className="text-sm text-muted-foreground">also {sense.accepted.join(', ')}</p>
+            )}
+          </div>
 
-          <p className="definition">{sense.definition}</p>
-          <p className="caution">{sense.caution}</p>
-          <p className="example">&ldquo;{sense.example}&rdquo;</p>
-          {entry.capture_note && <p className="note">{entry.capture_note}</p>}
+          <p className="text-[1.05rem] leading-relaxed">{sense.definition}</p>
 
-          {editing ? (
-            <EditPanel entry={entry} sense={sense} snapshot={snapshot} onSnapshot={onSnapshot} onDone={() => setEditing(false)} />
-          ) : (
-            <button className="link" onClick={() => setEditing(true)}>
-              Fix this
-            </button>
+          {/* The field that stops a word being misused, so it gets the one accent
+           * on the screen. It is the reason this app is not a dictionary. */}
+          <Card className="gap-0 border-l-2 border-l-brand bg-brand-muted/30 px-4 py-3.5">
+            <p className="text-[0.97rem] leading-relaxed text-foreground/90">{sense.caution}</p>
+          </Card>
+
+          <p className="font-serif text-[1.02rem] leading-relaxed text-muted-foreground italic">
+            &ldquo;{sense.example}&rdquo;
+          </p>
+
+          {entry.capture_note && (
+            <p className="text-sm text-muted-foreground">{entry.capture_note}</p>
           )}
 
-          <button className="primary" onClick={next} autoFocus>
-            Next
-          </button>
+          {editing ? (
+            <EditPanel
+              entry={entry}
+              sense={sense}
+              snapshot={snapshot}
+              onSnapshot={onSnapshot}
+              onDone={() => setEditing(false)}
+            />
+          ) : (
+            <Button
+              variant="ghost"
+              size="sm"
+              className="self-start text-muted-foreground"
+              onClick={() => setEditing(true)}
+            >
+              <Pencil />
+              Fix this
+            </Button>
+          )}
 
-          <p className="meta">
-            {card.type === 'recognition' ? 'recognition' : card.type === 'reverse' ? 'from the definition' : 'from a situation'}
-          </p>
-        </>
+          <div className="mt-auto flex flex-col gap-3 pt-2">
+            <Button size="xl" className="w-full" onClick={next} autoFocus>
+              Next
+              <ArrowRight />
+            </Button>
+            <p className="flex items-center justify-center gap-1.5 text-xs text-muted-foreground/70">
+              <kind.icon className="size-3.5" />
+              {kind.label}
+            </p>
+          </div>
+        </div>
       )}
-    </main>
+    </Shell>
   );
 }
 
@@ -151,24 +222,31 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
 
   if (card.type === 'recognition') {
     return (
-      <>
-        <h1 className="term">{sense.term}</h1>
-        <ul className="options">
+      <div data-slot="question" data-kind="recognition" className="stagger flex flex-col gap-4">
+        <h1 className="font-serif text-[2.1rem] leading-[1.1] font-semibold tracking-tight">
+          <Headword>{sense.term}</Headword>
+        </h1>
+        <ul data-slot="options" className="grid list-none gap-2.5 p-0">
           {(item.options ?? []).map((option, i) => (
             <li key={option}>
-              <button onClick={() => onReveal(option === sense.definition)}>
-                <kbd>{i + 1}</kbd>
+              <button
+                className="surface pressable flex w-full items-start gap-3 rounded-xl border border-border bg-card px-4 py-3.5 text-left leading-snug hover:border-brand/40 hover:bg-accent/60"
+                onClick={() => onReveal(option === sense.definition)}
+              >
+                {/* The option number, for keyboard use. Hidden where there is no keyboard. */}
+                <kbd className="mt-px hidden size-6 shrink-0 items-center justify-center rounded-md border border-border bg-muted font-sans text-xs text-muted-foreground pointer-fine:flex">
+                  {i + 1}
+                </kbd>
                 <span>{option}</span>
               </button>
             </li>
           ))}
         </ul>
-      </>
+      </div>
     );
   }
 
-  const prompt =
-    card.type === 'reverse' ? sense.definition : (item.cue?.text ?? sense.definition);
+  const prompt = card.type === 'reverse' ? sense.definition : (item.cue?.text ?? sense.definition);
 
   const submit = () => {
     if (!typed.trim()) return;
@@ -176,15 +254,16 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
   };
 
   return (
-    <>
-      <p className="prompt">{prompt}</p>
+    <div data-slot="question" data-kind={card.type} className="stagger flex flex-col gap-4">
+      <p data-slot="prompt" className="pt-1 text-[1.28rem] leading-[1.45]">{prompt}</p>
       <form
+        className="grid gap-3"
         onSubmit={(e) => {
           e.preventDefault();
           submit();
         }}
       >
-        <input
+        <Input
           ref={inputRef}
           value={typed}
           onChange={(e) => setTyped(e.target.value)}
@@ -195,13 +274,18 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
           spellCheck={false}
           enterKeyHint="go"
         />
-        <button className="primary" type="submit" disabled={!typed.trim()}>
+        <Button size="xl" type="submit" className="w-full" disabled={!typed.trim()}>
           Check
-        </button>
+        </Button>
       </form>
-      <button className="link" onClick={() => onReveal(false)}>
+      <Button
+        variant="quiet"
+        size="sm"
+        className="self-start"
+        onClick={() => onReveal(false)}
+      >
         I don&rsquo;t know
-      </button>
-    </>
+      </Button>
+    </div>
   );
 }
