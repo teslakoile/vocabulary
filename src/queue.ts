@@ -31,6 +31,9 @@ const LOOKAHEAD = 24;
  */
 const SENSE_GAP = 8;
 
+/** Wrong options shown beside the right one on a recognition card. */
+const WRONG_OPTIONS = 3;
+
 export interface QueueItem {
   card: Card;
   sense: Sense;
@@ -38,7 +41,7 @@ export interface QueueItem {
   /** True for due and new cards. False in free play, where answers are history
    *  rather than evidence about recall timing. */
   counts: boolean;
-  /** Recognition only: the correct definition plus five wrong ones, shuffled. */
+  /** Recognition only: the correct definition plus three wrong ones, shuffled. */
   options?: string[];
   /** Production only: which of the sense's cues this presentation uses. */
   cue?: Cue;
@@ -127,8 +130,11 @@ function present(card: Card, { senses, entries }: Indexed, counts: boolean): Que
   if (card.type === 'recognition') {
     // Sibling senses make the sharpest distractors, which is the whole reason
     // an entry like scaffolding / harness / sandbox was written down together.
+    //
+    // Three wrong ones, not five. Six long definitions is more reading than
+    // recalling, and on a phone the last two sit below the fold anyway.
     const siblings = entry.senses.filter((s) => s.id !== sense.id).map((s) => s.definition);
-    const wrong = [...siblings, ...sense.distractors].filter(Boolean).slice(0, 5);
+    const wrong = [...siblings, ...sense.distractors].filter(Boolean).slice(0, WRONG_OPTIONS);
     item.options = shuffle([sense.definition, ...wrong]);
   }
 
