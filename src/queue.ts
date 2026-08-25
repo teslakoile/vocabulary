@@ -268,8 +268,14 @@ export class Queue {
     const countingIds = new Set(ordered.map((c) => c.id));
     // Free play prefers what has been seen least recently, so the loop does not
     // feel like a fixed rotation.
-    this.pool = cards
-      .filter((c) => !countingIds.has(c.id))
+    //
+    // Shuffle before the sort, not after. Sort is stable, so cards that have
+    // been answered keep their date order while cards that have never been seen
+    // land in a random order rather than the order the API happened to return.
+    // That order is physical row order, and it is not neutral: adding the
+    // `identify` type put all 95 of its cards at the end of the table, so the
+    // stalest third held none of them and free play served 3 in 40.
+    this.pool = shuffle(cards.filter((c) => !countingIds.has(c.id)))
       .sort((a, b) => (a.last_event_at ?? '').localeCompare(b.last_event_at ?? ''));
 
     this.upcoming = space(

@@ -258,7 +258,7 @@ async function state(env: Env): Promise<Response> {
   const settings = await loadSettings(env);
   const [cardRows, intakeRow] = await Promise.all([
     env.DB.prepare(
-      'SELECT id, sense_id, type, fsrs_state, due_at, last_event_at, intake_order FROM cards'
+      'SELECT id, sense_id, type, fsrs_state, due_at, last_event_at, intake_order FROM cards ORDER BY intake_order'
     ).all<CardRow>(),
     env.DB.prepare('SELECT card_count FROM intake_log WHERE day = ?')
       .bind(localDay(settings.timezone))
