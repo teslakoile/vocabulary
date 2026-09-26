@@ -39,11 +39,11 @@
         "What someone can do but cannot fully explain, such as judgement, feel, or a sense of fit."
       ],
       "word_distractors": [
-        "dogfooding",
-        "front and center",
-        "trivial",
-        "sandbox",
-        "eschew"
+        "eschew",
+        "superset",
+        "first principles",
+        "broad",
+        "progressive"
       ],
       "prompt_version": 4
     },
@@ -85,11 +85,11 @@
         "The person who argues your case in the rooms you are not in, without being asked."
       ],
       "word_distractors": [
-        "elucidate",
         "in pockets",
-        "bespoke",
-        "persistence",
-        "primitive"
+        "despondent",
+        "eschew",
+        "cognizant",
+        "long-horizon"
       ],
       "prompt_version": 4
     }

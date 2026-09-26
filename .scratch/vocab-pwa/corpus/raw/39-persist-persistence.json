@@ -43,55 +43,52 @@
         "run it by you",
         "inroads",
         "scaffolding",
-        "disparage"
+        "frontier"
       ],
       "prompt_version": 4
     },
     {
       "term": "persistence",
       "accepted": [
-        "persistent"
+        "persistent",
+        "persistence layer"
       ],
-      "gloss": "refusing to give up",
+      "gloss": "keeping data after a restart",
       "gloss_distractors": [
-        "fear of failing",
-        "lack of interest",
-        "great natural talent"
+        "sending data between servers",
+        "a copy kept in memory",
+        "deleting old records"
       ],
-      "definition": "Staying with something long after most people would have stopped.",
-      "caution": "Praising persistence suggests the person succeeded by not stopping, which can seem a weak compliment for good work. Calling someone persistent often means they will not take no.",
-      "example": "That deal closed on persistence more than anything else. She went back to them four times after we had all written it off.",
+      "definition": "The ability of stored data to survive a restart, or the part of a system that does this.",
+      "caution": "Engineers hear a promise that data survives a crash or restart, so check that it really does. With non-technical people, say storage or saving instead.",
+      "example": "The agent forgets everything between sessions because we never added persistence for the conversation history.",
       "cues": [
         {
-          "text": "A friend got into medical school on their third application, and you are raising a glass to whatever it was that got them there.",
-          "setting": "life"
-        },
-        {
-          "text": "Your son has been failing the same climbing route every Saturday for a month, and today he got up it.",
-          "setting": "life"
-        },
-        {
-          "text": "You are writing a reference for someone whose strongest quality is that they never let a thing drop.",
+          "text": "A prototype forgets every user's settings each night when the server restarts, and you are naming the missing capability.",
           "setting": "work"
         },
         {
-          "text": "A neighbour finally got the council to replace the broken streetlight after a year of letters nobody answered.",
-          "setting": "life"
+          "text": "In an architecture review you ask which component is responsible for keeping agent memory across deployments.",
+          "setting": "work"
+        },
+        {
+          "text": "A vendor's chatbot demo looks great, but you ask what happens to the conversation history if their service restarts.",
+          "setting": "work"
         }
       ],
       "distractors": [
-        "Weight and seriousness in how a person carries themselves.",
-        "Being aware of something and visibly taking it into account.",
-        "Tangled into something so completely that you can no longer act on your own.",
-        "Low in a way that has given up on things improving.",
-        "Alert and responsive to something, picking up its signals early and adjusting."
+        "The practice of keeping a copy of data in memory so repeated reads are fast.",
+        "The process of turning an object in memory into bytes that can be sent over a network.",
+        "The time it takes for a request to travel from the user to the server and back again to them.",
+        "A record of every change made to a system, kept so that problems can be traced afterwards.",
+        "The practice of deleting old data on a schedule so storage costs stay under control."
       ],
       "word_distractors": [
-        "bolster",
         "blanket approval",
-        "failure mode",
+        "asymmetric",
+        "enmeshed",
         "surreptitiously",
-        "north star"
+        "elucidate"
       ],
       "prompt_version": 4
     }

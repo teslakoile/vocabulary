@@ -42,11 +42,11 @@
         "Trained in a procedure well enough to carry it out without checking the manual first."
       ],
       "word_distractors": [
-        "eschew",
-        "broad",
-        "north star",
+        "contrived",
         "daily driver",
-        "flywheel effect"
+        "lend itself",
+        "sponsorship",
+        "tacit knowledge"
       ],
       "prompt_version": 4
     }

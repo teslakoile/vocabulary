@@ -47,10 +47,10 @@
       ],
       "word_distractors": [
         "second order effects",
+        "trivial",
+        "nontrivial",
         "ducks in a row",
-        "advocate",
-        "unequivocal",
-        "community of practice"
+        "disambiguate"
       ],
       "prompt_version": 4
     }

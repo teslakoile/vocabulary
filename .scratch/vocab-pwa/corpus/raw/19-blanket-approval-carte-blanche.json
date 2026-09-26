@@ -14,7 +14,7 @@
         "a refusal to take part"
       ],
       "definition": "Permission given once in advance to cover a whole class of decisions.",
-      "caution": "Claim it only if you are sure, because people will check and there are usually conditions. Carte blanche sounds boastful about yourself and suggests no supervision of others.",
+      "caution": "Claim it only if you are sure, because people will check and there are usually conditions.",
       "example": "We do not have blanket approval for production data, it is per use case, and the last one took three weeks.",
       "cues": [
         {
@@ -22,11 +22,54 @@
           "setting": "work"
         },
         {
-          "text": "A sponsor offers to let you make all the tooling decisions for the year without coming back to him each time.",
+          "text": "You are drafting a governance note about which decisions need a case-by-case review and which do not.",
           "setting": "work"
         },
         {
-          "text": "You are drafting a governance note about which decisions need a case-by-case review and which do not.",
+          "text": "Legal says any vendor under a set spend can be onboarded without a fresh review each time, and you want the phrase for that.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "Approval that expires if it is not used within a set period.",
+        "A decision taken by one person and announced without discussion.",
+        "A rule that applies to everyone except those who ask to be excused.",
+        "A requirement that every single case be reviewed on its own before it can proceed.",
+        "A standing instruction to stop work the moment a particular threshold is crossed."
+      ],
+      "word_distractors": [
+        "fearless forecast",
+        "broadly",
+        "tacit knowledge",
+        "unequivocal",
+        "rectify"
+      ],
+      "prompt_version": 4
+    },
+    {
+      "term": "carte blanche",
+      "accepted": [
+        "blanket approval"
+      ],
+      "gloss": "full freedom to decide",
+      "gloss_distractors": [
+        "a formal written warning",
+        "a one-off exception",
+        "strict limits on spending"
+      ],
+      "definition": "Full freedom to act as you judge best, usually approval given in advance for everything.",
+      "distractors": [
+        "A written warning given before any formal action is taken.",
+        "Permission for one specific case, which has to be asked for again next time.",
+        "A rule that every decision above a set amount goes to a committee first.",
+        "A budget that has been frozen until the next planning round, with no exceptions made for anyone.",
+        "A requirement that each change be reviewed by two people before it goes live, however small it is."
+      ],
+      "caution": "Said about yourself it sounds boastful, and about others it suggests nobody is checking their work. Use it when the freedom really is complete.",
+      "example": "The new CTO gave the platform team carte blanche on tooling for the first year.",
+      "cues": [
+        {
+          "text": "A sponsor offers to let you make all the tooling decisions for the year without coming back to him each time.",
           "setting": "work"
         },
         {
@@ -38,19 +81,12 @@
           "setting": "life"
         }
       ],
-      "distractors": [
-        "Approval that expires if it is not used within a set period.",
-        "A decision taken by one person and announced without discussion.",
-        "A rule that applies to everyone except those who ask to be excused.",
-        "A requirement that every single case be reviewed on its own before it can proceed.",
-        "A standing instruction to stop work the moment a particular threshold is crossed."
-      ],
       "word_distractors": [
-        "obscure",
-        "fearless forecast",
-        "tacit knowledge",
-        "heuristic",
-        "frontrunner"
+        "advocate for",
+        "advocate",
+        "by and large",
+        "wordsmith",
+        "substantial"
       ],
       "prompt_version": 4
     }

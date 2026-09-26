@@ -13,9 +13,9 @@
         "hidden from most users",
         "easy to repair"
       ],
-      "definition": "Lasting only a short time, and built that way on purpose.",
-      "caution": "In technical talk it is a claim, and people will ask about the logs and cached data. Elsewhere it sounds literary and a bit showy when spoken.",
-      "example": "Every agent run gets an ephemeral workspace — it exists for the task and nothing survives it.",
+      "definition": "Lasting only a short time before it is gone.",
+      "caution": "It sounds formal when spoken, so say short-lived in conversation. In technical writing people read it as a promise that nothing is kept afterwards.",
+      "example": "The excitement around the launch was ephemeral, and by Friday the usage numbers were back to normal.",
       "cues": [
         {
           "text": "You are describing a design where each run gets a fresh environment that is destroyed the moment it finishes.",
@@ -49,8 +49,8 @@
         "rectify",
         "first order effects",
         "center of excellence",
-        "failure mode",
-        "serialize"
+        "carte blanche",
+        "failure mode"
       ],
       "prompt_version": 4
     }

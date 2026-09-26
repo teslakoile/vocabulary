@@ -42,53 +42,53 @@
         "The preparation done in advance of a moment where a gap would cost you dearly."
       ],
       "word_distractors": [
+        "incremental",
+        "substantiate",
         "disparage",
         "ducks in a row",
-        "long-horizon",
-        "heuristic",
-        "vertical"
+        "long-horizon"
       ],
       "prompt_version": 4
     },
     {
       "term": "harness",
       "accepted": [],
-      "gloss": "a setup for testing a system",
+      "gloss": "code that runs an AI agent",
       "gloss_distractors": [
-        "a temporary support",
         "a list of user complaints",
-        "a contract with an outside vendor"
+        "a contract with an outside vendor",
+        "the training data for a model"
       ],
-      "definition": "A setup built to run a system automatically and check how it behaves.",
-      "caution": "In AI work people usually hear evaluation harness, so say so if you mean a general test setup. Use it for tools you built yourself, and not for a public benchmark you only ran.",
-      "example": "We need a harness that replays last quarter's queries against the new model.",
+      "definition": "The software around an AI model that runs it, calls its tools and manages each step.",
+      "caution": "Testers may hear a test harness, so say agent harness when it matters. Keep it for the code around the model, and call the model itself the model.",
+      "example": "The model is fine, but our harness drops tool results once the context fills up.",
       "cues": [
         {
-          "text": "You want something that fires realistic inputs at your agent and records what comes back, so you can compare two versions honestly.",
+          "text": "An agent keeps losing track of its tool results, and you suspect the code wrapped around the model rather than the model itself.",
           "setting": "work"
         },
         {
-          "text": "A director asks how you will know the new model is better, and you need a word for the apparatus that answers that.",
+          "text": "You are comparing two coding agents that use the same underlying model and want a word for the part that actually differs.",
           "setting": "work"
         },
         {
-          "text": "A vendor demo went well and you want to run your own inputs through their system under your own conditions before believing any of it.",
+          "text": "A director asks what your team built if the model came from a vendor, and you want the name for your part.",
           "setting": "work"
         }
       ],
       "distractors": [
-        "Temporary structure that holds work up until the real thing can stand alone.",
-        "An isolated environment where something runs without affecting anything real.",
-        "Using your own product for real work before asking anyone else to.",
-        "A specific way a system goes wrong.",
-        "The underlying layer everything else runs on."
+        "An isolated environment where code runs without touching anything real.",
+        "The weights of a trained model, stored so it can be loaded again later.",
+        "A dashboard that shows how often each model is called and what each call costs.",
+        "A written agreement that sets out what a vendor's model may and may not be used for by staff.",
+        "The data centre hardware a model runs on, including the chips, memory and cooling it needs."
       ],
       "word_distractors": [
-        "lay of the land",
+        "eschew",
         "squarely",
-        "enmeshed",
-        "verifiability",
-        "tacit knowledge"
+        "tacit knowledge",
+        "watch outs",
+        "daily driver"
       ],
       "prompt_version": 4
     },
@@ -128,11 +128,56 @@
         "One of the handful of cloud providers running compute and storage at planetary scale."
       ],
       "word_distractors": [
-        "heuristic",
-        "deliberate",
-        "daily driver",
-        "first principles",
-        "mold breaker"
+        "mold breaker",
+        "hyperscaler",
+        "ducks in a row",
+        "obfuscate",
+        "build that muscle"
+      ],
+      "prompt_version": 4
+    },
+    {
+      "term": "scaffolding (AI)",
+      "accepted": [
+        "scaffolding",
+        "scaffold"
+      ],
+      "gloss": "extra help added around a model",
+      "gloss_distractors": [
+        "a model trained from scratch",
+        "a larger, more expensive model",
+        "the prices charged per model call"
+      ],
+      "definition": "Extra prompts and checks around a model that help it do a task it cannot do alone.",
+      "distractors": [
+        "Training a model further on examples from one company's own data.",
+        "The set of chips and machines that a model runs on in a data centre.",
+        "A score that shows how well a model does on a fixed set of test questions.",
+        "The written terms that set out who owns what a model produces for each customer that uses it.",
+        "A smaller copy of a large model, trained to copy its answers so that it runs more cheaply."
+      ],
+      "caution": "It implies the extra help can come off as models improve, so people will ask when. Use harness for the code that runs the agent.",
+      "example": "Most of the gain came from scaffolding: a planning step and a self-check before each answer.",
+      "cues": [
+        {
+          "text": "A weaker model matched a stronger one once you added a planning step and a self-check, and you want a word for those additions.",
+          "setting": "work"
+        },
+        {
+          "text": "A sponsor asks whether the extra prompting steps will still be needed when the next model version ships.",
+          "setting": "work"
+        },
+        {
+          "text": "You are explaining that the model did not get smarter, the team gave it a checklist and worked examples to follow.",
+          "setting": "work"
+        }
+      ],
+      "word_distractors": [
+        "north star",
+        "by and large",
+        "watch outs",
+        "sleuthing",
+        "executive presence"
       ],
       "prompt_version": 4
     }

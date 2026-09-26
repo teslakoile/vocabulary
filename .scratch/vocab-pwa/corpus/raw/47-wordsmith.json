@@ -44,11 +44,11 @@
         "To speak about someone in a way that quietly lowers them."
       ],
       "word_distractors": [
-        "first order effects",
-        "continuum",
         "play it by ear",
-        "top brass",
-        "watch outs"
+        "idempotent",
+        "diaspora",
+        "pick your brain",
+        "heuristic"
       ],
       "prompt_version": 4
     }

@@ -44,11 +44,11 @@
         "The set of conditions that must hold true for an estimate to be worth anything at all."
       ],
       "word_distractors": [
-        "contrived",
         "serialize",
-        "disambiguate",
         "primitive",
-        "persistence"
+        "inroads",
+        "bespoke",
+        "dogfooding"
       ],
       "prompt_version": 4
     }

@@ -42,11 +42,11 @@
         "Alert and responsive to signals, adjusting early."
       ],
       "word_distractors": [
-        "frontier",
-        "obfuscate",
-        "esoteric",
-        "vertical",
-        "rectify"
+        "dogfooding",
+        "north star",
+        "in pockets",
+        "scaffolding",
+        "buy-in"
       ],
       "prompt_version": 4
     }

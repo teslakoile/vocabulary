@@ -46,11 +46,11 @@
         "To change something that was already working, in the hope of making it a little better."
       ],
       "word_distractors": [
-        "exacerbate",
-        "squarely",
-        "second order effects",
-        "nontrivial",
-        "panopticon"
+        "asymmetric",
+        "sleuthing",
+        "community of practice",
+        "dogfooding",
+        "superset"
       ],
       "prompt_version": 4
     }

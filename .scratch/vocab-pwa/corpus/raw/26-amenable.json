@@ -3,15 +3,17 @@
   "headword": "amenable",
   "senses": [
     {
-      "term": "amenable",
-      "accepted": [],
+      "term": "amenable (person)",
+      "accepted": [
+        "amenable"
+      ],
       "gloss": "willing to consider",
       "gloss_distractors": [
         "firmly opposed",
         "tired and bored",
         "not paying attention"
       ],
-      "definition": "Open to something without having agreed to it, or well suited to a particular treatment.",
+      "definition": "Open to an idea or request, though not yet agreed to it.",
       "caution": "People often hear it as a yes. If you say a senior person was amenable, make clear that nothing has been agreed yet.",
       "example": "The MD was amenable to a phased rollout, though I want to be clear that nothing is signed.",
       "cues": [
@@ -24,10 +26,6 @@
           "setting": "work"
         },
         {
-          "text": "A dataset turns out to be clean and regular enough that a simple model handles it, and you are explaining in review why nothing more elaborate is needed.",
-          "setting": "work"
-        },
-        {
           "text": "You floated Christmas at your parents' rather than hers and your partner did not object. Her sister asks whether it is settled.",
           "setting": "life"
         },
@@ -37,18 +35,62 @@
         }
       ],
       "distractors": [
-        "Handling something delicate so smoothly that the difficulty never shows.",
-        "Aware of something and visibly taking it into account when you decide.",
+        "Firmly against an idea from the start.",
+        "Keen to take credit for other people's work.",
+        "Aware of something and taking it into account when you decide.",
         "Deciding as you go, taking your lead from how things actually develop.",
-        "A senior person putting their own standing behind a piece of work and spending it there.",
-        "Progress won into territory that was previously closed to you, such as an account or a market."
+        "Unwilling to say what you think until the most senior person has spoken first."
       ],
       "word_distractors": [
-        "disambiguate",
-        "verifiability",
-        "modality",
-        "nontrivial",
-        "deliberate"
+        "lay of the land",
+        "deliberate",
+        "esoteric",
+        "institutional knowledge",
+        "sandbox"
+      ],
+      "prompt_version": 4
+    },
+    {
+      "term": "amenable (task)",
+      "accepted": [
+        "amenable"
+      ],
+      "gloss": "well suited to a method",
+      "gloss_distractors": [
+        "too big to finish",
+        "badly in need of repair",
+        "hard to measure at all"
+      ],
+      "definition": "Suited to being handled in a particular way, such as by automation or a simple model.",
+      "distractors": [
+        "Too large to finish within the time that is available.",
+        "Already solved by a tool that the team bought last year.",
+        "Hard to measure, so progress on it cannot be shown to anyone who asks about it.",
+        "Owned by several teams at once, so nobody can make a decision about it on their own quickly.",
+        "Changing so often that any process built around it would be out of date within a single month."
+      ],
+      "caution": "Say which method it suits, such as automation, because the word alone leaves that open.",
+      "example": "The invoice data is regular enough to be amenable to a simple rules engine, so we do not need a model here.",
+      "cues": [
+        {
+          "text": "A dataset turns out to be clean and regular enough that a simple model handles it, and you are explaining in review why nothing more elaborate is needed.",
+          "setting": "work"
+        },
+        {
+          "text": "You are telling a sponsor that the claims backlog, unlike the complaints queue, fits automation well.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend asks whether their messy garden could be sorted out in a weekend with the right tools, and you think it could.",
+          "setting": "life"
+        }
+      ],
+      "word_distractors": [
+        "esoteric",
+        "north star",
+        "hyperscaler",
+        "squarely",
+        "vertical"
       ],
       "prompt_version": 4
     }

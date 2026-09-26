@@ -46,11 +46,11 @@
         "The quiet compliance of a team that has stopped arguing but has not changed its mind."
       ],
       "word_distractors": [
-        "despondent",
-        "first principles",
-        "center of excellence",
-        "idempotent",
-        "blanket approval"
+        "serialize",
+        "harness",
+        "eschew",
+        "long-horizon",
+        "esoteric"
       ],
       "prompt_version": 4
     }

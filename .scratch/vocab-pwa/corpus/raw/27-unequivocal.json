@@ -42,11 +42,11 @@
         "True on the whole, allowing for exceptions nobody is going to list."
       ],
       "word_distractors": [
+        "disambiguate",
         "fan-out",
+        "panopticon",
         "advocate for",
-        "verifiable rewards",
-        "second order effects",
-        "frontrunner"
+        "second order effects"
       ],
       "prompt_version": 4
     }

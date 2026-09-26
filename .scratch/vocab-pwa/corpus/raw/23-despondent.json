@@ -46,11 +46,11 @@
         "Done on purpose and after thought, rather than by accident or by drift."
       ],
       "word_distractors": [
-        "continuum",
-        "buy-in",
-        "community of practice",
-        "dogfooding",
-        "tectonic shift"
+        "obfuscate",
+        "tectonic shift",
+        "frontrunner",
+        "deliberate",
+        "esoteric"
       ],
       "prompt_version": 4
     }

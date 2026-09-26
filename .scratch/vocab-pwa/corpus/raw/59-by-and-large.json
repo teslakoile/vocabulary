@@ -45,10 +45,10 @@
       ],
       "word_distractors": [
         "scaffolding",
-        "amenable",
         "sponsorship",
-        "frontier",
-        "vertical"
+        "verbose",
+        "tacit knowledge",
+        "continuum"
       ],
       "prompt_version": 4
     }

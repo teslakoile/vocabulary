@@ -45,11 +45,11 @@
         "The short list of things most likely to go wrong, handed to someone before they start."
       ],
       "word_distractors": [
-        "scaffolding",
-        "trivial",
         "lend itself",
         "persistence",
-        "rectify"
+        "frontrunner",
+        "tacit knowledge",
+        "continuum"
       ],
       "prompt_version": 4
     }

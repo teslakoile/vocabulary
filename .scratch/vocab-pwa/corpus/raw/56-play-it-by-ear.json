@@ -46,11 +46,11 @@
         "Temporary structure that holds the work up until the real thing can stand on its own."
       ],
       "word_distractors": [
-        "lay of the land",
-        "finesse",
-        "executive presence",
-        "gravitas",
-        "long-horizon"
+        "first order effects",
+        "verifiability",
+        "panopticon",
+        "front and center",
+        "trivial"
       ],
       "prompt_version": 4
     }

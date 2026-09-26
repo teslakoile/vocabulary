@@ -50,11 +50,11 @@
         "To speak about someone in a way that lowers them, usually in passing."
       ],
       "word_distractors": [
+        "verifiable rewards",
         "play it by ear",
-        "substrate",
-        "sandbox",
-        "hot-swap",
-        "second order effects"
+        "serialize",
+        "vertical",
+        "persist"
       ],
       "prompt_version": 4
     }

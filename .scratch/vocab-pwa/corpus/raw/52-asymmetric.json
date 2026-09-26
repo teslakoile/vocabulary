@@ -9,13 +9,13 @@
         "asymmetrical",
         "asymmetries"
       ],
-      "gloss": "uneven between two sides",
+      "gloss": "lopsided between two sides",
       "gloss_distractors": [
         "certain to succeed",
         "hard to explain simply",
         "shared equally by everyone"
       ],
-      "definition": "Unequal on the two sides, usually a small downside against a much larger upside.",
+      "definition": "Lopsided between two sides, such as a small possible loss against a much bigger gain.",
       "caution": "It says nothing about how likely something is. Use it only if you can say which side is bigger and by roughly how much, because investors will ask for both numbers.",
       "example": "The pilot is asymmetric: worst case we lose a quarter of one team's time, best case we retire two vendors.",
       "cues": [
@@ -28,7 +28,7 @@
           "setting": "work"
         },
         {
-          "text": "You are arguing against a change that saves a modest amount of money and risks a regulatory finding, and you need the word for a bet whose shape runs the wrong way.",
+          "text": "In a negotiation the vendor knows your budget and you do not know their costs, and you want a word for that imbalance.",
           "setting": "work"
         },
         {
@@ -49,10 +49,10 @@
       ],
       "word_distractors": [
         "front and center",
-        "fan-out",
-        "substantial",
-        "disparage",
-        "institutional knowledge"
+        "panopticon",
+        "frontier",
+        "tectonic shift",
+        "first order effects"
       ],
       "prompt_version": 4
     }

@@ -41,9 +41,9 @@
       "word_distractors": [
         "serialize",
         "harness",
-        "ephemeral",
         "long-horizon",
-        "elucidate"
+        "elucidate",
+        "asymmetric"
       ],
       "prompt_version": 4
     }

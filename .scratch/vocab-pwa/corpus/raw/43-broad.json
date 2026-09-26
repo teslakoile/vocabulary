@@ -4,9 +4,7 @@
   "senses": [
     {
       "term": "broad",
-      "accepted": [
-        "broadly"
-      ],
+      "accepted": [],
       "gloss": "covering many things",
       "gloss_distractors": [
         "easy to ignore",
@@ -14,19 +12,11 @@
         "happening very slowly"
       ],
       "definition": "Covering a wide range of cases or topics rather than a narrow one.",
-      "caution": "'Broad support' hints that some people disagree, so expect to be asked who. As a noun it is old, offensive slang for a woman.",
-      "example": "There's broad support from the business, though procurement still has questions about the licensing.",
+      "caution": "A broad remit can sound unfocused, so name the few areas that matter most. As a noun it is old, offensive slang for a woman.",
+      "example": "The new team has a broad remit, from data quality to vendor contracts.",
       "cues": [
         {
-          "text": "Your sponsor asks whether the other directors are behind the platform plan. Most are, one is not, and you want an adjective that is honest without opening that up in this meeting.",
-          "setting": "work"
-        },
-        {
           "text": "A steering committee asks about the new team's remit. It reaches into every business unit rather than one specialism, and you want a word for how wide that is.",
-          "setting": "work"
-        },
-        {
-          "text": "A director catches you in the corridor and asks for the shape of next year's roadmap. You can give the outline but not the specifics, and you want to signal that as you start.",
           "setting": "work"
         },
         {
@@ -47,10 +37,55 @@
       ],
       "word_distractors": [
         "front and center",
-        "scaffolding",
-        "obscure",
         "inroads",
-        "ducks in a row"
+        "dogfooding",
+        "substrate",
+        "lean on"
+      ],
+      "prompt_version": 4
+    },
+    {
+      "term": "broadly",
+      "accepted": [
+        "broad",
+        "broadly speaking"
+      ],
+      "gloss": "in general terms",
+      "gloss_distractors": [
+        "in exact detail",
+        "for a short time",
+        "against the rules"
+      ],
+      "definition": "In general terms, true of most of it but without every detail or every person.",
+      "distractors": [
+        "Exactly and in full, with every detail checked.",
+        "In secret, so that the people affected do not find out.",
+        "Only for a short time, until a proper plan has been agreed.",
+        "Against the advice of the people who know the subject best, and without telling them.",
+        "In the order that things happened, starting with the earliest event and ending with the latest."
+      ],
+      "caution": "'We broadly agree' tells people there is some disagreement, so expect to be asked where. Use it to be honest about gaps, and then name them.",
+      "example": "We broadly agree with the audit findings, but we would challenge the timeline on the second one.",
+      "cues": [
+        {
+          "text": "Your sponsor asks whether the other directors are behind the platform plan. Most are, one is not, and you want an honest word without opening that up now.",
+          "setting": "work"
+        },
+        {
+          "text": "A director asks for the shape of next year's roadmap. You can give the outline but not the specifics, and you want to signal that as you start.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend asks whether you liked the book. You did overall, though two chapters dragged.",
+          "setting": "life"
+        }
+      ],
+      "word_distractors": [
+        "modality",
+        "lean on",
+        "heuristic",
+        "idempotent",
+        "bolster"
       ],
       "prompt_version": 4
     }

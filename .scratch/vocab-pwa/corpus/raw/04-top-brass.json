@@ -42,11 +42,11 @@
         "Everyone in a company who is not part of the leadership team, spoken of as a single body."
       ],
       "word_distractors": [
-        "failure mode",
         "sandbox",
         "substantial",
         "verifiable rewards",
-        "cognizant"
+        "cognizant",
+        "gravitas"
       ],
       "prompt_version": 4
     }

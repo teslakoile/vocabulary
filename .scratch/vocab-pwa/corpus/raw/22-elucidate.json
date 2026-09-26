@@ -40,11 +40,11 @@
         "To ask someone to talk through what they have learned, informally and without an agenda."
       ],
       "word_distractors": [
+        "flywheel effect",
+        "modality",
         "progressive",
-        "persistence",
-        "primitive",
-        "ephemeral",
-        "obfuscate"
+        "top brass",
+        "persistence"
       ],
       "prompt_version": 4
     }

@@ -42,11 +42,11 @@
         "Work that cannot be split up, because none of it is any use until all of it is done."
       ],
       "word_distractors": [
+        "disparage",
+        "elucidate",
+        "continuum",
         "sponsorship",
-        "squarely",
-        "amenable",
-        "exacerbate",
-        "first order effects"
+        "squarely"
       ],
       "prompt_version": 4
     }
