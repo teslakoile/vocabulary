@@ -43,11 +43,11 @@
         "To make something deliberately hard to understand."
       ],
       "word_distractors": [
-        "first order effects",
-        "frontrunner",
-        "pick your brain",
-        "sandbox",
-        "community of practice"
+        "primitive",
+        "flywheel effect",
+        "bespoke",
+        "rectify",
+        "ephemeral"
       ],
       "prompt_version": 4
     }

@@ -40,11 +40,11 @@
         "To make something deliberately hard to understand so the plain version stays hidden."
       ],
       "word_distractors": [
-        "incremental",
+        "diaspora",
         "superset",
+        "in pockets",
         "verifiability",
-        "lend itself",
-        "dogfooding"
+        "sleuthing"
       ],
       "prompt_version": 4
     }

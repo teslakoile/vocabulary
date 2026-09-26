@@ -44,11 +44,11 @@
         "The current edge of what these systems can do."
       ],
       "word_distractors": [
-        "asymmetric",
-        "wordsmith",
-        "buy-in",
-        "mold breaker",
-        "tectonic shift"
+        "obfuscate",
+        "deliberate",
+        "verifiability",
+        "continuum",
+        "broadly"
       ],
       "prompt_version": 4
     }

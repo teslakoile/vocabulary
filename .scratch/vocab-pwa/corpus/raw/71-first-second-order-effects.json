@@ -45,10 +45,10 @@
       ],
       "word_distractors": [
         "asymmetric",
-        "harness",
-        "amenable",
         "pick your brain",
-        "substantiate"
+        "continuum",
+        "blanket approval",
+        "lay of the land"
       ],
       "prompt_version": 4
     },
@@ -98,11 +98,11 @@
         "The most senior people in a firm, spoken of as one group."
       ],
       "word_distractors": [
-        "tacit knowledge",
-        "disparage",
         "failure mode",
-        "squarely",
-        "hyperscaler"
+        "enmeshed",
+        "harness",
+        "scaffolding",
+        "advocate for"
       ],
       "prompt_version": 4
     }

@@ -44,11 +44,11 @@
         "A rule of thumb that gets you a good enough answer quickly, because it usually works."
       ],
       "word_distractors": [
-        "superset",
-        "buy-in",
-        "institutional knowledge",
-        "substantiate",
-        "frontrunner"
+        "substrate",
+        "advocate for",
+        "frontrunner",
+        "persist",
+        "heuristic"
       ],
       "prompt_version": 4
     }

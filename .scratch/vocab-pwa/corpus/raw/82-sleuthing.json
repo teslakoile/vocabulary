@@ -49,11 +49,11 @@
         "Weight and seriousness in how a person carries themselves."
       ],
       "word_distractors": [
-        "advocate",
         "run it by you",
         "incremental",
         "fan-out",
-        "progressive"
+        "progressive",
+        "hyperscaler"
       ],
       "prompt_version": 4
     }

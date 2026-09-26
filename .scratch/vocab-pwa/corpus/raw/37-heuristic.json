@@ -42,11 +42,11 @@
         "Training signal a machine can check for itself rather than a person judging it."
       ],
       "word_distractors": [
-        "lean on",
+        "semantic layer",
+        "sleuthing",
+        "frontier",
         "build that muscle",
-        "sandbox",
-        "unequivocal",
-        "substrate"
+        "sandbox"
       ],
       "prompt_version": 4
     }

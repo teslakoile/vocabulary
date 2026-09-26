@@ -8,14 +8,14 @@
         "lie of the land",
         "the lay of the land"
       ],
-      "gloss": "how a new workplace works",
+      "gloss": "how a situation stands",
       "gloss_distractors": [
         "how to get promoted quickly",
-        "a promotion to a senior job",
+        "a list of open jobs",
         "a plan for the next year"
       ],
-      "definition": "How things really work somewhere new, who decides and what has already been tried.",
-      "caution": "It is fine in your first month but sounds like stalling later. Do not use it in an update where people are waiting for a decision or asking about results.",
+      "definition": "How a situation currently stands, including who decides and what has been tried.",
+      "caution": "Asking for it is fine when you are new to a situation, but later it can sound like stalling. Avoid it where people are waiting for a decision.",
       "example": "Give me two weeks with the delivery leads to get the lay of the land before I propose any changes.",
       "cues": [
         {
@@ -31,8 +31,8 @@
           "setting": "life"
         },
         {
-          "text": "A friend starting at a new school asks how long it takes before things stop feeling foreign.",
-          "setting": "life"
+          "text": "Before stepping into a tense project review, you ask a colleague where things stand and who is upset with whom.",
+          "setting": "work"
         }
       ],
       "distractors": [
@@ -43,11 +43,11 @@
         "The full list of everything a team has agreed to deliver this quarter, ranked in order."
       ],
       "word_distractors": [
+        "frontrunner",
         "lend itself",
         "disambiguate",
-        "modality",
-        "vertical",
-        "trivial"
+        "incremental",
+        "modality"
       ],
       "prompt_version": 4
     }

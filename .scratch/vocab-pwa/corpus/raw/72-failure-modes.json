@@ -47,10 +47,10 @@
       ],
       "word_distractors": [
         "obfuscate",
-        "substantiate",
         "cognizant",
         "idempotent",
-        "verbose"
+        "verbose",
+        "incremental"
       ],
       "prompt_version": 4
     }

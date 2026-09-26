@@ -43,11 +43,11 @@
         "The single person whose approval is needed before anything else is allowed to move."
       ],
       "word_distractors": [
-        "buy-in",
         "ephemeral",
         "executive presence",
         "semantic layer",
-        "diaspora"
+        "nontrivial",
+        "long-horizon"
       ],
       "prompt_version": 4
     }

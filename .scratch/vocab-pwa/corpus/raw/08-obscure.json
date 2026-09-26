@@ -3,10 +3,12 @@
   "headword": "obscure",
   "senses": [
     {
-      "term": "obscure",
+      "term": "obscure (verb)",
       "accepted": [
+        "obscure",
         "obscures",
-        "obscured"
+        "obscured",
+        "obscuring"
       ],
       "gloss": "to hide or make unclear",
       "gloss_distractors": [
@@ -14,16 +16,19 @@
         "to put in the right order",
         "to check for errors"
       ],
-      "definition": "Little known or hard to make out, or to keep something from being seen or understood.",
+      "definition": "To keep something from being seen or understood, often without meaning to.",
+      "distractors": [
+        "To show a result in a chart so that the trend is easy to see.",
+        "To say something more plainly than it was said the first time.",
+        "To put a set of numbers in order so the largest ones come first on the page.",
+        "To remove a detail from a report because it was found to be wrong after checking.",
+        "To repeat a point until everyone in the room has heard it at least once."
+      ],
       "caution": "It blames nobody, unlike obfuscate, which says someone meant to mislead. Use it about things such as charts, since about a person's explanation it is still a criticism.",
       "example": "The monthly average obscures the two days when latency tripled, so let us show the daily line instead.",
       "cues": [
         {
-          "text": "A monthly rollup is hiding the two bad days inside it, and you want a neutral verb for what the rollup is doing.",
-          "setting": "work"
-        },
-        {
-          "text": "You are pushing back on a reference to a library that almost nobody in the room will have heard of.",
+          "text": "A monthly rollup is hiding the two bad days inside it, and you want a neutral word for what the rollup is doing.",
           "setting": "work"
         },
         {
@@ -31,27 +36,60 @@
           "setting": "work"
         },
         {
-          "text": "A friend recommends a film that almost nobody has seen, and you want the word for how far off the beaten track it is.",
-          "setting": "life"
-        },
-        {
           "text": "Fog has taken the mountains at the end of the valley out of view, and you want a slightly formal word for what it is doing.",
           "setting": "life"
         }
       ],
+      "word_distractors": [
+        "community of practice",
+        "semantic layer",
+        "asymmetric",
+        "persistence",
+        "top brass"
+      ],
+      "prompt_version": 4
+    },
+    {
+      "term": "obscure (adjective)",
+      "accepted": [
+        "obscure"
+      ],
+      "gloss": "little known",
+      "gloss_distractors": [
+        "widely admired",
+        "out of date",
+        "easy to use"
+      ],
+      "definition": "Little known, so that most people have never heard of it.",
       "distractors": [
-        "Recognised instantly by almost everyone who sees it.",
-        "Repeated so often that it has lost whatever meaning it started with.",
-        "So familiar that people stop noticing it is there at all.",
-        "A claim that is easy to state and impossible for anyone outside the company to check.",
-        "A system that is still running long after the team that built it moved on to other work."
+        "Known to almost everyone in the field.",
+        "Out of date, and replaced by something newer.",
+        "Used by many teams but owned by nobody in particular.",
+        "Written so clearly that anyone can follow it the first time.",
+        "Expensive to run, and so kept only for the most important work."
+      ],
+      "caution": "Saying something is obscure can sound like showing off. Say who does know it, for example only the data team, so it does not read as a put-down.",
+      "example": "It is an obscure setting in the load balancer, and I doubt anyone outside the platform team knows it exists.",
+      "cues": [
+        {
+          "text": "You are pushing back on a reference to a library that almost nobody in the room will have heard of.",
+          "setting": "work"
+        },
+        {
+          "text": "A candidate's CV lists a certification you have never seen, and you ask a colleague whether anyone recognises it.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend recommends a film that almost nobody has seen, and you want a word for how little known it is.",
+          "setting": "life"
+        }
       ],
       "word_distractors": [
-        "unequivocal",
-        "lean on",
-        "verbose",
-        "flywheel effect",
-        "advocate for"
+        "verifiability",
+        "diaspora",
+        "primitive",
+        "lay of the land",
+        "wordsmith"
       ],
       "prompt_version": 4
     }

@@ -45,10 +45,10 @@
       ],
       "word_distractors": [
         "community of practice",
+        "hot-swap",
         "trivial",
         "continuum",
-        "attuned",
-        "progressive"
+        "attuned"
       ],
       "prompt_version": 4
     }

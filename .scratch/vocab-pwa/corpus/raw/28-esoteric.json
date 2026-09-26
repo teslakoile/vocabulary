@@ -44,11 +44,11 @@
         "The accumulated history one organisation holds about why its own systems were built that way."
       ],
       "word_distractors": [
-        "in pockets",
-        "mold breaker",
+        "trivial",
+        "disambiguate",
         "deliberate",
         "executive presence",
-        "surreptitiously"
+        "semantic layer"
       ],
       "prompt_version": 4
     }

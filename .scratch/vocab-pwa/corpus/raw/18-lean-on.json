@@ -14,7 +14,7 @@
         "to report to a manager",
         "to take credit for"
       ],
-      "definition": "To rely on someone or something to do part of the work for you.",
+      "definition": "To rely on someone or something for help, such as a colleague or your own strengths.",
       "caution": "It can also mean to put pressure on someone, so be clear which you mean. When you say it about a colleague, say exactly how they helped.",
       "example": "For the regulatory wording we leaned on Legal rather than inventing our own language.",
       "cues": [
@@ -27,7 +27,7 @@
           "setting": "work"
         },
         {
-          "text": "A director asks how you will cover the gap while the role is unfilled, and the answer is a colleague's goodwill and time.",
+          "text": "You are telling a sponsor the team should build on what it already does well rather than chase a new area.",
           "setting": "work"
         },
         {
@@ -43,15 +43,15 @@
         "To ask someone to explain their reasoning before you decide.",
         "To take a job over from the person who was doing it.",
         "To hand a decision upwards so that somebody more senior owns it.",
-        "To spread one piece of work across many workers running at the same time.",
+        "To spread one piece of work across many workers that all run at the same time on a server.",
         "To deliberately do without something you could easily have had, as a matter of principle."
       ],
       "word_distractors": [
-        "first principles",
-        "primitive",
-        "eschew",
-        "sleuthing",
-        "substantiate"
+        "institutional knowledge",
+        "advocate",
+        "verbose",
+        "in pockets",
+        "unequivocal"
       ],
       "prompt_version": 4
     }

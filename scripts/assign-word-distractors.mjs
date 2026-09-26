@@ -56,15 +56,18 @@ function overlap(a, b) {
  * The metric compares vocabulary, so it catches two definitions written from
  * the same words. It misses two definitions that mean the same thing in
  * different words, and those are the ones that make a card unfair. The
- * generation agents read every sense and reported these, 99 pairs across four
- * batches. Each scored under the overlap limit and would have passed.
+ * generation agents read every sense and reported these, the pairs they found, plus
+ * those added as meanings were split. Each scored under the overlap limit and would have passed.
  *
  * Symmetric: listing a pair once blocks it in both directions.
  */
 const BLOCKED = [
-  ['esoteric', 'obscure'],
-  ['obfuscate', 'obscure'],
-  ['obscure', 'surreptitiously'],
+  ['esoteric', 'obscure (verb)'],
+  ['esoteric', 'obscure (adjective)'],
+  ['obfuscate', 'obscure (verb)'],
+  ['obfuscate', 'obscure (adjective)'],
+  ['obscure (verb)', 'surreptitiously'],
+  ['obscure (adjective)', 'surreptitiously'],
   ['deliberate', 'obfuscate'],
   ['eschew', 'obfuscate'],
   ['obfuscate', 'surreptitiously'],
@@ -95,13 +98,16 @@ const BLOCKED = [
   ['harness', 'lean on'],
   ['lean on', 'scaffolding'],
   ['lean on', 'pick your brain'],
-  ['amenable', 'buy-in'],
+  ['amenable (person)', 'buy-in'],
+  ['amenable (task)', 'buy-in'],
   ['attuned', 'cognizant'],
   ['daily driver', 'dogfooding'],
   ['blanket approval', 'run it by you'],
   ['disambiguate', 'elucidate'],
-  ['amenable', 'lend itself'],
-  ['amenable', 'attuned'],
+  ['amenable (person)', 'lend itself'],
+  ['amenable (task)', 'lend itself'],
+  ['amenable (person)', 'attuned'],
+  ['amenable (task)', 'attuned'],
   ['first principles', 'primitive'],
   ['first principles', 'heuristic'],
   ['semantic layer', 'substrate'],
@@ -122,7 +128,8 @@ const BLOCKED = [
   ['by and large', 'heuristic'],
   ['advocate for', 'bolster'],
   ['finesse', 'tacit knowledge'],
-  ['obscure', 'tacit knowledge'],
+  ['obscure (verb)', 'tacit knowledge'],
+  ['obscure (adjective)', 'tacit knowledge'],
   ['institutional knowledge', 'persist'],
   ['institutional knowledge', 'scaffolding'],
   ['institutional knowledge', 'lend itself'],
@@ -161,6 +168,12 @@ const BLOCKED = [
   ['dogfooding', 'substrate'],
   ['dogfooding', 'run it by you'],
   ['daily driver', 'diaspora'],
+  ['broadly', 'by and large'],
+  ['broad', 'broadly'],
+  ['persistence', 'serialize'],
+  ['primitive', 'scaffolding (AI)'],
+  ['scaffolding (AI)', 'substrate'],
+  ['carte blanche', 'run it by you'],
 ];
 
 const blocked = new Set();
@@ -205,6 +218,9 @@ for (const item of senses) {
   item.eligible = senses
     .filter((other) => other !== item)
     .filter((other) => !item.siblings.has(other.sense.term))
+    // A label such as "(verb)" names a part of speech, which would give away
+    // the answer on another word's card, so labelled terms are never offered.
+    .filter((other) => !other.sense.term.includes('('))
     .filter((other) => !isBlocked(item.sense.term, other.sense.term))
     .filter((other) => overlap(item.sense.definition, other.sense.definition) < OVERLAP_LIMIT)
     .map((other) => other.sense.term);

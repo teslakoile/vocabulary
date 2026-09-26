@@ -44,9 +44,9 @@
       "word_distractors": [
         "persistence",
         "panopticon",
+        "community of practice",
         "play it by ear",
-        "tectonic shift",
-        "disambiguate"
+        "bespoke"
       ],
       "prompt_version": 4
     },
@@ -91,8 +91,8 @@
         "bolster",
         "long-horizon",
         "finesse",
-        "north star",
-        "substrate"
+        "substrate",
+        "second order effects"
       ],
       "prompt_version": 4
     }

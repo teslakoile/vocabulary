@@ -88,11 +88,11 @@
         "Held up by a dependency on another team rather than by the work itself."
       ],
       "word_distractors": [
-        "verbose",
-        "inroads",
-        "watch outs",
-        "blanket approval",
-        "serialize"
+        "broadly",
+        "serialize",
+        "primitive",
+        "asymmetric",
+        "ducks in a row"
       ],
       "prompt_version": 4
     }

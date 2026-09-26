@@ -43,11 +43,11 @@
         "The most senior people, as one group."
       ],
       "word_distractors": [
-        "exacerbate",
-        "bolster",
-        "top brass",
+        "broadly",
         "elucidate",
-        "front and center"
+        "front and center",
+        "failure mode",
+        "trivial"
       ],
       "prompt_version": 4
     }

@@ -49,11 +49,11 @@
         "To back a claim with evidence that somebody other than you can go and check it."
       ],
       "word_distractors": [
+        "flywheel effect",
+        "substantiate",
+        "exacerbate",
         "frontier",
-        "wordsmith",
-        "semantic layer",
-        "ephemeral",
-        "despondent"
+        "wordsmith"
       ],
       "prompt_version": 4
     }

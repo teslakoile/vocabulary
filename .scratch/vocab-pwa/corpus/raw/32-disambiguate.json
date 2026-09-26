@@ -44,9 +44,9 @@
       "word_distractors": [
         "despondent",
         "serialize",
-        "executive presence",
-        "lend itself",
-        "flywheel effect"
+        "broad",
+        "carte blanche",
+        "idempotent"
       ],
       "prompt_version": 4
     }

@@ -43,11 +43,11 @@
         "The unwritten history an organisation holds about why its own systems were built that way."
       ],
       "word_distractors": [
-        "heuristic",
-        "advocate",
         "surreptitiously",
-        "semantic layer",
-        "verbose"
+        "enmeshed",
+        "substrate",
+        "north star",
+        "unequivocal"
       ],
       "prompt_version": 4
     }

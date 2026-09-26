@@ -40,11 +40,11 @@
         "A product used only for demonstrations, set up carefully so nothing goes wrong on stage."
       ],
       "word_distractors": [
-        "inroads",
+        "tectonic shift",
         "hot-swap",
         "in pockets",
-        "asymmetric",
-        "center of excellence"
+        "persist",
+        "despondent"
       ],
       "prompt_version": 4
     }

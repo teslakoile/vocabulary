@@ -47,11 +47,11 @@
         "To put right something that was wrong, such as an error, an imbalance, or a debt you owe."
       ],
       "word_distractors": [
-        "obscure",
-        "lend itself",
-        "wordsmith",
+        "progressive",
         "scaffolding",
-        "idempotent"
+        "idempotent",
+        "ephemeral",
+        "north star"
       ],
       "prompt_version": 4
     }

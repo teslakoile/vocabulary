@@ -46,11 +46,11 @@
         "To make a bad situation worse than it already was."
       ],
       "word_distractors": [
-        "incremental",
-        "ducks in a row",
-        "tacit knowledge",
-        "sleuthing",
-        "attuned"
+        "bolster",
+        "disambiguate",
+        "disparage",
+        "verbose",
+        "incremental"
       ],
       "prompt_version": 4
     }
