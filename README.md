@@ -39,7 +39,7 @@ You need a Cloudflare account, Node.js 20 or later, and `npx`.
    npx wrangler d1 create vocabulary
    ```
 
-3. Apply the five migrations in order. They run through `d1 execute` because
+3. Apply the six migrations in order. They run through `d1 execute` because
    `wrangler d1 migrations` expects a `migrations/` directory and this project
    keeps its SQL in `db/`:
 
@@ -86,6 +86,23 @@ npx wrangler dev --port 8787 --local
 The `--local` flag uses a SQLite database under `.wrangler/`, so local work never touches production data. To set up that database, run the same migration and seed commands with `--local` in place of `--remote`.
 
 To run the Vite dev server on its own without the Worker, use `npm run dev`. API calls fail in that mode because nothing serves `/api/`.
+
+## Adding words
+
+The app is where content lives. The repo keeps a snapshot of it.
+
+1. On your phone, tap `+` and type the word. It saves as `bare` and stays out of practice. A line on the review screen counts the words waiting.
+2. If a practised word reads wrong, tap **Flag** on its answer side and say why. It stays in practice and joins the backlog.
+3. When you want, run `/refine` in Claude Code in this repo. The skill in `.claude/skills/refine/` pulls the live corpus, writes content for captured words, fixes flagged ones, validates everything, and publishes.
+
+Publishing goes through the app's API with your shared key, so a refine session needs no Cloudflare login. `PUT /api/entries/:id/content` upserts one entry's senses and creates cards for new ones at the end of the intake queue. Existing cards are never touched, and the route refuses to remove a sense, because that would delete its review history.
+
+| Script | Does |
+| --- | --- |
+| `scripts/pull-corpus.mjs` | Writes the live corpus into `corpus/raw/` and the backlog into `corpus/backlog.json` |
+| `scripts/publish-corpus.mjs` | Publishes every entry whose content differs from the app, after the validator passes |
+
+`corpus/seed.sql` is a one-time bootstrap for a new database. Reseeding a live database overwrites edits made in the app.
 
 ## Corpus generation
 
@@ -197,7 +214,7 @@ The effective ceiling is about 30 guesses per minute.
 | `src/` | The React app: review, browse, capture, and the secret gate |
 | `worker/` | The Worker: API routes, cron handler, and VAPID signing |
 | `shared/` | Types and the single FSRS configuration, imported by both sides |
-| `db/` | Five SQL migrations |
+| `db/` | Six SQL migrations |
 | `scripts/` | Corpus validation, distractor merging, and seed generation |
 | `public/` | Service worker, manifest, and icons |
 | `.scratch/vocab-pwa/` | The decision record: map, 16 tickets, research, and corpus |

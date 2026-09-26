@@ -46,7 +46,7 @@ A working PWA, installed to your home screen, that you open daily to practice yo
 - **Whether the `caution` fields read right to Kyle.** He has now read the definitions in use and they were wrong in a systematic way, which [Build the app](issues/16-build-the-app.md) records and `prompt_version` 3 fixed. `caution` has still never been read at scale, and it now carries the connotation work the definitions used to duplicate, so it matters more than it did.
 - **Whether four definitions want splitting into senses.** `lean on`, `sponsorship`, `amenable`, and `broad` each bundle two or three meanings. The plain rewrite forced the question rather than answering it: `broad` now states only the coverage reading and `amenable` is the one definition carrying two facets in a single sentence, joined by "or". Kyle's call which meaning he actually wants.
 - **Whether capture in the app is fast enough to beat Keep.** Carried from [Capture speed spike](issues/10-capture-speed-spike.md), still unmeasured. The clock starts at install.
-- **What happens to a word captured in the app.** It sits `bare` and stays out of review until a generation session runs, and there is no trigger for that session. A pile of bare entries is the failure mode.
+- **~~What happens to a word captured in the app.~~** Resolved 2026-09-26: it waits in a backlog with flagged words, and a `/refine` Claude Code session writes its content and publishes through the API. D1 became the single home for content; the repo is a snapshot. The open question left is only how often Kyle runs it.
 
 ## Out of scope
 

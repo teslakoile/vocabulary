@@ -86,7 +86,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
     const filtered = matched.filter((e) => {
       switch (filter) {
         case 'Archived': return e.archived_at !== null;
-        case 'Pending': return e.archived_at === null && e.status !== 'ready';
+        case 'Pending': return e.archived_at === null && (e.status !== 'ready' || e.flagged_at !== null);
         case 'Struggling': return e.archived_at === null && struggling.has(e.id);
         default: return e.archived_at === null;
       }

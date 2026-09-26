@@ -6,11 +6,12 @@
  * quiet gold rule marking a card whose answer moves the schedule.
  */
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { ArrowRight, Check, Eye, Keyboard, ListChecks, MessageSquareQuote, Pencil, ScrollText, X } from 'lucide-react';
+import { ArrowRight, Check, Eye, Flag, Keyboard, ListChecks, MessageSquareQuote, Pencil, ScrollText, X } from 'lucide-react';
 import { applyGrade, gradeFor } from '../shared/scheduler';
 import EditPanel from './EditPanel';
 import { answerMatches, type Queue, type QueueItem } from './queue';
-import { applyLocally, flush, recordEvent, type Snapshot } from './store';
+import type { Entry } from './types';
+import { applyLocally, backlogOf, flagEntry, flush, recordEvent, type Snapshot } from './store';
 import { Headword, Shell } from '@/components/shell';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -129,6 +130,8 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
 
   return (
     <Shell>
+      {!answered && <Backlog count={backlogOf(snapshot.entries).length} />}
+
       {item.counts && (
         <span
           className="h-[3px] w-7 shrink-0 rounded-full bg-brand/70"
@@ -199,15 +202,18 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
               onDone={() => setEditing(false)}
             />
           ) : (
-            <Button
-              variant="ghost"
-              size="sm"
-              className="self-start text-muted-foreground"
-              onClick={() => setEditing(true)}
-            >
-              <Pencil />
-              Fix this
-            </Button>
+            <div className="flex flex-wrap items-center gap-1">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="text-muted-foreground"
+                onClick={() => setEditing(true)}
+              >
+                <Pencil />
+                Fix this
+              </Button>
+              <FlagControl key={entry.id} entry={entry} snapshot={snapshot} onSnapshot={onSnapshot} />
+            </div>
           )}
 
           <div className="mt-auto flex flex-col gap-3 pt-2">
@@ -223,6 +229,74 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
         </div>
       )}
     </Shell>
+  );
+}
+
+/** How many words are waiting for a refine session. Quiet, and absent at zero. */
+function Backlog({ count }: { count: number }) {
+  if (!count) return null;
+  return (
+    <p className="text-xs text-muted-foreground/80">
+      {count} {count === 1 ? 'word is' : 'words are'} waiting for your next refine
+    </p>
+  );
+}
+
+/**
+ * Flag a word for the next refine session instead of fixing it on the phone.
+ * The word stays in practice; the note tells the session what looked wrong.
+ */
+function FlagControl({ entry, snapshot, onSnapshot }: { entry: Entry; snapshot: Snapshot; onSnapshot: (s: Snapshot) => void }) {
+  const [open, setOpen] = useState(false);
+  const [note, setNote] = useState('');
+  const [failed, setFailed] = useState(false);
+  // The card on screen holds its own copy of the entry until the next sync, so
+  // the snapshot update alone does not reach it. Track the send here too.
+  const [sent, setSent] = useState(false);
+
+  if (entry.flagged_at || sent) {
+    return <span className="px-2 text-sm text-muted-foreground">Flagged for your next refine</span>;
+  }
+  if (!open) {
+    return (
+      <Button variant="ghost" size="sm" className="text-muted-foreground" onClick={() => setOpen(true)}>
+        <Flag />
+        Flag
+      </Button>
+    );
+  }
+
+  const send = async () => {
+    const flagged: Entry = { ...entry, flagged_at: new Date().toISOString(), flag_note: note.trim() || null };
+    onSnapshot({ ...snapshot, entries: snapshot.entries.map((e) => (e.id === entry.id ? flagged : e)) });
+    setSent(true);
+    try {
+      await flagEntry(entry.id, note);
+    } catch {
+      // Put the screen back so the note is not lost behind a flag that never landed.
+      onSnapshot(snapshot);
+      setSent(false);
+      setFailed(true);
+    }
+  };
+
+  return (
+    <form
+      className="flex w-full items-center gap-2 pt-1"
+      onSubmit={(e) => {
+        e.preventDefault();
+        void send();
+      }}
+    >
+      <Input
+        value={note}
+        onChange={(e) => setNote(e.target.value)}
+        placeholder="What looks wrong? Optional"
+        autoFocus
+      />
+      <Button type="submit" size="sm">Flag</Button>
+      {failed && <span className="text-sm text-destructive">Not sent. Check your connection.</span>}
+    </form>
   );
 }
 

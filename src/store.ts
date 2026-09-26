@@ -187,6 +187,16 @@ export async function captureEntry(headword: string, captureNote?: string): Prom
   await api('/api/entries', { method: 'POST', body: JSON.stringify({ headword, capture_note: captureNote }) });
 }
 
+/** Put a word in the refine backlog, with a note saying what looks wrong. */
+export async function flagEntry(id: string, note: string): Promise<void> {
+  const response = await api(`/api/entries/${id}/flag`, { method: 'POST', body: JSON.stringify({ note }) });
+  if (!response.ok) throw new Error(`flag failed: ${response.status}`);
+}
+
+/** Words waiting for a refine session: captured with no content yet, or flagged. */
+export const backlogOf = (entries: Entry[]): Entry[] =>
+  entries.filter((e) => e.archived_at === null && (e.status !== 'ready' || e.flagged_at !== null));
+
 export async function archiveEntry(id: string, archived: boolean): Promise<void> {
   await api(`/api/entries/${id}/archive`, { method: archived ? 'POST' : 'DELETE' });
 }
