@@ -8,7 +8,7 @@
         "ducks lined up"
       ],
       "definition": "All the preparation done in advance, so nothing is missing when the moment comes.",
-      "caution": "It is homely and slightly folksy, which makes it warm between peers and patronising downward, and telling a senior stakeholder to get their ducks in a row implies they are disorganised. It belongs to speech: in a written paper it reads as though you could not be bothered to name which preparation you actually meant.",
+      "caution": "It is informal and friendly between peers, but telling someone senior to get theirs in a row says they are disorganised. In writing, name the actual preparation.",
       "example": "Before this goes to the committee let us get our ducks in a row on the cost model and the security sign-off.",
       "cues": [
         {
@@ -37,11 +37,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "disambiguate",
-        "trivial",
+        "buy-in",
         "ephemeral",
-        "wordsmith",
-        "semantic layer"
+        "executive presence",
+        "semantic layer",
+        "diaspora"
+      ],
+      "gloss": "fully prepared in advance",
+      "gloss_distractors": [
+        "running late",
+        "working on too many things",
+        "in total agreement"
       ]
     }
   ]

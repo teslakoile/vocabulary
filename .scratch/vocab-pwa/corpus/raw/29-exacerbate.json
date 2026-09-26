@@ -8,7 +8,7 @@
         "exacerbating"
       ],
       "definition": "To make a bad situation worse.",
-      "caution": "The word points a finger. Saying a decision exacerbated the outage assigns causation, and in a post-incident room that is heard as blame however evenly you say it, so name the mechanism unless blame is what you mean. It is also strictly about worsening something bad, so exacerbating demand or exacerbating growth is a mistake the careful listeners in the room will catch.",
+      "caution": "It assigns blame, so saying a decision exacerbated an outage sounds like an accusation. Use it only for making something bad worse, never for growth or demand.",
       "prompt_version": 2,
       "example": "The retry logic did not cause the outage, but it exacerbated it. We hammered a service that was already on its knees.",
       "cues": [
@@ -37,11 +37,17 @@
         "To make something deliberately hard to understand."
       ],
       "word_distractors": [
-        "bespoke",
-        "substantiate",
         "first order effects",
-        "tacit knowledge",
-        "progressive"
+        "frontrunner",
+        "pick your brain",
+        "sandbox",
+        "community of practice"
+      ],
+      "gloss": "to make worse",
+      "gloss_distractors": [
+        "to delay",
+        "to fix completely",
+        "to hide on purpose"
       ]
     }
   ]

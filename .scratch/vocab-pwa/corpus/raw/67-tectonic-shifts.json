@@ -6,8 +6,8 @@
       "accepted": [
         "tectonic shifts"
       ],
-      "definition": "A deep change in the underlying conditions, big enough to rearrange the landscape.",
-      "caution": "It is an enormous word and it inflates on contact with quarterly news. Senior people have heard it applied to five things that turned out to be nothing, so spend it only on change you could still point at in five years. It also implies slow and unstoppable, which makes it wrong for a shock.",
+      "definition": "A huge, lasting change in the basic conditions of a field or market.",
+      "caution": "Use it only for large, lasting change. Senior readers distrust it, because people often use it for ordinary news.",
       "example": "The interesting thing isn't this quarter's numbers, it's the tectonic shift in what clients now assume we'll automate.",
       "cues": [
         {
@@ -40,11 +40,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "substrate",
-        "obscure",
-        "rectify",
-        "top brass",
-        "panopticon"
+        "hot-swap",
+        "amenable",
+        "first principles",
+        "build that muscle",
+        "progressive"
+      ],
+      "gloss": "a huge, lasting change",
+      "gloss_distractors": [
+        "a short, sudden panic",
+        "a small, routine update",
+        "a gradual loss of trust"
       ]
     }
   ]

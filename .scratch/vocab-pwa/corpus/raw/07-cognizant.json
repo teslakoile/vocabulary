@@ -7,7 +7,7 @@
         "cognisant"
       ],
       "definition": "Aware of something and visibly taking it into account when a decision is made.",
-      "caution": "A memo word, not a spoken one. Said aloud it sounds stiff and aware would do the same job, but in writing it earns its place because it puts on record that you knew and weighed something, which is exactly what an auditor or a regulator is reading for. Be careful claiming it after the fact about a risk you plainly missed, and note that a large IT services firm carries the name, so in a vendor conversation there will be a beat where someone thinks you meant them.",
+      "caution": "Use it in writing, where it records that you knew about a risk. Out loud it sounds stiff, so say aware, and note that it is also the name of an IT company.",
       "example": "We are cognizant of the concentration risk, and the phased rollout is the answer to it.",
       "cues": [
         {
@@ -37,10 +37,16 @@
       "prompt_version": 2,
       "word_distractors": [
         "eschew",
-        "exacerbate",
+        "broad",
         "north star",
-        "fearless forecast",
-        "daily driver"
+        "daily driver",
+        "flywheel effect"
+      ],
+      "gloss": "fully aware of something",
+      "gloss_distractors": [
+        "angry about something",
+        "unwilling to take any action",
+        "proud of something"
       ]
     }
   ]

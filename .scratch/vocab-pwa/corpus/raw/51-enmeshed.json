@@ -9,7 +9,7 @@
         "enmeshing"
       ],
       "definition": "Tangled up with something so tightly that the two can no longer act separately.",
-      "caution": "It is not a neutral word for coupling. It comes out of family therapy and carries a judgement about lost boundaries, so calling two teams enmeshed says their relationship is unhealthy rather than close, and said about actual people it lands like a diagnosis you are not qualified to hand out. If all you mean is that two systems depend on each other, tightly coupled costs you nothing and starts no arguments.",
+      "caution": "It comes from family therapy and says a relationship is unhealthy. For systems that simply depend on each other, say tightly coupled.",
       "example": "Support and engineering aren't collaborating, they're enmeshed - neither one can plan a quarter without the other in the room.",
       "cues": [
         {
@@ -38,11 +38,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "unequivocal",
-        "diaspora",
-        "institutional knowledge",
-        "attuned",
-        "contrived"
+        "frontier",
+        "contrived",
+        "tacit knowledge",
+        "verifiable rewards",
+        "sleuthing"
+      ],
+      "gloss": "too closely tied together",
+      "gloss_distractors": [
+        "kept completely apart",
+        "slow to respond to requests",
+        "badly out of date"
       ]
     }
   ]

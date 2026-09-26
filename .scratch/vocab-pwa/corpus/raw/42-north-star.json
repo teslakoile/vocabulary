@@ -7,8 +7,8 @@
         "north star metric",
         "northstar"
       ],
-      "definition": "The single outcome you steer everything else by.",
-      "caution": "The whole value is that there is exactly one. A deck with three north stars has none, and senior people read that as a team that has not chosen. It is also a direction rather than a commitment, so offering it as your quarterly goal hands someone a deadline for a thing you do not fully control. And it is common enough now that using it as decoration over an ordinary KPI is noticed; if the honest answer is a set of trade-offs, say that instead.",
+      "definition": "The one main goal that guides all other decisions.",
+      "caution": "There should be only one, and a deck with three suggests the team has not chosen. It sets a direction, so avoid presenting it as a quarterly target you do not fully control.",
       "prompt_version": 2,
       "example": "Time to a trustworthy answer is our north star for the year. If a feature does not move that, it waits.",
       "cues": [
@@ -39,9 +39,15 @@
       "word_distractors": [
         "exacerbate",
         "bolster",
-        "failure mode",
-        "despondent",
-        "panopticon"
+        "top brass",
+        "elucidate",
+        "front and center"
+      ],
+      "gloss": "the one main goal",
+      "gloss_distractors": [
+        "a short-term fix",
+        "the yearly budget",
+        "a list of minor tasks"
       ]
     }
   ]

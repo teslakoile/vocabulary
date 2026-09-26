@@ -8,7 +8,7 @@
         "communities of practice"
       ],
       "definition": "A voluntary group of people doing the same work who meet to share what they learn.",
-      "caution": "Because it is voluntary you cannot hold it to a deliverable, so promising a steering group that one will own the standards promises something it has no power to enforce. Give it a budget, headcount and sign-off rights and you have built the other thing, and should say so rather than keeping the friendlier name over it. It also fails quietly: naming one costs nothing, and an empty calendar invite six months on is visible to everybody.",
+      "caution": "Membership is voluntary, so it cannot be held to a deadline or made to enforce standards. If you give it a budget and staff, call it a center of excellence instead.",
       "prompt_version": 2,
       "example": "The prompt engineering group is not a governance body. It is a community of practice, and it works precisely because nobody has to come.",
       "cues": [
@@ -33,11 +33,17 @@
         "What someone can do but cannot fully explain, such as judgement, feel, or a sense of fit."
       ],
       "word_distractors": [
-        "gravitas",
+        "dogfooding",
         "front and center",
         "trivial",
-        "frontier",
-        "sandbox"
+        "sandbox",
+        "eschew"
+      ],
+      "gloss": "an informal group sharing skills",
+      "gloss_distractors": [
+        "a funded expert team",
+        "a list of company rules",
+        "a committee that approves budgets"
       ]
     },
     {
@@ -48,7 +54,7 @@
         "centers of excellence"
       ],
       "definition": "A funded team that holds a scarce skill in one place and sets how it is done.",
-      "caution": "The name claims authority and quality at once, and both get tested. Stand one up and other teams hear that they now need your permission, so it concentrates resentment as fast as it concentrates skill; the credible version comes with a stated plan to hand the capability back. Used for a group of enthusiasts with no funding and no headcount, it is corporate inflation, and the senior people in the room can smell it.",
+      "caution": "Other teams may feel they now need its permission, which causes resentment. Use it only for a funded, staffed team, since senior people notice when an unfunded group uses the name.",
       "prompt_version": 2,
       "example": "If we stand this up as a center of excellence, every model deployment routes through eight people, and those eight people are the constraint by March.",
       "cues": [
@@ -73,11 +79,17 @@
         "The person who argues your case in the rooms you are not in, without being asked."
       ],
       "word_distractors": [
+        "elucidate",
         "in pockets",
         "bespoke",
         "persistence",
-        "broad",
         "primitive"
+      ],
+      "gloss": "a funded expert team",
+      "gloss_distractors": [
+        "an informal group sharing skills",
+        "a new office building",
+        "a staff party"
       ]
     }
   ]

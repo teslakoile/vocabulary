@@ -7,7 +7,7 @@
         "panoptic"
       ],
       "definition": "A place where anyone could be watched at any time, so everyone acts as if they are.",
-      "caution": "This is a criticism, not a description. It carries Foucault's argument about power. If you only mean thorough monitoring or good observability, panopticon reads as an accusation and changes the temperature of the room.",
+      "caution": "It is a criticism about power over people, from Foucault. If you only mean careful monitoring, it sounds like an accusation.",
       "example": "If every prompt is logged and reviewed, we've built a panopticon and people will stop experimenting.",
       "cues": [
         {
@@ -36,11 +36,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
+        "blanket approval",
         "watch outs",
         "inroads",
-        "advocate",
         "executive presence",
-        "lay of the land"
+        "run it by you"
+      ],
+      "gloss": "a place where all are watched",
+      "gloss_distractors": [
+        "a room with no windows",
+        "a building open to the public",
+        "a large public square"
       ]
     }
   ]

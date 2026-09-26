@@ -1,0 +1,16 @@
+{
+  "headword": "wordsmith",
+  "senses": [
+    {
+      "term": "wordsmith",
+      "gloss": "to improve the wording",
+      "gloss_distractors": [
+        "to check the facts",
+        "to write from scratch",
+        "to translate into English"
+      ],
+      "caution": "It is fine about your own draft. Calling someone else's change 'just wordsmithing' dismisses it as cosmetic, which is unfair if their point was real.",
+      "definition": "To reword a draft so it reads better without changing what it says."
+    }
+  ]
+}

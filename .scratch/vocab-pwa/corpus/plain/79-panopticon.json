@@ -1,0 +1,16 @@
+{
+  "headword": "panopticon",
+  "senses": [
+    {
+      "term": "panopticon",
+      "gloss": "a place where all are watched",
+      "gloss_distractors": [
+        "a room with no windows",
+        "a building open to the public",
+        "a large public square"
+      ],
+      "caution": "It is a criticism about power over people, from Foucault. If you only mean careful monitoring, it sounds like an accusation.",
+      "definition": "A place where anyone could be watched at any time, so everyone acts as if they are."
+    }
+  ]
+}

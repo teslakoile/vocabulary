@@ -1,0 +1,17 @@
+{
+  "headword": "bespoke",
+  "senses": [
+    {
+      "term": "bespoke",
+      "gloss": "made for one customer",
+      "gloss_distractors": [
+        "sold at a discount",
+        "built to a common standard",
+        "shared by many teams"
+      ],
+      "caution": "It flatters when you sell to a client, but in a design review it means costly and hard to maintain. Calling a colleague's system bespoke is a criticism.",
+      "definition": "Made specially for one customer or one case, rather than bought ready-made.",
+      "definition_changed": true
+    }
+  ]
+}

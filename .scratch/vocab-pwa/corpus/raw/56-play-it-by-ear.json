@@ -11,7 +11,7 @@
         "play the rest by ear"
       ],
       "definition": "To decide as you go, guided by what actually happens rather than by a set plan.",
-      "caution": "It tells the room there is no plan, and how that lands depends entirely on who is in it. With friends it sounds relaxed; to a sponsor or a steering committee it sounds unprepared, and the usual reply is a request for the very plan you have just admitted you do not have. It is only defensible when the information you need genuinely does not exist yet, so name what you are waiting on - otherwise people file it as improvisation dressed up as flexibility.",
+      "caution": "It admits there is no plan. That sounds relaxed with friends but unprepared to a sponsor, so say what information you are waiting for.",
       "example": "We'll fix the first two milestones and play the rest by ear until the vendor confirms their dates.",
       "cues": [
         {
@@ -40,11 +40,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "esoteric",
-        "idempotent",
-        "fan-out",
         "lay of the land",
-        "by and large"
+        "finesse",
+        "executive presence",
+        "gravitas",
+        "long-horizon"
+      ],
+      "gloss": "to decide as you go",
+      "gloss_distractors": [
+        "to follow a fixed plan",
+        "to stop work early",
+        "to ask for more money"
       ]
     }
   ]

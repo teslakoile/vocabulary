@@ -1,0 +1,16 @@
+{
+  "headword": "obfuscate",
+  "senses": [
+    {
+      "term": "obfuscate",
+      "gloss": "to confuse on purpose",
+      "gloss_distractors": [
+        "to delay a decision",
+        "to complain in public",
+        "to agree without thinking"
+      ],
+      "caution": "It accuses someone of trying to mislead. For a colleague's work that is simply unclear, say unclear or obscure instead.",
+      "definition": "To make something hard to understand on purpose."
+    }
+  ]
+}

@@ -9,7 +9,7 @@
         "fans out"
       ],
       "definition": "The splitting of one request into many parallel calls that must all come back.",
-      "caution": "In messaging and feed systems the same word means one write being delivered to many readers, so in a mixed room say which you mean before the conversation quietly forks. And whichever you mean, people hear the multiplier rather than the parallelism: say it to whoever pays the bill and the next question is cost, so arrive with the number.",
+      "caution": "In messaging systems it means one message sent to many readers, so say which you mean. People also hear a cost multiplier, so bring the numbers.",
       "example": "One question fans out to eight tool calls, so a thousand users an hour is not a thousand requests an hour.",
       "cues": [
         {
@@ -40,9 +40,15 @@
       "word_distractors": [
         "ducks in a row",
         "in pockets",
-        "superset",
         "modality",
-        "incremental"
+        "incremental",
+        "substrate"
+      ],
+      "gloss": "splitting one request into many",
+      "gloss_distractors": [
+        "merging many results into one",
+        "retrying a failed request",
+        "limiting how many requests arrive"
       ]
     }
   ]

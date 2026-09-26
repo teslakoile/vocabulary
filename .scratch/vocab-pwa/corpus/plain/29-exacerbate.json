@@ -1,0 +1,16 @@
+{
+  "headword": "exacerbate",
+  "senses": [
+    {
+      "term": "exacerbate",
+      "gloss": "to make worse",
+      "gloss_distractors": [
+        "to delay",
+        "to fix completely",
+        "to hide on purpose"
+      ],
+      "caution": "It assigns blame, so saying a decision exacerbated an outage sounds like an accusation. Use it only for making something bad worse, never for growth or demand.",
+      "definition": "To make a bad situation worse."
+    }
+  ]
+}

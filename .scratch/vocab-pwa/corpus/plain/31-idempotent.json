@@ -1,0 +1,16 @@
+{
+  "headword": "idempotent",
+  "senses": [
+    {
+      "term": "idempotent",
+      "gloss": "safe to run again",
+      "gloss_distractors": [
+        "hard to install",
+        "very fast to run",
+        "running on many machines"
+      ],
+      "caution": "Others will add automatic retries because of it, so say it only if a second run changes nothing. With non-technical people, say the job is safe to run again.",
+      "definition": "Safe to run more than once, because running it again leaves the same end state."
+    }
+  ]
+}

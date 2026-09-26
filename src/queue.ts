@@ -158,7 +158,15 @@ function present(card: Card, { senses, entries }: Indexed, counts: boolean): Que
     item.options = shuffle([sense.term, ...sense.word_distractors.slice(0, WRONG_WORDS)]);
   }
 
-  if (card.type === 'recognition') {
+  if (card.type === 'recognition' && sense.gloss && sense.gloss_distractors.length >= WRONG_OPTIONS) {
+    // "What does bolster mean?" answered with four short dictionary glosses.
+    // The wrong three were written in the same grammatical form as the right
+    // one, so the card cannot be answered by spotting the only verb.
+    item.options = shuffle([sense.gloss, ...sense.gloss_distractors.slice(0, WRONG_OPTIONS)]);
+  } else if (card.type === 'recognition') {
+    // A sense with no gloss yet, such as a word captured in the app, falls
+    // back to full definitions.
+    //
     // Sibling senses make the sharpest distractors, which is the whole reason
     // an entry like scaffolding / harness / sandbox was written down together.
     //

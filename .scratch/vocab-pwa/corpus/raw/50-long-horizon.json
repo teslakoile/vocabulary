@@ -10,7 +10,7 @@
         "long-horizon tasks"
       ],
       "definition": "Running for many steps before anyone can tell whether it worked.",
-      "caution": "It is about the number of steps and the delay before feedback, not about the calendar. Using it for a project that is merely slow - a two-year migration with a checkpoint every fortnight - borrows research vocabulary for ordinary scheduling, and the people who use the term precisely will hear that. In an investment room the second word already means holding period, so a mixed audience takes you to be talking about time frames rather than about what makes a task hard for an agent.",
+      "caution": "Use it for tasks with many steps and slow feedback. For a project that is only slow, say slow, since investors may hear it as a holding period.",
       "example": "Single-shot extraction is basically solved. The long-horizon work - chase the filing, reconcile it, come back with a memo - is where it still falls over.",
       "cues": [
         {
@@ -39,11 +39,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "lean on",
-        "run it by you",
-        "exacerbate",
-        "diaspora",
-        "blanket approval"
+        "hot-swap",
+        "surreptitiously",
+        "bespoke",
+        "build that muscle",
+        "tectonic shift"
+      ],
+      "gloss": "needing many steps to finish",
+      "gloss_distractors": [
+        "easy to check quickly",
+        "costing a lot of money",
+        "built by more than one company"
       ]
     }
   ]

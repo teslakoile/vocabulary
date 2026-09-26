@@ -15,7 +15,7 @@
         "run it by them"
       ],
       "definition": "To show someone something before committing to it, to hear their reaction.",
-      "caution": "It implies you could proceed without them, which is why it works upward as courtesy and sideways as consultation. Said to someone whose sign-off you genuinely need, it can sound like you are minimising their role.",
+      "caution": "It suggests you could go ahead without them. That is polite with a boss or peer, but with someone whose approval you need it can play down their role.",
       "example": "Before I send this to the MD, can I run it by you?",
       "cues": [
         {
@@ -44,11 +44,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "gravitas",
+        "play it by ear",
         "substrate",
         "sandbox",
-        "buy-in",
-        "progressive"
+        "hot-swap",
+        "second order effects"
+      ],
+      "gloss": "to check an idea with someone",
+      "gloss_distractors": [
+        "to hand work to someone else",
+        "to reschedule a planned meeting",
+        "to complain to a manager"
       ]
     }
   ]

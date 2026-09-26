@@ -8,8 +8,8 @@
         "industry vertical",
         "industry verticals"
       ],
-      "definition": "A slice of the market made up of a single industry like banking or healthcare.",
-      "caution": "It is a go-to-market word, not an architecture one. Saying you will take the product one of these at a time commits you in public to per-industry work: separate data, separate regulators, separate sales motion, and the immediate follow-up is which one you are starting with and what the others are waiting for. Used for a team's internal domain it confuses anyone who hears it as a market segment.",
+      "definition": "A part of the market made up of one industry, such as banking or healthcare.",
+      "caution": "Use it only for market segments. Promising to work one vertical at a time commits you to separate work for each industry, and people will ask which comes first.",
       "example": "The core platform stays horizontal. We only build vertical-specific pieces where the regulator forces us to.",
       "cues": [
         {
@@ -30,7 +30,7 @@
         }
       ],
       "distractors": [
-        "The underlying layer that everything above it runs on and takes for granted.",
+        "The underlying layer that everything above it runs on.",
         "A basic building block a platform gives you and expects you to combine with others.",
         "A funded team that holds a scarce skill in one place and sets how it is used.",
         "One request splitting into many parallel pieces of work that run at the same time.",
@@ -38,11 +38,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "substrate",
-        "tectonic shift",
-        "pick your brain",
-        "panopticon",
-        "hot-swap"
+        "unequivocal",
+        "deliberate",
+        "verifiability",
+        "diaspora",
+        "enmeshed"
+      ],
+      "gloss": "an industry sector",
+      "gloss_distractors": [
+        "a sales region",
+        "a layer of management",
+        "a company's main product"
       ]
     }
   ]

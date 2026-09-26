@@ -8,7 +8,7 @@
         "disparagement"
       ],
       "definition": "To speak of someone or something in a way that quietly lowers how others see it.",
-      "caution": "It mostly appears as an accusation or a denial, and the denial never works: I don't want to disparage the previous team announces precisely what you are about to do. Its other trap is defensive — calling someone's honest criticism disparagement is a way of dodging the criticism, and senior people can see you do it.",
+      "caution": "Saying you do not want to disparage someone tells people you are about to. Calling honest criticism disparagement is a way to dodge it, and people notice.",
       "example": "I'm not trying to disparage the previous team — they were solving a different problem with a fifth of the budget.",
       "cues": [
         {
@@ -46,6 +46,12 @@
         "vertical",
         "north star",
         "finesse"
+      ],
+      "gloss": "to speak badly of",
+      "gloss_distractors": [
+        "to praise in public",
+        "to cut costs",
+        "to ask for advice"
       ]
     }
   ]

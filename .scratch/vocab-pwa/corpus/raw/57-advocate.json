@@ -6,8 +6,8 @@
       "accepted": [
         "advocates"
       ],
-      "definition": "The person who argues your case in rooms you are not in.",
-      "caution": "Naming someone as yours assigns them work they may not have agreed to, and in a hierarchy it can expose them - a director who is quietly helpful may not want to be described that way in front of their peers. Said of yourself about a cause it is fine; said of yourself about your own interests it sounds like a job title you invented. With lawyers in the room the word means counsel and will be heard that way first.",
+      "definition": "A person who argues for you when you are not there.",
+      "caution": "Naming someone as your advocate gives them a job they may not have agreed to, and can expose them in front of peers. Lawyers hear it as meaning legal counsel.",
       "example": "We don't need everyone convinced. We need one advocate on that committee who'll say it when we're not in the room.",
       "cues": [
         {
@@ -37,10 +37,16 @@
       "prompt_version": 2,
       "word_distractors": [
         "elucidate",
-        "disparage",
         "community of practice",
         "rectify",
-        "watch outs"
+        "bespoke",
+        "tectonic shift"
+      ],
+      "gloss": "someone who speaks up for you",
+      "gloss_distractors": [
+        "someone who checks your work",
+        "a new member of a team",
+        "someone who pays for a project"
       ]
     },
     {
@@ -52,8 +58,8 @@
         "advocated for",
         "advocacy"
       ],
-      "definition": "To argue openly for a position or a person, putting your own standing behind it.",
-      "caution": "It spends credibility, and it spends it visibly. Claiming it ties you to the outcome, so keep it for the two or three things a year you would still defend after they went wrong. Used about a small preference it inflates the stakes, and in a written self-assessment it reads as claiming credit unless the thing worked. There is also a floor: if all you did was agree in a meeting, someone who was there will remember that.",
+      "definition": "To argue openly for a position or a person, putting your reputation at risk.",
+      "caution": "It ties you to the outcome, so keep it for things you would still defend if they failed. If all you did was agree in a meeting, do not claim it.",
       "example": "I advocated for keeping the evaluation in-house, and knowing what it cost us, I'd make the same call again.",
       "cues": [
         {
@@ -86,7 +92,13 @@
         "verifiability",
         "contrived",
         "top brass",
-        "harness"
+        "frontrunner"
+      ],
+      "gloss": "to publicly support",
+      "gloss_distractors": [
+        "to argue against",
+        "to ask questions about",
+        "to keep quiet about"
       ]
     }
   ]

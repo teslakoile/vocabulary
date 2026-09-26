@@ -1,0 +1,16 @@
+{
+  "headword": "dogfooding",
+  "senses": [
+    {
+      "term": "dogfooding",
+      "gloss": "using your own product first",
+      "gloss_distractors": [
+        "copying a rival's product",
+        "selling a product below cost",
+        "paying outside firms to test it"
+      ],
+      "caution": "It counts only if something you care about breaks when the tool breaks. Said to a client, it sounds self-praising and makes them ask who else uses it.",
+      "definition": "Using your own product for real work before asking anyone else to use it."
+    }
+  ]
+}

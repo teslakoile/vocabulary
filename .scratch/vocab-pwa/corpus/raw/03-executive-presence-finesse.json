@@ -5,7 +5,7 @@
       "term": "executive presence",
       "accepted": [],
       "definition": "Coming across as calm, clear and senior enough to be handed a decision.",
-      "caution": "One of the few phrases you can only ever say about someone else. As feedback it is notoriously vague and is often heard as be more like us, so it lands as a coded judgement unless you attach a concrete behaviour to it: cut the preamble, lead with the recommendation, stop narrating your working. Do not use it as a polite cover for a decision you have already made about someone.",
+      "caution": "Only say it about other people. As feedback it is vague, so add a specific behaviour, such as leading with your recommendation.",
       "example": "Her content is watertight; what we are coaching is executive presence, starting with not burying the ask on slide nine.",
       "cues": [
         {
@@ -35,17 +35,23 @@
       "prompt_version": 2,
       "word_distractors": [
         "persist",
-        "broad",
         "fan-out",
         "daily driver",
-        "wordsmith"
+        "wordsmith",
+        "lay of the land"
+      ],
+      "gloss": "a calm, confident leader's style",
+      "gloss_distractors": [
+        "a formal job title",
+        "a habit of avoiding hard decisions",
+        "a strong technical skill set"
       ]
     },
     {
       "term": "finesse",
       "accepted": [],
       "definition": "Skill in handling something delicate so smoothly that the difficulty never shows.",
-      "caution": "The verb has a second life that can bite you: we finessed the numbers sounds to a sceptical audience like the problem was smoothed over rather than solved. Aim it at how something was handled, never at the substance itself, and keep it well away from auditors, risk committees and anything that will be read later.",
+      "caution": "As a verb it can suggest you hid a problem instead of solving it. Do not use it about numbers or facts, especially with auditors or in writing.",
       "example": "He finessed the headcount question without promising anything, and the MD moved on.",
       "cues": [
         {
@@ -79,6 +85,12 @@
         "first order effects",
         "in pockets",
         "deliberate"
+      ],
+      "gloss": "a skill with delicate situations",
+      "gloss_distractors": [
+        "a lack of care",
+        "a strict set of rules",
+        "a willingness to take large risks"
       ]
     }
   ]

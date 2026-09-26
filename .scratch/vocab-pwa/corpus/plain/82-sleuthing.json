@@ -1,0 +1,17 @@
+{
+  "headword": "sleuthing (out)",
+  "senses": [
+    {
+      "term": "sleuthing",
+      "gloss": "careful searching for facts",
+      "gloss_distractors": [
+        "guessing without any evidence",
+        "writing up a final report",
+        "asking a manager for help"
+      ],
+      "caution": "It is light and a little playful. About a colleague it praises effort, but about your own work to a sponsor it can make real analysis sound unimportant.",
+      "definition": "Careful searching to find facts that nobody has written down.",
+      "definition_changed": true
+    }
+  ]
+}

@@ -6,8 +6,8 @@
       "accepted": [
         "heuristics"
       ],
-      "definition": "A rule of thumb that is quick and usually right rather than always right.",
-      "caution": "The word contains an admission that it can be wrong, which is exactly why it is disarming with a governance audience and exactly why it should not be used to dress up a rule you cannot defend. Once you have called a threshold a heuristic it no longer stands on its own, so if the number actually came from analysis do not soften it, and if it came from somebody's instinct, expect the follow-up question about which.",
+      "definition": "A quick, simple rule that is usually right but not always.",
+      "caution": "Calling a rule a heuristic admits it can be wrong. Do not use it to soften a number that came from real analysis, and expect to be asked where the number came from.",
       "prompt_version": 2,
       "example": "Triage runs on a heuristic today, anything over fifty thousand goes to a human, and we replace it the moment we have labelled data.",
       "cues": [
@@ -31,16 +31,22 @@
       "distractors": [
         "The basic truths you reason up from once precedent has been stripped away.",
         "What someone can do but cannot fully explain, such as judgement or feel.",
-        "A specific way a system goes wrong, not just the fact that it might.",
+        "A specific way that a system goes wrong.",
         "A number given straight, with the caveats stripped out.",
         "Training signal a machine can check for itself rather than a person judging it."
       ],
       "word_distractors": [
-        "squarely",
-        "daily driver",
         "lean on",
-        "diaspora",
-        "sleuthing"
+        "build that muscle",
+        "sandbox",
+        "unequivocal",
+        "substrate"
+      ],
+      "gloss": "a quick rule that usually works",
+      "gloss_distractors": [
+        "a proven law of science",
+        "a detailed written plan",
+        "a formal agreement between companies"
       ]
     }
   ]

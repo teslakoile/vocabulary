@@ -7,7 +7,7 @@
         "incrementally"
       ],
       "definition": "Proceeding by small additions, each one adding a little to what is already there.",
-      "caution": "The word has two temperatures and the room picks which one. About delivery it is a virtue; about results it is faint praise, and applied to a benefits case it is how a committee says not worth the money without having to argue. Decide which one your audience will hear before you use it about your own work. In a finance conversation it means something different again, the extra amount on top of the baseline rather than a small one.",
+      "caution": "About how work is delivered it is praise, but about results it means the gains are small. In finance it means the extra amount above the usual baseline.",
       "example": "The gains are incremental per release, and it is the compounding across two quarters that the case actually rests on.",
       "cues": [
         {
@@ -36,11 +36,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "continuum",
+        "sponsorship",
         "squarely",
-        "tectonic shift",
-        "serialize",
-        "build that muscle"
+        "amenable",
+        "exacerbate",
+        "first order effects"
+      ],
+      "gloss": "happening in small steps",
+      "gloss_distractors": [
+        "happening all at once",
+        "getting smaller over time",
+        "happening by chance"
       ]
     }
   ]

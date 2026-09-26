@@ -7,7 +7,7 @@
         "verbosity"
       ],
       "definition": "Using far more words than the point needs.",
-      "caution": "It criticises the writer, not only the writing, and it stings more than long or dense. Said out loud about someone's answer while others are listening it is close to rude; keep it for drafts, for logs, and for your own work. It also has a flat, non-insulting life in engineering, where verbose output or verbose logging just means detailed, so in a mixed room make clear which of the two you mean.",
+      "caution": "It criticises the writer and sounds rude about someone's answer in front of others. In engineering, verbose logs simply means detailed logs, so say which meaning you intend.",
       "prompt_version": 2,
       "example": "It is accurate, but it is verbose. The committee will read the opening paragraph and stop.",
       "cues": [
@@ -36,11 +36,17 @@
         "Advancing in stages, each going further than the last."
       ],
       "word_distractors": [
-        "institutional knowledge",
-        "finesse",
-        "attuned",
-        "blanket approval",
-        "sponsorship"
+        "wordsmith",
+        "fan-out",
+        "play it by ear",
+        "trivial",
+        "panopticon"
+      ],
+      "gloss": "using too many words",
+      "gloss_distractors": [
+        "rude and unkind",
+        "spoken very quietly",
+        "full of spelling mistakes"
       ]
     }
   ]

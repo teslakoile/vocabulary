@@ -1,0 +1,16 @@
+{
+  "headword": "frontier",
+  "senses": [
+    {
+      "term": "frontier",
+      "gloss": "the most advanced AI models",
+      "gloss_distractors": [
+        "the cheapest AI option",
+        "an old, retired AI system",
+        "a public ranking of AI tests"
+      ],
+      "caution": "Keep it for the most capable labs and models. Experts will correct you if you use it for your own work, and the claim goes out of date quickly.",
+      "definition": "The current edge of what AI systems can do, and the labs and models working there."
+    }
+  ]
+}

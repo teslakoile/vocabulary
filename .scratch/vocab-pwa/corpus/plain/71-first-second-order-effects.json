@@ -1,0 +1,27 @@
+{
+  "headword": "first/second order effects",
+  "senses": [
+    {
+      "term": "first order effects",
+      "gloss": "the direct, immediate results",
+      "gloss_distractors": [
+        "the later, indirect results",
+        "the reasons a decision was made",
+        "the main goals of a plan"
+      ],
+      "caution": "Calling something first order suggests you know what comes after it, and senior people will ask. In maths it can also mean a rough estimate, so say which you mean.",
+      "definition": "The direct and immediate results of a change on the thing you changed."
+    },
+    {
+      "term": "second order effects",
+      "gloss": "the later, indirect results",
+      "gloss_distractors": [
+        "the direct, immediate results",
+        "the main goals of a plan",
+        "the reasons a decision was made"
+      ],
+      "caution": "People often use it to block other people's ideas. If you raise it, be ready to name one, or you only add doubt.",
+      "definition": "The later results that follow once people and systems adapt to the first change."
+    }
+  ]
+}

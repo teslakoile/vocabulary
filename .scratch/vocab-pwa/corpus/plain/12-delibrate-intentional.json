@@ -1,0 +1,17 @@
+{
+  "headword": "delibrate/intentional",
+  "senses": [
+    {
+      "term": "deliberate",
+      "gloss": "done on purpose",
+      "gloss_distractors": [
+        "done very quickly",
+        "done in secret",
+        "done without any help"
+      ],
+      "caution": "About someone else's action it says they chose to do it, which is an accusation. About your own plan it can sound like an excuse for being slow, so say on purpose.",
+      "definition": "Done on purpose and with thought, rather than by accident.",
+      "definition_changed": true
+    }
+  ]
+}

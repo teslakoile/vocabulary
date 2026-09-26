@@ -1,0 +1,16 @@
+{
+  "headword": "contrived",
+  "senses": [
+    {
+      "term": "contrived",
+      "gloss": "forced and not believable",
+      "gloss_distractors": [
+        "hard to understand",
+        "too costly to be practical",
+        "carefully checked by experts"
+      ],
+      "caution": "It judges motive, so calling a colleague's demo contrived accuses them of faking the evidence. If you only mean the example is too neat to prove much, say unrepresentative.",
+      "definition": "Obviously arranged to give a particular impression, and unconvincing because of it."
+    }
+  ]
+}

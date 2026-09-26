@@ -8,7 +8,7 @@
         "obscured"
       ],
       "definition": "Little known or hard to make out, or to keep something from being seen or understood.",
-      "caution": "The verb accuses nobody, which is the whole reason to reach for it. Saying the dashboard obscures the failure rate names a design problem; saying it obfuscates the failure rate says someone meant to mislead. Keep it pointed at the artefact rather than the person, because aimed at a colleague's explanation it is still a criticism, just a quieter one.",
+      "caution": "It blames nobody, unlike obfuscate, which says someone meant to mislead. Use it about things such as charts, since about a person's explanation it is still a criticism.",
       "example": "The monthly average obscures the two days when latency tripled, so let us show the daily line instead.",
       "cues": [
         {
@@ -41,11 +41,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "superset",
-        "advocate",
         "unequivocal",
         "lean on",
-        "verbose"
+        "verbose",
+        "flywheel effect",
+        "advocate for"
+      ],
+      "gloss": "to hide or make unclear",
+      "gloss_distractors": [
+        "to explain in detail",
+        "to put in the right order",
+        "to check for errors"
       ]
     }
   ]

@@ -10,7 +10,7 @@
         "front-runners"
       ],
       "definition": "The one most likely to win right now, while the outcome is still open.",
-      "caution": "Naming one changes the race. In a vendor evaluation, putting it in writing before scoring closes makes the process look decided, and that is precisely the sentence that resurfaces in a procurement challenge - keep it to conversation. It also paints a target on whoever you name, and if they lose, the room remembers that you called it early.",
+      "caution": "Naming one in writing before a decision makes the process look decided, which can cause trouble in a procurement challenge. Keep it to conversation.",
       "example": "Off the record the Swiss vendor is the frontrunner, but nothing goes in writing until scoring closes.",
       "cues": [
         {
@@ -39,11 +39,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
+        "advocate",
+        "failure mode",
+        "eschew",
         "continuum",
-        "surreptitiously",
-        "elucidate",
-        "front and center",
-        "center of excellence"
+        "surreptitiously"
+      ],
+      "gloss": "the one most likely to win",
+      "gloss_distractors": [
+        "the newest competitor",
+        "the person who runs a meeting",
+        "a backup option"
       ]
     }
   ]

@@ -1,0 +1,16 @@
+{
+  "headword": "frontrunner",
+  "senses": [
+    {
+      "term": "frontrunner",
+      "gloss": "the one most likely to win",
+      "gloss_distractors": [
+        "the newest competitor",
+        "the person who runs a meeting",
+        "a backup option"
+      ],
+      "caution": "Naming one in writing before a decision makes the process look decided, which can cause trouble in a procurement challenge. Keep it to conversation.",
+      "definition": "The one most likely to win right now, while the outcome is still open."
+    }
+  ]
+}

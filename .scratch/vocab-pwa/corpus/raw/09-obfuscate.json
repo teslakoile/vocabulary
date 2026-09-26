@@ -7,7 +7,7 @@
         "obfuscation"
       ],
       "definition": "To make something hard to understand on purpose.",
-      "caution": "This is an allegation of bad faith, not a comment on clarity. Aimed at a vendor's pricing page it is fair game; aimed at a colleague's slide it says they meant to mislead, and the room will hear that even if you did not mean it. If all you mean is that the explanation came out muddled, say obscure or unclear and keep the temperature down.",
+      "caution": "It accuses someone of trying to mislead. For a colleague's work that is simply unclear, say unclear or obscure instead.",
       "example": "Their per-token pricing obfuscates the real cost, so I have rebuilt it as one number per thousand queries.",
       "cues": [
         {
@@ -45,6 +45,12 @@
         "hot-swap",
         "institutional knowledge",
         "semantic layer"
+      ],
+      "gloss": "to confuse on purpose",
+      "gloss_distractors": [
+        "to delay a decision",
+        "to complain in public",
+        "to agree without thinking"
       ]
     }
   ]

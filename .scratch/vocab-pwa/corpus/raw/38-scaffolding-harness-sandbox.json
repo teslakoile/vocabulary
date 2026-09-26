@@ -6,8 +6,8 @@
       "accepted": [
         "scaffold"
       ],
-      "definition": "Temporary structure that holds work up until the real thing can stand alone.",
-      "caution": "The word commits you to removal. Call something scaffolding and people will remember that you said it was temporary, and will ask when it is coming out; if you have no intention of taking it out, you have handed someone a stick. It is also about supporting the real work, not being a rough version of it, so a quick first implementation is a draft, not this.",
+      "definition": "A temporary support that is removed once the real system works on its own.",
+      "caution": "It tells people the thing is temporary, and they will later ask when it is being removed. For a rough first version of the real work, say draft instead.",
       "prompt_version": 2,
       "example": "The manual review step is scaffolding. Once the classifier is calibrated it comes out.",
       "cues": [
@@ -36,18 +36,24 @@
         "The preparation done in advance of a moment where a gap would cost you dearly."
       ],
       "word_distractors": [
-        "substantiate",
+        "disparage",
         "ducks in a row",
         "long-horizon",
         "heuristic",
-        "eschew"
+        "vertical"
+      ],
+      "gloss": "a temporary support",
+      "gloss_distractors": [
+        "a backup copy",
+        "a list of known bugs",
+        "a safe, isolated test area"
       ]
     },
     {
       "term": "harness",
       "accepted": [],
-      "definition": "A rig built to drive a system from outside and see how it behaves.",
-      "caution": "In an AI room this now usually means an evaluation harness, so people may hear eval when you meant test rig. Say which you mean if the room is mixed. It also implies you built the apparatus rather than bought the numbers, so do not use it for a public benchmark you merely ran.",
+      "definition": "A setup built to run a system automatically and check how it behaves.",
+      "caution": "In AI work people usually hear evaluation harness, so say so if you mean a general test setup. Use it for tools you built yourself, and not for a public benchmark you only ran.",
       "prompt_version": 2,
       "example": "We need a harness that replays last quarter's queries against the new model.",
       "cues": [
@@ -72,11 +78,17 @@
         "The underlying layer everything else runs on."
       ],
       "word_distractors": [
-        "front and center",
-        "persistence",
         "lay of the land",
-        "disparage",
-        "elucidate"
+        "squarely",
+        "enmeshed",
+        "verifiability",
+        "tacit knowledge"
+      ],
+      "gloss": "a setup for testing a system",
+      "gloss_distractors": [
+        "a temporary support",
+        "a list of user complaints",
+        "a contract with an outside vendor"
       ]
     },
     {
@@ -85,7 +97,7 @@
         "sandboxed"
       ],
       "definition": "An isolated place to run something where it cannot affect anything real.",
-      "caution": "It promises containment. If the environment can actually reach production data or spend real money, calling it a sandbox is a claim someone will hold you to, and compliance will hold you to it in writing. It also says nothing about how faithful the environment is, so do not use it when what you are promising is a realistic rehearsal.",
+      "caution": "It promises that nothing real can be affected, and compliance teams will hold you to that. It says nothing about how realistic the setup is.",
       "prompt_version": 2,
       "example": "Let it run in a sandbox first. I do not want it touching the live index.",
       "cues": [
@@ -111,10 +123,16 @@
       ],
       "word_distractors": [
         "heuristic",
-        "advocate for",
-        "diaspora",
-        "fearless forecast",
-        "finesse"
+        "deliberate",
+        "daily driver",
+        "first principles",
+        "mold breaker"
+      ],
+      "gloss": "a safe, isolated test area",
+      "gloss_distractors": [
+        "a temporary support",
+        "a shared team calendar",
+        "the live production system"
       ]
     }
   ]

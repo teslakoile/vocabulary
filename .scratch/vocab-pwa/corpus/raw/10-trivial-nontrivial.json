@@ -5,7 +5,7 @@
       "term": "trivial",
       "accepted": [],
       "definition": "So small or easy that it is not worth spending time on.",
-      "caution": "Said about someone else's work it is dismissive whatever you intended, because it tells them their week was not worth much. It is safest about your own work, and it is a hostage to fortune even there: the trivial change that took production down is the one everybody remembers you calling trivial.",
+      "caution": "About other people's work it sounds dismissive. Even about your own work be careful, because people remember when a trivial change breaks something.",
       "example": "The schema change is trivial; the migration for the three teams downstream is not.",
       "cues": [
         {
@@ -37,8 +37,14 @@
         "sponsorship",
         "finesse",
         "substantial",
-        "buy-in",
-        "north star"
+        "pick your brain",
+        "buy-in"
+      ],
+      "gloss": "very small or easy",
+      "gloss_distractors": [
+        "harder than it looks",
+        "costly and slow",
+        "strange and hard to explain"
       ]
     },
     {
@@ -47,7 +53,7 @@
         "non-trivial"
       ],
       "definition": "Not simple, and harder or larger than the person asking has assumed.",
-      "caution": "A technical audience's word, and it works because it is dry. In front of a board it can read as evasive, because they hear hard and immediately want a number, so put one straight after it. It also implies you have already looked, so it is a poor place to hide an estimate you have not actually made.",
+      "caution": "It suits technical readers. With senior leaders give a number right after it, and use it only when you have actually estimated the work.",
       "example": "Rewiring auth for the new tenant model is nontrivial, so call it three sprints rather than a fortnight.",
       "cues": [
         {
@@ -76,11 +82,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "second order effects",
-        "by and large",
         "verbose",
-        "tacit knowledge",
-        "build that muscle"
+        "inroads",
+        "watch outs",
+        "blanket approval",
+        "serialize"
+      ],
+      "gloss": "harder than it looks",
+      "gloss_distractors": [
+        "very small or easy",
+        "known to very few people",
+        "cheap and quick"
       ]
     }
   ]

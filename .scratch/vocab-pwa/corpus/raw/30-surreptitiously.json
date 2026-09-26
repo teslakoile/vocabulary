@@ -7,7 +7,7 @@
         "surreptitious"
       ],
       "definition": "Done quietly so that nobody sees it happening.",
-      "caution": "It supplies a motive for the hiding, so aimed at a colleague it is an accusation wearing the clothes of an adverb. About systems it is heavier still: an agent that surreptitiously wrote to the database will be read as a security finding rather than a quirk, and the sentence outlives the meeting. About yourself it is usually light and self-deprecating, which is where most of its safe uses are.",
+      "caution": "It suggests hiding on purpose, so about a colleague it reads as an accusation, and about a system it suggests a security problem. It is safest used lightly about yourself.",
       "prompt_version": 2,
       "example": "Nobody signed anything off. A team had been surreptitiously pointing production traffic at the new index for a month.",
       "cues": [
@@ -36,11 +36,17 @@
         "Present in scattered, isolated places rather than across the whole."
       ],
       "word_distractors": [
+        "esoteric",
         "amenable",
-        "inroads",
-        "wordsmith",
-        "watch outs",
-        "blanket approval"
+        "daily driver",
+        "diaspora",
+        "persist"
+      ],
+      "gloss": "in a secret way",
+      "gloss_distractors": [
+        "very slowly",
+        "in an angry way",
+        "in front of everyone"
       ]
     }
   ]

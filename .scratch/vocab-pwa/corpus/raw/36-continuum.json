@@ -6,8 +6,8 @@
       "accepted": [
         "continua"
       ],
-      "definition": "A smooth range with no natural breaks, where any line you draw is a choice.",
-      "caution": "It is a move against somebody's categories, so it always lands as a challenge to whoever just proposed them. Used to avoid a call it is worse than useless: when the decision needs a threshold, saying the thing is a continuum without proposing where to cut reads as refusing to decide, and a sponsor will hear it that way. Do not use it where the steps are real either, because a pricing tier is not one.",
+      "definition": "A range that changes gradually, with no clear points where one part ends.",
+      "caution": "Using it challenges the categories someone just proposed. When a decision needs a clear cut-off, say where you would set it, or you will seem to be avoiding the decision.",
       "prompt_version": 2,
       "example": "Autonomy is not a switch, it is a continuum, and the real question is how far along it we are willing to be in the next release.",
       "cues": [
@@ -36,11 +36,17 @@
         "One piece of work splitting into many parallel branches that all run at once."
       ],
       "word_distractors": [
+        "enmeshed",
         "watch outs",
         "by and large",
         "substantiate",
-        "build that muscle",
-        "play it by ear"
+        "eschew"
+      ],
+      "gloss": "a smooth, gradual range",
+      "gloss_distractors": [
+        "a sudden change",
+        "a long written report",
+        "a list of separate groups"
       ]
     }
   ]

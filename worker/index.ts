@@ -146,6 +146,8 @@ type SenseRow = {
   cues: string | null;
   distractors: string | null;
   word_distractors: string | null;
+  gloss: string | null;
+  gloss_distractors: string | null;
   prompt_version: number | null;
   updated_at: string;
 };
@@ -206,7 +208,7 @@ async function corpus(request: Request, env: Env): Promise<Response> {
     ).all<EntryRow>(),
     env.DB.prepare(
       `SELECT id, entry_id, position, term, accepted, definition, caution, example,
-              cues, distractors, word_distractors, prompt_version, updated_at
+              cues, distractors, word_distractors, gloss, gloss_distractors, prompt_version, updated_at
          FROM senses ORDER BY entry_id, position`
     ).all<SenseRow>(),
   ]);
@@ -225,6 +227,8 @@ async function corpus(request: Request, env: Env): Promise<Response> {
       cues: parseJson<Sense['cues']>(row.cues, []),
       distractors: parseJson<string[]>(row.distractors, []),
       word_distractors: parseJson<string[]>(row.word_distractors, []),
+      gloss: row.gloss ?? '',
+      gloss_distractors: parseJson<string[]>(row.gloss_distractors, []),
       prompt_version: row.prompt_version === null ? null : Number(row.prompt_version),
       updated_at: row.updated_at,
     };
@@ -451,7 +455,7 @@ async function updateEntry(id: string, request: Request, env: Env): Promise<Resp
     statements.push(
       env.DB.prepare(
         `UPDATE senses SET term = ?, accepted = ?, definition = ?, caution = ?, example = ?,
-                           cues = ?, distractors = ?, word_distractors = ?, updated_at = ?
+                           cues = ?, distractors = ?, word_distractors = ?, gloss = ?, gloss_distractors = ?, updated_at = ?
            WHERE id = ? AND entry_id = ?`
       ).bind(
         sense.term,
@@ -462,6 +466,8 @@ async function updateEntry(id: string, request: Request, env: Env): Promise<Resp
         JSON.stringify(sense.cues ?? []),
         JSON.stringify(sense.distractors ?? []),
         JSON.stringify(sense.word_distractors ?? []),
+        sense.gloss ?? '',
+        JSON.stringify(sense.gloss_distractors ?? []),
         now,
         sense.id,
         id

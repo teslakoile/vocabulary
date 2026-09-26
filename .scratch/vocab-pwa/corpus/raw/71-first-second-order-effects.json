@@ -9,7 +9,7 @@
         "first-order effect"
       ],
       "definition": "The direct and immediate results of a change on the thing you changed.",
-      "caution": "Naming something as first order is a promise that you have thought about what comes after it, and the next question in a senior room is always what comes after it. It also collides with first-order approximation, which means roughly, so in a mixed room say which you mean before someone hears you say the number is a guess.",
+      "caution": "Calling something first order suggests you know what comes after it, and senior people will ask. In maths it can also mean a rough estimate, so say which you mean.",
       "example": "The first order effect is that reviews get faster. What I actually care about is what happens to review quality once they do.",
       "cues": [
         {
@@ -39,10 +39,16 @@
       "prompt_version": 2,
       "word_distractors": [
         "asymmetric",
+        "harness",
         "amenable",
         "pick your brain",
-        "disparage",
-        "advocate"
+        "substantiate"
+      ],
+      "gloss": "the direct, immediate results",
+      "gloss_distractors": [
+        "the later, indirect results",
+        "the reasons a decision was made",
+        "the main goals of a plan"
       ]
     },
     {
@@ -53,7 +59,7 @@
         "second-order effect"
       ],
       "definition": "The later results that follow once people and systems adapt to the first change.",
-      "caution": "It is the easiest phrase in the language to use as a veto. Raise it and you should be able to name one, or you have added doubt to someone else's proposal without paying anything for it. People notice when it only ever arrives on other people's ideas.",
+      "caution": "People often use it to block other people's ideas. If you raise it, be ready to name one, or you only add doubt.",
       "example": "The second order effect is the one I'd watch: once reviewers trust the tool, they stop reading the diffs.",
       "cues": [
         {
@@ -86,11 +92,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "deliberate",
-        "daily driver",
         "tacit knowledge",
-        "hot-swap",
-        "disparage"
+        "disparage",
+        "failure mode",
+        "squarely",
+        "hyperscaler"
+      ],
+      "gloss": "the later, indirect results",
+      "gloss_distractors": [
+        "the direct, immediate results",
+        "the main goals of a plan",
+        "the reasons a decision was made"
       ]
     }
   ]

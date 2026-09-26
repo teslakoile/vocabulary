@@ -7,7 +7,7 @@
         "verifiable"
       ],
       "definition": "Whether a claim can be checked by someone other than whoever made it.",
-      "caution": "A room hears it as a synonym for trustworthy, and it is not: a number can be perfectly verifiable and wrong. Promise it only where you can name who does the checking and against what, or you have committed to an audit trail you have not built.",
+      "caution": "People hear it as trustworthy, but a number can be easy to check and still wrong. Promise it only if you can say who checks it and against what.",
       "example": "Our advantage isn't that the model is right more often, it's the verifiability — every number traces back to a filing.",
       "cues": [
         {
@@ -45,6 +45,12 @@
         "advocate for",
         "run it by you",
         "blanket approval"
+      ],
+      "gloss": "how easily others can check it",
+      "gloss_distractors": [
+        "feedback a computer can check",
+        "how widely it is used",
+        "how strongly customers recommend it"
       ]
     },
     {
@@ -53,7 +59,7 @@
         "verifiable reward"
       ],
       "definition": "Training signal a machine can check on its own, like a test passing or a proof compiling.",
-      "caution": "The term quietly limits its own scope. Only tasks with a checkable answer qualify, and almost none of the work you are paid for — a memo, a client recommendation, a judgement call — has an answer key. Promising this on judgement-heavy work is the overclaim to avoid. In a non-technical room it also sounds like a bonus scheme, so unpack it or use plain words.",
+      "caution": "It only covers tasks with a checkable answer, so do not promise it for memos or judgement calls. Non-technical people may think it means a bonus scheme.",
       "example": "Coding and maths get verifiable rewards for free. Nothing in our analyst workflow has an answer key like that.",
       "cues": [
         {
@@ -82,11 +88,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "top brass",
-        "trivial",
-        "heuristic",
-        "build that muscle",
-        "deliberate"
+        "continuum",
+        "attuned",
+        "institutional knowledge",
+        "substrate",
+        "finesse"
+      ],
+      "gloss": "feedback a computer can check",
+      "gloss_distractors": [
+        "how easily others can check it",
+        "cash bonuses for hitting targets",
+        "a log of model changes"
       ]
     }
   ]

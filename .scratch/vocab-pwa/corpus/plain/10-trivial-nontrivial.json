@@ -1,0 +1,27 @@
+{
+  "headword": "trivial/nontrivial",
+  "senses": [
+    {
+      "term": "trivial",
+      "gloss": "very small or easy",
+      "gloss_distractors": [
+        "harder than it looks",
+        "costly and slow",
+        "strange and hard to explain"
+      ],
+      "caution": "About other people's work it sounds dismissive. Even about your own work be careful, because people remember when a trivial change breaks something.",
+      "definition": "So small or easy that it is not worth spending time on."
+    },
+    {
+      "term": "nontrivial",
+      "gloss": "harder than it looks",
+      "gloss_distractors": [
+        "very small or easy",
+        "known to very few people",
+        "cheap and quick"
+      ],
+      "caution": "It suits technical readers. With senior leaders give a number right after it, and use it only when you have actually estimated the work.",
+      "definition": "Not simple, and harder or larger than the person asking has assumed."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "headword": "elucidate",
+  "senses": [
+    {
+      "term": "elucidate",
+      "gloss": "to explain clearly",
+      "gloss_distractors": [
+        "to make worse",
+        "to hide on purpose",
+        "to argue against strongly"
+      ],
+      "caution": "It is formal and can sound stiff out loud. Asking someone to elucidate says they were unclear, so use it about a document rather than about the person who wrote it.",
+      "definition": "To explain something already said or written by laying out the reasoning behind it."
+    }
+  ]
+}

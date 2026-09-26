@@ -7,8 +7,8 @@ const RAW_DIR = '.scratch/vocab-pwa/corpus/raw';
 const SOURCE = '.scratch/vocab-pwa/source-list.md';
 // Easiest first, because this is also the order cards enter intake.
 const TYPES = ['recognition', 'identify', 'reverse', 'production'];
-// Bumped to 3 when definitions were rewritten plain and word_distractors added.
-const PROMPT_VERSION = 3;
+// 3: plain definitions and word_distractors. 4: glosses and plain cautions.
+const PROMPT_VERSION = 4;
 const NOW = process.env.SEED_NOW || new Date().toISOString();
 
 const q = (v) => (v === null || v === undefined ? 'NULL' : `'${String(v).replace(/'/g, "''")}'`);
@@ -52,11 +52,11 @@ for (const entry of entries) {
     const sid = `s_${slug(entry.headword)}_${i}`;
     senseCount++;
     out.push(
-      `INSERT INTO senses (id, entry_id, position, term, accepted, definition, caution, example, cues, distractors, word_distractors, prompt_version, created_at, updated_at) VALUES ` +
-        `(${q(sid)}, ${q(eid)}, ${i}, ${q(s.term)}, ${j(s.accepted)}, ${q(s.definition)}, ${q(s.caution)}, ${q(s.example)}, ${j(s.cues)}, ${j(s.distractors)}, ${j(s.word_distractors)}, ${PROMPT_VERSION}, ${q(NOW)}, ${q(NOW)}) ` +
+      `INSERT INTO senses (id, entry_id, position, term, accepted, definition, caution, example, cues, distractors, word_distractors, gloss, gloss_distractors, prompt_version, created_at, updated_at) VALUES ` +
+        `(${q(sid)}, ${q(eid)}, ${i}, ${q(s.term)}, ${j(s.accepted)}, ${q(s.definition)}, ${q(s.caution)}, ${q(s.example)}, ${j(s.cues)}, ${j(s.distractors)}, ${j(s.word_distractors)}, ${q(s.gloss ?? '')}, ${j(s.gloss_distractors)}, ${PROMPT_VERSION}, ${q(NOW)}, ${q(NOW)}) ` +
         `ON CONFLICT(id) DO UPDATE SET term=excluded.term, accepted=excluded.accepted, definition=excluded.definition, ` +
         `caution=excluded.caution, example=excluded.example, cues=excluded.cues, distractors=excluded.distractors, ` +
-        `word_distractors=excluded.word_distractors, ` +
+        `word_distractors=excluded.word_distractors, gloss=excluded.gloss, gloss_distractors=excluded.gloss_distractors, ` +
         `prompt_version=excluded.prompt_version, updated_at=excluded.updated_at;`
     );
 

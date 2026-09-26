@@ -7,8 +7,8 @@
         "fearless forecasts",
         "fearless prediction"
       ],
-      "definition": "A prediction given straight, with the caveats left out, usually because someone asked.",
-      "caution": "It is almost always invited, and the invitation is the only thing that makes the missing hedges acceptable - offering one unprompted reads as bravado and puts you on the hook for a question nobody asked you. It also protects you far less than it sounds like it does, because people remember the number and forget the framing, so give one you would be willing to be held to. In writing it is worse: a board paper has no tone of voice to carry the disclaimer.",
+      "definition": "A direct prediction with no caveats, usually given because someone asked for one.",
+      "caution": "Give one only when someone asks for it. People remember the number and forget the warning, so only give a number you are willing to be held to.",
       "example": "Fearless forecast: two of the four business units are live by March and the other two slip to the summer.",
       "cues": [
         {
@@ -37,11 +37,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "amenable",
-        "frontrunner",
-        "ephemeral",
-        "institutional knowledge",
-        "sponsorship"
+        "obscure",
+        "lean on",
+        "substantial",
+        "verifiable rewards",
+        "by and large"
+      ],
+      "gloss": "a bold, direct prediction",
+      "gloss_distractors": [
+        "a careful range of outcomes",
+        "a report on past results",
+        "a long-term budget"
       ]
     }
   ]

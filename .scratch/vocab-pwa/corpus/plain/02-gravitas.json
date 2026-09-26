@@ -1,0 +1,17 @@
+{
+  "headword": "gravitas",
+  "senses": [
+    {
+      "term": "gravitas",
+      "gloss": "a serious, respected manner",
+      "gloss_distractors": [
+        "a loud, pushy manner",
+        "a habit of speaking too long",
+        "a talent for small talk"
+      ],
+      "caution": "Never say it about yourself, and save it for serious situations. As feedback it is vague, so name one specific thing the person can do differently.",
+      "definition": "A serious, calm way of behaving that makes other people respect you and listen.",
+      "definition_changed": true
+    }
+  ]
+}

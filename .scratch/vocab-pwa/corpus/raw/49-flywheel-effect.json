@@ -7,8 +7,8 @@
         "flywheel",
         "flywheels"
       ],
-      "definition": "A cycle where each turn feeds the next, so growth gets easier the longer it runs.",
-      "caution": "It claims a specific mechanism, so you should be able to say each step of the loop out loud before you use it - in an investment room someone will ask you to draw it, and growth that is merely fast has no loop in it at all. It also carries a built-in excuse for a flat early stretch, which is a very convenient thing to reach for when your numbers are flat. Bezos put the word in every strategy deck for a decade, so in some rooms it arrives pre-discounted as consultant language.",
+      "definition": "A cycle where each step helps the next, so growth gets easier the longer it runs.",
+      "caution": "Be ready to name each step of the loop, because someone will ask you to draw it. Some senior listeners hear it as consultant language.",
       "example": "Every deployment hands us the failure cases the next model trains on. That's the flywheel, and honestly it's the only moat we have.",
       "cues": [
         {
@@ -37,11 +37,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "squarely",
-        "by and large",
-        "enmeshed",
-        "executive presence",
-        "semantic layer"
+        "heuristic",
+        "advocate",
+        "surreptitiously",
+        "semantic layer",
+        "verbose"
+      ],
+      "gloss": "a cycle that makes growth easier",
+      "gloss_distractors": [
+        "a plan to cut costs",
+        "a sudden drop in sales",
+        "a delay caused by missing approvals"
       ]
     }
   ]

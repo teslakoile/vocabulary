@@ -1,0 +1,17 @@
+{
+  "headword": "heuristic",
+  "senses": [
+    {
+      "term": "heuristic",
+      "gloss": "a quick rule that usually works",
+      "gloss_distractors": [
+        "a proven law of science",
+        "a detailed written plan",
+        "a formal agreement between companies"
+      ],
+      "caution": "Calling a rule a heuristic admits it can be wrong. Do not use it to soften a number that came from real analysis, and expect to be asked where the number came from.",
+      "definition": "A quick, simple rule that is usually right but not always.",
+      "definition_changed": true
+    }
+  ]
+}

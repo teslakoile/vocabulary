@@ -1,0 +1,17 @@
+{
+  "headword": "substrate",
+  "senses": [
+    {
+      "term": "substrate",
+      "gloss": "the base that others build on",
+      "gloss_distractors": [
+        "a small add-on feature",
+        "the screen users interact with",
+        "a backup copy of the data"
+      ],
+      "caution": "It sounds grand and claims other systems really depend on it, which people can check. Used about another team's product, it can make their work sound minor.",
+      "definition": "The base layer that other systems are built on and depend on.",
+      "definition_changed": true
+    }
+  ]
+}

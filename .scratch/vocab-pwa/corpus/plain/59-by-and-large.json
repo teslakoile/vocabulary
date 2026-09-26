@@ -1,0 +1,16 @@
+{
+  "headword": "by and large",
+  "senses": [
+    {
+      "term": "by and large",
+      "gloss": "in most cases",
+      "gloss_distractors": [
+        "in every case",
+        "at first",
+        "by a wide margin"
+      ],
+      "caution": "It admits you have not checked the exceptions. It is fine in conversation, but in writing people will ask which cases you left out.",
+      "definition": "On the whole, allowing for exceptions that do not change the conclusion."
+    }
+  ]
+}

@@ -25,7 +25,7 @@ interface Props {
 type Answered = { correct: boolean; given?: string } | null;
 
 const KIND = {
-  recognition: { label: 'recognition', icon: Eye },
+  recognition: { label: 'pick the meaning', icon: Eye },
   identify: { label: 'pick the word', icon: ListChecks },
   reverse: { label: 'type the word', icon: Keyboard },
   production: { label: 'from a situation', icon: MessageSquareQuote },
@@ -34,7 +34,17 @@ const KIND = {
 /** What a card's options are checked against. Recognition offers definitions
  *  and identify offers words, so the right answer is not always the same field. */
 const correctOption = (item: QueueItem): string =>
-  item.card.type === 'identify' ? item.sense.term : item.sense.definition;
+  item.card.type === 'identify'
+    ? item.sense.term
+    : item.options?.includes(item.sense.gloss)
+      ? item.sense.gloss
+      : item.sense.definition;
+
+/** The question each card asks, in words. A bare headword or a bare definition
+ *  left you to work out what was being asked. */
+function Ask({ children }: { children: React.ReactNode }) {
+  return <p data-slot="ask" className="text-sm font-medium tracking-wide text-muted-foreground">{children}</p>;
+}
 
 export default function Review({ queue, snapshot, onSnapshot }: Props) {
   const [item, setItem] = useState<QueueItem | undefined>(() => queue.peek());
@@ -158,6 +168,7 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
             <h1 className="font-serif text-[2.1rem] leading-[1.1] font-semibold tracking-tight">
               <Headword>{sense.term}</Headword>
             </h1>
+            {sense.gloss && <p className="text-[1.05rem] text-muted-foreground">means {sense.gloss}</p>}
             {sense.accepted.length > 0 && (
               <p className="text-sm text-muted-foreground">also {sense.accepted.join(', ')}</p>
             )}
@@ -230,14 +241,16 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
     return (
       <div data-slot="question" data-kind="recognition" className="stagger flex flex-col gap-4">
         <h1 className="font-serif text-[2.1rem] leading-[1.1] font-semibold tracking-tight">
+          <span className="font-normal text-muted-foreground">What does </span>
           <Headword>{sense.term}</Headword>
+          <span className="font-normal text-muted-foreground"> mean?</span>
         </h1>
         <ul data-slot="options" className="grid list-none gap-2.5 p-0">
           {(item.options ?? []).map((option, i) => (
             <li key={option}>
               <button
                 className="surface pressable flex w-full items-start gap-3 rounded-xl border border-border bg-card px-4 py-3.5 text-left leading-snug hover:border-brand/40 hover:bg-accent/60"
-                onClick={() => onReveal(option === sense.definition)}
+                onClick={() => onReveal(option === correctOption(item))}
               >
                 {/* The option number, for keyboard use. Hidden where there is no keyboard. */}
                 <kbd className="mt-px hidden size-6 shrink-0 items-center justify-center rounded-md border border-border bg-muted font-sans text-xs text-muted-foreground pointer-fine:flex">
@@ -255,6 +268,7 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
   if (card.type === 'identify') {
     return (
       <div data-slot="question" data-kind="identify" className="stagger flex flex-col gap-4">
+        <Ask>Which word means this?</Ask>
         <p data-slot="prompt" className="pt-1 text-[1.28rem] leading-[1.45]">{sense.definition}</p>
         {/* Two columns where there is room. A word is short enough that six of
          * them still read at a glance, which is the whole point of this card. */}
@@ -286,6 +300,7 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
 
   return (
     <div data-slot="question" data-kind={card.type} className="stagger flex flex-col gap-4">
+      <Ask>{card.type === 'reverse' ? 'Type the word that means this.' : 'Type the word that fits.'}</Ask>
       <p data-slot="prompt" className="pt-1 text-[1.28rem] leading-[1.45]">{prompt}</p>
       <form
         className="grid gap-3"

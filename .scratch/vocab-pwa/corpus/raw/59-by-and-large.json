@@ -5,7 +5,7 @@
       "term": "by and large",
       "accepted": [],
       "definition": "On the whole, allowing for exceptions that do not change the conclusion.",
-      "caution": "It signals you have not checked the exceptions. Safe in conversation, risky in writing that will be scrutinised, because this is exactly where someone asks which cases you are excluding.",
+      "caution": "It admits you have not checked the exceptions. It is fine in conversation, but in writing people will ask which cases you left out.",
       "example": "By and large the migration went clean. Two services needed manual work.",
       "cues": [
         {
@@ -38,11 +38,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "community of practice",
-        "harness",
         "scaffolding",
         "amenable",
-        "sponsorship"
+        "sponsorship",
+        "frontier",
+        "vertical"
+      ],
+      "gloss": "in most cases",
+      "gloss_distractors": [
+        "in every case",
+        "at first",
+        "by a wide margin"
       ]
     }
   ]

@@ -7,7 +7,7 @@
         "from first principles"
       ],
       "definition": "The basic truths you build an answer up from instead of copying how it is usually done.",
-      "caution": "The phrase has become a status move. Announcing that you are going back to first principles tells the room that everything done so far was unexamined, so it only survives if you immediately name the assumptions you are throwing out. It also has a cost people gloss over: it is slow, and spending it on a decision where the standard industry answer would have been fine is how a quarter disappears.",
+      "caution": "Saying you are going back to first principles suggests past work was careless, so name the assumptions you are dropping. It is also slow, so save it for decisions that need it.",
       "prompt_version": 2,
       "example": "Before we copy the vendor's architecture wholesale, give me one pass from first principles. What do we actually need to be true here?",
       "cues": [
@@ -37,10 +37,16 @@
       ],
       "word_distractors": [
         "verifiable rewards",
-        "obfuscate",
-        "eschew",
+        "disparage",
         "substantial",
-        "cognizant"
+        "cognizant",
+        "center of excellence"
+      ],
+      "gloss": "the basic truths you start from",
+      "gloss_distractors": [
+        "the latest industry trends",
+        "the steps in a project plan",
+        "the people who make final decisions"
       ]
     }
   ]

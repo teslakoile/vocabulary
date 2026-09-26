@@ -8,7 +8,7 @@
         "the lay of the land"
       ],
       "definition": "How things really work somewhere new, who decides and what has already been tried.",
-      "caution": "Saying you are still getting the lay of the land buys you time gracefully in a first month and sounds like stalling by the fourth. It also announces that you have not acted yet, so keep it away from any update where somebody is waiting on a decision from you, and never offer it as the answer to a question about results.",
+      "caution": "It is fine in your first month but sounds like stalling later. Do not use it in an update where people are waiting for a decision or asking about results.",
       "example": "Give me two weeks with the delivery leads to get the lay of the land before I propose any changes.",
       "cues": [
         {
@@ -39,9 +39,15 @@
       "word_distractors": [
         "lend itself",
         "disambiguate",
-        "incremental",
+        "modality",
         "vertical",
         "trivial"
+      ],
+      "gloss": "how a new workplace works",
+      "gloss_distractors": [
+        "how to get promoted quickly",
+        "a promotion to a senior job",
+        "a plan for the next year"
       ]
     }
   ]

@@ -7,7 +7,7 @@
         "failure modes"
       ],
       "definition": "A specific way a system goes wrong, rather than the fact that it might.",
-      "caution": "The phrase invites a list, so raising failure modes without having any makes you sound anxious rather than rigorous. Said about a person it changes character entirely: his failure mode is going quiet is affectionate between peers and clinical the moment it is said upward, or about someone who is not in the room.",
+      "caution": "It invites a list, so raising failure modes without naming any makes you sound worried. About a person, it is friendly among peers but cold said to their boss or behind their back.",
       "example": "The failure mode I care about isn't a wrong answer, it's a confident wrong answer that nobody checks.",
       "cues": [
         {
@@ -41,10 +41,16 @@
       "prompt_version": 2,
       "word_distractors": [
         "obfuscate",
+        "substantiate",
         "cognizant",
-        "verbose",
-        "flywheel effect",
-        "heuristic"
+        "idempotent",
+        "verbose"
+      ],
+      "gloss": "a way a system goes wrong",
+      "gloss_distractors": [
+        "a plan for fixing errors",
+        "a list of approved suppliers",
+        "a test run before launch"
       ]
     }
   ]

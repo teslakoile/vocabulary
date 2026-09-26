@@ -1,0 +1,16 @@
+{
+  "headword": "ducks in a row",
+  "senses": [
+    {
+      "term": "ducks in a row",
+      "gloss": "fully prepared in advance",
+      "gloss_distractors": [
+        "running late",
+        "working on too many things",
+        "in total agreement"
+      ],
+      "caution": "It is informal and friendly between peers, but telling someone senior to get theirs in a row says they are disorganised. In writing, name the actual preparation.",
+      "definition": "All the preparation done in advance, so nothing is missing when the moment comes."
+    }
+  ]
+}

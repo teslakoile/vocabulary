@@ -1,0 +1,16 @@
+{
+  "headword": "incremental",
+  "senses": [
+    {
+      "term": "incremental",
+      "gloss": "happening in small steps",
+      "gloss_distractors": [
+        "happening all at once",
+        "getting smaller over time",
+        "happening by chance"
+      ],
+      "caution": "About how work is delivered it is praise, but about results it means the gains are small. In finance it means the extra amount above the usual baseline.",
+      "definition": "Proceeding by small additions, each one adding a little to what is already there."
+    }
+  ]
+}

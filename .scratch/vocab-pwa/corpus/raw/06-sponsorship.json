@@ -6,8 +6,8 @@
       "accepted": [
         "sponsor"
       ],
-      "definition": "A senior person putting their own standing behind a person or a piece of work.",
-      "caution": "The line that matters: a mentor talks to you, a sponsor talks about you. Describing someone as your sponsor when all they have given is advice overstates what you have, and it is embarrassing when the room knows them better than you do. The word also means paid branding, so with a mixed audience say executive sponsor the first time and let the rest run short.",
+      "definition": "A senior person using their own reputation and influence to support a person or project.",
+      "caution": "A sponsor speaks up for you, while a mentor only gives advice, so do not call an adviser your sponsor. It can also mean paid advertising, so say executive sponsor first.",
       "example": "The programme has funding and it has sponsorship, so when finance pushed back last week it was not my fight alone.",
       "cues": [
         {
@@ -35,16 +35,22 @@
         "Advice given privately to someone earlier in their career.",
         "The budget line that pays for a programme's staff and tools.",
         "A written record of who is accountable for each deliverable in a plan.",
-        "The practice of pairing a new joiner with a colleague who answers their questions.",
-        "A senior person's public disagreement with a decision their own leadership has taken."
+        "The practice of pairing a new joiner with a colleague who answers their questions for a month.",
+        "A senior person's public disagreement with a decision that their own leadership has taken."
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "second order effects",
         "obfuscate",
         "attuned",
         "build that muscle",
-        "verbose"
+        "diaspora",
+        "rectify"
+      ],
+      "gloss": "a senior person's active backing",
+      "gloss_distractors": [
+        "a formal job review",
+        "a transfer to a new team",
+        "a written complaint about a manager"
       ]
     }
   ]

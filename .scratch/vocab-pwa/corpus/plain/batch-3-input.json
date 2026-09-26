@@ -1,0 +1,266 @@
+[
+  {
+    "file": "43-broad.json",
+    "headword": "broad",
+    "senses": [
+      {
+        "term": "broad",
+        "definition": "Covering a wide range of cases or topics rather than a narrow one.",
+        "caution": "About agreement or support it is a hedge, and senior listeners hear the hedge before they hear the reassurance: 'broad support' says somebody dissented and you are not naming them, and the next question is who. About your own analysis it concedes there is no detail yet, which is fine if you meant to concede it. As a noun it is dated slang for a woman and is offensive, so keep it an adjective.",
+        "example": "There's broad support from the business, though procurement still has questions about the licensing."
+      }
+    ]
+  },
+  {
+    "file": "44-verticals-industry-verticals.json",
+    "headword": "verticals/industry verticals",
+    "senses": [
+      {
+        "term": "vertical",
+        "definition": "A slice of the market made up of a single industry like banking or healthcare.",
+        "caution": "It is a go-to-market word, not an architecture one. Saying you will take the product one of these at a time commits you in public to per-industry work: separate data, separate regulators, separate sales motion, and the immediate follow-up is which one you are starting with and what the others are waiting for. Used for a team's internal domain it confuses anyone who hears it as a market segment.",
+        "example": "The core platform stays horizontal. We only build vertical-specific pieces where the regulator forces us to."
+      }
+    ]
+  },
+  {
+    "file": "45-modality.json",
+    "headword": "modality",
+    "senses": [
+      {
+        "term": "modality",
+        "definition": "A kind of input or output a system works in, such as text, images, audio or video.",
+        "caution": "In an AI room it means the kind of data and nothing else. Reaching for it where 'format' or 'channel' would do - a delivery modality, a training modality - is the consulting usage, and to technical listeners it sounds like a plain word in a suit. Mixed rooms are the real risk: clinicians and consultants hear 'a way of doing something' and follow you somewhere you did not intend to go.",
+        "example": "The hard part isn't the volume, it's that the filings arrive in three modalities and only one of them is clean text."
+      }
+    ]
+  },
+  {
+    "file": "46-frontier.json",
+    "headword": "frontier",
+    "senses": [
+      {
+        "term": "frontier",
+        "definition": "The current edge of what AI systems can do, and the labs and models working there.",
+        "caution": "It is a claim, and a checkable one. Applied to your own stack - a fine-tuned open model, a well-built agent - someone in the room will correct you, and the correction costs more than the word gained. It is also a moving line, so anything you call frontier today dates fast in writing. With a non-technical audience the older sense does the hearing for them: unexplored territory, the edge of the map, which turns a precise claim about capability into a vague metaphor about adventure.",
+        "example": "We aren't building at the frontier. We're building on top of it, and that's a completely different risk profile."
+      }
+    ]
+  },
+  {
+    "file": "47-wordsmith.json",
+    "headword": "wordsmith",
+    "senses": [
+      {
+        "term": "wordsmith",
+        "definition": "To reword a draft so it reads better without changing what it says.",
+        "caution": "It draws a line between surface and substance, and whoever says it gets to decide which side something falls on. Offered about your own draft it is modest and useful. Said about a colleague's suggested change - 'that's just wordsmithing' - it rules the change cosmetic, and if their point was actually substantive you have dismissed it without answering it. In front of a sponsor, calling a session wordsmithing says out loud that the meeting has stopped making decisions.",
+        "example": "The recommendation is agreed. Give me an hour to wordsmith it before it goes to the committee."
+      }
+    ]
+  },
+  {
+    "file": "48-fearless-forecast.json",
+    "headword": "fearless forecast",
+    "senses": [
+      {
+        "term": "fearless forecast",
+        "definition": "A prediction given straight, with the caveats left out, usually because someone asked.",
+        "caution": "It is almost always invited, and the invitation is the only thing that makes the missing hedges acceptable - offering one unprompted reads as bravado and puts you on the hook for a question nobody asked you. It also protects you far less than it sounds like it does, because people remember the number and forget the framing, so give one you would be willing to be held to. In writing it is worse: a board paper has no tone of voice to carry the disclaimer.",
+        "example": "Fearless forecast: two of the four business units are live by March and the other two slip to the summer."
+      }
+    ]
+  },
+  {
+    "file": "49-flywheel-effect.json",
+    "headword": "flywheel effect",
+    "senses": [
+      {
+        "term": "flywheel effect",
+        "definition": "A cycle where each turn feeds the next, so growth gets easier the longer it runs.",
+        "caution": "It claims a specific mechanism, so you should be able to say each step of the loop out loud before you use it - in an investment room someone will ask you to draw it, and growth that is merely fast has no loop in it at all. It also carries a built-in excuse for a flat early stretch, which is a very convenient thing to reach for when your numbers are flat. Bezos put the word in every strategy deck for a decade, so in some rooms it arrives pre-discounted as consultant language.",
+        "example": "Every deployment hands us the failure cases the next model trains on. That's the flywheel, and honestly it's the only moat we have."
+      }
+    ]
+  },
+  {
+    "file": "50-long-horizon.json",
+    "headword": "long-horizon (task)",
+    "senses": [
+      {
+        "term": "long-horizon",
+        "definition": "Running for many steps before anyone can tell whether it worked.",
+        "caution": "It is about the number of steps and the delay before feedback, not about the calendar. Using it for a project that is merely slow - a two-year migration with a checkpoint every fortnight - borrows research vocabulary for ordinary scheduling, and the people who use the term precisely will hear that. In an investment room the second word already means holding period, so a mixed audience takes you to be talking about time frames rather than about what makes a task hard for an agent.",
+        "example": "Single-shot extraction is basically solved. The long-horizon work - chase the filing, reconcile it, come back with a memo - is where it still falls over."
+      }
+    ]
+  },
+  {
+    "file": "51-enmeshed.json",
+    "headword": "enmeshed",
+    "senses": [
+      {
+        "term": "enmeshed",
+        "definition": "Tangled up with something so tightly that the two can no longer act separately.",
+        "caution": "It is not a neutral word for coupling. It comes out of family therapy and carries a judgement about lost boundaries, so calling two teams enmeshed says their relationship is unhealthy rather than close, and said about actual people it lands like a diagnosis you are not qualified to hand out. If all you mean is that two systems depend on each other, tightly coupled costs you nothing and starts no arguments.",
+        "example": "Support and engineering aren't collaborating, they're enmeshed - neither one can plan a quarter without the other in the room."
+      }
+    ]
+  },
+  {
+    "file": "52-asymmetric.json",
+    "headword": "asymmetric",
+    "senses": [
+      {
+        "term": "asymmetric",
+        "definition": "Unequal on the two sides, usually a small downside against a much larger upside.",
+        "caution": "It says nothing about likelihood, so calling something asymmetric is not calling it a good idea - a lottery ticket is asymmetric. It also only earns its place if you can say which side is bigger and roughly by how much; used bare it dresses a hunch as analysis, and an investment committee is precisely the room that asks for the two numbers. Technical listeners have the word already spoken for by encryption and by information asymmetry, so name what is uneven.",
+        "example": "The pilot is asymmetric: worst case we lose a quarter of one team's time, best case we retire two vendors."
+      }
+    ]
+  },
+  {
+    "file": "53-eschew.json",
+    "headword": "eschew",
+    "senses": [
+      {
+        "term": "eschew",
+        "definition": "To deliberately avoid something you could have chosen, usually on principle.",
+        "caution": "It is a written word. Said out loud in a standup it sounds like you have swallowed a style guide, and even on the page it carries a moral edge: saying the team eschewed managed services claims a principle where 'chose not to use' would have claimed only a decision. If the real reason was budget or timing, the word quietly overstates you, and anyone who knows the history will notice.",
+        "example": "The paper eschews benchmark scores entirely and reports only task completion, which is either brave or very convenient."
+      }
+    ]
+  },
+  {
+    "file": "54-attuned.json",
+    "headword": "attuned",
+    "senses": [
+      {
+        "term": "attuned",
+        "definition": "Alert to something and quick to pick up small signals from it and adjust.",
+        "caution": "Said about yourself it claims a sensitivity only other people can confirm, and it congratulates you in the same breath - 'I'm attuned to the board's concerns' is exactly the sentence that makes a board wonder whether you are. It is at its best as praise for someone else. In an AI room the shorter form is a technical word, so a system described this way gets heard as fine-tuned rather than perceptive.",
+        "example": "She's attuned to when a sponsor has gone quiet for political reasons rather than practical ones."
+      }
+    ]
+  },
+  {
+    "file": "55-run-it-by-you.json",
+    "headword": "run it by you",
+    "senses": [
+      {
+        "term": "run it by you",
+        "definition": "To show someone something before committing to it, to hear their reaction.",
+        "caution": "It implies you could proceed without them, which is why it works upward as courtesy and sideways as consultation. Said to someone whose sign-off you genuinely need, it can sound like you are minimising their role.",
+        "example": "Before I send this to the MD, can I run it by you?"
+      }
+    ]
+  },
+  {
+    "file": "56-play-it-by-ear.json",
+    "headword": "play it by ear",
+    "senses": [
+      {
+        "term": "play it by ear",
+        "definition": "To decide as you go, guided by what actually happens rather than by a set plan.",
+        "caution": "It tells the room there is no plan, and how that lands depends entirely on who is in it. With friends it sounds relaxed; to a sponsor or a steering committee it sounds unprepared, and the usual reply is a request for the very plan you have just admitted you do not have. It is only defensible when the information you need genuinely does not exist yet, so name what you are waiting on - otherwise people file it as improvisation dressed up as flexibility.",
+        "example": "We'll fix the first two milestones and play the rest by ear until the vendor confirms their dates."
+      }
+    ]
+  },
+  {
+    "file": "57-advocate.json",
+    "headword": "advocate",
+    "senses": [
+      {
+        "term": "advocate",
+        "definition": "The person who argues your case in rooms you are not in.",
+        "caution": "Naming someone as yours assigns them work they may not have agreed to, and in a hierarchy it can expose them - a director who is quietly helpful may not want to be described that way in front of their peers. Said of yourself about a cause it is fine; said of yourself about your own interests it sounds like a job title you invented. With lawyers in the room the word means counsel and will be heard that way first.",
+        "example": "We don't need everyone convinced. We need one advocate on that committee who'll say it when we're not in the room."
+      },
+      {
+        "term": "advocate for",
+        "definition": "To argue openly for a position or a person, putting your own standing behind it.",
+        "caution": "It spends credibility, and it spends it visibly. Claiming it ties you to the outcome, so keep it for the two or three things a year you would still defend after they went wrong. Used about a small preference it inflates the stakes, and in a written self-assessment it reads as claiming credit unless the thing worked. There is also a floor: if all you did was agree in a meeting, someone who was there will remember that.",
+        "example": "I advocated for keeping the evaluation in-house, and knowing what it cost us, I'd make the same call again."
+      }
+    ]
+  },
+  {
+    "file": "58-pick-your-brain.json",
+    "headword": "pick your brain",
+    "senses": [
+      {
+        "term": "pick your brain",
+        "definition": "To ask someone to share what they have learned, in an informal conversation.",
+        "caution": "It sounds casual while asking for open-ended time, and the whole cost falls on them. Sent cold to someone senior with no boundary on it - no length, no topic, no reason it has to be them - it reads as entitled, and to some it reads as asking them to do your thinking. Put twenty minutes and a specific question around it and it becomes easy to say yes to. The register is informal: right in a message to a colleague, wrong in a first approach to an MD you have never met.",
+        "example": "You've done two of these migrations. Could I pick your brain for twenty minutes before we commit to a design?"
+      }
+    ]
+  },
+  {
+    "file": "59-by-and-large.json",
+    "headword": "by and large",
+    "senses": [
+      {
+        "term": "by and large",
+        "definition": "On the whole, allowing for exceptions that do not change the conclusion.",
+        "caution": "It signals you have not checked the exceptions. Safe in conversation, risky in writing that will be scrutinised, because this is exactly where someone asks which cases you are excluding.",
+        "example": "By and large the migration went clean. Two services needed manual work."
+      }
+    ]
+  },
+  {
+    "file": "60-frontrunner.json",
+    "headword": "frontrunner",
+    "senses": [
+      {
+        "term": "frontrunner",
+        "definition": "The one most likely to win right now, while the outcome is still open.",
+        "caution": "Naming one changes the race. In a vendor evaluation, putting it in writing before scoring closes makes the process look decided, and that is precisely the sentence that resurfaces in a procurement challenge - keep it to conversation. It also paints a target on whoever you name, and if they lose, the room remembers that you called it early.",
+        "example": "Off the record the Swiss vendor is the frontrunner, but nothing goes in writing until scoring closes."
+      }
+    ]
+  },
+  {
+    "file": "61-front-and-center.json",
+    "headword": "front-and-center",
+    "senses": [
+      {
+        "term": "front and center",
+        "definition": "In the most prominent position, where nobody can miss it.",
+        "caution": "It is a claim about visibility, not about importance, and the two come apart: whatever you put there also takes the questions, so the phrase is really a decision about exposure. That is doubly true of a person - being put there is not purely a compliment, because whoever stands there answers for the thing. The register is spoken and distinctly American, so in a formal board paper it reads breezier than everything around it.",
+        "example": "Put the cost of doing nothing front and center. Everything else can go in the appendix."
+      }
+    ]
+  },
+  {
+    "file": "62-build-that-muscle.json",
+    "headword": "build that muscle",
+    "senses": [
+      {
+        "term": "build that muscle",
+        "definition": "To build a skill through repeated practice instead of one-off training.",
+        "caution": "It says the ability is missing today. Said about another team that is a criticism in gym clothes; said about your own it is an admission, which is fine only if the next sentence names the actual reps. To a team already at capacity it lands as more work with no more people. It is also coaching-deck language, so in a written board paper it reads as a slogan and invites the obvious question of what the exercise is and who is doing it.",
+        "example": "We can buy the first three evaluations in. If we want this capability in-house, at some point we have to build that muscle ourselves."
+      }
+    ]
+  },
+  {
+    "file": "63-tacit-institutional-knowledge.json",
+    "headword": "tacit/institutional knowledge",
+    "senses": [
+      {
+        "term": "tacit knowledge",
+        "definition": "What someone can do well but cannot fully put into words.",
+        "caution": "The word says the gap is inherent, not lazy, so it only holds where writing the thing down is genuinely hard. Reach for it to excuse an undocumented deployment process and the excuse is transparent - steps are steps, and the room can tell the difference. It also puts the holder in an awkward position: declaring someone's expertise unwritable makes them simultaneously indispensable and impossible to replace, which is a compliment and a staffing risk in one sentence.",
+        "example": "The runbook covers the steps. What Priya has is tacit - she can tell from the shape of the latency graph that it's the index, not the model."
+      },
+      {
+        "term": "institutional knowledge",
+        "definition": "The history an organisation holds about itself and never got around to writing down.",
+        "caution": "It is usually deployed as an argument for keeping somebody, so be careful whose leverage you are describing: telling a sponsor that a contractor holds it is either a case for retaining them or an admission that you allowed a single point of failure to form. And unlike judgement, this can be written down, so saying it is institutional is not an explanation of why it is undocumented - it is a description of the problem, and the obvious next question is what you are doing about it.",
+        "example": "When Martin goes we lose the institutional knowledge of why the reconciliation runs at four in the morning, and not one line of it is written down."
+      }
+    ]
+  }
+]

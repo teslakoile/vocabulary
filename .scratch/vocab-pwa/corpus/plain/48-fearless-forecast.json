@@ -1,0 +1,17 @@
+{
+  "headword": "fearless forecast",
+  "senses": [
+    {
+      "term": "fearless forecast",
+      "gloss": "a bold, direct prediction",
+      "gloss_distractors": [
+        "a careful range of outcomes",
+        "a report on past results",
+        "a long-term budget"
+      ],
+      "caution": "Give one only when someone asks for it. People remember the number and forget the warning, so only give a number you are willing to be held to.",
+      "definition": "A direct prediction with no caveats, usually given because someone asked for one.",
+      "definition_changed": true
+    }
+  ]
+}

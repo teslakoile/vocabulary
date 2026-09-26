@@ -4,8 +4,8 @@
     {
       "term": "gravitas",
       "accepted": [],
-      "definition": "A weight and seriousness in how someone carries themselves that makes a room listen.",
-      "caution": "Never said about yourself, and rarely to someone's face. As feedback it is close to unfalsifiable and often a proxy for resembling the people already in the senior seats, so if you use it in a development conversation you owe the person a concrete behaviour to work on. Said of a peer in a standup it sounds arch; keep it for rooms where the stakes are real.",
+      "definition": "A serious, calm way of behaving that makes other people respect you and listen.",
+      "caution": "Never say it about yourself, and save it for serious situations. As feedback it is vague, so name one specific thing the person can do differently.",
       "example": "He took the audit question with real gravitas, which is why the board stopped pushing on it.",
       "cues": [
         {
@@ -38,11 +38,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
+        "advocate for",
         "primitive",
+        "broad",
         "by and large",
-        "lean on",
-        "dogfooding",
-        "squarely"
+        "lean on"
+      ],
+      "gloss": "a serious, respected manner",
+      "gloss_distractors": [
+        "a loud, pushy manner",
+        "a habit of speaking too long",
+        "a talent for small talk"
       ]
     }
   ]

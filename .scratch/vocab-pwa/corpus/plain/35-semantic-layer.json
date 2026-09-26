@@ -1,0 +1,16 @@
+{
+  "headword": "semantic layer",
+  "senses": [
+    {
+      "term": "semantic layer",
+      "gloss": "a shared set of data definitions",
+      "gloss_distractors": [
+        "a tool for drawing charts",
+        "a backup copy of a database",
+        "a server that stores website images"
+      ],
+      "caution": "The hard part is getting departments to agree on what each business term means, so do not promise one by a date. Use the term only for this specific part of a data system.",
+      "definition": "The layer that translates raw tables into the business terms everyone agrees on."
+    }
+  ]
+}

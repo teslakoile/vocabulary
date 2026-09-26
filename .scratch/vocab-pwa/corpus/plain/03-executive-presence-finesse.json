@@ -1,0 +1,27 @@
+{
+  "headword": "executive presence/finesse",
+  "senses": [
+    {
+      "term": "executive presence",
+      "gloss": "a calm, confident leader's style",
+      "gloss_distractors": [
+        "a formal job title",
+        "a habit of avoiding hard decisions",
+        "a strong technical skill set"
+      ],
+      "caution": "Only say it about other people. As feedback it is vague, so add a specific behaviour, such as leading with your recommendation.",
+      "definition": "Coming across as calm, clear and senior enough to be handed a decision."
+    },
+    {
+      "term": "finesse",
+      "gloss": "skill with delicate situations",
+      "gloss_distractors": [
+        "a lack of care",
+        "a strict set of rules",
+        "a willingness to take big risks"
+      ],
+      "caution": "As a verb it can suggest you hid a problem instead of solving it. Do not use it about numbers or facts, especially with auditors or in writing.",
+      "definition": "Skill in handling something delicate so smoothly that the difficulty never shows."
+    }
+  ]
+}

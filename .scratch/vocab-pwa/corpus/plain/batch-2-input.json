@@ -1,0 +1,278 @@
+[
+  {
+    "file": "22-elucidate.json",
+    "headword": "elucidate",
+    "senses": [
+      {
+        "term": "elucidate",
+        "definition": "To explain something already said or written by laying out the reasoning behind it.",
+        "caution": "It is a formal word, and spoken it can sound like you are performing. Asking a person to elucidate is a half-step colder than asking them to explain, because it says they were not clear; it lands better in writing, and better aimed at a document than at the author. It also promises the thing gets clearer, not longer. More words that still do not land is the opposite move, and someone will say so.",
+        "example": "The deck lands the recommendation but never elucidates how we got to that number, and that is the part the committee will push on."
+      }
+    ]
+  },
+  {
+    "file": "23-despondent.json",
+    "headword": "despondent",
+    "senses": [
+      {
+        "term": "despondent",
+        "definition": "So low that you have given up expecting things to get better.",
+        "caution": "It is a heavy word about someone's inner state, close to a diagnosis, and it travels: said about a named colleague it will be repeated back to them. It is also about hopelessness, not disappointment, so after one bad quarter people are deflated, not despondent, and the stronger word makes a room stop and ask whether you are all right. About yourself in a professional setting it overshares.",
+        "example": "I would not say the team is despondent, but a third slipped date has taken something out of them."
+      }
+    ]
+  },
+  {
+    "file": "24-bolster.json",
+    "headword": "bolster",
+    "senses": [
+      {
+        "term": "bolster",
+        "definition": "To strengthen something that is already there but is not strong enough on its own.",
+        "caution": "It concedes the weakness. Say you want to bolster the business case and you have told the room the case is currently thin, which is fine when you mean it and expensive when you did not. It also wants abstract objects: you bolster an argument, reserves, or confidence, and you do not bolster a server or a deadline.",
+        "example": "The numbers are directionally right, but one more independent source would bolster them before this goes to the board."
+      }
+    ]
+  },
+  {
+    "file": "25-verbose.json",
+    "headword": "verbose",
+    "senses": [
+      {
+        "term": "verbose",
+        "definition": "Using far more words than the point needs.",
+        "caution": "It criticises the writer, not only the writing, and it stings more than long or dense. Said out loud about someone's answer while others are listening it is close to rude; keep it for drafts, for logs, and for your own work. It also has a flat, non-insulting life in engineering, where verbose output or verbose logging just means detailed, so in a mixed room make clear which of the two you mean.",
+        "example": "It is accurate, but it is verbose. The committee will read the opening paragraph and stop."
+      }
+    ]
+  },
+  {
+    "file": "26-amenable.json",
+    "headword": "amenable",
+    "senses": [
+      {
+        "term": "amenable",
+        "definition": "Open to something without having agreed to it, or well suited to a particular treatment.",
+        "caution": "Its softness is the whole point and it evaporates in the retelling. Tell a room the CFO was amenable and half of them will hear that he agreed, and when he objects three weeks later that gap is yours to explain. It also quietly grades the person, so it reads better about how an idea was received than about a senior colleague's temperament.",
+        "example": "The MD was amenable to a phased rollout, though I want to be clear that nothing is signed."
+      }
+    ]
+  },
+  {
+    "file": "27-unequivocal.json",
+    "headword": "unequivocal",
+    "senses": [
+      {
+        "term": "unequivocal",
+        "definition": "Stated so clearly that it can only be read one way.",
+        "caution": "It is as much a claim about your own certainty as about the thing, which is an invitation: call the results unequivocal and one awkward case takes the whole sentence down with it. It belongs to statements and evidence rather than to people, so support, instructions, and findings can be unequivocal and a sponsor cannot. Used about your own view it can also come across as shutting the discussion rather than winning it.",
+        "example": "The board came back unequivocal on this: no client data leaves the tenancy, under any structure."
+      }
+    ]
+  },
+  {
+    "file": "28-esoteric.json",
+    "headword": "esoteric",
+    "senses": [
+      {
+        "term": "esoteric",
+        "definition": "Understood by only a small group, because it assumes background that most people lack.",
+        "caution": "It can flatter or dismiss and you rarely control which. Call a colleague's specialism esoteric and you may mean it is deep, but the room usually hears that it is irrelevant to anyone who matters. It is also not a synonym for difficult or technical: plenty of hard things are widely understood, and using it that way marks you as having found something merely unfamiliar.",
+        "example": "Put the evaluation methodology in an appendix. It is esoteric for this audience and we will lose them in two slides."
+      }
+    ]
+  },
+  {
+    "file": "29-exacerbate.json",
+    "headword": "exacerbate",
+    "senses": [
+      {
+        "term": "exacerbate",
+        "definition": "To make a bad situation worse.",
+        "caution": "The word points a finger. Saying a decision exacerbated the outage assigns causation, and in a post-incident room that is heard as blame however evenly you say it, so name the mechanism unless blame is what you mean. It is also strictly about worsening something bad, so exacerbating demand or exacerbating growth is a mistake the careful listeners in the room will catch.",
+        "example": "The retry logic did not cause the outage, but it exacerbated it. We hammered a service that was already on its knees."
+      }
+    ]
+  },
+  {
+    "file": "30-surreptitiously.json",
+    "headword": "surreptitiously",
+    "senses": [
+      {
+        "term": "surreptitiously",
+        "definition": "Done quietly so that nobody sees it happening.",
+        "caution": "It supplies a motive for the hiding, so aimed at a colleague it is an accusation wearing the clothes of an adverb. About systems it is heavier still: an agent that surreptitiously wrote to the database will be read as a security finding rather than a quirk, and the sentence outlives the meeting. About yourself it is usually light and self-deprecating, which is where most of its safe uses are.",
+        "example": "Nobody signed anything off. A team had been surreptitiously pointing production traffic at the new index for a month."
+      }
+    ]
+  },
+  {
+    "file": "31-idempotent.json",
+    "headword": "idempotent",
+    "senses": [
+      {
+        "term": "idempotent",
+        "definition": "Safe to run more than once, because running it again leaves the same end state.",
+        "caution": "It is a promise other people design against. Say an endpoint is idempotent and someone will put a retry in front of it, so if a second call charges the card again or appends a second row, their outage is your sentence. Outside an engineering room it buys you nothing: with a sponsor say the job is safe to re-run, and keep the word for the people who will build on it.",
+        "example": "The ingestion job has to be idempotent. The scheduler will retry it on failure and we cannot end up with last night's rows twice."
+      }
+    ]
+  },
+  {
+    "file": "32-disambiguate.json",
+    "headword": "disambiguate",
+    "senses": [
+      {
+        "term": "disambiguate",
+        "definition": "To make clear which of two possible meanings is the one meant.",
+        "caution": "It is a technical-register word, and in a business room it can sound like procedural cover for the actual fight: reach for it when two people simply want different outcomes and you look like you are managing them rather than answering them. Keep it for cases where the confusion really is about which thing a word points at, and say we disagree when that is what is happening.",
+        "example": "Both teams say the client and mean different entities. Before we go further can we disambiguate that one word?"
+      }
+    ]
+  },
+  {
+    "file": "33-community-of-practice-vs-center-of-excellence.json",
+    "headword": "community of practice vs center of excellence",
+    "senses": [
+      {
+        "term": "community of practice",
+        "definition": "A voluntary group of people doing the same work who meet to share what they learn.",
+        "caution": "Because it is voluntary you cannot hold it to a deliverable, so promising a steering group that one will own the standards promises something it has no power to enforce. Give it a budget, headcount and sign-off rights and you have built the other thing, and should say so rather than keeping the friendlier name over it. It also fails quietly: naming one costs nothing, and an empty calendar invite six months on is visible to everybody.",
+        "example": "The prompt engineering group is not a governance body. It is a community of practice, and it works precisely because nobody has to come."
+      },
+      {
+        "term": "center of excellence",
+        "definition": "A funded team that holds a scarce skill in one place and sets how it is done.",
+        "caution": "The name claims authority and quality at once, and both get tested. Stand one up and other teams hear that they now need your permission, so it concentrates resentment as fast as it concentrates skill; the credible version comes with a stated plan to hand the capability back. Used for a group of enthusiasts with no funding and no headcount, it is corporate inflation, and the senior people in the room can smell it.",
+        "example": "If we stand this up as a center of excellence, every model deployment routes through eight people, and those eight people are the constraint by March."
+      }
+    ]
+  },
+  {
+    "file": "34-first-principles.json",
+    "headword": "first principles",
+    "senses": [
+      {
+        "term": "first principles",
+        "definition": "The basic truths you build an answer up from instead of copying how it is usually done.",
+        "caution": "The phrase has become a status move. Announcing that you are going back to first principles tells the room that everything done so far was unexamined, so it only survives if you immediately name the assumptions you are throwing out. It also has a cost people gloss over: it is slow, and spending it on a decision where the standard industry answer would have been fine is how a quarter disappears.",
+        "example": "Before we copy the vendor's architecture wholesale, give me one pass from first principles. What do we actually need to be true here?"
+      }
+    ]
+  },
+  {
+    "file": "35-semantic-layer.json",
+    "headword": "semantic layer",
+    "senses": [
+      {
+        "term": "semantic layer",
+        "definition": "The layer that translates raw tables into the business terms everyone agrees on.",
+        "caution": "It sounds like plumbing and is really governance. The build is the easy half; the hard half is getting three departments to agree what an active client is, so promising a sponsor one by Q3 is promising to win an argument you have not had yet. Do not stretch it to mean any abstraction or any API either: people who have built one hear a specific piece of the stack and will price and staff it accordingly.",
+        "example": "Two dashboards disagree on churn because each defines it in its own SQL. That is exactly what a semantic layer is for."
+      }
+    ]
+  },
+  {
+    "file": "36-continuum.json",
+    "headword": "continuum",
+    "senses": [
+      {
+        "term": "continuum",
+        "definition": "A smooth range with no natural breaks, where any line you draw is a choice.",
+        "caution": "It is a move against somebody's categories, so it always lands as a challenge to whoever just proposed them. Used to avoid a call it is worse than useless: when the decision needs a threshold, saying the thing is a continuum without proposing where to cut reads as refusing to decide, and a sponsor will hear it that way. Do not use it where the steps are real either, because a pricing tier is not one.",
+        "example": "Autonomy is not a switch, it is a continuum, and the real question is how far along it we are willing to be in the next release."
+      }
+    ]
+  },
+  {
+    "file": "37-heuristic.json",
+    "headword": "heuristic",
+    "senses": [
+      {
+        "term": "heuristic",
+        "definition": "A rule of thumb that is quick and usually right rather than always right.",
+        "caution": "The word contains an admission that it can be wrong, which is exactly why it is disarming with a governance audience and exactly why it should not be used to dress up a rule you cannot defend. Once you have called a threshold a heuristic it no longer stands on its own, so if the number actually came from analysis do not soften it, and if it came from somebody's instinct, expect the follow-up question about which.",
+        "example": "Triage runs on a heuristic today, anything over fifty thousand goes to a human, and we replace it the moment we have labelled data."
+      }
+    ]
+  },
+  {
+    "file": "38-scaffolding-harness-sandbox.json",
+    "headword": "scaffolding/harness/sandbox",
+    "senses": [
+      {
+        "term": "scaffolding",
+        "definition": "Temporary structure that holds work up until the real thing can stand alone.",
+        "caution": "The word commits you to removal. Call something scaffolding and people will remember that you said it was temporary, and will ask when it is coming out; if you have no intention of taking it out, you have handed someone a stick. It is also about supporting the real work, not being a rough version of it, so a quick first implementation is a draft, not this.",
+        "example": "The manual review step is scaffolding. Once the classifier is calibrated it comes out."
+      },
+      {
+        "term": "harness",
+        "definition": "A rig built to drive a system from outside and see how it behaves.",
+        "caution": "In an AI room this now usually means an evaluation harness, so people may hear eval when you meant test rig. Say which you mean if the room is mixed. It also implies you built the apparatus rather than bought the numbers, so do not use it for a public benchmark you merely ran.",
+        "example": "We need a harness that replays last quarter's queries against the new model."
+      },
+      {
+        "term": "sandbox",
+        "definition": "An isolated place to run something where it cannot affect anything real.",
+        "caution": "It promises containment. If the environment can actually reach production data or spend real money, calling it a sandbox is a claim someone will hold you to, and compliance will hold you to it in writing. It also says nothing about how faithful the environment is, so do not use it when what you are promising is a realistic rehearsal.",
+        "example": "Let it run in a sandbox first. I do not want it touching the live index."
+      }
+    ]
+  },
+  {
+    "file": "39-persist-persistence.json",
+    "headword": "persist/persistence",
+    "senses": [
+      {
+        "term": "persist",
+        "definition": "To save data somewhere it will survive a restart or a refresh.",
+        "caution": "Engineers hear a specific promise in it, that the thing is on durable storage and will come back after a crash, so do not use it for a value you are holding in a variable or a cache. It is transitive here, and that is the tell: you persist the state. Ordinary English uses the same word intransitively for keeping at something, so the team persisted says nothing at all about data, and we persisted the results will simply not parse for anyone non-technical in the room.",
+        "example": "Right now the session only lives in memory. If the pod restarts we lose the whole conversation, so we need to persist it."
+      },
+      {
+        "term": "persistence",
+        "definition": "Staying with something long after most people would have stopped.",
+        "caution": "Praise for persistence quietly says the person got there by not stopping, which makes it a consolation prize when the work actually succeeded on merit: told to someone whose analysis was simply the best in the room, it damns them. Persistent about a person is worse again, because in most rooms that is the word for someone who will not take no for an answer.",
+        "example": "That deal closed on persistence more than anything else. She went back to them four times after we had all written it off."
+      }
+    ]
+  },
+  {
+    "file": "40-primitive.json",
+    "headword": "primitive",
+    "senses": [
+      {
+        "term": "primitive",
+        "definition": "A basic building block a platform gives you to build bigger things out of.",
+        "caution": "Outside a technical room the ordinary sense of the word wins, and that sense is crude, backward, unevolved. Say a partner team's tooling is primitive in front of a steering committee and you have insulted them by accident. Even among engineers it is a design claim rather than a description: it asserts the piece is the right size and shape to build on, so if it turns out to be three decisions welded together, someone will take that apart in review.",
+        "example": "Give the teams three primitives, retrieval, evaluation and identity, and let them assemble the workflow they actually need."
+      }
+    ]
+  },
+  {
+    "file": "41-serialize.json",
+    "headword": "serialize",
+    "senses": [
+      {
+        "term": "serialize",
+        "definition": "To turn something in memory into bytes that can be stored or sent and read back.",
+        "caution": "The word has a second life in performance conversations, where serializing means forcing things through one at a time, the opposite of running them in parallel. Two engineers can talk past each other for ten minutes on that, so name the format or name the bottleneck and the ambiguity goes away. With a non-technical audience it lands as noise: say we save it in a form we can send.",
+        "example": "The agent state has to be serialized before it goes on the queue, and half of these objects have no clean way to do that."
+      }
+    ]
+  },
+  {
+    "file": "42-north-star.json",
+    "headword": "north star",
+    "senses": [
+      {
+        "term": "north star",
+        "definition": "The single outcome you steer everything else by.",
+        "caution": "The whole value is that there is exactly one. A deck with three north stars has none, and senior people read that as a team that has not chosen. It is also a direction rather than a commitment, so offering it as your quarterly goal hands someone a deadline for a thing you do not fully control. And it is common enough now that using it as decoration over an ordinary KPI is noticed; if the honest answer is a set of trade-offs, say that instead.",
+        "example": "Time to a trustworthy answer is our north star for the year. If a feature does not move that, it waits."
+      }
+    ]
+  }
+]

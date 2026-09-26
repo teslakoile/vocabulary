@@ -1,0 +1,17 @@
+{
+  "headword": "despondent",
+  "senses": [
+    {
+      "term": "despondent",
+      "gloss": "sad and without hope",
+      "gloss_distractors": [
+        "calm and relaxed",
+        "pleased with yourself",
+        "angry and ready to argue"
+      ],
+      "caution": "It describes deep hopelessness, so use it with care about a named colleague. After one setback people are disappointed, and despondent will make others worry about them.",
+      "definition": "Very sad and without hope that things will get better.",
+      "definition_changed": true
+    }
+  ]
+}

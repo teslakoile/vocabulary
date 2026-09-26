@@ -9,7 +9,7 @@
         "eating our own dog food"
       ],
       "definition": "Using your own product for real work before asking anyone else to use it.",
-      "caution": "The bar is higher than people claim. Installing your own tool is not dogfooding unless something you care about breaks when it breaks. It is also an internal word with a self-congratulatory edge, and said to a client it raises the question it was meant to settle: if you had to tell me you use it, who else does?",
+      "caution": "It counts only if something you care about breaks when the tool breaks. Said to a client, it sounds self-praising and makes them ask who else uses it.",
       "example": "We're not putting the assistant on anyone's desk until we've been dogfooding it for a month ourselves.",
       "cues": [
         {
@@ -39,10 +39,16 @@
       "prompt_version": 2,
       "word_distractors": [
         "modality",
-        "first principles",
+        "front and center",
         "asymmetric",
-        "hyperscaler",
-        "vertical"
+        "north star",
+        "elucidate"
+      ],
+      "gloss": "using your own product first",
+      "gloss_distractors": [
+        "copying a rival's product",
+        "selling a product below cost",
+        "paying outside firms to test it"
       ]
     }
   ]

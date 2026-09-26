@@ -9,7 +9,7 @@
         "eschewing"
       ],
       "definition": "To deliberately avoid something you could have chosen, usually on principle.",
-      "caution": "It is a written word. Said out loud in a standup it sounds like you have swallowed a style guide, and even on the page it carries a moral edge: saying the team eschewed managed services claims a principle where 'chose not to use' would have claimed only a decision. If the real reason was budget or timing, the word quietly overstates you, and anyone who knows the history will notice.",
+      "caution": "It is a written word and sounds stiff when spoken. It also suggests a principle, so if the real reason was budget or timing, say 'chose not to use'.",
       "example": "The paper eschews benchmark scores entirely and reports only task completion, which is either brave or very convenient.",
       "cues": [
         {
@@ -43,6 +43,12 @@
         "broad",
         "run it by you",
         "incremental"
+      ],
+      "gloss": "to avoid on purpose",
+      "gloss_distractors": [
+        "to accept gladly",
+        "to explain in detail",
+        "to put off until later"
       ]
     }
   ]

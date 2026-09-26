@@ -1,0 +1,16 @@
+{
+  "headword": "failure mode/s",
+  "senses": [
+    {
+      "term": "failure mode",
+      "gloss": "one way a system goes wrong",
+      "gloss_distractors": [
+        "a plan for fixing errors",
+        "a list of approved suppliers",
+        "a test run before launch"
+      ],
+      "caution": "It invites a list, so raising failure modes without naming any makes you sound worried. About a person, it is friendly among peers but cold said to their boss or behind their back.",
+      "definition": "A specific way a system goes wrong, rather than the fact that it might."
+    }
+  ]
+}

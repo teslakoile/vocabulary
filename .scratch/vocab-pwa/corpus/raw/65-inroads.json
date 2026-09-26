@@ -9,7 +9,7 @@
         "inroad"
       ],
       "definition": "Progress made into a market, account or group that was closed to you before.",
-      "caution": "The word concedes you are not there yet. Tell a sponsor you have made inroads with the risk team and you have just told him the risk team still says no. It also frames the other side as ground to be taken, so it sounds faintly hostile about people who were never resisting you.",
+      "caution": "It admits the other side still says no. It also treats them as opponents, which can sound hostile when they never resisted you.",
       "example": "We've made real inroads with the risk function, but nobody there is signing anything this quarter.",
       "cues": [
         {
@@ -42,11 +42,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "verifiable rewards",
-        "sleuthing",
-        "mold breaker",
-        "lay of the land",
-        "vertical"
+        "progressive",
+        "long-horizon",
+        "by and large",
+        "verbose",
+        "sponsorship"
+      ],
+      "gloss": "a first success with new customers",
+      "gloss_distractors": [
+        "a sudden loss of support",
+        "a formal agreement between two firms",
+        "a written plan for the year"
       ]
     }
   ]

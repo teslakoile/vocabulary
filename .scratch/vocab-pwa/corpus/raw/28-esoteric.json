@@ -5,7 +5,7 @@
       "term": "esoteric",
       "accepted": [],
       "definition": "Understood by only a small group, because it assumes background that most people lack.",
-      "caution": "It can flatter or dismiss and you rarely control which. Call a colleague's specialism esoteric and you may mean it is deep, but the room usually hears that it is irrelevant to anyone who matters. It is also not a synonym for difficult or technical: plenty of hard things are widely understood, and using it that way marks you as having found something merely unfamiliar.",
+      "caution": "Calling a colleague's specialism esoteric can sound as though you think it does not matter. Use it for knowledge few people have, and say hard or technical when you mean that.",
       "prompt_version": 2,
       "example": "Put the evaluation methodology in an appendix. It is esoteric for this audience and we will lose them in two slides.",
       "cues": [
@@ -40,9 +40,15 @@
       "word_distractors": [
         "in pockets",
         "mold breaker",
-        "scaffolding",
+        "deliberate",
         "executive presence",
         "surreptitiously"
+      ],
+      "gloss": "known only to a few",
+      "gloss_distractors": [
+        "easy to break",
+        "very old-fashioned",
+        "cheap and badly made"
       ]
     }
   ]

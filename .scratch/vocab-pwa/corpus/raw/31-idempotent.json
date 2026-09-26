@@ -8,7 +8,7 @@
         "idempotence"
       ],
       "definition": "Safe to run more than once, because running it again leaves the same end state.",
-      "caution": "It is a promise other people design against. Say an endpoint is idempotent and someone will put a retry in front of it, so if a second call charges the card again or appends a second row, their outage is your sentence. Outside an engineering room it buys you nothing: with a sponsor say the job is safe to re-run, and keep the word for the people who will build on it.",
+      "caution": "Others will add automatic retries because of it, so say it only if a second run changes nothing. With non-technical people, say the job is safe to run again.",
       "prompt_version": 2,
       "example": "The ingestion job has to be idempotent. The scheduler will retry it on failure and we cannot end up with last night's rows twice.",
       "cues": [
@@ -33,11 +33,17 @@
         "Describing work that runs for many steps before anyone can tell whether it worked."
       ],
       "word_distractors": [
+        "serialize",
+        "harness",
         "ephemeral",
-        "elucidate",
-        "frontier",
-        "obscure",
-        "frontrunner"
+        "long-horizon",
+        "elucidate"
+      ],
+      "gloss": "safe to run again",
+      "gloss_distractors": [
+        "hard to install",
+        "very fast to run",
+        "running on many machines"
       ]
     }
   ]

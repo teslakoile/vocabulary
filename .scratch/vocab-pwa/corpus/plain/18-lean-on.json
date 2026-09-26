@@ -1,0 +1,17 @@
+{
+  "headword": "lean on",
+  "senses": [
+    {
+      "term": "lean on",
+      "gloss": "to rely on for help",
+      "gloss_distractors": [
+        "to argue with",
+        "to report to a manager",
+        "to take credit for"
+      ],
+      "caution": "It can also mean to put pressure on someone, so be clear which you mean. When you say it about a colleague, say exactly how they helped.",
+      "definition": "To rely on someone or something to do part of the work for you.",
+      "definition_changed": true
+    }
+  ]
+}

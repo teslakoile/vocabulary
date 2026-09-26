@@ -1,0 +1,16 @@
+{
+  "headword": "obscure",
+  "senses": [
+    {
+      "term": "obscure",
+      "gloss": "to hide or make unclear",
+      "gloss_distractors": [
+        "to explain in detail",
+        "to put in the right order",
+        "to check for errors"
+      ],
+      "caution": "It blames nobody, unlike obfuscate, which says someone meant to mislead. Use it about things such as charts, since about a person's explanation it is still a criticism.",
+      "definition": "Little known or hard to make out, or to keep something from being seen or understood."
+    }
+  ]
+}

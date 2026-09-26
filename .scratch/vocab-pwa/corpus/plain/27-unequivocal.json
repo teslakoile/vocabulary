@@ -1,0 +1,16 @@
+{
+  "headword": "unequivocal",
+  "senses": [
+    {
+      "term": "unequivocal",
+      "gloss": "completely clear",
+      "gloss_distractors": [
+        "hard to believe",
+        "said in secret",
+        "full of small mistakes"
+      ],
+      "caution": "Use it for statements and evidence rather than for people. If you call your own results unequivocal, others will look hard for one case that proves you wrong.",
+      "definition": "Stated so clearly that it can only be read one way."
+    }
+  ]
+}

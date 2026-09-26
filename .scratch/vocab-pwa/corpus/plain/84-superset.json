@@ -1,0 +1,16 @@
+{
+  "headword": "superset",
+  "senses": [
+    {
+      "term": "superset",
+      "gloss": "a larger group that includes another",
+      "gloss_distractors": [
+        "a smaller part of a group",
+        "the overlap between two separate groups",
+        "two groups with nothing shared"
+      ],
+      "caution": "It is a precise claim, so if any of the old one is missing, say covers most of instead. Used loosely about people's skills, it reads as a ranking of people.",
+      "definition": "A set that holds everything another set holds, and more besides."
+    }
+  ]
+}
