@@ -1,10 +1,17 @@
 {
+  "id": "e_tectonic_shifts",
   "headword": "tectonic shifts",
   "senses": [
     {
       "term": "tectonic shift",
       "accepted": [
         "tectonic shifts"
+      ],
+      "gloss": "a huge, lasting change",
+      "gloss_distractors": [
+        "a short, sudden panic",
+        "a small, routine update",
+        "a gradual loss of trust"
       ],
       "definition": "A huge, lasting change in the basic conditions of a field or market.",
       "caution": "Use it only for large, lasting change. Senior readers distrust it, because people often use it for ordinary news.",
@@ -38,7 +45,6 @@
         "Using far more words than the point needs.",
         "Aware of something and visibly taking it into account."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "hot-swap",
         "amenable",
@@ -46,12 +52,7 @@
         "build that muscle",
         "progressive"
       ],
-      "gloss": "a huge, lasting change",
-      "gloss_distractors": [
-        "a short, sudden panic",
-        "a small, routine update",
-        "a gradual loss of trust"
-      ]
+      "prompt_version": 4
     }
   ]
 }

@@ -1,9 +1,16 @@
 {
+  "id": "e_gravitas",
   "headword": "gravitas",
   "senses": [
     {
       "term": "gravitas",
       "accepted": [],
+      "gloss": "a serious, respected manner",
+      "gloss_distractors": [
+        "a loud, pushy manner",
+        "a habit of speaking too long",
+        "a talent for small talk"
+      ],
       "definition": "A serious, calm way of behaving that makes other people respect you and listen.",
       "caution": "Never say it about yourself, and save it for serious situations. As feedback it is vague, so name one specific thing the person can do differently.",
       "example": "He took the audit question with real gravitas, which is why the board stopped pushing on it.",
@@ -36,7 +43,6 @@
         "The formal authority a role carries, written down in a job description and an org chart.",
         "A speaking style that fills a room with energy and gets people excited about a plan."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "advocate for",
         "primitive",
@@ -44,12 +50,7 @@
         "by and large",
         "lean on"
       ],
-      "gloss": "a serious, respected manner",
-      "gloss_distractors": [
-        "a loud, pushy manner",
-        "a habit of speaking too long",
-        "a talent for small talk"
-      ]
+      "prompt_version": 4
     }
   ]
 }

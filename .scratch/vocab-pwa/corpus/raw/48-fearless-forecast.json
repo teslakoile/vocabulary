@@ -1,4 +1,5 @@
 {
+  "id": "e_fearless_forecast",
   "headword": "fearless forecast",
   "senses": [
     {
@@ -6,6 +7,12 @@
       "accepted": [
         "fearless forecasts",
         "fearless prediction"
+      ],
+      "gloss": "a bold, direct prediction",
+      "gloss_distractors": [
+        "a careful range of outcomes",
+        "a report on past results",
+        "a long-term budget"
       ],
       "definition": "A direct prediction with no caveats, usually given because someone asked for one.",
       "caution": "Give one only when someone asks for it. People remember the number and forget the warning, so only give a number you are willing to be held to.",
@@ -35,7 +42,6 @@
         "A voluntary group of people who do the same kind of work and meet to trade what they know.",
         "One of the small handful of cloud providers operating at a size almost nobody else can reach."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "obscure",
         "lean on",
@@ -43,12 +49,7 @@
         "verifiable rewards",
         "by and large"
       ],
-      "gloss": "a bold, direct prediction",
-      "gloss_distractors": [
-        "a careful range of outcomes",
-        "a report on past results",
-        "a long-term budget"
-      ]
+      "prompt_version": 4
     }
   ]
 }

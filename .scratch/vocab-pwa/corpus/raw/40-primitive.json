@@ -1,4 +1,5 @@
 {
+  "id": "e_primitive",
   "headword": "primitive",
   "senses": [
     {
@@ -6,9 +7,14 @@
       "accepted": [
         "primitives"
       ],
+      "gloss": "a basic piece to build with",
+      "gloss_distractors": [
+        "a security warning",
+        "a monthly usage report",
+        "a finished software product"
+      ],
       "definition": "A basic building block a platform gives you to build bigger things out of.",
       "caution": "Outside technical rooms people hear the everyday meaning, crude or backward, so it can insult a team's tools. Among engineers it claims the piece is the right size to build on.",
-      "prompt_version": 2,
       "example": "Give the teams three primitives, retrieval, evaluation and identity, and let them assemble the workflow they actually need.",
       "cues": [
         {
@@ -38,12 +44,7 @@
         "modality",
         "gravitas"
       ],
-      "gloss": "a basic piece to build with",
-      "gloss_distractors": [
-        "a security warning",
-        "a monthly usage report",
-        "a finished software product"
-      ]
+      "prompt_version": 4
     }
   ]
 }

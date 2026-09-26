@@ -1,4 +1,5 @@
 {
+  "id": "e_exacerbate",
   "headword": "exacerbate",
   "senses": [
     {
@@ -7,9 +8,14 @@
         "exacerbated",
         "exacerbating"
       ],
+      "gloss": "to make worse",
+      "gloss_distractors": [
+        "to delay",
+        "to fix completely",
+        "to hide on purpose"
+      ],
       "definition": "To make a bad situation worse.",
       "caution": "It assigns blame, so saying a decision exacerbated an outage sounds like an accusation. Use it only for making something bad worse, never for growth or demand.",
-      "prompt_version": 2,
       "example": "The retry logic did not cause the outage, but it exacerbated it. We hammered a service that was already on its knees.",
       "cues": [
         {
@@ -43,12 +49,7 @@
         "sandbox",
         "community of practice"
       ],
-      "gloss": "to make worse",
-      "gloss_distractors": [
-        "to delay",
-        "to fix completely",
-        "to hide on purpose"
-      ]
+      "prompt_version": 4
     }
   ]
 }

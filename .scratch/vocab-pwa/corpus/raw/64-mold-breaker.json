@@ -1,4 +1,5 @@
 {
+  "id": "e_mold_breaker",
   "headword": "mold breaker",
   "senses": [
     {
@@ -6,6 +7,12 @@
       "accepted": [
         "mold-breaker",
         "moldbreaker"
+      ],
+      "gloss": "someone who does things differently",
+      "gloss_distractors": [
+        "someone who settles arguments",
+        "a person who invests early",
+        "someone who manages other people's money"
       ],
       "definition": "Someone or something that does not fit the usual pattern and changes what people expect.",
       "caution": "Some rooms hear it as praise, others as a warning that the idea is unproven. Do not use it about yourself.",
@@ -39,7 +46,6 @@
         "The most senior people in an organisation, spoken of as one group.",
         "Someone who argues your case in rooms you are not in."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "lay of the land",
         "esoteric",
@@ -47,12 +53,7 @@
         "obscure",
         "center of excellence"
       ],
-      "gloss": "someone who does things differently",
-      "gloss_distractors": [
-        "someone who settles arguments",
-        "a person who invests early",
-        "someone who manages other people's money"
-      ]
+      "prompt_version": 4
     }
   ]
 }

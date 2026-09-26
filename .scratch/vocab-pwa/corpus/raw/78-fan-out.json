@@ -1,4 +1,5 @@
 {
+  "id": "e_fan_out",
   "headword": "fan-out",
   "senses": [
     {
@@ -7,6 +8,12 @@
         "fanout",
         "fan out",
         "fans out"
+      ],
+      "gloss": "splitting one request into many",
+      "gloss_distractors": [
+        "merging many results into one",
+        "retrying a failed request",
+        "limiting how many requests arrive"
       ],
       "definition": "The splitting of one request into many parallel calls that must all come back.",
       "caution": "In messaging systems it means one message sent to many readers, so say which you mean. People also hear a cost multiplier, so bring the numbers.",
@@ -36,7 +43,6 @@
         "The most senior people in a firm, spoken of as one group.",
         "Understood by only a small group of insiders."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "ducks in a row",
         "in pockets",
@@ -44,12 +50,7 @@
         "incremental",
         "substrate"
       ],
-      "gloss": "splitting one request into many",
-      "gloss_distractors": [
-        "merging many results into one",
-        "retrying a failed request",
-        "limiting how many requests arrive"
-      ]
+      "prompt_version": 4
     }
   ]
 }

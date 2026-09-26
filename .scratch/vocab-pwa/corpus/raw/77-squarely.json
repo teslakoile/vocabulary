@@ -1,9 +1,16 @@
 {
+  "id": "e_squarely",
   "headword": "squarely",
   "senses": [
     {
       "term": "squarely",
       "accepted": [],
+      "gloss": "directly and clearly",
+      "gloss_distractors": [
+        "slowly and carefully",
+        "only in part",
+        "without warning"
+      ],
       "definition": "Directly and without hedging, usually about where something belongs or who owns it.",
       "caution": "Use it about who owns something or which group it belongs in. If the point is still disputed, it overclaims and invites people to push back.",
       "example": "Cost governance sits squarely with the platform team, not with each product.",
@@ -36,7 +43,6 @@
         "To make a bad situation worse.",
         "Using far more words than the point needs."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "community of practice",
         "trivial",
@@ -44,12 +50,7 @@
         "attuned",
         "progressive"
       ],
-      "gloss": "directly and clearly",
-      "gloss_distractors": [
-        "slowly and carefully",
-        "only in part",
-        "without warning"
-      ]
+      "prompt_version": 4
     }
   ]
 }

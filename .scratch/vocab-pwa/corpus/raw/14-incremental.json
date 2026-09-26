@@ -1,10 +1,17 @@
 {
+  "id": "e_incremental",
   "headword": "incremental",
   "senses": [
     {
       "term": "incremental",
       "accepted": [
         "incrementally"
+      ],
+      "gloss": "happening in small steps",
+      "gloss_distractors": [
+        "happening all at once",
+        "getting smaller over time",
+        "happening by chance"
       ],
       "definition": "Proceeding by small additions, each one adding a little to what is already there.",
       "caution": "About how work is delivered it is praise, but about results it means the gains are small. In finance it means the extra amount above the usual baseline.",
@@ -34,7 +41,6 @@
         "A change that removes a feature instead of adding one, to keep the product simple.",
         "Work that cannot be split up, because none of it is any use until all of it is done."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "sponsorship",
         "squarely",
@@ -42,12 +48,7 @@
         "exacerbate",
         "first order effects"
       ],
-      "gloss": "happening in small steps",
-      "gloss_distractors": [
-        "happening all at once",
-        "getting smaller over time",
-        "happening by chance"
-      ]
+      "prompt_version": 4
     }
   ]
 }

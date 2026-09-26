@@ -1,4 +1,5 @@
 {
+  "id": "e_delibrate_intentional",
   "headword": "delibrate/intentional",
   "senses": [
     {
@@ -7,6 +8,12 @@
         "intentional",
         "deliberately",
         "intentionally"
+      ],
+      "gloss": "done on purpose",
+      "gloss_distractors": [
+        "done very quickly",
+        "done in secret",
+        "done without any help"
       ],
       "definition": "Done on purpose and with thought, rather than by accident.",
       "caution": "About someone else's action it says they chose to do it, which is an accusation. About your own plan it can sound like an excuse for being slow, so say on purpose.",
@@ -40,7 +47,6 @@
         "Repeated so often that it has become a habit nobody questions any more.",
         "Chosen because it was the only option anybody could think of at the time."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "panopticon",
         "contrived",
@@ -48,12 +54,7 @@
         "unequivocal",
         "enmeshed"
       ],
-      "gloss": "done on purpose",
-      "gloss_distractors": [
-        "done very quickly",
-        "done in secret",
-        "done without any help"
-      ]
+      "prompt_version": 4
     }
   ]
 }

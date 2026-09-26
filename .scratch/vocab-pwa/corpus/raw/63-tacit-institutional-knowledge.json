@@ -1,10 +1,17 @@
 {
+  "id": "e_tacit_institutional_knowledge",
   "headword": "tacit/institutional knowledge",
   "senses": [
     {
       "term": "tacit knowledge",
       "accepted": [
         "tacit"
+      ],
+      "gloss": "a skill you cannot easily explain",
+      "gloss_distractors": [
+        "an organisation's unwritten history",
+        "a written set of steps",
+        "a formal training course"
       ],
       "definition": "What someone can do well but cannot fully put into words.",
       "caution": "Use it only for skill that is truly hard to write down. A deployment process is just steps, so calling it tacit sounds like an excuse.",
@@ -34,7 +41,6 @@
         "An isolated environment where code runs safely.",
         "Progress won into territory that was closed to you before."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "top brass",
         "superset",
@@ -42,17 +48,18 @@
         "bolster",
         "fearless forecast"
       ],
-      "gloss": "a skill you cannot easily explain",
-      "gloss_distractors": [
-        "an organisation's unwritten history",
-        "a written set of steps",
-        "a formal training course"
-      ]
+      "prompt_version": 4
     },
     {
       "term": "institutional knowledge",
       "accepted": [
         "institutional memory"
+      ],
+      "gloss": "an organisation's unwritten history",
+      "gloss_distractors": [
+        "skill you cannot easily explain",
+        "a new employee's training plan",
+        "a public report on company finances"
       ],
       "definition": "What an organisation knows about its own past and habits but has never written down.",
       "caution": "It is usually an argument for keeping someone, and it can admit you let one person become a risk. It can be written down, so expect to be asked why it has not been.",
@@ -82,7 +89,6 @@
         "One of the handful of cloud providers operating at a size where compute is effectively unlimited.",
         "A voluntary group of people who do the same kind of work and meet to trade what they know."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "contrived",
         "flywheel effect",
@@ -90,12 +96,7 @@
         "gravitas",
         "nontrivial"
       ],
-      "gloss": "an organisation's unwritten history",
-      "gloss_distractors": [
-        "skill you cannot easily explain",
-        "a new employee's training plan",
-        "a public report on company finances"
-      ]
+      "prompt_version": 4
     }
   ]
 }

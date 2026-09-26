@@ -1,10 +1,17 @@
 {
+  "id": "e_cognizant",
   "headword": "cognizant",
   "senses": [
     {
       "term": "cognizant",
       "accepted": [
         "cognisant"
+      ],
+      "gloss": "fully aware of something",
+      "gloss_distractors": [
+        "angry about something",
+        "unwilling to take any action",
+        "proud of something"
       ],
       "definition": "Aware of something and visibly taking it into account when a decision is made.",
       "caution": "Use it in writing, where it records that you knew about a risk. Out loud it sounds stiff, so say aware, and note that it is also the name of an IT company.",
@@ -34,7 +41,6 @@
         "Kept informed of progress at regular intervals without being asked to approve anything.",
         "Trained in a procedure well enough to carry it out without checking the manual first."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "eschew",
         "broad",
@@ -42,12 +48,7 @@
         "daily driver",
         "flywheel effect"
       ],
-      "gloss": "fully aware of something",
-      "gloss_distractors": [
-        "angry about something",
-        "unwilling to take any action",
-        "proud of something"
-      ]
+      "prompt_version": 4
     }
   ]
 }

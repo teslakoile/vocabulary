@@ -1,4 +1,5 @@
 {
+  "id": "e_long_horizon_task",
   "headword": "long-horizon (task)",
   "senses": [
     {
@@ -8,6 +9,12 @@
         "long-horizon task",
         "long horizon task",
         "long-horizon tasks"
+      ],
+      "gloss": "needing many steps to finish",
+      "gloss_distractors": [
+        "easy to check quickly",
+        "costing a lot of money",
+        "built by more than one company"
       ],
       "definition": "Running for many steps before anyone can tell whether it worked.",
       "caution": "Use it for tasks with many steps and slow feedback. For a project that is only slow, say slow, since investors may hear it as a holding period.",
@@ -37,7 +44,6 @@
         "Lasting only briefly, and meant to.",
         "So small or so easy that it is not worth the time it would take to discuss."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "hot-swap",
         "surreptitiously",
@@ -45,12 +51,7 @@
         "build that muscle",
         "tectonic shift"
       ],
-      "gloss": "needing many steps to finish",
-      "gloss_distractors": [
-        "easy to check quickly",
-        "costing a lot of money",
-        "built by more than one company"
-      ]
+      "prompt_version": 4
     }
   ]
 }

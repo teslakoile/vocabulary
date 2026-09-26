@@ -1,4 +1,5 @@
 {
+  "id": "e_community_of_practice_vs_center_of_excellence",
   "headword": "community of practice vs center of excellence",
   "senses": [
     {
@@ -7,9 +8,14 @@
         "CoP",
         "communities of practice"
       ],
+      "gloss": "an informal group sharing skills",
+      "gloss_distractors": [
+        "a funded expert team",
+        "a list of company rules",
+        "a committee that approves budgets"
+      ],
       "definition": "A voluntary group of people doing the same work who meet to share what they learn.",
       "caution": "Membership is voluntary, so it cannot be held to a deadline or made to enforce standards. If you give it a budget and staff, call it a center of excellence instead.",
-      "prompt_version": 2,
       "example": "The prompt engineering group is not a governance body. It is a community of practice, and it works precisely because nobody has to come.",
       "cues": [
         {
@@ -39,12 +45,7 @@
         "sandbox",
         "eschew"
       ],
-      "gloss": "an informal group sharing skills",
-      "gloss_distractors": [
-        "a funded expert team",
-        "a list of company rules",
-        "a committee that approves budgets"
-      ]
+      "prompt_version": 4
     },
     {
       "term": "center of excellence",
@@ -53,9 +54,14 @@
         "centre of excellence",
         "centers of excellence"
       ],
+      "gloss": "a funded expert team",
+      "gloss_distractors": [
+        "an informal group sharing skills",
+        "a new office building",
+        "a staff party"
+      ],
       "definition": "A funded team that holds a scarce skill in one place and sets how it is done.",
       "caution": "Other teams may feel they now need its permission, which causes resentment. Use it only for a funded, staffed team, since senior people notice when an unfunded group uses the name.",
-      "prompt_version": 2,
       "example": "If we stand this up as a center of excellence, every model deployment routes through eight people, and those eight people are the constraint by March.",
       "cues": [
         {
@@ -85,12 +91,7 @@
         "persistence",
         "primitive"
       ],
-      "gloss": "a funded expert team",
-      "gloss_distractors": [
-        "an informal group sharing skills",
-        "a new office building",
-        "a staff party"
-      ]
+      "prompt_version": 4
     }
   ]
 }

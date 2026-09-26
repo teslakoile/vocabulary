@@ -1,9 +1,16 @@
 {
+  "id": "e_by_and_large",
   "headword": "by and large",
   "senses": [
     {
       "term": "by and large",
       "accepted": [],
+      "gloss": "in most cases",
+      "gloss_distractors": [
+        "in every case",
+        "at first",
+        "by a wide margin"
+      ],
       "definition": "On the whole, allowing for exceptions that do not change the conclusion.",
       "caution": "It admits you have not checked the exceptions. It is fine in conversation, but in writing people will ask which cases you left out.",
       "example": "By and large the migration went clean. Two services needed manual work.",
@@ -36,7 +43,6 @@
         "Proceeding by small additions, with each one standing on its own without the rest.",
         "So little known, or so unclear, that most people would not be able to follow it."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "scaffolding",
         "amenable",
@@ -44,12 +50,7 @@
         "frontier",
         "vertical"
       ],
-      "gloss": "in most cases",
-      "gloss_distractors": [
-        "in every case",
-        "at first",
-        "by a wide margin"
-      ]
+      "prompt_version": 4
     }
   ]
 }

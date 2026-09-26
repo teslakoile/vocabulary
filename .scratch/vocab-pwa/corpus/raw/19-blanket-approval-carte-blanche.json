@@ -1,10 +1,17 @@
 {
+  "id": "e_blanket_approval_carte_blanche",
   "headword": "blanket approval/carte blanche",
   "senses": [
     {
       "term": "blanket approval",
       "accepted": [
         "carte blanche"
+      ],
+      "gloss": "a general permission given in advance",
+      "gloss_distractors": [
+        "a formal written warning",
+        "a detailed review by outside auditors",
+        "a refusal to take part"
       ],
       "definition": "Permission given once in advance to cover a whole class of decisions.",
       "caution": "Claim it only if you are sure, because people will check and there are usually conditions. Carte blanche sounds boastful about yourself and suggests no supervision of others.",
@@ -38,7 +45,6 @@
         "A requirement that every single case be reviewed on its own before it can proceed.",
         "A standing instruction to stop work the moment a particular threshold is crossed."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "obscure",
         "fearless forecast",
@@ -46,12 +52,7 @@
         "heuristic",
         "frontrunner"
       ],
-      "gloss": "a general permission given in advance",
-      "gloss_distractors": [
-        "a formal written warning",
-        "a detailed review by outside auditors",
-        "a refusal to take part"
-      ]
+      "prompt_version": 4
     }
   ]
 }

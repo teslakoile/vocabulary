@@ -1,4 +1,5 @@
 {
+  "id": "e_build_that_muscle",
   "headword": "build that muscle",
   "senses": [
     {
@@ -10,6 +11,12 @@
         "built that muscle",
         "build that muscle up",
         "build muscle"
+      ],
+      "gloss": "to develop a skill by practice",
+      "gloss_distractors": [
+        "to buy a ready-made tool",
+        "to cut a team's workload",
+        "to measure a team's performance"
       ],
       "definition": "To build a skill through repeated practice instead of one-off training.",
       "caution": "It says the skill is missing today. About another team it is a criticism, and to a busy team it means more work, so name the actual practice and who will do it.",
@@ -39,7 +46,6 @@
         "To replace a running part of a system without stopping the system around it.",
         "To put right something that was wrong."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "nontrivial",
         "persist",
@@ -47,12 +53,7 @@
         "sleuthing",
         "institutional knowledge"
       ],
-      "gloss": "to develop a skill by practice",
-      "gloss_distractors": [
-        "to buy a ready-made tool",
-        "to cut a team's workload",
-        "to measure a team's performance"
-      ]
+      "prompt_version": 4
     }
   ]
 }

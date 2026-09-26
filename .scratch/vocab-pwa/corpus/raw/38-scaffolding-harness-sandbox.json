@@ -1,4 +1,5 @@
 {
+  "id": "e_scaffolding_harness_sandbox",
   "headword": "scaffolding/harness/sandbox",
   "senses": [
     {
@@ -6,9 +7,14 @@
       "accepted": [
         "scaffold"
       ],
+      "gloss": "a temporary support",
+      "gloss_distractors": [
+        "a backup copy",
+        "a list of known bugs",
+        "a safe, isolated test area"
+      ],
       "definition": "A temporary support that is removed once the real system works on its own.",
       "caution": "It tells people the thing is temporary, and they will later ask when it is being removed. For a rough first version of the real work, say draft instead.",
-      "prompt_version": 2,
       "example": "The manual review step is scaffolding. Once the classifier is calibrated it comes out.",
       "cues": [
         {
@@ -42,19 +48,19 @@
         "heuristic",
         "vertical"
       ],
-      "gloss": "a temporary support",
-      "gloss_distractors": [
-        "a backup copy",
-        "a list of known bugs",
-        "a safe, isolated test area"
-      ]
+      "prompt_version": 4
     },
     {
       "term": "harness",
       "accepted": [],
+      "gloss": "a setup for testing a system",
+      "gloss_distractors": [
+        "a temporary support",
+        "a list of user complaints",
+        "a contract with an outside vendor"
+      ],
       "definition": "A setup built to run a system automatically and check how it behaves.",
       "caution": "In AI work people usually hear evaluation harness, so say so if you mean a general test setup. Use it for tools you built yourself, and not for a public benchmark you only ran.",
-      "prompt_version": 2,
       "example": "We need a harness that replays last quarter's queries against the new model.",
       "cues": [
         {
@@ -84,21 +90,21 @@
         "verifiability",
         "tacit knowledge"
       ],
-      "gloss": "a setup for testing a system",
-      "gloss_distractors": [
-        "a temporary support",
-        "a list of user complaints",
-        "a contract with an outside vendor"
-      ]
+      "prompt_version": 4
     },
     {
       "term": "sandbox",
       "accepted": [
         "sandboxed"
       ],
+      "gloss": "a safe, isolated test area",
+      "gloss_distractors": [
+        "a temporary support",
+        "a shared team calendar",
+        "the live production system"
+      ],
       "definition": "An isolated place to run something where it cannot affect anything real.",
       "caution": "It promises that nothing real can be affected, and compliance teams will hold you to that. It says nothing about how realistic the setup is.",
-      "prompt_version": 2,
       "example": "Let it run in a sandbox first. I do not want it touching the live index.",
       "cues": [
         {
@@ -128,12 +134,7 @@
         "first principles",
         "mold breaker"
       ],
-      "gloss": "a safe, isolated test area",
-      "gloss_distractors": [
-        "a temporary support",
-        "a shared team calendar",
-        "the live production system"
-      ]
+      "prompt_version": 4
     }
   ]
 }

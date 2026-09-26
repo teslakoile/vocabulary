@@ -1,4 +1,5 @@
 {
+  "id": "e_front_and_center",
   "headword": "front-and-center",
   "senses": [
     {
@@ -7,6 +8,12 @@
         "front-and-center",
         "front and centre",
         "front-and-centre"
+      ],
+      "gloss": "in the most visible place",
+      "gloss_distractors": [
+        "hidden out of sight",
+        "at the very end",
+        "shared with only a few people"
       ],
       "definition": "In the most prominent position, where nobody can miss it.",
       "caution": "Whatever you put there also gets the most questions, and a person put there answers for it. It is spoken American English and sounds casual in a formal paper.",
@@ -36,7 +43,6 @@
         "Understood by only a small group, because it assumes background most people lack.",
         "Big enough to matter, said of an amount or a change."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "harness",
         "obfuscate",
@@ -44,12 +50,7 @@
         "ephemeral",
         "hyperscaler"
       ],
-      "gloss": "in the most visible place",
-      "gloss_distractors": [
-        "hidden out of sight",
-        "at the very end",
-        "shared with only a few people"
-      ]
+      "prompt_version": 4
     }
   ]
 }

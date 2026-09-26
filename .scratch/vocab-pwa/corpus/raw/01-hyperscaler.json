@@ -1,9 +1,16 @@
 {
+  "id": "e_hyperscaler",
   "headword": "hyperscaler",
   "senses": [
     {
       "term": "hyperscaler",
       "accepted": [],
+      "gloss": "a giant cloud provider",
+      "gloss_distractors": [
+        "a small software startup",
+        "a phone maker",
+        "a website design agency"
+      ],
       "definition": "One of the few companies that run cloud computing and storage on a huge scale.",
       "caution": "Use it only for the few giant cloud companies, never for your own platform or a growing vendor. With people who do not know the term, say what it means for them, such as cost.",
       "example": "We are not going to beat a hyperscaler on inference cost, so the case has to rest on the data staying ours.",
@@ -32,7 +39,6 @@
         "A pricing model where you pay only for the computing you actually consume, billed by the second.",
         "A company that keeps its servers in its own building rather than renting them from anyone."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "semantic layer",
         "persist",
@@ -40,12 +46,7 @@
         "bolster",
         "despondent"
       ],
-      "gloss": "a giant cloud provider",
-      "gloss_distractors": [
-        "a small software startup",
-        "a phone maker",
-        "a website design agency"
-      ]
+      "prompt_version": 4
     }
   ]
 }

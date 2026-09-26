@@ -1,4 +1,5 @@
 {
+  "id": "e_serialize",
   "headword": "serialize",
   "senses": [
     {
@@ -8,9 +9,14 @@
         "serialized",
         "serialise"
       ],
+      "gloss": "to convert data for storage",
+      "gloss_distractors": [
+        "to delete old records",
+        "to speed up a program",
+        "to split work across machines"
+      ],
       "definition": "To turn something in memory into bytes that can be stored or sent and read back.",
       "caution": "In performance talk it also means forcing tasks to run one at a time, so name the format or the bottleneck. With non-technical people, say you save it in a form you can send.",
-      "prompt_version": 2,
       "example": "The agent state has to be serialized before it goes on the queue, and half of these objects have no clean way to do that.",
       "cues": [
         {
@@ -40,12 +46,7 @@
         "lend itself",
         "dogfooding"
       ],
-      "gloss": "to convert data for storage",
-      "gloss_distractors": [
-        "to delete old records",
-        "to speed up a program",
-        "to split work across machines"
-      ]
+      "prompt_version": 4
     }
   ]
 }

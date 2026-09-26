@@ -1,10 +1,17 @@
 {
+  "id": "e_verifiability_verifiable_rewards",
   "headword": "verifiability/verifiable rewards",
   "senses": [
     {
       "term": "verifiability",
       "accepted": [
         "verifiable"
+      ],
+      "gloss": "how easily others can check it",
+      "gloss_distractors": [
+        "feedback a computer can check",
+        "how widely it is used",
+        "how strongly customers recommend it"
       ],
       "definition": "Whether a claim can be checked by someone other than whoever made it.",
       "caution": "People hear it as trustworthy, but a number can be easy to check and still wrong. Promise it only if you can say who checks it and against what.",
@@ -38,7 +45,6 @@
         "Weight and seriousness in how a person carries themselves.",
         "To decide as you go, taking your lead from how things develop."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "gravitas",
         "harness",
@@ -46,17 +52,18 @@
         "run it by you",
         "blanket approval"
       ],
-      "gloss": "how easily others can check it",
-      "gloss_distractors": [
-        "feedback a computer can check",
-        "how widely it is used",
-        "how strongly customers recommend it"
-      ]
+      "prompt_version": 4
     },
     {
       "term": "verifiable rewards",
       "accepted": [
         "verifiable reward"
+      ],
+      "gloss": "feedback a computer can check",
+      "gloss_distractors": [
+        "how easily others can check it",
+        "cash bonuses for hitting targets",
+        "a log of model changes"
       ],
       "definition": "Training signal a machine can check on its own, like a test passing or a proof compiling.",
       "caution": "It only covers tasks with a checkable answer, so do not promise it for memos or judgement calls. Non-technical people may think it means a bonus scheme.",
@@ -86,7 +93,6 @@
         "A slice of the market defined by the industry it serves.",
         "To work over the exact phrasing of something already written."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "continuum",
         "attuned",
@@ -94,12 +100,7 @@
         "substrate",
         "finesse"
       ],
-      "gloss": "feedback a computer can check",
-      "gloss_distractors": [
-        "how easily others can check it",
-        "cash bonuses for hitting targets",
-        "a log of model changes"
-      ]
+      "prompt_version": 4
     }
   ]
 }

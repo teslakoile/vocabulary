@@ -1,4 +1,5 @@
 {
+  "id": "e_lend_itself",
   "headword": "lend itself",
   "senses": [
     {
@@ -7,6 +8,12 @@
         "lends itself",
         "lend themselves",
         "lends itself to"
+      ],
+      "gloss": "to be well suited to",
+      "gloss_distractors": [
+        "to be too costly",
+        "to be hard to explain",
+        "to be out of date"
       ],
       "definition": "To have qualities that make a particular use easy or natural.",
       "caution": "It claims only a good fit, though people hear it as support, and sharp readers notice the room it leaves you to back out. Followed by something bad, it becomes a criticism.",
@@ -40,7 +47,6 @@
         "To make a bad situation worse.",
         "Done quietly so as not to be seen doing it."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "idempotent",
         "panopticon",
@@ -48,12 +54,7 @@
         "fearless forecast",
         "asymmetric"
       ],
-      "gloss": "to be well suited to",
-      "gloss_distractors": [
-        "to be too costly",
-        "to be hard to explain",
-        "to be out of date"
-      ]
+      "prompt_version": 4
     }
   ]
 }

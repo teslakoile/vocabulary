@@ -1,4 +1,5 @@
 {
+  "id": "e_watch_outs",
   "headword": "watch outs",
   "senses": [
     {
@@ -7,6 +8,12 @@
         "watch-outs",
         "watchouts",
         "watch out"
+      ],
+      "gloss": "things likely to go wrong",
+      "gloss_distractors": [
+        "goals for next year",
+        "reasons a project succeeded",
+        "people who must approve"
       ],
       "definition": "A short list of things likely to go wrong, given in advance so nobody is surprised.",
       "caution": "It is slide language and sounds odd in speech. If something is a real risk, call it a risk and give it an owner and a plan.",
@@ -36,7 +43,6 @@
         "A written summary of what a meeting decided, circulated afterwards to everyone who missed it.",
         "The set of conditions that must hold true for an estimate to be worth anything at all."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "contrived",
         "serialize",
@@ -44,12 +50,7 @@
         "primitive",
         "persistence"
       ],
-      "gloss": "things likely to go wrong",
-      "gloss_distractors": [
-        "goals for next year",
-        "reasons a project succeeded",
-        "people who must approve"
-      ]
+      "prompt_version": 4
     }
   ]
 }

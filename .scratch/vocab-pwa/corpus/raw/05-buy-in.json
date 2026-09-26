@@ -1,10 +1,17 @@
 {
+  "id": "e_buy_in",
   "headword": "buy-in",
   "senses": [
     {
       "term": "buy-in",
       "accepted": [
         "buy in"
+      ],
+      "gloss": "an agreement to back a plan",
+      "gloss_distractors": [
+        "a delay to a project",
+        "a strong objection to a plan",
+        "a list of project costs"
       ],
       "definition": "Genuine agreement from the people whose help you need, not just their signature.",
       "caution": "Only claim it when people truly agree, because a signature alone does not count. Saying you need to get it from your own team can sound like you plan to push them.",
@@ -38,7 +45,6 @@
         "Written permission from a committee that has reviewed both the risks and the cost.",
         "The quiet compliance of a team that has stopped arguing but has not changed its mind."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "despondent",
         "first principles",
@@ -46,12 +52,7 @@
         "idempotent",
         "blanket approval"
       ],
-      "gloss": "an agreement to back a plan",
-      "gloss_distractors": [
-        "a delay to a project",
-        "a strong objection to a plan",
-        "a list of project costs"
-      ]
+      "prompt_version": 4
     }
   ]
 }

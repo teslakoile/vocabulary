@@ -1,4 +1,5 @@
 {
+  "id": "e_bolster",
   "headword": "bolster",
   "senses": [
     {
@@ -7,9 +8,14 @@
         "bolstered",
         "bolstering"
       ],
+      "gloss": "to strengthen",
+      "gloss_distractors": [
+        "to delay",
+        "to explain in detail",
+        "to hide on purpose"
+      ],
       "definition": "To strengthen something that is already there but is not strong enough on its own.",
       "caution": "It admits the thing is weak now, so use it only when you mean that. Use it for things such as an argument, savings, or confidence, and not for machines or deadlines.",
-      "prompt_version": 2,
       "example": "The numbers are directionally right, but one more independent source would bolster them before this goes to the board.",
       "cues": [
         {
@@ -47,12 +53,7 @@
         "scaffolding",
         "idempotent"
       ],
-      "gloss": "to strengthen",
-      "gloss_distractors": [
-        "to delay",
-        "to explain in detail",
-        "to hide on purpose"
-      ]
+      "prompt_version": 4
     }
   ]
 }

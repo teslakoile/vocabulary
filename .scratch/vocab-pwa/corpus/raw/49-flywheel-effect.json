@@ -1,4 +1,5 @@
 {
+  "id": "e_flywheel_effect",
   "headword": "flywheel effect",
   "senses": [
     {
@@ -6,6 +7,12 @@
       "accepted": [
         "flywheel",
         "flywheels"
+      ],
+      "gloss": "a cycle that makes growth easier",
+      "gloss_distractors": [
+        "a plan to cut costs",
+        "a sudden drop in sales",
+        "a delay caused by missing approvals"
       ],
       "definition": "A cycle where each step helps the next, so growth gets easier the longer it runs.",
       "caution": "Be ready to name each step of the loop, because someone will ask you to draw it. Some senior listeners hear it as consultant language.",
@@ -35,7 +42,6 @@
         "A structure where everyone can be watched at any moment and nobody knows when they are.",
         "The unwritten history an organisation holds about why its own systems were built that way."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "heuristic",
         "advocate",
@@ -43,12 +49,7 @@
         "semantic layer",
         "verbose"
       ],
-      "gloss": "a cycle that makes growth easier",
-      "gloss_distractors": [
-        "a plan to cut costs",
-        "a sudden drop in sales",
-        "a delay caused by missing approvals"
-      ]
+      "prompt_version": 4
     }
   ]
 }

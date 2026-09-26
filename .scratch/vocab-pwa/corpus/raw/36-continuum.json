@@ -1,4 +1,5 @@
 {
+  "id": "e_continuum",
   "headword": "continuum",
   "senses": [
     {
@@ -6,9 +7,14 @@
       "accepted": [
         "continua"
       ],
+      "gloss": "a smooth, gradual range",
+      "gloss_distractors": [
+        "a sudden change",
+        "a long written report",
+        "a list of separate groups"
+      ],
       "definition": "A range that changes gradually, with no clear points where one part ends.",
       "caution": "Using it challenges the categories someone just proposed. When a decision needs a clear cut-off, say where you would set it, or you will seem to be avoiding the decision.",
-      "prompt_version": 2,
       "example": "Autonomy is not a switch, it is a continuum, and the real question is how far along it we are willing to be in the next release.",
       "cues": [
         {
@@ -42,12 +48,7 @@
         "substantiate",
         "eschew"
       ],
-      "gloss": "a smooth, gradual range",
-      "gloss_distractors": [
-        "a sudden change",
-        "a long written report",
-        "a list of separate groups"
-      ]
+      "prompt_version": 4
     }
   ]
 }

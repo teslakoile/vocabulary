@@ -1,4 +1,5 @@
 {
+  "id": "e_semantic_layer",
   "headword": "semantic layer",
   "senses": [
     {
@@ -6,9 +7,14 @@
       "accepted": [
         "semantic model"
       ],
+      "gloss": "a shared set of data definitions",
+      "gloss_distractors": [
+        "a tool for drawing charts",
+        "a backup copy of a database",
+        "a server that stores website images"
+      ],
       "definition": "The layer that translates raw tables into the business terms everyone agrees on.",
       "caution": "The hard part is getting departments to agree on what each business term means, so do not promise one by a date. Use the term only for this specific part of a data system.",
-      "prompt_version": 2,
       "example": "Two dashboards disagree on churn because each defines it in its own SQL. That is exactly what a semantic layer is for.",
       "cues": [
         {
@@ -38,12 +44,7 @@
         "flywheel effect",
         "fearless forecast"
       ],
-      "gloss": "a shared set of data definitions",
-      "gloss_distractors": [
-        "a tool for drawing charts",
-        "a backup copy of a database",
-        "a server that stores website images"
-      ]
+      "prompt_version": 4
     }
   ]
 }

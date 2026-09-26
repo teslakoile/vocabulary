@@ -1,4 +1,5 @@
 {
+  "id": "e_frontrunner",
   "headword": "frontrunner",
   "senses": [
     {
@@ -8,6 +9,12 @@
         "front runner",
         "frontrunners",
         "front-runners"
+      ],
+      "gloss": "the one most likely to win",
+      "gloss_distractors": [
+        "the newest competitor",
+        "the person who runs a meeting",
+        "a backup option"
       ],
       "definition": "The one most likely to win right now, while the outcome is still open.",
       "caution": "Naming one in writing before a decision makes the process look decided, which can cause trouble in a procurement challenge. Keep it to conversation.",
@@ -37,7 +44,6 @@
         "A rule of thumb that usually works.",
         "The most senior people in an organisation."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "advocate",
         "failure mode",
@@ -45,12 +51,7 @@
         "continuum",
         "surreptitiously"
       ],
-      "gloss": "the one most likely to win",
-      "gloss_distractors": [
-        "the newest competitor",
-        "the person who runs a meeting",
-        "a backup option"
-      ]
+      "prompt_version": 4
     }
   ]
 }

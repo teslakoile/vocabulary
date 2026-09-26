@@ -1,4 +1,5 @@
 {
+  "id": "e_verticals_industry_verticals",
   "headword": "verticals/industry verticals",
   "senses": [
     {
@@ -7,6 +8,12 @@
         "verticals",
         "industry vertical",
         "industry verticals"
+      ],
+      "gloss": "an industry sector",
+      "gloss_distractors": [
+        "a sales region",
+        "a layer of management",
+        "a company's main product"
       ],
       "definition": "A part of the market made up of one industry, such as banking or healthcare.",
       "caution": "Use it only for market segments. Promising to work one vertical at a time commits you to separate work for each industry, and people will ask which comes first.",
@@ -36,7 +43,6 @@
         "One request splitting into many parallel pieces of work that run at the same time.",
         "An isolated environment where code runs without touching anything real."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "unequivocal",
         "deliberate",
@@ -44,12 +50,7 @@
         "diaspora",
         "enmeshed"
       ],
-      "gloss": "an industry sector",
-      "gloss_distractors": [
-        "a sales region",
-        "a layer of management",
-        "a company's main product"
-      ]
+      "prompt_version": 4
     }
   ]
 }

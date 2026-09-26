@@ -1,10 +1,17 @@
 {
+  "id": "e_advocate",
   "headword": "advocate",
   "senses": [
     {
       "term": "advocate",
       "accepted": [
         "advocates"
+      ],
+      "gloss": "someone who speaks up for you",
+      "gloss_distractors": [
+        "someone who checks your work",
+        "a new member of a team",
+        "someone who pays for a project"
       ],
       "definition": "A person who argues for you when you are not there.",
       "caution": "Naming someone as your advocate gives them a job they may not have agreed to, and can expose them in front of peers. Lawyers hear it as meaning legal counsel.",
@@ -34,7 +41,6 @@
         "An isolated environment where code runs safely.",
         "The one you actually use every day."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "elucidate",
         "community of practice",
@@ -42,12 +48,7 @@
         "bespoke",
         "tectonic shift"
       ],
-      "gloss": "someone who speaks up for you",
-      "gloss_distractors": [
-        "someone who checks your work",
-        "a new member of a team",
-        "someone who pays for a project"
-      ]
+      "prompt_version": 4
     },
     {
       "term": "advocate for",
@@ -57,6 +58,12 @@
         "advocating for",
         "advocated for",
         "advocacy"
+      ],
+      "gloss": "to publicly support",
+      "gloss_distractors": [
+        "to argue against",
+        "to ask questions about",
+        "to keep quiet about"
       ],
       "definition": "To argue openly for a position or a person, putting your reputation at risk.",
       "caution": "It ties you to the outcome, so keep it for things you would still defend if they failed. If all you did was agree in a meeting, do not claim it.",
@@ -86,7 +93,6 @@
         "To make something already written finally make sense by laying out the reasoning.",
         "To turn a structure that only exists in memory into a form you can store or send on."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "hyperscaler",
         "verifiability",
@@ -94,12 +100,7 @@
         "top brass",
         "frontrunner"
       ],
-      "gloss": "to publicly support",
-      "gloss_distractors": [
-        "to argue against",
-        "to ask questions about",
-        "to keep quiet about"
-      ]
+      "prompt_version": 4
     }
   ]
 }

@@ -1,10 +1,17 @@
 {
+  "id": "e_obfuscate",
   "headword": "obfuscate",
   "senses": [
     {
       "term": "obfuscate",
       "accepted": [
         "obfuscation"
+      ],
+      "gloss": "to confuse on purpose",
+      "gloss_distractors": [
+        "to delay a decision",
+        "to complain in public",
+        "to agree without thinking"
       ],
       "definition": "To make something hard to understand on purpose.",
       "caution": "It accuses someone of trying to mislead. For a colleague's work that is simply unclear, say unclear or obscure instead.",
@@ -38,7 +45,6 @@
         "To shorten a document without losing its meaning.",
         "To translate a technical answer into business terms."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "frontier",
         "dogfooding",
@@ -46,12 +52,7 @@
         "institutional knowledge",
         "semantic layer"
       ],
-      "gloss": "to confuse on purpose",
-      "gloss_distractors": [
-        "to delay a decision",
-        "to complain in public",
-        "to agree without thinking"
-      ]
+      "prompt_version": 4
     }
   ]
 }

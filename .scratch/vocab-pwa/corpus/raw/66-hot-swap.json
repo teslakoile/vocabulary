@@ -1,4 +1,5 @@
 {
+  "id": "e_hot_swap",
   "headword": "hot-swap",
   "senses": [
     {
@@ -7,6 +8,12 @@
         "hot swap",
         "hot-swapping",
         "hot-swappable"
+      ],
+      "gloss": "to replace while still running",
+      "gloss_distractors": [
+        "to shut down for repairs",
+        "to copy data to a backup",
+        "to move data between two servers"
       ],
       "definition": "To replace a running part without stopping the system around it.",
       "caution": "It promises no downtime, and people will hold you to that. Said about a person, it treats people as interchangeable, which sounds cold in front of their manager.",
@@ -36,7 +43,6 @@
         "To put right something that was wrong.",
         "Low in a way that has given up on things improving."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "build that muscle",
         "diaspora",
@@ -44,12 +50,7 @@
         "fearless forecast",
         "exacerbate"
       ],
-      "gloss": "to replace while still running",
-      "gloss_distractors": [
-        "to shut down for repairs",
-        "to copy data to a backup",
-        "to move data between two servers"
-      ]
+      "prompt_version": 4
     }
   ]
 }

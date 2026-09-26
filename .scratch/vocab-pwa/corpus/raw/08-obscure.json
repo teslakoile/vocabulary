@@ -1,4 +1,5 @@
 {
+  "id": "e_obscure",
   "headword": "obscure",
   "senses": [
     {
@@ -6,6 +7,12 @@
       "accepted": [
         "obscures",
         "obscured"
+      ],
+      "gloss": "to hide or make unclear",
+      "gloss_distractors": [
+        "to explain in detail",
+        "to put in the right order",
+        "to check for errors"
       ],
       "definition": "Little known or hard to make out, or to keep something from being seen or understood.",
       "caution": "It blames nobody, unlike obfuscate, which says someone meant to mislead. Use it about things such as charts, since about a person's explanation it is still a criticism.",
@@ -39,7 +46,6 @@
         "A claim that is easy to state and impossible for anyone outside the company to check.",
         "A system that is still running long after the team that built it moved on to other work."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "unequivocal",
         "lean on",
@@ -47,12 +53,7 @@
         "flywheel effect",
         "advocate for"
       ],
-      "gloss": "to hide or make unclear",
-      "gloss_distractors": [
-        "to explain in detail",
-        "to put in the right order",
-        "to check for errors"
-      ]
+      "prompt_version": 4
     }
   ]
 }
