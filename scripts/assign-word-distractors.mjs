@@ -190,9 +190,11 @@ function hash(text) {
 
 const files = readdirSync(RAW_DIR).filter((f) => f.endsWith('.json')).sort();
 const entries = files.map((f) => ({ file: f, data: JSON.parse(readFileSync(join(RAW_DIR, f), 'utf8')) }));
+// Archived words are out of practice, so they are neither assigned nor offered.
+const live = entries.filter(({ data }) => !data.archived_at);
 
 const senses = [];
-for (const { file, data } of entries) {
+for (const { file, data } of live) {
   for (const sense of data.senses ?? []) {
     senses.push({ file, headword: data.headword, sense, siblings: new Set((data.senses ?? []).map((s) => s.term)) });
   }

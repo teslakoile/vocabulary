@@ -74,7 +74,9 @@ for (const file of files) {
   }
   const hw = entry.headword;
   if (typeof hw !== 'string' || !hw) { fail(where, 'missing headword'); continue; }
-  if (!expected.includes(hw)) {
+  // Words captured in the app carry the id D1 gave them and are not in the
+  // original list, so only an id-less entry has to match it verbatim.
+  if (!entry.id && !expected.includes(hw)) {
     const near = expected.find((e) => e.toLowerCase().replace(/[^a-z]/g, '') === hw.toLowerCase().replace(/[^a-z]/g, ''));
     fail(where, `headword "${hw}" is not in the source list verbatim${near ? ` (did you mean "${near}"?)` : ''}`);
     continue;
@@ -238,4 +240,4 @@ if (errors.length) {
   for (const e of errors) console.log(`  ✗ ${e}`);
   process.exit(1);
 }
-console.log(entries.length === 84 ? 'valid, complete' : `valid so far, ${84 - entries.length} entries still to come`);
+console.log(missing.length === 0 ? `valid, complete (${entries.length} entries)` : `valid so far, ${missing.length} of the original list still to come`);

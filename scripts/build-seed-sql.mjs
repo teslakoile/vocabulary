@@ -20,10 +20,13 @@ const order = readFileSync(SOURCE, 'utf8').split('\n').slice(1).map((l) => l.tri
 const positionOf = new Map(order.map((h, i) => [h, i]));
 
 const files = existsSync(RAW_DIR) ? readdirSync(RAW_DIR).filter((f) => f.endsWith('.json')) : [];
+// Kyle's original order first, then words captured in the app in file order.
+// Archived entries stay out of a bootstrap.
 const entries = files
+  .sort()
   .map((f) => JSON.parse(readFileSync(join(RAW_DIR, f), 'utf8')))
-  .filter((e) => positionOf.has(e.headword))
-  .sort((a, b) => positionOf.get(a.headword) - positionOf.get(b.headword));
+  .filter((e) => !e.archived_at)
+  .sort((a, b) => (positionOf.get(a.headword) ?? Infinity) - (positionOf.get(b.headword) ?? Infinity));
 
 const ids = new Set();
 const out = [];
@@ -38,7 +41,9 @@ let senseCount = 0;
 let cardCount = 0;
 
 for (const entry of entries) {
-  const eid = `e_${slug(entry.headword)}`;
+  // An entry pulled from the app keeps the id D1 gave it; the rest derive it.
+  const eid = entry.id ?? `e_${slug(entry.headword)}`;
+  const base = eid.replace(/^e_/, '');
   if (ids.has(eid)) throw new Error(`id collision on ${eid} (${entry.headword})`);
   ids.add(eid);
 
@@ -49,7 +54,7 @@ for (const entry of entries) {
   );
 
   entry.senses.forEach((s, i) => {
-    const sid = `s_${slug(entry.headword)}_${i}`;
+    const sid = `s_${base}_${i}`;
     senseCount++;
     out.push(
       `INSERT INTO senses (id, entry_id, position, term, accepted, definition, caution, example, cues, distractors, word_distractors, gloss, gloss_distractors, prompt_version, created_at, updated_at) VALUES ` +
@@ -65,7 +70,7 @@ for (const entry of entries) {
       cardCount++;
       out.push(
         `INSERT INTO cards (id, sense_id, type, fsrs_state, due_at, intake_order, created_at) VALUES ` +
-          `(${q(`c_${slug(entry.headword)}_${i}_${type}`)}, ${q(sid)}, '${type}', NULL, NULL, ${intake++}, ${q(NOW)}) ` +
+          `(${q(`c_${base}_${i}_${type}`)}, ${q(sid)}, '${type}', NULL, NULL, ${intake++}, ${q(NOW)}) ` +
           // intake_order is the only card column this rewrites. Adding a card
           // type renumbers the whole sequence, and a card left on the old
           // numbering drifts away from its own siblings. fsrs_state, due_at and

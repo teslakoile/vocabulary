@@ -45,6 +45,9 @@ export interface Entry {
   tags: string[];
   status: 'bare' | 'generating' | 'ready' | 'failed';
   archived_at: string | null;
+  /** Set when Kyle flags a word for the next refine session. */
+  flagged_at: string | null;
+  flag_note: string | null;
   updated_at: string;
   senses: Sense[];
 }

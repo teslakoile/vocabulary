@@ -14,7 +14,7 @@
  */
 import { applyGrade } from '../shared/scheduler';
 import { sendPush, type PushSubscriptionJson } from './push';
-import type { Card, Entry, Grade, PullResponse, ReviewEvent, Sense } from '../shared/types';
+import { CARD_TYPES, type Card, type Entry, type Grade, type PullResponse, type ReviewEvent, type Sense } from '../shared/types';
 
 export interface Env {
   DB: D1Database;
@@ -131,6 +131,8 @@ type EntryRow = {
   tags: string | null;
   status: string | null;
   archived_at: string | null;
+  flagged_at: string | null;
+  flag_note: string | null;
   updated_at: string;
 };
 
@@ -204,7 +206,7 @@ async function corpus(request: Request, env: Env): Promise<Response> {
 
   const [entryRows, senseRows] = await Promise.all([
     env.DB.prepare(
-      'SELECT id, headword, capture_note, tags, status, archived_at, updated_at FROM entries'
+      'SELECT id, headword, capture_note, tags, status, archived_at, flagged_at, flag_note, updated_at FROM entries'
     ).all<EntryRow>(),
     env.DB.prepare(
       `SELECT id, entry_id, position, term, accepted, definition, caution, example,
@@ -244,6 +246,8 @@ async function corpus(request: Request, env: Env): Promise<Response> {
     tags: parseJson<string[]>(row.tags, []),
     status: (row.status as Entry['status']) ?? 'bare',
     archived_at: row.archived_at,
+    flagged_at: row.flagged_at,
+    flag_note: row.flag_note,
     updated_at: row.updated_at,
     senses: sensesByEntry.get(row.id) ?? [],
   }));
@@ -424,6 +428,113 @@ async function createEntry(request: Request, env: Env): Promise<Response> {
 }
 
 /**
+ * Flag a word for the next refine session, or clear the flag.
+ *
+ * The word stays in practice while flagged: the flag says the content needs a
+ * look, not that it is unusable.
+ */
+async function flagEntry(id: string, request: Request, env: Env, on: boolean): Promise<Response> {
+  const body = on ? ((await request.json().catch(() => null)) as { note?: string } | null) : null;
+  const now = new Date().toISOString();
+  const result = await env.DB.prepare(
+    'UPDATE entries SET flagged_at = ?, flag_note = ?, updated_at = ? WHERE id = ?'
+  )
+    .bind(on ? now : null, on ? body?.note?.trim().slice(0, 500) || null : null, now, id)
+    .run();
+  if (!result.meta.changes) return json({ error: 'not found' }, 404);
+  return json({ id, flagged_at: on ? now : null });
+}
+
+const MAX_SENSES = 6;
+
+/**
+ * Publish one entry's content from a refine session.
+ *
+ * Upserts each sense by position, creates the four cards for any sense that
+ * does not have them yet at the end of the intake queue, marks the entry ready,
+ * and clears its flag. Existing cards are never touched, so schedules and
+ * review history survive a republish.
+ *
+ * It refuses to shrink an entry. Removing a sense would cascade through its
+ * cards to its review events, which is how the 0004 migration lost a log.
+ *
+ * One entry per request keeps this well inside the free plan: at most 6 senses,
+ * so 3 reads and 32 writes against the 50-query limit.
+ */
+async function publishContent(id: string, request: Request, env: Env): Promise<Response> {
+  const body = (await request.json().catch(() => null)) as { headword?: string; senses?: Partial<Sense>[] } | null;
+  const senses = body?.senses;
+  if (!Array.isArray(senses) || senses.length === 0 || senses.length > MAX_SENSES) {
+    return json({ error: `senses must be an array of 1 to ${MAX_SENSES}` }, 400);
+  }
+  for (const [i, s] of senses.entries()) {
+    for (const field of ['term', 'definition', 'gloss', 'caution', 'example'] as const) {
+      if (typeof s?.[field] !== 'string' || !s[field]!.trim()) {
+        return json({ error: `sense ${i} is missing ${field}` }, 400);
+      }
+    }
+  }
+
+  const [entry, existing, last] = await Promise.all([
+    env.DB.prepare('SELECT id FROM entries WHERE id = ?').bind(id).first<{ id: string }>(),
+    env.DB.prepare('SELECT id, position FROM senses WHERE entry_id = ?')
+      .bind(id)
+      .all<{ id: string; position: number }>(),
+    env.DB.prepare('SELECT COALESCE(MAX(intake_order), -1) AS last FROM cards').first<{ last: number }>(),
+  ]);
+  if (!entry) return json({ error: 'not found' }, 404);
+  if (existing.results.length > senses.length) {
+    return json({ error: 'refusing to remove senses: their review history would be deleted' }, 409);
+  }
+
+  const base = id.replace(/^e_/, '');
+  const now = new Date().toISOString();
+  let intake = Number(last?.last ?? -1) + 1;
+  const statements: D1PreparedStatement[] = [];
+
+  senses.forEach((s, i) => {
+    const senseId = existing.results.find((r) => Number(r.position) === i)?.id ?? `s_${base}_${i}`;
+    statements.push(
+      env.DB.prepare(
+        `INSERT INTO senses (id, entry_id, position, term, accepted, definition, caution, example, cues,
+                             distractors, word_distractors, gloss, gloss_distractors, prompt_version,
+                             created_at, updated_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+         ON CONFLICT(id) DO UPDATE SET term = excluded.term, accepted = excluded.accepted,
+           definition = excluded.definition, caution = excluded.caution, example = excluded.example,
+           cues = excluded.cues, distractors = excluded.distractors,
+           word_distractors = excluded.word_distractors, gloss = excluded.gloss,
+           gloss_distractors = excluded.gloss_distractors, prompt_version = excluded.prompt_version,
+           updated_at = excluded.updated_at`
+      ).bind(
+        senseId, id, i, s.term!.trim(), JSON.stringify(s.accepted ?? []), s.definition!.trim(),
+        s.caution!.trim(), s.example!.trim(), JSON.stringify(s.cues ?? []),
+        JSON.stringify(s.distractors ?? []), JSON.stringify(s.word_distractors ?? []),
+        s.gloss!.trim(), JSON.stringify(s.gloss_distractors ?? []), s.prompt_version ?? null, now, now
+      )
+    );
+    for (const type of CARD_TYPES) {
+      statements.push(
+        env.DB.prepare(
+          `INSERT OR IGNORE INTO cards (id, sense_id, type, fsrs_state, due_at, intake_order, created_at)
+           VALUES (?, ?, ?, NULL, NULL, ?, ?)`
+        ).bind(`c_${base}_${i}_${type}`, senseId, type, intake++, now)
+      );
+    }
+  });
+
+  statements.push(
+    env.DB.prepare(
+      `UPDATE entries SET headword = COALESCE(?, headword), status = 'ready', flagged_at = NULL,
+                          flag_note = NULL, updated_at = ? WHERE id = ?`
+    ).bind(body?.headword?.trim() || null, now, id)
+  );
+
+  await env.DB.batch(statements);
+  return json({ id, senses: senses.length, status: 'ready' });
+}
+
+/**
  * Inline edit, from a card's answer side or the browse screen.
  *
  * Whole-entry last-write-wins. Two devices editing the same entry within a
@@ -569,10 +680,15 @@ export default {
     const route = `${request.method} ${url.pathname}`;
 
     // /api/entries/:id and /api/entries/:id/archive
-    const entryMatch = url.pathname.match(/^\/api\/entries\/([^/]+)(\/archive)?$/);
+    const entryMatch = url.pathname.match(/^\/api\/entries\/([^/]+)(\/archive|\/flag|\/content)?$/);
     if (entryMatch?.[1]) {
       const id = entryMatch[1];
-      const archiveSuffix = entryMatch[2];
+      const suffix = entryMatch[2];
+      if (suffix === '/flag' && request.method === 'POST') return flagEntry(id, request, env, true);
+      if (suffix === '/flag' && request.method === 'DELETE') return flagEntry(id, request, env, false);
+      if (suffix === '/content' && request.method === 'PUT') return publishContent(id, request, env);
+      const archiveSuffix = suffix === '/archive' ? suffix : undefined;
+      if (suffix && !archiveSuffix) return json({ error: 'method not allowed' }, 405);
       if (archiveSuffix && request.method === 'POST') return archiveEntry(id, true, env);
       if (archiveSuffix && request.method === 'DELETE') return archiveEntry(id, false, env);
       if (request.method === 'PATCH') return updateEntry(id, request, env);
