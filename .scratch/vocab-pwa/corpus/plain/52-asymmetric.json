@@ -1,0 +1,16 @@
+{
+  "headword": "asymmetric",
+  "senses": [
+    {
+      "term": "asymmetric",
+      "gloss": "uneven between two sides",
+      "gloss_distractors": [
+        "certain to succeed",
+        "hard to explain simply",
+        "shared equally by everyone"
+      ],
+      "caution": "It says nothing about how likely something is. Use it only if you can say which side is bigger and by roughly how much, because investors will ask for both numbers.",
+      "definition": "Unequal on the two sides, usually a small downside against a much larger upside."
+    }
+  ]
+}

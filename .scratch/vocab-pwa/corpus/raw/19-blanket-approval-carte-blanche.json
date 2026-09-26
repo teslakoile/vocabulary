@@ -7,7 +7,7 @@
         "carte blanche"
       ],
       "definition": "Permission given once in advance to cover a whole class of decisions.",
-      "caution": "Claiming it is far riskier than having it. Tell a committee you have blanket approval and you have invited someone to go and check, and permissions of this shape almost always turn out to have had conditions attached that nobody wrote down. Carte blanche carries a whiff of indulgence on top: about someone else it implies they are unsupervised, about yourself it sounds like a boast.",
+      "caution": "Claim it only if you are sure, because people will check and there are usually conditions. Carte blanche sounds boastful about yourself and suggests no supervision of others.",
       "example": "We do not have blanket approval for production data, it is per use case, and the last one took three weeks.",
       "cues": [
         {
@@ -42,9 +42,15 @@
       "word_distractors": [
         "obscure",
         "fearless forecast",
-        "failure mode",
         "tacit knowledge",
-        "heuristic"
+        "heuristic",
+        "frontrunner"
+      ],
+      "gloss": "a general permission given in advance",
+      "gloss_distractors": [
+        "a formal written warning",
+        "a detailed review by outside auditors",
+        "a refusal to take part"
       ]
     }
   ]

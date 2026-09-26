@@ -1,0 +1,16 @@
+{
+  "headword": "hot-swap",
+  "senses": [
+    {
+      "term": "hot-swap",
+      "gloss": "to replace while still running",
+      "gloss_distractors": [
+        "to shut down for repairs",
+        "to copy data to a backup",
+        "to move data between two servers"
+      ],
+      "caution": "It promises no downtime, and people will hold you to that. Said about a person, it treats people as interchangeable, which sounds cold in front of their manager.",
+      "definition": "To replace a running part without stopping the system around it."
+    }
+  ]
+}

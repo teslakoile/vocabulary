@@ -6,8 +6,8 @@
       "accepted": [
         "despondency"
       ],
-      "definition": "So low that you have given up expecting things to get better.",
-      "caution": "It is a heavy word about someone's inner state, close to a diagnosis, and it travels: said about a named colleague it will be repeated back to them. It is also about hopelessness, not disappointment, so after one bad quarter people are deflated, not despondent, and the stronger word makes a room stop and ask whether you are all right. About yourself in a professional setting it overshares.",
+      "definition": "Very sad and without hope that things will get better.",
+      "caution": "It describes deep hopelessness, so use it with care about a named colleague. After one setback people are disappointed, and despondent will make others worry about them.",
       "prompt_version": 2,
       "example": "I would not say the team is despondent, but a third slipped date has taken something out of them.",
       "cues": [
@@ -33,18 +33,24 @@
         }
       ],
       "distractors": [
-        "Aware of something and visibly taking it into account.",
-        "Weight and seriousness in how a person carries themselves.",
+        "Aware of something and taking it into account.",
+        "Weight and seriousness in how you carry yourself.",
         "Tangled into something so completely that you can no longer act on your own.",
         "Alert to something and picking up its signals early enough to adjust.",
         "Done on purpose and after thought, rather than by accident or by drift."
       ],
       "word_distractors": [
-        "obfuscate",
-        "enmeshed",
-        "verifiability",
-        "frontrunner",
-        "esoteric"
+        "continuum",
+        "buy-in",
+        "community of practice",
+        "dogfooding",
+        "tectonic shift"
+      ],
+      "gloss": "sad and without hope",
+      "gloss_distractors": [
+        "calm and relaxed",
+        "pleased with yourself",
+        "angry and ready to argue"
       ]
     }
   ]

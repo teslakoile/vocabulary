@@ -9,7 +9,7 @@
         "asymmetries"
       ],
       "definition": "Unequal on the two sides, usually a small downside against a much larger upside.",
-      "caution": "It says nothing about likelihood, so calling something asymmetric is not calling it a good idea - a lottery ticket is asymmetric. It also only earns its place if you can say which side is bigger and roughly by how much; used bare it dresses a hunch as analysis, and an investment committee is precisely the room that asks for the two numbers. Technical listeners have the word already spoken for by encryption and by information asymmetry, so name what is uneven.",
+      "caution": "It says nothing about how likely something is. Use it only if you can say which side is bigger and by roughly how much, because investors will ask for both numbers.",
       "example": "The pilot is asymmetric: worst case we lose a quarter of one team's time, best case we retire two vendors.",
       "cues": [
         {
@@ -43,10 +43,16 @@
       "prompt_version": 2,
       "word_distractors": [
         "front and center",
-        "amenable",
         "fan-out",
         "substantial",
-        "disparage"
+        "disparage",
+        "institutional knowledge"
+      ],
+      "gloss": "uneven between two sides",
+      "gloss_distractors": [
+        "certain to succeed",
+        "hard to explain simply",
+        "shared equally by everyone"
       ]
     }
   ]

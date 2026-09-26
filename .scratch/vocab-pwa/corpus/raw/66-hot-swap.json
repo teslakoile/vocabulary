@@ -9,7 +9,7 @@
         "hot-swappable"
       ],
       "definition": "To replace a running part without stopping the system around it.",
-      "caution": "The word promises no downtime, and that is a claim someone will hold you to on the day. Used about a person it is worse: hot-swap Priya onto that reads as people being interchangeable parts, which is fine between engineers and cold in front of her manager.",
+      "caution": "It promises no downtime, and people will hold you to that. Said about a person, it treats people as interchangeable, which sounds cold in front of their manager.",
       "example": "The provider sits behind an interface, so we can hot-swap the model without the application knowing.",
       "cues": [
         {
@@ -38,11 +38,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "gravitas",
+        "build that muscle",
         "diaspora",
-        "persistence",
-        "persist",
-        "first principles"
+        "pick your brain",
+        "fearless forecast",
+        "exacerbate"
+      ],
+      "gloss": "to replace while still running",
+      "gloss_distractors": [
+        "to shut down for repairs",
+        "to copy data to a backup",
+        "to move data between two servers"
       ]
     }
   ]

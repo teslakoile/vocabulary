@@ -9,7 +9,7 @@
         "wordsmiths"
       ],
       "definition": "To reword a draft so it reads better without changing what it says.",
-      "caution": "It draws a line between surface and substance, and whoever says it gets to decide which side something falls on. Offered about your own draft it is modest and useful. Said about a colleague's suggested change - 'that's just wordsmithing' - it rules the change cosmetic, and if their point was actually substantive you have dismissed it without answering it. In front of a sponsor, calling a session wordsmithing says out loud that the meeting has stopped making decisions.",
+      "caution": "It is fine about your own draft. Calling someone else's change 'just wordsmithing' dismisses it as cosmetic, which is unfair if their point was real.",
       "example": "The recommendation is agreed. Give me an hour to wordsmith it before it goes to the committee.",
       "cues": [
         {
@@ -43,6 +43,12 @@
         "play it by ear",
         "top brass",
         "watch outs"
+      ],
+      "gloss": "to improve the wording",
+      "gloss_distractors": [
+        "to check the facts",
+        "to write from scratch",
+        "to translate into English"
       ]
     }
   ]

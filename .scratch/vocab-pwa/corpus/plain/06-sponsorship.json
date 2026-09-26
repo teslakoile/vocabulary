@@ -1,0 +1,17 @@
+{
+  "headword": "sponsorship",
+  "senses": [
+    {
+      "term": "sponsorship",
+      "gloss": "a senior person's active backing",
+      "gloss_distractors": [
+        "a formal job review",
+        "a transfer to a new team",
+        "a written complaint about a manager"
+      ],
+      "caution": "A sponsor speaks up for you, while a mentor only gives advice, so do not call an adviser your sponsor. It can also mean paid advertising, so say executive sponsor first.",
+      "definition": "A senior person using their own reputation and influence to support a person or project.",
+      "definition_changed": true
+    }
+  ]
+}

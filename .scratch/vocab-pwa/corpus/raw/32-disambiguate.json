@@ -7,7 +7,7 @@
         "disambiguation"
       ],
       "definition": "To make clear which of two possible meanings is the one meant.",
-      "caution": "It is a technical-register word, and in a business room it can sound like procedural cover for the actual fight: reach for it when two people simply want different outcomes and you look like you are managing them rather than answering them. Keep it for cases where the confusion really is about which thing a word points at, and say we disagree when that is what is happening.",
+      "caution": "It is technical and can sound like you are avoiding a real disagreement. Use it when people mean different things by one word, and say we disagree when they want different results.",
       "prompt_version": 2,
       "example": "Both teams say the client and mean different entities. Before we go further can we disambiguate that one word?",
       "cues": [
@@ -38,9 +38,15 @@
       "word_distractors": [
         "despondent",
         "serialize",
-        "idempotent",
         "executive presence",
-        "buy-in"
+        "lend itself",
+        "flywheel effect"
+      ],
+      "gloss": "to make a meaning clear",
+      "gloss_distractors": [
+        "to make worse",
+        "to delay a decision",
+        "to argue against strongly"
       ]
     }
   ]

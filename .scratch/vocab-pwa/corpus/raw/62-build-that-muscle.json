@@ -12,7 +12,7 @@
         "build muscle"
       ],
       "definition": "To build a skill through repeated practice instead of one-off training.",
-      "caution": "It says the ability is missing today. Said about another team that is a criticism in gym clothes; said about your own it is an admission, which is fine only if the next sentence names the actual reps. To a team already at capacity it lands as more work with no more people. It is also coaching-deck language, so in a written board paper it reads as a slogan and invites the obvious question of what the exercise is and who is doing it.",
+      "caution": "It says the skill is missing today. About another team it is a criticism, and to a busy team it means more work, so name the actual practice and who will do it.",
       "example": "We can buy the first three evaluations in. If we want this capability in-house, at some point we have to build that muscle ourselves.",
       "cues": [
         {
@@ -42,10 +42,16 @@
       "prompt_version": 2,
       "word_distractors": [
         "nontrivial",
-        "attuned",
-        "mold breaker",
         "persist",
-        "pick your brain"
+        "pick your brain",
+        "sleuthing",
+        "institutional knowledge"
+      ],
+      "gloss": "to develop a skill by practice",
+      "gloss_distractors": [
+        "to buy a ready-made tool",
+        "to cut a team's workload",
+        "to measure a team's performance"
       ]
     }
   ]

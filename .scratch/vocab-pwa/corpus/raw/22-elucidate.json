@@ -5,7 +5,7 @@
       "term": "elucidate",
       "accepted": [],
       "definition": "To explain something already said or written by laying out the reasoning behind it.",
-      "caution": "It is a formal word, and spoken it can sound like you are performing. Asking a person to elucidate is a half-step colder than asking them to explain, because it says they were not clear; it lands better in writing, and better aimed at a document than at the author. It also promises the thing gets clearer, not longer. More words that still do not land is the opposite move, and someone will say so.",
+      "caution": "It is formal and can sound stiff out loud. Asking someone to elucidate says they were unclear, so use it about a document rather than about the person who wrote it.",
       "prompt_version": 2,
       "example": "The deck lands the recommendation but never elucidates how we got to that number, and that is the part the committee will push on.",
       "cues": [
@@ -34,11 +34,17 @@
         "To ask someone to talk through what they have learned, informally and without an agenda."
       ],
       "word_distractors": [
-        "flywheel effect",
-        "despondent",
         "progressive",
+        "persistence",
+        "primitive",
         "ephemeral",
-        "surreptitiously"
+        "obfuscate"
+      ],
+      "gloss": "to explain clearly",
+      "gloss_distractors": [
+        "to make worse",
+        "to hide on purpose",
+        "to argue against strongly"
       ]
     }
   ]

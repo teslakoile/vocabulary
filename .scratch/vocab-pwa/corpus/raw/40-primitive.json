@@ -7,7 +7,7 @@
         "primitives"
       ],
       "definition": "A basic building block a platform gives you to build bigger things out of.",
-      "caution": "Outside a technical room the ordinary sense of the word wins, and that sense is crude, backward, unevolved. Say a partner team's tooling is primitive in front of a steering committee and you have insulted them by accident. Even among engineers it is a design claim rather than a description: it asserts the piece is the right size and shape to build on, so if it turns out to be three decisions welded together, someone will take that apart in review.",
+      "caution": "Outside technical rooms people hear the everyday meaning, crude or backward, so it can insult a team's tools. Among engineers it claims the piece is the right size to build on.",
       "prompt_version": 2,
       "example": "Give the teams three primitives, retrieval, evaluation and identity, and let them assemble the workflow they actually need.",
       "cues": [
@@ -32,11 +32,17 @@
         "Temporary structure that holds work up until the real thing can stand on its own."
       ],
       "word_distractors": [
+        "persist",
         "lay of the land",
+        "watch outs",
         "modality",
-        "bespoke",
-        "ducks in a row",
-        "community of practice"
+        "gravitas"
+      ],
+      "gloss": "a basic piece to build with",
+      "gloss_distractors": [
+        "a security warning",
+        "a monthly usage report",
+        "a finished software product"
       ]
     }
   ]

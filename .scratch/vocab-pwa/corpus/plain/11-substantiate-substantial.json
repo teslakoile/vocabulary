@@ -1,0 +1,27 @@
+{
+  "headword": "substantiate/substantial",
+  "senses": [
+    {
+      "term": "substantiate",
+      "gloss": "to prove with evidence",
+      "gloss_distractors": [
+        "to guess without facts",
+        "to delay a decision",
+        "to repeat word for word"
+      ],
+      "caution": "Asking someone to substantiate a claim shows you doubt it. For a colleague's claim in front of their boss, just ask for the source instead.",
+      "definition": "To back a claim with evidence that someone else can check."
+    },
+    {
+      "term": "substantial",
+      "gloss": "large enough to matter",
+      "gloss_distractors": [
+        "happening every day",
+        "hard to understand",
+        "known only to a few people"
+      ],
+      "caution": "People will ask how much, so give the number if you have it. Use the word alone only when you are not allowed to share the figure.",
+      "definition": "Large enough to matter, said of an amount or a change without giving a number."
+    }
+  ]
+}

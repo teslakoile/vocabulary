@@ -1,0 +1,16 @@
+{
+  "headword": "attuned",
+  "senses": [
+    {
+      "term": "attuned",
+      "gloss": "sensitive to small signals",
+      "gloss_distractors": [
+        "slow to make decisions",
+        "strict about following rules",
+        "proud of past success"
+      ],
+      "caution": "Use it to praise someone else. Saying it about yourself sounds boastful, and in AI talk people may hear 'tuned' and think of a trained model.",
+      "definition": "Alert to something and quick to pick up small signals from it and adjust."
+    }
+  ]
+}

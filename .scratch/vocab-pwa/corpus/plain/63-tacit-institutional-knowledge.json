@@ -1,0 +1,28 @@
+{
+  "headword": "tacit/institutional knowledge",
+  "senses": [
+    {
+      "term": "tacit knowledge",
+      "gloss": "skill you cannot easily explain",
+      "gloss_distractors": [
+        "an organisation's unwritten history",
+        "a written set of steps",
+        "a formal training course"
+      ],
+      "caution": "Use it only for skill that is truly hard to write down. A deployment process is just steps, so calling it tacit sounds like an excuse.",
+      "definition": "What someone can do well but cannot fully put into words."
+    },
+    {
+      "term": "institutional knowledge",
+      "gloss": "an organisation's unwritten history",
+      "gloss_distractors": [
+        "skill you cannot easily explain",
+        "a new employee's training plan",
+        "a public report on company finances"
+      ],
+      "caution": "It is usually an argument for keeping someone, and it can admit you let one person become a risk. It can be written down, so expect to be asked why it has not been.",
+      "definition": "What an organisation knows about its own past and habits but has never written down.",
+      "definition_changed": true
+    }
+  ]
+}

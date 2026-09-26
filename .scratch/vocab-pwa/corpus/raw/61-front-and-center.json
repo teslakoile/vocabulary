@@ -9,7 +9,7 @@
         "front-and-centre"
       ],
       "definition": "In the most prominent position, where nobody can miss it.",
-      "caution": "It is a claim about visibility, not about importance, and the two come apart: whatever you put there also takes the questions, so the phrase is really a decision about exposure. That is doubly true of a person - being put there is not purely a compliment, because whoever stands there answers for the thing. The register is spoken and distinctly American, so in a formal board paper it reads breezier than everything around it.",
+      "caution": "Whatever you put there also gets the most questions, and a person put there answers for it. It is spoken American English and sounds casual in a formal paper.",
       "example": "Put the cost of doing nothing front and center. Everything else can go in the appendix.",
       "cues": [
         {
@@ -38,11 +38,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "modality",
-        "substantiate",
-        "long-horizon",
-        "executive presence",
-        "flywheel effect"
+        "harness",
+        "obfuscate",
+        "by and large",
+        "ephemeral",
+        "hyperscaler"
+      ],
+      "gloss": "in the most visible place",
+      "gloss_distractors": [
+        "hidden out of sight",
+        "at the very end",
+        "shared with only a few people"
       ]
     }
   ]

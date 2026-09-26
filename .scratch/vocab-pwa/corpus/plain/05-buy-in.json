@@ -1,0 +1,16 @@
+{
+  "headword": "buy-in",
+  "senses": [
+    {
+      "term": "buy-in",
+      "gloss": "real support for a plan",
+      "gloss_distractors": [
+        "a delay to a project",
+        "a strong objection to a plan",
+        "a list of project costs"
+      ],
+      "caution": "Only claim it when people truly agree, because a signature alone does not count. Saying you need to get it from your own team can sound like you plan to push them.",
+      "definition": "Genuine agreement from the people whose help you need, not just their signature."
+    }
+  ]
+}

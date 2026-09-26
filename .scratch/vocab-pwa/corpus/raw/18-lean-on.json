@@ -7,8 +7,8 @@
         "leaned on",
         "leaning on"
       ],
-      "definition": "To rely on someone or something to carry part of the work for you.",
-      "caution": "The same phrase also means to apply pressure, and only the object and your tone separate them, so we leaned on the vendor and we leaned on Legal are two different sentences. Save the pressure reading for suppliers, never colleagues. And when you say it about a person in front of their manager, name what they actually gave you, otherwise it sounds like you handed them your job.",
+      "definition": "To rely on someone or something to do part of the work for you.",
+      "caution": "It can also mean to put pressure on someone, so be clear which you mean. When you say it about a colleague, say exactly how they helped.",
       "example": "For the regulatory wording we leaned on Legal rather than inventing our own language.",
       "cues": [
         {
@@ -34,7 +34,7 @@
       ],
       "distractors": [
         "To ask someone to explain their reasoning before you decide.",
-        "To take a job over completely from the person who was doing it.",
+        "To take a job over from the person who was doing it.",
         "To hand a decision upwards so that somebody more senior owns it.",
         "To spread one piece of work across many workers running at the same time.",
         "To deliberately do without something you could easily have had, as a matter of principle."
@@ -42,10 +42,16 @@
       "prompt_version": 2,
       "word_distractors": [
         "first principles",
-        "dogfooding",
-        "run it by you",
+        "primitive",
+        "eschew",
         "sleuthing",
-        "first order effects"
+        "substantiate"
+      ],
+      "gloss": "to rely on for help",
+      "gloss_distractors": [
+        "to argue with",
+        "to report to a manager",
+        "to take credit for"
       ]
     }
   ]

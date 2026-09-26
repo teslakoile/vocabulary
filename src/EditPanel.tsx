@@ -26,6 +26,7 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
   const [draft, setDraft] = useState({
     term: sense.term,
     accepted: sense.accepted.join(', '),
+    gloss: sense.gloss,
     definition: sense.definition,
     caution: sense.caution,
     example: sense.example,
@@ -45,6 +46,7 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
       ...sense,
       term: draft.term.trim(),
       accepted: draft.accepted.split(',').map((a) => a.trim()).filter(Boolean),
+      gloss: draft.gloss.trim(),
       definition: draft.definition.trim(),
       caution: draft.caution.trim(),
       example: draft.example.trim(),
@@ -94,6 +96,10 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
           autoCapitalize="none"
           spellCheck={false}
         />
+      </div>
+      <div className="grid gap-2">
+        <Label htmlFor={`gloss-${sense.id}`} className="text-muted-foreground">Short meaning</Label>
+        <Input id={`gloss-${sense.id}`} value={draft.gloss} onChange={set('gloss')} placeholder="to strengthen" />
       </div>
       <div className="grid gap-2">
         <Label htmlFor={`definition-${sense.id}`} className="text-muted-foreground">Definition</Label>

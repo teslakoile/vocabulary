@@ -1,0 +1,16 @@
+{
+  "headword": "modality",
+  "senses": [
+    {
+      "term": "modality",
+      "gloss": "a type of input or output",
+      "gloss_distractors": [
+        "a step in a process",
+        "a measure of accuracy",
+        "a place where data is kept"
+      ],
+      "caution": "In AI talk it means a type of data, such as text or images. Avoid it where 'format' or 'channel' would do, because it sounds inflated and other fields read it differently.",
+      "definition": "A kind of input or output a system works in, such as text, images, audio or video."
+    }
+  ]
+}

@@ -9,7 +9,7 @@
         "lends itself to"
       ],
       "definition": "To have qualities that make a particular use easy or natural.",
-      "caution": "It is a deliberately weak claim that people hear as an endorsement. It says good fit, not it will work, and that gap is your escape route later, which a sharp sponsor will notice you leaving open. The same phrase turns critical when what follows is bad, so the object sets the temperature.",
+      "caution": "It claims only a good fit, though people hear it as support, and sharp readers notice the room it leaves you to back out. Followed by something bad, it becomes a criticism.",
       "example": "Reconciliation lends itself to this — the rules are stable and every answer is checkable.",
       "cues": [
         {
@@ -42,11 +42,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
+        "idempotent",
+        "panopticon",
         "advocate",
-        "ephemeral",
-        "unequivocal",
-        "sandbox",
-        "substrate"
+        "fearless forecast",
+        "asymmetric"
+      ],
+      "gloss": "to be well suited to",
+      "gloss_distractors": [
+        "to be too costly",
+        "to be hard to explain",
+        "to be out of date"
       ]
     }
   ]

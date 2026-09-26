@@ -135,6 +135,21 @@ for (const file of files) {
     const aside = definition.match(/[:;]|\s[-\u2013\u2014]\s/);
     if (aside) fail(w, `definition contains "${aside[0].trim()}", which delays the meaning`);
 
+    // The recognition card asks "What does X mean?" with four short glosses.
+    // All four share a grammatical form, or the card answers itself.
+    if (typeof s.gloss !== 'string' || !s.gloss.trim()) fail(w, 'gloss is empty');
+    else if (s.gloss.length > 40) fail(w, `gloss is ${s.gloss.length} characters, over 40`);
+    if (!Array.isArray(s.gloss_distractors) || s.gloss_distractors.length !== 3) {
+      fail(w, 'gloss_distractors must be an array of 3');
+    } else if (s.gloss) {
+      const verb = (t) => /^to\s/i.test(t);
+      for (const g of s.gloss_distractors) {
+        if (verb(g) !== verb(s.gloss)) fail(w, `gloss distractor "${g}" is a different form from "${s.gloss}"`);
+      }
+    }
+    // Cautions were rewritten plain: short, no figures of speech.
+    if ((s.caution || '').length > 180) fail(w, `caution is ${s.caution.length} characters, over 180`);
+
     // Wrong words for the card that shows the definition and asks for the word.
     // The failure mode here is a distractor you can argue for: two short plain
     // definitions collide far more easily than two long ones did.

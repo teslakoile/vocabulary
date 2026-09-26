@@ -7,7 +7,7 @@
         "contrivance"
       ],
       "definition": "Obviously arranged to give a particular impression, and unconvincing because of it.",
-      "caution": "It is a verdict on motive, not on method. Say it about a colleague's demo in front of their sponsor and you have accused them of arranging the evidence, which is a much bigger charge than the one you probably meant. If you only mean the example is too clean to prove anything, say unrepresentative.",
+      "caution": "It judges motive, so calling a colleague's demo contrived accuses them of faking the evidence. If you only mean the example is too neat to prove much, say unrepresentative.",
       "example": "That benchmark is contrived — the questions were written after we knew what the model was good at.",
       "cues": [
         {
@@ -40,11 +40,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "bolster",
+        "mold breaker",
         "advocate for",
         "lean on",
-        "primitive",
-        "frontrunner"
+        "sleuthing",
+        "hyperscaler"
+      ],
+      "gloss": "forced and not believable",
+      "gloss_distractors": [
+        "hard to understand",
+        "too costly to be practical",
+        "carefully checked by experts"
       ]
     }
   ]

@@ -1,0 +1,16 @@
+{
+  "headword": "watch outs",
+  "senses": [
+    {
+      "term": "watch outs",
+      "gloss": "things likely to go wrong",
+      "gloss_distractors": [
+        "goals for next year",
+        "reasons a project succeeded",
+        "people who must approve"
+      ],
+      "caution": "It is slide language and sounds odd in speech. If something is a real risk, call it a risk and give it an owner and a plan.",
+      "definition": "A short list of things likely to go wrong, given in advance so nobody is surprised."
+    }
+  ]
+}

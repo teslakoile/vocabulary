@@ -30,6 +30,10 @@ export interface Sense {
   distractors: string[];
   /** 5 wrong words taken from other entries, for the card that shows the definition. */
   word_distractors: string[];
+  /** The dictionary-plain meaning in 2 to 6 words, e.g. "to strengthen". */
+  gloss: string;
+  /** 3 wrong glosses in the same grammatical form, for the recognition card. */
+  gloss_distractors: string[];
   prompt_version: number | null;
   updated_at: string;
 }

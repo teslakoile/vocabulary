@@ -1,0 +1,17 @@
+{
+  "headword": "verticals/industry verticals",
+  "senses": [
+    {
+      "term": "vertical",
+      "gloss": "an industry sector",
+      "gloss_distractors": [
+        "a sales region",
+        "a layer of management",
+        "a company's main product"
+      ],
+      "caution": "Use it only for market segments. Promising to work one vertical at a time commits you to separate work for each industry, and people will ask which comes first.",
+      "definition": "A part of the market made up of one industry, such as banking or healthcare.",
+      "definition_changed": true
+    }
+  ]
+}

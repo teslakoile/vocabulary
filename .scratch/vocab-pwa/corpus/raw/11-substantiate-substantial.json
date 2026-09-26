@@ -7,7 +7,7 @@
         "substantiated"
       ],
       "definition": "To back a claim with evidence that someone else can check.",
-      "caution": "Asking someone to substantiate something is a challenge however gently you say it, and everyone in the room hears the doubt. Used about your own claims it reads as rigour; used about a colleague's in front of their boss it reads as an ambush, so if you must, ask for the source rather than for substantiation.",
+      "caution": "Asking someone to substantiate a claim shows you doubt it. For a colleague's claim in front of their boss, just ask for the source instead.",
       "example": "I can substantiate the thirty per cent figure from two quarters of tickets, it is not a vendor number.",
       "cues": [
         {
@@ -36,18 +36,24 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
+        "persistence",
         "panopticon",
         "play it by ear",
         "tectonic shift",
-        "disambiguate",
-        "harness"
+        "disambiguate"
+      ],
+      "gloss": "to prove with evidence",
+      "gloss_distractors": [
+        "to guess without facts",
+        "to delay a decision",
+        "to repeat word for word"
       ]
     },
     {
       "term": "substantial",
       "accepted": [],
       "definition": "Large enough to matter, said of an amount or a change without giving a number.",
-      "caution": "A hedge that sounds like a fact. In front of anyone numerate, substantial savings invites the immediate question of how much, and if you cannot answer you have lost more ground than the vague word ever bought you. Keep it for cases where the figure is genuinely not yours to give, and give the figure everywhere else.",
+      "caution": "People will ask how much, so give the number if you have it. Use the word alone only when you are not allowed to share the figure.",
       "example": "There is a substantial gap between what the pilot proved and what the rollout is assuming.",
       "cues": [
         {
@@ -80,7 +86,13 @@
         "long-horizon",
         "finesse",
         "north star",
-        "hyperscaler"
+        "substrate"
+      ],
+      "gloss": "large enough to matter",
+      "gloss_distractors": [
+        "happening every day",
+        "hard to understand",
+        "known only to a few people"
       ]
     }
   ]

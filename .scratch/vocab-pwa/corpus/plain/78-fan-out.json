@@ -1,0 +1,16 @@
+{
+  "headword": "fan-out",
+  "senses": [
+    {
+      "term": "fan-out",
+      "gloss": "splitting one request into many",
+      "gloss_distractors": [
+        "merging many results into one",
+        "retrying a failed request",
+        "limiting how many requests arrive"
+      ],
+      "caution": "In messaging systems it means one message sent to many readers, so say which you mean. People also hear a cost multiplier, so bring the numbers.",
+      "definition": "The splitting of one request into many parallel calls that must all come back."
+    }
+  ]
+}

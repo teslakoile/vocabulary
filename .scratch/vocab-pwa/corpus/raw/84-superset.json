@@ -7,7 +7,7 @@
         "strict superset"
       ],
       "definition": "A set that holds everything another set holds, and more besides.",
-      "caution": "It is a precise claim and people check it. Ninety percent of the old thing plus some new things is not a superset, and the missing ten percent is exactly what the objection will be about — so either defend nothing is lost or say covers most of. Used loosely about a person's skills or a team's remit it stops being maths and starts sounding like a ranking.",
+      "caution": "It is a precise claim, so if any of the old one is missing, say covers most of instead. Used loosely about people's skills, it reads as a ranking of people.",
       "example": "The new API is a strict superset of the old one, so nothing anybody has built stops working.",
       "cues": [
         {
@@ -36,11 +36,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "substantial",
-        "dogfooding",
-        "in pockets",
-        "buy-in",
-        "advocate"
+        "frontier",
+        "obfuscate",
+        "esoteric",
+        "vertical",
+        "rectify"
+      ],
+      "gloss": "a larger group that includes another",
+      "gloss_distractors": [
+        "a smaller part of a group",
+        "the overlap between two separate groups",
+        "two groups with nothing shared"
       ]
     }
   ]

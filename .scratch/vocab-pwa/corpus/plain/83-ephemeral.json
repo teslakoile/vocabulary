@@ -1,0 +1,16 @@
+{
+  "headword": "ephemeral",
+  "senses": [
+    {
+      "term": "ephemeral",
+      "gloss": "lasting a short time",
+      "gloss_distractors": [
+        "built to last",
+        "hidden from most users",
+        "easy to repair"
+      ],
+      "caution": "In technical talk it is a claim, and people will ask about the logs and cached data. Elsewhere it sounds literary and a bit showy when spoken.",
+      "definition": "Lasting only a short time, and built that way on purpose."
+    }
+  ]
+}

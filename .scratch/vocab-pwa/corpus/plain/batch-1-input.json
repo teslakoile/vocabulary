@@ -1,0 +1,272 @@
+[
+  {
+    "file": "01-hyperscaler.json",
+    "headword": "hyperscaler",
+    "senses": [
+      {
+        "term": "hyperscaler",
+        "definition": "One of the few cloud providers running compute and storage at a scale you cannot exhaust.",
+        "caution": "It is a category, not a compliment. Applied to your own platform or to a fast-growing vendor it will get you corrected by anyone who knows the term, and in a room that does not know it, it reads as jargon for big cloud. The useful move is to say what follows from the category: pricing power, data residency, or the fact that you will never out-spend them.",
+        "example": "We are not going to beat a hyperscaler on inference cost, so the case has to rest on the data staying ours."
+      }
+    ]
+  },
+  {
+    "file": "02-gravitas.json",
+    "headword": "gravitas",
+    "senses": [
+      {
+        "term": "gravitas",
+        "definition": "A weight and seriousness in how someone carries themselves that makes a room listen.",
+        "caution": "Never said about yourself, and rarely to someone's face. As feedback it is close to unfalsifiable and often a proxy for resembling the people already in the senior seats, so if you use it in a development conversation you owe the person a concrete behaviour to work on. Said of a peer in a standup it sounds arch; keep it for rooms where the stakes are real.",
+        "example": "He took the audit question with real gravitas, which is why the board stopped pushing on it."
+      }
+    ]
+  },
+  {
+    "file": "03-executive-presence-finesse.json",
+    "headword": "executive presence/finesse",
+    "senses": [
+      {
+        "term": "executive presence",
+        "definition": "Coming across as calm, clear and senior enough to be handed a decision.",
+        "caution": "One of the few phrases you can only ever say about someone else. As feedback it is notoriously vague and is often heard as be more like us, so it lands as a coded judgement unless you attach a concrete behaviour to it: cut the preamble, lead with the recommendation, stop narrating your working. Do not use it as a polite cover for a decision you have already made about someone.",
+        "example": "Her content is watertight; what we are coaching is executive presence, starting with not burying the ask on slide nine."
+      },
+      {
+        "term": "finesse",
+        "definition": "Skill in handling something delicate so smoothly that the difficulty never shows.",
+        "caution": "The verb has a second life that can bite you: we finessed the numbers sounds to a sceptical audience like the problem was smoothed over rather than solved. Aim it at how something was handled, never at the substance itself, and keep it well away from auditors, risk committees and anything that will be read later.",
+        "example": "He finessed the headcount question without promising anything, and the MD moved on."
+      }
+    ]
+  },
+  {
+    "file": "04-top-brass.json",
+    "headword": "top brass",
+    "senses": [
+      {
+        "term": "top brass",
+        "definition": "The most senior people in an organisation, talked about as one group from below.",
+        "caution": "It always marks you as outside the group, which is the charm of it in a corridor or a team channel and the problem with it anywhere formal. In a paper write the executive committee; said to one of them directly it is either flippant or faintly insubordinate, and said with a sigh it tells everyone how you feel about a decision you are supposed to be carrying. Borrowed from the military, and informal to the point of being wry.",
+        "example": "The brass are in the building on Thursday, so keep the demo to ten minutes and skip the architecture slide."
+      }
+    ]
+  },
+  {
+    "file": "05-buy-in.json",
+    "headword": "buy-in",
+    "senses": [
+      {
+        "term": "buy-in",
+        "definition": "Genuine agreement from the people whose help you need, not just their signature.",
+        "caution": "Not a synonym for sign-off. Claiming you have it when what you actually have is a signature is the kind of statement that collapses at the first delivery slip, and the collapse is public. Said downward it can also sound like you plan to manage people into agreeing rather than ask them, so be careful announcing that you need to get it from your own team.",
+        "example": "We have the funding, what we do not have is buy-in from the two teams who would have to change how they release."
+      }
+    ]
+  },
+  {
+    "file": "06-sponsorship.json",
+    "headword": "sponsorship",
+    "senses": [
+      {
+        "term": "sponsorship",
+        "definition": "A senior person putting their own standing behind a person or a piece of work.",
+        "caution": "The line that matters: a mentor talks to you, a sponsor talks about you. Describing someone as your sponsor when all they have given is advice overstates what you have, and it is embarrassing when the room knows them better than you do. The word also means paid branding, so with a mixed audience say executive sponsor the first time and let the rest run short.",
+        "example": "The programme has funding and it has sponsorship, so when finance pushed back last week it was not my fight alone."
+      }
+    ]
+  },
+  {
+    "file": "07-cognizant.json",
+    "headword": "cognizant",
+    "senses": [
+      {
+        "term": "cognizant",
+        "definition": "Aware of something and visibly taking it into account when a decision is made.",
+        "caution": "A memo word, not a spoken one. Said aloud it sounds stiff and aware would do the same job, but in writing it earns its place because it puts on record that you knew and weighed something, which is exactly what an auditor or a regulator is reading for. Be careful claiming it after the fact about a risk you plainly missed, and note that a large IT services firm carries the name, so in a vendor conversation there will be a beat where someone thinks you meant them.",
+        "example": "We are cognizant of the concentration risk, and the phased rollout is the answer to it."
+      }
+    ]
+  },
+  {
+    "file": "08-obscure.json",
+    "headword": "obscure",
+    "senses": [
+      {
+        "term": "obscure",
+        "definition": "Little known or hard to make out, or to keep something from being seen or understood.",
+        "caution": "The verb accuses nobody, which is the whole reason to reach for it. Saying the dashboard obscures the failure rate names a design problem; saying it obfuscates the failure rate says someone meant to mislead. Keep it pointed at the artefact rather than the person, because aimed at a colleague's explanation it is still a criticism, just a quieter one.",
+        "example": "The monthly average obscures the two days when latency tripled, so let us show the daily line instead."
+      }
+    ]
+  },
+  {
+    "file": "09-obfuscate.json",
+    "headword": "obfuscate",
+    "senses": [
+      {
+        "term": "obfuscate",
+        "definition": "To make something hard to understand on purpose.",
+        "caution": "This is an allegation of bad faith, not a comment on clarity. Aimed at a vendor's pricing page it is fair game; aimed at a colleague's slide it says they meant to mislead, and the room will hear that even if you did not mean it. If all you mean is that the explanation came out muddled, say obscure or unclear and keep the temperature down.",
+        "example": "Their per-token pricing obfuscates the real cost, so I have rebuilt it as one number per thousand queries."
+      }
+    ]
+  },
+  {
+    "file": "10-trivial-nontrivial.json",
+    "headword": "trivial/nontrivial",
+    "senses": [
+      {
+        "term": "trivial",
+        "definition": "So small or easy that it is not worth spending time on.",
+        "caution": "Said about someone else's work it is dismissive whatever you intended, because it tells them their week was not worth much. It is safest about your own work, and it is a hostage to fortune even there: the trivial change that took production down is the one everybody remembers you calling trivial.",
+        "example": "The schema change is trivial; the migration for the three teams downstream is not."
+      },
+      {
+        "term": "nontrivial",
+        "definition": "Not simple, and harder or larger than the person asking has assumed.",
+        "caution": "A technical audience's word, and it works because it is dry. In front of a board it can read as evasive, because they hear hard and immediately want a number, so put one straight after it. It also implies you have already looked, so it is a poor place to hide an estimate you have not actually made.",
+        "example": "Rewiring auth for the new tenant model is nontrivial, so call it three sprints rather than a fortnight."
+      }
+    ]
+  },
+  {
+    "file": "11-substantiate-substantial.json",
+    "headword": "substantiate/substantial",
+    "senses": [
+      {
+        "term": "substantiate",
+        "definition": "To back a claim with evidence that someone else can check.",
+        "caution": "Asking someone to substantiate something is a challenge however gently you say it, and everyone in the room hears the doubt. Used about your own claims it reads as rigour; used about a colleague's in front of their boss it reads as an ambush, so if you must, ask for the source rather than for substantiation.",
+        "example": "I can substantiate the thirty per cent figure from two quarters of tickets, it is not a vendor number."
+      },
+      {
+        "term": "substantial",
+        "definition": "Large enough to matter, said of an amount or a change without giving a number.",
+        "caution": "A hedge that sounds like a fact. In front of anyone numerate, substantial savings invites the immediate question of how much, and if you cannot answer you have lost more ground than the vague word ever bought you. Keep it for cases where the figure is genuinely not yours to give, and give the figure everywhere else.",
+        "example": "There is a substantial gap between what the pilot proved and what the rollout is assuming."
+      }
+    ]
+  },
+  {
+    "file": "12-delibrate-intentional.json",
+    "headword": "delibrate/intentional",
+    "senses": [
+      {
+        "term": "deliberate",
+        "definition": "Done on purpose and with thought, rather than by accident or drift.",
+        "caution": "About someone else's action it converts a mistake into a choice, which is why it turns up in incident reviews, complaints and disciplinary letters. About your own plan it has become management shorthand for going slowly, so a sponsor who is already impatient hears we are being deliberate as a delay dressed up as a virtue. If all you mean is that the outcome was not an accident, on purpose is the plainer and safer phrase.",
+        "example": "The gap in the rollout schedule is deliberate, we want a full month of production data before the next region goes live."
+      }
+    ]
+  },
+  {
+    "file": "13-daily-driver.json",
+    "headword": "daily driver",
+    "senses": [
+      {
+        "term": "daily driver",
+        "definition": "The tool you actually use every day, rather than a backup or one you are still testing.",
+        "caution": "It is a claim of real use, and that is the whole value of it: calling a tool your daily driver says you have hit its rough edges, so expect the follow-up question about what they are. Said of something you have opened twice it is exactly the kind of overclaim a sceptical engineer will test. It is also casual, so in a written recommendation or a vendor evaluation it reads as breezy where you wanted evidence. Borrowed from cars and now said of a laptop, an editor, a model.",
+        "example": "Claude is my daily driver, I keep the others around for the one or two jobs they are better at."
+      }
+    ]
+  },
+  {
+    "file": "14-incremental.json",
+    "headword": "incremental",
+    "senses": [
+      {
+        "term": "incremental",
+        "definition": "Proceeding by small additions, each one adding a little to what is already there.",
+        "caution": "The word has two temperatures and the room picks which one. About delivery it is a virtue; about results it is faint praise, and applied to a benefits case it is how a committee says not worth the money without having to argue. Decide which one your audience will hear before you use it about your own work. In a finance conversation it means something different again, the extra amount on top of the baseline rather than a small one.",
+        "example": "The gains are incremental per release, and it is the compounding across two quarters that the case actually rests on."
+      }
+    ]
+  },
+  {
+    "file": "15-progressive.json",
+    "headword": "progressive",
+    "senses": [
+      {
+        "term": "progressive",
+        "definition": "Advancing in stages, each stage going further than the last.",
+        "caution": "The word has a political life, so about people, policy or an organisation's values it will be read that way whatever you meant, and in that reading it is a label rather than a description. Say phased or staged there. In a pricing or tax conversation it means something different again, rates that rise with the amount. Keep it for delivery and design, where the technical reading is the only one available.",
+        "example": "We will do a progressive rollout, one desk this week, the floor next week, and the region only after two clean weeks."
+      }
+    ]
+  },
+  {
+    "file": "16-ducks-in-a-row.json",
+    "headword": "ducks in a row",
+    "senses": [
+      {
+        "term": "ducks in a row",
+        "definition": "All the preparation done in advance, so nothing is missing when the moment comes.",
+        "caution": "It is homely and slightly folksy, which makes it warm between peers and patronising downward, and telling a senior stakeholder to get their ducks in a row implies they are disorganised. It belongs to speech: in a written paper it reads as though you could not be bothered to name which preparation you actually meant.",
+        "example": "Before this goes to the committee let us get our ducks in a row on the cost model and the security sign-off."
+      }
+    ]
+  },
+  {
+    "file": "17-watch-outs.json",
+    "headword": "watch outs",
+    "senses": [
+      {
+        "term": "watch outs",
+        "definition": "A short list of things likely to go wrong, given in advance so nobody is surprised.",
+        "caution": "This is consultant and steering-committee register, natural on a slide and slightly odd said aloud anywhere else. The real trap is using it as a softer label for something that is actually a risk: relabelling it removes the owner and the mitigation, and a watch out is what an unmanaged problem is called right up until it fires. Flag it this way only when attention genuinely is the whole response.",
+        "example": "Two watch outs before we start: the data refresh lands mid-demo, and Legal has not seen the retention wording yet."
+      }
+    ]
+  },
+  {
+    "file": "18-lean-on.json",
+    "headword": "lean on",
+    "senses": [
+      {
+        "term": "lean on",
+        "definition": "To rely on someone or something to carry part of the work for you.",
+        "caution": "The same phrase also means to apply pressure, and only the object and your tone separate them, so we leaned on the vendor and we leaned on Legal are two different sentences. Save the pressure reading for suppliers, never colleagues. And when you say it about a person in front of their manager, name what they actually gave you, otherwise it sounds like you handed them your job.",
+        "example": "For the regulatory wording we leaned on Legal rather than inventing our own language."
+      }
+    ]
+  },
+  {
+    "file": "19-blanket-approval-carte-blanche.json",
+    "headword": "blanket approval/carte blanche",
+    "senses": [
+      {
+        "term": "blanket approval",
+        "definition": "Permission given once in advance to cover a whole class of decisions.",
+        "caution": "Claiming it is far riskier than having it. Tell a committee you have blanket approval and you have invited someone to go and check, and permissions of this shape almost always turn out to have had conditions attached that nobody wrote down. Carte blanche carries a whiff of indulgence on top: about someone else it implies they are unsupervised, about yourself it sounds like a boast.",
+        "example": "We do not have blanket approval for production data, it is per use case, and the last one took three weeks."
+      }
+    ]
+  },
+  {
+    "file": "20-lay-of-the-land.json",
+    "headword": "lay of the land",
+    "senses": [
+      {
+        "term": "lay of the land",
+        "definition": "How things really work somewhere new, who decides and what has already been tried.",
+        "caution": "Saying you are still getting the lay of the land buys you time gracefully in a first month and sounds like stalling by the fourth. It also announces that you have not acted yet, so keep it away from any update where somebody is waiting on a decision from you, and never offer it as the answer to a question about results.",
+        "example": "Give me two weeks with the delivery leads to get the lay of the land before I propose any changes."
+      }
+    ]
+  },
+  {
+    "file": "21-rectify.json",
+    "headword": "rectify",
+    "senses": [
+      {
+        "term": "rectify",
+        "definition": "To put right something that went wrong, such as an error or an unmet obligation.",
+        "caution": "It concedes fault, which is precisely why it belongs in audit responses, complaints and regulatory letters and precisely why it is the wrong word for routine work. Telling an auditor you will rectify the pipeline says there was a defect; saying you will update it says nothing of the kind. Use it when the admission is the point, and never as a decorative synonym for change.",
+        "example": "The retention setting was wrong on two buckets, we rectified it on Tuesday and the evidence is on the ticket."
+      }
+    ]
+  }
+]

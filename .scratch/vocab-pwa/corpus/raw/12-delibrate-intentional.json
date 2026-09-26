@@ -8,8 +8,8 @@
         "deliberately",
         "intentionally"
       ],
-      "definition": "Done on purpose and with thought, rather than by accident or drift.",
-      "caution": "About someone else's action it converts a mistake into a choice, which is why it turns up in incident reviews, complaints and disciplinary letters. About your own plan it has become management shorthand for going slowly, so a sponsor who is already impatient hears we are being deliberate as a delay dressed up as a virtue. If all you mean is that the outcome was not an accident, on purpose is the plainer and safer phrase.",
+      "definition": "Done on purpose and with thought, rather than by accident.",
+      "caution": "About someone else's action it says they chose to do it, which is an accusation. About your own plan it can sound like an excuse for being slow, so say on purpose.",
       "example": "The gap in the rollout schedule is deliberate, we want a full month of production data before the next region goes live.",
       "cues": [
         {
@@ -42,11 +42,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "bespoke",
-        "center of excellence",
         "panopticon",
+        "contrived",
         "idempotent",
-        "unequivocal"
+        "unequivocal",
+        "enmeshed"
+      ],
+      "gloss": "done on purpose",
+      "gloss_distractors": [
+        "done very quickly",
+        "done in secret",
+        "done without any help"
       ]
     }
   ]

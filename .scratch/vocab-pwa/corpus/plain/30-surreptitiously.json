@@ -1,0 +1,16 @@
+{
+  "headword": "surreptitiously",
+  "senses": [
+    {
+      "term": "surreptitiously",
+      "gloss": "in a secret way",
+      "gloss_distractors": [
+        "very slowly",
+        "in an angry way",
+        "in front of everyone"
+      ],
+      "caution": "It suggests hiding on purpose, so about a colleague it reads as an accusation, and about a system it suggests a security problem. It is safest used lightly about yourself.",
+      "definition": "Done quietly so that nobody sees it happening."
+    }
+  ]
+}

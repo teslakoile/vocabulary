@@ -1,0 +1,16 @@
+{
+  "headword": "pick your brain",
+  "senses": [
+    {
+      "term": "pick your brain",
+      "gloss": "to ask for someone's advice",
+      "gloss_distractors": [
+        "to hire an outside expert",
+        "to test someone's memory",
+        "to check someone's references"
+      ],
+      "caution": "It asks for time in a casual way. With someone senior, give a length and a specific question, and avoid it in a first message to someone you do not know.",
+      "definition": "To ask someone to share what they have learned, in an informal conversation."
+    }
+  ]
+}

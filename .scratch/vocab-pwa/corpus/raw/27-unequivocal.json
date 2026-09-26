@@ -7,7 +7,7 @@
         "unequivocally"
       ],
       "definition": "Stated so clearly that it can only be read one way.",
-      "caution": "It is as much a claim about your own certainty as about the thing, which is an invitation: call the results unequivocal and one awkward case takes the whole sentence down with it. It belongs to statements and evidence rather than to people, so support, instructions, and findings can be unequivocal and a sponsor cannot. Used about your own view it can also come across as shutting the discussion rather than winning it.",
+      "caution": "Use it for statements and evidence rather than for people. If you call your own results unequivocal, others will look hard for one case that proves you wrong.",
       "prompt_version": 2,
       "example": "The board came back unequivocal on this: no client data leaves the tenancy, under any structure.",
       "cues": [
@@ -36,11 +36,17 @@
         "True on the whole, allowing for exceptions nobody is going to list."
       ],
       "word_distractors": [
-        "primitive",
-        "persist",
         "fan-out",
         "advocate for",
-        "verifiable rewards"
+        "verifiable rewards",
+        "second order effects",
+        "frontrunner"
+      ],
+      "gloss": "completely clear",
+      "gloss_distractors": [
+        "hard to believe",
+        "said in secret",
+        "full of small mistakes"
       ]
     }
   ]

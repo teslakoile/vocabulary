@@ -14,7 +14,7 @@
         "pick a brain"
       ],
       "definition": "To ask someone to share what they have learned, in an informal conversation.",
-      "caution": "It sounds casual while asking for open-ended time, and the whole cost falls on them. Sent cold to someone senior with no boundary on it - no length, no topic, no reason it has to be them - it reads as entitled, and to some it reads as asking them to do your thinking. Put twenty minutes and a specific question around it and it becomes easy to say yes to. The register is informal: right in a message to a colleague, wrong in a first approach to an MD you have never met.",
+      "caution": "It asks for time in a casual way. With someone senior, give a length and a specific question, and avoid it in a first message to someone you do not know.",
       "example": "You've done two of these migrations. Could I pick your brain for twenty minutes before we commit to a design?",
       "cues": [
         {
@@ -46,8 +46,14 @@
         "frontier",
         "wordsmith",
         "semantic layer",
-        "center of excellence",
-        "play it by ear"
+        "ephemeral",
+        "despondent"
+      ],
+      "gloss": "to ask for someone's advice",
+      "gloss_distractors": [
+        "to hire an outside expert",
+        "to test someone's memory",
+        "to check someone's references"
       ]
     }
   ]

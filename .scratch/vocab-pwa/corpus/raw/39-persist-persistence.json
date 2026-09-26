@@ -8,7 +8,7 @@
         "persisting"
       ],
       "definition": "To save data somewhere it will survive a restart or a refresh.",
-      "caution": "Engineers hear a specific promise in it, that the thing is on durable storage and will come back after a crash, so do not use it for a value you are holding in a variable or a cache. It is transitive here, and that is the tell: you persist the state. Ordinary English uses the same word intransitively for keeping at something, so the team persisted says nothing at all about data, and we persisted the results will simply not parse for anyone non-technical in the room.",
+      "caution": "Engineers hear a promise that the data will survive a crash, so do not use it for data held only in memory. With non-technical people, say save instead.",
       "prompt_version": 2,
       "example": "Right now the session only lives in memory. If the pod restarts we lose the whole conversation, so we need to persist it.",
       "cues": [
@@ -33,11 +33,17 @@
         "To settle which of two possible readings is the one meant."
       ],
       "word_distractors": [
-        "hot-swap",
         "enmeshed",
         "run it by you",
         "inroads",
-        "scaffolding"
+        "scaffolding",
+        "disparage"
+      ],
+      "gloss": "to save data permanently",
+      "gloss_distractors": [
+        "to send a message",
+        "to delete old files",
+        "to check data for mistakes"
       ]
     },
     {
@@ -46,7 +52,7 @@
         "persistent"
       ],
       "definition": "Staying with something long after most people would have stopped.",
-      "caution": "Praise for persistence quietly says the person got there by not stopping, which makes it a consolation prize when the work actually succeeded on merit: told to someone whose analysis was simply the best in the room, it damns them. Persistent about a person is worse again, because in most rooms that is the word for someone who will not take no for an answer.",
+      "caution": "Praising persistence suggests the person succeeded by not stopping, which can seem a weak compliment for good work. Calling someone persistent often means they will not take no.",
       "prompt_version": 2,
       "example": "That deal closed on persistence more than anything else. She went back to them four times after we had all written it off.",
       "cues": [
@@ -75,11 +81,17 @@
         "Alert and responsive to something, picking up its signals early and adjusting."
       ],
       "word_distractors": [
+        "bolster",
         "blanket approval",
-        "asymmetric",
-        "enmeshed",
+        "failure mode",
         "surreptitiously",
         "north star"
+      ],
+      "gloss": "refusing to give up",
+      "gloss_distractors": [
+        "fear of failing",
+        "lack of interest",
+        "great natural talent"
       ]
     }
   ]

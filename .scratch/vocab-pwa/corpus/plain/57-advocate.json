@@ -1,0 +1,29 @@
+{
+  "headword": "advocate",
+  "senses": [
+    {
+      "term": "advocate",
+      "gloss": "someone who speaks up for you",
+      "gloss_distractors": [
+        "someone who checks your work",
+        "a new member of a team",
+        "someone who pays for a project"
+      ],
+      "caution": "Naming someone as your advocate gives them a job they may not have agreed to, and can expose them in front of peers. Lawyers hear it as meaning legal counsel.",
+      "definition": "A person who argues for you when you are not there.",
+      "definition_changed": true
+    },
+    {
+      "term": "advocate for",
+      "gloss": "to publicly support",
+      "gloss_distractors": [
+        "to argue against",
+        "to ask questions about",
+        "to keep quiet about"
+      ],
+      "caution": "It ties you to the outcome, so keep it for things you would still defend if they failed. If all you did was agree in a meeting, do not claim it.",
+      "definition": "To argue openly for a position or a person, putting your reputation at risk.",
+      "definition_changed": true
+    }
+  ]
+}

@@ -7,7 +7,7 @@
         "diasporic"
       ],
       "definition": "A people scattered far from a homeland they still keep ties to.",
-      "caution": "The weight is the whole risk. Stretched to any dispersed group — ex-colleagues of a firm, alumni of a team, people who left a project — it sounds glib to anyone whose family actually belongs to one, and that person is more often in the room than not. If you mean a network of former employees, say alumni network.",
+      "caution": "Using it loosely, for ex-colleagues or team alumni, sounds careless to people whose families are part of one. For former staff, say alumni network.",
       "example": "The growth story there is remittances — money moving back through the diaspora — not domestic demand.",
       "cues": [
         {
@@ -39,8 +39,14 @@
         "cognizant",
         "first principles",
         "second order effects",
-        "eschew",
-        "esoteric"
+        "esoteric",
+        "broad"
+      ],
+      "gloss": "a people spread far from home",
+      "gloss_distractors": [
+        "a large religious gathering",
+        "a festival held in many cities",
+        "a council of tribal elders"
       ]
     }
   ]

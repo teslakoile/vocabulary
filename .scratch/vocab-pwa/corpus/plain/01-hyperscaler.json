@@ -1,0 +1,17 @@
+{
+  "headword": "hyperscaler",
+  "senses": [
+    {
+      "term": "hyperscaler",
+      "gloss": "a giant cloud provider",
+      "gloss_distractors": [
+        "a small software startup",
+        "a phone maker",
+        "a website design agency"
+      ],
+      "caution": "Use it only for the few giant cloud companies, never for your own platform or a growing vendor. With people who do not know the term, say what it means for them, such as cost.",
+      "definition": "One of the few companies that run cloud computing and storage on a huge scale.",
+      "definition_changed": true
+    }
+  ]
+}

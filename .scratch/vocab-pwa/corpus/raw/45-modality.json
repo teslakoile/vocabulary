@@ -7,7 +7,7 @@
         "modalities"
       ],
       "definition": "A kind of input or output a system works in, such as text, images, audio or video.",
-      "caution": "In an AI room it means the kind of data and nothing else. Reaching for it where 'format' or 'channel' would do - a delivery modality, a training modality - is the consulting usage, and to technical listeners it sounds like a plain word in a suit. Mixed rooms are the real risk: clinicians and consultants hear 'a way of doing something' and follow you somewhere you did not intend to go.",
+      "caution": "In AI talk it means a type of data, such as text or images. Avoid it where 'format' or 'channel' would do, because it sounds inflated and other fields read it differently.",
       "example": "The hard part isn't the volume, it's that the filings arrive in three modalities and only one of them is clean text.",
       "cues": [
         {
@@ -36,11 +36,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
+        "bespoke",
+        "superset",
         "hyperscaler",
-        "nontrivial",
-        "buy-in",
-        "sleuthing",
-        "exacerbate"
+        "attuned",
+        "heuristic"
+      ],
+      "gloss": "a type of input or output",
+      "gloss_distractors": [
+        "a step in a process",
+        "a measure of accuracy",
+        "a place where data is kept"
       ]
     }
   ]

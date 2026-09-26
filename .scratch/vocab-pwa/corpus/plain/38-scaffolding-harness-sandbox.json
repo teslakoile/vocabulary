@@ -1,0 +1,40 @@
+{
+  "headword": "scaffolding/harness/sandbox",
+  "senses": [
+    {
+      "term": "scaffolding",
+      "gloss": "a temporary support",
+      "gloss_distractors": [
+        "a backup copy",
+        "a list of known bugs",
+        "a safe, isolated test area"
+      ],
+      "caution": "It tells people the thing is temporary, and they will later ask when it is being removed. For a rough first version of the real work, say draft instead.",
+      "definition": "A temporary support that is removed once the real system works on its own.",
+      "definition_changed": true
+    },
+    {
+      "term": "harness",
+      "gloss": "a setup for testing a system",
+      "gloss_distractors": [
+        "a temporary support",
+        "a list of user complaints",
+        "a contract with an outside vendor"
+      ],
+      "caution": "In AI work people usually hear evaluation harness, so say so if you mean a general test setup. Use it for tools you built yourself, and not for a public benchmark you only ran.",
+      "definition": "A setup built to run a system automatically and check how it behaves.",
+      "definition_changed": true
+    },
+    {
+      "term": "sandbox",
+      "gloss": "a safe, isolated test area",
+      "gloss_distractors": [
+        "a temporary support",
+        "a shared team calendar",
+        "the live production system"
+      ],
+      "caution": "It promises that nothing real can be affected, and compliance teams will hold you to that. It says nothing about how realistic the setup is.",
+      "definition": "An isolated place to run something where it cannot affect anything real."
+    }
+  ]
+}

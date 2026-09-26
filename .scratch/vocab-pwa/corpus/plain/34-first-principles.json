@@ -1,0 +1,16 @@
+{
+  "headword": "first principles",
+  "senses": [
+    {
+      "term": "first principles",
+      "gloss": "the basic truths you start from",
+      "gloss_distractors": [
+        "the latest industry trends",
+        "the steps in a project plan",
+        "the people who make final decisions"
+      ],
+      "caution": "Saying you are going back to first principles suggests past work was careless, so name the assumptions you are dropping. It is also slow, so save it for decisions that need it.",
+      "definition": "The basic truths you build an answer up from instead of copying how it is usually done."
+    }
+  ]
+}

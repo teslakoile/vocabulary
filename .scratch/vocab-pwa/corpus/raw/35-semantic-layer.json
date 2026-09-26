@@ -7,7 +7,7 @@
         "semantic model"
       ],
       "definition": "The layer that translates raw tables into the business terms everyone agrees on.",
-      "caution": "It sounds like plumbing and is really governance. The build is the easy half; the hard half is getting three departments to agree what an active client is, so promising a sponsor one by Q3 is promising to win an argument you have not had yet. Do not stretch it to mean any abstraction or any API either: people who have built one hear a specific piece of the stack and will price and staff it accordingly.",
+      "caution": "The hard part is getting departments to agree on what each business term means, so do not promise one by a date. Use the term only for this specific part of a data system.",
       "prompt_version": 2,
       "example": "Two dashboards disagree on churn because each defines it in its own SQL. That is exactly what a semantic layer is for.",
       "cues": [
@@ -32,11 +32,17 @@
         "One of the handful of cloud providers that runs compute and storage at planetary scale."
       ],
       "word_distractors": [
-        "center of excellence",
         "disambiguate",
+        "top brass",
+        "dogfooding",
         "flywheel effect",
-        "fearless forecast",
-        "mold breaker"
+        "fearless forecast"
+      ],
+      "gloss": "a shared set of data definitions",
+      "gloss_distractors": [
+        "a tool for drawing charts",
+        "a backup copy of a database",
+        "a server that stores website images"
       ]
     }
   ]

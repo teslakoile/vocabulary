@@ -4,8 +4,8 @@
     {
       "term": "bespoke",
       "accepted": [],
-      "definition": "Made for one customer or one case rather than bought off the shelf.",
-      "caution": "The same word flatters a client and condemns a design, so know which room you are in. In front of a buyer it means premium and tailored; in an architecture review it means unrepeatable, unsupported and expensive to keep breathing. Say it about a colleague's system and you have criticised it.",
+      "definition": "Made specially for one customer or one case, rather than bought ready-made.",
+      "caution": "It flatters when you sell to a client, but in a design review it means costly and hard to maintain. Calling a colleague's system bespoke is a criticism.",
       "example": "Every one of those dashboards is bespoke, which is exactly why nobody can maintain them.",
       "cues": [
         {
@@ -30,7 +30,7 @@
         }
       ],
       "distractors": [
-        "Advancing in stages, with each stage going further than the one before it.",
+        "Advancing in stages, with each stage going further than the one that came before it.",
         "Safe to run more than once, because the second run leaves things exactly as the first did.",
         "Big enough to matter, said of an amount, a change, or a piece of work.",
         "Low in a way that has given up on improving.",
@@ -38,11 +38,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "obfuscate",
-        "verifiability",
-        "continuum",
-        "broad",
-        "asymmetric"
+        "asymmetric",
+        "wordsmith",
+        "buy-in",
+        "mold breaker",
+        "tectonic shift"
+      ],
+      "gloss": "made for one customer",
+      "gloss_distractors": [
+        "sold at a discount",
+        "built to a common standard",
+        "shared by many teams"
       ]
     }
   ]

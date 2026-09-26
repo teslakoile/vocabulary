@@ -1,0 +1,17 @@
+{
+  "headword": "continuum",
+  "senses": [
+    {
+      "term": "continuum",
+      "gloss": "a smooth, gradual range",
+      "gloss_distractors": [
+        "a sudden change",
+        "a long written report",
+        "a list of separate groups"
+      ],
+      "caution": "Using it challenges the categories someone just proposed. When a decision needs a clear cut-off, say where you would set it, or you will seem to be avoiding the decision.",
+      "definition": "A range that changes gradually, with no clear points where one part ends.",
+      "definition_changed": true
+    }
+  ]
+}

@@ -7,7 +7,7 @@
         "buy in"
       ],
       "definition": "Genuine agreement from the people whose help you need, not just their signature.",
-      "caution": "Not a synonym for sign-off. Claiming you have it when what you actually have is a signature is the kind of statement that collapses at the first delivery slip, and the collapse is public. Said downward it can also sound like you plan to manage people into agreeing rather than ask them, so be careful announcing that you need to get it from your own team.",
+      "caution": "Only claim it when people truly agree, because a signature alone does not count. Saying you need to get it from your own team can sound like you plan to push them.",
       "example": "We have the funding, what we do not have is buy-in from the two teams who would have to change how they release.",
       "cues": [
         {
@@ -40,11 +40,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "serialize",
-        "eschew",
-        "long-horizon",
-        "esoteric",
-        "semantic layer"
+        "despondent",
+        "first principles",
+        "center of excellence",
+        "idempotent",
+        "blanket approval"
+      ],
+      "gloss": "an agreement to back a plan",
+      "gloss_distractors": [
+        "a delay to a project",
+        "a strong objection to a plan",
+        "a list of project costs"
       ]
     }
   ]

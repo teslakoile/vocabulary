@@ -1,0 +1,17 @@
+{
+  "headword": "top brass",
+  "senses": [
+    {
+      "term": "top brass",
+      "gloss": "the most senior people",
+      "gloss_distractors": [
+        "the newest employees",
+        "the members of a trade union",
+        "the company's outside lawyers"
+      ],
+      "caution": "It is informal and shows you are not one of them. In formal writing say the executive committee, and do not use it when talking to senior people directly.",
+      "definition": "The most senior people in an organisation, as described by people who work under them.",
+      "definition_changed": true
+    }
+  ]
+}

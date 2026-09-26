@@ -39,7 +39,7 @@ You need a Cloudflare account, Node.js 20 or later, and `npx`.
    npx wrangler d1 create vocabulary
    ```
 
-3. Apply the four migrations in order. They run through `d1 execute` because
+3. Apply the five migrations in order. They run through `d1 execute` because
    `wrangler d1 migrations` expects a `migrations/` directory and this project
    keeps its SQL in `db/`:
 
@@ -123,12 +123,14 @@ Each sense produces four cards, in the order they enter intake:
 
 | Card type | Prompt | Answer | Guess rate |
 | --- | --- | --- | --- |
-| `recognition` | The word | Pick 1 definition of 4 | 25% |
-| `identify` | The definition | Pick 1 word of 6 | 17% |
-| `reverse` | The definition | Type the word | 0% |
-| `production` | A situational cue | Type the word | 0% |
+| `recognition` | "What does *bolster* mean?" | Pick 1 short meaning of 4, such as "to strengthen" | 25% |
+| `identify` | "Which word means this?" and the definition | Pick 1 word of 6 | 17% |
+| `reverse` | "Type the word that means this." and the definition | Type the word | 0% |
+| `production` | "Type the word that fits." and a situational cue | Type the word | 0% |
 
-`identify` offers six options where `recognition` offers four, because a word takes two seconds to read and a definition does not.
+Each sense also carries a `gloss`: the dictionary-plain meaning in 2 to 6 words. The recognition card offers the gloss and 3 wrong glosses written in the same grammatical form, so the answer cannot be spotted as the only verb. The full definition still appears on the answer side and on the two cards that show the definition.
+
+`identify` offers six options where `recognition` offers four, because a word takes two seconds to read and a sentence does not.
 
 Splitting on senses rather than entries means `trivial` and `nontrivial` are separate cards instead of one card with a harsh grading rule.
 
@@ -195,7 +197,7 @@ The effective ceiling is about 30 guesses per minute.
 | `src/` | The React app: review, browse, capture, and the secret gate |
 | `worker/` | The Worker: API routes, cron handler, and VAPID signing |
 | `shared/` | Types and the single FSRS configuration, imported by both sides |
-| `db/` | Four SQL migrations |
+| `db/` | Five SQL migrations |
 | `scripts/` | Corpus validation, distractor merging, and seed generation |
 | `public/` | Service worker, manifest, and icons |
 | `.scratch/vocab-pwa/` | The decision record: map, 16 tickets, research, and corpus |

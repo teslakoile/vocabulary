@@ -8,7 +8,7 @@
         "bolstering"
       ],
       "definition": "To strengthen something that is already there but is not strong enough on its own.",
-      "caution": "It concedes the weakness. Say you want to bolster the business case and you have told the room the case is currently thin, which is fine when you mean it and expensive when you did not. It also wants abstract objects: you bolster an argument, reserves, or confidence, and you do not bolster a server or a deadline.",
+      "caution": "It admits the thing is weak now, so use it only when you mean that. Use it for things such as an argument, savings, or confidence, and not for machines or deadlines.",
       "prompt_version": 2,
       "example": "The numbers are directionally right, but one more independent source would bolster them before this goes to the board.",
       "cues": [
@@ -41,11 +41,17 @@
         "To put right something that was wrong, such as an error, an imbalance, or a debt you owe."
       ],
       "word_distractors": [
-        "progressive",
-        "gravitas",
         "obscure",
-        "pick your brain",
-        "lend itself"
+        "lend itself",
+        "wordsmith",
+        "scaffolding",
+        "idempotent"
+      ],
+      "gloss": "to strengthen",
+      "gloss_distractors": [
+        "to delay",
+        "to explain in detail",
+        "to hide on purpose"
       ]
     }
   ]

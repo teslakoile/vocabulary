@@ -145,3 +145,27 @@ answer and no duplicates. Under the real setting of 6 new cards a day, `SENSE_GA
 and the new `PROMPT_GAP` of 24 hold with 0 violations across 200 cards. Forcing
 the whole corpus into one queue produces violations only at cards 363 to 380, when
 nothing but repeats remains, which is the documented fallback.
+
+## Amendment, 2026-09-26: plain cautions and a "means" question
+
+Kyle reviewed the wording again. Two problems: cautions were long and clever,
+and no card asked a plain question such as "*bolster* means ...".
+
+**Cautions.** Median length went from 375 characters over 3 sentences to 153,
+capped at 2 sentences and 180 characters. Figures of speech ("a criticism in gym
+clothes", "inflates on contact with quarterly news") and "it is not X"
+constructions are gone. Secondary points were dropped where they did not fit;
+each caution keeps its main point.
+
+**Glosses.** Each sense gained a `gloss`, the dictionary-plain meaning in 2 to 6
+words, and 3 wrong glosses in the same grammatical form. The recognition card now
+asks "What does *bolster* mean?" and offers 4 glosses. Every card states its
+question in words: "Which word means this?", "Type the word that means this.",
+"Type the word that fits." The answer side shows "means to strengthen" under the
+headword. `db/0005` adds the two columns with plain `ALTER`s, so nothing cascades.
+
+**Tells checked.** The gloss is never the strictly longest or shortest option. A
+form check found 8 senses where the answer was the only option not starting with
+"a", such as "real support for a plan" against three "a ..." phrases; all 8 were
+reworded. 16 definitions were rewritten to remove writerly phrasing, which broke
+the distractor length rule on 7 senses, fixed by hand.

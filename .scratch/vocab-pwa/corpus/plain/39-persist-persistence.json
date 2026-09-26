@@ -1,0 +1,27 @@
+{
+  "headword": "persist/persistence",
+  "senses": [
+    {
+      "term": "persist",
+      "gloss": "to save data permanently",
+      "gloss_distractors": [
+        "to send a message",
+        "to delete old files",
+        "to check data for mistakes"
+      ],
+      "caution": "Engineers hear a promise that the data will survive a crash, so do not use it for data held only in memory. With non-technical people, say save instead.",
+      "definition": "To save data somewhere it will survive a restart or a refresh."
+    },
+    {
+      "term": "persistence",
+      "gloss": "refusing to give up",
+      "gloss_distractors": [
+        "fear of failing",
+        "lack of interest",
+        "great natural talent"
+      ],
+      "caution": "Praising persistence suggests the person succeeded by not stopping, which can seem a weak compliment for good work. Calling someone persistent often means they will not take no.",
+      "definition": "Staying with something long after most people would have stopped."
+    }
+  ]
+}

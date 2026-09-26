@@ -4,8 +4,8 @@
     {
       "term": "hyperscaler",
       "accepted": [],
-      "definition": "One of the few cloud providers running compute and storage at a scale you cannot exhaust.",
-      "caution": "It is a category, not a compliment. Applied to your own platform or to a fast-growing vendor it will get you corrected by anyone who knows the term, and in a room that does not know it, it reads as jargon for big cloud. The useful move is to say what follows from the category: pricing power, data residency, or the fact that you will never out-spend them.",
+      "definition": "One of the few companies that run cloud computing and storage on a huge scale.",
+      "caution": "Use it only for the few giant cloud companies, never for your own platform or a growing vendor. With people who do not know the term, say what it means for them, such as cost.",
       "example": "We are not going to beat a hyperscaler on inference cost, so the case has to rest on the data staying ours.",
       "cues": [
         {
@@ -34,11 +34,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
-        "verbose",
+        "semantic layer",
         "persist",
+        "gravitas",
         "bolster",
-        "despondent",
-        "enmeshed"
+        "despondent"
+      ],
+      "gloss": "a giant cloud provider",
+      "gloss_distractors": [
+        "a small software startup",
+        "a phone maker",
+        "a website design agency"
       ]
     }
   ]

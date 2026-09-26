@@ -9,7 +9,7 @@
         "watch out"
       ],
       "definition": "A short list of things likely to go wrong, given in advance so nobody is surprised.",
-      "caution": "This is consultant and steering-committee register, natural on a slide and slightly odd said aloud anywhere else. The real trap is using it as a softer label for something that is actually a risk: relabelling it removes the owner and the mitigation, and a watch out is what an unmanaged problem is called right up until it fires. Flag it this way only when attention genuinely is the whole response.",
+      "caution": "It is slide language and sounds odd in speech. If something is a real risk, call it a risk and give it an owner and a plan.",
       "example": "Two watch outs before we start: the data refresh lands mid-demo, and Legal has not seen the retention wording yet.",
       "cues": [
         {
@@ -43,6 +43,12 @@
         "disambiguate",
         "primitive",
         "persistence"
+      ],
+      "gloss": "things likely to go wrong",
+      "gloss_distractors": [
+        "goals for next year",
+        "reasons a project succeeded",
+        "people who must approve"
       ]
     }
   ]

@@ -1,0 +1,27 @@
+{
+  "headword": "verifiability/verifiable rewards",
+  "senses": [
+    {
+      "term": "verifiability",
+      "gloss": "how easily others can check it",
+      "gloss_distractors": [
+        "feedback a computer can check",
+        "how widely it is used",
+        "how strongly customers recommend it"
+      ],
+      "caution": "People hear it as trustworthy, but a number can be easy to check and still wrong. Promise it only if you can say who checks it and against what.",
+      "definition": "Whether a claim can be checked by someone other than whoever made it."
+    },
+    {
+      "term": "verifiable rewards",
+      "gloss": "feedback a computer can check",
+      "gloss_distractors": [
+        "how easily others can check it",
+        "cash bonuses for hitting targets",
+        "a log of model changes"
+      ],
+      "caution": "It only covers tasks with a checkable answer, so do not promise it for memos or judgement calls. Non-technical people may think it means a bonus scheme.",
+      "definition": "Training signal a machine can check on its own, like a test passing or a proof compiling."
+    }
+  ]
+}

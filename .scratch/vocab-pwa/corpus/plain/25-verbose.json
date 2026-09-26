@@ -1,0 +1,16 @@
+{
+  "headword": "verbose",
+  "senses": [
+    {
+      "term": "verbose",
+      "gloss": "using too many words",
+      "gloss_distractors": [
+        "rude and unkind",
+        "spoken very quietly",
+        "full of spelling mistakes"
+      ],
+      "caution": "It criticises the writer and sounds rude about someone's answer in front of others. In engineering, verbose logs simply means detailed logs, so say which meaning you intend.",
+      "definition": "Using far more words than the point needs."
+    }
+  ]
+}

@@ -7,7 +7,7 @@
         "ephemerality"
       ],
       "definition": "Lasting only a short time, and built that way on purpose.",
-      "caution": "In a technical room it is a claim rather than a description: say a workspace is ephemeral and the next questions are about the logs, the cache and whatever it wrote on its way out. Everywhere else it is a slightly literary word, elegant in writing and a little precious said out loud about a colleague's short tenure or a passing mood.",
+      "caution": "In technical talk it is a claim, and people will ask about the logs and cached data. Elsewhere it sounds literary and a bit showy when spoken.",
       "example": "Every agent run gets an ephemeral workspace — it exists for the task and nothing survives it.",
       "cues": [
         {
@@ -45,6 +45,12 @@
         "center of excellence",
         "failure mode",
         "serialize"
+      ],
+      "gloss": "lasting a short time",
+      "gloss_distractors": [
+        "built to last",
+        "hidden from most users",
+        "easy to repair"
       ]
     }
   ]

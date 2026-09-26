@@ -9,8 +9,8 @@
         "sleuthing out",
         "sleuthed out"
       ],
-      "definition": "Patient digging to piece together an answer nobody has written down.",
-      "caution": "The word is light and slightly playful, which cuts both ways. It is generous about a colleague's persistence, and it lets people off when the real reason you had to dig is that someone would not tell you. Said about your own week to a sponsor, it can turn two days of genuine analysis into a hobby.",
+      "definition": "Careful searching to find facts that nobody has written down.",
+      "caution": "It is light and a little playful. About a colleague it praises effort, but about your own work to a sponsor it can make real analysis sound unimportant.",
       "example": "Nobody could tell me which system owned that field, so I spent Tuesday sleuthing it out of the commit history.",
       "cues": [
         {
@@ -43,11 +43,17 @@
       ],
       "prompt_version": 2,
       "word_distractors": [
+        "advocate",
+        "run it by you",
         "incremental",
         "fan-out",
-        "progressive",
-        "hyperscaler",
-        "contrived"
+        "progressive"
+      ],
+      "gloss": "careful searching for facts",
+      "gloss_distractors": [
+        "guessing without any evidence",
+        "writing up a final report",
+        "asking a manager for help"
       ]
     }
   ]

@@ -1,0 +1,16 @@
+{
+  "headword": "long-horizon (task)",
+  "senses": [
+    {
+      "term": "long-horizon",
+      "gloss": "needing many steps to finish",
+      "gloss_distractors": [
+        "easy to check quickly",
+        "costing a lot of money",
+        "built by more than one company"
+      ],
+      "caution": "Use it for tasks with many steps and slow feedback. For a project that is only slow, say slow, since investors may hear it as a holding period.",
+      "definition": "Running for many steps before anyone can tell whether it worked."
+    }
+  ]
+}

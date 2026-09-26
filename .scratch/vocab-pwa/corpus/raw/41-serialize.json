@@ -9,7 +9,7 @@
         "serialise"
       ],
       "definition": "To turn something in memory into bytes that can be stored or sent and read back.",
-      "caution": "The word has a second life in performance conversations, where serializing means forcing things through one at a time, the opposite of running them in parallel. Two engineers can talk past each other for ten minutes on that, so name the format or name the bottleneck and the ambiguity goes away. With a non-technical audience it lands as noise: say we save it in a form we can send.",
+      "caution": "In performance talk it also means forcing tasks to run one at a time, so name the format or the bottleneck. With non-technical people, say you save it in a form you can send.",
       "prompt_version": 2,
       "example": "The agent state has to be serialized before it goes on the queue, and half of these objects have no clean way to do that.",
       "cues": [
@@ -34,11 +34,17 @@
         "To make something deliberately hard to understand so the plain version stays hidden."
       ],
       "word_distractors": [
+        "incremental",
+        "superset",
         "verifiability",
-        "sleuthing",
-        "long-horizon",
         "lend itself",
         "dogfooding"
+      ],
+      "gloss": "to convert data for storage",
+      "gloss_distractors": [
+        "to delete old records",
+        "to speed up a program",
+        "to split work across machines"
       ]
     }
   ]
