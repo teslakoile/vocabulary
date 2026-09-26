@@ -1,9 +1,16 @@
 {
+  "id": "e_substrate",
   "headword": "substrate",
   "senses": [
     {
       "term": "substrate",
       "accepted": [],
+      "gloss": "the base that others build on",
+      "gloss_distractors": [
+        "a small add-on feature",
+        "the screen users interact with",
+        "a backup copy of the data"
+      ],
       "definition": "The base layer that other systems are built on and depend on.",
       "caution": "It sounds grand and claims other systems really depend on it, which people can check. Used about another team's product, it can make their work sound minor.",
       "example": "Identity and audit are substrate. Nobody should be building either of them per product.",
@@ -36,7 +43,6 @@
         "To avoid something deliberately and on principle.",
         "Low in a way that has given up on things improving."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "esoteric",
         "superset",
@@ -44,12 +50,7 @@
         "harness",
         "broad"
       ],
-      "gloss": "the base that others build on",
-      "gloss_distractors": [
-        "a small add-on feature",
-        "the screen users interact with",
-        "a backup copy of the data"
-      ]
+      "prompt_version": 4
     }
   ]
 }

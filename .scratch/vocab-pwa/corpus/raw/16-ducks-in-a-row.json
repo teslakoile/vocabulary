@@ -1,4 +1,5 @@
 {
+  "id": "e_ducks_in_a_row",
   "headword": "ducks in a row",
   "senses": [
     {
@@ -6,6 +7,12 @@
       "accepted": [
         "get your ducks in a row",
         "ducks lined up"
+      ],
+      "gloss": "fully prepared in advance",
+      "gloss_distractors": [
+        "running late",
+        "working on too many things",
+        "in total agreement"
       ],
       "definition": "All the preparation done in advance, so nothing is missing when the moment comes.",
       "caution": "It is informal and friendly between peers, but telling someone senior to get theirs in a row says they are disorganised. In writing, name the actual preparation.",
@@ -35,7 +42,6 @@
         "A meeting held after the event to work out what went wrong and who should fix it.",
         "The single person whose approval is needed before anything else is allowed to move."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "buy-in",
         "ephemeral",
@@ -43,12 +49,7 @@
         "semantic layer",
         "diaspora"
       ],
-      "gloss": "fully prepared in advance",
-      "gloss_distractors": [
-        "running late",
-        "working on too many things",
-        "in total agreement"
-      ]
+      "prompt_version": 4
     }
   ]
 }

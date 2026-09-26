@@ -1,4 +1,5 @@
 {
+  "id": "e_first_principles",
   "headword": "first principles",
   "senses": [
     {
@@ -6,9 +7,14 @@
       "accepted": [
         "from first principles"
       ],
+      "gloss": "the basic truths you start from",
+      "gloss_distractors": [
+        "the latest industry trends",
+        "the steps in a project plan",
+        "the people who make final decisions"
+      ],
       "definition": "The basic truths you build an answer up from instead of copying how it is usually done.",
       "caution": "Saying you are going back to first principles suggests past work was careless, so name the assumptions you are dropping. It is also slow, so save it for decisions that need it.",
-      "prompt_version": 2,
       "example": "Before we copy the vendor's architecture wholesale, give me one pass from first principles. What do we actually need to be true here?",
       "cues": [
         {
@@ -42,12 +48,7 @@
         "cognizant",
         "center of excellence"
       ],
-      "gloss": "the basic truths you start from",
-      "gloss_distractors": [
-        "the latest industry trends",
-        "the steps in a project plan",
-        "the people who make final decisions"
-      ]
+      "prompt_version": 4
     }
   ]
 }

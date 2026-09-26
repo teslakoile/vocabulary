@@ -1,4 +1,5 @@
 {
+  "id": "e_verbose",
   "headword": "verbose",
   "senses": [
     {
@@ -6,9 +7,14 @@
       "accepted": [
         "verbosity"
       ],
+      "gloss": "using too many words",
+      "gloss_distractors": [
+        "rude and unkind",
+        "spoken very quietly",
+        "full of spelling mistakes"
+      ],
       "definition": "Using far more words than the point needs.",
       "caution": "It criticises the writer and sounds rude about someone's answer in front of others. In engineering, verbose logs simply means detailed logs, so say which meaning you intend.",
-      "prompt_version": 2,
       "example": "It is accurate, but it is verbose. The committee will read the opening paragraph and stop.",
       "cues": [
         {
@@ -42,12 +48,7 @@
         "trivial",
         "panopticon"
       ],
-      "gloss": "using too many words",
-      "gloss_distractors": [
-        "rude and unkind",
-        "spoken very quietly",
-        "full of spelling mistakes"
-      ]
+      "prompt_version": 4
     }
   ]
 }

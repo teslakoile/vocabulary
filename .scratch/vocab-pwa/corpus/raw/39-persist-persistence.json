@@ -1,4 +1,5 @@
 {
+  "id": "e_persist_persistence",
   "headword": "persist/persistence",
   "senses": [
     {
@@ -7,9 +8,14 @@
         "persisted",
         "persisting"
       ],
+      "gloss": "to save data permanently",
+      "gloss_distractors": [
+        "to send a message",
+        "to delete old files",
+        "to check data for mistakes"
+      ],
       "definition": "To save data somewhere it will survive a restart or a refresh.",
       "caution": "Engineers hear a promise that the data will survive a crash, so do not use it for data held only in memory. With non-technical people, say save instead.",
-      "prompt_version": 2,
       "example": "Right now the session only lives in memory. If the pod restarts we lose the whole conversation, so we need to persist it.",
       "cues": [
         {
@@ -39,21 +45,21 @@
         "scaffolding",
         "disparage"
       ],
-      "gloss": "to save data permanently",
-      "gloss_distractors": [
-        "to send a message",
-        "to delete old files",
-        "to check data for mistakes"
-      ]
+      "prompt_version": 4
     },
     {
       "term": "persistence",
       "accepted": [
         "persistent"
       ],
+      "gloss": "refusing to give up",
+      "gloss_distractors": [
+        "fear of failing",
+        "lack of interest",
+        "great natural talent"
+      ],
       "definition": "Staying with something long after most people would have stopped.",
       "caution": "Praising persistence suggests the person succeeded by not stopping, which can seem a weak compliment for good work. Calling someone persistent often means they will not take no.",
-      "prompt_version": 2,
       "example": "That deal closed on persistence more than anything else. She went back to them four times after we had all written it off.",
       "cues": [
         {
@@ -87,12 +93,7 @@
         "surreptitiously",
         "north star"
       ],
-      "gloss": "refusing to give up",
-      "gloss_distractors": [
-        "fear of failing",
-        "lack of interest",
-        "great natural talent"
-      ]
+      "prompt_version": 4
     }
   ]
 }

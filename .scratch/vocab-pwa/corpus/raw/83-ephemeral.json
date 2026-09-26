@@ -1,10 +1,17 @@
 {
+  "id": "e_ephemeral",
   "headword": "ephemeral",
   "senses": [
     {
       "term": "ephemeral",
       "accepted": [
         "ephemerality"
+      ],
+      "gloss": "lasting a short time",
+      "gloss_distractors": [
+        "built to last",
+        "hidden from most users",
+        "easy to repair"
       ],
       "definition": "Lasting only a short time, and built that way on purpose.",
       "caution": "In technical talk it is a claim, and people will ask about the logs and cached data. Elsewhere it sounds literary and a bit showy when spoken.",
@@ -38,7 +45,6 @@
         "To put right something that was wrong.",
         "The most senior people, taken as one group."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "rectify",
         "first order effects",
@@ -46,12 +52,7 @@
         "failure mode",
         "serialize"
       ],
-      "gloss": "lasting a short time",
-      "gloss_distractors": [
-        "built to last",
-        "hidden from most users",
-        "easy to repair"
-      ]
+      "prompt_version": 4
     }
   ]
 }

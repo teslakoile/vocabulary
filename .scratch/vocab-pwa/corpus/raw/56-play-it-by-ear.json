@@ -1,4 +1,5 @@
 {
+  "id": "e_play_it_by_ear",
   "headword": "play it by ear",
   "senses": [
     {
@@ -9,6 +10,12 @@
         "play things by ear",
         "play that by ear",
         "play the rest by ear"
+      ],
+      "gloss": "to decide as you go",
+      "gloss_distractors": [
+        "to follow a fixed plan",
+        "to stop work early",
+        "to ask for more money"
       ],
       "definition": "To decide as you go, guided by what actually happens rather than by a set plan.",
       "caution": "It admits there is no plan. That sounds relaxed with friends but unprepared to a sponsor, so say what information you are waiting for.",
@@ -38,7 +45,6 @@
         "The preparation you do in advance of a moment where any gap would cost you.",
         "Temporary structure that holds the work up until the real thing can stand on its own."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "lay of the land",
         "finesse",
@@ -46,12 +52,7 @@
         "gravitas",
         "long-horizon"
       ],
-      "gloss": "to decide as you go",
-      "gloss_distractors": [
-        "to follow a fixed plan",
-        "to stop work early",
-        "to ask for more money"
-      ]
+      "prompt_version": 4
     }
   ]
 }

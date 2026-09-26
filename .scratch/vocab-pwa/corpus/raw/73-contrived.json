@@ -1,10 +1,17 @@
 {
+  "id": "e_contrived",
   "headword": "contrived",
   "senses": [
     {
       "term": "contrived",
       "accepted": [
         "contrivance"
+      ],
+      "gloss": "forced and not believable",
+      "gloss_distractors": [
+        "hard to understand",
+        "too costly to be practical",
+        "carefully checked by experts"
       ],
       "definition": "Obviously arranged to give a particular impression, and unconvincing because of it.",
       "caution": "It judges motive, so calling a colleague's demo contrived accuses them of faking the evidence. If you only mean the example is too neat to prove much, say unrepresentative.",
@@ -38,7 +45,6 @@
         "Using far more words than the point actually needs.",
         "Alert and responsive to signals, picking them up early and adjusting."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "mold breaker",
         "advocate for",
@@ -46,12 +52,7 @@
         "sleuthing",
         "hyperscaler"
       ],
-      "gloss": "forced and not believable",
-      "gloss_distractors": [
-        "hard to understand",
-        "too costly to be practical",
-        "carefully checked by experts"
-      ]
+      "prompt_version": 4
     }
   ]
 }

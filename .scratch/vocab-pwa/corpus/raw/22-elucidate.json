@@ -1,12 +1,18 @@
 {
+  "id": "e_elucidate",
   "headword": "elucidate",
   "senses": [
     {
       "term": "elucidate",
       "accepted": [],
+      "gloss": "to explain clearly",
+      "gloss_distractors": [
+        "to make worse",
+        "to hide on purpose",
+        "to argue against strongly"
+      ],
       "definition": "To explain something already said or written by laying out the reasoning behind it.",
       "caution": "It is formal and can sound stiff out loud. Asking someone to elucidate says they were unclear, so use it about a document rather than about the person who wrote it.",
-      "prompt_version": 2,
       "example": "The deck lands the recommendation but never elucidates how we got to that number, and that is the part the committee will push on.",
       "cues": [
         {
@@ -40,12 +46,7 @@
         "ephemeral",
         "obfuscate"
       ],
-      "gloss": "to explain clearly",
-      "gloss_distractors": [
-        "to make worse",
-        "to hide on purpose",
-        "to argue against strongly"
-      ]
+      "prompt_version": 4
     }
   ]
 }

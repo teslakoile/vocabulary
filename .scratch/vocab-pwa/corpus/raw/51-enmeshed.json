@@ -1,4 +1,5 @@
 {
+  "id": "e_enmeshed",
   "headword": "enmeshed",
   "senses": [
     {
@@ -7,6 +8,12 @@
         "enmesh",
         "enmeshment",
         "enmeshing"
+      ],
+      "gloss": "too closely tied together",
+      "gloss_distractors": [
+        "kept completely apart",
+        "slow to respond to requests",
+        "badly out of date"
       ],
       "definition": "Tangled up with something so tightly that the two can no longer act separately.",
       "caution": "It comes from family therapy and says a relationship is unhealthy. For systems that simply depend on each other, say tightly coupled.",
@@ -36,7 +43,6 @@
         "An isolated environment where something runs without being able to affect anything real.",
         "A people scattered from a homeland who keep a tie to it, and the fact of that scattering."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "frontier",
         "contrived",
@@ -44,12 +50,7 @@
         "verifiable rewards",
         "sleuthing"
       ],
-      "gloss": "too closely tied together",
-      "gloss_distractors": [
-        "kept completely apart",
-        "slow to respond to requests",
-        "badly out of date"
-      ]
+      "prompt_version": 4
     }
   ]
 }

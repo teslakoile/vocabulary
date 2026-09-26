@@ -1,10 +1,17 @@
 {
+  "id": "e_progressive",
   "headword": "progressive",
   "senses": [
     {
       "term": "progressive",
       "accepted": [
         "progressively"
+      ],
+      "gloss": "happening in stages",
+      "gloss_distractors": [
+        "happening all at once",
+        "done by hand",
+        "getting weaker over time"
       ],
       "definition": "Advancing in stages, each stage going further than the last.",
       "caution": "About people, policy or values it is heard as political, so say phased or staged there. In tax and pricing it means rates that rise as the amount rises.",
@@ -38,7 +45,6 @@
         "Rolled back to the previous version the moment anything looks wrong.",
         "Reversed one step at a time until the system is back where it started."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "second order effects",
         "ducks in a row",
@@ -46,12 +52,7 @@
         "unequivocal",
         "community of practice"
       ],
-      "gloss": "happening in stages",
-      "gloss_distractors": [
-        "happening all at once",
-        "done by hand",
-        "getting weaker over time"
-      ]
+      "prompt_version": 4
     }
   ]
 }

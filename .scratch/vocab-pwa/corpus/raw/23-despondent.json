@@ -1,4 +1,5 @@
 {
+  "id": "e_despondent",
   "headword": "despondent",
   "senses": [
     {
@@ -6,9 +7,14 @@
       "accepted": [
         "despondency"
       ],
+      "gloss": "sad and without hope",
+      "gloss_distractors": [
+        "calm and relaxed",
+        "pleased with yourself",
+        "angry and ready to argue"
+      ],
       "definition": "Very sad and without hope that things will get better.",
       "caution": "It describes deep hopelessness, so use it with care about a named colleague. After one setback people are disappointed, and despondent will make others worry about them.",
-      "prompt_version": 2,
       "example": "I would not say the team is despondent, but a third slipped date has taken something out of them.",
       "cues": [
         {
@@ -46,12 +52,7 @@
         "dogfooding",
         "tectonic shift"
       ],
-      "gloss": "sad and without hope",
-      "gloss_distractors": [
-        "calm and relaxed",
-        "pleased with yourself",
-        "angry and ready to argue"
-      ]
+      "prompt_version": 4
     }
   ]
 }

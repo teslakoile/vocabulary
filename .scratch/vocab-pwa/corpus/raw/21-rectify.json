@@ -1,10 +1,17 @@
 {
+  "id": "e_rectify",
   "headword": "rectify",
   "senses": [
     {
       "term": "rectify",
       "accepted": [
         "rectified"
+      ],
+      "gloss": "to fix a mistake",
+      "gloss_distractors": [
+        "to report a problem",
+        "to blame someone else",
+        "to check again"
       ],
       "definition": "To put right something that went wrong, such as an error or an unmet obligation.",
       "caution": "It admits that something was wrong. Use it in audit replies and complaints, and say update or change for normal work.",
@@ -38,7 +45,6 @@
         "To record a fault in a register so that somebody else can decide what to do about it.",
         "To change something that was already working, in the hope of making it a little better."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "exacerbate",
         "squarely",
@@ -46,12 +52,7 @@
         "nontrivial",
         "panopticon"
       ],
-      "gloss": "to fix a mistake",
-      "gloss_distractors": [
-        "to report a problem",
-        "to blame someone else",
-        "to check again"
-      ]
+      "prompt_version": 4
     }
   ]
 }

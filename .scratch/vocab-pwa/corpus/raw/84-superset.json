@@ -1,10 +1,17 @@
 {
+  "id": "e_superset",
   "headword": "superset",
   "senses": [
     {
       "term": "superset",
       "accepted": [
         "strict superset"
+      ],
+      "gloss": "a larger group that includes another",
+      "gloss_distractors": [
+        "a smaller part of a group",
+        "the overlap between two separate groups",
+        "two groups with nothing shared"
       ],
       "definition": "A set that holds everything another set holds, and more besides.",
       "caution": "It is a precise claim, so if any of the old one is missing, say covers most of instead. Used loosely about people's skills, it reads as a ranking of people.",
@@ -34,7 +41,6 @@
         "To make a bad situation worse.",
         "Alert and responsive to signals, adjusting early."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "frontier",
         "obfuscate",
@@ -42,12 +48,7 @@
         "vertical",
         "rectify"
       ],
-      "gloss": "a larger group that includes another",
-      "gloss_distractors": [
-        "a smaller part of a group",
-        "the overlap between two separate groups",
-        "two groups with nothing shared"
-      ]
+      "prompt_version": 4
     }
   ]
 }

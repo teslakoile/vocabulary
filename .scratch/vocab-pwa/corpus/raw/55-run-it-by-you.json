@@ -1,4 +1,5 @@
 {
+  "id": "e_run_it_by_you",
   "headword": "run it by you",
   "senses": [
     {
@@ -13,6 +14,12 @@
         "run it by him",
         "run it by her",
         "run it by them"
+      ],
+      "gloss": "to check an idea with someone",
+      "gloss_distractors": [
+        "to hand work to someone else",
+        "to reschedule a planned meeting",
+        "to complain to a manager"
       ],
       "definition": "To show someone something before committing to it, to hear their reaction.",
       "caution": "It suggests you could go ahead without them. That is polite with a boss or peer, but with someone whose approval you need it can play down their role.",
@@ -42,7 +49,6 @@
         "To use your own product for real work before you ask anyone else to use it.",
         "To speak about someone in a way that lowers them, usually in passing."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "play it by ear",
         "substrate",
@@ -50,12 +56,7 @@
         "hot-swap",
         "second order effects"
       ],
-      "gloss": "to check an idea with someone",
-      "gloss_distractors": [
-        "to hand work to someone else",
-        "to reschedule a planned meeting",
-        "to complain to a manager"
-      ]
+      "prompt_version": 4
     }
   ]
 }

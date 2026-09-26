@@ -1,4 +1,5 @@
 {
+  "id": "e_idempotent",
   "headword": "idempotent",
   "senses": [
     {
@@ -7,9 +8,14 @@
         "idempotency",
         "idempotence"
       ],
+      "gloss": "safe to run again",
+      "gloss_distractors": [
+        "hard to install",
+        "very fast to run",
+        "running on many machines"
+      ],
       "definition": "Safe to run more than once, because running it again leaves the same end state.",
       "caution": "Others will add automatic retries because of it, so say it only if a second run changes nothing. With non-technical people, say the job is safe to run again.",
-      "prompt_version": 2,
       "example": "The ingestion job has to be idempotent. The scheduler will retry it on failure and we cannot end up with last night's rows twice.",
       "cues": [
         {
@@ -39,12 +45,7 @@
         "long-horizon",
         "elucidate"
       ],
-      "gloss": "safe to run again",
-      "gloss_distractors": [
-        "hard to install",
-        "very fast to run",
-        "running on many machines"
-      ]
+      "prompt_version": 4
     }
   ]
 }

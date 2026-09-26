@@ -1,10 +1,17 @@
 {
+  "id": "e_in_pockets",
   "headword": "in pockets",
   "senses": [
     {
       "term": "in pockets",
       "accepted": [
         "in pockets of"
+      ],
+      "gloss": "only in scattered places",
+      "gloss_distractors": [
+        "at the last minute",
+        "without anyone's approval",
+        "under strict control"
       ],
       "definition": "Present only in scattered, separate places rather than across the whole.",
       "caution": "It is honest, but a sponsor who hears adoption is in pockets hears that it has not been adopted. Use it when asking to connect the groups, not when asking for more money.",
@@ -38,7 +45,6 @@
         "On the whole, allowing for exceptions nobody is going to list.",
         "To make a bad situation worse than it already was."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "incremental",
         "ducks in a row",
@@ -46,12 +52,7 @@
         "sleuthing",
         "attuned"
       ],
-      "gloss": "only in scattered places",
-      "gloss_distractors": [
-        "at the last minute",
-        "without anyone's approval",
-        "under strict control"
-      ]
+      "prompt_version": 4
     }
   ]
 }

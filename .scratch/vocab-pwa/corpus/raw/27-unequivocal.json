@@ -1,4 +1,5 @@
 {
+  "id": "e_unequivocal",
   "headword": "unequivocal",
   "senses": [
     {
@@ -6,9 +7,14 @@
       "accepted": [
         "unequivocally"
       ],
+      "gloss": "completely clear",
+      "gloss_distractors": [
+        "hard to believe",
+        "said in secret",
+        "full of small mistakes"
+      ],
       "definition": "Stated so clearly that it can only be read one way.",
       "caution": "Use it for statements and evidence rather than for people. If you call your own results unequivocal, others will look hard for one case that proves you wrong.",
-      "prompt_version": 2,
       "example": "The board came back unequivocal on this: no client data leaves the tenancy, under any structure.",
       "cues": [
         {
@@ -42,12 +48,7 @@
         "second order effects",
         "frontrunner"
       ],
-      "gloss": "completely clear",
-      "gloss_distractors": [
-        "hard to believe",
-        "said in secret",
-        "full of small mistakes"
-      ]
+      "prompt_version": 4
     }
   ]
 }

@@ -1,4 +1,5 @@
 {
+  "id": "e_lay_of_the_land",
   "headword": "lay of the land",
   "senses": [
     {
@@ -6,6 +7,12 @@
       "accepted": [
         "lie of the land",
         "the lay of the land"
+      ],
+      "gloss": "how a new workplace works",
+      "gloss_distractors": [
+        "how to get promoted quickly",
+        "a promotion to a senior job",
+        "a plan for the next year"
       ],
       "definition": "How things really work somewhere new, who decides and what has already been tried.",
       "caution": "It is fine in your first month but sounds like stalling later. Do not use it in an update where people are waiting for a decision or asking about results.",
@@ -35,7 +42,6 @@
         "A survey of what competitors are selling and at what price, refreshed every quarter.",
         "The full list of everything a team has agreed to deliver this quarter, ranked in order."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "lend itself",
         "disambiguate",
@@ -43,12 +49,7 @@
         "vertical",
         "trivial"
       ],
-      "gloss": "how a new workplace works",
-      "gloss_distractors": [
-        "how to get promoted quickly",
-        "a promotion to a senior job",
-        "a plan for the next year"
-      ]
+      "prompt_version": 4
     }
   ]
 }

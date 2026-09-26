@@ -1,10 +1,17 @@
 {
+  "id": "e_diaspora",
   "headword": "diaspora",
   "senses": [
     {
       "term": "diaspora",
       "accepted": [
         "diasporic"
+      ],
+      "gloss": "a people spread far from home",
+      "gloss_distractors": [
+        "a large religious gathering",
+        "a festival held in many cities",
+        "a council of tribal elders"
       ],
       "definition": "A people scattered far from a homeland they still keep ties to.",
       "caution": "Using it loosely, for ex-colleagues or team alumni, sounds careless to people whose families are part of one. For former staff, say alumni network.",
@@ -34,7 +41,6 @@
         "Using far more words than the point needs.",
         "To make a bad situation worse."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "cognizant",
         "first principles",
@@ -42,12 +48,7 @@
         "esoteric",
         "broad"
       ],
-      "gloss": "a people spread far from home",
-      "gloss_distractors": [
-        "a large religious gathering",
-        "a festival held in many cities",
-        "a council of tribal elders"
-      ]
+      "prompt_version": 4
     }
   ]
 }

@@ -1,4 +1,5 @@
 {
+  "id": "e_lean_on",
   "headword": "lean on",
   "senses": [
     {
@@ -6,6 +7,12 @@
       "accepted": [
         "leaned on",
         "leaning on"
+      ],
+      "gloss": "to rely on for help",
+      "gloss_distractors": [
+        "to argue with",
+        "to report to a manager",
+        "to take credit for"
       ],
       "definition": "To rely on someone or something to do part of the work for you.",
       "caution": "It can also mean to put pressure on someone, so be clear which you mean. When you say it about a colleague, say exactly how they helped.",
@@ -39,7 +46,6 @@
         "To spread one piece of work across many workers running at the same time.",
         "To deliberately do without something you could easily have had, as a matter of principle."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "first principles",
         "primitive",
@@ -47,12 +53,7 @@
         "sleuthing",
         "substantiate"
       ],
-      "gloss": "to rely on for help",
-      "gloss_distractors": [
-        "to argue with",
-        "to report to a manager",
-        "to take credit for"
-      ]
+      "prompt_version": 4
     }
   ]
 }

@@ -1,10 +1,17 @@
 {
+  "id": "e_top_brass",
   "headword": "top brass",
   "senses": [
     {
       "term": "top brass",
       "accepted": [
         "the brass"
+      ],
+      "gloss": "the most senior people",
+      "gloss_distractors": [
+        "the newest employees",
+        "the members of a trade union",
+        "the company's outside lawyers"
       ],
       "definition": "The most senior people in an organisation, as described by people who work under them.",
       "caution": "It is informal and shows you are not one of them. In formal writing say the executive committee, and do not use it when talking to senior people directly.",
@@ -34,7 +41,6 @@
         "The layer of managers sitting between the front line and the people who set the strategy.",
         "Everyone in a company who is not part of the leadership team, spoken of as a single body."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "failure mode",
         "sandbox",
@@ -42,12 +48,7 @@
         "verifiable rewards",
         "cognizant"
       ],
-      "gloss": "the most senior people",
-      "gloss_distractors": [
-        "the newest employees",
-        "the members of a trade union",
-        "the company's outside lawyers"
-      ]
+      "prompt_version": 4
     }
   ]
 }

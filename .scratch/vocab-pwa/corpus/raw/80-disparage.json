@@ -1,4 +1,5 @@
 {
+  "id": "e_disparage",
   "headword": "disparage",
   "senses": [
     {
@@ -6,6 +7,12 @@
       "accepted": [
         "disparaging",
         "disparagement"
+      ],
+      "gloss": "to speak badly of",
+      "gloss_distractors": [
+        "to praise in public",
+        "to cut costs",
+        "to ask for advice"
       ],
       "definition": "To speak of someone or something in a way that quietly lowers how others see it.",
       "caution": "Saying you do not want to disparage someone tells people you are about to. Calling honest criticism disparagement is a way to dodge it, and people notice.",
@@ -39,7 +46,6 @@
         "To avoid something deliberately and on principle.",
         "To rely on someone to carry part of the weight."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "play it by ear",
         "daily driver",
@@ -47,12 +53,7 @@
         "north star",
         "finesse"
       ],
-      "gloss": "to speak badly of",
-      "gloss_distractors": [
-        "to praise in public",
-        "to cut costs",
-        "to ask for advice"
-      ]
+      "prompt_version": 4
     }
   ]
 }

@@ -1,9 +1,16 @@
 {
+  "id": "e_executive_presence_finesse",
   "headword": "executive presence/finesse",
   "senses": [
     {
       "term": "executive presence",
       "accepted": [],
+      "gloss": "a calm, confident leader's style",
+      "gloss_distractors": [
+        "a formal job title",
+        "a habit of avoiding hard decisions",
+        "a strong technical skill set"
+      ],
       "definition": "Coming across as calm, clear and senior enough to be handed a decision.",
       "caution": "Only say it about other people. As feedback it is vague, so add a specific behaviour, such as leading with your recommendation.",
       "example": "Her content is watertight; what we are coaching is executive presence, starting with not burying the ask on slide nine.",
@@ -32,7 +39,6 @@
         "The set of decisions a leader is formally allowed to make without asking.",
         "The rank a job sits at in a company's grading system, published for everyone to see."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "persist",
         "fan-out",
@@ -40,16 +46,17 @@
         "wordsmith",
         "lay of the land"
       ],
-      "gloss": "a calm, confident leader's style",
-      "gloss_distractors": [
-        "a formal job title",
-        "a habit of avoiding hard decisions",
-        "a strong technical skill set"
-      ]
+      "prompt_version": 4
     },
     {
       "term": "finesse",
       "accepted": [],
+      "gloss": "a skill with delicate situations",
+      "gloss_distractors": [
+        "a lack of care",
+        "a strict set of rules",
+        "a willingness to take large risks"
+      ],
       "definition": "Skill in handling something delicate so smoothly that the difficulty never shows.",
       "caution": "As a verb it can suggest you hid a problem instead of solving it. Do not use it about numbers or facts, especially with auditors or in writing.",
       "example": "He finessed the headcount question without promising anything, and the MD moved on.",
@@ -78,7 +85,6 @@
         "The willingness to say the uncomfortable thing in a room that does not want to hear it.",
         "The care taken to record exactly how a decision was reached, so it can be audited later."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "nontrivial",
         "squarely",
@@ -86,12 +92,7 @@
         "in pockets",
         "deliberate"
       ],
-      "gloss": "a skill with delicate situations",
-      "gloss_distractors": [
-        "a lack of care",
-        "a strict set of rules",
-        "a willingness to take large risks"
-      ]
+      "prompt_version": 4
     }
   ]
 }

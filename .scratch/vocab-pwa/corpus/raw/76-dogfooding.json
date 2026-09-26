@@ -1,4 +1,5 @@
 {
+  "id": "e_dogfooding",
   "headword": "dogfooding",
   "senses": [
     {
@@ -7,6 +8,12 @@
         "dogfood",
         "eat your own dog food",
         "eating our own dog food"
+      ],
+      "gloss": "using your own product first",
+      "gloss_distractors": [
+        "copying a rival's product",
+        "selling a product below cost",
+        "paying outside firms to test it"
       ],
       "definition": "Using your own product for real work before asking anyone else to use it.",
       "caution": "It counts only if something you care about breaks when the tool breaks. Said to a client, it sounds self-praising and makes them ask who else uses it.",
@@ -36,7 +43,6 @@
         "Weight and seriousness in how a person carries themselves.",
         "To make a bad situation worse."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "modality",
         "front and center",
@@ -44,12 +50,7 @@
         "north star",
         "elucidate"
       ],
-      "gloss": "using your own product first",
-      "gloss_distractors": [
-        "copying a rival's product",
-        "selling a product below cost",
-        "paying outside firms to test it"
-      ]
+      "prompt_version": 4
     }
   ]
 }

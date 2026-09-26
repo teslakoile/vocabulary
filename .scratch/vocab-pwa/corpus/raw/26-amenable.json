@@ -1,12 +1,18 @@
 {
+  "id": "e_amenable",
   "headword": "amenable",
   "senses": [
     {
       "term": "amenable",
       "accepted": [],
+      "gloss": "willing to consider",
+      "gloss_distractors": [
+        "firmly opposed",
+        "tired and bored",
+        "not paying attention"
+      ],
       "definition": "Open to something without having agreed to it, or well suited to a particular treatment.",
       "caution": "People often hear it as a yes. If you say a senior person was amenable, make clear that nothing has been agreed yet.",
-      "prompt_version": 2,
       "example": "The MD was amenable to a phased rollout, though I want to be clear that nothing is signed.",
       "cues": [
         {
@@ -44,12 +50,7 @@
         "nontrivial",
         "deliberate"
       ],
-      "gloss": "willing to consider",
-      "gloss_distractors": [
-        "firmly opposed",
-        "tired and bored",
-        "not paying attention"
-      ]
+      "prompt_version": 4
     }
   ]
 }

@@ -1,4 +1,5 @@
 {
+  "id": "e_north_star",
   "headword": "north star",
   "senses": [
     {
@@ -7,9 +8,14 @@
         "north star metric",
         "northstar"
       ],
+      "gloss": "the one main goal",
+      "gloss_distractors": [
+        "a short-term fix",
+        "the yearly budget",
+        "a list of minor tasks"
+      ],
       "definition": "The one main goal that guides all other decisions.",
       "caution": "There should be only one, and a deck with three suggests the team has not chosen. It sets a direction, so avoid presenting it as a quarterly target you do not fully control.",
-      "prompt_version": 2,
       "example": "Time to a trustworthy answer is our north star for the year. If a feature does not move that, it waits.",
       "cues": [
         {
@@ -43,12 +49,7 @@
         "elucidate",
         "front and center"
       ],
-      "gloss": "the one main goal",
-      "gloss_distractors": [
-        "a short-term fix",
-        "the yearly budget",
-        "a list of minor tasks"
-      ]
+      "prompt_version": 4
     }
   ]
 }

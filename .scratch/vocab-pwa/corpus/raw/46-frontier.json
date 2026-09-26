@@ -1,4 +1,5 @@
 {
+  "id": "e_frontier",
   "headword": "frontier",
   "senses": [
     {
@@ -8,6 +9,12 @@
         "frontier models",
         "frontier lab",
         "frontier labs"
+      ],
+      "gloss": "the most advanced AI models",
+      "gloss_distractors": [
+        "the cheapest AI option",
+        "an old, retired AI system",
+        "a public ranking of AI tests"
       ],
       "definition": "The current edge of what AI systems can do, and the labs and models working there.",
       "caution": "Keep it for the most capable labs and models. Experts will correct you if you use it for your own work, and the claim goes out of date quickly.",
@@ -37,7 +44,6 @@
         "An isolated environment where a system can run without being able to affect anything real.",
         "The short list of things most likely to go wrong, handed to someone before they start."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "scaffolding",
         "trivial",
@@ -45,12 +51,7 @@
         "persistence",
         "rectify"
       ],
-      "gloss": "the most advanced AI models",
-      "gloss_distractors": [
-        "the cheapest AI option",
-        "an old, retired AI system",
-        "a public ranking of AI tests"
-      ]
+      "prompt_version": 4
     }
   ]
 }

@@ -1,9 +1,16 @@
 {
+  "id": "e_trivial_nontrivial",
   "headword": "trivial/nontrivial",
   "senses": [
     {
       "term": "trivial",
       "accepted": [],
+      "gloss": "very small or easy",
+      "gloss_distractors": [
+        "harder than it looks",
+        "costly and slow",
+        "strange and hard to explain"
+      ],
       "definition": "So small or easy that it is not worth spending time on.",
       "caution": "About other people's work it sounds dismissive. Even about your own work be careful, because people remember when a trivial change breaks something.",
       "example": "The schema change is trivial; the migration for the three teams downstream is not.",
@@ -32,7 +39,6 @@
         "Small in size but serious in what it sets off downstream.",
         "Difficult to explain but easy to do once you have seen it."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "sponsorship",
         "finesse",
@@ -40,17 +46,18 @@
         "pick your brain",
         "buy-in"
       ],
-      "gloss": "very small or easy",
-      "gloss_distractors": [
-        "harder than it looks",
-        "costly and slow",
-        "strange and hard to explain"
-      ]
+      "prompt_version": 4
     },
     {
       "term": "nontrivial",
       "accepted": [
         "non-trivial"
+      ],
+      "gloss": "harder than it looks",
+      "gloss_distractors": [
+        "very small or easy",
+        "known to very few people",
+        "cheap and quick"
       ],
       "definition": "Not simple, and harder or larger than the person asking has assumed.",
       "caution": "It suits technical readers. With senior leaders give a number right after it, and use it only when you have actually estimated the work.",
@@ -80,7 +87,6 @@
         "Well understood by the team that owns it and by nobody else in the building.",
         "Held up by a dependency on another team rather than by the work itself."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "verbose",
         "inroads",
@@ -88,12 +94,7 @@
         "blanket approval",
         "serialize"
       ],
-      "gloss": "harder than it looks",
-      "gloss_distractors": [
-        "very small or easy",
-        "known to very few people",
-        "cheap and quick"
-      ]
+      "prompt_version": 4
     }
   ]
 }

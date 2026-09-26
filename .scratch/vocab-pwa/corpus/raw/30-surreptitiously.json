@@ -1,4 +1,5 @@
 {
+  "id": "e_surreptitiously",
   "headword": "surreptitiously",
   "senses": [
     {
@@ -6,9 +7,14 @@
       "accepted": [
         "surreptitious"
       ],
+      "gloss": "in a secret way",
+      "gloss_distractors": [
+        "very slowly",
+        "in an angry way",
+        "in front of everyone"
+      ],
       "definition": "Done quietly so that nobody sees it happening.",
       "caution": "It suggests hiding on purpose, so about a colleague it reads as an accusation, and about a system it suggests a security problem. It is safest used lightly about yourself.",
-      "prompt_version": 2,
       "example": "Nobody signed anything off. A team had been surreptitiously pointing production traffic at the new index for a month.",
       "cues": [
         {
@@ -42,12 +48,7 @@
         "diaspora",
         "persist"
       ],
-      "gloss": "in a secret way",
-      "gloss_distractors": [
-        "very slowly",
-        "in an angry way",
-        "in front of everyone"
-      ]
+      "prompt_version": 4
     }
   ]
 }

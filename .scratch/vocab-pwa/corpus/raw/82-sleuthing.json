@@ -1,4 +1,5 @@
 {
+  "id": "e_sleuthing_out",
   "headword": "sleuthing (out)",
   "senses": [
     {
@@ -8,6 +9,12 @@
         "sleuth out",
         "sleuthing out",
         "sleuthed out"
+      ],
+      "gloss": "careful searching for facts",
+      "gloss_distractors": [
+        "guessing without any evidence",
+        "writing up a final report",
+        "asking a manager for help"
       ],
       "definition": "Careful searching to find facts that nobody has written down.",
       "caution": "It is light and a little playful. About a colleague it praises effort, but about your own work to a sponsor it can make real analysis sound unimportant.",
@@ -41,7 +48,6 @@
         "The most senior people in a firm, spoken of as one.",
         "Weight and seriousness in how a person carries themselves."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "advocate",
         "run it by you",
@@ -49,12 +55,7 @@
         "fan-out",
         "progressive"
       ],
-      "gloss": "careful searching for facts",
-      "gloss_distractors": [
-        "guessing without any evidence",
-        "writing up a final report",
-        "asking a manager for help"
-      ]
+      "prompt_version": 4
     }
   ]
 }

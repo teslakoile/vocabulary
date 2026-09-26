@@ -1,10 +1,17 @@
 {
+  "id": "e_broad",
   "headword": "broad",
   "senses": [
     {
       "term": "broad",
       "accepted": [
         "broadly"
+      ],
+      "gloss": "covering many things",
+      "gloss_distractors": [
+        "easy to ignore",
+        "badly out of date",
+        "happening very slowly"
       ],
       "definition": "Covering a wide range of cases or topics rather than a narrow one.",
       "caution": "'Broad support' hints that some people disagree, so expect to be asked who. As a noun it is old, offensive slang for a woman.",
@@ -38,7 +45,6 @@
         "Present only in scattered places instead of everywhere across the organisation.",
         "Using far more words than the point actually needs, in speech or on the page."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "front and center",
         "scaffolding",
@@ -46,12 +52,7 @@
         "inroads",
         "ducks in a row"
       ],
-      "gloss": "covering many things",
-      "gloss_distractors": [
-        "easy to ignore",
-        "badly out of date",
-        "happening very slowly"
-      ]
+      "prompt_version": 4
     }
   ]
 }

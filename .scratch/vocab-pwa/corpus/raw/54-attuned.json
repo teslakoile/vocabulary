@@ -1,4 +1,5 @@
 {
+  "id": "e_attuned",
   "headword": "attuned",
   "senses": [
     {
@@ -7,6 +8,12 @@
         "attune",
         "attuning",
         "attunement"
+      ],
+      "gloss": "sensitive to small signals",
+      "gloss_distractors": [
+        "slow to make decisions",
+        "strict about following rules",
+        "proud of past success"
       ],
       "definition": "Alert to something and quick to pick up small signals from it and adjust.",
       "caution": "Use it to praise someone else. Saying it about yourself sounds boastful, and in AI talk people may hear 'tuned' and think of a trained model.",
@@ -36,7 +43,6 @@
         "Understood by only a small group, because it assumes background that most people lack.",
         "A rule of thumb that gets you a good enough answer quickly, because it usually works."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "superset",
         "buy-in",
@@ -44,12 +50,7 @@
         "substantiate",
         "frontrunner"
       ],
-      "gloss": "sensitive to small signals",
-      "gloss_distractors": [
-        "slow to make decisions",
-        "strict about following rules",
-        "proud of past success"
-      ]
+      "prompt_version": 4
     }
   ]
 }

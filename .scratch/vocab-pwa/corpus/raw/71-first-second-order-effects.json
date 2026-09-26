@@ -1,4 +1,5 @@
 {
+  "id": "e_first_second_order_effects",
   "headword": "first/second order effects",
   "senses": [
     {
@@ -7,6 +8,12 @@
         "first-order effects",
         "first order effect",
         "first-order effect"
+      ],
+      "gloss": "the direct, immediate results",
+      "gloss_distractors": [
+        "the later, indirect results",
+        "the reasons a decision was made",
+        "the main goals of a plan"
       ],
       "definition": "The direct and immediate results of a change on the thing you changed.",
       "caution": "Calling something first order suggests you know what comes after it, and senior people will ask. In maths it can also mean a rough estimate, so say which you mean.",
@@ -36,7 +43,6 @@
         "Weight and seriousness in how a person carries themselves.",
         "A slice of the market defined by the industry it serves."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "asymmetric",
         "harness",
@@ -44,12 +50,7 @@
         "pick your brain",
         "substantiate"
       ],
-      "gloss": "the direct, immediate results",
-      "gloss_distractors": [
-        "the later, indirect results",
-        "the reasons a decision was made",
-        "the main goals of a plan"
-      ]
+      "prompt_version": 4
     },
     {
       "term": "second order effects",
@@ -57,6 +58,12 @@
         "second-order effects",
         "second order effect",
         "second-order effect"
+      ],
+      "gloss": "the later, indirect results",
+      "gloss_distractors": [
+        "the direct, immediate results",
+        "the main goals of a plan",
+        "the reasons a decision was made"
       ],
       "definition": "The later results that follow once people and systems adapt to the first change.",
       "caution": "People often use it to block other people's ideas. If you raise it, be ready to name one, or you only add doubt.",
@@ -90,7 +97,6 @@
         "To work over the exact phrasing of something already drafted.",
         "The most senior people in a firm, spoken of as one group."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "tacit knowledge",
         "disparage",
@@ -98,12 +104,7 @@
         "squarely",
         "hyperscaler"
       ],
-      "gloss": "the later, indirect results",
-      "gloss_distractors": [
-        "the direct, immediate results",
-        "the main goals of a plan",
-        "the reasons a decision was made"
-      ]
+      "prompt_version": 4
     }
   ]
 }

@@ -1,4 +1,5 @@
 {
+  "id": "e_pick_your_brain",
   "headword": "pick your brain",
   "senses": [
     {
@@ -12,6 +13,12 @@
         "pick their brain",
         "pick someone's brain",
         "pick a brain"
+      ],
+      "gloss": "to ask for someone's advice",
+      "gloss_distractors": [
+        "to hire an outside expert",
+        "to test someone's memory",
+        "to check someone's references"
       ],
       "definition": "To ask someone to share what they have learned, in an informal conversation.",
       "caution": "It asks for time in a casual way. With someone senior, give a length and a specific question, and avoid it in a first message to someone you do not know.",
@@ -41,7 +48,6 @@
         "To dig patiently through records for something nobody hid but nobody wrote up either.",
         "To back a claim with evidence that somebody other than you can go and check it."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "frontier",
         "wordsmith",
@@ -49,12 +55,7 @@
         "ephemeral",
         "despondent"
       ],
-      "gloss": "to ask for someone's advice",
-      "gloss_distractors": [
-        "to hire an outside expert",
-        "to test someone's memory",
-        "to check someone's references"
-      ]
+      "prompt_version": 4
     }
   ]
 }

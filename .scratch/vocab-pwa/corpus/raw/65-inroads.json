@@ -1,4 +1,5 @@
 {
+  "id": "e_inroads",
   "headword": "inroads",
   "senses": [
     {
@@ -7,6 +8,12 @@
         "make inroads",
         "making inroads",
         "inroad"
+      ],
+      "gloss": "a first success with new customers",
+      "gloss_distractors": [
+        "a sudden loss of support",
+        "a formal agreement between two firms",
+        "a written plan for the year"
       ],
       "definition": "Progress made into a market, account or group that was closed to you before.",
       "caution": "It admits the other side still says no. It also treats them as opponents, which can sound hostile when they never resisted you.",
@@ -40,7 +47,6 @@
         "A rule of thumb that is quick and usually good enough.",
         "To avoid something on principle when you could have taken it."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "progressive",
         "long-horizon",
@@ -48,12 +54,7 @@
         "verbose",
         "sponsorship"
       ],
-      "gloss": "a first success with new customers",
-      "gloss_distractors": [
-        "a sudden loss of support",
-        "a formal agreement between two firms",
-        "a written plan for the year"
-      ]
+      "prompt_version": 4
     }
   ]
 }

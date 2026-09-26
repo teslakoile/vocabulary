@@ -1,9 +1,16 @@
 {
+  "id": "e_bespoke",
   "headword": "bespoke",
   "senses": [
     {
       "term": "bespoke",
       "accepted": [],
+      "gloss": "made for one customer",
+      "gloss_distractors": [
+        "sold at a discount",
+        "built to a common standard",
+        "shared by many teams"
+      ],
       "definition": "Made specially for one customer or one case, rather than bought ready-made.",
       "caution": "It flatters when you sell to a client, but in a design review it means costly and hard to maintain. Calling a colleague's system bespoke is a criticism.",
       "example": "Every one of those dashboards is bespoke, which is exactly why nobody can maintain them.",
@@ -36,7 +43,6 @@
         "Low in a way that has given up on improving.",
         "The current edge of what these systems can do."
       ],
-      "prompt_version": 2,
       "word_distractors": [
         "asymmetric",
         "wordsmith",
@@ -44,12 +50,7 @@
         "mold breaker",
         "tectonic shift"
       ],
-      "gloss": "made for one customer",
-      "gloss_distractors": [
-        "sold at a discount",
-        "built to a common standard",
-        "shared by many teams"
-      ]
+      "prompt_version": 4
     }
   ]
 }
