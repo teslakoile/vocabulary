@@ -46,9 +46,9 @@
       "word_distractors": [
         "scaffolding",
         "sponsorship",
+        "myopic",
         "verbose",
-        "tacit knowledge",
-        "continuum"
+        "tacit knowledge"
       ],
       "prompt_version": 4
     }

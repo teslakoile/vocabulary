@@ -43,10 +43,10 @@
       ],
       "word_distractors": [
         "disambiguate",
-        "fan-out",
         "panopticon",
         "advocate for",
-        "second order effects"
+        "second order effects",
+        "institutional knowledge"
       ],
       "prompt_version": 4
     }

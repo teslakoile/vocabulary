@@ -46,11 +46,11 @@
         "The quiet compliance of a team that has stopped arguing but has not changed its mind."
       ],
       "word_distractors": [
-        "serialize",
-        "harness",
-        "eschew",
-        "long-horizon",
-        "esoteric"
+        "contrived",
+        "incremental",
+        "community of practice",
+        "frontier",
+        "verifiable rewards"
       ],
       "prompt_version": 4
     }

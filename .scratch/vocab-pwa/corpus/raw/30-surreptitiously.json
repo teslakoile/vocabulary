@@ -42,11 +42,11 @@
         "Present in scattered, isolated places rather than across the whole."
       ],
       "word_distractors": [
-        "tectonic shift",
         "buy-in",
         "daily driver",
         "vertical",
-        "persist"
+        "persist",
+        "cognizant"
       ],
       "prompt_version": 4
     }

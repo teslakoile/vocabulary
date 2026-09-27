@@ -43,10 +43,10 @@
       ],
       "word_distractors": [
         "verifiable rewards",
+        "eschew",
+        "substantial",
         "failure mode",
-        "sandbox",
-        "squarely",
-        "finesse"
+        "sandbox"
       ],
       "prompt_version": 4
     }

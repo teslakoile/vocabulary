@@ -47,11 +47,11 @@
         "To deliberately do without something you could easily have had, as a matter of principle."
       ],
       "word_distractors": [
-        "institutional knowledge",
+        "sandbox",
+        "balustrade",
         "advocate",
-        "verbose",
-        "in pockets",
-        "unequivocal"
+        "tacit knowledge",
+        "verbose"
       ],
       "prompt_version": 4
     }

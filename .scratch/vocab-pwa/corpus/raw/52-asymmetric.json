@@ -49,10 +49,10 @@
       ],
       "word_distractors": [
         "front and center",
-        "panopticon",
-        "frontier",
-        "tectonic shift",
-        "first order effects"
+        "fan-out",
+        "sleuthing",
+        "substrate",
+        "squarely"
       ],
       "prompt_version": 4
     }

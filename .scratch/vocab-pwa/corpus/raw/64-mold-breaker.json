@@ -47,11 +47,11 @@
         "Someone who argues your case in rooms you are not in."
       ],
       "word_distractors": [
+        "lay of the land",
         "esoteric",
         "sponsorship",
         "center of excellence",
-        "exacerbate",
-        "sandbox"
+        "exacerbate"
       ],
       "prompt_version": 4
     }

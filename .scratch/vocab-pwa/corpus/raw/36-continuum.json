@@ -42,11 +42,11 @@
         "One piece of work splitting into many parallel branches that all run at once."
       ],
       "word_distractors": [
+        "build that muscle",
+        "modality",
         "cognizant",
         "daily driver",
-        "advocate",
-        "lean on",
-        "vertical"
+        "advocate"
       ],
       "prompt_version": 4
     }

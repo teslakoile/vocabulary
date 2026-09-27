@@ -1,0 +1,98 @@
+{
+  "id": "e_b7542144-7646-4c71-8185-1e033d85fc90",
+  "headword": "federated",
+  "senses": [
+    {
+      "term": "federated (software)",
+      "accepted": [
+        "federated"
+      ],
+      "gloss": "linked but separately run",
+      "gloss_distractors": [
+        "run from one central place",
+        "copied to every server",
+        "closed to outside users"
+      ],
+      "definition": "Made of separate systems that keep their own data and rules but work together as one.",
+      "caution": "Say what stays separate, such as data or logins, because people use the word in different ways.",
+      "example": "We use federated login, so staff sign in once with their company account and every tool trusts it.",
+      "cues": [
+        {
+          "text": "Each hospital keeps its patient records on site, but a shared model learns from all of them without the records ever leaving.",
+          "setting": "work"
+        },
+        {
+          "text": "You explain a search page that queries five databases, each owned by a different team, and shows one list of results.",
+          "setting": "work"
+        },
+        {
+          "text": "Staff sign in once with their company account, and a dozen outside tools accept that login without asking for new passwords.",
+          "setting": "work"
+        },
+        {
+          "text": "You explain how a social network lets people on different servers, each run by different volunteers, follow each other.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Stored in one central place that every team reads from.",
+        "Locked so that only one person can change it at a time.",
+        "Copied in full to every server so that nothing is lost.",
+        "Built by an outside company and rented by the month, so that nobody in the team has to run it.",
+        "Moved from an old platform to a new one in small steps, so that users do not notice any change at all."
+      ],
+      "word_distractors": [
+        "harness",
+        "balustrade",
+        "semantic layer",
+        "disparage",
+        "lean on"
+      ],
+      "prompt_version": 4
+    },
+    {
+      "term": "federated (political)",
+      "accepted": [
+        "federated"
+      ],
+      "gloss": "united but partly self-governing",
+      "gloss_distractors": [
+        "ruled directly by a foreign power",
+        "fully independent of each other",
+        "under military rule"
+      ],
+      "definition": "Joined with others under one central government, while each keeps some power of its own.",
+      "caution": "It is a formal word from politics, law, and history. Name the parts that joined, such as states or provinces, so the meaning is clear.",
+      "example": "The provinces are federated, so each one sets its own school rules but they all share one army.",
+      "cues": [
+        {
+          "text": "You brief a client that each state in a country sets its own tax rules, while the national government handles defence and trade.",
+          "setting": "work"
+        },
+        {
+          "text": "In a memo on entering a new country, you describe how its provinces keep their own laws under one central government.",
+          "setting": "work"
+        },
+        {
+          "text": "A history podcast explains how several small kingdoms agreed to share one army and one currency but keep their own rulers.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Neutral in every war.",
+        "Ruled by a single leader who holds all power.",
+        "Split into two countries after a long dispute over land.",
+        "Governed directly by a distant foreign country that took control of it by force many years ago.",
+        "Free from any central government, with each town making every one of its own laws without outside say."
+      ],
+      "word_distractors": [
+        "disambiguate",
+        "persist",
+        "bolster",
+        "top brass",
+        "verifiability"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

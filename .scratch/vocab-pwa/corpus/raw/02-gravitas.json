@@ -45,10 +45,10 @@
       ],
       "word_distractors": [
         "advocate for",
+        "broad",
         "by and large",
         "lean on",
-        "squarely",
-        "fearless forecast"
+        "dogfooding"
       ],
       "prompt_version": 4
     }

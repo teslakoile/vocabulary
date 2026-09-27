@@ -48,11 +48,11 @@
         "Done quietly so as not to be seen doing it."
       ],
       "word_distractors": [
+        "idempotent",
         "panopticon",
         "advocate",
         "exacerbate",
-        "fearless forecast",
-        "center of excellence"
+        "fearless forecast"
       ],
       "prompt_version": 4
     }

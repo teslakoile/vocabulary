@@ -46,11 +46,11 @@
         "Done on purpose and after thought, rather than by accident or by drift."
       ],
       "word_distractors": [
+        "fan-out",
         "obfuscate",
-        "tectonic shift",
-        "frontrunner",
-        "deliberate",
-        "esoteric"
+        "myopic",
+        "enmeshed",
+        "dogfooding"
       ],
       "prompt_version": 4
     }

@@ -62,13 +62,6 @@
         "hard to measure at all"
       ],
       "definition": "Suited to being handled in a particular way, such as by automation or a simple model.",
-      "distractors": [
-        "Too large to finish within the time that is available.",
-        "Already solved by a tool that the team bought last year.",
-        "Hard to measure, so progress on it cannot be shown to anyone who asks about it.",
-        "Owned by several teams at once, so nobody can make a decision about it on their own quickly.",
-        "Changing so often that any process built around it would be out of date within a single month."
-      ],
       "caution": "Say which method it suits, such as automation, because the word alone leaves that open.",
       "example": "The invoice data is regular enough to be amenable to a simple rules engine, so we do not need a model here.",
       "cues": [
@@ -85,12 +78,19 @@
           "setting": "life"
         }
       ],
+      "distractors": [
+        "Too large to finish within the time that is available.",
+        "Already solved by a tool that the team bought last year.",
+        "Hard to measure, so progress on it cannot be shown to anyone who asks about it.",
+        "Owned by several teams at once, so nobody can make a decision about it on their own quickly.",
+        "Changing so often that any process built around it would be out of date within a single month."
+      ],
       "word_distractors": [
+        "mass market",
+        "center of excellence",
         "esoteric",
         "north star",
-        "hyperscaler",
-        "squarely",
-        "vertical"
+        "knee-jerk reaction"
       ],
       "prompt_version": 4
     }

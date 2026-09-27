@@ -42,11 +42,11 @@
         "To make a bad situation worse."
       ],
       "word_distractors": [
+        "broad",
+        "progressive",
         "buy-in",
-        "substantial",
-        "fan-out",
-        "surreptitiously",
-        "ephemeral"
+        "community of practice",
+        "attuned"
       ],
       "prompt_version": 4
     }

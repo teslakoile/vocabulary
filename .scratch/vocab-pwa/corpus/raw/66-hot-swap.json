@@ -46,9 +46,9 @@
       "word_distractors": [
         "exacerbate",
         "blanket approval",
+        "long-horizon",
         "lay of the land",
-        "substantiate",
-        "second order effects"
+        "substantiate"
       ],
       "prompt_version": 4
     }

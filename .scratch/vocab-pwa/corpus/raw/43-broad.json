@@ -38,9 +38,9 @@
       "word_distractors": [
         "front and center",
         "inroads",
-        "dogfooding",
         "substrate",
-        "lean on"
+        "lean on",
+        "mold breaker"
       ],
       "prompt_version": 4
     },
@@ -57,13 +57,6 @@
         "against the rules"
       ],
       "definition": "In general terms, true of most of it but without every detail or every person.",
-      "distractors": [
-        "Exactly and in full, with every detail checked.",
-        "In secret, so that the people affected do not find out.",
-        "Only for a short time, until a proper plan has been agreed.",
-        "Against the advice of the people who know the subject best, and without telling them.",
-        "In the order that things happened, starting with the earliest event and ending with the latest."
-      ],
       "caution": "'We broadly agree' tells people there is some disagreement, so expect to be asked where. Use it to be honest about gaps, and then name them.",
       "example": "We broadly agree with the audit findings, but we would challenge the timeline on the second one.",
       "cues": [
@@ -80,12 +73,19 @@
           "setting": "life"
         }
       ],
+      "distractors": [
+        "Exactly and in full, with every detail checked.",
+        "In secret, so that the people affected do not find out.",
+        "Only for a short time, until a proper plan has been agreed.",
+        "Against the advice of the people who know the subject best, and without telling them.",
+        "In the order that things happened, starting with the earliest event and ending with the latest."
+      ],
       "word_distractors": [
         "modality",
+        "balustrade",
         "lean on",
         "heuristic",
-        "idempotent",
-        "bolster"
+        "idempotent"
       ],
       "prompt_version": 4
     }
