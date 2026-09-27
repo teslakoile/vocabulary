@@ -42,11 +42,11 @@
         "Training signal a machine can check for itself rather than a person judging it."
       ],
       "word_distractors": [
+        "daily driver",
         "semantic layer",
         "sleuthing",
         "frontier",
-        "build that muscle",
-        "sandbox"
+        "build that muscle"
       ],
       "prompt_version": 4
     }

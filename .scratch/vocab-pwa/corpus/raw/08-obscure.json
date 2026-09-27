@@ -17,13 +17,6 @@
         "to check for errors"
       ],
       "definition": "To keep something from being seen or understood, often without meaning to.",
-      "distractors": [
-        "To show a result in a chart so that the trend is easy to see.",
-        "To say something more plainly than it was said the first time.",
-        "To put a set of numbers in order so the largest ones come first on the page.",
-        "To remove a detail from a report because it was found to be wrong after checking.",
-        "To repeat a point until everyone in the room has heard it at least once."
-      ],
       "caution": "It blames nobody, unlike obfuscate, which says someone meant to mislead. Use it about things such as charts, since about a person's explanation it is still a criticism.",
       "example": "The monthly average obscures the two days when latency tripled, so let us show the daily line instead.",
       "cues": [
@@ -39,6 +32,13 @@
           "text": "Fog has taken the mountains at the end of the valley out of view, and you want a slightly formal word for what it is doing.",
           "setting": "life"
         }
+      ],
+      "distractors": [
+        "To show a result in a chart so that the trend is easy to see.",
+        "To say something more plainly than it was said the first time.",
+        "To put a set of numbers in order so the largest ones come first on the page.",
+        "To remove a detail from a report because it was found to be wrong after checking.",
+        "To repeat a point until everyone in the room has heard it at least once."
       ],
       "word_distractors": [
         "community of practice",
@@ -61,13 +61,6 @@
         "easy to use"
       ],
       "definition": "Little known, so that most people have never heard of it.",
-      "distractors": [
-        "Known to almost everyone in the field.",
-        "Out of date, and replaced by something newer.",
-        "Used by many teams but owned by nobody in particular.",
-        "Written so clearly that anyone can follow it the first time.",
-        "Expensive to run, and so kept only for the most important work."
-      ],
       "caution": "Saying something is obscure can sound like showing off. Say who does know it, for example only the data team, so it does not read as a put-down.",
       "example": "It is an obscure setting in the load balancer, and I doubt anyone outside the platform team knows it exists.",
       "cues": [
@@ -83,6 +76,13 @@
           "text": "A friend recommends a film that almost nobody has seen, and you want a word for how little known it is.",
           "setting": "life"
         }
+      ],
+      "distractors": [
+        "Known to almost everyone in the field.",
+        "Out of date, and replaced by something newer.",
+        "Used by many teams but owned by nobody in particular.",
+        "Written so clearly that anyone can follow it the first time.",
+        "Expensive to run, and so kept only for the most important work."
       ],
       "word_distractors": [
         "verifiability",

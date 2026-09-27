@@ -45,10 +45,10 @@
       ],
       "word_distractors": [
         "play it by ear",
+        "bespoke",
+        "knee-jerk reaction",
         "idempotent",
-        "diaspora",
-        "pick your brain",
-        "heuristic"
+        "diaspora"
       ],
       "prompt_version": 4
     }

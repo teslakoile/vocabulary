@@ -1,0 +1,55 @@
+{
+  "id": "e_953563ba-fed0-46c3-ae3b-074454d1b35d",
+  "headword": "knee jerk reaction",
+  "senses": [
+    {
+      "term": "knee-jerk reaction",
+      "accepted": [
+        "knee jerk reaction",
+        "knee-jerk"
+      ],
+      "gloss": "a quick response without thought",
+      "gloss_distractors": [
+        "a slow, carefully planned answer",
+        "a delayed apology",
+        "a polite refusal"
+      ],
+      "definition": "An instant response made without thinking, often driven by habit or strong feeling.",
+      "caution": "It says the response was not thought through. About your own first response it sounds honest, but about someone else's it can sound dismissive.",
+      "example": "Banning all AI tools after one leak was a knee-jerk reaction, so let us look at what actually went wrong.",
+      "cues": [
+        {
+          "text": "After one bad customer review, a director wants to rewrite the whole sign-up flow by Friday, and you ask the team to wait for more data.",
+          "setting": "work"
+        },
+        {
+          "text": "A single outage leads someone to propose banning all Friday deploys forever, before anyone has found the cause.",
+          "setting": "work"
+        },
+        {
+          "text": "In a retro you admit that blaming the vendor for the audit finding came before you had read the report.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend sells all their shares the morning prices drop, without checking why they fell.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "A formal complaint sent to a manager.",
+        "A decision made only after a long review of the evidence.",
+        "A reply that is delayed on purpose so that it seems more thoughtful.",
+        "A plan written down in advance for what to do if a known risk actually happens during a project.",
+        "A change agreed by every team that it affects, after they have all had time to read it and comment."
+      ],
+      "word_distractors": [
+        "cognizant",
+        "mold breaker",
+        "superset",
+        "obfuscate",
+        "persistence"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

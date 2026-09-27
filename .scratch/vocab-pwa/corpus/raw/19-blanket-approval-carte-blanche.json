@@ -41,8 +41,8 @@
         "fearless forecast",
         "broadly",
         "tacit knowledge",
-        "unequivocal",
-        "rectify"
+        "heuristic",
+        "asymmetric"
       ],
       "prompt_version": 4
     },
@@ -58,13 +58,6 @@
         "strict limits on spending"
       ],
       "definition": "Full freedom to act as you judge best, usually approval given in advance for everything.",
-      "distractors": [
-        "A written warning given before any formal action is taken.",
-        "Permission for one specific case, which has to be asked for again next time.",
-        "A rule that every decision above a set amount goes to a committee first.",
-        "A budget that has been frozen until the next planning round, with no exceptions made for anyone.",
-        "A requirement that each change be reviewed by two people before it goes live, however small it is."
-      ],
       "caution": "Said about yourself it sounds boastful, and about others it suggests nobody is checking their work. Use it when the freedom really is complete.",
       "example": "The new CTO gave the platform team carte blanche on tooling for the first year.",
       "cues": [
@@ -81,12 +74,19 @@
           "setting": "life"
         }
       ],
+      "distractors": [
+        "A written warning given before any formal action is taken.",
+        "Permission for one specific case, which has to be asked for again next time.",
+        "A rule that every decision above a set amount goes to a committee first.",
+        "A budget that has been frozen until the next planning round, with no exceptions made for anyone.",
+        "A requirement that each change be reviewed by two people before it goes live, however small it is."
+      ],
       "word_distractors": [
         "advocate for",
+        "lend itself",
         "advocate",
         "by and large",
-        "wordsmith",
-        "substantial"
+        "wordsmith"
       ],
       "prompt_version": 4
     }

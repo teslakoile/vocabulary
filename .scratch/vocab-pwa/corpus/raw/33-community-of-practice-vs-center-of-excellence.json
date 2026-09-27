@@ -39,11 +39,11 @@
         "What someone can do but cannot fully explain, such as judgement, feel, or a sense of fit."
       ],
       "word_distractors": [
+        "dogfooding",
+        "trivial",
+        "frontier",
         "eschew",
-        "superset",
-        "first principles",
-        "broad",
-        "progressive"
+        "superset"
       ],
       "prompt_version": 4
     },
@@ -86,10 +86,10 @@
       ],
       "word_distractors": [
         "in pockets",
+        "primitive",
+        "continuum",
         "despondent",
-        "eschew",
-        "cognizant",
-        "long-horizon"
+        "bolster"
       ],
       "prompt_version": 4
     }

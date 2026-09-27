@@ -41,10 +41,10 @@
       ],
       "word_distractors": [
         "diaspora",
+        "incremental",
         "superset",
         "in pockets",
-        "verifiability",
-        "sleuthing"
+        "verifiability"
       ],
       "prompt_version": 4
     }

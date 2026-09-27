@@ -45,10 +45,10 @@
       ],
       "word_distractors": [
         "unequivocal",
+        "deliberate",
         "verifiability",
-        "wordsmith",
-        "modality",
-        "sleuthing"
+        "diaspora",
+        "sandbox"
       ],
       "prompt_version": 4
     }

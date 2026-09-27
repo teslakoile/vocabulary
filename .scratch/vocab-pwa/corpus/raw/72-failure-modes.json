@@ -47,10 +47,10 @@
       ],
       "word_distractors": [
         "obfuscate",
+        "knee-jerk reaction",
         "cognizant",
         "idempotent",
-        "verbose",
-        "incremental"
+        "verbose"
       ],
       "prompt_version": 4
     }

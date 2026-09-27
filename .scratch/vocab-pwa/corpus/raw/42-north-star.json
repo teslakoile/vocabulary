@@ -44,10 +44,10 @@
       ],
       "word_distractors": [
         "broadly",
+        "top brass",
         "elucidate",
         "front and center",
-        "failure mode",
-        "trivial"
+        "failure mode"
       ],
       "prompt_version": 4
     }

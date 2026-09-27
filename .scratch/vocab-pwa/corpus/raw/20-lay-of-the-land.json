@@ -43,11 +43,11 @@
         "The full list of everything a team has agreed to deliver this quarter, ranked in order."
       ],
       "word_distractors": [
+        "continuum",
         "frontrunner",
         "lend itself",
         "disambiguate",
-        "incremental",
-        "modality"
+        "incremental"
       ],
       "prompt_version": 4
     }

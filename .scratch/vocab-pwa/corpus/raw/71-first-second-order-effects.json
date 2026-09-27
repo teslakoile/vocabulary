@@ -46,9 +46,9 @@
       "word_distractors": [
         "asymmetric",
         "pick your brain",
-        "continuum",
-        "blanket approval",
-        "lay of the land"
+        "serialize",
+        "despondent",
+        "obfuscate"
       ],
       "prompt_version": 4
     },
@@ -100,9 +100,9 @@
       "word_distractors": [
         "failure mode",
         "enmeshed",
+        "front and center",
         "harness",
-        "scaffolding",
-        "advocate for"
+        "scaffolding"
       ],
       "prompt_version": 4
     }

@@ -47,10 +47,10 @@
       ],
       "word_distractors": [
         "gravitas",
+        "advocate for",
         "run it by you",
         "blanket approval",
-        "center of excellence",
-        "contrived"
+        "center of excellence"
       ],
       "prompt_version": 4
     },
@@ -94,11 +94,11 @@
         "To work over the exact phrasing of something already written."
       ],
       "word_distractors": [
+        "blanket approval",
         "top brass",
         "run it by you",
-        "heuristic",
-        "build that muscle",
-        "deliberate"
+        "trivial",
+        "heuristic"
       ],
       "prompt_version": 4
     }

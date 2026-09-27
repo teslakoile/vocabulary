@@ -46,9 +46,9 @@
       "word_distractors": [
         "modality",
         "first principles",
+        "tectonic shift",
         "heuristic",
-        "hyperscaler",
-        "broadly"
+        "hyperscaler"
       ],
       "prompt_version": 4
     }

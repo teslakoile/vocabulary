@@ -43,11 +43,11 @@
         "The unwritten history an organisation holds about why its own systems were built that way."
       ],
       "word_distractors": [
-        "surreptitiously",
+        "squarely",
+        "serialize",
         "enmeshed",
         "substrate",
-        "north star",
-        "unequivocal"
+        "north star"
       ],
       "prompt_version": 4
     }

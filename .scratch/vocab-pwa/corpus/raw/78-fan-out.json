@@ -44,11 +44,11 @@
         "Understood by only a small group of insiders."
       ],
       "word_distractors": [
+        "long-horizon",
         "gravitas",
         "inroads",
         "ducks in a row",
-        "contrived",
-        "advocate"
+        "contrived"
       ],
       "prompt_version": 4
     }

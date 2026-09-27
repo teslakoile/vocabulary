@@ -1,0 +1,52 @@
+{
+  "id": "e_4abb6c7d-d3f6-487e-97f1-77884ae46345",
+  "headword": "myopic",
+  "senses": [
+    {
+      "term": "myopic",
+      "accepted": [],
+      "gloss": "focused only on the short term",
+      "gloss_distractors": [
+        "thinking about every group affected",
+        "slow to make any decision",
+        "willing to take big risks"
+      ],
+      "definition": "Focused on what is close or immediate, so that you miss the wider or longer-term picture.",
+      "caution": "It is a strong criticism of someone's judgment. Aim it at a plan or a decision rather than a person, or it sounds like an insult.",
+      "example": "Cutting the training budget to hit this quarter's number is myopic, because we will pay for it in hiring next year.",
+      "cues": [
+        {
+          "text": "A manager wants to cut all research spending to make this quarter's margin look better, and you think it will hurt the company in two years.",
+          "setting": "work"
+        },
+        {
+          "text": "You review a design that fixes today's bug but makes every future change harder, and you want to name the flaw in the thinking.",
+          "setting": "work"
+        },
+        {
+          "text": "A team improves only its own metric and ignores how its change slows down three other teams.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend spends their whole bonus on a holiday even though their rent goes up next month.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Willing to change a plan as soon as new facts come in.",
+        "Too proud to accept advice from anyone junior.",
+        "Careful to check every detail before a decision is made.",
+        "Planning many years ahead, even at the cost of results this quarter, and explaining why to everyone.",
+        "Quick to spend money on new tools without asking whether the team will actually use them in practice."
+      ],
+      "word_distractors": [
+        "fearless forecast",
+        "substantiate",
+        "rectify",
+        "tectonic shift",
+        "institutional knowledge"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

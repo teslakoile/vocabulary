@@ -48,11 +48,11 @@
         "To avoid something on principle when you could have taken it."
       ],
       "word_distractors": [
+        "progressive",
+        "long-horizon",
         "by and large",
-        "watch outs",
-        "community of practice",
-        "dogfooding",
-        "attuned"
+        "sponsorship",
+        "persistence"
       ],
       "prompt_version": 4
     }

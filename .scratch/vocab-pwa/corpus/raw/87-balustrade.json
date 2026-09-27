@@ -1,0 +1,54 @@
+{
+  "id": "e_96614dd7-2b4c-472d-8de5-32d8ac3eed5a",
+  "headword": "balustrade",
+  "senses": [
+    {
+      "term": "balustrade",
+      "accepted": [
+        "balustrades"
+      ],
+      "gloss": "a railing held up by posts",
+      "gloss_distractors": [
+        "a flat stone floor outside a house",
+        "a long window in a roof",
+        "a small tower on a wall"
+      ],
+      "definition": "A row of short posts with a rail on top, along the edge of stairs, a balcony, or a bridge.",
+      "caution": "It is a formal word from building and design. In everyday talk, railing or banister sounds more natural.",
+      "example": "Let us take the photo by the stone balustrade, where you can see the whole river behind us.",
+      "cues": [
+        {
+          "text": "You are writing up a site visit and need the exact word for the stone rail and posts along the hotel's terrace.",
+          "setting": "work"
+        },
+        {
+          "text": "A safety report says the posts and rail along the edge of the office's upper floor are too low to meet code.",
+          "setting": "work"
+        },
+        {
+          "text": "You describe the carved stone rail with short posts along the edge of an old palace balcony.",
+          "setting": "life"
+        },
+        {
+          "text": "Guests lean on the row of short stone posts and rail along a terrace to watch the sunset.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "A tall, narrow window set into a church wall.",
+        "A small tower on the corner of a castle.",
+        "A flat stone slab above a doorway that carries the weight of the wall.",
+        "A covered walkway with columns along one side of a large building, used for shelter from the rain.",
+        "A carved band of leaves and flowers that runs along the top edge of the walls in a grand room."
+      ],
+      "word_distractors": [
+        "modality",
+        "pick your brain",
+        "second order effects",
+        "panopticon",
+        "tectonic shift"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

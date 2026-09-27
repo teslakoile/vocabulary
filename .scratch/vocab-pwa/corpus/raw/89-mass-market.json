@@ -1,0 +1,54 @@
+{
+  "id": "e_d1826093-2900-4509-a241-627f50d1cc9a",
+  "headword": "mass market",
+  "senses": [
+    {
+      "term": "mass market",
+      "accepted": [
+        "mass-market"
+      ],
+      "gloss": "made for a very wide public",
+      "gloss_distractors": [
+        "sold only to other businesses",
+        "made by hand in small batches",
+        "still being tested"
+      ],
+      "definition": "Made and priced to sell to very large numbers of ordinary people.",
+      "caution": "Said about a brand that wants to seem special, it can sound like cheap or plain. As a noun, say the mass market.",
+      "example": "The first version is for hospitals, and we will only go mass market once the price drops below a hundred dollars.",
+      "cues": [
+        {
+          "text": "A startup that sells a costly device to hospitals plans a cheaper version that ordinary families could buy in any store.",
+          "setting": "work"
+        },
+        {
+          "text": "A luxury brand's board worries that selling through discount chains will make the label look common.",
+          "setting": "work"
+        },
+        {
+          "text": "You explain why a phone maker aims its basic model at hundreds of millions of first-time buyers rather than a few experts.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend complains that a once-rare sneaker brand now sells in every shopping centre in town.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Made to order for one customer.",
+        "Sold only in one country.",
+        "Made in small numbers to test an idea before a real launch.",
+        "Priced high on purpose so that owning it shows the buyer has money to spare.",
+        "Sold only to other companies through long contracts, and never to members of the public directly."
+      ],
+      "word_distractors": [
+        "buy-in",
+        "ducks in a row",
+        "enmeshed",
+        "institutional knowledge",
+        "build that muscle"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

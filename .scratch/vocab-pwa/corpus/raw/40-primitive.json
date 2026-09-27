@@ -38,11 +38,11 @@
         "Temporary structure that holds work up until the real thing can stand on its own."
       ],
       "word_distractors": [
-        "persist",
-        "broad",
         "lay of the land",
+        "myopic",
         "watch outs",
-        "substantial"
+        "gravitas",
+        "heuristic"
       ],
       "prompt_version": 4
     }

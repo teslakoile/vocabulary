@@ -44,11 +44,11 @@
         "A rule of thumb that gets you a good enough answer quickly, because it usually works."
       ],
       "word_distractors": [
+        "buy-in",
         "substrate",
         "advocate for",
-        "frontrunner",
-        "persist",
-        "heuristic"
+        "carte blanche",
+        "frontrunner"
       ],
       "prompt_version": 4
     }

@@ -84,11 +84,11 @@
         "The data centre hardware a model runs on, including the chips, memory and cooling it needs."
       ],
       "word_distractors": [
+        "persistence",
+        "mass market",
         "eschew",
-        "squarely",
-        "tacit knowledge",
-        "watch outs",
-        "daily driver"
+        "esoteric",
+        "squarely"
       ],
       "prompt_version": 4
     },
@@ -128,11 +128,11 @@
         "One of the handful of cloud providers running compute and storage at planetary scale."
       ],
       "word_distractors": [
+        "mass market",
         "mold breaker",
         "hyperscaler",
         "ducks in a row",
-        "obfuscate",
-        "build that muscle"
+        "obfuscate"
       ],
       "prompt_version": 4
     },
@@ -149,13 +149,6 @@
         "the prices charged per model call"
       ],
       "definition": "Extra prompts and checks around a model that help it do a task it cannot do alone.",
-      "distractors": [
-        "Training a model further on examples from one company's own data.",
-        "The set of chips and machines that a model runs on in a data centre.",
-        "A score that shows how well a model does on a fixed set of test questions.",
-        "The written terms that set out who owns what a model produces for each customer that uses it.",
-        "A smaller copy of a large model, trained to copy its answers so that it runs more cheaply."
-      ],
       "caution": "It implies the extra help can come off as models improve, so people will ask when. Use harness for the code that runs the agent.",
       "example": "Most of the gain came from scaffolding: a planning step and a self-check before each answer.",
       "cues": [
@@ -171,6 +164,13 @@
           "text": "You are explaining that the model did not get smarter, the team gave it a checklist and worked examples to follow.",
           "setting": "work"
         }
+      ],
+      "distractors": [
+        "Training a model further on examples from one company's own data.",
+        "The set of chips and machines that a model runs on in a data centre.",
+        "A score that shows how well a model does on a fixed set of test questions.",
+        "The written terms that set out who owns what a model produces for each customer that uses it.",
+        "A smaller copy of a large model, trained to copy its answers so that it runs more cheaply."
       ],
       "word_distractors": [
         "north star",
