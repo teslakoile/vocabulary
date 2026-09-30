@@ -18,11 +18,11 @@
       "example": "If every prompt is logged and reviewed, we've built a panopticon and people will stop experimenting.",
       "cues": [
         {
-          "text": "You are arguing against logging every internal AI interaction, and your point is that people behave differently when they might be watched.",
+          "text": "You are arguing against logging every internal AI interaction, and you want the word for a workplace where anyone might be watched at any moment, so everyone acts as if they are.",
           "setting": "work"
         },
         {
-          "text": "A colleague proposes recording all agent sessions for quality review. You want a word for what that does to how people use the tool.",
+          "text": "A colleague proposes recording all agent sessions for quality review. You want a word for the kind of place the tool becomes when any session might be watched.",
           "setting": "work"
         },
         {
