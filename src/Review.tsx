@@ -291,7 +291,7 @@ function FlagControl({ entry, snapshot, onSnapshot }: { entry: Entry; snapshot: 
       <Input
         value={note}
         onChange={(e) => setNote(e.target.value)}
-        placeholder="What Looks Wrong? (Optional)"
+        placeholder="Note (Optional)"
         autoFocus
       />
       <Button type="submit" size="sm">Flag</Button>
@@ -342,7 +342,7 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
   if (card.type === 'identify') {
     return (
       <div data-slot="question" data-kind="identify" className="stagger flex flex-col gap-4">
-        <Ask>Which Word Means This?</Ask>
+        <Ask>Definition</Ask>
         <p data-slot="prompt" className="pt-1 text-[1.28rem] leading-[1.45]">{sense.definition}</p>
         {/* Two columns where there is room. A word is short enough that six of
          * them still read at a glance, which is the whole point of this card. */}

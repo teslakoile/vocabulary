@@ -141,7 +141,7 @@ Each sense produces four cards, in the order they enter intake:
 | Card type | Prompt | Answer | Guess rate |
 | --- | --- | --- | --- |
 | `recognition` | "What Does *bolster* Mean?" | Pick 1 short meaning of 4, such as "to strengthen" | 25% |
-| `identify` | "Which Word Means This?" and the definition | Pick 1 word of 6 | 17% |
+| `identify` | "Definition" and the definition | Pick 1 word of 6 | 17% |
 | `reverse` | "Definition", the definition, and the answer shape, such as `b······` | Type the word | 0% |
 | `production` | "Situation", a situational cue, and the answer shape | Type the word | 0% |
 
