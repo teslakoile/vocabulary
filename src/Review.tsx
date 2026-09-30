@@ -9,7 +9,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { ArrowRight, Check, Eye, Flag, Keyboard, ListChecks, MessageSquareQuote, Pencil, ScrollText, X } from 'lucide-react';
 import { applyGrade, gradeFor } from '../shared/scheduler';
 import EditPanel from './EditPanel';
-import { answerMatches, type Queue, type QueueItem } from './queue';
+import { answerMatches, answerShape, type Queue, type QueueItem } from './queue';
 import type { Entry } from './types';
 import { applyLocally, backlogOf, flagEntry, flush, recordEvent, type Snapshot } from './store';
 import { Headword, Shell } from '@/components/shell';
@@ -367,6 +367,8 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
 
   const prompt = card.type === 'reverse' ? sense.definition : (item.cue?.text ?? sense.definition);
 
+  const shape = answerShape(sense.term);
+
   const submit = () => {
     if (!typed.trim()) return;
     onReveal(answerMatches(typed, sense), typed.trim());
@@ -376,6 +378,14 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
     <div data-slot="question" data-kind={card.type} className="stagger flex flex-col gap-4">
       <Ask>{card.type === 'reverse' ? 'Type the word that means this.' : 'Type the word that fits.'}</Ask>
       <p data-slot="prompt" className="pt-1 text-[1.28rem] leading-[1.45]">{prompt}</p>
+      {/* Many words fit a situation, and only one of them is in the bank. */}
+      <p
+        data-slot="shape"
+        aria-label={`Starts with ${shape[0]}, ${shape.length} characters`}
+        className="font-mono text-lg tracking-[0.18em] text-muted-foreground"
+      >
+        {shape}
+      </p>
       <form
         className="grid gap-3"
         onSubmit={(e) => {

@@ -115,6 +115,17 @@ export function answerMatches(typed: string, sense: Sense): boolean {
   return false;
 }
 
+/** The first letter of each word and a dot for every other letter, so
+ *  `by and large` shows as `b· a·· l····`. A situation fits many words, and
+ *  nobody remembers which of them are in the bank; the shape says which one is
+ *  being asked for without spelling it. A label such as `(verb)` is dropped. */
+export function answerShape(term: string): string {
+  return term
+    .replace(/\s*\([^)]*\)/g, '')
+    .trim()
+    .replace(/[\p{L}\p{N}]+/gu, (word) => word[0] + '·'.repeat(word.length - 1));
+}
+
 interface Indexed {
   senses: Map<string, Sense>;
   entries: Map<string, Entry>;
