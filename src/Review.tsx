@@ -41,8 +41,8 @@ const correctOption = (item: QueueItem): string =>
       ? item.sense.gloss
       : item.sense.definition;
 
-/** The name of what the card shows: a word, a definition, or a situation. The
- *  options or the input under it say what to do with it. */
+/** The line above the prompt. A question where one reads naturally, and
+ *  otherwise the name of what the card shows: a definition or a situation. */
 function Ask({ children }: { children: React.ReactNode }) {
   return <p data-slot="ask" className="text-sm font-medium tracking-wide text-muted-foreground">{children}</p>;
 }
@@ -291,7 +291,7 @@ function FlagControl({ entry, snapshot, onSnapshot }: { entry: Entry; snapshot: 
       <Input
         value={note}
         onChange={(e) => setNote(e.target.value)}
-        placeholder="Note (Optional)"
+        placeholder="What Looks Wrong? (Optional)"
         autoFocus
       />
       <Button type="submit" size="sm">Flag</Button>
@@ -314,9 +314,10 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
   if (card.type === 'recognition') {
     return (
       <div data-slot="question" data-kind="recognition" className="stagger flex flex-col gap-4">
-        <Ask>Word</Ask>
         <h1 className="font-serif text-[2.1rem] leading-[1.1] font-semibold tracking-tight">
+          <span className="font-normal text-muted-foreground">What Does </span>
           <Headword>{sense.term}</Headword>
+          <span className="font-normal text-muted-foreground"> Mean?</span>
         </h1>
         <ul data-slot="options" className="grid list-none gap-2.5 p-0">
           {(item.options ?? []).map((option, i) => (
@@ -341,7 +342,7 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
   if (card.type === 'identify') {
     return (
       <div data-slot="question" data-kind="identify" className="stagger flex flex-col gap-4">
-        <Ask>Definition</Ask>
+        <Ask>Which Word Means This?</Ask>
         <p data-slot="prompt" className="pt-1 text-[1.28rem] leading-[1.45]">{sense.definition}</p>
         {/* Two columns where there is room. A word is short enough that six of
          * them still read at a glance, which is the whole point of this card. */}
