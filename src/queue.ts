@@ -170,7 +170,7 @@ function present(card: Card, { senses, entries }: Indexed, counts: boolean): Que
   }
 
   if (card.type === 'recognition' && sense.gloss && sense.gloss_distractors.length >= WRONG_OPTIONS) {
-    // "What does bolster mean?" answered with four short dictionary glosses.
+    // The word, answered with four short dictionary glosses.
     // The wrong three were written in the same grammatical form as the right
     // one, so the card cannot be answered by spotting the only verb.
     item.options = shuffle([sense.gloss, ...sense.gloss_distractors.slice(0, WRONG_OPTIONS)]);

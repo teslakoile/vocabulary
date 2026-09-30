@@ -140,10 +140,10 @@ Each sense produces four cards, in the order they enter intake:
 
 | Card type | Prompt | Answer | Guess rate |
 | --- | --- | --- | --- |
-| `recognition` | "What does *bolster* mean?" | Pick 1 short meaning of 4, such as "to strengthen" | 25% |
-| `identify` | "Which word means this?" and the definition | Pick 1 word of 6 | 17% |
-| `reverse` | "Type the word that means this." and the definition | Type the word | 0% |
-| `production` | "Type the word that fits." and a situational cue | Type the word | 0% |
+| `recognition` | "Word" and the word, such as *bolster* | Pick 1 short meaning of 4, such as "to strengthen" | 25% |
+| `identify` | "Definition" and the definition | Pick 1 word of 6 | 17% |
+| `reverse` | "Definition", the definition, and the answer shape, such as `b······` | Type the word | 0% |
+| `production` | "Situation", a situational cue, and the answer shape | Type the word | 0% |
 
 Each sense also carries a `gloss`: the dictionary-plain meaning in 2 to 6 words. The recognition card offers the gloss and 3 wrong glosses written in the same grammatical form, so the answer cannot be spotted as the only verb. The full definition still appears on the answer side and on the two cards that show the definition.
 

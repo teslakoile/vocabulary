@@ -29,7 +29,7 @@ export default function SecretGate({ rejected, onAccepted }: Props) {
 
         <div className="flex flex-col gap-2">
           <h1 className="font-serif text-[1.7rem] leading-tight font-semibold tracking-tight">
-            {rejected ? 'That key was refused' : 'Paste your key'}
+            {rejected ? 'Key Refused' : 'Enter Key'}
           </h1>
           <p className="text-sm leading-relaxed text-muted-foreground">
             {rejected
@@ -52,7 +52,7 @@ export default function SecretGate({ rejected, onAccepted }: Props) {
             value={value}
             onChange={(e) => setValue(e.target.value)}
             type="password"
-            placeholder="key"
+            placeholder="Key"
             autoCapitalize="none"
             autoCorrect="off"
             autoComplete="current-password"

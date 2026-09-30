@@ -87,18 +87,18 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
         />
       </div>
       <div className="grid gap-2">
-        <Label htmlFor={`accepted-${sense.id}`} className="text-muted-foreground">Also accepted</Label>
+        <Label htmlFor={`accepted-${sense.id}`} className="text-muted-foreground">Also Accepted</Label>
         <Input
           id={`accepted-${sense.id}`}
           value={draft.accepted}
           onChange={set('accepted')}
-          placeholder="comma separated"
+          placeholder="Comma Separated"
           autoCapitalize="none"
           spellCheck={false}
         />
       </div>
       <div className="grid gap-2">
-        <Label htmlFor={`gloss-${sense.id}`} className="text-muted-foreground">Short meaning</Label>
+        <Label htmlFor={`gloss-${sense.id}`} className="text-muted-foreground">Short Meaning</Label>
         <Input id={`gloss-${sense.id}`} value={draft.gloss} onChange={set('gloss')} placeholder="to strengthen" />
       </div>
       <div className="grid gap-2">
@@ -114,13 +114,13 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
         <Textarea id={`example-${sense.id}`} value={draft.example} onChange={set('example')} rows={2} />
       </div>
       <div className="grid gap-2">
-        <Label htmlFor={`note-${sense.id}`} className="text-muted-foreground">Your note</Label>
+        <Label htmlFor={`note-${sense.id}`} className="text-muted-foreground">Note</Label>
         <Textarea
           id={`note-${sense.id}`}
           value={draft.capture_note}
           onChange={set('capture_note')}
           rows={2}
-          placeholder="why you wrote it down"
+          placeholder="Source and Context"
         />
       </div>
 
