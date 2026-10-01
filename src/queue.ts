@@ -34,10 +34,10 @@ const SENSE_GAP = 8;
 /**
  * Minimum cards between two presentations of the same prompt text.
  *
- * `identify` and `reverse` both show the definition and differ only in whether
- * you pick the word or type it. Eight apart is enough for two different
- * questions about one sense and nowhere near enough for the same question
- * twice, so these get their own, wider gap.
+ * `identify`, `reverse` and `production` all show the definition and differ
+ * only in whether you pick the word or type it. Eight apart is enough for two
+ * different questions about one sense and nowhere near enough for the same
+ * question twice, so these get their own, wider gap.
  */
 const PROMPT_GAP = 24;
 
@@ -62,8 +62,14 @@ export interface QueueItem {
   /** What the screen actually shows, so the spacer can keep two cards asking
    *  the same question apart. */
   promptKey: string;
-  /** Production only: which of the sense's cues this presentation uses. */
+  /** A situation the word fits, shown beside the definition on every card that
+   *  asks for the word. Many words fit one description and many fit one
+   *  situation; seeing both is what narrows it to one. Which of the sense's cues
+   *  this presentation uses. */
   cue?: Cue;
+  /** The two cards you type into: positions of the answer's letters that are
+   *  given, so the blanks you fill are a subset. */
+  reveal?: number[];
 }
 
 const shuffle = <T>(items: T[]): T[] => {
@@ -73,6 +79,15 @@ const shuffle = <T>(items: T[]): T[] => {
     [out[i], out[j]] = [out[j]!, out[i]!];
   }
   return out;
+};
+
+/** Shuffle the order words arrive in, but keep each word's own cards in the order
+ *  they were given. The cards of a new word go easiest first, and `space` only
+ *  ever pulls a card forward past another sense, so that order survives it. */
+const shuffleBySense = (cards: Card[]): Card[] => {
+  const groups = new Map<string, Card[]>();
+  for (const card of cards) groups.set(card.sense_id, [...(groups.get(card.sense_id) ?? []), card]);
+  return shuffle([...groups.values()]).flat();
 };
 
 const pick = <T>(items: T[]): T | undefined => items[Math.floor(Math.random() * items.length)];
@@ -126,6 +141,88 @@ export function answerShape(term: string): string {
     .replace(/[\p{L}\p{N}]+/gu, (word) => word[0] + '·'.repeat(word.length - 1));
 }
 
+/** One run of an answer: a stretch of letters to fill in, or punctuation that is
+ *  already there, such as the hyphen in `buy-in`. */
+export type BoardToken = { kind: 'slots'; text: string; length: number } | { kind: 'mark'; text: string };
+
+/** The answer as a hangman board: an array of words, each an array of tokens.
+ *  Same rules as `answerShape`, but structured so the screen can draw one blank
+ *  per letter instead of a string of dots. */
+export function answerBoard(term: string): BoardToken[][] {
+  return term
+    .replace(/\s*\([^)]*\)/g, '')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((word) =>
+      (word.match(/[\p{L}\p{N}]+|[^\p{L}\p{N}]+/gu) ?? []).map((part): BoardToken =>
+        /^[\p{L}\p{N}]/u.test(part)
+          ? { kind: 'slots', text: part, length: Array.from(part).length }
+          : { kind: 'mark', text: part }
+      )
+    );
+}
+
+/**
+ * Which letters of the answer are given, as positions across the whole board.
+ * The first letter of every word always is, so a situation that fits many words
+ * still says which one is asked for. Beyond that, about one letter in three,
+ * chosen at random, so the same word is not the same puzzle twice. A word of
+ * one to three letters shows only its first.
+ */
+export function pickReveals(board: BoardToken[][]): number[] {
+  const given: number[] = [];
+  let at = 0;
+  for (const word of board) {
+    for (const token of word) {
+      if (token.kind !== 'slots') continue;
+      const rest = Array.from({ length: token.length - 1 }, (_, i) => at + i + 1);
+      given.push(at, ...shuffle(rest).slice(0, Math.floor((token.length - 1) / 3)));
+      at += token.length;
+    }
+  }
+  return given.sort((a, b) => a - b);
+}
+
+/** Every letter of the answer, in board order. */
+export const boardLetters = (board: BoardToken[][]): string[] =>
+  board.flatMap((word) => word.flatMap((t) => (t.kind === 'slots' ? Array.from(t.text) : [])));
+
+/** The whole answer as you have it: given letters where they belong, and what
+ *  you typed in the blanks between them. */
+export function composeAnswer(board: BoardToken[][], given: number[], typed: string[]): string {
+  const known = new Set(given);
+  let at = 0;
+  return fillBoard(
+    board,
+    boardLetters(board).map((letter, i) => (known.has(i) ? letter : (typed[at++] ?? '')))
+  );
+}
+
+/** Only the characters that go in a blank. Spaces and punctuation are typed
+ *  freely and ignored, so `byandlarge` and `by and large` fill the same board. */
+export const lettersOf = (typed: string): string[] => Array.from(typed.replace(/[^\p{L}\p{N}]/gu, ''));
+
+export const boardSize = (board: BoardToken[][]): number =>
+  board.reduce((sum, word) => sum + word.reduce((n, t) => n + (t.kind === 'slots' ? t.length : 0), 0), 0);
+
+/** Put letters back into the board's own spacing and punctuation. */
+export function fillBoard(board: BoardToken[][], letters: string[]): string {
+  let at = 0;
+  return board
+    .map((word) =>
+      word
+        .map((t) => {
+          if (t.kind === 'mark') return t.text;
+          const out = letters.slice(at, at + t.length).join('');
+          at += t.length;
+          return out;
+        })
+        .join('')
+    )
+    .join(' ');
+}
+
 interface Indexed {
   senses: Map<string, Sense>;
   entries: Map<string, Entry>;
@@ -155,10 +252,9 @@ function present(card: Card, { senses, entries }: Indexed, counts: boolean): Que
   const entry = entries.get(sense.entry_id);
   if (!entry) return null;
 
-  // Both definition-prompt cards share a key; everything else keys on the card
-  // itself, so the prompt rule only ever constrains the pair it was written for.
-  const promptKey =
-    card.type === 'identify' || card.type === 'reverse' ? `${sense.id}:definition` : card.id;
+  // Every card that asks for the word shows the definition, so they share a key;
+  // recognition shows the word and keys on the card itself.
+  const promptKey = card.type === 'recognition' ? card.id : `${sense.id}:definition`;
 
   const item: QueueItem = { card, sense, entry, counts, promptKey };
 
@@ -188,8 +284,12 @@ function present(card: Card, { senses, entries }: Indexed, counts: boolean): Que
     item.options = shuffle([sense.definition, ...wrong]);
   }
 
-  if (card.type === 'production' && sense.cues.length) {
+  if (card.type !== 'recognition' && sense.cues.length) {
     item.cue = pick(sense.cues);
+  }
+
+  if (card.type === 'reverse' || card.type === 'production') {
+    item.reveal = pickReveals(answerBoard(sense.term));
   }
 
   return item;
@@ -270,10 +370,15 @@ export class Queue {
 
     const due = cards.filter((c) => c.due_at !== null && c.due_at <= now);
     const allowance = Math.max(0, this.snapshot.settings.new_cards_per_day - this.snapshot.intake_today);
-    const fresh = cards
-      .filter((c) => c.fsrs_state === null)
-      .sort((a, b) => (a.intake_order ?? Infinity) - (b.intake_order ?? Infinity))
-      .slice(0, allowance);
+    // Intake order decides which words are let in today. It must not decide
+    // which one you meet first, or the same word opens the app every time until
+    // its three cards are used up.
+    const fresh = shuffleBySense(
+      cards
+        .filter((c) => c.fsrs_state === null)
+        .sort((a, b) => (a.intake_order ?? Infinity) - (b.intake_order ?? Infinity))
+        .slice(0, allowance)
+    );
 
     const counting = shuffle(due);
     const ordered: Card[] = [];

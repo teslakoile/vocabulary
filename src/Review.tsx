@@ -9,8 +9,8 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { ArrowRight, Check, Eye, Flag, Keyboard, ListChecks, MessageSquareQuote, Pencil, ScrollText, TriangleAlert, X } from 'lucide-react';
 import { applyGrade, gradeFor } from '../shared/scheduler';
 import EditPanel from './EditPanel';
-import { answerMatches, answerShape, type Queue, type QueueItem } from './queue';
-import type { Entry } from './types';
+import { answerBoard, answerMatches, boardSize, composeAnswer, lettersOf, type BoardToken, type Queue, type QueueItem } from './queue';
+import type { Cue, Entry, Sense } from './types';
 import { applyLocally, backlogOf, flagEntry, flush, recordEvent, type Snapshot } from './store';
 import { Caution } from '@/components/caution';
 import { Empty, Heading, Shell, Sky } from '@/components/shell';
@@ -64,6 +64,23 @@ function Ask({ counts, children }: { counts: boolean; children: React.ReactNode 
       {counts && <span className="size-2 rounded-full bg-white" title="This answer moves the schedule" />}
       {children}
     </p>
+  );
+}
+
+/** What the cards that ask for the word show: the definition, and a situation the
+ *  word fits. Either alone leaves several words standing; together they leave
+ *  one. The sense's example sentence is not used, because it contains the word. */
+function Prompt({ sense, cue }: { sense: Sense; cue?: Cue }) {
+  return (
+    <>
+      <p data-slot="prompt" className="font-serif text-title">{sense.definition}</p>
+      {cue && (
+        <div data-slot="situation" className="mt-4 flex flex-col gap-1">
+          <p className="text-caption text-muted-foreground">Situation</p>
+          <p>{cue.text}</p>
+        </div>
+      )}
+    </>
   );
 }
 
@@ -363,7 +380,7 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
       <div data-slot="question" data-kind="identify" className="stagger flex flex-col gap-6">
         <div className="flex flex-col gap-2">
           <Ask counts={counts}>Definition</Ask>
-          <p data-slot="prompt" className="font-serif text-title">{sense.definition}</p>
+          <Prompt sense={sense} cue={item.cue} />
         </div>
         {/* Two columns where there is room. A word is short enough that six of
          * them still read at a glance, which is the whole point of this card. */}
@@ -386,55 +403,39 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
     );
   }
 
-  const prompt = card.type === 'reverse' ? sense.definition : (item.cue?.text ?? sense.definition);
-
-  const shape = answerShape(sense.term);
+  const board = answerBoard(sense.term);
+  const given = item.reveal ?? [];
+  const letters = lettersOf(typed);
 
   const submit = () => {
     if (!typed.trim()) return;
-    onReveal(answerMatches(typed, sense), typed.trim());
+    // The blanks hold the missing letters, and the given ones are filled in
+    // around them. Typing the whole word, given letters and all, also works.
+    const whole = composeAnswer(board, given, letters);
+    onReveal(answerMatches(whole, sense) || answerMatches(typed, sense), typed.trim());
   };
 
   return (
-    <div data-slot="question" data-kind={card.type} className="stagger flex flex-col gap-6">
+    <form
+      data-slot="question"
+      data-kind={card.type}
+      className="stagger flex flex-col gap-6"
+      onSubmit={(e) => {
+        e.preventDefault();
+        submit();
+      }}
+    >
       <div className="flex flex-col gap-2">
-        <Ask counts={counts}>{card.type === 'reverse' ? 'Definition' : 'Situation'}</Ask>
-        <p data-slot="prompt" className="font-serif text-title">{prompt}</p>
-        {/* Many words fit a situation, and only one of them is in the bank.
-         *  Spaced out so each dot reads as one letter; the one place in the app
-         *  with letter-spacing. */}
-        <p
-          data-slot="shape"
-          aria-label={`Starts with ${shape[0]}, ${shape.length} characters`}
-          className="pt-2 text-lead tracking-[0.18em] text-muted-foreground"
-        >
-          {shape}
-        </p>
+        <Ask counts={counts}>Definition</Ask>
+        <Prompt sense={sense} cue={item.cue} />
       </div>
-      <form
-        className="grid gap-3"
-        onSubmit={(e) => {
-          e.preventDefault();
-          submit();
-        }}
-      >
-        <Input
-          ref={inputRef}
-          value={typed}
-          onChange={(e) => setTyped(e.target.value)}
-          placeholder="Answer"
-          autoCapitalize="none"
-          autoCorrect="off"
-          autoComplete="off"
-          spellCheck={false}
-          enterKeyHint="go"
-        />
-        <Button size="xl" type="submit" className="w-full pr-5" disabled={!typed.trim()}>
-          Check
-          <ArrowRight />
-        </Button>
-      </form>
+      <LetterBoard board={board} given={given} typed={typed} setTyped={setTyped} inputRef={inputRef} />
+      <Button size="xl" type="submit" className="w-full pr-5" disabled={!typed.trim()}>
+        Check
+        <ArrowRight />
+      </Button>
       <Button
+        type="button"
         variant="quiet"
         size="sm"
         className="-ml-3 self-start"
@@ -442,6 +443,160 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
       >
         Reveal Answer
       </Button>
+    </form>
+  );
+}
+
+/**
+ * The answer as blanks, one underline per letter, with some letters already in.
+ * The given letters sit on a pale chip and stay put; you type the rest and they
+ * fill the empty blanks in order. The first letter of every word is always
+ * given, so a situation that fits many words still says which one is asked for.
+ *
+ * It is a drawing of a real text field: the field lies over the board, invisible,
+ * so the phone keyboard, paste and Enter all behave as they do anywhere else.
+ * The blanks shrink to fit the longest run on one line, and a run is never
+ * split across two.
+ */
+function LetterBoard({
+  board,
+  given,
+  typed,
+  setTyped,
+  inputRef,
+}: {
+  board: BoardToken[][];
+  given: number[];
+  typed: string;
+  setTyped: (value: string) => void;
+  inputRef: React.RefObject<HTMLInputElement | null>;
+}) {
+  const [focused, setFocused] = useState(false);
+  const letters = lettersOf(typed);
+  const total = boardSize(board);
+  const known = new Set(given);
+  const blanks = total - known.size;
+
+  // A run is a stretch of blanks and the mark that follows it, such as
+  // `scaffolding/`. A run never splits; a word breaks between runs, the same
+  // place the headword does, so a slash-joined answer is not squeezed onto one
+  // line.
+  type Run = { start: number; length: number; text: string; mark?: string };
+  let at = 0;
+  const words = board.map((word) => {
+    const runs: Run[] = [];
+    for (const token of word) {
+      if (token.kind === 'slots') {
+        runs.push({ start: at, length: token.length, text: token.text });
+        at += token.length;
+      } else if (runs.length) {
+        runs[runs.length - 1]!.mark = token.text;
+      } else {
+        runs.push({ start: at, length: 0, text: '', mark: token.text });
+      }
+    }
+    return runs;
+  });
+
+  // Where each empty blank sits among the empty blanks: the nth letter you type
+  // goes in the nth one.
+  const rank = new Map<number, number>();
+  for (let i = 0, n = 0; i < total; i++) if (!known.has(i)) rank.set(i, n++);
+
+  // The widest run, with a mark counted as half a blank, sets the blank size.
+  const widest = Math.max(...words.flat().map((run) => run.length + (run.mark ? 0.5 : 0)));
+
+  // Letters past the last blank still show, so a long answer is never hidden.
+  // They sit in a word of their own, in the pale red the sky allows.
+  const over = letters.slice(blanks);
+
+  return (
+    <div
+      data-slot="board"
+      className="relative [container-type:inline-size]"
+      style={
+        {
+          '--slot': `min(2.5rem, calc((100cqw - ${widest}rem * 0.25) / ${widest}))`,
+        } as React.CSSProperties
+      }
+    >
+      <div
+        aria-hidden
+        className="flex flex-wrap gap-x-6 gap-y-4 font-serif"
+        style={{ fontSize: 'calc(var(--slot) * 0.95)', lineHeight: 1 }}
+      >
+        {words.map((word, w) => (
+          <div key={w} className="flex flex-wrap items-end gap-x-1 gap-y-4">
+            {word.map((run, r) => (
+              <div key={r} className="flex items-end gap-1">
+                {Array.from({ length: run.length }, (_, i) => {
+                  const index = run.start + i;
+                  const isGiven = known.has(index);
+                  const n = rank.get(index);
+                  return (
+                    <Blank
+                      key={i}
+                      letter={isGiven ? run.text[i] : n === undefined ? undefined : letters[n]}
+                      given={isGiven}
+                      active={focused && n !== undefined && n === letters.length}
+                    />
+                  );
+                })}
+                {run.mark && <span className="pb-1 text-muted-foreground">{run.mark}</span>}
+              </div>
+            ))}
+          </div>
+        ))}
+        {over.length > 0 && (
+          <div className="flex items-end gap-1">
+            {over.map((letter, i) => (
+              <Blank key={i} letter={letter} over />
+            ))}
+          </div>
+        )}
+      </div>
+      {/* Sixteen pixels or more, or iOS zooms the page when it takes focus. */}
+      <input
+        ref={inputRef}
+        value={typed}
+        onChange={(e) => setTyped(e.target.value)}
+        onFocus={() => setFocused(true)}
+        onBlur={() => setFocused(false)}
+        aria-label={`Answer, ${total} letters, ${given.length} given. Type the other ${blanks}.`}
+        autoCapitalize="none"
+        autoCorrect="off"
+        autoComplete="off"
+        spellCheck={false}
+        enterKeyHint="go"
+        className="absolute inset-0 size-full cursor-text text-base opacity-0 caret-transparent"
+      />
+      {/* Always takes its line, so the board does not jump when it goes. */}
+      <p aria-hidden className={cn('pt-4 text-caption text-muted-foreground', (focused || typed) && 'invisible')}>
+        Tap to fill the blanks
+      </p>
     </div>
+  );
+}
+
+/** One blank: a letter on an underline. A given letter sits on a pale chip, so it
+ *  reads as part of the puzzle rather than something you typed. The blank being
+ *  typed into is the brightest, and pulses. */
+function Blank({ letter, given, active, over }: { letter?: string; given?: boolean; active?: boolean; over?: boolean }) {
+  return (
+    <span
+      data-slot="blank"
+      data-given={given ? '' : undefined}
+      data-filled={letter ? '' : undefined}
+      className={cn(
+        'inline-flex items-end justify-center border-b-[3px] pb-1 transition-colors duration-150',
+        letter ? 'border-white' : 'border-white/50',
+        given && 'rounded-t-sm bg-white/16',
+        active && 'blank-active border-white',
+        over && 'border-destructive text-destructive'
+      )}
+      style={{ width: 'var(--slot)', height: 'calc(var(--slot) * 1.45)' }}
+    >
+      {letter}
+    </span>
   );
 }
