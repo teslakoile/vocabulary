@@ -55,9 +55,26 @@ wording that is more complicated than it needs to be.
 | `distractors` | Exactly 5 wrong definitions, one sentence each. At least 2 at or above the definition's length and 2 below. |
 | `caution` | When not to use the word, or how it lands. 1 or 2 sentences, 180 characters or fewer. |
 | `example` | One natural sentence of speech, no surrounding quote marks. |
-| `cues` | 3 to 5 situations, each `{ "text", "setting": "work" \| "life" }`, about 60% work across the corpus. Never name the term or an obvious cognate. |
+| `cues` | 3 to 5 situations, each `{ "text", "setting": "work" \| "life" }`, about 60% work across the corpus. Never name the term or an obvious cognate. Each cue must show the meaning: see the cue test below. |
 | `word_distractors` | Leave `[]`. The assigner fills it. |
 | `prompt_version` | `4`. |
+
+## Cue test
+
+The production card shows "Type the word that fits." and one cue, nothing else.
+Read each cue alone and ask what Kyle would type. A cue fails when:
+
+- It asks an open question and gives no detail about the meaning, such as
+  "A sponsor asks what is missing from the strongest candidate."
+- It leads to a different, more common word. "Money sent home" leads to
+  `remittances`, not `diaspora`.
+- It asks for a different part of speech. "What the claim is missing" asks for a
+  noun, so it does not lead to `substantiate`.
+- It fits another word in the bank at least as well, and nothing in it tells the
+  two apart.
+
+Fix a failing cue by adding the detail that defines the word, or by saying what
+kind of expression is wanted: "the verb for", "the informal two-word phrase for".
 
 A sense is one meaning. Split a headword into several senses only when the forms
 differ in meaning, such as `trivial` and `nontrivial`. At most 6 senses per entry.

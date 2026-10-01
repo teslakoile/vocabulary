@@ -115,6 +115,17 @@ export function answerMatches(typed: string, sense: Sense): boolean {
   return false;
 }
 
+/** The first letter of each word and a dot for every other letter, so
+ *  `by and large` shows as `b· a·· l····`. A situation fits many words, and
+ *  nobody remembers which of them are in the bank; the shape says which one is
+ *  being asked for without spelling it. A label such as `(verb)` is dropped. */
+export function answerShape(term: string): string {
+  return term
+    .replace(/\s*\([^)]*\)/g, '')
+    .trim()
+    .replace(/[\p{L}\p{N}]+/gu, (word) => word[0] + '·'.repeat(word.length - 1));
+}
+
 interface Indexed {
   senses: Map<string, Sense>;
   entries: Map<string, Entry>;
@@ -159,7 +170,7 @@ function present(card: Card, { senses, entries }: Indexed, counts: boolean): Que
   }
 
   if (card.type === 'recognition' && sense.gloss && sense.gloss_distractors.length >= WRONG_OPTIONS) {
-    // "What does bolster mean?" answered with four short dictionary glosses.
+    // "What Does bolster Mean?" answered with four short dictionary glosses.
     // The wrong three were written in the same grammatical form as the right
     // one, so the card cannot be answered by spotting the only verb.
     item.options = shuffle([sense.gloss, ...sense.gloss_distractors.slice(0, WRONG_OPTIONS)]);

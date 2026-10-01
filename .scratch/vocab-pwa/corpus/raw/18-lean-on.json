@@ -23,11 +23,11 @@
           "setting": "work"
         },
         {
-          "text": "In a design discussion you want to say the new service should use the identity system that already exists rather than reinvent it.",
+          "text": "In a design discussion you want to say the new service should rely on the identity system that already exists rather than build its own, and you want an informal two-word verb for that.",
           "setting": "work"
         },
         {
-          "text": "You are telling a sponsor the team should build on what it already does well rather than chase a new area.",
+          "text": "You are telling a sponsor the team should rely on what it already does well rather than chase a new area, and you want the informal two-word verb for depending on a strength.",
           "setting": "work"
         },
         {

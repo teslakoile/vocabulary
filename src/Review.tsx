@@ -9,7 +9,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { ArrowRight, Check, Eye, Flag, Keyboard, ListChecks, MessageSquareQuote, Pencil, ScrollText, X } from 'lucide-react';
 import { applyGrade, gradeFor } from '../shared/scheduler';
 import EditPanel from './EditPanel';
-import { answerMatches, type Queue, type QueueItem } from './queue';
+import { answerMatches, answerShape, type Queue, type QueueItem } from './queue';
 import type { Entry } from './types';
 import { applyLocally, backlogOf, flagEntry, flush, recordEvent, type Snapshot } from './store';
 import { Headword, Shell } from '@/components/shell';
@@ -26,10 +26,10 @@ interface Props {
 type Answered = { correct: boolean; given?: string } | null;
 
 const KIND = {
-  recognition: { label: 'pick the meaning', icon: Eye },
-  identify: { label: 'pick the word', icon: ListChecks },
-  reverse: { label: 'type the word', icon: Keyboard },
-  production: { label: 'from a situation', icon: MessageSquareQuote },
+  recognition: { label: 'Meaning Choice', icon: Eye },
+  identify: { label: 'Word Choice', icon: ListChecks },
+  reverse: { label: 'Definition Recall', icon: Keyboard },
+  production: { label: 'Situation Recall', icon: MessageSquareQuote },
 } as const;
 
 /** What a card's options are checked against. Recognition offers definitions
@@ -41,8 +41,8 @@ const correctOption = (item: QueueItem): string =>
       ? item.sense.gloss
       : item.sense.definition;
 
-/** The question each card asks, in words. A bare headword or a bare definition
- *  left you to work out what was being asked. */
+/** The line above the prompt. A question where one reads naturally, and
+ *  otherwise the name of what the card shows: a definition or a situation. */
 function Ask({ children }: { children: React.ReactNode }) {
   return <p data-slot="ask" className="text-sm font-medium tracking-wide text-muted-foreground">{children}</p>;
 }
@@ -159,10 +159,10 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
             >
               {answered.correct ? <Check className="size-3.5" /> : <X className="size-3.5" />}
             </span>
-            {answered.correct ? 'Right' : 'Not this time'}
+            {answered.correct ? 'Correct' : 'Incorrect'}
             {answered.given && !answered.correct && (
               <span className="font-normal text-muted-foreground">
-                you wrote &ldquo;{answered.given}&rdquo;
+                Your Answer: &ldquo;{answered.given}&rdquo;
               </span>
             )}
           </div>
@@ -171,9 +171,9 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
             <h1 className="font-serif text-[2.1rem] leading-[1.1] font-semibold tracking-tight">
               <Headword>{sense.term}</Headword>
             </h1>
-            {sense.gloss && <p className="text-[1.05rem] text-muted-foreground">means {sense.gloss}</p>}
+            {sense.gloss && <p className="text-[1.05rem] text-muted-foreground">{sense.gloss}</p>}
             {sense.accepted.length > 0 && (
-              <p className="text-sm text-muted-foreground">also {sense.accepted.join(', ')}</p>
+              <p className="text-sm text-muted-foreground">Also Accepted: {sense.accepted.join(', ')}</p>
             )}
           </div>
 
@@ -210,7 +210,7 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
                 onClick={() => setEditing(true)}
               >
                 <Pencil />
-                Fix this
+                Edit
               </Button>
               <FlagControl key={entry.id} entry={entry} snapshot={snapshot} onSnapshot={onSnapshot} />
             </div>
@@ -237,7 +237,7 @@ function Backlog({ count }: { count: number }) {
   if (!count) return null;
   return (
     <p className="text-xs text-muted-foreground/80">
-      {count} {count === 1 ? 'word is' : 'words are'} waiting for your next refine
+      Backlog: {count}
     </p>
   );
 }
@@ -255,7 +255,7 @@ function FlagControl({ entry, snapshot, onSnapshot }: { entry: Entry; snapshot: 
   const [sent, setSent] = useState(false);
 
   if (entry.flagged_at || sent) {
-    return <span className="px-2 text-sm text-muted-foreground">Flagged for your next refine</span>;
+    return <span className="px-2 text-sm text-muted-foreground">Flagged</span>;
   }
   if (!open) {
     return (
@@ -291,7 +291,7 @@ function FlagControl({ entry, snapshot, onSnapshot }: { entry: Entry; snapshot: 
       <Input
         value={note}
         onChange={(e) => setNote(e.target.value)}
-        placeholder="What looks wrong? Optional"
+        placeholder="Note (Optional)"
         autoFocus
       />
       <Button type="submit" size="sm">Flag</Button>
@@ -315,9 +315,9 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
     return (
       <div data-slot="question" data-kind="recognition" className="stagger flex flex-col gap-4">
         <h1 className="font-serif text-[2.1rem] leading-[1.1] font-semibold tracking-tight">
-          <span className="font-normal text-muted-foreground">What does </span>
+          <span className="font-normal text-muted-foreground">What Does </span>
           <Headword>{sense.term}</Headword>
-          <span className="font-normal text-muted-foreground"> mean?</span>
+          <span className="font-normal text-muted-foreground"> Mean?</span>
         </h1>
         <ul data-slot="options" className="grid list-none gap-2.5 p-0">
           {(item.options ?? []).map((option, i) => (
@@ -342,7 +342,7 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
   if (card.type === 'identify') {
     return (
       <div data-slot="question" data-kind="identify" className="stagger flex flex-col gap-4">
-        <Ask>Which word means this?</Ask>
+        <Ask>Definition</Ask>
         <p data-slot="prompt" className="pt-1 text-[1.28rem] leading-[1.45]">{sense.definition}</p>
         {/* Two columns where there is room. A word is short enough that six of
          * them still read at a glance, which is the whole point of this card. */}
@@ -367,6 +367,8 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
 
   const prompt = card.type === 'reverse' ? sense.definition : (item.cue?.text ?? sense.definition);
 
+  const shape = answerShape(sense.term);
+
   const submit = () => {
     if (!typed.trim()) return;
     onReveal(answerMatches(typed, sense), typed.trim());
@@ -374,8 +376,16 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
 
   return (
     <div data-slot="question" data-kind={card.type} className="stagger flex flex-col gap-4">
-      <Ask>{card.type === 'reverse' ? 'Type the word that means this.' : 'Type the word that fits.'}</Ask>
+      <Ask>{card.type === 'reverse' ? 'Definition' : 'Situation'}</Ask>
       <p data-slot="prompt" className="pt-1 text-[1.28rem] leading-[1.45]">{prompt}</p>
+      {/* Many words fit a situation, and only one of them is in the bank. */}
+      <p
+        data-slot="shape"
+        aria-label={`Starts with ${shape[0]}, ${shape.length} characters`}
+        className="font-mono text-lg tracking-[0.18em] text-muted-foreground"
+      >
+        {shape}
+      </p>
       <form
         className="grid gap-3"
         onSubmit={(e) => {
@@ -387,7 +397,7 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
           ref={inputRef}
           value={typed}
           onChange={(e) => setTyped(e.target.value)}
-          placeholder="the word"
+          placeholder="Answer"
           autoCapitalize="none"
           autoCorrect="off"
           autoComplete="off"
@@ -404,7 +414,7 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
         className="self-start"
         onClick={() => onReveal(false)}
       >
-        I don&rsquo;t know
+        Reveal Answer
       </Button>
     </div>
   );

@@ -24,7 +24,7 @@
           "setting": "work"
         },
         {
-          "text": "Two services written in different languages need to exchange the same structure, and you are choosing the format both of them will write and read.",
+          "text": "Two services written in different languages need to exchange the same structure, and you want the verb for turning it into bytes that the other side can read back.",
           "setting": "work"
         },
         {

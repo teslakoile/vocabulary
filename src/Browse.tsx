@@ -113,7 +113,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
           }}
         >
           <ArrowLeft />
-          Back to the list
+          Back to List
         </Button>
 
         <div className="flex flex-col gap-2">
@@ -121,8 +121,8 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
             <Headword>{open.headword}</Headword>
           </h1>
           <div className="flex flex-wrap gap-1.5">
-            {open.archived_at && <Badge variant="secondary">archived</Badge>}
-            {open.status !== 'ready' && <Badge variant="outline">waiting for its meaning</Badge>}
+            {open.archived_at && <Badge variant="secondary">Archived</Badge>}
+            {open.status !== 'ready' && <Badge variant="outline">Pending</Badge>}
             {open.senses.length > 1 && (
               <Badge variant="outline">{open.senses.length} senses</Badge>
             )}
@@ -159,7 +159,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
                 onClick={() => setEditingSense(sense.id)}
               >
                 <Pencil />
-                Fix this
+                Edit
               </Button>
             )}
           </Card>
@@ -184,7 +184,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
           }}
         >
           {open.archived_at ? <RotateCcw /> : <Archive />}
-          {open.archived_at ? 'Bring this back' : 'Archive this word'}
+          {open.archived_at ? 'Restore' : 'Archive'}
         </Button>
       </Shell>
     );
@@ -194,7 +194,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
     <Shell>
       <Button variant="ghost" size="sm" className="self-start text-muted-foreground" onClick={onClose}>
         <ArrowLeft />
-        Back to practice
+        Back to Practice
       </Button>
 
       <div className="relative">
@@ -202,7 +202,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
         <Input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="search words, meanings, cautions"
+          placeholder="Search"
           type="search"
           className="pl-11"
           autoCapitalize="none"
@@ -253,7 +253,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
       {rows.length === 0 && (
         <Card className="items-center gap-3 border-dashed px-6 py-10 text-center">
           <SearchX className="size-6 text-muted-foreground" />
-          <p className="text-muted-foreground">Nothing matches.</p>
+          <p className="text-muted-foreground">No Matches</p>
         </Card>
       )}
     </Shell>

@@ -16,7 +16,7 @@
       "example": "Identity and audit are substrate. Nobody should be building either of them per product.",
       "cues": [
         {
-          "text": "You are arguing that authentication and logging get built once for everyone instead of separately by each product team.",
+          "text": "You are arguing that authentication and logging get built once as a base that every product team builds on top of, and you want the technical word for that base.",
           "setting": "work"
         },
         {
@@ -28,7 +28,7 @@
           "setting": "work"
         },
         {
-          "text": "Talking with a friend about how much of ordinary daily life quietly rests on the electricity grid.",
+          "text": "Talking with a friend about how much of daily life is built on the electricity grid, you want a word for a base that everything else depends on and nobody notices.",
           "setting": "life"
         },
         {

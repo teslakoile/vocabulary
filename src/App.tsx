@@ -141,13 +141,13 @@ export default function App() {
         // because it is competing with typing a line into Google Keep.
         <TopBar>
           <TopBarInner>
-            <Button variant="ghost" size="icon-xl" onClick={() => setView('capture')} aria-label="Add a word">
+            <Button variant="ghost" size="icon-xl" onClick={() => setView('capture')} aria-label="Add Word">
               <Plus />
             </Button>
             <span className="font-serif text-[0.7rem] tracking-[0.35em] text-muted-foreground uppercase">
               Vocabulary
             </span>
-            <Button variant="ghost" size="icon-xl" onClick={() => setView('browse')} aria-label="Search your words">
+            <Button variant="ghost" size="icon-xl" onClick={() => setView('browse')} aria-label="Search">
               <Search />
             </Button>
           </TopBarInner>
@@ -182,7 +182,7 @@ export default function App() {
                   await enableNudge();
                 }}
               >
-                Turn on
+                Turn On
               </Button>
               <Button
                 variant="ghost"
@@ -191,7 +191,7 @@ export default function App() {
                   setOfferNudge(false);
                 }}
               >
-                Not now
+                Not Now
               </Button>
             </div>
           </Card>

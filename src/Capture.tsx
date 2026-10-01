@@ -53,11 +53,11 @@ export default function Capture({ onClose, onCaptured }: Props) {
     <Shell>
       <Button variant="ghost" size="sm" className="self-start text-muted-foreground" onClick={onClose}>
         <ArrowLeft />
-        Back to practice
+        Back to Practice
       </Button>
 
       <h1 className="font-serif text-[2.1rem] leading-[1.1] font-semibold tracking-tight">
-        New word
+        New Word
       </h1>
 
       <Card className="gap-4 px-4 py-5">
@@ -70,7 +70,7 @@ export default function Capture({ onClose, onCaptured }: Props) {
         >
           <div className="grid gap-2">
             <Label htmlFor="headword" className="text-muted-foreground">
-              The word or phrase
+              Word or Phrase
             </Label>
             <Input
               id="headword"
@@ -86,14 +86,14 @@ export default function Capture({ onClose, onCaptured }: Props) {
           </div>
           <div className="grid gap-2">
             <Label htmlFor="note" className="text-muted-foreground">
-              Why you wrote it down
-              <span className="font-normal text-muted-foreground/60">optional</span>
+              Note
+              <span className="font-normal text-muted-foreground/60">Optional</span>
             </Label>
             <Input
               id="note"
               value={note}
               onChange={(e) => setNote(e.target.value)}
-              placeholder="who said it, and what it landed on"
+              placeholder="Source and Context"
             />
           </div>
           <Button size="xl" type="submit" className="w-full" disabled={!headword.trim()}>
@@ -114,7 +114,7 @@ export default function Capture({ onClose, onCaptured }: Props) {
 
       {saved.length > 0 && (
         <div className="flex flex-col gap-2">
-          <p className="text-xs tracking-wide text-muted-foreground/70 uppercase">saved just now</p>
+          <p className="text-xs tracking-wide text-muted-foreground/70 uppercase">Saved</p>
           <Card className="gap-0 overflow-hidden py-0">
             <ul className="list-none divide-y divide-border/70 p-0">
               {saved.map((word) => (

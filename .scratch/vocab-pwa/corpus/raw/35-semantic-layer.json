@@ -18,7 +18,7 @@
       "example": "Two dashboards disagree on churn because each defines it in its own SQL. That is exactly what a semantic layer is for.",
       "cues": [
         {
-          "text": "Finance and operations arrive at the same meeting with two different revenue numbers, and both are correct against their own queries.",
+          "text": "Finance and operations bring two different revenue numbers to the same meeting because each wrote its own query, and you want the name for the shared set of definitions that would sit between the tables and both reports.",
           "setting": "work"
         },
         {

@@ -28,7 +28,7 @@
           "setting": "work"
         },
         {
-          "text": "A sponsor asks why the inference bill grew much faster than the user count did.",
+          "text": "A sponsor asks why the inference bill grew much faster than the user count, and the answer is that each user request now splits into dozens of parallel model calls.",
           "setting": "work"
         },
         {
