@@ -343,6 +343,22 @@
     box-shadow: none;
   }
 
+  /* The blank you are typing into. It breathes, so the board reads as waiting for
+   * a letter even before the first one is typed. */
+  .blank-active {
+    animation: blank-pulse 1s ease-in-out infinite;
+  }
+  @keyframes blank-pulse {
+    50% {
+      border-color: oklch(1 0 0 / 35%);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .blank-active {
+      animation: none;
+    }
+  }
+
   .pressable {
     transition-property: transform, background-color, border-color, color, box-shadow, opacity;
     transition-duration: 160ms;
