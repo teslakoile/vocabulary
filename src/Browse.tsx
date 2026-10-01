@@ -14,10 +14,11 @@ import { Archive, ArrowLeft, ChevronRight, Pencil, RotateCcw, Search, SearchX } 
 import EditPanel from './EditPanel';
 import type { Card as CardRow, Entry, Snapshot } from './types';
 import { archiveEntry } from './store';
-import { Headword, Shell } from '@/components/shell';
+import { Empty, Heading, Headword, Shell } from '@/components/shell';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { Caution } from '@/components/caution';
 import { Input } from '@/components/ui/input';
 
 const FILTERS = ['All', 'Recent', 'Struggling', 'Pending', 'Archived'] as const;
@@ -106,7 +107,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
         <Button
           variant="ghost"
           size="sm"
-          className="self-start text-muted-foreground"
+          className="-ml-2 self-start text-muted-foreground"
           onClick={() => {
             setOpenId(null);
             setEditingSense(null);
@@ -116,11 +117,9 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
           Back to List
         </Button>
 
-        <div className="flex flex-col gap-2">
-          <h1 className="font-serif text-[2.1rem] leading-[1.1] font-semibold tracking-tight break-words">
-            <Headword>{open.headword}</Headword>
-          </h1>
-          <div className="flex flex-wrap gap-1.5">
+        <div className="flex flex-col gap-3 pb-1">
+          <Heading>{open.headword}</Heading>
+          <div className="flex flex-wrap gap-2">
             {open.archived_at && <Badge variant="secondary">Archived</Badge>}
             {open.status !== 'ready' && <Badge variant="outline">Pending</Badge>}
             {open.senses.length > 1 && (
@@ -130,45 +129,48 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
         </div>
 
         {open.senses.map((sense) => (
-          <Card key={sense.id} data-slot="sense" className="gap-3 px-4 py-4">
+          <Card key={sense.id} className="gap-4">
             {open.senses.length > 1 && (
-              <h2 className="font-serif text-[1.1rem] font-semibold text-brand break-words">
+              <h2 className="font-serif text-title break-words">
                 <Headword>{sense.term}</Headword>
               </h2>
             )}
-            <p className="leading-relaxed">{sense.definition}</p>
-            <p className="border-l-2 border-l-brand/70 pl-3 text-[0.95rem] leading-relaxed text-foreground/85">
-              {sense.caution}
-            </p>
-            <p className="font-serif leading-relaxed text-muted-foreground italic">
+            <p>{sense.definition}</p>
+            <Caution>{sense.caution}</Caution>
+            <p className="text-muted-foreground">
               &ldquo;{sense.example}&rdquo;
             </p>
-            {editingSense === sense.id ? (
-              <EditPanel
-                entry={open}
-                sense={sense}
-                snapshot={snapshot}
-                onSnapshot={onSnapshot}
-                onDone={() => setEditingSense(null)}
-              />
-            ) : (
-              <Button
-                variant="ghost"
-                size="sm"
-                className="self-start text-muted-foreground"
-                onClick={() => setEditingSense(sense.id)}
-              >
-                <Pencil />
-                Edit
-              </Button>
-            )}
+            {/* The card's actions sit under a hairline, the way a message's do. */}
+            <div className="-mx-4 border-t px-4 pt-3">
+              {editingSense === sense.id ? (
+                <div className="pt-1">
+                  <EditPanel
+                    entry={open}
+                    sense={sense}
+                    snapshot={snapshot}
+                    onSnapshot={onSnapshot}
+                    onDone={() => setEditingSense(null)}
+                  />
+                </div>
+              ) : (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="-ml-2 text-muted-foreground"
+                  onClick={() => setEditingSense(sense.id)}
+                >
+                  <Pencil />
+                  Edit
+                </Button>
+              )}
+            </div>
           </Card>
         ))}
 
         <Button
           variant="ghost"
           size="sm"
-          className="self-start text-muted-foreground"
+          className="-ml-2 self-start text-muted-foreground"
           onClick={async () => {
             const archived = open.archived_at === null;
             // Archive, never delete: the review history stays attached.
@@ -192,13 +194,13 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
 
   return (
     <Shell>
-      <Button variant="ghost" size="sm" className="self-start text-muted-foreground" onClick={onClose}>
+      <Button variant="ghost" size="sm" className="-ml-2 self-start text-muted-foreground" onClick={onClose}>
         <ArrowLeft />
         Back to Practice
       </Button>
 
       <div className="relative">
-        <Search className="pointer-events-none absolute top-1/2 left-4 size-4 -translate-y-1/2 text-muted-foreground" />
+        <Search className="pointer-events-none absolute top-1/2 left-4 z-10 size-4 -translate-y-1/2 text-ink/50" />
         <Input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -211,13 +213,13 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
         />
       </div>
 
-      <div className="flex flex-wrap gap-1.5">
+      <div className="flex flex-wrap gap-2">
         {FILTERS.map((name) => (
           <Button
             key={name}
             size="sm"
-            variant={name === filter ? 'brand' : 'outline'}
-            className="h-9 rounded-full px-3.5"
+            variant={name === filter ? 'default' : 'outline'}
+            className="px-4"
             onClick={() => setFilter(name)}
           >
             {name}
@@ -226,23 +228,23 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
       </div>
 
       {rows.length > 0 && (
-        <Card className="gap-0 overflow-hidden py-0">
-          <ul data-slot="rows" className="list-none divide-y divide-border/70 p-0">
+        <Card className="gap-0 overflow-hidden p-0">
+          <ul data-slot="rows" className="list-none divide-y divide-border p-0">
             {rows.map((entry) => (
               <li key={entry.id}>
                 <button
-                  className="pressable flex w-full items-center gap-3 px-4 py-3.5 text-left hover:bg-accent/50"
+                  className="pressable flex w-full items-center gap-3 px-4 py-4 text-left hover:bg-muted focus-visible:bg-muted focus-visible:outline-none"
                   onClick={() => setOpenId(entry.id)}
                 >
-                  <span className="flex min-w-0 flex-col gap-0.5">
+                  <span className="flex min-w-0 flex-col gap-1">
                     <strong className="font-semibold break-words">
                       <Headword>{entry.headword}</Headword>
                     </strong>
-                    <span className="text-[0.88rem] leading-snug text-muted-foreground">
+                    <span className="text-small text-muted-foreground">
                       {entry.status === 'ready' ? gloss(entry) : 'waiting for its meaning'}
                     </span>
                   </span>
-                  <ChevronRight className="ml-auto size-4 shrink-0 text-muted-foreground/60" />
+                  <ChevronRight className="ml-auto size-4 shrink-0 text-muted-foreground" />
                 </button>
               </li>
             ))}
@@ -251,10 +253,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
       )}
 
       {rows.length === 0 && (
-        <Card className="items-center gap-3 border-dashed px-6 py-10 text-center">
-          <SearchX className="size-6 text-muted-foreground" />
-          <p className="text-muted-foreground">No Matches</p>
-        </Card>
+        <Empty icon={SearchX}>No Matches</Empty>
       )}
     </Shell>
   );

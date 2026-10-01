@@ -10,8 +10,8 @@
  * So this shows on iOS in a tab and nowhere else, and it can be dismissed.
  */
 import { SquareArrowUp } from 'lucide-react';
+import { Notice } from '@/components/notice';
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
 
 const DISMISSED_KEY = 'vocab.install.dismissed';
 
@@ -26,20 +26,13 @@ interface Props {
 
 export default function InstallCard({ onDismiss }: Props) {
   return (
-    <Card className="gap-3 px-4 py-4">
-      <div className="flex items-start gap-3">
-        <span className="mt-0.5 flex size-9 shrink-0 items-center justify-center rounded-lg bg-brand-muted text-brand">
-          <SquareArrowUp className="size-4" />
-        </span>
-        <p className="text-sm text-muted-foreground">
-          Add this to your Home Screen to get the 1pm nudge. Practice works here either way.
-        </p>
-      </div>
-      <div className="flex items-center justify-between gap-2">
-        <span className="text-sm text-muted-foreground/80">Share, then Add to Home Screen</span>
+    <Notice
+      icon={SquareArrowUp}
+      actions={
         <Button
           variant="ghost"
           size="sm"
+          className="-ml-3"
           onClick={() => {
             localStorage.setItem(DISMISSED_KEY, '1');
             onDismiss();
@@ -47,7 +40,10 @@ export default function InstallCard({ onDismiss }: Props) {
         >
           Dismiss
         </Button>
-      </div>
-    </Card>
+      }
+    >
+      <p>Add this to your Home Screen to get the 1pm nudge. Practice works here either way.</p>
+      <p className="text-small text-muted-foreground">Share, then Add to Home Screen.</p>
+    </Notice>
   );
 }

@@ -3,19 +3,23 @@
  *
  * There is no session, no daily count and no done state, so nothing here counts
  * anything up or congratulates you. The only status the screen carries is a
- * quiet gold rule marking a card whose answer moves the schedule.
+ * white dot marking a card whose answer moves the schedule.
  */
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { ArrowRight, Check, Eye, Flag, Keyboard, ListChecks, MessageSquareQuote, Pencil, ScrollText, X } from 'lucide-react';
+import { ArrowRight, Check, Eye, Flag, Keyboard, ListChecks, MessageSquareQuote, Pencil, ScrollText, TriangleAlert, X } from 'lucide-react';
 import { applyGrade, gradeFor } from '../shared/scheduler';
 import EditPanel from './EditPanel';
 import { answerMatches, answerShape, type Queue, type QueueItem } from './queue';
 import type { Entry } from './types';
 import { applyLocally, backlogOf, flagEntry, flush, recordEvent, type Snapshot } from './store';
-import { Headword, Shell } from '@/components/shell';
+import { Caution } from '@/components/caution';
+import { Empty, Heading, Shell, Sky } from '@/components/shell';
 import { Button } from '@/components/ui/button';
+import { Notice } from '@/components/notice';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { cn } from '@/lib/utils';
 
 interface Props {
   queue: Queue;
@@ -41,10 +45,26 @@ const correctOption = (item: QueueItem): string =>
       ? item.sense.gloss
       : item.sense.definition;
 
+/** An answer you can tap: a white card, the same one whether it holds a
+ *  meaning or a word. */
+const OPTION =
+  'paper lift pressable flex w-full gap-3 rounded-xl bg-card px-4 py-4 text-left hover:bg-muted focus-visible:ring-[3px] focus-visible:ring-white/60 focus-visible:outline-none';
+
+/** The option number, for keyboard use. Hidden where there is no keyboard. */
+const KEY =
+  'hidden size-6 shrink-0 items-center justify-center rounded-md border font-sans text-caption text-muted-foreground pointer-fine:flex';
+
 /** The line above the prompt. A question where one reads naturally, and
- *  otherwise the name of what the card shows: a definition or a situation. */
-function Ask({ children }: { children: React.ReactNode }) {
-  return <p data-slot="ask" className="text-sm font-medium tracking-wide text-muted-foreground">{children}</p>;
+ *  otherwise the name of what the card shows: a definition or a situation. A
+ *  card whose answer moves the schedule carries a white dot, and nothing else
+ *  on the screen says so. */
+function Ask({ counts, children }: { counts: boolean; children: React.ReactNode }) {
+  return (
+    <p data-slot="ask" className="flex items-center gap-2 text-muted-foreground">
+      {counts && <span className="size-2 rounded-full bg-white" title="This answer moves the schedule" />}
+      {children}
+    </p>
+  );
 }
 
 export default function Review({ queue, snapshot, onSnapshot }: Props) {
@@ -115,12 +135,9 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
   if (!item) {
     return (
       <Shell className="justify-center">
-        <Card className="items-center gap-3 border-dashed px-6 py-10 text-center">
-          <ScrollText className="size-6 text-muted-foreground" />
-          <p className="text-muted-foreground">
-            Nothing to practise yet. Words appear here once they have been through generation.
-          </p>
-        </Card>
+        <Empty icon={ScrollText}>
+          Nothing to practise yet. Words appear here once they have been through generation.
+        </Empty>
       </Shell>
     );
   }
@@ -129,80 +146,60 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
   const kind = KIND[card.type];
 
   return (
-    <Shell>
-      {!answered && <Backlog count={backlogOf(snapshot.entries).length} />}
-
-      {item.counts && (
-        <span
-          className="h-[3px] w-7 shrink-0 rounded-full bg-brand/70"
-          title="This answer moves the schedule"
-        />
-      )}
-
+    <Shell className={cn(!answered && 'pb-0')}>
       {!answered ? (
-        <Question item={item} typed={typed} setTyped={setTyped} onReveal={reveal} inputRef={input} />
+        <>
+          <Backlog count={backlogOf(snapshot.entries).length} />
+          <Question item={item} typed={typed} setTyped={setTyped} onReveal={reveal} inputRef={input} />
+          <Sky />
+        </>
       ) : (
-        <div data-slot="answer" className="stagger flex flex-1 flex-col gap-4">
-          <div
-            className={
-              answered.correct
-                ? 'flex items-center gap-2 text-sm font-semibold tracking-wide text-[var(--success)]'
-                : 'flex items-center gap-2 text-sm font-semibold tracking-wide text-destructive'
-            }
-          >
-            <span
-              className={
-                answered.correct
-                  ? 'flex size-6 items-center justify-center rounded-full bg-[var(--success)]/15'
-                  : 'flex size-6 items-center justify-center rounded-full bg-destructive/15'
-              }
+        <div data-slot="answer" className="stagger flex flex-1 flex-col gap-6">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+            <p
+              className={cn(
+                'paper flex items-center gap-2 rounded-md bg-card px-3 py-2 text-small leading-none font-semibold',
+                answered.correct ? 'text-success' : 'text-destructive'
+              )}
             >
-              {answered.correct ? <Check className="size-3.5" /> : <X className="size-3.5" />}
-            </span>
-            {answered.correct ? 'Correct' : 'Incorrect'}
+              {answered.correct ? <Check className="size-4" strokeWidth={2.5} /> : <X className="size-4" strokeWidth={2.5} />}
+              {answered.correct ? 'Correct' : 'Incorrect'}
+            </p>
             {answered.given && !answered.correct && (
-              <span className="font-normal text-muted-foreground">
-                Your Answer: &ldquo;{answered.given}&rdquo;
-              </span>
+              <span className="text-small text-muted-foreground">Your Answer: &ldquo;{answered.given}&rdquo;</span>
             )}
           </div>
 
-          <div className="flex flex-col gap-1">
-            <h1 className="font-serif text-[2.1rem] leading-[1.1] font-semibold tracking-tight">
-              <Headword>{sense.term}</Headword>
-            </h1>
-            {sense.gloss && <p className="text-[1.05rem] text-muted-foreground">{sense.gloss}</p>}
+          {/* The reference's rhythm: 8 inside a group, 24 between groups. */}
+          <div className="flex flex-col gap-2">
+            <Heading>{sense.term}</Heading>
+            {sense.gloss && <p className="text-lead">{sense.gloss}</p>}
             {sense.accepted.length > 0 && (
-              <p className="text-sm text-muted-foreground">Also Accepted: {sense.accepted.join(', ')}</p>
+              <p className="text-small text-muted-foreground">Also Accepted: {sense.accepted.join(', ')}</p>
             )}
           </div>
 
-          <p className="text-[1.05rem] leading-relaxed">{sense.definition}</p>
-
-          {/* The field that stops a word being misused, so it gets the one accent
-           * on the screen. It is the reason this app is not a dictionary. */}
-          <Card className="gap-0 border-l-2 border-l-brand bg-brand-muted/30 px-4 py-3.5">
-            <p className="text-[0.97rem] leading-relaxed text-foreground/90">{sense.caution}</p>
-          </Card>
-
-          <p className="font-serif text-[1.02rem] leading-relaxed text-muted-foreground italic">
-            &ldquo;{sense.example}&rdquo;
-          </p>
-
-          {entry.capture_note && (
-            <p className="text-sm text-muted-foreground">{entry.capture_note}</p>
-          )}
+          <div className="flex flex-col gap-4">
+            <p>{sense.definition}</p>
+            <Caution>{sense.caution}</Caution>
+            <p className="text-muted-foreground">&ldquo;{sense.example}&rdquo;</p>
+            {entry.capture_note && (
+              <p className="text-small text-muted-foreground">{entry.capture_note}</p>
+            )}
+          </div>
 
           {editing ? (
-            <EditPanel
-              entry={entry}
-              sense={sense}
-              snapshot={snapshot}
-              onSnapshot={onSnapshot}
-              onDone={() => setEditing(false)}
-            />
+            <Card>
+              <EditPanel
+                entry={entry}
+                sense={sense}
+                snapshot={snapshot}
+                onSnapshot={onSnapshot}
+                onDone={() => setEditing(false)}
+              />
+            </Card>
           ) : (
-            <div className="flex flex-wrap items-center gap-1">
+            <div className="-ml-2 flex flex-wrap items-center gap-1">
               <Button
                 variant="ghost"
                 size="sm"
@@ -217,12 +214,12 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
           )}
 
           <div className="mt-auto flex flex-col gap-3 pt-2">
-            <Button size="xl" className="w-full" onClick={next} autoFocus>
+            <Button size="xl" className="w-full pr-5" onClick={next} autoFocus>
               Next
               <ArrowRight />
             </Button>
-            <p className="flex items-center justify-center gap-1.5 text-xs text-muted-foreground/70">
-              <kind.icon className="size-3.5" />
+            <p className="flex items-center justify-center gap-2 text-caption text-muted-foreground">
+              <kind.icon className="size-4" />
               {kind.label}
             </p>
           </div>
@@ -236,7 +233,7 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
 function Backlog({ count }: { count: number }) {
   if (!count) return null;
   return (
-    <p className="text-xs text-muted-foreground/80">
+    <p className="text-caption text-muted-foreground">
       Backlog: {count}
     </p>
   );
@@ -255,7 +252,12 @@ function FlagControl({ entry, snapshot, onSnapshot }: { entry: Entry; snapshot: 
   const [sent, setSent] = useState(false);
 
   if (entry.flagged_at || sent) {
-    return <span className="px-2 text-sm text-muted-foreground">Flagged</span>;
+    return (
+      <span className="inline-flex h-9 items-center gap-2 rounded-md border-2 border-input bg-secondary px-3 text-small font-medium backdrop-blur-xl">
+        <Flag className="size-4" />
+        Flagged
+      </span>
+    );
   }
   if (!open) {
     return (
@@ -280,23 +282,42 @@ function FlagControl({ entry, snapshot, onSnapshot }: { entry: Entry; snapshot: 
     }
   };
 
+  // Its own line, under the actions. The row it sits in is pulled left by the
+  // ghost buttons' padding, so this puts that back.
   return (
-    <form
-      className="flex w-full items-center gap-2 pt-1"
-      onSubmit={(e) => {
-        e.preventDefault();
-        void send();
-      }}
-    >
-      <Input
-        value={note}
-        onChange={(e) => setNote(e.target.value)}
-        placeholder="Note (Optional)"
-        autoFocus
-      />
-      <Button type="submit" size="sm">Flag</Button>
-      {failed && <span className="text-sm text-destructive">Not sent. Check your connection.</span>}
-    </form>
+    <Card className="mt-2 ml-2 basis-[calc(100%-0.5rem)]">
+      <form
+        className="grid gap-4"
+        onSubmit={(e) => {
+          e.preventDefault();
+          void send();
+        }}
+      >
+        <div className="grid gap-2">
+          <Label htmlFor={`flag-${entry.id}`}>
+            Note
+            <span className="font-normal text-muted-foreground">Optional</span>
+          </Label>
+          <Input
+            id={`flag-${entry.id}`}
+            value={note}
+            onChange={(e) => setNote(e.target.value)}
+            autoFocus
+          />
+        </div>
+        {failed && (
+          <Notice tone="error" icon={TriangleAlert}>
+            Not sent. Check your connection and try again.
+          </Notice>
+        )}
+        <div className="flex items-center gap-2">
+          <Button type="submit">Flag</Button>
+          <Button type="button" variant="ghost" onClick={() => setOpen(false)}>
+            Cancel
+          </Button>
+        </div>
+      </form>
+    </Card>
   );
 }
 
@@ -309,25 +330,23 @@ interface QuestionProps {
 }
 
 function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) {
-  const { sense, card } = item;
+  const { sense, card, counts } = item;
 
   if (card.type === 'recognition') {
     return (
-      <div data-slot="question" data-kind="recognition" className="stagger flex flex-col gap-4">
-        <h1 className="font-serif text-[2.1rem] leading-[1.1] font-semibold tracking-tight">
-          <span className="font-normal text-muted-foreground">What Does </span>
-          <Headword>{sense.term}</Headword>
-          <span className="font-normal text-muted-foreground"> Mean?</span>
-        </h1>
-        <ul data-slot="options" className="grid list-none gap-2.5 p-0">
+      <div data-slot="question" data-kind="recognition" className="stagger flex flex-col gap-6">
+        <div className="flex flex-col gap-2">
+          <Ask counts={counts}>What Does This Mean?</Ask>
+          <Heading>{sense.term}</Heading>
+        </div>
+        <ul data-slot="options" className="stagger-list grid list-none gap-3 p-0">
           {(item.options ?? []).map((option, i) => (
             <li key={option}>
               <button
-                className="surface pressable flex w-full items-start gap-3 rounded-xl border border-border bg-card px-4 py-3.5 text-left leading-snug hover:border-brand/40 hover:bg-accent/60"
+                className={cn(OPTION, 'items-start')}
                 onClick={() => onReveal(option === correctOption(item))}
               >
-                {/* The option number, for keyboard use. Hidden where there is no keyboard. */}
-                <kbd className="mt-px hidden size-6 shrink-0 items-center justify-center rounded-md border border-border bg-muted font-sans text-xs text-muted-foreground pointer-fine:flex">
+                <kbd className={KEY}>
                   {i + 1}
                 </kbd>
                 <span>{option}</span>
@@ -341,19 +360,21 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
 
   if (card.type === 'identify') {
     return (
-      <div data-slot="question" data-kind="identify" className="stagger flex flex-col gap-4">
-        <Ask>Definition</Ask>
-        <p data-slot="prompt" className="pt-1 text-[1.28rem] leading-[1.45]">{sense.definition}</p>
+      <div data-slot="question" data-kind="identify" className="stagger flex flex-col gap-6">
+        <div className="flex flex-col gap-2">
+          <Ask counts={counts}>Definition</Ask>
+          <p data-slot="prompt" className="font-serif text-title">{sense.definition}</p>
+        </div>
         {/* Two columns where there is room. A word is short enough that six of
          * them still read at a glance, which is the whole point of this card. */}
-        <ul data-slot="options" className="grid list-none gap-2.5 p-0 sm:grid-cols-2">
+        <ul data-slot="options" className="stagger-list grid list-none gap-3 p-0 sm:grid-cols-2">
           {(item.options ?? []).map((option, i) => (
             <li key={option}>
               <button
-                className="surface pressable flex w-full items-center gap-3 rounded-xl border border-border bg-card px-4 py-3.5 text-left font-serif text-[1.05rem] leading-snug hover:border-brand/40 hover:bg-accent/60"
+                className={cn(OPTION, 'items-center font-semibold')}
                 onClick={() => onReveal(option === sense.term)}
               >
-                <kbd className="hidden size-6 shrink-0 items-center justify-center rounded-md border border-border bg-muted font-sans text-xs text-muted-foreground pointer-fine:flex">
+                <kbd className={cn(KEY, 'font-normal')}>
                   {i + 1}
                 </kbd>
                 <span>{option}</span>
@@ -375,17 +396,21 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
   };
 
   return (
-    <div data-slot="question" data-kind={card.type} className="stagger flex flex-col gap-4">
-      <Ask>{card.type === 'reverse' ? 'Definition' : 'Situation'}</Ask>
-      <p data-slot="prompt" className="pt-1 text-[1.28rem] leading-[1.45]">{prompt}</p>
-      {/* Many words fit a situation, and only one of them is in the bank. */}
-      <p
-        data-slot="shape"
-        aria-label={`Starts with ${shape[0]}, ${shape.length} characters`}
-        className="font-mono text-lg tracking-[0.18em] text-muted-foreground"
-      >
-        {shape}
-      </p>
+    <div data-slot="question" data-kind={card.type} className="stagger flex flex-col gap-6">
+      <div className="flex flex-col gap-2">
+        <Ask counts={counts}>{card.type === 'reverse' ? 'Definition' : 'Situation'}</Ask>
+        <p data-slot="prompt" className="font-serif text-title">{prompt}</p>
+        {/* Many words fit a situation, and only one of them is in the bank.
+         *  Spaced out so each dot reads as one letter; the one place in the app
+         *  with letter-spacing. */}
+        <p
+          data-slot="shape"
+          aria-label={`Starts with ${shape[0]}, ${shape.length} characters`}
+          className="pt-2 text-lead tracking-[0.18em] text-muted-foreground"
+        >
+          {shape}
+        </p>
+      </div>
       <form
         className="grid gap-3"
         onSubmit={(e) => {
@@ -404,14 +429,15 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
           spellCheck={false}
           enterKeyHint="go"
         />
-        <Button size="xl" type="submit" className="w-full" disabled={!typed.trim()}>
+        <Button size="xl" type="submit" className="w-full pr-5" disabled={!typed.trim()}>
           Check
+          <ArrowRight />
         </Button>
       </form>
       <Button
         variant="quiet"
         size="sm"
-        className="self-start"
+        className="-ml-3 self-start"
         onClick={() => onReveal(false)}
       >
         Reveal Answer

@@ -5,36 +5,41 @@ import { Slot } from "radix-ui"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-[color,background-color,border-color,box-shadow,transform,opacity] duration-150 ease-[cubic-bezier(0.2,0,0,1)] active:not-disabled:scale-[0.96] motion-reduce:active:scale-100 outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+  "inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-small font-medium whitespace-nowrap transition-[color,background-color,border-color,box-shadow,scale,opacity] duration-150 ease-[cubic-bezier(0.2,0,0,1)] active:not-disabled:scale-[0.96] data-[static=true]:active:scale-100 motion-reduce:active:scale-100 outline-none focus-visible:ring-4 focus-visible:ring-ring/40 disabled:pointer-events-none aria-invalid:border-destructive [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        // A disabled primary keeps its shape and loses its fill, rather than
+        // fading to a muddy half-white.
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 disabled:bg-primary-muted disabled:text-primary-muted-foreground",
         destructive:
-          "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:bg-destructive/60 dark:focus-visible:ring-destructive/40",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90 disabled:opacity-50",
         outline:
-          "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
+          "border-2 border-input bg-secondary text-secondary-foreground backdrop-blur-xl hover:bg-accent hover:text-accent-foreground disabled:opacity-50",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+          "bg-secondary text-secondary-foreground hover:bg-accent disabled:opacity-50",
         ghost:
-          "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
+          "hover:bg-accent hover:text-accent-foreground disabled:opacity-50",
         link: "text-primary underline-offset-4 hover:underline",
         brand:
-          "bg-brand text-brand-foreground shadow-sm hover:bg-brand/90",
+          "bg-brand text-brand-foreground hover:bg-brand/90 disabled:opacity-50",
         quiet:
-          "text-muted-foreground underline underline-offset-4 hover:text-foreground",
+          "text-muted-foreground underline underline-offset-4 hover:text-foreground disabled:opacity-50",
       },
       size: {
-        default: "h-9 px-4 py-2 has-[>svg]:px-3",
-        xs: "h-6 gap-1 rounded-md px-2 text-xs has-[>svg]:px-1.5 [&_svg:not([class*='size-'])]:size-3",
-        sm: "h-8 gap-1.5 rounded-md px-3 has-[>svg]:px-2.5",
-        lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+        // An icon reads as part of the padding, so its side gets less. CSS cannot
+        // tell a leading icon from a trailing one when the label is a bare text
+        // node, so sizes assume a leading icon and a trailing one passes pr-*.
+        default: "h-10 px-5 has-[>svg]:pl-4",
+        // 36 to look at, 40 to hit: the extra lives in a pseudo-element above and
+        // below, so a row of these does not grow and their hit areas do not touch.
+        sm: "relative h-9 px-3 after:absolute after:inset-x-0 after:-inset-y-0.5 has-[>svg]:pl-2",
+        lg: "h-10 px-6 has-[>svg]:px-4",
         icon: "size-9",
-        "icon-xs": "size-6 rounded-md [&_svg:not([class*='size-'])]:size-3",
         "icon-sm": "size-8",
         "icon-lg": "size-10",
-        xl: "h-13 rounded-lg px-5 text-base has-[>svg]:px-4 [&_svg:not([class*='size-'])]:size-5",
-        "icon-xl": "size-11 rounded-full [&_svg:not([class*='size-'])]:size-5",
+        xl: "h-14 rounded-xl px-6 text-body in-data-[slot=card]:rounded-md [&_svg:not([class*='size-'])]:size-5",
+        "icon-xl": "size-11 rounded-xl [&_svg:not([class*='size-'])]:size-5",
       },
     },
     defaultVariants: {
@@ -49,10 +54,13 @@ function Button({
   variant = "default",
   size = "default",
   asChild = false,
+  static: isStatic = false,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean
+    /** Turns off the press scale, for a control where the motion would distract. */
+    static?: boolean
   }) {
   const Comp = asChild ? Slot.Root : "button"
 
@@ -61,6 +69,7 @@ function Button({
       data-slot="button"
       data-variant={variant}
       data-size={size}
+      data-static={isStatic || undefined}
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
     />

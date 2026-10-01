@@ -10,7 +10,7 @@
 // iOS runs nothing while the app is closed: Background Sync is unimplemented
 // and Periodic Background Sync is WONTFIX. So this worker never syncs on its
 // own. Flushing happens in the page, on open / visibilitychange / reconnect.
-const SHELL = 'shell-v4';
+const SHELL = 'shell-v5';
 
 self.addEventListener('install', (e) => {
   e.waitUntil(

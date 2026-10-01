@@ -2,14 +2,12 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 
+/** A multi-line field that grows with its text, styled like `Input`. */
 function Textarea({ className, ...props }: React.ComponentProps<"textarea">) {
   return (
     <textarea
       data-slot="textarea"
-      className={cn(
-        "flex field-sizing-content min-h-16 w-full rounded-lg border border-input bg-card/70 px-4 py-3 text-base shadow-xs transition-[color,box-shadow] outline-none placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40",
-        className
-      )}
+      className={cn("field flex field-sizing-content min-h-14 w-full resize-none rounded-xl px-4 py-4 text-body in-data-[slot=card]:rounded-md", className)}
       {...props}
     />
   )
