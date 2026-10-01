@@ -9,7 +9,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { ArrowRight, Check, Eye, Flag, Keyboard, ListChecks, MessageSquareQuote, Pencil, ScrollText, TriangleAlert, X } from 'lucide-react';
 import { applyGrade, gradeFor } from '../shared/scheduler';
 import EditPanel from './EditPanel';
-import { answerMatches, type Queue, type QueueItem } from './queue';
+import { answerMatches, answerShape, type Queue, type QueueItem } from './queue';
 import type { Entry } from './types';
 import { applyLocally, backlogOf, flagEntry, flush, recordEvent, type Snapshot } from './store';
 import { Caution } from '@/components/caution';
@@ -30,10 +30,10 @@ interface Props {
 type Answered = { correct: boolean; given?: string } | null;
 
 const KIND = {
-  recognition: { label: 'pick the meaning', icon: Eye },
-  identify: { label: 'pick the word', icon: ListChecks },
-  reverse: { label: 'type the word', icon: Keyboard },
-  production: { label: 'from a situation', icon: MessageSquareQuote },
+  recognition: { label: 'Meaning Choice', icon: Eye },
+  identify: { label: 'Word Choice', icon: ListChecks },
+  reverse: { label: 'Definition Recall', icon: Keyboard },
+  production: { label: 'Situation Recall', icon: MessageSquareQuote },
 } as const;
 
 /** What a card's options are checked against. Recognition offers definitions
@@ -54,9 +54,10 @@ const OPTION =
 const KEY =
   'hidden size-6 shrink-0 items-center justify-center rounded-md border font-sans text-caption text-muted-foreground pointer-fine:flex';
 
-/** The question each card asks, in words. A bare headword or a bare definition
- *  left you to work out what was being asked. A card whose answer moves the
- *  schedule carries a white dot, and nothing else on the screen says so. */
+/** The line above the prompt. A question where one reads naturally, and
+ *  otherwise the name of what the card shows: a definition or a situation. A
+ *  card whose answer moves the schedule carries a white dot, and nothing else
+ *  on the screen says so. */
 function Ask({ counts, children }: { counts: boolean; children: React.ReactNode }) {
   return (
     <p data-slot="ask" className="flex items-center gap-2 text-muted-foreground">
@@ -162,19 +163,19 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
               )}
             >
               {answered.correct ? <Check className="size-4" strokeWidth={2.5} /> : <X className="size-4" strokeWidth={2.5} />}
-              {answered.correct ? 'Right' : 'Not this time'}
+              {answered.correct ? 'Correct' : 'Incorrect'}
             </p>
             {answered.given && !answered.correct && (
-              <span className="text-small text-muted-foreground">you wrote &ldquo;{answered.given}&rdquo;</span>
+              <span className="text-small text-muted-foreground">Your Answer: &ldquo;{answered.given}&rdquo;</span>
             )}
           </div>
 
           {/* The reference's rhythm: 8 inside a group, 24 between groups. */}
           <div className="flex flex-col gap-2">
             <Heading>{sense.term}</Heading>
-            {sense.gloss && <p className="text-lead">means {sense.gloss}</p>}
+            {sense.gloss && <p className="text-lead">{sense.gloss}</p>}
             {sense.accepted.length > 0 && (
-              <p className="text-small text-muted-foreground">also {sense.accepted.join(', ')}</p>
+              <p className="text-small text-muted-foreground">Also Accepted: {sense.accepted.join(', ')}</p>
             )}
           </div>
 
@@ -206,7 +207,7 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
                 onClick={() => setEditing(true)}
               >
                 <Pencil />
-                Fix this
+                Edit
               </Button>
               <FlagControl key={entry.id} entry={entry} snapshot={snapshot} onSnapshot={onSnapshot} />
             </div>
@@ -233,7 +234,7 @@ function Backlog({ count }: { count: number }) {
   if (!count) return null;
   return (
     <p className="text-caption text-muted-foreground">
-      {count} {count === 1 ? 'word is' : 'words are'} waiting for your next refine
+      Backlog: {count}
     </p>
   );
 }
@@ -254,7 +255,7 @@ function FlagControl({ entry, snapshot, onSnapshot }: { entry: Entry; snapshot: 
     return (
       <span className="inline-flex h-9 items-center gap-2 rounded-md border-2 border-input bg-secondary px-3 text-small font-medium backdrop-blur-xl">
         <Flag className="size-4" />
-        Flagged for your next refine
+        Flagged
       </span>
     );
   }
@@ -294,14 +295,13 @@ function FlagControl({ entry, snapshot, onSnapshot }: { entry: Entry; snapshot: 
       >
         <div className="grid gap-2">
           <Label htmlFor={`flag-${entry.id}`}>
-            What looks wrong?
-            <span className="font-normal text-muted-foreground">optional</span>
+            Note
+            <span className="font-normal text-muted-foreground">Optional</span>
           </Label>
           <Input
             id={`flag-${entry.id}`}
             value={note}
             onChange={(e) => setNote(e.target.value)}
-            placeholder="the example is about the other sense"
             autoFocus
           />
         </div>
@@ -311,7 +311,7 @@ function FlagControl({ entry, snapshot, onSnapshot }: { entry: Entry; snapshot: 
           </Notice>
         )}
         <div className="flex items-center gap-2">
-          <Button type="submit">Flag for refine</Button>
+          <Button type="submit">Flag</Button>
           <Button type="button" variant="ghost" onClick={() => setOpen(false)}>
             Cancel
           </Button>
@@ -336,7 +336,7 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
     return (
       <div data-slot="question" data-kind="recognition" className="stagger flex flex-col gap-6">
         <div className="flex flex-col gap-2">
-          <Ask counts={counts}>What does this mean?</Ask>
+          <Ask counts={counts}>What Does This Mean?</Ask>
           <Heading>{sense.term}</Heading>
         </div>
         <ul data-slot="options" className="stagger-list grid list-none gap-3 p-0">
@@ -362,7 +362,7 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
     return (
       <div data-slot="question" data-kind="identify" className="stagger flex flex-col gap-6">
         <div className="flex flex-col gap-2">
-          <Ask counts={counts}>Which word means this?</Ask>
+          <Ask counts={counts}>Definition</Ask>
           <p data-slot="prompt" className="font-serif text-title">{sense.definition}</p>
         </div>
         {/* Two columns where there is room. A word is short enough that six of
@@ -388,6 +388,8 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
 
   const prompt = card.type === 'reverse' ? sense.definition : (item.cue?.text ?? sense.definition);
 
+  const shape = answerShape(sense.term);
+
   const submit = () => {
     if (!typed.trim()) return;
     onReveal(answerMatches(typed, sense), typed.trim());
@@ -396,8 +398,18 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
   return (
     <div data-slot="question" data-kind={card.type} className="stagger flex flex-col gap-6">
       <div className="flex flex-col gap-2">
-        <Ask counts={counts}>{card.type === 'reverse' ? 'Type the word that means this.' : 'Type the word that fits.'}</Ask>
+        <Ask counts={counts}>{card.type === 'reverse' ? 'Definition' : 'Situation'}</Ask>
         <p data-slot="prompt" className="font-serif text-title">{prompt}</p>
+        {/* Many words fit a situation, and only one of them is in the bank.
+         *  Spaced out so each dot reads as one letter; the one place in the app
+         *  with letter-spacing. */}
+        <p
+          data-slot="shape"
+          aria-label={`Starts with ${shape[0]}, ${shape.length} characters`}
+          className="pt-2 text-lead tracking-[0.18em] text-muted-foreground"
+        >
+          {shape}
+        </p>
       </div>
       <form
         className="grid gap-3"
@@ -410,7 +422,7 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
           ref={inputRef}
           value={typed}
           onChange={(e) => setTyped(e.target.value)}
-          placeholder="the word"
+          placeholder="Answer"
           autoCapitalize="none"
           autoCorrect="off"
           autoComplete="off"
@@ -428,7 +440,7 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
         className="-ml-3 self-start"
         onClick={() => onReveal(false)}
       >
-        I don&rsquo;t know
+        Reveal Answer
       </Button>
     </div>
   );

@@ -24,7 +24,7 @@ export default function SecretGate({ rejected, onAccepted }: Props) {
       <div className="stagger flex flex-1 flex-col justify-center gap-6 py-10">
         <div className="flex flex-col gap-2">
           <p className="font-serif text-title leading-none">Vocabulary</p>
-          <h1 className="headword">{rejected ? 'That key was refused.' : 'Paste your key.'}</h1>
+          <h1 className="headword">{rejected ? 'Key Refused' : 'Enter Key'}</h1>
           <p className="max-w-[34ch] text-lead">
             {rejected
               ? 'The server did not accept the key stored on this device. Paste it again.'
@@ -46,7 +46,7 @@ export default function SecretGate({ rejected, onAccepted }: Props) {
             value={value}
             onChange={(e) => setValue(e.target.value)}
             type="password"
-            placeholder="key"
+            placeholder="Key"
             autoCapitalize="none"
             autoCorrect="off"
             autoComplete="current-password"

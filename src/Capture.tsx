@@ -54,10 +54,10 @@ export default function Capture({ onClose, onCaptured }: Props) {
     <Shell>
       <Button variant="ghost" size="sm" className="-ml-2 self-start text-muted-foreground" onClick={onClose}>
         <ArrowLeft />
-        Back to practice
+        Back to Practice
       </Button>
 
-      <Heading className="pb-1">New word</Heading>
+      <Heading className="pb-1">New Word</Heading>
 
       <Card>
         <form
@@ -69,7 +69,7 @@ export default function Capture({ onClose, onCaptured }: Props) {
         >
           <div className="grid gap-2">
             <Label htmlFor="headword">
-              The word or phrase
+              Word or Phrase
             </Label>
             <Input
               id="headword"
@@ -85,14 +85,14 @@ export default function Capture({ onClose, onCaptured }: Props) {
           </div>
           <div className="grid gap-2">
             <Label htmlFor="note">
-              Why you wrote it down
-              <span className="font-normal text-muted-foreground">optional</span>
+              Note
+              <span className="font-normal text-muted-foreground">Optional</span>
             </Label>
             <Input
               id="note"
               value={note}
               onChange={(e) => setNote(e.target.value)}
-              placeholder="who said it, and what it landed on"
+              placeholder="Source and Context"
             />
           </div>
           <Button size="xl" type="submit" className="mt-1 w-full pr-5" disabled={!headword.trim()}>
@@ -110,7 +110,7 @@ export default function Capture({ onClose, onCaptured }: Props) {
 
       {saved.length > 0 && (
         <div className="flex flex-col gap-2">
-          <p className="text-small text-muted-foreground">Saved just now</p>
+          <p className="text-small text-muted-foreground">Saved</p>
           <Card className="gap-0 overflow-hidden p-0">
             <ul className="list-none divide-y divide-border p-0">
               {saved.map((word) => (

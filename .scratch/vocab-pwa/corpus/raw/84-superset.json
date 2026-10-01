@@ -30,7 +30,7 @@
           "setting": "work"
         },
         {
-          "text": "You are pushing back on a migration plan because the target covers only most of what the current system does, not all of it.",
+          "text": "You are pushing back on a migration plan because the target must contain everything the current system does plus the new features, and today it covers only most of it. You want the word for what the target has to be.",
           "setting": "work"
         }
       ],

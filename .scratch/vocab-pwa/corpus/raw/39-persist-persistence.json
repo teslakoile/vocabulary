@@ -23,7 +23,7 @@
           "setting": "work"
         },
         {
-          "text": "In a design review someone is holding session state in memory on a single node, and you want to name the missing property before it goes near production.",
+          "text": "In a design review someone is holding session state in memory on a single node, and you want the verb for what they should do with that state so it survives a restart.",
           "setting": "work"
         },
         {

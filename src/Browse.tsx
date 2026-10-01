@@ -114,14 +114,14 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
           }}
         >
           <ArrowLeft />
-          Back to the list
+          Back to List
         </Button>
 
         <div className="flex flex-col gap-3 pb-1">
           <Heading>{open.headword}</Heading>
           <div className="flex flex-wrap gap-2">
-            {open.archived_at && <Badge variant="secondary">archived</Badge>}
-            {open.status !== 'ready' && <Badge variant="outline">waiting for its meaning</Badge>}
+            {open.archived_at && <Badge variant="secondary">Archived</Badge>}
+            {open.status !== 'ready' && <Badge variant="outline">Pending</Badge>}
             {open.senses.length > 1 && (
               <Badge variant="outline">{open.senses.length} senses</Badge>
             )}
@@ -160,7 +160,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
                   onClick={() => setEditingSense(sense.id)}
                 >
                   <Pencil />
-                  Fix this
+                  Edit
                 </Button>
               )}
             </div>
@@ -186,7 +186,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
           }}
         >
           {open.archived_at ? <RotateCcw /> : <Archive />}
-          {open.archived_at ? 'Bring this back' : 'Archive this word'}
+          {open.archived_at ? 'Restore' : 'Archive'}
         </Button>
       </Shell>
     );
@@ -196,7 +196,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
     <Shell>
       <Button variant="ghost" size="sm" className="-ml-2 self-start text-muted-foreground" onClick={onClose}>
         <ArrowLeft />
-        Back to practice
+        Back to Practice
       </Button>
 
       <div className="relative">
@@ -204,7 +204,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
         <Input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="search words, meanings, cautions"
+          placeholder="Search"
           type="search"
           className="pl-11"
           autoCapitalize="none"
@@ -253,7 +253,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
       )}
 
       {rows.length === 0 && (
-        <Empty icon={SearchX}>Nothing matches.</Empty>
+        <Empty icon={SearchX}>No Matches</Empty>
       )}
     </Shell>
   );
