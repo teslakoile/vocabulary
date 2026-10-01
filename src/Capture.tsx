@@ -9,8 +9,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, Check, Plus, TriangleAlert } from 'lucide-react';
 import { captureEntry } from './store';
-import { Shell } from '@/components/shell';
+import { Heading, Shell } from '@/components/shell';
 import { Button } from '@/components/ui/button';
+import { Notice } from '@/components/notice';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -51,16 +52,14 @@ export default function Capture({ onClose, onCaptured }: Props) {
 
   return (
     <Shell>
-      <Button variant="ghost" size="sm" className="self-start text-muted-foreground" onClick={onClose}>
+      <Button variant="ghost" size="sm" className="-ml-2 self-start text-muted-foreground" onClick={onClose}>
         <ArrowLeft />
         Back to practice
       </Button>
 
-      <h1 className="font-serif text-[2.1rem] leading-[1.1] font-semibold tracking-tight">
-        New word
-      </h1>
+      <Heading className="pb-1">New word</Heading>
 
-      <Card className="gap-4 px-4 py-5">
+      <Card>
         <form
           className="grid gap-4"
           onSubmit={(e) => {
@@ -69,7 +68,7 @@ export default function Capture({ onClose, onCaptured }: Props) {
           }}
         >
           <div className="grid gap-2">
-            <Label htmlFor="headword" className="text-muted-foreground">
+            <Label htmlFor="headword">
               The word or phrase
             </Label>
             <Input
@@ -85,9 +84,9 @@ export default function Capture({ onClose, onCaptured }: Props) {
             />
           </div>
           <div className="grid gap-2">
-            <Label htmlFor="note" className="text-muted-foreground">
+            <Label htmlFor="note">
               Why you wrote it down
-              <span className="font-normal text-muted-foreground/60">optional</span>
+              <span className="font-normal text-muted-foreground">optional</span>
             </Label>
             <Input
               id="note"
@@ -96,31 +95,30 @@ export default function Capture({ onClose, onCaptured }: Props) {
               placeholder="who said it, and what it landed on"
             />
           </div>
-          <Button size="xl" type="submit" className="w-full" disabled={!headword.trim()}>
-            <Plus />
+          <Button size="xl" type="submit" className="mt-1 w-full pr-5" disabled={!headword.trim()}>
             Save
+            <Plus />
           </Button>
         </form>
       </Card>
 
       {failed && (
-        <Card className="flex-row items-start gap-3 border-destructive/40 bg-destructive/10 px-4 py-3.5">
-          <TriangleAlert className="mt-0.5 size-4 shrink-0 text-destructive" />
-          <p className="text-sm text-destructive">
-            That did not reach the server. Try again once you have a connection.
-          </p>
-        </Card>
+        <Notice tone="error" icon={TriangleAlert}>
+          That did not reach the server. Try again once you have a connection.
+        </Notice>
       )}
 
       {saved.length > 0 && (
         <div className="flex flex-col gap-2">
-          <p className="text-xs tracking-wide text-muted-foreground/70 uppercase">saved just now</p>
-          <Card className="gap-0 overflow-hidden py-0">
-            <ul className="list-none divide-y divide-border/70 p-0">
+          <p className="text-small text-muted-foreground">Saved just now</p>
+          <Card className="gap-0 overflow-hidden p-0">
+            <ul className="list-none divide-y divide-border p-0">
               {saved.map((word) => (
-                <li key={word} className="flex items-center gap-2.5 px-4 py-3">
-                  <Check className="size-4 shrink-0 text-brand" />
-                  <span className="break-words">{word}</span>
+                <li key={word} className="flex items-center gap-3 px-4 py-3">
+                  <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-success/12 text-success">
+                    <Check className="size-4" strokeWidth={2.5} />
+                  </span>
+                  <span className="font-semibold break-words">{word}</span>
                 </li>
               ))}
             </ul>

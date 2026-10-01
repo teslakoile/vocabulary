@@ -1,13 +1,13 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
 import { Bell, Plus, Search, Share } from 'lucide-react';
 import Browse from './Browse';
 import Capture from './Capture';
 import InstallCard, { shouldOfferInstall } from './InstallCard';
 import Review from './Review';
 import SecretGate from './SecretGate';
-import { Shell, TopBar, TopBarInner } from '@/components/shell';
+import { Empty, Shell, TopBar, TopBarInner } from '@/components/shell';
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
+import { Notice } from '@/components/notice';
 import { Queue } from './queue';
 import { dismissNudgeOffer, enableNudge, nudgeState } from './push';
 import { getSecret, readSnapshot, sync, UnauthorisedError, type Snapshot } from './store';
@@ -123,19 +123,21 @@ export default function App() {
   if (!snapshot || !queue) {
     return (
       <Shell className="justify-center">
-        <Card className="items-center gap-3 px-6 py-10 text-center">
-          <Share className="size-6 text-muted-foreground" />
-          <p className="text-muted-foreground">
-            Nothing cached yet, and the server is not reachable. Open this again once you have a
-            connection.
-          </p>
-        </Card>
+        <Empty icon={Share}>
+          Nothing cached yet, and the server is not reachable. Open this again once you have a
+          connection.
+        </Empty>
       </Shell>
     );
   }
 
   return (
-    <div className="flex min-h-dvh flex-col">
+    // The top bar already clears the status bar, so the screen under it must not
+    // clear it a second time.
+    <div
+      className="flex min-h-dvh flex-col"
+      style={view === 'review' ? ({ '--safe-top': '0px' } as CSSProperties) : undefined}
+    >
       {view === 'review' && (
         // Capture is one tap from practising rather than buried in a menu,
         // because it is competing with typing a line into Google Keep.
@@ -144,9 +146,7 @@ export default function App() {
             <Button variant="ghost" size="icon-xl" onClick={() => setView('capture')} aria-label="Add a word">
               <Plus />
             </Button>
-            <span className="font-serif text-[0.7rem] tracking-[0.35em] text-muted-foreground uppercase">
-              Vocabulary
-            </span>
+            <span className="font-serif text-title leading-none">Vocabulary</span>
             <Button variant="ghost" size="icon-xl" onClick={() => setView('browse')} aria-label="Search your words">
               <Search />
             </Button>
@@ -164,37 +164,33 @@ export default function App() {
         // iOS ignores a permission request that is not tied to a tap, so the
         // ask has to be a button rather than something that fires on launch.
         <div className="mx-auto w-full max-w-[34rem] px-5 pt-4">
-          <Card className="gap-3 border-brand/25 bg-brand-muted/40 px-4 py-4">
-            <div className="flex items-start gap-3">
-              <span className="mt-0.5 flex size-9 shrink-0 items-center justify-center rounded-lg bg-brand/15 text-brand">
-                <Bell className="size-4" />
-              </span>
-              <p className="text-sm text-muted-foreground">
-                A word at 1pm each day on this device, so this stays a habit. Turning it on
-                elsewhere too is fine.
-              </p>
-            </div>
-            <div className="flex items-center gap-2">
-              <Button
-                variant="brand"
-                onClick={async () => {
-                  setOfferNudge(false);
-                  await enableNudge();
-                }}
-              >
-                Turn on
-              </Button>
-              <Button
-                variant="ghost"
-                onClick={() => {
-                  dismissNudgeOffer();
-                  setOfferNudge(false);
-                }}
-              >
-                Not now
-              </Button>
-            </div>
-          </Card>
+          <Notice
+            icon={Bell}
+            actions={
+              <>
+                <Button
+                  onClick={async () => {
+                    setOfferNudge(false);
+                    await enableNudge();
+                  }}
+                >
+                  Turn on
+                </Button>
+                <Button
+                  variant="ghost"
+                  onClick={() => {
+                    dismissNudgeOffer();
+                    setOfferNudge(false);
+                  }}
+                >
+                  Not now
+                </Button>
+              </>
+            }
+          >
+            A word at 1pm each day on this device, so this stays a habit. Turning it on elsewhere
+            too is fine.
+          </Notice>
         </div>
       )}
 

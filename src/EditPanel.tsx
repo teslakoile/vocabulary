@@ -9,6 +9,7 @@ import { useState } from 'react';
 import { TriangleAlert } from 'lucide-react';
 import type { Entry, Sense, Snapshot } from './types';
 import { saveEntry } from './store';
+import { Notice } from '@/components/notice';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -75,9 +76,9 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
   }
 
   return (
-    <div className="grid gap-3.5 border-t border-border pt-4">
+    <div className="grid gap-4">
       <div className="grid gap-2">
-        <Label htmlFor={`term-${sense.id}`} className="text-muted-foreground">Word</Label>
+        <Label htmlFor={`term-${sense.id}`}>Word</Label>
         <Input
           id={`term-${sense.id}`}
           value={draft.term}
@@ -87,7 +88,7 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
         />
       </div>
       <div className="grid gap-2">
-        <Label htmlFor={`accepted-${sense.id}`} className="text-muted-foreground">Also accepted</Label>
+        <Label htmlFor={`accepted-${sense.id}`}>Also accepted</Label>
         <Input
           id={`accepted-${sense.id}`}
           value={draft.accepted}
@@ -98,23 +99,23 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
         />
       </div>
       <div className="grid gap-2">
-        <Label htmlFor={`gloss-${sense.id}`} className="text-muted-foreground">Short meaning</Label>
+        <Label htmlFor={`gloss-${sense.id}`}>Short meaning</Label>
         <Input id={`gloss-${sense.id}`} value={draft.gloss} onChange={set('gloss')} placeholder="to strengthen" />
       </div>
       <div className="grid gap-2">
-        <Label htmlFor={`definition-${sense.id}`} className="text-muted-foreground">Definition</Label>
+        <Label htmlFor={`definition-${sense.id}`}>Definition</Label>
         <Textarea id={`definition-${sense.id}`} value={draft.definition} onChange={set('definition')} rows={3} />
       </div>
       <div className="grid gap-2">
-        <Label htmlFor={`caution-${sense.id}`} className="text-muted-foreground">Caution</Label>
+        <Label htmlFor={`caution-${sense.id}`}>Caution</Label>
         <Textarea id={`caution-${sense.id}`} value={draft.caution} onChange={set('caution')} rows={3} />
       </div>
       <div className="grid gap-2">
-        <Label htmlFor={`example-${sense.id}`} className="text-muted-foreground">Example</Label>
+        <Label htmlFor={`example-${sense.id}`}>Example</Label>
         <Textarea id={`example-${sense.id}`} value={draft.example} onChange={set('example')} rows={2} />
       </div>
       <div className="grid gap-2">
-        <Label htmlFor={`note-${sense.id}`} className="text-muted-foreground">Your note</Label>
+        <Label htmlFor={`note-${sense.id}`}>Your note</Label>
         <Textarea
           id={`note-${sense.id}`}
           value={draft.capture_note}
@@ -125,13 +126,12 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
       </div>
 
       {failed && (
-        <p className="flex items-start gap-2 text-sm text-destructive">
-          <TriangleAlert className="mt-0.5 size-4 shrink-0" />
+        <Notice tone="error" icon={TriangleAlert}>
           Saved on this device only. It will not reach the server until you are back online.
-        </p>
+        </Notice>
       )}
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 pt-1">
         <Button onClick={save} disabled={saving}>
           {saving ? 'Saving' : 'Save'}
         </Button>
