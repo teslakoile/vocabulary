@@ -1,32 +1,24 @@
 import { TOPICS, TOPIC_LABEL, type Topic } from '../types';
-import { Button } from '@/components/ui/button';
+import { Tag } from '@/components/ui/tag';
 
 interface Props {
   value: Topic | null;
   onChange: (topic: Topic | null) => void;
-  /** What the unfiltered chip says. Practice and browse read differently. */
+  /** What the unfiltered tag says. Practice and browse read differently. */
   allLabel?: string;
 }
 
-/** One chip per kind of word, and one for all of them. */
+/** One tag per kind of word, and one for all of them. */
 export function TopicFilter({ value, onChange, allLabel = 'All' }: Props) {
-  const chips: { key: Topic | null; label: string }[] = [
-    { key: null, label: allLabel },
-    ...TOPICS.map((t) => ({ key: t, label: TOPIC_LABEL[t] })),
-  ];
   return (
     <div role="group" aria-label="Topic" className="flex flex-wrap gap-2">
-      {chips.map(({ key, label }) => (
-        <Button
-          key={label}
-          size="sm"
-          variant={key === value ? 'default' : 'outline'}
-          className="px-4"
-          aria-pressed={key === value}
-          onClick={() => onChange(key)}
-        >
-          {label}
-        </Button>
+      <Tag tone="any" selected={value === null} onClick={() => onChange(null)}>
+        {allLabel}
+      </Tag>
+      {TOPICS.map((t) => (
+        <Tag key={t} tone={t} selected={value === t} onClick={() => onChange(t)}>
+          {TOPIC_LABEL[t]}
+        </Tag>
       ))}
     </div>
   );

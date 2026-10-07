@@ -12,7 +12,7 @@
 import { useMemo, useState } from 'react';
 import { Archive, ArrowLeft, ChevronRight, Pencil, RotateCcw, Search, SearchX } from 'lucide-react';
 import EditPanel from './EditPanel';
-import { TOPIC_LABEL, type Card as CardRow, type Entry, type Snapshot, type Topic } from './types';
+import { TOPICS, TOPIC_LABEL, type Card as CardRow, type Entry, type Snapshot, type Topic } from './types';
 import { archiveEntry } from './store';
 import { Empty, Heading, Headword, Shell } from '@/components/shell';
 import { Badge } from '@/components/ui/badge';
@@ -21,12 +21,16 @@ import { Card } from '@/components/ui/card';
 import { Caution } from '@/components/caution';
 import { Input } from '@/components/ui/input';
 import { TopicFilter } from '@/components/topic-filter';
+import { Tag } from '@/components/ui/tag';
 
 const FILTERS = ['All', 'Recent', 'Struggling', 'Pending', 'Archived'] as const;
 type Filter = (typeof FILTERS)[number];
 
 /** Two lapses is where a card stops being new and starts being a problem. */
 const STRUGGLING_LAPSES = 2;
+
+/** The entry's tags this app knows how to show, in a fixed order. */
+const topicsOf = (entry: Entry): Topic[] => TOPICS.filter((t) => entry.tags.includes(t));
 
 const gloss = (entry: Entry): string => {
   const first = entry.senses[0]?.definition ?? '';
@@ -124,8 +128,8 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
         <div className="flex flex-col gap-3 pb-1">
           <Heading>{open.headword}</Heading>
           <div className="flex flex-wrap gap-2">
-            {open.tags.map((tag) => (
-              <Badge key={tag} variant="outline">{TOPIC_LABEL[tag as Topic] ?? tag}</Badge>
+            {topicsOf(open).map((t) => (
+              <Tag key={t} tone={t} size="sm">{TOPIC_LABEL[t]}</Tag>
             ))}
             {open.archived_at && <Badge variant="secondary">Archived</Badge>}
             {open.status !== 'ready' && <Badge variant="outline">Pending</Badge>}
@@ -256,6 +260,11 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
                     </strong>
                     <span className="text-small text-muted-foreground">
                       {entry.status === 'ready' ? gloss(entry) : 'waiting for its meaning'}
+                    </span>
+                    <span className="mt-1 flex gap-2">
+                      {topicsOf(entry).map((t) => (
+                        <Tag key={t} tone={t} size="sm">{TOPIC_LABEL[t]}</Tag>
+                      ))}
                     </span>
                   </span>
                   <ChevronRight className="ml-auto size-4 shrink-0 text-muted-foreground" />

@@ -14,7 +14,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { cn } from '@/lib/utils';
+import { Tag } from '@/components/ui/tag';
 
 interface Props {
   entry: Entry;
@@ -124,18 +124,15 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
           {TOPICS.map((t) => {
             const on = topics.includes(t);
             return (
-              <Button
+              <Tag
                 key={t}
-                size="sm"
-                variant={on ? 'default' : 'outline'}
-                // On a white card the glass outline washes out, so the off state gets dark text.
-                className={cn('px-4', !on && 'text-foreground')}
-                aria-pressed={on}
+                tone={t}
+                selected={on}
                 // A word keeps at least one topic, or no filter would ever show it.
                 onClick={() => setTopics((cur) => (on ? (cur.length > 1 ? cur.filter((x) => x !== t) : cur) : [...cur, t]))}
               >
                 {TOPIC_LABEL[t]}
-              </Button>
+              </Tag>
             );
           })}
         </div>
