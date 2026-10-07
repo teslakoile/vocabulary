@@ -5,35 +5,29 @@ import { Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 /**
- * A label that says what kind of thing something is. It is not a button, so it
- * does not look like one: a tinted tile with a coloured dot, where a button is
- * a solid or glass bar with a heavier edge.
+ * A label that says what kind of thing something is. It is made of the same
+ * parts as the glass outline button and badge, so it belongs on the sky and on
+ * a card without a palette of its own: a quiet glass tile with a small dot of
+ * the painting's colour (gold leaf, green leaf, cloud shadow) beside the name.
  *
- * Given `onClick` it becomes a toggle. Selecting it fills the tile with its
- * colour and swaps the dot for a check, so the state is never carried by colour
- * alone.
+ * Given `onClick` it becomes a toggle. Selecting it fills the tile like the
+ * primary button, white on the sky and blue on a card, and swaps the dot for a
+ * check, so the state is never carried by colour alone.
  */
 const tagVariants = cva(
-  'inline-flex w-fit shrink-0 items-center gap-2 rounded-md font-semibold whitespace-nowrap transition-[background-color,color,scale] duration-150 ease-[cubic-bezier(0.2,0,0,1)]',
+  'inline-flex w-fit shrink-0 items-center gap-1 rounded-md border-2 font-medium whitespace-nowrap backdrop-blur-xl transition-[background-color,border-color,color,scale] duration-150 ease-[cubic-bezier(0.2,0,0,1)]',
   {
     variants: {
-      // Each tone sets five values: its colour, the text on that colour, and the
-      // tile, its hover and its text when not selected. A topic's tile is a pale
-      // wash of its colour, because a tint of amber over blue goes grey.
+      // A tone sets one value: the colour of the dot.
       tone: {
-        general:
-          '[--tag:var(--tag-general)] [--tag-on:var(--ink)] [--tag-idle:color-mix(in_oklch,var(--tag-general)_46%,white)] [--tag-idle-hover:color-mix(in_oklch,var(--tag-general)_66%,white)] [--tag-idle-ink:var(--ink)]',
-        business:
-          '[--tag:var(--tag-business)] [--tag-on:var(--ink)] [--tag-idle:color-mix(in_oklch,var(--tag-business)_46%,white)] [--tag-idle-hover:color-mix(in_oklch,var(--tag-business)_66%,white)] [--tag-idle-ink:var(--ink)]',
-        tech:
-          '[--tag:var(--tag-tech)] [--tag-on:var(--ink)] [--tag-idle:color-mix(in_oklch,var(--tag-tech)_46%,white)] [--tag-idle-hover:color-mix(in_oklch,var(--tag-tech)_66%,white)] [--tag-idle-ink:var(--ink)]',
-        // Not a topic: the "all of them" choice. Glass on the sky and a pale
-        // tint on a card, like the other quiet controls.
-        any:
-          '[--tag:var(--primary)] [--tag-on:var(--primary-foreground)] [--tag-idle:color-mix(in_oklch,var(--foreground)_20%,transparent)] [--tag-idle-hover:color-mix(in_oklch,var(--foreground)_32%,transparent)] [--tag-idle-ink:var(--foreground)]',
+        general: '[--tag:var(--tag-general)]',
+        business: '[--tag:var(--tag-business)]',
+        tech: '[--tag:var(--tag-tech)]',
+        // Not a topic: the "all of them" choice. It has no colour to show.
+        any: '[--tag:transparent]',
       },
       size: {
-        default: 'h-8 px-3 text-small leading-none',
+        default: 'h-9 px-3 text-small leading-none',
         sm: 'h-6 px-2 text-caption leading-none',
       },
     },
@@ -41,11 +35,11 @@ const tagVariants = cva(
   }
 );
 
-const idle = 'bg-[var(--tag-idle)] text-[var(--tag-idle-ink)]';
-const chosen = 'bg-[var(--tag)] text-[var(--tag-on)]';
+const idle = 'border-input bg-secondary text-secondary-foreground';
+const chosen = 'border-transparent bg-primary text-primary-foreground';
 
 const interactive =
-  'relative cursor-pointer after:absolute after:inset-x-0 after:-inset-y-1 active:scale-[0.96] motion-reduce:active:scale-100 outline-none focus-visible:ring-4 focus-visible:ring-ring/40';
+  'relative cursor-pointer after:absolute after:inset-x-0 after:-inset-y-0.5 active:scale-[0.96] motion-reduce:active:scale-100 outline-none focus-visible:ring-4 focus-visible:ring-ring/40';
 
 type TagProps = Omit<React.ComponentProps<'span'>, 'onClick'> &
   VariantProps<typeof tagVariants> & {
@@ -59,13 +53,13 @@ function Tag({ tone, size, selected = false, onClick, className, children, ...pr
     tagVariants({ tone, size }),
     selected ? chosen : idle,
     onClick && interactive,
-    onClick && !selected && 'hover:bg-[var(--tag-idle-hover)]',
+    onClick && !selected && 'hover:bg-accent',
     className
   );
   const mark = selected ? (
     <Check className="size-3.5 shrink-0" strokeWidth={3} aria-hidden />
-  ) : (
-    <span className="size-2 shrink-0 rounded-full bg-[var(--tag)]" aria-hidden />
+  ) : tone === 'any' || !tone ? null : (
+    <span className={cn('shrink-0 rounded-full bg-[var(--tag)]', size === 'sm' ? 'size-1.5' : 'size-2')} aria-hidden />
   );
 
   if (onClick) {
@@ -85,7 +79,7 @@ function Tag({ tone, size, selected = false, onClick, className, children, ...pr
   }
   return (
     <span data-slot="tag" className={classes} {...props}>
-      {size === 'sm' && !selected ? <span className="size-1.5 shrink-0 rounded-full bg-[var(--tag)]" aria-hidden /> : mark}
+      {mark}
       {children}
     </span>
   );

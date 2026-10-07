@@ -10,7 +10,10 @@
  * laptop gets the same screen with more sky around it.
  */
 import type * as React from 'react';
+import cloudPuff from '@/assets/cloud-puff.webp';
+import cloudWide from '@/assets/cloud-wide.webp';
 import sky from '@/assets/sky.webp';
+import twig from '@/assets/twig.webp';
 import { cn } from '@/lib/utils';
 
 export function Shell({ className, ...props }: React.ComponentProps<'main'>) {
@@ -110,6 +113,35 @@ export function Sky({ className }: { className?: string }) {
         className
       )}
     />
+  );
+}
+
+/**
+ * Small pieces of the same painting in the margins, so the big cloud bank in
+ * the bottom right is not the only thing in the sky: a twig reaching in from
+ * the top left, a cloud on each side. They are pinned to the window rather than
+ * the page, and shown only where the column leaves a margin wide enough for
+ * them (1024px and up), so they never sit behind a card or under a line of
+ * white text. On a phone the column fills the width and the painting at the
+ * foot of the screen is all the decoration there is. The clouds drift a few
+ * pixels over half a minute, and hold still for anyone who asks for less motion.
+ */
+export function Drift() {
+  const piece = 'absolute max-w-none select-none';
+  return (
+    <div aria-hidden className="pointer-events-none fixed inset-0 z-30 hidden overflow-hidden lg:block">
+      <img src={twig} alt="" className={cn(piece, 'top-0 left-0 w-[clamp(11rem,19vw,22rem)]')} />
+      <img
+        src={cloudWide}
+        alt=""
+        className={cn(piece, 'top-[20vh] right-[3vw] w-[clamp(8rem,15vw,16rem)] animate-drift')}
+      />
+      <img
+        src={cloudPuff}
+        alt=""
+        className={cn(piece, 'top-[56vh] left-[3vw] w-[clamp(6rem,10vw,11rem)] animate-drift [animation-delay:-14s] [animation-direction:alternate-reverse]')}
+      />
+    </div>
   );
 }
 
