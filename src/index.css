@@ -129,6 +129,11 @@
    * 17 and 22; the serif steps are its 34 and 55 headlines, brought down a
    * little so a long definition still fits a phone. Line height rides with
    * the size, so nothing sets its own.
+   *
+   * The two middle serif steps grow back between a 640 and a 1024 window, as
+   * the column widens: a prompt returns to the reference's 34, and a phrase
+   * headword to 44. The others hold at every width, so a laptop still has
+   * seven sizes, a little larger where the phone had squeezed them.
    */
   --text-caption: 0.75rem;
   --text-caption--line-height: 1.3;
@@ -138,12 +143,18 @@
   --text-body--line-height: 1.32;
   --text-lead: 1.375rem;
   --text-lead--line-height: 1.24;
-  --text-title: 1.75rem;
+  --text-title: clamp(1.75rem, 1.125rem + 1.5625vw, 2.125rem);
   --text-title--line-height: 1.12;
-  --text-display-sm: 2.25rem;
+  --text-display-sm: clamp(2.25rem, 1.4167rem + 2.0833vw, 2.75rem);
   --text-display-sm--line-height: 1.06;
   --text-display: 3.4375rem;
   --text-display--line-height: 1.02;
+
+  /* The one column every screen sits in: a phone's width until the window is
+   * wide enough to spare more, then up to 42rem, a comfortable line of body
+   * text. The top bar and the offers above a question use it too, so their
+   * edges line up with the screen under them. */
+  --container-column: clamp(34rem, 45vw, 42rem);
 
   --radius-sm: calc(var(--radius) - 6px);
   --radius-md: calc(var(--radius) - 4px);
@@ -185,6 +196,10 @@
      * long entry does not drag the gradient down the page with it. */
     background-image: linear-gradient(var(--sky) 35%, #4c92cd);
     background-attachment: fixed;
+    /* The painting reaches the edges of the window, and 100vw counts the
+     * scrollbar where there is one. Clip rather than hidden, so the sticky
+     * header still sticks. */
+    overflow-x: clip;
     /* White type on blue reads thinner than it is, so text on the sky is one
      * weight up from text on a card. */
     font-size: var(--text-body);

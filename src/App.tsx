@@ -155,7 +155,7 @@ export default function App() {
       )}
 
       {view === 'review' && offerInstall && (
-        <div className="mx-auto w-full max-w-[34rem] px-5 pt-4">
+        <div className="mx-auto w-full max-w-column px-5 pt-4">
           <InstallCard onDismiss={() => setOfferInstall(false)} />
         </div>
       )}
@@ -163,7 +163,7 @@ export default function App() {
       {view === 'review' && offerNudge && (
         // iOS ignores a permission request that is not tied to a tap, so the
         // ask has to be a button rather than something that fires on launch.
-        <div className="mx-auto w-full max-w-[34rem] px-5 pt-4">
+        <div className="mx-auto w-full max-w-column px-5 pt-4">
           <Notice
             icon={Bell}
             actions={
