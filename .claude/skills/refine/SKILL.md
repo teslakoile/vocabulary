@@ -23,8 +23,9 @@ publishes it. D1 is where content lives; the repo holds a snapshot of it.
    meanings, ask which one he means, using his `capture_note` as the first clue.
    Do not ask about wording; that is your job.
 4. **Write content.** For a captured word, create the raw file named in the
-   backlog with its `id` and `headword` exactly as given. For a flagged word,
-   change only what the note points at. Follow the field rules below.
+   backlog with its `id` and `headword` exactly as given, and tag it. For a
+   flagged word, change only what the note points at. Follow the field rules
+   below.
 5. **Assign wrong words.** Run `node scripts/assign-word-distractors.mjs`. If a
    new word is close in meaning to an existing one, add the pair to `BLOCKED` in
    that script first, so neither is offered as a wrong answer for the other.
@@ -35,6 +36,11 @@ publishes it. D1 is where content lives; the repo holds a snapshot of it.
    rebalances wrong-word options across the corpus. Schedules are untouched.
 8. **Commit** the raw files and any script change on a branch, open a PR, and
    tell Kyle what was added or fixed.
+
+Tags are published by `publish-corpus.mjs` through the entry's own endpoint, and
+`pull-corpus.mjs` writes them back into the raw files. Run the pull first and
+the publish before pulling again, or tags you wrote locally are overwritten by
+what is live.
 
 The scripts read `VOCAB_URL` and `AUTH_SECRET` from `.secrets.local`. No
 Cloudflare login is needed.
@@ -47,6 +53,7 @@ wording that is more complicated than it needs to be.
 
 | Field | Rule |
 | --- | --- |
+| `tags` | At the top of the entry, beside `headword`, not inside a sense. One or both of `general` (everyday and workplace English) and `tech` (software, data, and AI terms). Use both only when a word is common English and also a term of art, such as `adversarial`. The app filters practice and browse on these. |
 | `term` | The canonical form. Fix spelling here, never in `headword`. |
 | `accepted` | Other forms that count as correct when typed, often `[]`. |
 | `gloss` | The meaning in 2 to 6 plain words, 40 characters or fewer, dictionary form: `to strengthen`, `a huge, lasting change`, `easy to ignore`. Never reuse the headword or its root. |
@@ -88,6 +95,7 @@ history, and the API refuses.
   "id": "e_7e760c5f-0cc1-4312-9188-4694d7021dbd",
   "headword": "load-bearing",
   "capture_note": "heard in design review",
+  "tags": ["tech"],
   "senses": [{
     "term": "load-bearing",
     "accepted": [],

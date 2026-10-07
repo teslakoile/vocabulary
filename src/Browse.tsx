@@ -12,7 +12,7 @@
 import { useMemo, useState } from 'react';
 import { Archive, ArrowLeft, ChevronRight, Pencil, RotateCcw, Search, SearchX } from 'lucide-react';
 import EditPanel from './EditPanel';
-import type { Card as CardRow, Entry, Snapshot } from './types';
+import { TOPIC_LABEL, type Card as CardRow, type Entry, type Snapshot, type Topic } from './types';
 import { archiveEntry } from './store';
 import { Empty, Heading, Headword, Shell } from '@/components/shell';
 import { Badge } from '@/components/ui/badge';
@@ -20,6 +20,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Caution } from '@/components/caution';
 import { Input } from '@/components/ui/input';
+import { TopicFilter } from '@/components/topic-filter';
 
 const FILTERS = ['All', 'Recent', 'Struggling', 'Pending', 'Archived'] as const;
 type Filter = (typeof FILTERS)[number];
@@ -75,6 +76,7 @@ interface Props {
 export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
   const [query, setQuery] = useState('');
   const [filter, setFilter] = useState<Filter>('All');
+  const [topic, setTopic] = useState<Topic | null>(null);
   const [openId, setOpenId] = useState<string | null>(null);
   const [editingSense, setEditingSense] = useState<string | null>(null);
 
@@ -82,7 +84,9 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
 
   const rows = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    const matched = snapshot.entries.filter((e) => !needle || haystack(e).includes(needle));
+    const matched = snapshot.entries.filter(
+      (e) => (!needle || haystack(e).includes(needle)) && (!topic || e.tags.includes(topic))
+    );
 
     const filtered = matched.filter((e) => {
       switch (filter) {
@@ -97,7 +101,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
       return [...filtered].sort((a, b) => b.updated_at.localeCompare(a.updated_at)).slice(0, 25);
     }
     return filtered.sort((a, b) => a.headword.localeCompare(b.headword));
-  }, [filter, query, snapshot.entries, struggling]);
+  }, [filter, query, snapshot.entries, struggling, topic]);
 
   const open = openId ? snapshot.entries.find((e) => e.id === openId) : null;
 
@@ -120,6 +124,9 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
         <div className="flex flex-col gap-3 pb-1">
           <Heading>{open.headword}</Heading>
           <div className="flex flex-wrap gap-2">
+            {open.tags.map((tag) => (
+              <Badge key={tag} variant="outline">{TOPIC_LABEL[tag as Topic] ?? tag}</Badge>
+            ))}
             {open.archived_at && <Badge variant="secondary">Archived</Badge>}
             {open.status !== 'ready' && <Badge variant="outline">Pending</Badge>}
             {open.senses.length > 1 && (
@@ -226,6 +233,8 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
           </Button>
         ))}
       </div>
+
+      <TopicFilter value={topic} onChange={setTopic} allLabel="Any Topic" />
 
       {rows.length > 0 && (
         <Card className="gap-0 overflow-hidden p-0">

@@ -6,6 +6,8 @@ import { join } from 'node:path';
 const RAW_DIR = '.scratch/vocab-pwa/corpus/raw';
 const SOURCE = '.scratch/vocab-pwa/source-list.md';
 const TYPES = ['recognition', 'identify', 'reverse', 'production'];
+// Keep in step with TOPICS in shared/types.ts.
+const TOPICS = ['general', 'tech'];
 
 const STOPWORDS = new Set([
   'your', 'their', 'them', 'that', 'this', 'with', 'from', 'into', 'over', 'they',
@@ -83,6 +85,9 @@ for (const file of files) {
   }
   if (seenHeadwords.has(hw)) { fail(where, `duplicate headword, already in ${seenHeadwords.get(hw)}`); continue; }
   seenHeadwords.set(hw, file);
+
+  if (!Array.isArray(entry.tags) || entry.tags.length === 0) fail(where, `no tags, needs at least one of: ${TOPICS.join(', ')}`);
+  else for (const tag of entry.tags) if (!TOPICS.includes(tag)) fail(where, `unknown tag "${tag}", allowed: ${TOPICS.join(', ')}`);
 
   if (!Array.isArray(entry.senses) || entry.senses.length === 0) { fail(where, 'no senses'); continue; }
 

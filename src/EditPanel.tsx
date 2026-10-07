@@ -7,13 +7,14 @@
  */
 import { useState } from 'react';
 import { TriangleAlert } from 'lucide-react';
-import type { Entry, Sense, Snapshot } from './types';
+import { TOPICS, TOPIC_LABEL, type Entry, type Sense, type Snapshot, type Topic } from './types';
 import { saveEntry } from './store';
 import { Notice } from '@/components/notice';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
+import { cn } from '@/lib/utils';
 
 interface Props {
   entry: Entry;
@@ -33,6 +34,7 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
     example: sense.example,
     capture_note: entry.capture_note ?? '',
   });
+  const [topics, setTopics] = useState<Topic[]>(() => TOPICS.filter((t) => entry.tags.includes(t)));
   const [saving, setSaving] = useState(false);
   const [failed, setFailed] = useState(false);
 
@@ -55,6 +57,8 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
     const updatedEntry: Entry = {
       ...entry,
       capture_note: draft.capture_note.trim() || null,
+      // A tag this screen does not know about is kept rather than dropped.
+      tags: [...entry.tags.filter((t) => !TOPICS.includes(t as Topic)), ...topics],
       senses: entry.senses.map((s) => (s.id === sense.id ? updatedSense : s)),
     };
 
@@ -113,6 +117,28 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
       <div className="grid gap-2">
         <Label htmlFor={`example-${sense.id}`}>Example</Label>
         <Textarea id={`example-${sense.id}`} value={draft.example} onChange={set('example')} rows={2} />
+      </div>
+      <div className="grid gap-2">
+        <Label>Topic</Label>
+        <div role="group" aria-label="Topic" className="flex flex-wrap gap-2">
+          {TOPICS.map((t) => {
+            const on = topics.includes(t);
+            return (
+              <Button
+                key={t}
+                size="sm"
+                variant={on ? 'default' : 'outline'}
+                // On a white card the glass outline washes out, so the off state gets dark text.
+                className={cn('px-4', !on && 'text-foreground')}
+                aria-pressed={on}
+                // A word keeps at least one topic, or no filter would ever show it.
+                onClick={() => setTopics((cur) => (on ? (cur.length > 1 ? cur.filter((x) => x !== t) : cur) : [...cur, t]))}
+              >
+                {TOPIC_LABEL[t]}
+              </Button>
+            );
+          })}
+        </div>
       </div>
       <div className="grid gap-2">
         <Label htmlFor={`note-${sense.id}`}>Note</Label>

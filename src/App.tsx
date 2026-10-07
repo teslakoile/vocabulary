@@ -8,11 +8,25 @@ import SecretGate from './SecretGate';
 import { Empty, Shell, TopBar, TopBarInner } from '@/components/shell';
 import { Button } from '@/components/ui/button';
 import { Notice } from '@/components/notice';
+import { TopicFilter } from '@/components/topic-filter';
+import { TOPICS, type Topic } from './types';
 import { Queue } from './queue';
 import { dismissNudgeOffer, enableNudge, nudgeState } from './push';
 import { getSecret, readSnapshot, sync, UnauthorisedError, type Snapshot } from './store';
 
 type View = 'review' | 'browse' | 'capture';
+
+const TOPIC_KEY = 'vocab.topic';
+
+/** The kind of word last chosen for practice, kept on this device. */
+function savedTopic(): Topic | null {
+  try {
+    const value = localStorage.getItem(TOPIC_KEY);
+    return TOPICS.find((t) => t === value) ?? null;
+  } catch {
+    return null;
+  }
+}
 
 const isIOS = (): boolean => /iPad|iPhone|iPod/.test(navigator.userAgent);
 
@@ -38,6 +52,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [rejected, setRejected] = useState(false);
   const [view, setView] = useState<View>('review');
+  const [topic, setTopic] = useState<Topic | null>(savedTopic);
   const [offerInstall, setOfferInstall] = useState(false);
   const [offerNudge, setOfferNudge] = useState(false);
   const queueRef = useRef<Queue | null>(null);
@@ -81,11 +96,22 @@ export default function App() {
   const fetchedAt = snapshot?.fetched_at;
   const queue = useMemo(() => {
     if (!snapshot) return null;
-    if (!queueRef.current) queueRef.current = new Queue(snapshot);
+    if (!queueRef.current) queueRef.current = new Queue(snapshot, topic);
     else queueRef.current.replaceSnapshot(snapshot);
     return queueRef.current;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fetchedAt]);
+
+  const chooseTopic = useCallback((next: Topic | null) => {
+    queueRef.current?.setTopic(next);
+    setTopic(next);
+    try {
+      if (next) localStorage.setItem(TOPIC_KEY, next);
+      else localStorage.removeItem(TOPIC_KEY);
+    } catch {
+      // The choice still applies for this visit.
+    }
+  }, []);
 
   useEffect(() => {
     setOfferInstall(shouldOfferInstall(standalone));
@@ -194,7 +220,16 @@ export default function App() {
         </div>
       )}
 
-      {view === 'review' && <Review queue={queue} snapshot={snapshot} onSnapshot={setSnapshot} />}
+      {view === 'review' && (
+        <div className="mx-auto w-full max-w-column px-5 pt-2">
+          <TopicFilter value={topic} onChange={chooseTopic} />
+        </div>
+      )}
+
+      {/* Keyed on the topic so a new choice starts from the queue's new first card. */}
+      {view === 'review' && (
+        <Review key={topic ?? 'all'} queue={queue} snapshot={snapshot} onSnapshot={setSnapshot} />
+      )}
       {view === 'browse' && (
         <Browse snapshot={snapshot} onSnapshot={setSnapshot} onClose={() => setView('review')} />
       )}

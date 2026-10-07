@@ -11,6 +11,15 @@ export type CardType = (typeof CARD_TYPES)[number];
 /** FSRS ratings. Kyle never self-grades: the app answers right/wrong for him. */
 export type Grade = 1 | 2 | 3 | 4;
 
+/**
+ * The kinds of word an entry can be tagged as. An entry may carry more than one,
+ * such as a word that is ordinary English and also a term of art in AI.
+ */
+export const TOPICS = ['general', 'tech'] as const;
+export type Topic = (typeof TOPICS)[number];
+
+export const TOPIC_LABEL: Record<Topic, string> = { general: 'General', tech: 'Tech' };
+
 export interface Cue {
   text: string;
   setting: 'work' | 'life';
