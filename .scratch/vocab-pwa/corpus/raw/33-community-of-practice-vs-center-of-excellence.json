@@ -1,9 +1,6 @@
 {
   "id": "e_community_of_practice_vs_center_of_excellence",
   "headword": "community of practice vs center of excellence",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "community of practice",
@@ -47,6 +44,9 @@
         "sandbox",
         "eschew",
         "wordsmith"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     },
@@ -93,6 +93,9 @@
         "continuum",
         "disparage",
         "despondent"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

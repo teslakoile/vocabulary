@@ -1,9 +1,6 @@
 {
   "id": "e_frontrunner",
   "headword": "frontrunner",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "frontrunner",
@@ -53,6 +50,9 @@
         "failure mode",
         "eschew",
         "continuum"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

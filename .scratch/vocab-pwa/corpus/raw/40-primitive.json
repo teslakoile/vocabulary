@@ -1,9 +1,6 @@
 {
   "id": "e_primitive",
   "headword": "primitive",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "primitive",
@@ -41,11 +38,14 @@
         "Temporary structure that holds work up until the real thing can stand on its own."
       ],
       "word_distractors": [
-        "reaper",
         "lay of the land",
-        "watch outs",
-        "heuristic",
-        "meat proxy"
+        "carte blanche",
+        "elucidate",
+        "reaper",
+        "persist"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

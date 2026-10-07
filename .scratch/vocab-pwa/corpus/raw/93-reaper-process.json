@@ -1,9 +1,6 @@
 {
   "id": "e_83e57712-8e1e-41ce-b84b-2bdda08e5d0f",
   "headword": "reaper (process)",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "reaper",
@@ -46,8 +43,11 @@
         "asymmetric",
         "in pockets",
         "knee-jerk reaction",
-        "north star",
-        "lend itself"
+        "lend itself",
+        "lean on"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

@@ -1,9 +1,6 @@
 {
   "id": "e_fan_out",
   "headword": "fan-out",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "fan-out",
@@ -52,6 +49,9 @@
         "inroads",
         "ducks in a row",
         "contrived"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

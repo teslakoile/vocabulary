@@ -1,9 +1,6 @@
 {
   "id": "e_panopticon",
   "headword": "panopticon",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "panopticon",
@@ -49,7 +46,10 @@
         "executive presence",
         "carte blanche",
         "myopic",
-        "run it by you"
+        "adversarial"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

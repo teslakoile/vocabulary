@@ -1,9 +1,6 @@
 {
   "id": "e_amenable",
   "headword": "amenable",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "amenable (person)",
@@ -51,6 +48,9 @@
         "sycophantic",
         "esoteric"
       ],
+      "tags": [
+        "general"
+      ],
       "prompt_version": 4
     },
     {
@@ -94,6 +94,9 @@
         "esoteric",
         "hyperscaler",
         "race condition"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

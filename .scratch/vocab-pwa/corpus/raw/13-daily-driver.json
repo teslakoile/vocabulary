@@ -1,9 +1,6 @@
 {
   "id": "e_daily_driver",
   "headword": "daily driver",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "daily driver",
@@ -48,6 +45,9 @@
         "hot-swap",
         "in pockets",
         "vertical"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

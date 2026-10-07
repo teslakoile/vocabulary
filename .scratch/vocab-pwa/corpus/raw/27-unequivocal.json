@@ -1,9 +1,6 @@
 {
   "id": "e_unequivocal",
   "headword": "unequivocal",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "unequivocal",
@@ -50,6 +47,9 @@
         "disambiguate",
         "panopticon",
         "run it by you"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

@@ -43,7 +43,7 @@ export async function liveCorpus() {
 /** The fields a refine session writes. Everything else on a sense is the app's. */
 export const CONTENT_FIELDS = [
   'term', 'accepted', 'gloss', 'gloss_distractors', 'definition', 'caution', 'example',
-  'cues', 'distractors', 'word_distractors', 'prompt_version',
+  'cues', 'distractors', 'word_distractors', 'tags', 'prompt_version',
 ];
 
 export const contentOf = (sense) =>

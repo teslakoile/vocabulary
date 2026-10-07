@@ -1,9 +1,6 @@
 {
   "id": "e_bolster",
   "headword": "bolster",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "bolster",
@@ -55,6 +52,9 @@
         "making strides",
         "scaffolding",
         "idempotent"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

@@ -1,9 +1,6 @@
 {
   "id": "e_scaffolding_harness_sandbox",
   "headword": "scaffolding/harness/sandbox",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "scaffolding",
@@ -51,6 +48,9 @@
         "substantial",
         "ducks in a row"
       ],
+      "tags": [
+        "tech"
+      ],
       "prompt_version": 4
     },
     {
@@ -92,6 +92,9 @@
         "by and large",
         "tacit knowledge",
         "balustrade"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     },
@@ -137,6 +140,9 @@
         "ducks in a row",
         "obfuscate"
       ],
+      "tags": [
+        "tech"
+      ],
       "prompt_version": 4
     },
     {
@@ -181,6 +187,9 @@
         "watch outs",
         "sleuthing",
         "fearless forecast"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

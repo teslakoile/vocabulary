@@ -1,9 +1,6 @@
 {
   "id": "e_enmeshed",
   "headword": "enmeshed",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "enmeshed",
@@ -50,8 +47,11 @@
         "zeitgeist",
         "verifiable rewards",
         "surreptitiously",
-        "despondent",
-        "nontrivial"
+        "first order effects",
+        "incremental"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

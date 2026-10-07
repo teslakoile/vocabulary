@@ -1,9 +1,6 @@
 {
   "id": "e_contrived",
   "headword": "contrived",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "contrived",
@@ -54,6 +51,9 @@
         "idempotent",
         "substantial",
         "first principles"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

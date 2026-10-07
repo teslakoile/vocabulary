@@ -1,9 +1,6 @@
 {
   "id": "e_lay_of_the_land",
   "headword": "lay of the land",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "lay of the land",
@@ -51,6 +48,9 @@
         "lend itself",
         "disambiguate",
         "incremental"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

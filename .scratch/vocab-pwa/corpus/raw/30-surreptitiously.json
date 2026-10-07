@@ -1,9 +1,6 @@
 {
   "id": "e_surreptitiously",
   "headword": "surreptitiously",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "surreptitiously",
@@ -50,6 +47,9 @@
         "daily driver",
         "vertical",
         "persist"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

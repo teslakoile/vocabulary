@@ -66,11 +66,12 @@
   --brand-muted: oklch(1 0 0 / 16%);
   --success: oklch(0.52 0.13 150);
 
-  /* Topic tags. Warm sand for everyday words and cool mint for technical ones:
+  /* Topic tags. Warm sand for everyday words, cool mint for technical ones and lilac for business:
      both read on the sky and on a white card, and neither is the red that is
      reserved for a wrong answer. */
   --tag-general: oklch(0.86 0.13 80);
   --tag-tech: oklch(0.82 0.12 170);
+  --tag-business: oklch(0.82 0.11 305);
 
   --chart-1: var(--sky);
   --chart-2: var(--sky-deep);

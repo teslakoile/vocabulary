@@ -1,9 +1,6 @@
 {
   "id": "e_rectify",
   "headword": "rectify",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "rectify",
@@ -50,10 +47,13 @@
       ],
       "word_distractors": [
         "sleuthing",
-        "balustrade",
-        "harness",
         "community of practice",
-        "dogfooding"
+        "dogfooding",
+        "superset",
+        "play it by ear"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

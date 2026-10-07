@@ -1,9 +1,6 @@
 {
   "id": "e_long_horizon_task",
   "headword": "long-horizon (task)",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "long-horizon",
@@ -53,6 +50,9 @@
         "bespoke",
         "build that muscle",
         "tectonic shift"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

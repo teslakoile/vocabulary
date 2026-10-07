@@ -1,9 +1,6 @@
 {
   "id": "e_heuristic",
   "headword": "heuristic",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "heuristic",
@@ -50,6 +47,9 @@
         "semantic layer",
         "sleuthing",
         "frontier"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

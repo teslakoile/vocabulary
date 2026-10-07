@@ -1,10 +1,6 @@
 {
   "id": "e_b7542144-7646-4c71-8185-1e033d85fc90",
   "headword": "federated",
-  "tags": [
-    "tech",
-    "general"
-  ],
   "senses": [
     {
       "term": "federated (software)",
@@ -52,6 +48,9 @@
         "disparage",
         "stark"
       ],
+      "tags": [
+        "tech"
+      ],
       "prompt_version": 4
     },
     {
@@ -91,10 +90,13 @@
       ],
       "word_distractors": [
         "disambiguate",
-        "persist",
         "entrypoint",
-        "bolster",
-        "oriented"
+        "oriented",
+        "top brass",
+        "verifiability"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

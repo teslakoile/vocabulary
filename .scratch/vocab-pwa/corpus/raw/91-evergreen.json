@@ -1,9 +1,6 @@
 {
   "id": "e_5ae2d127-24ae-4622-9516-db0c0f3be043",
   "headword": "evergreen",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "evergreen",
@@ -39,11 +36,14 @@
         "Lasting only a short time, and meant to."
       ],
       "word_distractors": [
-        "incremental",
-        "tectonic shift",
-        "community of practice",
-        "panopticon",
-        "elucidate"
+        "semantic layer",
+        "institutional knowledge",
+        "advocate",
+        "wordsmith",
+        "build that muscle"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

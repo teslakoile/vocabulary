@@ -1,9 +1,6 @@
 {
   "id": "e_e3ae1db7-292a-405e-8425-f7fd69981c28",
   "headword": "zeitgeist",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "zeitgeist",
@@ -46,6 +43,9 @@
         "cognizant",
         "fearless forecast",
         "exacerbate"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

@@ -1,9 +1,6 @@
 {
   "id": "e_eab03b35-4fbe-4787-9ce5-006e8f66e588",
   "headword": "making strides",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "making strides",
@@ -50,6 +47,9 @@
         "elucidate",
         "serialize",
         "lean on"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

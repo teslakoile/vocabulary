@@ -1,9 +1,6 @@
 {
   "id": "e_96614dd7-2b4c-472d-8de5-32d8ac3eed5a",
   "headword": "balustrade",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "balustrade",
@@ -47,9 +44,12 @@
       "word_distractors": [
         "modality",
         "sleuthing",
-        "substantial",
         "substrate",
-        "ducks in a row"
+        "pick your brain",
+        "second order effects"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

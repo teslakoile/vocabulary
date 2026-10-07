@@ -1,9 +1,6 @@
 {
   "id": "e_obscure",
   "headword": "obscure",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "obscure (verb)",
@@ -50,6 +47,9 @@
         "adversarial",
         "dual-write problem"
       ],
+      "tags": [
+        "general"
+      ],
       "prompt_version": 4
     },
     {
@@ -93,6 +93,9 @@
         "lay of the land",
         "wordsmith",
         "race condition"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

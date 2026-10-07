@@ -1,9 +1,6 @@
 {
   "id": "e_idempotent",
   "headword": "idempotent",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "idempotent",
@@ -44,9 +41,12 @@
       "word_distractors": [
         "serialize",
         "advocate for",
-        "bolster",
         "ephemeral",
-        "long-horizon"
+        "long-horizon",
+        "obfuscate"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

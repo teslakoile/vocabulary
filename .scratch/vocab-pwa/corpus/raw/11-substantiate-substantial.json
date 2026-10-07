@@ -1,9 +1,6 @@
 {
   "id": "e_substantiate_substantial",
   "headword": "substantiate/substantial",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "substantiate",
@@ -51,6 +48,9 @@
         "finesse",
         "disambiguate"
       ],
+      "tags": [
+        "general"
+      ],
       "prompt_version": 4
     },
     {
@@ -96,6 +96,9 @@
         "stark",
         "second order effects",
         "pick your brain"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

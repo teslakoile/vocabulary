@@ -1,9 +1,6 @@
 {
   "id": "e_flywheel_effect",
   "headword": "flywheel effect",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "flywheel effect",
@@ -51,6 +48,9 @@
         "misfire policy",
         "race condition",
         "lay of the land"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

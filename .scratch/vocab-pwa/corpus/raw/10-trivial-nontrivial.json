@@ -1,9 +1,6 @@
 {
   "id": "e_trivial_nontrivial",
   "headword": "trivial/nontrivial",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "trivial",
@@ -48,6 +45,9 @@
         "finesse",
         "misfire policy",
         "pick your brain"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     },
@@ -96,6 +96,9 @@
         "asymmetric",
         "ducks in a row",
         "entrypoint"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

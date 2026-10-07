@@ -1,9 +1,6 @@
 {
   "id": "e_eaaa0792-fe04-4b8e-8f0f-e7453d9646b8",
   "headword": "meat proxy",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "meat proxy",
@@ -44,9 +41,12 @@
       "word_distractors": [
         "blanket approval",
         "frontier",
-        "top brass",
-        "unequivocal",
-        "mold breaker"
+        "mold breaker",
+        "tacit knowledge",
+        "heuristic"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

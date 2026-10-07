@@ -1,9 +1,6 @@
 {
   "id": "e_progressive",
   "headword": "progressive",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "progressive",
@@ -54,6 +51,9 @@
         "nontrivial",
         "ducks in a row",
         "myopic"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

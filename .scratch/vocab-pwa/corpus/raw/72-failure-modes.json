@@ -1,9 +1,6 @@
 {
   "id": "e_failure_mode_s",
   "headword": "failure mode/s",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "failure mode",
@@ -54,6 +51,9 @@
         "cognizant",
         "idempotent",
         "verbose"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

@@ -1,9 +1,6 @@
 {
   "id": "e_persist_persistence",
   "headword": "persist/persistence",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "persist",
@@ -47,6 +44,9 @@
         "broadly",
         "inroads",
         "scaffolding"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     },
@@ -92,6 +92,9 @@
         "asymmetric",
         "enmeshed",
         "surreptitiously"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

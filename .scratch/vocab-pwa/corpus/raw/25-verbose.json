@@ -1,9 +1,6 @@
 {
   "id": "e_verbose",
   "headword": "verbose",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "verbose",
@@ -50,6 +47,9 @@
         "play it by ear",
         "institutional knowledge",
         "exacerbate"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

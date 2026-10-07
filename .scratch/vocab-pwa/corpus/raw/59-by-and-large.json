@@ -1,9 +1,6 @@
 {
   "id": "e_by_and_large",
   "headword": "by and large",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "by and large",
@@ -52,6 +49,9 @@
         "meat proxy",
         "myopic",
         "verbose"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

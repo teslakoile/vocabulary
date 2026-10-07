@@ -1,9 +1,6 @@
 {
   "id": "e_inroads",
   "headword": "inroads",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "inroads",
@@ -56,6 +53,9 @@
         "ephemeral",
         "front and center",
         "long-horizon"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

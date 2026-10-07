@@ -1,9 +1,6 @@
 {
   "id": "e_bespoke",
   "headword": "bespoke",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "bespoke",
@@ -50,8 +47,11 @@
         "broad",
         "asymmetric",
         "wordsmith",
-        "buy-in",
-        "diaspora"
+        "tectonic shift",
+        "tacit knowledge"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

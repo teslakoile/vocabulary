@@ -1,9 +1,6 @@
 {
   "id": "e_fearless_forecast",
   "headword": "fearless forecast",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "fearless forecast",
@@ -51,6 +48,9 @@
         "institutional knowledge",
         "bolster",
         "sandbox"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

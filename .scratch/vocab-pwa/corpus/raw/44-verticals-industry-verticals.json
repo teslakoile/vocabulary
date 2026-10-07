@@ -1,9 +1,6 @@
 {
   "id": "e_verticals_industry_verticals",
   "headword": "verticals/industry verticals",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "vertical",
@@ -50,8 +47,11 @@
         "unequivocal",
         "deliberate",
         "verifiability",
-        "substantiate",
-        "entrypoint"
+        "entrypoint",
+        "diaspora"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

@@ -1,9 +1,6 @@
 {
   "id": "e_advocate",
   "headword": "advocate",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "advocate",
@@ -50,6 +47,9 @@
         "mass market",
         "tectonic shift",
         "buy-in"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     },
@@ -102,6 +102,9 @@
         "carte blanche",
         "frontrunner",
         "tacit knowledge"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

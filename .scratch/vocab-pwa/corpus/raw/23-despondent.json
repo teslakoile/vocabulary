@@ -1,9 +1,6 @@
 {
   "id": "e_despondent",
   "headword": "despondent",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "despondent",
@@ -54,6 +51,9 @@
         "entrypoint",
         "adversarial",
         "obfuscate"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

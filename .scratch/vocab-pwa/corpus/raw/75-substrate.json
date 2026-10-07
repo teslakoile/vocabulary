@@ -1,9 +1,6 @@
 {
   "id": "e_substrate",
   "headword": "substrate",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "substrate",
@@ -52,6 +49,9 @@
         "harness",
         "broad",
         "squarely"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

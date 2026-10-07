@@ -1,9 +1,6 @@
 {
   "id": "e_d1826093-2900-4509-a241-627f50d1cc9a",
   "headword": "mass market",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "mass market",
@@ -47,9 +44,12 @@
       "word_distractors": [
         "dual-write problem",
         "sleuthing",
-        "sycophantic",
         "substrate",
-        "sponsorship"
+        "sponsorship",
+        "watch outs"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

@@ -1,9 +1,6 @@
 {
   "id": "e_gravitas",
   "headword": "gravitas",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "gravitas",
@@ -50,8 +47,11 @@
         "advocate for",
         "primitive",
         "by and large",
-        "lean on",
-        "dogfooding"
+        "dogfooding",
+        "top brass"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

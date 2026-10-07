@@ -1,9 +1,6 @@
 {
   "id": "e_sleuthing_out",
   "headword": "sleuthing (out)",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "sleuthing",
@@ -57,6 +54,9 @@
         "fan-out",
         "knee-jerk reaction",
         "progressive"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

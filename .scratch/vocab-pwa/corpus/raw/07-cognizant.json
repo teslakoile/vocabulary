@@ -1,9 +1,6 @@
 {
   "id": "e_cognizant",
   "headword": "cognizant",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "cognizant",
@@ -50,6 +47,9 @@
         "fearless forecast",
         "daily driver",
         "lend itself"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

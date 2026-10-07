@@ -1,9 +1,6 @@
 {
   "id": "e_executive_presence_finesse",
   "headword": "executive presence/finesse",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "executive presence",
@@ -48,6 +45,9 @@
         "eschew",
         "buy-in",
         "obfuscate"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     },
@@ -94,6 +94,9 @@
         "vertical",
         "balustrade",
         "gravitas"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

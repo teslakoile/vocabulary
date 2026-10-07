@@ -1,9 +1,6 @@
 {
   "id": "e_6e102474-b113-4156-920e-2034d23e3d75",
   "headword": "dual-write problem",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "dual-write problem",
@@ -49,6 +46,9 @@
         "community of practice",
         "attuned",
         "pick your brain"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

@@ -7,7 +7,7 @@
  */
 import { useState } from 'react';
 import { TriangleAlert } from 'lucide-react';
-import { TOPICS, TOPIC_LABEL, type Entry, type Sense, type Snapshot, type Topic } from './types';
+import { TOPICS, TOPIC_LABEL, topicsOfSense, type Entry, type Sense, type Snapshot, type Topic } from './types';
 import { saveEntry } from './store';
 import { Notice } from '@/components/notice';
 import { Button } from '@/components/ui/button';
@@ -34,7 +34,7 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
     example: sense.example,
     capture_note: entry.capture_note ?? '',
   });
-  const [topics, setTopics] = useState<Topic[]>(() => TOPICS.filter((t) => entry.tags.includes(t)));
+  const [topics, setTopics] = useState<Topic[]>(() => TOPICS.filter((t) => topicsOfSense(sense, entry).includes(t)));
   const [saving, setSaving] = useState(false);
   const [failed, setFailed] = useState(false);
 
@@ -53,14 +53,16 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
       definition: draft.definition.trim(),
       caution: draft.caution.trim(),
       example: draft.example.trim(),
+      // A tag this screen does not know about is kept rather than dropped.
+      tags: [...(sense.tags ?? []).filter((t) => !TOPICS.includes(t as Topic)), ...topics],
     };
     const updatedEntry: Entry = {
       ...entry,
       capture_note: draft.capture_note.trim() || null,
-      // A tag this screen does not know about is kept rather than dropped.
-      tags: [...entry.tags.filter((t) => !TOPICS.includes(t as Topic)), ...topics],
       senses: entry.senses.map((s) => (s.id === sense.id ? updatedSense : s)),
     };
+    // The word's topics are those of all its meanings.
+    updatedEntry.tags = [...new Set(updatedEntry.senses.flatMap((s) => topicsOfSense(s, entry)))];
 
     // Update what is on screen first. A failed save is worth telling you about,
     // but it is not worth throwing away what you typed.

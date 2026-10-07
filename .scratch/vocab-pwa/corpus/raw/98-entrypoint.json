@@ -1,9 +1,6 @@
 {
   "id": "e_d97cd6f8-2e20-4456-86d7-2d8e313862ea",
   "headword": "entrypoint",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "entrypoint",
@@ -43,11 +40,14 @@
         "A set of rules about who is allowed to open a file."
       ],
       "word_distractors": [
-        "second order effects",
-        "first order effects",
-        "in pockets",
-        "sycophantic",
-        "pick your brain"
+        "balustrade",
+        "broadly",
+        "harness",
+        "bolster",
+        "second order effects"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

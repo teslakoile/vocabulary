@@ -1,9 +1,6 @@
 {
   "id": "e_hyperscaler",
   "headword": "hyperscaler",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "hyperscaler",
@@ -45,9 +42,12 @@
       "word_distractors": [
         "oriented",
         "verbose",
-        "race condition",
-        "persist",
-        "gravitas"
+        "gravitas",
+        "bolster",
+        "despondent"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

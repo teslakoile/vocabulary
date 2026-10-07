@@ -6,7 +6,7 @@
  * not. The transition is invisible, so free play is what the app does by
  * default rather than something to opt into.
  */
-import type { Card, Cue, Entry, Sense, Snapshot, Topic } from './types';
+import { topicsOfSense, type Card, type Cue, type Entry, type Sense, type Snapshot, type Topic } from './types';
 
 /** How many due cards pass before a new one is let in. A backlog of due cards
  *  should not starve new words for weeks, which is what a strict due-first
@@ -237,14 +237,15 @@ function index(snapshot: Snapshot): Indexed {
 
 /** A card is eligible when its entry is live and actually has content. Bare
  *  entries are held out of review until they have been through generation.
- *  With a topic chosen, only entries tagged with it are practised. */
+ *  With a topic chosen, only meanings tagged with it are practised, so a word
+ *  that means different things in two fields is asked the one you chose. */
 function eligible(snapshot: Snapshot, { senses, entries }: Indexed, topic: Topic | null): Card[] {
   return snapshot.cards.filter((card) => {
     const sense = senses.get(card.sense_id);
     if (!sense) return false;
     const entry = entries.get(sense.entry_id);
     if (!entry || entry.archived_at !== null || entry.status !== 'ready') return false;
-    return !topic || entry.tags.includes(topic);
+    return !topic || topicsOfSense(sense, entry).includes(topic);
   });
 }
 

@@ -1,9 +1,6 @@
 {
   "id": "e_dogfooding",
   "headword": "dogfooding",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "dogfooding",
@@ -52,6 +49,9 @@
         "first principles",
         "heuristic",
         "north star"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

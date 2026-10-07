@@ -1,9 +1,6 @@
 {
   "id": "e_sponsorship",
   "headword": "sponsorship",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "sponsorship",
@@ -54,6 +51,9 @@
         "build that muscle",
         "diaspora",
         "rectify"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

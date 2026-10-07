@@ -1,9 +1,6 @@
 {
   "id": "e_serialize",
   "headword": "serialize",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "serialize",
@@ -48,6 +45,9 @@
         "superset",
         "in pockets",
         "verifiability"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

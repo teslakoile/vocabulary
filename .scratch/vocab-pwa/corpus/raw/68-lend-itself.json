@@ -1,9 +1,6 @@
 {
   "id": "e_lend_itself",
   "headword": "lend itself",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "lend itself",
@@ -56,6 +53,9 @@
         "advocate",
         "exacerbate",
         "fearless forecast"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

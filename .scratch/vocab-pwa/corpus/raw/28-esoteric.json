@@ -1,9 +1,6 @@
 {
   "id": "e_esoteric",
   "headword": "esoteric",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "esoteric",
@@ -52,6 +49,9 @@
         "surreptitiously",
         "unequivocal",
         "north star"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

@@ -1,9 +1,6 @@
 {
   "id": "e_hot_swap",
   "headword": "hot-swap",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "hot-swap",
@@ -52,6 +49,9 @@
         "second order effects",
         "stark",
         "zeitgeist"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

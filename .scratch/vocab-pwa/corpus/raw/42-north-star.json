@@ -1,9 +1,6 @@
 {
   "id": "e_north_star",
   "headword": "north star",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "north star",
@@ -51,6 +48,9 @@
         "bolster",
         "front and center",
         "failure mode"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

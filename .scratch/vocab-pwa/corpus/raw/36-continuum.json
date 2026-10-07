@@ -1,9 +1,6 @@
 {
   "id": "e_continuum",
   "headword": "continuum",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "continuum",
@@ -50,6 +47,9 @@
         "daily driver",
         "panopticon",
         "advocate"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

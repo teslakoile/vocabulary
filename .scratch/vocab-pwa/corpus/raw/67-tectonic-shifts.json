@@ -1,9 +1,6 @@
 {
   "id": "e_tectonic_shifts",
   "headword": "tectonic shifts",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "tectonic shift",
@@ -54,6 +51,9 @@
         "build that muscle",
         "by and large",
         "progressive"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

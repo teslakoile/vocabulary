@@ -1,9 +1,6 @@
 {
   "id": "e_play_it_by_ear",
   "headword": "play it by ear",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "play it by ear",
@@ -54,6 +51,9 @@
         "verifiability",
         "top brass",
         "wordsmith"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

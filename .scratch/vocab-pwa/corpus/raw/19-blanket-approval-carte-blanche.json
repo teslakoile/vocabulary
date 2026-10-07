@@ -1,9 +1,6 @@
 {
   "id": "e_blanket_approval_carte_blanche",
   "headword": "blanket approval/carte blanche",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "blanket approval",
@@ -46,6 +43,9 @@
         "tacit knowledge",
         "heuristic",
         "asymmetric"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     },
@@ -90,6 +90,9 @@
         "broad",
         "substantial",
         "lean on"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

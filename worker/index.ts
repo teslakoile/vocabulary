@@ -148,6 +148,7 @@ type SenseRow = {
   cues: string | null;
   distractors: string | null;
   word_distractors: string | null;
+  tags: string | null;
   gloss: string | null;
   gloss_distractors: string | null;
   prompt_version: number | null;
@@ -210,7 +211,7 @@ async function corpus(request: Request, env: Env): Promise<Response> {
     ).all<EntryRow>(),
     env.DB.prepare(
       `SELECT id, entry_id, position, term, accepted, definition, caution, example,
-              cues, distractors, word_distractors, gloss, gloss_distractors, prompt_version, updated_at
+              cues, distractors, word_distractors, gloss, gloss_distractors, tags, prompt_version, updated_at
          FROM senses ORDER BY entry_id, position`
     ).all<SenseRow>(),
   ]);
@@ -231,6 +232,7 @@ async function corpus(request: Request, env: Env): Promise<Response> {
       word_distractors: parseJson<string[]>(row.word_distractors, []),
       gloss: row.gloss ?? '',
       gloss_distractors: parseJson<string[]>(row.gloss_distractors, []),
+      tags: parseJson<string[]>(row.tags, []),
       prompt_version: row.prompt_version === null ? null : Number(row.prompt_version),
       updated_at: row.updated_at,
     };
@@ -487,30 +489,37 @@ async function publishContent(id: string, request: Request, env: Env): Promise<R
     return json({ error: 'refusing to remove senses: their review history would be deleted' }, 409);
   }
 
+  // The word's topics are the union of its meanings' topics.
+  const given = senses.filter((s) => Array.isArray(s.tags));
+  const entryTags = given.length ? JSON.stringify([...new Set(given.flatMap((s) => s.tags!))]) : null;
+
   const base = id.replace(/^e_/, '');
   const now = new Date().toISOString();
   let intake = Number(last?.last ?? -1) + 1;
   const statements: D1PreparedStatement[] = [];
 
   senses.forEach((s, i) => {
+    // Absent means keep what the sense already has, so an older caller cannot wipe topics.
+    const sense_tags = Array.isArray(s.tags) ? JSON.stringify(s.tags) : null;
     const senseId = existing.results.find((r) => Number(r.position) === i)?.id ?? `s_${base}_${i}`;
     statements.push(
       env.DB.prepare(
         `INSERT INTO senses (id, entry_id, position, term, accepted, definition, caution, example, cues,
                              distractors, word_distractors, gloss, gloss_distractors, prompt_version,
-                             created_at, updated_at)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                             created_at, updated_at, tags)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, COALESCE(?, '[]'))
          ON CONFLICT(id) DO UPDATE SET term = excluded.term, accepted = excluded.accepted,
            definition = excluded.definition, caution = excluded.caution, example = excluded.example,
            cues = excluded.cues, distractors = excluded.distractors,
            word_distractors = excluded.word_distractors, gloss = excluded.gloss,
            gloss_distractors = excluded.gloss_distractors, prompt_version = excluded.prompt_version,
-           updated_at = excluded.updated_at`
+           updated_at = excluded.updated_at, tags = COALESCE(?, tags)`
       ).bind(
         senseId, id, i, s.term!.trim(), JSON.stringify(s.accepted ?? []), s.definition!.trim(),
         s.caution!.trim(), s.example!.trim(), JSON.stringify(s.cues ?? []),
         JSON.stringify(s.distractors ?? []), JSON.stringify(s.word_distractors ?? []),
-        s.gloss!.trim(), JSON.stringify(s.gloss_distractors ?? []), s.prompt_version ?? null, now, now
+        s.gloss!.trim(), JSON.stringify(s.gloss_distractors ?? []), s.prompt_version ?? null, now, now,
+        sense_tags, sense_tags
       )
     );
     for (const type of CARD_TYPES) {
@@ -526,8 +535,8 @@ async function publishContent(id: string, request: Request, env: Env): Promise<R
   statements.push(
     env.DB.prepare(
       `UPDATE entries SET headword = COALESCE(?, headword), status = 'ready', flagged_at = NULL,
-                          flag_note = NULL, updated_at = ? WHERE id = ?`
-    ).bind(body?.headword?.trim() || null, now, id)
+                          flag_note = NULL, tags = COALESCE(?, tags), updated_at = ? WHERE id = ?`
+    ).bind(body?.headword?.trim() || null, entryTags, now, id)
   );
 
   await env.DB.batch(statements);
@@ -566,7 +575,8 @@ async function updateEntry(id: string, request: Request, env: Env): Promise<Resp
     statements.push(
       env.DB.prepare(
         `UPDATE senses SET term = ?, accepted = ?, definition = ?, caution = ?, example = ?,
-                           cues = ?, distractors = ?, word_distractors = ?, gloss = ?, gloss_distractors = ?, updated_at = ?
+                           cues = ?, distractors = ?, word_distractors = ?, gloss = ?, gloss_distractors = ?, updated_at = ?,
+                           tags = COALESCE(?, tags)
            WHERE id = ? AND entry_id = ?`
       ).bind(
         sense.term,
@@ -580,6 +590,7 @@ async function updateEntry(id: string, request: Request, env: Env): Promise<Resp
         sense.gloss ?? '',
         JSON.stringify(sense.gloss_distractors ?? []),
         now,
+        Array.isArray(sense.tags) ? JSON.stringify(sense.tags) : null,
         sense.id,
         id
       )

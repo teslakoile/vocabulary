@@ -23,6 +23,8 @@ const tagVariants = cva(
       tone: {
         general:
           '[--tag:var(--tag-general)] [--tag-on:var(--ink)] [--tag-idle:color-mix(in_oklch,var(--tag-general)_46%,white)] [--tag-idle-hover:color-mix(in_oklch,var(--tag-general)_66%,white)] [--tag-idle-ink:var(--ink)]',
+        business:
+          '[--tag:var(--tag-business)] [--tag-on:var(--ink)] [--tag-idle:color-mix(in_oklch,var(--tag-business)_46%,white)] [--tag-idle-hover:color-mix(in_oklch,var(--tag-business)_66%,white)] [--tag-idle-ink:var(--ink)]',
         tech:
           '[--tag:var(--tag-tech)] [--tag-on:var(--ink)] [--tag-idle:color-mix(in_oklch,var(--tag-tech)_46%,white)] [--tag-idle-hover:color-mix(in_oklch,var(--tag-tech)_66%,white)] [--tag-idle-ink:var(--ink)]',
         // Not a topic: the "all of them" choice. Glass on the sky and a pale

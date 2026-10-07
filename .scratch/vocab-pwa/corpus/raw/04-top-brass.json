@@ -1,9 +1,6 @@
 {
   "id": "e_top_brass",
   "headword": "top brass",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "top brass",
@@ -50,6 +47,9 @@
         "sandbox",
         "substantial",
         "advocate"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

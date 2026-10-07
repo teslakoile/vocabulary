@@ -1,9 +1,6 @@
 {
   "id": "e_ducks_in_a_row",
   "headword": "ducks in a row",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "ducks in a row",
@@ -51,6 +48,9 @@
         "diaspora",
         "fan-out",
         "blanket approval"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

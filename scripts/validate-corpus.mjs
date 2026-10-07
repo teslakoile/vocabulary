@@ -7,7 +7,7 @@ const RAW_DIR = '.scratch/vocab-pwa/corpus/raw';
 const SOURCE = '.scratch/vocab-pwa/source-list.md';
 const TYPES = ['recognition', 'identify', 'reverse', 'production'];
 // Keep in step with TOPICS in shared/types.ts.
-const TOPICS = ['general', 'tech'];
+const TOPICS = ['general', 'tech', 'business'];
 
 const STOPWORDS = new Set([
   'your', 'their', 'them', 'that', 'this', 'with', 'from', 'into', 'over', 'they',
@@ -86,9 +86,6 @@ for (const file of files) {
   if (seenHeadwords.has(hw)) { fail(where, `duplicate headword, already in ${seenHeadwords.get(hw)}`); continue; }
   seenHeadwords.set(hw, file);
 
-  if (!Array.isArray(entry.tags) || entry.tags.length === 0) fail(where, `no tags, needs at least one of: ${TOPICS.join(', ')}`);
-  else for (const tag of entry.tags) if (!TOPICS.includes(tag)) fail(where, `unknown tag "${tag}", allowed: ${TOPICS.join(', ')}`);
-
   if (!Array.isArray(entry.senses) || entry.senses.length === 0) { fail(where, 'no senses'); continue; }
 
   const termsInEntry = new Set();
@@ -99,6 +96,9 @@ for (const file of files) {
     }
     if (termsInEntry.has(s.term)) fail(w, `duplicate term "${s.term}" within the entry`);
     termsInEntry.add(s.term);
+
+    if (!Array.isArray(s.tags) || s.tags.length === 0) fail(w, `no tags, needs at least one of: ${TOPICS.join(', ')}`);
+    else for (const tag of s.tags) if (!TOPICS.includes(tag)) fail(w, `unknown tag "${tag}", allowed: ${TOPICS.join(', ')}`);
 
     if (!Array.isArray(s.accepted)) fail(w, 'accepted must be an array');
     else if (s.accepted.some((a) => typeof a !== 'string')) fail(w, 'accepted must contain only strings');

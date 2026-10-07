@@ -1,9 +1,6 @@
 {
   "id": "e_first_second_order_effects",
   "headword": "first/second order effects",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "first order effects",
@@ -52,6 +49,9 @@
         "zeitgeist",
         "frontrunner",
         "continuum"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     },
@@ -106,6 +106,9 @@
         "scaffolding",
         "build that muscle",
         "advocate for"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

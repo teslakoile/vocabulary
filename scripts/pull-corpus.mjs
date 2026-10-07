@@ -7,9 +7,9 @@
  * captured words with no content and flagged words, to corpus/backlog.json.
  *
  * Any raw file that changes here changed in the app. Read `git diff` before
- * editing, so an in-app fix is never regenerated away. Tags come back too, so
- * run this before tagging and publish before running it again, or local tags
- * are overwritten by what is live.
+ * editing, so an in-app fix is never regenerated away. Each sense's topics come
+ * back too, so publish before pulling again, or topics you wrote locally are
+ * overwritten by what is live.
  *
  * Usage: node scripts/pull-corpus.mjs
  */
@@ -66,7 +66,6 @@ for (const entry of entries.sort((a, b) => a.id.localeCompare(b.id))) {
   const record = {
     id: entry.id,
     headword: entry.headword,
-    tags: entry.tags,
     ...(entry.capture_note ? { capture_note: entry.capture_note } : {}),
     ...(entry.archived_at ? { archived_at: entry.archived_at } : {}),
     senses: entry.senses.sort((a, b) => a.position - b.position).map(contentOf),

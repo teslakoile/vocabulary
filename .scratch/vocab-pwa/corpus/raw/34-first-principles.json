@@ -1,9 +1,6 @@
 {
   "id": "e_first_principles",
   "headword": "first principles",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "first principles",
@@ -50,6 +47,9 @@
         "cognizant",
         "failure mode",
         "squarely"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

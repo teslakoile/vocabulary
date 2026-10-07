@@ -1,9 +1,6 @@
 {
   "id": "e_build_that_muscle",
   "headword": "build that muscle",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "build that muscle",
@@ -55,6 +52,9 @@
         "pick your brain",
         "sleuthing",
         "inroads"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

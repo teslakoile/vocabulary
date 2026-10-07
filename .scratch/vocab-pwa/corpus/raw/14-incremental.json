@@ -1,9 +1,6 @@
 {
   "id": "e_incremental",
   "headword": "incremental",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "incremental",
@@ -50,6 +47,57 @@
         "verbose",
         "ephemeral",
         "sandbox"
+      ],
+      "tags": [
+        "general"
+      ],
+      "prompt_version": 4
+    },
+    {
+      "term": "incremental (software)",
+      "accepted": [
+        "incremental",
+        "incrementally"
+      ],
+      "gloss": "handling only what changed",
+      "gloss_distractors": [
+        "copying everything every time",
+        "running on several servers",
+        "storing data in one file"
+      ],
+      "definition": "Processing only what is new or changed since the last run, not everything again.",
+      "caution": "Say what it is measured against, such as the last run or the last backup. An incremental job that misses a change leaves old data behind without any error.",
+      "example": "The nightly load is incremental, so it reads only the rows changed since midnight instead of the whole table.",
+      "cues": [
+        {
+          "text": "Your nightly backup copies only the files that changed since the previous backup instead of everything, and you need the adjective for that kind of backup.",
+          "setting": "work"
+        },
+        {
+          "text": "A data pipeline used to reload ten years of history every night, and you rebuild it to pick up only the new rows. What adjective describes the new design?",
+          "setting": "work"
+        },
+        {
+          "text": "A build tool recompiles only the files you edited rather than the whole project. You want the adjective for that kind of build.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "Safe to run more than once, because a second run changes nothing the first did not.",
+        "Made from separate systems that each keep their own data but work together as one.",
+        "Created for one run and deleted as soon as that run is finished.",
+        "Spread across many servers so that one failure does not stop the work.",
+        "Run in a safe, sealed area."
+      ],
+      "word_distractors": [
+        "meat proxy",
+        "semantic layer",
+        "persistence",
+        "rectify",
+        "finesse"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

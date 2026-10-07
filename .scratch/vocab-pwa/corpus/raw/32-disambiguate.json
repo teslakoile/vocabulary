@@ -1,9 +1,6 @@
 {
   "id": "e_disambiguate",
   "headword": "disambiguate",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "disambiguate",
@@ -50,6 +47,9 @@
         "sycophantic",
         "substrate",
         "deliberate"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

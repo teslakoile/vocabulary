@@ -1,10 +1,6 @@
 {
   "id": "e_cc600441-9f7b-48c5-88cd-cf4e1ea20064",
   "headword": "sycophantic",
-  "tags": [
-    "general",
-    "tech"
-  ],
   "senses": [
     {
       "term": "sycophantic",
@@ -45,9 +41,13 @@
       "word_distractors": [
         "nontrivial",
         "pick your brain",
-        "deliberate",
         "run it by you",
-        "front and center"
+        "front and center",
+        "tacit knowledge"
+      ],
+      "tags": [
+        "general",
+        "tech"
       ],
       "prompt_version": 4
     }

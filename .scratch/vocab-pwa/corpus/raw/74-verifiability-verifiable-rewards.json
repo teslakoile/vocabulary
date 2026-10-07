@@ -1,9 +1,6 @@
 {
   "id": "e_verifiability_verifiable_rewards",
   "headword": "verifiability/verifiable rewards",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "verifiability",
@@ -55,6 +52,9 @@
         "center of excellence",
         "mold breaker"
       ],
+      "tags": [
+        "general"
+      ],
       "prompt_version": 4
     },
     {
@@ -97,11 +97,14 @@
         "To work over the exact phrasing of something already written."
       ],
       "word_distractors": [
-        "finesse",
-        "persistence",
-        "executive presence",
         "top brass",
-        "reaper"
+        "run it by you",
+        "trivial",
+        "heuristic",
+        "dual-write problem"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

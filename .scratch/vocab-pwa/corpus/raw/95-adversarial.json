@@ -1,10 +1,6 @@
 {
   "id": "e_b04e8057-8020-49bd-83c5-37780e4cb53a",
   "headword": "adversarial",
-  "tags": [
-    "general",
-    "tech"
-  ],
   "senses": [
     {
       "term": "adversarial",
@@ -45,6 +41,10 @@
         "advocate",
         "eschew",
         "advocate for"
+      ],
+      "tags": [
+        "general",
+        "tech"
       ],
       "prompt_version": 4
     }

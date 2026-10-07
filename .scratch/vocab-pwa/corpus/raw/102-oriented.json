@@ -1,9 +1,6 @@
 {
   "id": "e_f6f576c5-41bd-414c-bda0-74d11f57fcf3",
   "headword": "oriented",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "oriented",
@@ -47,6 +44,9 @@
         "executive presence",
         "meat proxy",
         "substrate"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

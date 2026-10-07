@@ -1,9 +1,6 @@
 {
   "id": "e_cf043431-198d-406b-83e0-1f937a911da3",
   "headword": "misfire policy",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "misfire policy",
@@ -48,6 +45,9 @@
         "meat proxy",
         "inroads",
         "disambiguate"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

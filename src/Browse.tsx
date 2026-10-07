@@ -12,7 +12,7 @@
 import { useMemo, useState } from 'react';
 import { Archive, ArrowLeft, ChevronRight, Pencil, RotateCcw, Search, SearchX } from 'lucide-react';
 import EditPanel from './EditPanel';
-import { TOPICS, TOPIC_LABEL, type Card as CardRow, type Entry, type Snapshot, type Topic } from './types';
+import { TOPICS, TOPIC_LABEL, topicsOfSense, type Card as CardRow, type Entry, type Snapshot, type Topic } from './types';
 import { archiveEntry } from './store';
 import { Empty, Heading, Headword, Shell } from '@/components/shell';
 import { Badge } from '@/components/ui/badge';
@@ -29,8 +29,12 @@ type Filter = (typeof FILTERS)[number];
 /** Two lapses is where a card stops being new and starts being a problem. */
 const STRUGGLING_LAPSES = 2;
 
-/** The entry's tags this app knows how to show, in a fixed order. */
-const topicsOf = (entry: Entry): Topic[] => TOPICS.filter((t) => entry.tags.includes(t));
+/** The topics of a list of tags this app knows how to show, in a fixed order. */
+const known = (tags: string[]): Topic[] => TOPICS.filter((t) => tags.includes(t));
+
+/** A word's topics: those of all its meanings. */
+const topicsOf = (entry: Entry): Topic[] =>
+  known(entry.senses.length ? entry.senses.flatMap((s) => topicsOfSense(s, entry)) : entry.tags);
 
 const gloss = (entry: Entry): string => {
   const first = entry.senses[0]?.definition ?? '';
@@ -89,7 +93,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
   const rows = useMemo(() => {
     const needle = query.trim().toLowerCase();
     const matched = snapshot.entries.filter(
-      (e) => (!needle || haystack(e).includes(needle)) && (!topic || e.tags.includes(topic))
+      (e) => (!needle || haystack(e).includes(needle)) && (!topic || topicsOf(e).includes(topic))
     );
 
     const filtered = matched.filter((e) => {
@@ -142,9 +146,16 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
         {open.senses.map((sense) => (
           <Card key={sense.id} className="gap-4">
             {open.senses.length > 1 && (
-              <h2 className="font-serif text-title break-words">
-                <Headword>{sense.term}</Headword>
-              </h2>
+              <div className="flex flex-col gap-2">
+                <h2 className="font-serif text-title break-words">
+                  <Headword>{sense.term}</Headword>
+                </h2>
+                <div className="flex flex-wrap gap-2">
+                  {known(topicsOfSense(sense, open)).map((t) => (
+                    <Tag key={t} tone={t} size="sm">{TOPIC_LABEL[t]}</Tag>
+                  ))}
+                </div>
+              </div>
             )}
             <p>{sense.definition}</p>
             <Caution>{sense.caution}</Caution>

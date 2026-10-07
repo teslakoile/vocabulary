@@ -1,9 +1,6 @@
 {
   "id": "e_elucidate",
   "headword": "elucidate",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "elucidate",
@@ -48,6 +45,9 @@
         "misfire policy",
         "modality",
         "oriented"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

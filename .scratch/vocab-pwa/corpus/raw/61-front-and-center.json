@@ -1,9 +1,6 @@
 {
   "id": "e_front_and_center",
   "headword": "front-and-center",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "front and center",
@@ -52,6 +49,9 @@
         "executive presence",
         "nontrivial",
         "broadly"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

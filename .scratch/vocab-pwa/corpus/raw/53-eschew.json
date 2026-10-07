@@ -1,9 +1,6 @@
 {
   "id": "e_eschew",
   "headword": "eschew",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "eschew",
@@ -52,6 +49,9 @@
         "sycophantic",
         "zeitgeist",
         "lend itself"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

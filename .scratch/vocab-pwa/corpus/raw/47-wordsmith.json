@@ -1,9 +1,6 @@
 {
   "id": "e_wordsmith",
   "headword": "wordsmith",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "wordsmith",
@@ -52,6 +49,9 @@
         "dual-write problem",
         "knee-jerk reaction",
         "making strides"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

@@ -1,9 +1,6 @@
 {
   "id": "e_watch_outs",
   "headword": "watch outs",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "watch outs",
@@ -52,6 +49,9 @@
         "persistence",
         "inroads",
         "dogfooding"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

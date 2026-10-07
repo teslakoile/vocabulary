@@ -1,9 +1,6 @@
 {
   "id": "e_ephemeral",
   "headword": "ephemeral",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "ephemeral",
@@ -17,19 +14,11 @@
         "easy to repair"
       ],
       "definition": "Lasting only a short time before it is gone.",
-      "caution": "It sounds formal when spoken, so say short-lived in conversation. In technical writing people read it as a promise that nothing is kept afterwards.",
+      "caution": "It sounds formal when spoken, so say short-lived in conversation. It suggests something that fades quickly and leaves nothing behind.",
       "example": "The excitement around the launch was ephemeral, and by Friday the usage numbers were back to normal.",
       "cues": [
         {
-          "text": "You are describing a design where each run gets a fresh environment that is destroyed the moment it finishes.",
-          "setting": "work"
-        },
-        {
-          "text": "A security reviewer asks how long the credentials the agent uses stay valid, and the answer is nine minutes.",
-          "setting": "work"
-        },
-        {
-          "text": "You are justifying why the intermediate data should exist only for the few minutes a run takes and then be deleted, and you want the adjective for data that lives that briefly.",
+          "text": "A consultant's favourite buzzword was in every deck for one quarter and then vanished. You want the formal adjective for how briefly that fashion lasted.",
           "setting": "work"
         },
         {
@@ -38,6 +27,10 @@
         },
         {
           "text": "You want a word for how quickly a mood of collective optimism came and went.",
+          "setting": "life"
+        },
+        {
+          "text": "A sandcastle will be gone by high tide, and you want the formal adjective for something that lasts that briefly.",
           "setting": "life"
         }
       ],
@@ -54,6 +47,58 @@
         "first order effects",
         "center of excellence",
         "carte blanche"
+      ],
+      "tags": [
+        "general"
+      ],
+      "prompt_version": 4
+    },
+    {
+      "term": "ephemeral (software)",
+      "accepted": [
+        "ephemeral",
+        "ephemerality",
+        "ephemeral storage"
+      ],
+      "gloss": "created, used, then deleted",
+      "gloss_distractors": [
+        "kept forever as a backup",
+        "shared by many users at once",
+        "locked until approved"
+      ],
+      "definition": "Created for one task or run and deleted afterwards, such as a temporary server.",
+      "caution": "In infrastructure it is a promise that nothing is kept. Say what is lost on shutdown, because people may assume the data survives a restart.",
+      "example": "Each test run gets an ephemeral environment that is destroyed as soon as the pipeline finishes.",
+      "cues": [
+        {
+          "text": "You are describing a design where each run gets a fresh environment that is destroyed the moment it finishes.",
+          "setting": "work"
+        },
+        {
+          "text": "A security reviewer asks how long the credentials the agent uses stay valid, and the answer is nine minutes.",
+          "setting": "work"
+        },
+        {
+          "text": "You are justifying why the intermediate data should exist only for the few minutes a run takes and then be deleted, and you want the adjective for data that lives that briefly.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "Safe to run more than once, because a second run changes nothing the first did not.",
+        "Able to be swapped out while the system keeps running, with no downtime for anyone.",
+        "Copied to a second location so that nothing is lost if the first one fails.",
+        "Covering a wide range rather than a narrow one.",
+        "Kept after a restart."
+      ],
+      "word_distractors": [
+        "heuristic",
+        "deliberate",
+        "trivial",
+        "persist",
+        "modality"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

@@ -1,9 +1,6 @@
 {
   "id": "e_obfuscate",
   "headword": "obfuscate",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "obfuscate",
@@ -54,6 +51,9 @@
         "gravitas",
         "hot-swap",
         "reaper"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

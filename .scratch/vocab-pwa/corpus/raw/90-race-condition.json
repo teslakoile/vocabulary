@@ -1,9 +1,6 @@
 {
   "id": "e_46b50491-8d3d-4af4-b8ed-4adbfa32aaf9",
   "headword": "race condition",
-  "tags": [
-    "tech"
-  ],
   "senses": [
     {
       "term": "race condition",
@@ -51,6 +48,9 @@
         "squarely",
         "deliberate",
         "despondent"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

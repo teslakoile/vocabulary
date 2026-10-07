@@ -1,9 +1,6 @@
 {
   "id": "e_8c949b0e-fb63-40d4-81a3-46e83cec8d03",
   "headword": "stark",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "stark",
@@ -44,6 +41,9 @@
         "verbose",
         "bespoke",
         "primitive"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

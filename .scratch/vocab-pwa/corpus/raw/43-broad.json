@@ -1,9 +1,6 @@
 {
   "id": "e_broad",
   "headword": "broad",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "broad",
@@ -44,6 +41,9 @@
         "dogfooding",
         "lean on",
         "deliberate"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     },
@@ -89,6 +89,9 @@
         "zeitgeist",
         "superset",
         "balustrade"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

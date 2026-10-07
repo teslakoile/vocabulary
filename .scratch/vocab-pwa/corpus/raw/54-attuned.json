@@ -1,9 +1,6 @@
 {
   "id": "e_attuned",
   "headword": "attuned",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "attuned",
@@ -52,6 +49,9 @@
         "buy-in",
         "institutional knowledge",
         "carte blanche"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

@@ -1,9 +1,6 @@
 {
   "id": "e_squarely",
   "headword": "squarely",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "squarely",
@@ -52,6 +49,9 @@
         "hot-swap",
         "trivial",
         "attuned"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

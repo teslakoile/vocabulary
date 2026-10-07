@@ -1,9 +1,6 @@
 {
   "id": "e_buy_in",
   "headword": "buy-in",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "buy-in",
@@ -50,10 +47,13 @@
       ],
       "word_distractors": [
         "contrived",
-        "institutional knowledge",
-        "tacit knowledge",
         "sandbox",
-        "squarely"
+        "squarely",
+        "elucidate",
+        "panopticon"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

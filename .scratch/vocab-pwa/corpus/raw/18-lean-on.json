@@ -1,9 +1,6 @@
 {
   "id": "e_lean_on",
   "headword": "lean on",
-  "tags": [
-    "general"
-  ],
   "senses": [
     {
       "term": "lean on",
@@ -55,6 +52,9 @@
         "first principles",
         "primitive",
         "evergreen"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }
