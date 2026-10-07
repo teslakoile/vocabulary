@@ -43,11 +43,14 @@
         "One of the small handful of cloud providers operating at a size almost nobody else can reach."
       ],
       "word_distractors": [
+        "mass market",
         "ephemeral",
         "institutional knowledge",
-        "center of excellence",
-        "first principles",
-        "flywheel effect"
+        "bolster",
+        "sandbox"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

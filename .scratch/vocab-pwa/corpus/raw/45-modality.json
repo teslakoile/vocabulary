@@ -45,8 +45,11 @@
         "superset",
         "hyperscaler",
         "attuned",
-        "disparage",
-        "nontrivial"
+        "nontrivial",
+        "buy-in"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

@@ -46,11 +46,14 @@
         "Temporary structure that holds the work up until the real thing can stand on its own."
       ],
       "word_distractors": [
+        "sponsorship",
         "first order effects",
         "verifiability",
         "top brass",
-        "wordsmith",
-        "panopticon"
+        "wordsmith"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

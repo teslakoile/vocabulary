@@ -1,0 +1,58 @@
+{
+  "id": "e_46b50491-8d3d-4af4-b8ed-4adbfa32aaf9",
+  "headword": "race condition",
+  "senses": [
+    {
+      "term": "race condition",
+      "accepted": [
+        "race conditions",
+        "race"
+      ],
+      "gloss": "a bug caused by timing",
+      "gloss_distractors": [
+        "a slow network connection",
+        "a crash on startup",
+        "a limit on memory use"
+      ],
+      "definition": "A bug where the result depends on which of two actions happens first.",
+      "caution": "Say it only when the outcome truly depends on timing. A bug that fails the same way every time is not a race condition.",
+      "example": "The job failed one run in twenty because two workers updated the same row, a classic race condition.",
+      "cues": [
+        {
+          "text": "A test passes on your laptop and fails one run in ten in CI, and you suspect two threads reach the same data in an unlucky order. You write the name of the bug in the ticket.",
+          "setting": "work"
+        },
+        {
+          "text": "Two customers click Buy on the last ticket at the same moment and both orders go through. You need the two-word term for this class of bug.",
+          "setting": "work"
+        },
+        {
+          "text": "A reviewer points out that your code checks a file exists and then opens it, and the file can vanish in between. You want the standard name for this problem.",
+          "setting": "work"
+        },
+        {
+          "text": "Two people reach for the last seat on a train at the same moment, and whoever gets there first wins. In software, the bug where the outcome depends on who is first has what two-word name?",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Two systems that each hold a copy of the same data and can drift apart over time.",
+        "A fixed limit on how many requests one user is allowed to send each minute.",
+        "A program that stops because it ran out of memory.",
+        "A slow response caused by too many users at once.",
+        "A test that checks the whole system from start to finish."
+      ],
+      "word_distractors": [
+        "panopticon",
+        "making strides",
+        "squarely",
+        "deliberate",
+        "despondent"
+      ],
+      "tags": [
+        "tech"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

@@ -46,11 +46,14 @@
         "Alert and responsive to signals, picking them up early and adjusting."
       ],
       "word_distractors": [
-        "mold breaker",
-        "lean on",
-        "primitive",
-        "sleuthing",
-        "hyperscaler"
+        "reaper",
+        "verifiable rewards",
+        "idempotent",
+        "substantial",
+        "first principles"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

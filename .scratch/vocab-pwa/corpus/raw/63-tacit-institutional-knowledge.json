@@ -46,7 +46,10 @@
         "superset",
         "bespoke",
         "bolster",
-        "fearless forecast"
+        "reaper"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     },
@@ -95,6 +98,9 @@
         "flywheel effect",
         "cognizant",
         "gravitas"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

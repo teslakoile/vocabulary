@@ -42,11 +42,14 @@
         "Sold only to other companies through long contracts, and never to members of the public directly."
       ],
       "word_distractors": [
-        "buy-in",
-        "ducks in a row",
-        "enmeshed",
-        "institutional knowledge",
-        "build that muscle"
+        "dual-write problem",
+        "sleuthing",
+        "substrate",
+        "sponsorship",
+        "watch outs"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

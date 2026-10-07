@@ -44,11 +44,14 @@
         "Big enough to matter, said of an amount or a change."
       ],
       "word_distractors": [
+        "meat proxy",
+        "long-horizon",
         "executive presence",
-        "harness",
         "nontrivial",
-        "by and large",
-        "deliberate"
+        "broadly"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

@@ -1,0 +1,52 @@
+{
+  "id": "e_b04e8057-8020-49bd-83c5-37780e4cb53a",
+  "headword": "adversarial",
+  "senses": [
+    {
+      "term": "adversarial",
+      "accepted": [],
+      "gloss": "involving opposing sides",
+      "gloss_distractors": [
+        "working well together",
+        "supported by strong evidence",
+        "open to anyone who joins"
+      ],
+      "definition": "Set up so that one side works against the other.",
+      "caution": "About a person or a team it can sound hostile. About tests or models it is neutral and means built to find weaknesses.",
+      "example": "We ran an adversarial review, where one engineer's only job was to find holes in the plan.",
+      "cues": [
+        {
+          "text": "You want a red-team style test where one group's only goal is to find the inputs that make your model fail. What adjective describes that kind of testing?",
+          "setting": "work"
+        },
+        {
+          "text": "Two models are trained against each other, one making fakes and the other trying to catch them. You name the kind of setup in the paper.",
+          "setting": "work"
+        },
+        {
+          "text": "A courtroom system pits two sides against each other so the truth comes out of the clash. What adjective names that kind of system?",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Done in small steps.",
+        "Known to only a few people with special training in the subject.",
+        "Easy to use again, because running it a second time changes nothing.",
+        "Present in scattered places rather than everywhere at once.",
+        "Written with too many words."
+      ],
+      "word_distractors": [
+        "second order effects",
+        "unequivocal",
+        "advocate",
+        "eschew",
+        "advocate for"
+      ],
+      "tags": [
+        "general",
+        "tech"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

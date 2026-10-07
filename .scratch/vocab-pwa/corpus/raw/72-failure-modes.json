@@ -46,11 +46,14 @@
         "Open to something without having agreed to it yet."
       ],
       "word_distractors": [
-        "obfuscate",
+        "north star",
         "knee-jerk reaction",
         "cognizant",
         "idempotent",
         "verbose"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

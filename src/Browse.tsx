@@ -12,7 +12,7 @@
 import { useMemo, useState } from 'react';
 import { Archive, ArrowLeft, ChevronRight, Pencil, RotateCcw, Search, SearchX } from 'lucide-react';
 import EditPanel from './EditPanel';
-import type { Card as CardRow, Entry, Snapshot } from './types';
+import { TOPICS, TOPIC_LABEL, topicsOfSense, type Card as CardRow, type Entry, type Snapshot, type Topic } from './types';
 import { archiveEntry } from './store';
 import { Empty, Heading, Headword, Shell } from '@/components/shell';
 import { Badge } from '@/components/ui/badge';
@@ -20,12 +20,21 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Caution } from '@/components/caution';
 import { Input } from '@/components/ui/input';
+import { TopicFilter } from '@/components/topic-filter';
+import { Tag } from '@/components/ui/tag';
 
 const FILTERS = ['All', 'Recent', 'Struggling', 'Pending', 'Archived'] as const;
 type Filter = (typeof FILTERS)[number];
 
 /** Two lapses is where a card stops being new and starts being a problem. */
 const STRUGGLING_LAPSES = 2;
+
+/** The topics of a list of tags this app knows how to show, in a fixed order. */
+const known = (tags: string[]): Topic[] => TOPICS.filter((t) => tags.includes(t));
+
+/** A word's topics: those of all its meanings. */
+const topicsOf = (entry: Entry): Topic[] =>
+  known(entry.senses.length ? entry.senses.flatMap((s) => topicsOfSense(s, entry)) : entry.tags);
 
 const gloss = (entry: Entry): string => {
   const first = entry.senses[0]?.definition ?? '';
@@ -75,6 +84,7 @@ interface Props {
 export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
   const [query, setQuery] = useState('');
   const [filter, setFilter] = useState<Filter>('All');
+  const [topic, setTopic] = useState<Topic | null>(null);
   const [openId, setOpenId] = useState<string | null>(null);
   const [editingSense, setEditingSense] = useState<string | null>(null);
 
@@ -82,7 +92,9 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
 
   const rows = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    const matched = snapshot.entries.filter((e) => !needle || haystack(e).includes(needle));
+    const matched = snapshot.entries.filter(
+      (e) => (!needle || haystack(e).includes(needle)) && (!topic || topicsOf(e).includes(topic))
+    );
 
     const filtered = matched.filter((e) => {
       switch (filter) {
@@ -97,7 +109,7 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
       return [...filtered].sort((a, b) => b.updated_at.localeCompare(a.updated_at)).slice(0, 25);
     }
     return filtered.sort((a, b) => a.headword.localeCompare(b.headword));
-  }, [filter, query, snapshot.entries, struggling]);
+  }, [filter, query, snapshot.entries, struggling, topic]);
 
   const open = openId ? snapshot.entries.find((e) => e.id === openId) : null;
 
@@ -120,6 +132,9 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
         <div className="flex flex-col gap-3 pb-1">
           <Heading>{open.headword}</Heading>
           <div className="flex flex-wrap gap-2">
+            {topicsOf(open).map((t) => (
+              <Tag key={t} tone={t} size="sm">{TOPIC_LABEL[t]}</Tag>
+            ))}
             {open.archived_at && <Badge variant="secondary">Archived</Badge>}
             {open.status !== 'ready' && <Badge variant="outline">Pending</Badge>}
             {open.senses.length > 1 && (
@@ -131,9 +146,16 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
         {open.senses.map((sense) => (
           <Card key={sense.id} className="gap-4">
             {open.senses.length > 1 && (
-              <h2 className="font-serif text-title break-words">
-                <Headword>{sense.term}</Headword>
-              </h2>
+              <div className="flex flex-col gap-2">
+                <h2 className="font-serif text-title break-words">
+                  <Headword>{sense.term}</Headword>
+                </h2>
+                <div className="flex flex-wrap gap-2">
+                  {known(topicsOfSense(sense, open)).map((t) => (
+                    <Tag key={t} tone={t} size="sm">{TOPIC_LABEL[t]}</Tag>
+                  ))}
+                </div>
+              </div>
             )}
             <p>{sense.definition}</p>
             <Caution>{sense.caution}</Caution>
@@ -227,6 +249,8 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
         ))}
       </div>
 
+      <TopicFilter value={topic} onChange={setTopic} allLabel="Any Topic" />
+
       {rows.length > 0 && (
         <Card className="gap-0 overflow-hidden p-0">
           <ul data-slot="rows" className="list-none divide-y divide-border p-0">
@@ -247,6 +271,11 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
                     </strong>
                     <span className="text-small text-muted-foreground">
                       {entry.status === 'ready' ? gloss(entry) : 'waiting for its meaning'}
+                    </span>
+                    <span className="mt-1 flex gap-2">
+                      {topicsOf(entry).map((t) => (
+                        <Tag key={t} tone={t} size="sm">{TOPIC_LABEL[t]}</Tag>
+                      ))}
                     </span>
                   </span>
                   <ChevronRight className="ml-auto size-4 shrink-0 text-muted-foreground" />

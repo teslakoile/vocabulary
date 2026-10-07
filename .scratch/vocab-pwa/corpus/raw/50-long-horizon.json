@@ -51,6 +51,9 @@
         "build that muscle",
         "tectonic shift"
       ],
+      "tags": [
+        "tech"
+      ],
       "prompt_version": 4
     }
   ]

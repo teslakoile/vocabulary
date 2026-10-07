@@ -38,11 +38,14 @@
         "One of the handful of cloud providers that runs compute and storage at planetary scale."
       ],
       "word_distractors": [
-        "disambiguate",
-        "balustrade",
-        "fearless forecast",
+        "misfire policy",
         "mold breaker",
-        "mass market"
+        "mass market",
+        "community of practice",
+        "fan-out"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

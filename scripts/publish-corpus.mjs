@@ -7,6 +7,9 @@
  * the end of the intake queue and never touches existing cards, so schedules
  * and review history survive.
  *
+ * Each sense's topics are part of its content. The Worker sets the entry's own
+ * tags to the union of its senses'.
+ *
  * Refuses to run while the corpus validator fails.
  *
  * Usage: node scripts/publish-corpus.mjs [--dry]

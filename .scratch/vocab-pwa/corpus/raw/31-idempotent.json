@@ -40,10 +40,13 @@
       ],
       "word_distractors": [
         "serialize",
-        "harness",
+        "advocate for",
         "ephemeral",
         "long-horizon",
-        "elucidate"
+        "obfuscate"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

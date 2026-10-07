@@ -48,11 +48,14 @@
         "Training signal a machine can check for itself rather than a person having to judge it."
       ],
       "word_distractors": [
+        "evergreen",
         "front and center",
-        "fan-out",
-        "sleuthing",
-        "substrate",
-        "squarely"
+        "enmeshed",
+        "sycophantic",
+        "institutional knowledge"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

@@ -41,9 +41,12 @@
       "word_distractors": [
         "enmeshed",
         "run it by you",
+        "broadly",
         "inroads",
-        "scaffolding",
-        "frontier"
+        "scaffolding"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     },
@@ -85,10 +88,13 @@
       ],
       "word_distractors": [
         "blanket approval",
+        "failure mode",
         "asymmetric",
-        "surreptitiously",
-        "elucidate",
-        "broadly"
+        "enmeshed",
+        "surreptitiously"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

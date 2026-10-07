@@ -44,9 +44,12 @@
       "word_distractors": [
         "broad",
         "progressive",
-        "buy-in",
+        "adversarial",
         "community of practice",
         "attuned"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

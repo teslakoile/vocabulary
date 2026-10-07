@@ -43,10 +43,13 @@
       ],
       "word_distractors": [
         "blanket approval",
-        "watch outs",
-        "inroads",
         "executive presence",
-        "carte blanche"
+        "carte blanche",
+        "myopic",
+        "adversarial"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

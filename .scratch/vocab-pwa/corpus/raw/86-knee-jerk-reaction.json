@@ -43,11 +43,14 @@
         "A change agreed by every team that it affects, after they have all had time to read it and comment."
       ],
       "word_distractors": [
+        "race condition",
         "cognizant",
-        "mold breaker",
-        "superset",
-        "obfuscate",
-        "persistence"
+        "frontier",
+        "stark",
+        "flywheel effect"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

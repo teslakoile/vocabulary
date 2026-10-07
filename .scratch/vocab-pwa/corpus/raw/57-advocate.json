@@ -43,10 +43,13 @@
       ],
       "word_distractors": [
         "elucidate",
-        "disparage",
         "watch outs",
         "mass market",
-        "first order effects"
+        "tectonic shift",
+        "buy-in"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     },
@@ -95,10 +98,13 @@
       ],
       "word_distractors": [
         "hyperscaler",
-        "verifiability",
         "contrived",
         "carte blanche",
-        "frontrunner"
+        "frontrunner",
+        "tacit knowledge"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

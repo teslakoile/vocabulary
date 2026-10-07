@@ -44,11 +44,14 @@
         "A rule of thumb that gets you a good enough answer quickly, because it usually works."
       ],
       "word_distractors": [
+        "superset",
+        "evergreen",
         "buy-in",
-        "substrate",
-        "advocate for",
-        "carte blanche",
-        "frontrunner"
+        "institutional knowledge",
+        "carte blanche"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

@@ -40,11 +40,14 @@
         "A company that keeps its servers in its own building rather than renting them from anyone."
       ],
       "word_distractors": [
-        "semantic layer",
-        "persist",
+        "oriented",
+        "verbose",
         "gravitas",
         "bolster",
         "despondent"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

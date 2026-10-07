@@ -1,0 +1,53 @@
+{
+  "id": "e_e3ae1db7-292a-405e-8425-f7fd69981c28",
+  "headword": "zeitgeist",
+  "senses": [
+    {
+      "term": "zeitgeist",
+      "accepted": [
+        "the zeitgeist"
+      ],
+      "gloss": "the mood of an era",
+      "gloss_distractors": [
+        "a famous historical event",
+        "a law of nature",
+        "one person's private opinion"
+      ],
+      "definition": "The general mood and ideas that define a particular period of time.",
+      "caution": "A German loanword, so it can sound grand. Use it for a broad cultural mood, not for one trend or one news story.",
+      "example": "The film caught the zeitgeist of 2020, when everyone was working from home and feeling uncertain.",
+      "cues": [
+        {
+          "text": "A marketing lead says the campaign works because it matches what people are feeling and talking about this year. What borrowed word names that shared mood of the age?",
+          "setting": "work"
+        },
+        {
+          "text": "Historians look back at the 1960s and describe the shared attitudes and ideas that defined the decade. What German word do they use?",
+          "setting": "life"
+        },
+        {
+          "text": "A critic says a novel captured how a whole generation was thinking and feeling when it came out. You want the German word for the mood of an age.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "A feeling of great sadness, with no hope that things will get better.",
+        "A group of people who have spread out far from the place they came from.",
+        "A sudden change that is large and lasts for many years.",
+        "The most senior people in a company or a group.",
+        "A place where everyone can be watched at once."
+      ],
+      "word_distractors": [
+        "watch outs",
+        "esoteric",
+        "cognizant",
+        "fearless forecast",
+        "exacerbate"
+      ],
+      "tags": [
+        "general"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

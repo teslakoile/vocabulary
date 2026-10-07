@@ -44,11 +44,14 @@
         "The accumulated history one organisation holds about why its own systems were built that way."
       ],
       "word_distractors": [
+        "making strides",
         "trivial",
-        "disambiguate",
-        "deliberate",
-        "executive presence",
-        "surreptitiously"
+        "surreptitiously",
+        "unequivocal",
+        "north star"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

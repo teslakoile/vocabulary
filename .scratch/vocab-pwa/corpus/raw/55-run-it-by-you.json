@@ -54,7 +54,10 @@
         "play it by ear",
         "serialize",
         "vertical",
-        "persist"
+        "substrate"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

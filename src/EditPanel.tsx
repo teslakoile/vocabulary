@@ -7,13 +7,14 @@
  */
 import { useState } from 'react';
 import { TriangleAlert } from 'lucide-react';
-import type { Entry, Sense, Snapshot } from './types';
+import { TOPICS, TOPIC_LABEL, topicsOfSense, type Entry, type Sense, type Snapshot, type Topic } from './types';
 import { saveEntry } from './store';
 import { Notice } from '@/components/notice';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
+import { Tag } from '@/components/ui/tag';
 
 interface Props {
   entry: Entry;
@@ -33,6 +34,7 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
     example: sense.example,
     capture_note: entry.capture_note ?? '',
   });
+  const [topics, setTopics] = useState<Topic[]>(() => TOPICS.filter((t) => topicsOfSense(sense, entry).includes(t)));
   const [saving, setSaving] = useState(false);
   const [failed, setFailed] = useState(false);
 
@@ -51,12 +53,16 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
       definition: draft.definition.trim(),
       caution: draft.caution.trim(),
       example: draft.example.trim(),
+      // A tag this screen does not know about is kept rather than dropped.
+      tags: [...(sense.tags ?? []).filter((t) => !TOPICS.includes(t as Topic)), ...topics],
     };
     const updatedEntry: Entry = {
       ...entry,
       capture_note: draft.capture_note.trim() || null,
       senses: entry.senses.map((s) => (s.id === sense.id ? updatedSense : s)),
     };
+    // The word's topics are those of all its meanings.
+    updatedEntry.tags = [...new Set(updatedEntry.senses.flatMap((s) => topicsOfSense(s, entry)))];
 
     // Update what is on screen first. A failed save is worth telling you about,
     // but it is not worth throwing away what you typed.
@@ -113,6 +119,25 @@ export default function EditPanel({ entry, sense, snapshot, onSnapshot, onDone }
       <div className="grid gap-2">
         <Label htmlFor={`example-${sense.id}`}>Example</Label>
         <Textarea id={`example-${sense.id}`} value={draft.example} onChange={set('example')} rows={2} />
+      </div>
+      <div className="grid gap-2">
+        <Label>Topic</Label>
+        <div role="group" aria-label="Topic" className="flex flex-wrap gap-2">
+          {TOPICS.map((t) => {
+            const on = topics.includes(t);
+            return (
+              <Tag
+                key={t}
+                tone={t}
+                selected={on}
+                // A word keeps at least one topic, or no filter would ever show it.
+                onClick={() => setTopics((cur) => (on ? (cur.length > 1 ? cur.filter((x) => x !== t) : cur) : [...cur, t]))}
+              >
+                {TOPIC_LABEL[t]}
+              </Tag>
+            );
+          })}
+        </div>
       </div>
       <div className="grid gap-2">
         <Label htmlFor={`note-${sense.id}`}>Note</Label>

@@ -1,0 +1,55 @@
+{
+  "id": "e_cf043431-198d-406b-83e0-1f937a911da3",
+  "headword": "misfire policy",
+  "senses": [
+    {
+      "term": "misfire policy",
+      "accepted": [
+        "misfire policies",
+        "misfire instruction",
+        "misfire"
+      ],
+      "gloss": "what to do after a missed run",
+      "gloss_distractors": [
+        "how often a job repeats",
+        "which server may run each job",
+        "how long old data is kept"
+      ],
+      "definition": "A rule for what a scheduler does when a job's planned start time was missed.",
+      "caution": "Used with schedulers such as Quartz or APScheduler. It covers runs that were skipped, not runs that started and then failed.",
+      "example": "Our misfire policy runs a missed job once as soon as the scheduler is back and skips the rest.",
+      "cues": [
+        {
+          "text": "The scheduler was down over a weekend and missed three nightly jobs. You configure whether to run them all on restart, run one, or skip them, and you need the name of that setting.",
+          "setting": "work"
+        },
+        {
+          "text": "A design doc asks what happens when a job's planned time passes while the system is paused. You name the rule you have to define.",
+          "setting": "work"
+        },
+        {
+          "text": "A reviewer asks whether a report due at midnight should run late or be dropped if the cluster was down at that moment. You want the term for the setting that decides.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "A rule for how many times a failed request is sent again before the system finally gives up on it.",
+        "A limit on how many jobs can run at the same moment on one machine before others must wait.",
+        "A schedule that starts a job at the same hour every day.",
+        "A message sent to the team when a job fails.",
+        "A record of every change made to a job."
+      ],
+      "word_distractors": [
+        "lean on",
+        "frontier",
+        "meat proxy",
+        "inroads",
+        "disambiguate"
+      ],
+      "tags": [
+        "tech"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

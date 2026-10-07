@@ -39,7 +39,7 @@ You need a Cloudflare account, Node.js 20 or later, and `npx`.
    npx wrangler d1 create vocabulary
    ```
 
-3. Apply the six migrations in order. They run through `d1 execute` because
+3. Apply the seven migrations in order. They run through `d1 execute` because
    `wrangler d1 migrations` expects a `migrations/` directory and this project
    keeps its SQL in `db/`:
 
@@ -214,7 +214,7 @@ The effective ceiling is about 30 guesses per minute.
 | `src/` | The React app: review, browse, capture, and the secret gate |
 | `worker/` | The Worker: API routes, cron handler, and VAPID signing |
 | `shared/` | Types and the single FSRS configuration, imported by both sides |
-| `db/` | Six SQL migrations |
+| `db/` | Seven SQL migrations |
 | `scripts/` | Corpus validation, distractor merging, and seed generation |
 | `public/` | Service worker, manifest, and icons |
 | `.scratch/vocab-pwa/` | The decision record: map, 16 tickets, research, and corpus |

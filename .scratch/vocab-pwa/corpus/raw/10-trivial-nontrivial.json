@@ -41,10 +41,13 @@
       ],
       "word_distractors": [
         "sponsorship",
+        "evergreen",
         "finesse",
-        "substantial",
-        "pick your brain",
-        "buy-in"
+        "misfire policy",
+        "pick your brain"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     },
@@ -88,11 +91,14 @@
         "Held up by a dependency on another team rather than by the work itself."
       ],
       "word_distractors": [
-        "unequivocal",
-        "frontrunner",
-        "watch outs",
-        "in pockets",
-        "broadly"
+        "broadly",
+        "serialize",
+        "asymmetric",
+        "ducks in a row",
+        "entrypoint"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

@@ -11,6 +11,23 @@ export type CardType = (typeof CARD_TYPES)[number];
 /** FSRS ratings. Kyle never self-grades: the app answers right/wrong for him. */
 export type Grade = 1 | 2 | 3 | 4;
 
+/**
+ * The kinds of use a meaning can be tagged with. The topic belongs to a sense,
+ * because one word often means different things in different fields. A sense may
+ * carry more than one, and an entry's own tags are the union of its senses'.
+ */
+export const TOPICS = ['general', 'tech', 'business'] as const;
+export type Topic = (typeof TOPICS)[number];
+
+export const TOPIC_LABEL: Record<Topic, string> = { general: 'General', tech: 'Tech', business: 'Business' };
+
+/**
+ * The topics a meaning belongs to. A sense with none of its own (an older cached
+ * snapshot, or a word not yet refined) falls back to its entry's.
+ */
+export const topicsOfSense = (sense: { tags?: string[] }, entry: { tags: string[] }): string[] =>
+  sense.tags?.length ? sense.tags : entry.tags;
+
 export interface Cue {
   text: string;
   setting: 'work' | 'life';
@@ -34,6 +51,8 @@ export interface Sense {
   gloss: string;
   /** 3 wrong glosses in the same grammatical form, for the recognition card. */
   gloss_distractors: string[];
+  /** Which topics this meaning belongs to. Practice filters on this. */
+  tags: string[];
   prompt_version: number | null;
   updated_at: string;
 }

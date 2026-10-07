@@ -42,11 +42,14 @@
         "Everyone in a company who is not part of the leadership team, spoken of as a single body."
       ],
       "word_distractors": [
+        "evergreen",
+        "failure mode",
         "sandbox",
         "substantial",
-        "verifiable rewards",
-        "cognizant",
-        "broad"
+        "advocate"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

@@ -46,11 +46,14 @@
         "To change something that was already working, in the hope of making it a little better."
       ],
       "word_distractors": [
-        "asymmetric",
         "sleuthing",
         "community of practice",
         "dogfooding",
+        "superset",
         "play it by ear"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

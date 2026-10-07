@@ -47,10 +47,13 @@
       ],
       "word_distractors": [
         "second order effects",
+        "trivial",
+        "nontrivial",
         "ducks in a row",
-        "unequivocal",
-        "tacit knowledge",
-        "community of practice"
+        "myopic"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

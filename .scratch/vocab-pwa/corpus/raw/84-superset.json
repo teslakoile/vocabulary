@@ -42,11 +42,14 @@
         "Alert and responsive to signals, adjusting early."
       ],
       "word_distractors": [
+        "substantial",
         "dogfooding",
-        "rectify",
-        "attuned",
-        "continuum",
-        "finesse"
+        "north star",
+        "in pockets",
+        "scaffolding"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

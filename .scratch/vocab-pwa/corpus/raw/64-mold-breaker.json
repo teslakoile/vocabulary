@@ -48,10 +48,13 @@
       ],
       "word_distractors": [
         "lay of the land",
-        "esoteric",
+        "making strides",
         "sponsorship",
         "center of excellence",
-        "exacerbate"
+        "ducks in a row"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

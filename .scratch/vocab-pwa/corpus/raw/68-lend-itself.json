@@ -54,6 +54,9 @@
         "exacerbate",
         "fearless forecast"
       ],
+      "tags": [
+        "general"
+      ],
       "prompt_version": 4
     }
   ]

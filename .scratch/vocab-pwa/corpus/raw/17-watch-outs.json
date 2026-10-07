@@ -46,9 +46,12 @@
       "word_distractors": [
         "balustrade",
         "contrived",
-        "serialize",
-        "primitive",
-        "persistence"
+        "persistence",
+        "inroads",
+        "dogfooding"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

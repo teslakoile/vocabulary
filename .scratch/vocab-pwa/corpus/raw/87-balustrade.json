@@ -43,10 +43,13 @@
       ],
       "word_distractors": [
         "modality",
+        "sleuthing",
+        "substrate",
         "pick your brain",
-        "second order effects",
-        "panopticon",
-        "tectonic shift"
+        "second order effects"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

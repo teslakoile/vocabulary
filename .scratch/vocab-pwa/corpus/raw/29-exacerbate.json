@@ -47,7 +47,10 @@
         "flywheel effect",
         "bespoke",
         "rectify",
-        "substantiate"
+        "race condition"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

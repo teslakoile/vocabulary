@@ -38,9 +38,12 @@
       "word_distractors": [
         "front and center",
         "inroads",
-        "substrate",
+        "dogfooding",
         "lean on",
-        "mold breaker"
+        "deliberate"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     },
@@ -82,10 +85,13 @@
       ],
       "word_distractors": [
         "modality",
-        "balustrade",
-        "lean on",
-        "heuristic",
-        "idempotent"
+        "oriented",
+        "zeitgeist",
+        "superset",
+        "balustrade"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

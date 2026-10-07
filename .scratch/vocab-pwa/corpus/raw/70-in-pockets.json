@@ -48,9 +48,12 @@
       "word_distractors": [
         "bolster",
         "disambiguate",
-        "disparage",
-        "verbose",
-        "modality"
+        "stark",
+        "adversarial",
+        "disparage"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

@@ -42,11 +42,14 @@
         "Trained in a procedure well enough to carry it out without checking the manual first."
       ],
       "word_distractors": [
+        "broad",
         "contrived",
+        "fearless forecast",
         "daily driver",
-        "flywheel effect",
-        "lend itself",
-        "balustrade"
+        "lend itself"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

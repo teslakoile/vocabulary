@@ -45,8 +45,11 @@
         "incremental",
         "substantiate",
         "disparage",
-        "ducks in a row",
-        "long-horizon"
+        "substantial",
+        "ducks in a row"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     },
@@ -85,10 +88,13 @@
       ],
       "word_distractors": [
         "persistence",
-        "mass market",
-        "eschew",
-        "esoteric",
-        "squarely"
+        "myopic",
+        "by and large",
+        "tacit knowledge",
+        "balustrade"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     },
@@ -134,6 +140,9 @@
         "ducks in a row",
         "obfuscate"
       ],
+      "tags": [
+        "tech"
+      ],
       "prompt_version": 4
     },
     {
@@ -177,7 +186,10 @@
         "by and large",
         "watch outs",
         "sleuthing",
-        "executive presence"
+        "fearless forecast"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

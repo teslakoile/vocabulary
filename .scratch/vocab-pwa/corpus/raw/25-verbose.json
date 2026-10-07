@@ -45,8 +45,11 @@
         "wordsmith",
         "fan-out",
         "play it by ear",
-        "trivial",
-        "institutional knowledge"
+        "institutional knowledge",
+        "exacerbate"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

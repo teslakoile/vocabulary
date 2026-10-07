@@ -42,11 +42,14 @@
         "Unwilling to say what you think until the most senior person has spoken first."
       ],
       "word_distractors": [
+        "center of excellence",
         "lay of the land",
         "deliberate",
-        "esoteric",
-        "institutional knowledge",
-        "sandbox"
+        "sycophantic",
+        "esoteric"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     },
@@ -89,8 +92,11 @@
         "mass market",
         "center of excellence",
         "esoteric",
-        "north star",
-        "knee-jerk reaction"
+        "hyperscaler",
+        "race condition"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

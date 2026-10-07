@@ -46,7 +46,10 @@
         "balustrade",
         "semantic layer",
         "disparage",
-        "lean on"
+        "stark"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     },
@@ -87,10 +90,13 @@
       ],
       "word_distractors": [
         "disambiguate",
-        "persist",
-        "bolster",
+        "entrypoint",
+        "oriented",
         "top brass",
         "verifiability"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

@@ -1,0 +1,55 @@
+{
+  "id": "e_cc600441-9f7b-48c5-88cd-cf4e1ea20064",
+  "headword": "sycophantic",
+  "senses": [
+    {
+      "term": "sycophantic",
+      "accepted": [
+        "sycophancy",
+        "sycophant"
+      ],
+      "gloss": "praising too much to please",
+      "gloss_distractors": [
+        "rude on purpose",
+        "calm under pressure",
+        "quick to argue with everyone"
+      ],
+      "definition": "Praising or agreeing too much in order to win favor.",
+      "caution": "A strong word that accuses someone of insincerity. For an AI model it is a standard term for agreeing with the user even when they are wrong.",
+      "example": "The model was sycophantic: it called my plan brilliant even though it had an obvious flaw.",
+      "cues": [
+        {
+          "text": "An AI assistant tells you your flawed plan is excellent, then changes its answer the moment you push back. What adjective describes that behavior?",
+          "setting": "work"
+        },
+        {
+          "text": "A new hire praises every idea the director shares and never disagrees, hoping for a promotion. You want the adjective for that behavior.",
+          "setting": "work"
+        },
+        {
+          "text": "A courtier laughs at every joke the king tells and calls each one brilliant. What adjective fits him?",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Said or done in a secret way, so that nobody notices.",
+        "Willing to consider a new idea before deciding.",
+        "Hard to understand because it is more complicated than it needs to be.",
+        "Very sad, with no hope that things will get better.",
+        "Describing words and phrases that are chosen carefully and used with great skill."
+      ],
+      "word_distractors": [
+        "nontrivial",
+        "pick your brain",
+        "run it by you",
+        "front and center",
+        "tacit knowledge"
+      ],
+      "tags": [
+        "general",
+        "tech"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

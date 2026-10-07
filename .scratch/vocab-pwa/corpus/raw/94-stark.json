@@ -1,0 +1,51 @@
+{
+  "id": "e_8c949b0e-fb63-40d4-81a3-46e83cec8d03",
+  "headword": "stark",
+  "senses": [
+    {
+      "term": "stark",
+      "accepted": [],
+      "gloss": "harsh and impossible to ignore",
+      "gloss_distractors": [
+        "gentle and easy to overlook",
+        "slightly unclear and hard to judge",
+        "cheerful and full of detail"
+      ],
+      "definition": "Very plain and harsh, with nothing to soften it.",
+      "caution": "It usually describes a contrast, a fact, or a warning. Said of a person or a place, it can sound unkind, so check the tone you want.",
+      "example": "The difference between the two quarters was stark, so the decision was easy.",
+      "cues": [
+        {
+          "text": "Last year's revenue and this year's sit side by side on one slide, and the gap is impossible to miss. You want the adjective for a difference that blunt.",
+          "setting": "work"
+        },
+        {
+          "text": "A risk report gives its warning with no cushioning at all, and the numbers are laid out bluntly. What adjective describes that kind of warning?",
+          "setting": "work"
+        },
+        {
+          "text": "A winter landscape of bare trees and grey sky, with no colour or softness in it. What adjective do you reach for?",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Slow to change, and not likely to be noticed by anyone who is not looking closely.",
+        "Done on purpose rather than by accident.",
+        "Very small, and not worth the time to discuss.",
+        "Welcoming and warm, with a friendly feel to it throughout.",
+        "Hard to understand because it uses terms that few people know."
+      ],
+      "word_distractors": [
+        "modality",
+        "surreptitiously",
+        "verbose",
+        "bespoke",
+        "primitive"
+      ],
+      "tags": [
+        "general"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

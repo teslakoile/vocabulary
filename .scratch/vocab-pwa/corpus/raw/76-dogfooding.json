@@ -45,10 +45,13 @@
       ],
       "word_distractors": [
         "modality",
+        "fearless forecast",
         "first principles",
-        "tectonic shift",
         "heuristic",
-        "hyperscaler"
+        "north star"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

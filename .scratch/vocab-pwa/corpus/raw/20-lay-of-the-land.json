@@ -49,6 +49,9 @@
         "disambiguate",
         "incremental"
       ],
+      "tags": [
+        "general"
+      ],
       "prompt_version": 4
     }
   ]

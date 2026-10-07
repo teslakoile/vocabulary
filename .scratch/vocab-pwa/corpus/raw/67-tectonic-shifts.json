@@ -48,9 +48,12 @@
       "word_distractors": [
         "hot-swap",
         "first principles",
-        "myopic",
-        "progressive",
-        "tacit knowledge"
+        "build that muscle",
+        "by and large",
+        "progressive"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

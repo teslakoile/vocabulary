@@ -1,0 +1,54 @@
+{
+  "id": "e_f6f576c5-41bd-414c-bda0-74d11f57fcf3",
+  "headword": "oriented",
+  "senses": [
+    {
+      "term": "oriented",
+      "accepted": [
+        "orientated",
+        "-oriented"
+      ],
+      "gloss": "focused on a main aim",
+      "gloss_distractors": [
+        "afraid of making mistakes",
+        "slow to adopt new tools",
+        "easy to carry"
+      ],
+      "definition": "Mainly aimed at or concerned with a particular thing.",
+      "caution": "It needs a partner word, as in customer-oriented or goal-oriented. Alone it is vague, and a long string of such words reads like a job ad.",
+      "example": "We are a customer-oriented team, so every release starts from a support ticket.",
+      "cues": [
+        {
+          "text": "In a performance review your manager says you catch small errors others miss. She calls you detail-___, using the word that also describes a map turned to face north.",
+          "setting": "work"
+        },
+        {
+          "text": "A job posting asks for a service-___ person who puts customers first. What word completes the compound, the one that also describes a map turned to face north?",
+          "setting": "work"
+        },
+        {
+          "text": "Your friend plans every holiday around food, so you call her food-___, using the word for a person whose main focus is one thing.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Not saying what you really think, in order to avoid a quarrel with someone.",
+        "Spread over many different areas instead of one.",
+        "Able to be used again without a different result each time.",
+        "Done in a way that is hidden from other people.",
+        "Easy to replace."
+      ],
+      "word_distractors": [
+        "harness",
+        "finesse",
+        "executive presence",
+        "meat proxy",
+        "substrate"
+      ],
+      "tags": [
+        "general"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

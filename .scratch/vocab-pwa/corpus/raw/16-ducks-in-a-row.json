@@ -44,10 +44,13 @@
       ],
       "word_distractors": [
         "ephemeral",
-        "executive presence",
         "semantic layer",
-        "vertical",
-        "persist"
+        "diaspora",
+        "fan-out",
+        "blanket approval"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

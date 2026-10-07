@@ -47,10 +47,13 @@
       ],
       "word_distractors": [
         "fan-out",
-        "obfuscate",
-        "myopic",
-        "enmeshed",
-        "dogfooding"
+        "continuum",
+        "entrypoint",
+        "adversarial",
+        "obfuscate"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

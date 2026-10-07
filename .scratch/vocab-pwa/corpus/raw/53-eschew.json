@@ -46,9 +46,12 @@
       "word_distractors": [
         "exacerbate",
         "despondent",
-        "broad",
-        "lend itself",
-        "run it by you"
+        "sycophantic",
+        "zeitgeist",
+        "lend itself"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

@@ -45,10 +45,13 @@
       ],
       "word_distractors": [
         "scaffolding",
-        "sponsorship",
+        "watch outs",
+        "meat proxy",
         "myopic",
-        "verbose",
-        "tacit knowledge"
+        "verbose"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

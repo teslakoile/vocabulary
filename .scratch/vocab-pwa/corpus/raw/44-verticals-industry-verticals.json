@@ -47,8 +47,11 @@
         "unequivocal",
         "deliberate",
         "verifiability",
-        "diaspora",
-        "sandbox"
+        "entrypoint",
+        "diaspora"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

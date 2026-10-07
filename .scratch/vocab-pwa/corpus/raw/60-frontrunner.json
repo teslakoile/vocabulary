@@ -51,6 +51,9 @@
         "eschew",
         "continuum"
       ],
+      "tags": [
+        "business"
+      ],
       "prompt_version": 4
     }
   ]

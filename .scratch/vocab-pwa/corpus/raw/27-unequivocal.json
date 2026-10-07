@@ -42,11 +42,14 @@
         "True on the whole, allowing for exceptions nobody is going to list."
       ],
       "word_distractors": [
+        "primitive",
+        "persist",
         "disambiguate",
         "panopticon",
-        "advocate for",
-        "second order effects",
-        "institutional knowledge"
+        "run it by you"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

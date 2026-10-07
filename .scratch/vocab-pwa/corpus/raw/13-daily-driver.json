@@ -40,11 +40,14 @@
         "A product used only for demonstrations, set up carefully so nothing goes wrong on stage."
       ],
       "word_distractors": [
+        "verifiability",
         "tectonic shift",
-        "inroads",
         "hot-swap",
         "in pockets",
         "vertical"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

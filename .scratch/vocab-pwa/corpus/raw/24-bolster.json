@@ -48,10 +48,13 @@
       ],
       "word_distractors": [
         "progressive",
+        "oriented",
+        "making strides",
         "scaffolding",
-        "idempotent",
-        "ephemeral",
-        "north star"
+        "idempotent"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

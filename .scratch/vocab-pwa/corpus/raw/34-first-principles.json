@@ -44,9 +44,12 @@
       "word_distractors": [
         "verifiable rewards",
         "eschew",
-        "substantial",
+        "cognizant",
         "failure mode",
-        "sandbox"
+        "squarely"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

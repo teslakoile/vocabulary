@@ -1,0 +1,56 @@
+{
+  "id": "e_6e102474-b113-4156-920e-2034d23e3d75",
+  "headword": "dual-write problem",
+  "senses": [
+    {
+      "term": "dual-write problem",
+      "accepted": [
+        "dual write problem",
+        "dual-write",
+        "dual write",
+        "dual writes"
+      ],
+      "gloss": "data that disagrees across systems",
+      "gloss_distractors": [
+        "a slow query on one table",
+        "a leak of private user data",
+        "an expired login that blocks access"
+      ],
+      "definition": "The risk that updating two systems one after the other leaves them with different data.",
+      "caution": "It names the risk, not the fix. If the second update fails after the first succeeds, nothing rolls back, so say which two systems you mean.",
+      "example": "We save the order and then publish the event as two steps, which is a dual-write problem if the second step fails.",
+      "cues": [
+        {
+          "text": "Your service saves an order to the database and then sends a message to a queue as two separate steps, and the send fails after the save succeeds. You name the design flaw in the review.",
+          "setting": "work"
+        },
+        {
+          "text": "A search index and the main database should always hold the same records, but a crash between the two updates leaves them different. What is this problem called?",
+          "setting": "work"
+        },
+        {
+          "text": "An architect proposes an outbox table to avoid a flaw where two systems are changed one after the other with no shared transaction. You want the name of that flaw.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "A limit on how many requests one user can send before being slowed down.",
+        "A cache that keeps serving old data long after the real data has changed in the database.",
+        "A job that runs twice in a row because two schedules overlap.",
+        "A copy of the data kept in another region so that the site keeps working if the main one fails.",
+        "A query that scans every row of a large table."
+      ],
+      "word_distractors": [
+        "persist",
+        "asymmetric",
+        "community of practice",
+        "attuned",
+        "pick your brain"
+      ],
+      "tags": [
+        "tech"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

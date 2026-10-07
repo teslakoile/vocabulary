@@ -45,11 +45,62 @@
         "The short list of things most likely to go wrong, handed to someone before they start."
       ],
       "word_distractors": [
-        "scaffolding",
         "lend itself",
+        "knee-jerk reaction",
         "persistence",
-        "substantial",
+        "idempotent",
         "frontrunner"
+      ],
+      "tags": [
+        "tech"
+      ],
+      "prompt_version": 4
+    },
+    {
+      "term": "frontier (edge)",
+      "accepted": [
+        "frontier",
+        "frontiers"
+      ],
+      "gloss": "the edge of what is known",
+      "gloss_distractors": [
+        "the oldest part of a field",
+        "a plan with fixed steps",
+        "the rules everyone already follows"
+      ],
+      "definition": "The furthest edge of what is known or done in a field, where new work happens.",
+      "caution": "Often praise, but it can sound grand for ordinary work. The technical sense is separate and names the most advanced AI models.",
+      "example": "Her lab works at the frontier of cancer research, where almost nothing has been tested in people yet.",
+      "cues": [
+        {
+          "text": "A grant reviewer asks why your project deserves funding, and you say it pushes at the outer limit of what the field has done so far. What noun, also used for the far edge of settled land, names that place?",
+          "setting": "work"
+        },
+        {
+          "text": "Your director says the interesting work in this field happens right where current knowledge runs out. What noun, also used for a border region, names that place?",
+          "setting": "work"
+        },
+        {
+          "text": "Deep-sea divers are said to be exploring the place where human knowledge stops. What noun, also used for the far edge of a country, names it?",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "The most senior people in a company, taken together as one group with the power to decide.",
+        "A basic piece that a platform gives you, which you can combine to build bigger things from.",
+        "A habit of using many words where a few would do.",
+        "Known to only a few people with special training in the subject.",
+        "A shared set of agreed meanings for terms used in the data."
+      ],
+      "word_distractors": [
+        "unequivocal",
+        "executive presence",
+        "reaper",
+        "sycophantic",
+        "lean on"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

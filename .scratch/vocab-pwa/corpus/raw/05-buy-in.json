@@ -47,10 +47,13 @@
       ],
       "word_distractors": [
         "contrived",
-        "incremental",
-        "community of practice",
-        "frontier",
-        "verifiable rewards"
+        "sandbox",
+        "squarely",
+        "elucidate",
+        "panopticon"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

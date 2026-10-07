@@ -7,7 +7,9 @@
  * captured words with no content and flagged words, to corpus/backlog.json.
  *
  * Any raw file that changes here changed in the app. Read `git diff` before
- * editing, so an in-app fix is never regenerated away.
+ * editing, so an in-app fix is never regenerated away. Each sense's topics come
+ * back too, so publish before pulling again, or topics you wrote locally are
+ * overwritten by what is live.
  *
  * Usage: node scripts/pull-corpus.mjs
  */

@@ -44,11 +44,14 @@
         "To speak about someone in a way that quietly lowers them."
       ],
       "word_distractors": [
+        "first order effects",
         "play it by ear",
-        "bespoke",
+        "dual-write problem",
         "knee-jerk reaction",
-        "idempotent",
-        "diaspora"
+        "making strides"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

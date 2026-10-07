@@ -53,6 +53,9 @@
         "sleuthing",
         "inroads"
       ],
+      "tags": [
+        "general"
+      ],
       "prompt_version": 4
     }
   ]

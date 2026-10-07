@@ -44,11 +44,14 @@
         "A slice of the market defined by the industry it serves."
       ],
       "word_distractors": [
-        "asymmetric",
-        "pick your brain",
+        "entrypoint",
         "serialize",
-        "despondent",
-        "obfuscate"
+        "zeitgeist",
+        "frontrunner",
+        "continuum"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     },
@@ -98,11 +101,14 @@
         "The most senior people in a firm, spoken of as one group."
       ],
       "word_distractors": [
-        "failure mode",
+        "disparage",
         "enmeshed",
-        "front and center",
-        "harness",
-        "scaffolding"
+        "scaffolding",
+        "build that muscle",
+        "advocate for"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

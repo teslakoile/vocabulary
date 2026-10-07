@@ -52,6 +52,9 @@
         "diaspora",
         "rectify"
       ],
+      "tags": [
+        "business"
+      ],
       "prompt_version": 4
     }
   ]

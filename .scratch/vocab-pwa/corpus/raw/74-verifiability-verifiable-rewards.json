@@ -46,11 +46,14 @@
         "To decide as you go, taking your lead from how things develop."
       ],
       "word_distractors": [
-        "gravitas",
+        "harness",
         "advocate for",
-        "run it by you",
         "blanket approval",
-        "center of excellence"
+        "center of excellence",
+        "mold breaker"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     },
@@ -94,11 +97,14 @@
         "To work over the exact phrasing of something already written."
       ],
       "word_distractors": [
-        "blanket approval",
         "top brass",
         "run it by you",
         "trivial",
-        "heuristic"
+        "heuristic",
+        "dual-write problem"
+      ],
+      "tags": [
+        "tech"
       ],
       "prompt_version": 4
     }

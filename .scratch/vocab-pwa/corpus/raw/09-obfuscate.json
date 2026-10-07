@@ -50,7 +50,10 @@
         "dogfooding",
         "gravitas",
         "hot-swap",
-        "fearless forecast"
+        "reaper"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

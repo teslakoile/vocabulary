@@ -43,10 +43,13 @@
       ],
       "word_distractors": [
         "buy-in",
+        "esoteric",
         "daily driver",
         "vertical",
-        "persist",
-        "cognizant"
+        "persist"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

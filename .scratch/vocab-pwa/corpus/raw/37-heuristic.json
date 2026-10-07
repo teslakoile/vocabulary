@@ -43,10 +43,13 @@
       ],
       "word_distractors": [
         "daily driver",
+        "hyperscaler",
         "semantic layer",
         "sleuthing",
-        "frontier",
-        "build that muscle"
+        "frontier"
+      ],
+      "tags": [
+        "business"
       ],
       "prompt_version": 4
     }

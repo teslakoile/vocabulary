@@ -47,11 +47,14 @@
         "To deliberately do without something you could easily have had, as a matter of principle."
       ],
       "word_distractors": [
-        "sandbox",
-        "balustrade",
-        "advocate",
-        "tacit knowledge",
-        "verbose"
+        "frontrunner",
+        "in pockets",
+        "first principles",
+        "primitive",
+        "evergreen"
+      ],
+      "tags": [
+        "general"
       ],
       "prompt_version": 4
     }

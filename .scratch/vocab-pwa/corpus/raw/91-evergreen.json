@@ -1,0 +1,51 @@
+{
+  "id": "e_5ae2d127-24ae-4622-9516-db0c0f3be043",
+  "headword": "evergreen",
+  "senses": [
+    {
+      "term": "evergreen",
+      "accepted": [],
+      "gloss": "always useful and relevant",
+      "gloss_distractors": [
+        "useful only this season",
+        "popular with a very young audience",
+        "needing constant updating"
+      ],
+      "definition": "Staying useful and relevant for a long time without needing to be updated.",
+      "caution": "Most often said of content such as articles or training. Few things are truly evergreen, so use it only when the topic is not tied to a date.",
+      "example": "Write evergreen guides instead of news posts, so they still bring in readers next year.",
+      "cues": [
+        {
+          "text": "You plan a content calendar and want articles that will still bring in readers two years from now, unlike a post about this week's product launch. What marketing word, borrowed from a tree that keeps its leaves, describes that content?",
+          "setting": "work"
+        },
+        {
+          "text": "A training deck on how to give feedback is still useful five years later, and a colleague describes it with a word borrowed from trees that never lose their leaves.",
+          "setting": "work"
+        },
+        {
+          "text": "A friend says a classic song never goes out of date, and you use the adjective borrowed from trees that stay green all year.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Full of new ideas, especially ones that nobody has tried before.",
+        "Done in small steps over a long period of time.",
+        "Made for one customer rather than for the general public, with features chosen only for them.",
+        "Easy to replace while the rest of the system keeps working without anyone noticing.",
+        "Lasting only a short time, and meant to."
+      ],
+      "word_distractors": [
+        "semantic layer",
+        "institutional knowledge",
+        "advocate",
+        "wordsmith",
+        "build that muscle"
+      ],
+      "tags": [
+        "business"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}
