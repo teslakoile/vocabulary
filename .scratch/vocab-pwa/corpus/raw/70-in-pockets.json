@@ -1,6 +1,9 @@
 {
   "id": "e_in_pockets",
   "headword": "in pockets",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "in pockets",
@@ -48,9 +51,9 @@
       "word_distractors": [
         "bolster",
         "disambiguate",
-        "disparage",
-        "verbose",
-        "modality"
+        "stark",
+        "adversarial",
+        "disparage"
       ],
       "prompt_version": 4
     }

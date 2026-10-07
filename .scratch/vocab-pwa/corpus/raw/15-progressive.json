@@ -1,6 +1,9 @@
 {
   "id": "e_progressive",
   "headword": "progressive",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "progressive",
@@ -47,10 +50,10 @@
       ],
       "word_distractors": [
         "second order effects",
+        "trivial",
+        "nontrivial",
         "ducks in a row",
-        "unequivocal",
-        "tacit knowledge",
-        "community of practice"
+        "myopic"
       ],
       "prompt_version": 4
     }

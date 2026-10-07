@@ -1,6 +1,9 @@
 {
   "id": "e_bolster",
   "headword": "bolster",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "bolster",
@@ -48,10 +51,10 @@
       ],
       "word_distractors": [
         "progressive",
+        "oriented",
+        "making strides",
         "scaffolding",
-        "idempotent",
-        "ephemeral",
-        "north star"
+        "idempotent"
       ],
       "prompt_version": 4
     }

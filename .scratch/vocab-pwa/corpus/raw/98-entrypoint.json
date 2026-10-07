@@ -1,0 +1,55 @@
+{
+  "id": "e_d97cd6f8-2e20-4456-86d7-2d8e313862ea",
+  "headword": "entrypoint",
+  "tags": [
+    "tech"
+  ],
+  "senses": [
+    {
+      "term": "entrypoint",
+      "accepted": [
+        "entry point",
+        "entry-point",
+        "entrypoints"
+      ],
+      "gloss": "where a program begins",
+      "gloss_distractors": [
+        "where data is stored",
+        "where errors are logged",
+        "a list of required libraries"
+      ],
+      "definition": "The place in code or a container where a program starts running.",
+      "caution": "Say which one you mean: a program's main function, a container's startup command, or a package's command. The word alone is vague.",
+      "example": "The container's entrypoint is a shell script that sets up the environment and then starts the server.",
+      "cues": [
+        {
+          "text": "A Dockerfile has a line that sets the command that runs when the container starts. You want the name of that setting.",
+          "setting": "work"
+        },
+        {
+          "text": "A new engineer asks which file to open first to follow what the program does, and you show them the place where execution begins.",
+          "setting": "work"
+        },
+        {
+          "text": "A web framework is configured with the single function it calls first when the app launches. You need the one-word name for it.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "A file that lists the libraries a project depends on and the versions it needs.",
+        "A place where a program saves its errors so that someone can read them later.",
+        "A copy of the program kept in case the first one is lost.",
+        "The last step of a build, after all the tests have passed.",
+        "A set of rules about who is allowed to open a file."
+      ],
+      "word_distractors": [
+        "second order effects",
+        "first order effects",
+        "in pockets",
+        "sycophantic",
+        "pick your brain"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

@@ -1,6 +1,9 @@
 {
   "id": "e_superset",
   "headword": "superset",
+  "tags": [
+    "tech"
+  ],
   "senses": [
     {
       "term": "superset",
@@ -42,11 +45,11 @@
         "Alert and responsive to signals, adjusting early."
       ],
       "word_distractors": [
-        "dogfooding",
+        "elucidate",
         "rectify",
-        "attuned",
-        "continuum",
-        "finesse"
+        "carte blanche",
+        "tacit knowledge",
+        "semantic layer"
       ],
       "prompt_version": 4
     }

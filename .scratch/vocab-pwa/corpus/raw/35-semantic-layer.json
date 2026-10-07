@@ -1,6 +1,9 @@
 {
   "id": "e_semantic_layer",
   "headword": "semantic layer",
+  "tags": [
+    "tech"
+  ],
   "senses": [
     {
       "term": "semantic layer",
@@ -38,9 +41,9 @@
         "One of the handful of cloud providers that runs compute and storage at planetary scale."
       ],
       "word_distractors": [
-        "disambiguate",
-        "balustrade",
-        "fearless forecast",
+        "obfuscate",
+        "dogfooding",
+        "misfire policy",
         "mold breaker",
         "mass market"
       ],

@@ -1,0 +1,54 @@
+{
+  "id": "e_eaaa0792-fe04-4b8e-8f0f-e7453d9646b8",
+  "headword": "meat proxy",
+  "tags": [
+    "tech"
+  ],
+  "senses": [
+    {
+      "term": "meat proxy",
+      "accepted": [
+        "meat proxies",
+        "meatspace proxy"
+      ],
+      "gloss": "a person acting for an AI",
+      "gloss_distractors": [
+        "a robot working in a factory",
+        "a server that relays web traffic",
+        "a test user for an app"
+      ],
+      "definition": "A person who does tasks in the real world on behalf of an AI or a remote system.",
+      "caution": "Informal, and it can sound demeaning to the person. Use it among colleagues who know the joke, and avoid it in writing to a client.",
+      "example": "The agent cannot sign for the delivery, so I am its meat proxy for the afternoon.",
+      "cues": [
+        {
+          "text": "An AI agent has planned a whole task but cannot open a physical lockbox, so it asks you to go and do it. You joke about the role you are playing for the agent.",
+          "setting": "work"
+        },
+        {
+          "text": "In a demo, a coworker types whatever the model tells them to type, clicks where it says to click, and reports back what happens. What informal two-word name describes their role?",
+          "setting": "work"
+        },
+        {
+          "text": "A friend says an AI chatbot planned their whole trip and all they did was show up and follow orders, as the hands and feet of a program. What slang two-word name fits them?",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "A person who speaks up in public for someone else.",
+        "A senior person who actively backs a colleague and helps them move ahead at work.",
+        "Someone who does things differently from everyone before them.",
+        "A leader whose calm and confident style makes people trust them in difficult situations.",
+        "A small team of experts that is paid to help the rest of the company."
+      ],
+      "word_distractors": [
+        "blanket approval",
+        "frontier",
+        "top brass",
+        "unequivocal",
+        "mold breaker"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

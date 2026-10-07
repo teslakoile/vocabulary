@@ -1,0 +1,57 @@
+{
+  "id": "e_eab03b35-4fbe-4787-9ce5-006e8f66e588",
+  "headword": "making strides",
+  "tags": [
+    "general"
+  ],
+  "senses": [
+    {
+      "term": "making strides",
+      "accepted": [
+        "make strides",
+        "made strides",
+        "making great strides",
+        "making real strides",
+        "makes strides"
+      ],
+      "gloss": "to progress noticeably",
+      "gloss_distractors": [
+        "to fall behind slowly",
+        "to wait for permission",
+        "to change plans very late"
+      ],
+      "definition": "Moving forward with clear, real progress toward a goal.",
+      "caution": "A positive, slightly formal phrase. Use it when the progress is real and visible, since it sounds hollow if you cannot say what has improved.",
+      "example": "The team is making strides on the migration: two of the five services are already live.",
+      "cues": [
+        {
+          "text": "At a status update you tell your director that the team has moved noticeably ahead on the migration this quarter. You want the idiom, built on a word for long steps, that says the progress is real.",
+          "setting": "work"
+        },
+        {
+          "text": "A colleague asks how the new hire is doing, and you say she is improving quickly and visibly in her first month. What idiom, built on a word for long steps, do you use?",
+          "setting": "work"
+        },
+        {
+          "text": "Your friend has been learning Spanish for six months and can now hold a real conversation. You want the idiom, built on a word for long steps, that praises how far she has come.",
+          "setting": "life"
+        }
+      ],
+      "distractors": [
+        "Not saying what you think, so as to avoid an argument.",
+        "To decide what to do as you go instead of following a plan.",
+        "To explain something clearly so that others can follow it.",
+        "To ask someone for advice because they know the subject well.",
+        "Fully prepared in advance, with every detail checked."
+      ],
+      "word_distractors": [
+        "persist",
+        "top brass",
+        "elucidate",
+        "serialize",
+        "lean on"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

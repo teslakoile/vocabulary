@@ -1,0 +1,55 @@
+{
+  "id": "e_83e57712-8e1e-41ce-b84b-2bdda08e5d0f",
+  "headword": "reaper (process)",
+  "tags": [
+    "tech"
+  ],
+  "senses": [
+    {
+      "term": "reaper",
+      "accepted": [
+        "reaper process",
+        "a reaper",
+        "the reaper"
+      ],
+      "gloss": "a process that clears stale work",
+      "gloss_distractors": [
+        "a process that copies data",
+        "a tool that scans for bugs",
+        "a monitor that watches server speed"
+      ],
+      "definition": "A background process that finds and removes stuck, expired, or orphaned tasks.",
+      "caution": "Say what it removes, such as sessions, jobs, or dead child processes. The word alone does not tell you whether it only reports or also kills.",
+      "example": "A reaper runs every minute and kills any job that has not sent a heartbeat for ten minutes.",
+      "cues": [
+        {
+          "text": "Jobs stay in the running state after their worker crashed, so you add a background process that finds them and marks them failed. What do you call that process, using the harvest-themed name?",
+          "setting": "work"
+        },
+        {
+          "text": "In a code review you see a loop that wakes every minute and deletes expired sessions. A teammate asks what the component doing this cleanup is usually called.",
+          "setting": "work"
+        },
+        {
+          "text": "A server fills up with orphaned child processes that nobody waits on, and you need the harvest-themed name for the component that gathers up the dead ones.",
+          "setting": "work"
+        }
+      ],
+      "distractors": [
+        "A tool that sends an alert when a server runs slowly.",
+        "A service that copies every change to a second database so that nothing is lost if the first fails.",
+        "A scheduler that decides when each job should start running during the day and in what order.",
+        "A script that checks code for style mistakes before it is merged.",
+        "A queue that holds messages until a worker is free to handle them."
+      ],
+      "word_distractors": [
+        "asymmetric",
+        "in pockets",
+        "knee-jerk reaction",
+        "north star",
+        "lend itself"
+      ],
+      "prompt_version": 4
+    }
+  ]
+}

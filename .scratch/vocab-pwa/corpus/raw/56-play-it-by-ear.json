@@ -1,6 +1,9 @@
 {
   "id": "e_play_it_by_ear",
   "headword": "play it by ear",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "play it by ear",
@@ -46,11 +49,11 @@
         "Temporary structure that holds the work up until the real thing can stand on its own."
       ],
       "word_distractors": [
+        "sponsorship",
         "first order effects",
         "verifiability",
         "top brass",
-        "wordsmith",
-        "panopticon"
+        "wordsmith"
       ],
       "prompt_version": 4
     }

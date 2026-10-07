@@ -1,6 +1,9 @@
 {
   "id": "e_elucidate",
   "headword": "elucidate",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "elucidate",
@@ -40,11 +43,11 @@
         "To ask someone to talk through what they have learned, informally and without an agenda."
       ],
       "word_distractors": [
-        "surreptitiously",
-        "semantic layer",
-        "rectify",
-        "fan-out",
-        "pick your brain"
+        "despondent",
+        "flywheel effect",
+        "misfire policy",
+        "modality",
+        "oriented"
       ],
       "prompt_version": 4
     }

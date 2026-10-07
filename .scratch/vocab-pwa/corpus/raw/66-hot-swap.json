@@ -1,6 +1,9 @@
 {
   "id": "e_hot_swap",
   "headword": "hot-swap",
+  "tags": [
+    "tech"
+  ],
   "senses": [
     {
       "term": "hot-swap",
@@ -44,11 +47,11 @@
         "Low in a way that has given up on things improving."
       ],
       "word_distractors": [
-        "exacerbate",
-        "blanket approval",
         "long-horizon",
-        "lay of the land",
-        "substantiate"
+        "substantiate",
+        "second order effects",
+        "stark",
+        "zeitgeist"
       ],
       "prompt_version": 4
     }

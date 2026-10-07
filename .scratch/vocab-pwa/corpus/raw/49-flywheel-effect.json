@@ -1,6 +1,9 @@
 {
   "id": "e_flywheel_effect",
   "headword": "flywheel effect",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "flywheel effect",
@@ -43,11 +46,11 @@
         "The unwritten history an organisation holds about why its own systems were built that way."
       ],
       "word_distractors": [
-        "squarely",
-        "serialize",
+        "heuristic",
         "enmeshed",
-        "substrate",
-        "north star"
+        "misfire policy",
+        "race condition",
+        "lay of the land"
       ],
       "prompt_version": 4
     }

@@ -1,6 +1,9 @@
 {
   "id": "e_scaffolding_harness_sandbox",
   "headword": "scaffolding/harness/sandbox",
+  "tags": [
+    "tech"
+  ],
   "senses": [
     {
       "term": "scaffolding",
@@ -45,8 +48,8 @@
         "incremental",
         "substantiate",
         "disparage",
-        "ducks in a row",
-        "long-horizon"
+        "substantial",
+        "ducks in a row"
       ],
       "prompt_version": 4
     },
@@ -85,10 +88,10 @@
       ],
       "word_distractors": [
         "persistence",
-        "mass market",
-        "eschew",
-        "esoteric",
-        "squarely"
+        "myopic",
+        "by and large",
+        "tacit knowledge",
+        "balustrade"
       ],
       "prompt_version": 4
     },
@@ -177,7 +180,7 @@
         "by and large",
         "watch outs",
         "sleuthing",
-        "executive presence"
+        "fearless forecast"
       ],
       "prompt_version": 4
     }

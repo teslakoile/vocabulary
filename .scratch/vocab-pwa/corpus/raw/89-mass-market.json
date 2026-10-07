@@ -1,6 +1,9 @@
 {
   "id": "e_d1826093-2900-4509-a241-627f50d1cc9a",
   "headword": "mass market",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "mass market",
@@ -42,11 +45,11 @@
         "Sold only to other companies through long contracts, and never to members of the public directly."
       ],
       "word_distractors": [
-        "buy-in",
-        "ducks in a row",
-        "enmeshed",
-        "institutional knowledge",
-        "build that muscle"
+        "dual-write problem",
+        "sleuthing",
+        "sycophantic",
+        "substrate",
+        "sponsorship"
       ],
       "prompt_version": 4
     }

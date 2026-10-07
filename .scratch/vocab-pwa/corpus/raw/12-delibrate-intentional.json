@@ -1,6 +1,9 @@
 {
   "id": "e_delibrate_intentional",
   "headword": "delibrate/intentional",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "deliberate",
@@ -51,8 +54,8 @@
         "nontrivial",
         "unequivocal",
         "myopic",
-        "first principles",
-        "carte blanche"
+        "run it by you",
+        "rectify"
       ],
       "prompt_version": 4
     }

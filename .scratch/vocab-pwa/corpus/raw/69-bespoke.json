@@ -1,6 +1,9 @@
 {
   "id": "e_bespoke",
   "headword": "bespoke",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "bespoke",
@@ -44,11 +47,11 @@
         "The current edge of what these systems can do."
       ],
       "word_distractors": [
+        "broad",
         "asymmetric",
         "wordsmith",
-        "in pockets",
-        "surreptitiously",
-        "first order effects"
+        "buy-in",
+        "diaspora"
       ],
       "prompt_version": 4
     }

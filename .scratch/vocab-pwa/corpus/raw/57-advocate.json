@@ -1,6 +1,9 @@
 {
   "id": "e_advocate",
   "headword": "advocate",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "advocate",
@@ -43,10 +46,10 @@
       ],
       "word_distractors": [
         "elucidate",
-        "disparage",
         "watch outs",
         "mass market",
-        "first order effects"
+        "tectonic shift",
+        "buy-in"
       ],
       "prompt_version": 4
     },
@@ -95,10 +98,10 @@
       ],
       "word_distractors": [
         "hyperscaler",
-        "verifiability",
         "contrived",
         "carte blanche",
-        "frontrunner"
+        "frontrunner",
+        "tacit knowledge"
       ],
       "prompt_version": 4
     }

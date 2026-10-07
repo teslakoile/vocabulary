@@ -1,6 +1,9 @@
 {
   "id": "e_heuristic",
   "headword": "heuristic",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "heuristic",
@@ -43,10 +46,10 @@
       ],
       "word_distractors": [
         "daily driver",
+        "hyperscaler",
         "semantic layer",
         "sleuthing",
-        "frontier",
-        "build that muscle"
+        "frontier"
       ],
       "prompt_version": 4
     }

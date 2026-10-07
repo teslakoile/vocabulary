@@ -1,6 +1,9 @@
 {
   "id": "e_exacerbate",
   "headword": "exacerbate",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "exacerbate",
@@ -44,10 +47,10 @@
       ],
       "word_distractors": [
         "primitive",
+        "dual-write problem",
         "flywheel effect",
         "bespoke",
-        "rectify",
-        "substantiate"
+        "rectify"
       ],
       "prompt_version": 4
     }

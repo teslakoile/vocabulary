@@ -1,6 +1,9 @@
 {
   "id": "e_first_principles",
   "headword": "first principles",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "first principles",
@@ -44,9 +47,9 @@
       "word_distractors": [
         "verifiable rewards",
         "eschew",
-        "substantial",
+        "cognizant",
         "failure mode",
-        "sandbox"
+        "squarely"
       ],
       "prompt_version": 4
     }

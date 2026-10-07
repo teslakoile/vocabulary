@@ -1,6 +1,9 @@
 {
   "id": "e_disambiguate",
   "headword": "disambiguate",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "disambiguate",
@@ -42,11 +45,11 @@
         "To show someone a piece of work before committing to it, seeking their reaction."
       ],
       "word_distractors": [
-        "despondent",
-        "ephemeral",
-        "substantial",
-        "verbose",
-        "verifiable rewards"
+        "executive presence",
+        "flywheel effect",
+        "sycophantic",
+        "substrate",
+        "deliberate"
       ],
       "prompt_version": 4
     }

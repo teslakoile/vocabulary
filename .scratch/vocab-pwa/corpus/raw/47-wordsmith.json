@@ -1,6 +1,9 @@
 {
   "id": "e_wordsmith",
   "headword": "wordsmith",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "wordsmith",
@@ -44,11 +47,11 @@
         "To speak about someone in a way that quietly lowers them."
       ],
       "word_distractors": [
+        "first order effects",
         "play it by ear",
-        "bespoke",
+        "dual-write problem",
         "knee-jerk reaction",
-        "idempotent",
-        "diaspora"
+        "making strides"
       ],
       "prompt_version": 4
     }

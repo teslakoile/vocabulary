@@ -1,6 +1,9 @@
 {
   "id": "e_failure_mode_s",
   "headword": "failure mode/s",
+  "tags": [
+    "tech"
+  ],
   "senses": [
     {
       "term": "failure mode",
@@ -46,7 +49,7 @@
         "Open to something without having agreed to it yet."
       ],
       "word_distractors": [
-        "obfuscate",
+        "north star",
         "knee-jerk reaction",
         "cognizant",
         "idempotent",

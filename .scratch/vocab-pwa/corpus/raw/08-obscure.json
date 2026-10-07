@@ -1,6 +1,9 @@
 {
   "id": "e_obscure",
   "headword": "obscure",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "obscure (verb)",
@@ -43,9 +46,9 @@
       "word_distractors": [
         "community of practice",
         "semantic layer",
-        "asymmetric",
         "persistence",
-        "top brass"
+        "adversarial",
+        "dual-write problem"
       ],
       "prompt_version": 4
     },
@@ -87,9 +90,9 @@
       "word_distractors": [
         "verifiability",
         "diaspora",
-        "primitive",
         "lay of the land",
-        "wordsmith"
+        "wordsmith",
+        "race condition"
       ],
       "prompt_version": 4
     }

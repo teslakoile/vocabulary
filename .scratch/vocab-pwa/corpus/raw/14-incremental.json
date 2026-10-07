@@ -1,6 +1,9 @@
 {
   "id": "e_incremental",
   "headword": "incremental",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "incremental",
@@ -42,11 +45,11 @@
         "Work that cannot be split up, because none of it is any use until all of it is done."
       ],
       "word_distractors": [
-        "ducks in a row",
-        "unequivocal",
-        "second order effects",
-        "disparage",
-        "elucidate"
+        "build that muscle",
+        "institutional knowledge",
+        "verbose",
+        "ephemeral",
+        "sandbox"
       ],
       "prompt_version": 4
     }

@@ -1,6 +1,9 @@
 {
   "id": "e_broad",
   "headword": "broad",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "broad",
@@ -38,9 +41,9 @@
       "word_distractors": [
         "front and center",
         "inroads",
-        "substrate",
+        "dogfooding",
         "lean on",
-        "mold breaker"
+        "deliberate"
       ],
       "prompt_version": 4
     },
@@ -82,10 +85,10 @@
       ],
       "word_distractors": [
         "modality",
-        "balustrade",
-        "lean on",
-        "heuristic",
-        "idempotent"
+        "oriented",
+        "zeitgeist",
+        "superset",
+        "balustrade"
       ],
       "prompt_version": 4
     }

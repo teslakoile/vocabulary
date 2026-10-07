@@ -1,6 +1,9 @@
 {
   "id": "e_by_and_large",
   "headword": "by and large",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "by and large",
@@ -45,10 +48,10 @@
       ],
       "word_distractors": [
         "scaffolding",
-        "sponsorship",
+        "watch outs",
+        "meat proxy",
         "myopic",
-        "verbose",
-        "tacit knowledge"
+        "verbose"
       ],
       "prompt_version": 4
     }

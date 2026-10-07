@@ -1,6 +1,9 @@
 {
   "id": "e_inroads",
   "headword": "inroads",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "inroads",
@@ -49,10 +52,10 @@
       ],
       "word_distractors": [
         "progressive",
-        "long-horizon",
-        "by and large",
-        "sponsorship",
-        "persistence"
+        "verifiable rewards",
+        "ephemeral",
+        "front and center",
+        "long-horizon"
       ],
       "prompt_version": 4
     }

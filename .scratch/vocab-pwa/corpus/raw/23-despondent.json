@@ -1,6 +1,9 @@
 {
   "id": "e_despondent",
   "headword": "despondent",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "despondent",
@@ -47,10 +50,10 @@
       ],
       "word_distractors": [
         "fan-out",
-        "obfuscate",
-        "myopic",
-        "enmeshed",
-        "dogfooding"
+        "continuum",
+        "entrypoint",
+        "adversarial",
+        "obfuscate"
       ],
       "prompt_version": 4
     }

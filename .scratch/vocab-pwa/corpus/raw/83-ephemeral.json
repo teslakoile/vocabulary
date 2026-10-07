@@ -1,6 +1,9 @@
 {
   "id": "e_ephemeral",
   "headword": "ephemeral",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "ephemeral",
@@ -46,11 +49,11 @@
         "The most senior people, taken as one group."
       ],
       "word_distractors": [
+        "stark",
         "rectify",
         "first order effects",
         "center of excellence",
-        "carte blanche",
-        "failure mode"
+        "carte blanche"
       ],
       "prompt_version": 4
     }

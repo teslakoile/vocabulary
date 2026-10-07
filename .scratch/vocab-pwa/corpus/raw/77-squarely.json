@@ -1,6 +1,9 @@
 {
   "id": "e_squarely",
   "headword": "squarely",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "squarely",
@@ -45,9 +48,9 @@
       ],
       "word_distractors": [
         "community of practice",
+        "dual-write problem",
         "hot-swap",
         "trivial",
-        "continuum",
         "attuned"
       ],
       "prompt_version": 4

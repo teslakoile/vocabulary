@@ -1,6 +1,9 @@
 {
   "id": "e_trivial_nontrivial",
   "headword": "trivial/nontrivial",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "trivial",
@@ -41,10 +44,10 @@
       ],
       "word_distractors": [
         "sponsorship",
+        "evergreen",
         "finesse",
-        "substantial",
-        "pick your brain",
-        "buy-in"
+        "misfire policy",
+        "pick your brain"
       ],
       "prompt_version": 4
     },
@@ -88,11 +91,11 @@
         "Held up by a dependency on another team rather than by the work itself."
       ],
       "word_distractors": [
-        "unequivocal",
-        "frontrunner",
-        "watch outs",
-        "in pockets",
-        "broadly"
+        "broadly",
+        "serialize",
+        "asymmetric",
+        "ducks in a row",
+        "entrypoint"
       ],
       "prompt_version": 4
     }

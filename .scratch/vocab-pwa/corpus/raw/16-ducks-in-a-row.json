@@ -1,6 +1,9 @@
 {
   "id": "e_ducks_in_a_row",
   "headword": "ducks in a row",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "ducks in a row",
@@ -44,10 +47,10 @@
       ],
       "word_distractors": [
         "ephemeral",
-        "executive presence",
         "semantic layer",
-        "vertical",
-        "persist"
+        "diaspora",
+        "fan-out",
+        "blanket approval"
       ],
       "prompt_version": 4
     }

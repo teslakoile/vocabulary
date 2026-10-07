@@ -1,6 +1,9 @@
 {
   "id": "e_buy_in",
   "headword": "buy-in",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "buy-in",
@@ -47,10 +50,10 @@
       ],
       "word_distractors": [
         "contrived",
-        "incremental",
-        "community of practice",
-        "frontier",
-        "verifiable rewards"
+        "institutional knowledge",
+        "tacit knowledge",
+        "sandbox",
+        "squarely"
       ],
       "prompt_version": 4
     }

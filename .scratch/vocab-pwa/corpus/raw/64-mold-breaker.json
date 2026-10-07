@@ -1,6 +1,9 @@
 {
   "id": "e_mold_breaker",
   "headword": "mold breaker",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "mold breaker",
@@ -48,10 +51,10 @@
       ],
       "word_distractors": [
         "lay of the land",
-        "esoteric",
+        "making strides",
         "sponsorship",
         "center of excellence",
-        "exacerbate"
+        "frontrunner"
       ],
       "prompt_version": 4
     }

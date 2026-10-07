@@ -1,6 +1,9 @@
 {
   "id": "e_diaspora",
   "headword": "diaspora",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "diaspora",
@@ -44,7 +47,7 @@
       "word_distractors": [
         "broad",
         "progressive",
-        "buy-in",
+        "adversarial",
         "community of practice",
         "attuned"
       ],

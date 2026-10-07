@@ -1,6 +1,9 @@
 {
   "id": "e_substrate",
   "headword": "substrate",
+  "tags": [
+    "tech"
+  ],
   "senses": [
     {
       "term": "substrate",
@@ -45,10 +48,10 @@
       ],
       "word_distractors": [
         "esoteric",
-        "superset",
         "mold breaker",
         "harness",
-        "broad"
+        "broad",
+        "squarely"
       ],
       "prompt_version": 4
     }

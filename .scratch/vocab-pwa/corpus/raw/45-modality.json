@@ -1,6 +1,9 @@
 {
   "id": "e_modality",
   "headword": "modality",
+  "tags": [
+    "tech"
+  ],
   "senses": [
     {
       "term": "modality",
@@ -43,10 +46,10 @@
       ],
       "word_distractors": [
         "superset",
+        "idempotent",
         "hyperscaler",
         "attuned",
-        "disparage",
-        "nontrivial"
+        "heuristic"
       ],
       "prompt_version": 4
     }

@@ -1,6 +1,9 @@
 {
   "id": "e_blanket_approval_carte_blanche",
   "headword": "blanket approval/carte blanche",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "blanket approval",
@@ -38,8 +41,8 @@
         "A standing instruction to stop work the moment a particular threshold is crossed."
       ],
       "word_distractors": [
-        "fearless forecast",
-        "broadly",
+        "race condition",
+        "entrypoint",
         "tacit knowledge",
         "heuristic",
         "asymmetric"
@@ -82,11 +85,11 @@
         "A requirement that each change be reviewed by two people before it goes live, however small it is."
       ],
       "word_distractors": [
-        "advocate for",
         "lend itself",
-        "advocate",
         "by and large",
-        "wordsmith"
+        "broad",
+        "substantial",
+        "lean on"
       ],
       "prompt_version": 4
     }

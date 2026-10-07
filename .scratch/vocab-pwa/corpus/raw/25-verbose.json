@@ -1,6 +1,9 @@
 {
   "id": "e_verbose",
   "headword": "verbose",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "verbose",
@@ -45,8 +48,8 @@
         "wordsmith",
         "fan-out",
         "play it by ear",
-        "trivial",
-        "institutional knowledge"
+        "institutional knowledge",
+        "exacerbate"
       ],
       "prompt_version": 4
     }

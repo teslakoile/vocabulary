@@ -1,6 +1,9 @@
 {
   "id": "e_dogfooding",
   "headword": "dogfooding",
+  "tags": [
+    "tech"
+  ],
   "senses": [
     {
       "term": "dogfooding",
@@ -45,10 +48,10 @@
       ],
       "word_distractors": [
         "modality",
+        "fearless forecast",
         "first principles",
-        "tectonic shift",
         "heuristic",
-        "hyperscaler"
+        "north star"
       ],
       "prompt_version": 4
     }

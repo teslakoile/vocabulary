@@ -1,6 +1,9 @@
 {
   "id": "e_amenable",
   "headword": "amenable",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "amenable (person)",
@@ -42,11 +45,11 @@
         "Unwilling to say what you think until the most senior person has spoken first."
       ],
       "word_distractors": [
+        "center of excellence",
         "lay of the land",
         "deliberate",
-        "esoteric",
-        "institutional knowledge",
-        "sandbox"
+        "sycophantic",
+        "esoteric"
       ],
       "prompt_version": 4
     },
@@ -89,8 +92,8 @@
         "mass market",
         "center of excellence",
         "esoteric",
-        "north star",
-        "knee-jerk reaction"
+        "hyperscaler",
+        "race condition"
       ],
       "prompt_version": 4
     }

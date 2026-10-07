@@ -1,6 +1,9 @@
 {
   "id": "e_north_star",
   "headword": "north star",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "north star",
@@ -43,9 +46,9 @@
         "The most senior people, as one group."
       ],
       "word_distractors": [
+        "exacerbate",
         "broadly",
-        "top brass",
-        "elucidate",
+        "bolster",
         "front and center",
         "failure mode"
       ],

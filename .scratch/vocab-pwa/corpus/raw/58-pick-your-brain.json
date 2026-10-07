@@ -1,6 +1,9 @@
 {
   "id": "e_pick_your_brain",
   "headword": "pick your brain",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "pick your brain",
@@ -53,7 +56,7 @@
         "substantiate",
         "squarely",
         "sponsorship",
-        "exacerbate"
+        "frontier"
       ],
       "prompt_version": 4
     }

@@ -1,6 +1,9 @@
 {
   "id": "e_953563ba-fed0-46c3-ae3b-074454d1b35d",
   "headword": "knee jerk reaction",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "knee-jerk reaction",
@@ -43,11 +46,11 @@
         "A change agreed by every team that it affects, after they have all had time to read it and comment."
       ],
       "word_distractors": [
+        "semantic layer",
+        "race condition",
         "cognizant",
-        "mold breaker",
-        "superset",
-        "obfuscate",
-        "persistence"
+        "frontier",
+        "stark"
       ],
       "prompt_version": 4
     }

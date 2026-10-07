@@ -1,6 +1,9 @@
 {
   "id": "e_hyperscaler",
   "headword": "hyperscaler",
+  "tags": [
+    "tech"
+  ],
   "senses": [
     {
       "term": "hyperscaler",
@@ -40,11 +43,11 @@
         "A company that keeps its servers in its own building rather than renting them from anyone."
       ],
       "word_distractors": [
-        "semantic layer",
+        "oriented",
+        "verbose",
+        "race condition",
         "persist",
-        "gravitas",
-        "bolster",
-        "despondent"
+        "gravitas"
       ],
       "prompt_version": 4
     }

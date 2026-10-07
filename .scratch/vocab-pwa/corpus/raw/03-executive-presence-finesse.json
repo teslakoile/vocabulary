@@ -1,6 +1,9 @@
 {
   "id": "e_executive_presence_finesse",
   "headword": "executive presence/finesse",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "executive presence",
@@ -40,11 +43,11 @@
         "The rank a job sits at in a company's grading system, published for everyone to see."
       ],
       "word_distractors": [
-        "persist",
-        "lean on",
         "first principles",
         "substantiate",
-        "eschew"
+        "eschew",
+        "buy-in",
+        "obfuscate"
       ],
       "prompt_version": 4
     },
@@ -86,11 +89,11 @@
         "The care taken to record exactly how a decision was reached, so it can be audited later."
       ],
       "word_distractors": [
-        "nontrivial",
-        "squarely",
         "first order effects",
-        "deliberate",
-        "harness"
+        "harness",
+        "vertical",
+        "balustrade",
+        "gravitas"
       ],
       "prompt_version": 4
     }

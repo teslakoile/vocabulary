@@ -1,6 +1,9 @@
 {
   "id": "e_asymmetric",
   "headword": "asymmetric",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "asymmetric",
@@ -48,11 +51,11 @@
         "Training signal a machine can check for itself rather than a person having to judge it."
       ],
       "word_distractors": [
+        "adversarial",
+        "evergreen",
         "front and center",
         "fan-out",
-        "sleuthing",
-        "substrate",
-        "squarely"
+        "enmeshed"
       ],
       "prompt_version": 4
     }

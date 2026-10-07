@@ -1,6 +1,9 @@
 {
   "id": "e_rectify",
   "headword": "rectify",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "rectify",
@@ -46,11 +49,11 @@
         "To change something that was already working, in the hope of making it a little better."
       ],
       "word_distractors": [
-        "asymmetric",
         "sleuthing",
+        "balustrade",
+        "harness",
         "community of practice",
-        "dogfooding",
-        "play it by ear"
+        "dogfooding"
       ],
       "prompt_version": 4
     }

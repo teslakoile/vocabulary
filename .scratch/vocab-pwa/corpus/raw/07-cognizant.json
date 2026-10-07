@@ -1,6 +1,9 @@
 {
   "id": "e_cognizant",
   "headword": "cognizant",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "cognizant",
@@ -42,11 +45,11 @@
         "Trained in a procedure well enough to carry it out without checking the manual first."
       ],
       "word_distractors": [
+        "broad",
         "contrived",
+        "fearless forecast",
         "daily driver",
-        "flywheel effect",
-        "lend itself",
-        "balustrade"
+        "lend itself"
       ],
       "prompt_version": 4
     }

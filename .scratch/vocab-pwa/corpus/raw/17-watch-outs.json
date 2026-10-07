@@ -1,6 +1,9 @@
 {
   "id": "e_watch_outs",
   "headword": "watch outs",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "watch outs",
@@ -46,9 +49,9 @@
       "word_distractors": [
         "balustrade",
         "contrived",
-        "serialize",
-        "primitive",
-        "persistence"
+        "persistence",
+        "inroads",
+        "dogfooding"
       ],
       "prompt_version": 4
     }

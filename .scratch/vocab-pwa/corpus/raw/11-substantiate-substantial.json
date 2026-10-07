@@ -1,6 +1,9 @@
 {
   "id": "e_substantiate_substantial",
   "headword": "substantiate/substantial",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "substantiate",
@@ -42,11 +45,11 @@
         "To take an existing figure and adjust it for inflation over time."
       ],
       "word_distractors": [
-        "panopticon",
         "play it by ear",
         "bespoke",
         "tectonic shift",
-        "finesse"
+        "finesse",
+        "disambiguate"
       ],
       "prompt_version": 4
     },
@@ -88,11 +91,11 @@
         "Counted twice by mistake because two systems both reported the same transaction."
       ],
       "word_distractors": [
-        "bolster",
+        "misfire policy",
         "long-horizon",
-        "finesse",
-        "substrate",
-        "second order effects"
+        "stark",
+        "second order effects",
+        "pick your brain"
       ],
       "prompt_version": 4
     }

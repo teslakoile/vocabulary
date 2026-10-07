@@ -1,6 +1,9 @@
 {
   "id": "e_frontier",
   "headword": "frontier",
+  "tags": [
+    "tech"
+  ],
   "senses": [
     {
       "term": "frontier",
@@ -46,10 +49,10 @@
       ],
       "word_distractors": [
         "scaffolding",
+        "trivial",
         "lend itself",
-        "persistence",
-        "substantial",
-        "frontrunner"
+        "knee-jerk reaction",
+        "persistence"
       ],
       "prompt_version": 4
     }

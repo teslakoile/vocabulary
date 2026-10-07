@@ -1,6 +1,9 @@
 {
   "id": "e_gravitas",
   "headword": "gravitas",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "gravitas",
@@ -45,7 +48,7 @@
       ],
       "word_distractors": [
         "advocate for",
-        "broad",
+        "primitive",
         "by and large",
         "lean on",
         "dogfooding"

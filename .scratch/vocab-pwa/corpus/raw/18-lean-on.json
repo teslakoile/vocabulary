@@ -1,6 +1,9 @@
 {
   "id": "e_lean_on",
   "headword": "lean on",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "lean on",
@@ -47,11 +50,11 @@
         "To deliberately do without something you could easily have had, as a matter of principle."
       ],
       "word_distractors": [
-        "sandbox",
-        "balustrade",
-        "advocate",
-        "tacit knowledge",
-        "verbose"
+        "frontrunner",
+        "in pockets",
+        "first principles",
+        "primitive",
+        "evergreen"
       ],
       "prompt_version": 4
     }

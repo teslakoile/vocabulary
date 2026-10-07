@@ -1,6 +1,9 @@
 {
   "id": "e_front_and_center",
   "headword": "front-and-center",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "front and center",
@@ -44,11 +47,11 @@
         "Big enough to matter, said of an amount or a change."
       ],
       "word_distractors": [
+        "meat proxy",
+        "long-horizon",
         "executive presence",
-        "harness",
         "nontrivial",
-        "by and large",
-        "deliberate"
+        "broadly"
       ],
       "prompt_version": 4
     }

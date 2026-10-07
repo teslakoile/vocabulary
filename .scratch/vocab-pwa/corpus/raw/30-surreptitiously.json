@@ -1,6 +1,9 @@
 {
   "id": "e_surreptitiously",
   "headword": "surreptitiously",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "surreptitiously",
@@ -43,10 +46,10 @@
       ],
       "word_distractors": [
         "buy-in",
+        "esoteric",
         "daily driver",
         "vertical",
-        "persist",
-        "cognizant"
+        "persist"
       ],
       "prompt_version": 4
     }

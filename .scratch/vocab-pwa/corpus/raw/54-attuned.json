@@ -1,6 +1,9 @@
 {
   "id": "e_attuned",
   "headword": "attuned",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "attuned",
@@ -44,11 +47,11 @@
         "A rule of thumb that gets you a good enough answer quickly, because it usually works."
       ],
       "word_distractors": [
+        "superset",
+        "evergreen",
         "buy-in",
-        "substrate",
-        "advocate for",
-        "carte blanche",
-        "frontrunner"
+        "institutional knowledge",
+        "carte blanche"
       ],
       "prompt_version": 4
     }

@@ -1,6 +1,9 @@
 {
   "id": "e_panopticon",
   "headword": "panopticon",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "panopticon",
@@ -43,10 +46,10 @@
       ],
       "word_distractors": [
         "blanket approval",
-        "watch outs",
-        "inroads",
         "executive presence",
-        "carte blanche"
+        "carte blanche",
+        "myopic",
+        "run it by you"
       ],
       "prompt_version": 4
     }

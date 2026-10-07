@@ -1,6 +1,9 @@
 {
   "id": "e_verifiability_verifiable_rewards",
   "headword": "verifiability/verifiable rewards",
+  "tags": [
+    "tech"
+  ],
   "senses": [
     {
       "term": "verifiability",
@@ -46,11 +49,11 @@
         "To decide as you go, taking your lead from how things develop."
       ],
       "word_distractors": [
-        "gravitas",
+        "harness",
         "advocate for",
-        "run it by you",
         "blanket approval",
-        "center of excellence"
+        "center of excellence",
+        "mold breaker"
       ],
       "prompt_version": 4
     },
@@ -94,11 +97,11 @@
         "To work over the exact phrasing of something already written."
       ],
       "word_distractors": [
-        "blanket approval",
+        "finesse",
+        "persistence",
+        "executive presence",
         "top brass",
-        "run it by you",
-        "trivial",
-        "heuristic"
+        "reaper"
       ],
       "prompt_version": 4
     }

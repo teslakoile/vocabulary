@@ -174,6 +174,15 @@ const BLOCKED = [
   ['primitive', 'scaffolding (AI)'],
   ['scaffolding (AI)', 'substrate'],
   ['carte blanche', 'run it by you'],
+  ['stark', 'unequivocal'],
+  ['making strides', 'inroads'],
+  ['making strides', 'incremental'],
+  ['making strides', 'progressive'],
+  ['meat proxy', 'advocate'],
+  ['misfire policy', 'failure mode'],
+  ['race condition', 'dual-write problem'],
+  ['race condition', 'failure mode'],
+  ['oriented', 'attuned'],
 ];
 
 const blocked = new Set();

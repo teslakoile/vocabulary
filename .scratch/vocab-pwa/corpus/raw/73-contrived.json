@@ -1,6 +1,9 @@
 {
   "id": "e_contrived",
   "headword": "contrived",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "contrived",
@@ -46,11 +49,11 @@
         "Alert and responsive to signals, picking them up early and adjusting."
       ],
       "word_distractors": [
-        "mold breaker",
-        "lean on",
-        "primitive",
-        "sleuthing",
-        "hyperscaler"
+        "reaper",
+        "verifiable rewards",
+        "idempotent",
+        "substantial",
+        "first principles"
       ],
       "prompt_version": 4
     }

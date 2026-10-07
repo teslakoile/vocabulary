@@ -1,6 +1,9 @@
 {
   "id": "e_run_it_by_you",
   "headword": "run it by you",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "run it by you",
@@ -54,7 +57,7 @@
         "play it by ear",
         "serialize",
         "vertical",
-        "persist"
+        "substrate"
       ],
       "prompt_version": 4
     }

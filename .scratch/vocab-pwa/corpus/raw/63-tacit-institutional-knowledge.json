@@ -1,6 +1,9 @@
 {
   "id": "e_tacit_institutional_knowledge",
   "headword": "tacit/institutional knowledge",
+  "tags": [
+    "general"
+  ],
   "senses": [
     {
       "term": "tacit knowledge",
@@ -46,7 +49,7 @@
         "superset",
         "bespoke",
         "bolster",
-        "fearless forecast"
+        "reaper"
       ],
       "prompt_version": 4
     },

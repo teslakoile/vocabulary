@@ -1,6 +1,10 @@
 {
   "id": "e_b7542144-7646-4c71-8185-1e033d85fc90",
   "headword": "federated",
+  "tags": [
+    "tech",
+    "general"
+  ],
   "senses": [
     {
       "term": "federated (software)",
@@ -46,7 +50,7 @@
         "balustrade",
         "semantic layer",
         "disparage",
-        "lean on"
+        "stark"
       ],
       "prompt_version": 4
     },
@@ -88,9 +92,9 @@
       "word_distractors": [
         "disambiguate",
         "persist",
+        "entrypoint",
         "bolster",
-        "top brass",
-        "verifiability"
+        "oriented"
       ],
       "prompt_version": 4
     }
