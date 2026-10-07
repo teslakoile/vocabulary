@@ -234,7 +234,12 @@ export default function Browse({ snapshot, onSnapshot, onClose }: Props) {
               <li key={entry.id}>
                 <button
                   className="pressable flex w-full items-center gap-3 px-4 py-4 text-left hover:bg-muted focus-visible:bg-muted focus-visible:outline-none"
-                  onClick={() => setOpenId(entry.id)}
+                  onClick={() => {
+                    setOpenId(entry.id);
+                    // The list's scroll would otherwise carry over, and a word
+                    // opened from far down it would open part way down.
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   <span className="flex min-w-0 flex-col gap-1">
                     <strong className="font-semibold break-words">

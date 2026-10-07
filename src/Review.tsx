@@ -230,7 +230,10 @@ export default function Review({ queue, snapshot, onSnapshot }: Props) {
             </div>
           )}
 
-          <div className="mt-auto flex flex-col gap-3 pt-2">
+          {/* At the foot of the screen on a touch screen, where a thumb rests.
+           * With a mouse it follows the answer instead, rather than leaving a
+           * gap the height of a laptop window to cross. */}
+          <div className="mt-auto flex flex-col gap-3 pt-2 pointer-fine:mt-0">
             <Button size="xl" className="w-full pr-5" onClick={next} autoFocus>
               Next
               <ArrowRight />

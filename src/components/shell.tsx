@@ -4,6 +4,10 @@
  * One place owns the column width, the phone padding and the safe areas, so a
  * screen with short content cannot shrink-wrap and a long headword cannot push
  * the page sideways.
+ *
+ * There is one layout, the phone's, and it grows with the window: the column
+ * widens on a large screen (`max-w-column`) and the top margin opens up, so a
+ * laptop gets the same screen with more sky around it.
  */
 import type * as React from 'react';
 import sky from '@/assets/sky.webp';
@@ -13,7 +17,7 @@ export function Shell({ className, ...props }: React.ComponentProps<'main'>) {
   return (
     <main
       className={cn(
-        'mx-auto flex w-full max-w-[34rem] flex-1 flex-col gap-4 px-5 pt-[calc(1rem+var(--safe-top,env(safe-area-inset-top)))] pb-[calc(1.5rem+env(safe-area-inset-bottom))]',
+        'mx-auto flex w-full max-w-column flex-1 flex-col gap-4 px-5 pt-[calc(1rem+var(--safe-top,env(safe-area-inset-top)))] pb-[calc(1.5rem+env(safe-area-inset-bottom))] md:pt-[calc(2rem+var(--safe-top,env(safe-area-inset-top)))]',
         className
       )}
       {...props}
@@ -39,7 +43,7 @@ export function TopBarInner({ className, ...props }: React.ComponentProps<'div'>
   return (
     <div
       className={cn(
-        'mx-auto flex w-full max-w-[34rem] items-center justify-between gap-2 px-3 pt-[calc(0.25rem+env(safe-area-inset-top))] pb-1',
+        'mx-auto flex w-full max-w-column items-center justify-between gap-2 px-3 pt-[calc(0.25rem+env(safe-area-inset-top))] pb-1',
         className
       )}
       {...props}
@@ -86,6 +90,13 @@ export function Heading({ children, className }: { children: string; className?:
  * edge of a tree. It sits in the flow rather than behind the page, so white
  * cards and buttons never end up on top of white cloud, and its top edge fades
  * out so it has no seam against the flat blue above it.
+ *
+ * It always reaches the edges of the window: on a phone that is the column's
+ * own width, and anywhere wider a picture in a box would end in two hard edges
+ * of blue. From a tablet up it is anchored in the bottom right corner at a size
+ * that keeps the tops of the clouds, and fades into the sky on its left, so the
+ * same painting fills a wide window without being stretched thin. It stops
+ * growing at the painting's own width, so it is never blown up past it.
  */
 export function Sky({ className }: { className?: string }) {
   return (
@@ -94,7 +105,8 @@ export function Sky({ className }: { className?: string }) {
       alt=""
       aria-hidden
       className={cn(
-        'pointer-events-none -mx-5 mt-auto h-56 w-[calc(100%+2.5rem)] max-w-none object-cover object-bottom select-none [mask-image:linear-gradient(transparent,black_45%)]',
+        'pointer-events-none mx-[calc(50%-50vw)] mt-auto h-56 w-screen max-w-none object-cover object-bottom select-none [mask-image:linear-gradient(transparent,black_45%)]',
+        'md:mr-[calc(50%-50vw)] md:ml-0 md:h-[min(28vw,30rem)] md:w-[min(70vw,75rem)] md:self-end md:[mask-composite:intersect] md:[mask-image:linear-gradient(transparent,black_45%),linear-gradient(to_right,transparent,black_40%)]',
         className
       )}
     />
