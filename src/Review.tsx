@@ -9,7 +9,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { ArrowRight, Check, Eye, Flag, Keyboard, ListChecks, MessageSquareQuote, Pencil, ScrollText, TriangleAlert, X } from 'lucide-react';
 import { applyGrade, gradeFor } from '../shared/scheduler';
 import EditPanel from './EditPanel';
-import { answerBoard, answerMatches, boardSize, composeAnswer, lettersOf, type BoardToken, type Queue, type QueueItem } from './queue';
+import { answerBoard, answerMatches, blankLetters, boardSize, composeAnswer, lettersOf, type BoardToken, type Queue, type QueueItem } from './queue';
 import type { Cue, Entry, Sense } from './types';
 import { applyLocally, backlogOf, flagEntry, flush, recordEvent, type Snapshot } from './store';
 import { Caution } from '@/components/caution';
@@ -408,7 +408,7 @@ function Question({ item, typed, setTyped, onReveal, inputRef }: QuestionProps) 
 
   const board = answerBoard(sense.term);
   const given = item.reveal ?? [];
-  const letters = lettersOf(typed);
+  const letters = blankLetters(board, given, lettersOf(typed));
 
   const submit = () => {
     if (!typed.trim()) return;
@@ -475,9 +475,9 @@ function LetterBoard({
   inputRef: React.RefObject<HTMLInputElement | null>;
 }) {
   const [focused, setFocused] = useState(false);
-  const letters = lettersOf(typed);
   const total = boardSize(board);
   const known = new Set(given);
+  const letters = blankLetters(board, given, lettersOf(typed));
   const blanks = total - known.size;
 
   // A run is a stretch of blanks and the mark that follows it, such as
