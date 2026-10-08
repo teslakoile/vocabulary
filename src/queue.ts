@@ -188,6 +188,26 @@ export function pickReveals(board: BoardToken[][]): number[] {
 export const boardLetters = (board: BoardToken[][]): string[] =>
   board.flatMap((word) => word.flatMap((t) => (t.kind === 'slots' ? Array.from(t.text) : [])));
 
+/** Which of the typed letters go in the blanks. Walking the board in order, a
+ *  typed letter that matches the given letter at that spot is taken as typing
+ *  the word through (`frog` for `fr_g`), so it is skipped once. Any other letter
+ *  fills the next blank, which keeps typing only the missing letters working.
+ *  Letters left after the last spot are returned too, so a long answer shows. */
+export function blankLetters(board: BoardToken[][], given: number[], typed: string[]): string[] {
+  const known = new Set(given);
+  const answer = boardLetters(board);
+  const out: string[] = [];
+  let at = 0;
+  for (let i = 0; i < answer.length && at < typed.length; i++) {
+    if (known.has(i)) {
+      if (typed[at]!.toLowerCase() === answer[i]!.toLowerCase()) at++;
+    } else {
+      out.push(typed[at++]!);
+    }
+  }
+  return out.concat(typed.slice(at));
+}
+
 /** The whole answer as you have it: given letters where they belong, and what
  *  you typed in the blanks between them. */
 export function composeAnswer(board: BoardToken[][], given: number[], typed: string[]): string {
